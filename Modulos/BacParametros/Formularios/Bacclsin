@@ -1,0 +1,819 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "THREED32.OCX"
+Begin VB.Form BacMntClientesSinacofi 
+   BorderStyle     =   3  'Fixed Dialog
+   Caption         =   "Mantención de Clientes SINACOFI"
+   ClientHeight    =   3600
+   ClientLeft      =   705
+   ClientTop       =   1875
+   ClientWidth     =   6960
+   Icon            =   "Bacclsin.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   MinButton       =   0   'False
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   3600
+   ScaleWidth      =   6960
+   ShowInTaskbar   =   0   'False
+   Begin Threed.SSPanel SSPanel1 
+      Height          =   3075
+      Left            =   45
+      TabIndex        =   6
+      Top             =   495
+      Width           =   6900
+      _Version        =   65536
+      _ExtentX        =   12171
+      _ExtentY        =   5424
+      _StockProps     =   15
+      BackColor       =   -2147483644
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Begin Threed.SSFrame Frame 
+         Height          =   2895
+         Index           =   0
+         Left            =   135
+         TabIndex        =   8
+         Top             =   135
+         Width           =   7215
+         _Version        =   65536
+         _ExtentX        =   12726
+         _ExtentY        =   5106
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Font3D          =   3
+         Begin VB.TextBox txtbolsa 
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   285
+            Left            =   3150
+            TabIndex        =   18
+            Top             =   2205
+            Width           =   1185
+         End
+         Begin VB.TextBox txtdatatec 
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   285
+            Left            =   3150
+            TabIndex        =   17
+            Top             =   1845
+            Width           =   1185
+         End
+         Begin VB.TextBox txtDigito 
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Left            =   2520
+            MaxLength       =   1
+            TabIndex        =   1
+            Top             =   300
+            Width           =   330
+         End
+         Begin VB.TextBox TxtNombre 
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Left            =   1215
+            MaxLength       =   40
+            TabIndex        =   3
+            Top             =   675
+            Width           =   4305
+         End
+         Begin VB.TextBox txtNumero 
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Left            =   3150
+            MaxLength       =   4
+            TabIndex        =   4
+            Top             =   1035
+            Width           =   1200
+         End
+         Begin VB.TextBox txtSinacofi 
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Left            =   3150
+            MaxLength       =   4
+            TabIndex        =   5
+            Top             =   1410
+            Width           =   1185
+         End
+         Begin VB.TextBox txtCodigo 
+            Alignment       =   1  'Right Justify
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Left            =   4380
+            MaxLength       =   10
+            MouseIcon       =   "Bacclsin.frx":030A
+            MousePointer    =   99  'Custom
+            MultiLine       =   -1  'True
+            TabIndex        =   2
+            Top             =   300
+            Width           =   1140
+         End
+         Begin VB.TextBox txtRut 
+            Alignment       =   1  'Right Justify
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Left            =   1260
+            MaxLength       =   10
+            MouseIcon       =   "Bacclsin.frx":0614
+            MousePointer    =   99  'Custom
+            MultiLine       =   -1  'True
+            TabIndex        =   0
+            Top             =   270
+            Width           =   1140
+         End
+         Begin VB.Label Label3 
+            Caption         =   "Nombre"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   240
+            Left            =   90
+            TabIndex        =   19
+            Top             =   720
+            Width           =   1005
+         End
+         Begin VB.Label Label2 
+            Caption         =   "Bolsa"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   285
+            Left            =   2070
+            TabIndex        =   16
+            Top             =   2340
+            Width           =   1095
+         End
+         Begin VB.Label Label1 
+            Caption         =   "Datatec"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   240
+            Left            =   2070
+            TabIndex        =   15
+            Top             =   1935
+            Width           =   1005
+         End
+         Begin VB.Label Label 
+            BackColor       =   &H00C0C0C0&
+            BackStyle       =   0  'Transparent
+            Caption         =   "Rut"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Index           =   0
+            Left            =   105
+            TabIndex        =   14
+            Top             =   300
+            Width           =   1000
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "-"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   1
+            Left            =   2400
+            TabIndex        =   13
+            Top             =   300
+            Width           =   75
+         End
+         Begin VB.Label Label 
+            BackColor       =   &H00C0C0C0&
+            BackStyle       =   0  'Transparent
+            Caption         =   "Código"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Index           =   4
+            Left            =   2070
+            TabIndex        =   12
+            Top             =   1035
+            Width           =   1005
+         End
+         Begin VB.Label Label 
+            BackColor       =   &H00C0C0C0&
+            BackStyle       =   0  'Transparent
+            Caption         =   "Nombre"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Index           =   3
+            Left            =   2070
+            TabIndex        =   11
+            Top             =   1410
+            Width           =   1005
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            BackColor       =   &H00C0C0C0&
+            BackStyle       =   0  'Transparent
+            Caption         =   "Según SINACOFI ..."
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   210
+            Index           =   2
+            Left            =   105
+            TabIndex        =   10
+            Top             =   1050
+            Width           =   1500
+         End
+         Begin VB.Label Label 
+            BackColor       =   &H00C0C0C0&
+            BackStyle       =   0  'Transparent
+            Caption         =   "Código"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   315
+            Index           =   5
+            Left            =   3285
+            TabIndex        =   9
+            Top             =   300
+            Width           =   1005
+         End
+      End
+   End
+   Begin MSComctlLib.ImageList ImageList1 
+      Left            =   4695
+      Top             =   1785
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   22
+      ImageHeight     =   22
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   4
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacclsin.frx":091E
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacclsin.frx":0D70
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacclsin.frx":11C2
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacclsin.frx":14DC
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin MSComctlLib.Toolbar Toolbar1 
+      Align           =   1  'Align Top
+      Height          =   510
+      Left            =   0
+      TabIndex        =   7
+      Top             =   0
+      Width           =   6960
+      _ExtentX        =   12277
+      _ExtentY        =   900
+      ButtonWidth     =   767
+      ButtonHeight    =   741
+      AllowCustomize  =   0   'False
+      Appearance      =   1
+      ImageList       =   "ImageList1"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   4
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "Grabar"
+            Description     =   "Grabar"
+            Object.ToolTipText     =   "Grabar Datos"
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "Eliminar"
+            Description     =   "Eliminar"
+            Object.ToolTipText     =   "Eliminar Datos"
+            ImageIndex      =   2
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "Limpiar"
+            Description     =   "Limpiar"
+            Object.ToolTipText     =   "Limpiar Datos"
+            ImageIndex      =   3
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "Salir"
+            Description     =   "Salir"
+            Object.ToolTipText     =   "Salir"
+            ImageIndex      =   4
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+   End
+End
+Attribute VB_Name = "BacMntClientesSinacofi"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+
+Dim SW                    As Integer
+
+Private objCliente        As Object
+
+Function HabilitarControles(Valor As Boolean)
+   TXTRUT.Enabled = Not Valor
+   Txtdigito.Enabled = Not Valor
+   txtCODIGO.Enabled = Not Valor
+   TxtNombre.Enabled = False
+   txtNumero.Enabled = Valor
+   txtSinacofi.Enabled = Valor
+   txtdatatec.Enabled = Valor
+   txtbolsa.Enabled = Valor
+
+End Function
+
+'Limpiar Pantalla
+Sub Limpiar()
+   TXTRUT.Text = ""
+   Txtdigito.Text = ""
+   txtCODIGO.Text = ""
+   TxtNombre.Text = ""
+   txtNumero.Text = ""
+   txtSinacofi.Text = ""
+   txtdatatec.Text = ""
+   txtbolsa.Text = ""
+End Sub
+Sub Revisa()
+   txtNumero.Tag = txtNumero.Text
+   txtSinacofi.Tag = txtSinacofi.Text
+   txtdatatec.Tag = txtdatatec.Text
+   txtbolsa.Tag = txtbolsa.Text
+End Sub
+
+Function ValidarDatos() As Boolean
+   ValidarDatos = False
+   
+   If Trim$(txtNumero) = "" Then
+      MsgBox "ERROR : Número Sinacofi vacio", 16, "Bac-Forward"
+      'txtNumero.SetFocus
+      
+   ElseIf Trim$(txtSinacofi) = "" Then
+      MsgBox "ERROR : Codigo/Nemo Sinacofi vacio", 16, "Bac-Forward"
+      txtSinacofi.SetFocus
+      
+   Else
+      ValidarDatos = True
+      
+   End If
+   
+End Function
+
+Sub limpiar_objetos()
+   objCliente.clrut = ""
+   objCliente.cldv = ""
+   objCliente.clnombre = ""
+   objCliente.clNumSinacofi = ""
+   objCliente.clNomSinacofi = ""
+   objCliente.cldatatec = ""
+   objCliente.clbolsa = ""
+   
+End Sub
+Private Sub cmdGrabar()
+   
+   Me.MousePointer = 11
+
+   If Not ValidarDatos() Then   'Valdiaci¢n de los datos del cliente.
+      Me.MousePointer = 0
+      Exit Sub
+   
+   End If
+  
+     
+   objCliente.clrut = TXTRUT.Text
+   objCliente.cldv = Txtdigito.Text
+   objCliente.clnombre = TxtNombre.Text
+   objCliente.clNumSinacofi = txtNumero.Text
+   objCliente.clNomSinacofi = txtSinacofi.Text
+   objCliente.cldatatec = txtdatatec.Text
+   objCliente.clbolsa = txtbolsa.Text
+        
+   '----------------------------------------------
+   If objCliente.GrabarSINACOFI() Then
+      MsgBox "Grabación se realizó con exito ", 64, "Bac-forward"
+      Call cmdLimpiar
+
+   Else
+      MsgBox "ERROR :Grabación no se llevo a cabo ", 16, "Bac-forward"
+
+   End If
+
+   Me.MousePointer = 0
+
+End Sub
+Private Sub cmdLimpiar()
+   
+   Call Limpiar
+   Call HabilitarControles(False)
+   TXTRUT.SetFocus
+
+End Sub
+
+Private Sub Form_Activate()
+TXTRUT.SetFocus
+End Sub
+
+Private Sub Form_KeyPress(KeyAscii As Integer)
+
+   If KeyAscii = 13 Then
+      SendKeys "{TAB}"
+
+   End If
+
+End Sub
+
+Private Sub Form_Load()
+    Me.Top = 0
+    Me.Left = 0
+
+   Set objCliente = New clsCliente
+
+   Call HabilitarControles(False)
+   
+End Sub
+
+Private Sub cmdEliminar()
+
+   objCliente.clrut = TXTRUT.Text
+   
+   If objCliente.BorrarSINACOFI() = True Then
+      Call cmdLimpiar
+      TXTRUT.SetFocus
+
+   Else
+      MsgBox "Datos no pueden ser Removidos de Archivos", vbExclamation + vbOKOnly, "Bac-Forward"
+
+   End If
+
+End Sub
+
+Private Sub Toolbar1_ButtonClick(ByVal Button As MSComctlLib.Button)
+Select Case Button.Index
+Case 1      '"Grabar"
+    cmdGrabar
+    Call limpiar_objetos
+Case 2      '"Eliminar"
+Dim ss
+ss = MsgBox("Seguro de Eliminar Sinacofi : " & Chr(13) & txtSinacofi.Text, vbQuestion + vbYesNo)
+If ss = 6 Then
+    cmdEliminar
+    Call limpiar_objetos
+   
+End If
+Case 3      '"Limpiar"
+    cmdLimpiar
+Case 4      '"Salir"
+    Unload Me
+End Select
+End Sub
+
+
+
+Private Sub txtcodigo_DblClick()
+    txtRut_DblClick
+End Sub
+
+Private Sub TxtCodigo_KeyDown(KEYCODE As Integer, Shift As Integer)
+   If KEYCODE = vbKeyF3 Then Call txtRut_DblClick
+End Sub
+
+Private Sub txtCodigo_KeyPress(KeyAscii As Integer)
+
+   If KeyAscii% = vbKeyReturn Then
+      KeyAscii% = 0
+      SendKeys$ "{TAB}"
+
+   ElseIf Not ((KeyAscii > 47 And KeyAscii < 58) Or KeyAscii = 8) Then
+      KeyAscii = 0
+     
+   End If
+     
+   BacCaracterNumerico KeyAscii
+
+End Sub
+
+Private Sub txtbolsa_KeyPress(KeyAscii As Integer)
+   If KeyAscii = 13 Then
+     '   txtRut.SetFocus
+    ElseIf KeyAscii <> 8 Then
+       KeyAscii = Asc(UCase(Chr(KeyAscii)))
+    End If
+End Sub
+
+Private Sub txtdatatec_KeyPress(KeyAscii As Integer)
+   If KeyAscii = 13 Then
+        txtbolsa.SetFocus
+    ElseIf KeyAscii <> 8 Then
+       KeyAscii = Asc(UCase(Chr(KeyAscii)))
+    End If
+End Sub
+
+Private Sub txtDigito_KeyPress(KeyAscii As Integer)
+
+   If KeyAscii% = vbKeyReturn Then
+      KeyAscii% = 0
+      SendKeys$ "{TAB}"
+
+   ElseIf Not ((KeyAscii > 47 And KeyAscii < 58) Or KeyAscii = 75 Or KeyAscii = 107 Or KeyAscii = 8) Then
+      KeyAscii = 0
+
+   End If
+
+   BacToUCase KeyAscii
+
+End Sub
+
+Private Sub txtDigito_LostFocus()
+Dim idRut     As String
+Dim IdDig     As String
+Dim IdCod     As String
+Dim Bandera   As Integer
+
+    Bandera = True
+    
+    idRut = TXTRUT.Text
+    IdDig = Txtdigito.Text
+    IdCod = txtCODIGO.Text
+
+    If Not Controla_RUT(TXTRUT, Txtdigito) Then
+        MsgBox "Error : Rut Incorrecto", 16, "Bac-forward"
+        Call Limpiar
+        Call HabilitarControles(False)
+        TXTRUT.SetFocus
+        Exit Sub
+    End If
+    
+    objCliente.clrut = TXTRUT.Text
+    objCliente.cldv = Txtdigito.Text
+    objCliente.clcodigo = Val(txtCODIGO.Text)
+    
+    If Not objCliente.LeerPorRut(objCliente.clrut, objCliente.clcodigo) Then
+        IdCod = 0
+        If objCliente.clcodigo = 0 Then
+            If objCliente.LeerPorRut(Val(idRut), 1) Then
+                IdCod = 1
+            End If
+        End If
+        If IdCod = 0 Then
+            MsgBox "Error : En Carga de Datos", 16, "Bac-forward"
+            TXTRUT.SetFocus
+            Exit Sub
+        End If
+    End If
+    
+    If objCliente.clrut = 0 Then
+       Call Limpiar
+       TXTRUT.Text = idRut
+       Txtdigito.Text = IdDig
+       txtCODIGO.Text = IdCod
+       
+    Else
+       txtCODIGO.Text = objCliente.clcodigo
+       txtCODIGO.Tag = txtCODIGO.Text
+    
+       TxtNombre.Text = objCliente.clnombre
+       TxtNombre.Tag = TxtNombre.Text
+       
+       txtNumero.Text = objCliente.clNumSinacofi
+       txtNumero.Tag = txtNumero.Text
+    
+       txtSinacofi.Text = objCliente.clNomSinacofi
+       txtSinacofi.Tag = txtSinacofi.Text
+       
+       txtdatatec.Text = objCliente.datatec
+       txtdatatec.Tag = txtdatatec.Text
+       
+       txtbolsa.Text = objCliente.bolsa
+       txtbolsa.Tag = txtbolsa.Text
+       
+       
+    
+    End If
+    
+    Call HabilitarControles(True)
+    
+    Toolbar1.Buttons(1).Enabled = (objCliente.clrut <> 0)
+    
+    txtNumero.SetFocus
+      
+
+End Sub
+
+Private Sub txtNumero_KeyPress(KeyAscii As Integer)
+    If KeyAscii = 13 Then
+        txtSinacofi.SetFocus
+    ElseIf KeyAscii <> 8 Then
+        KeyAscii = 0
+    End If
+End Sub
+
+
+Private Sub txtRut_DblClick()
+clie = "SINACOFI"
+   BacAyuda.Tag = "MDCL"
+   BacAyuda.Show 1
+
+   If giAceptar% = True Then
+      TXTRUT.Text = Val(gsCodigo$)
+      Txtdigito.Text = gsDigito$
+      txtCODIGO.Text = gsCodCli
+      Txtdigito.SetFocus
+      SendKeys "{ENTER}"
+      
+   End If
+
+End Sub
+
+Private Sub txtRut_KeyDown(KEYCODE As Integer, Shift As Integer)
+   If KEYCODE = vbKeyF3 Then Call txtRut_DblClick
+End Sub
+
+
+Private Sub txtRut_KeyPress(KeyAscii As Integer)
+
+   If KeyAscii% = vbKeyReturn Then
+      KeyAscii% = 0
+      SendKeys$ "{TAB}"
+
+   ElseIf Not ((KeyAscii > 47 And KeyAscii < 58) Or KeyAscii = 8) Then
+      KeyAscii = 0
+     
+   End If
+     
+   BacCaracterNumerico KeyAscii
+   
+End Sub
+
+Private Sub txtSinacofi_KeyPress(KeyAscii As Integer)
+    If KeyAscii = 13 Then
+      txtdatatec.SetFocus
+    ElseIf KeyAscii <> 8 Then
+        KeyAscii = Asc(UCase(Chr(KeyAscii)))
+    End If
+End Sub
+

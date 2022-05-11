@@ -1,0 +1,1734 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "THREED32.OCX"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
+Begin VB.Form BacMntClie 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Mantención de Clientes "
+   ClientHeight    =   4305
+   ClientLeft      =   945
+   ClientTop       =   1005
+   ClientWidth     =   8145
+   Icon            =   "BacMntClie.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   MinButton       =   0   'False
+   ScaleHeight     =   4305
+   ScaleWidth      =   8145
+   Begin TabDlg.SSTab TxtCodigo2 
+      Height          =   3735
+      Left            =   15
+      TabIndex        =   0
+      Top             =   540
+      Width           =   8115
+      _ExtentX        =   14314
+      _ExtentY        =   6588
+      _Version        =   393216
+      Tabs            =   4
+      Tab             =   3
+      TabsPerRow      =   4
+      TabHeight       =   520
+      TabCaption(0)   =   "Identificacion Cliente"
+      TabPicture(0)   =   "BacMntClie.frx":030A
+      Tab(0).ControlEnabled=   0   'False
+      Tab(0).Control(0)=   "SSFrame1"
+      Tab(0).Control(0).Enabled=   0   'False
+      Tab(0).Control(1)=   "SSFrame2"
+      Tab(0).Control(1).Enabled=   0   'False
+      Tab(0).Control(2)=   "SSFrame7"
+      Tab(0).Control(2).Enabled=   0   'False
+      Tab(0).Control(3)=   "SSOption1"
+      Tab(0).Control(3).Enabled=   0   'False
+      Tab(0).Control(4)=   "txtgeneric"
+      Tab(0).Control(4).Enabled=   0   'False
+      Tab(0).Control(5)=   "txtrut"
+      Tab(0).Control(5).Enabled=   0   'False
+      Tab(0).Control(6)=   "txtDigito"
+      Tab(0).Control(6).Enabled=   0   'False
+      Tab(0).Control(7)=   "TxtCodigo"
+      Tab(0).Control(7).Enabled=   0   'False
+      Tab(0).Control(8)=   "Txt1Nombre"
+      Tab(0).Control(8).Enabled=   0   'False
+      Tab(0).Control(9)=   "Txt2Nombre"
+      Tab(0).Control(9).Enabled=   0   'False
+      Tab(0).Control(10)=   "Txt1Apellido"
+      Tab(0).Control(10).Enabled=   0   'False
+      Tab(0).Control(11)=   "Txt2Apellido"
+      Tab(0).Control(11).Enabled=   0   'False
+      Tab(0).Control(12)=   "TxtNombre"
+      Tab(0).Control(12).Enabled=   0   'False
+      Tab(0).Control(13)=   "SSOption2"
+      Tab(0).Control(13).Enabled=   0   'False
+      Tab(0).ControlCount=   14
+      TabCaption(1)   =   "Domicilio"
+      TabPicture(1)   =   "BacMntClie.frx":0326
+      Tab(1).ControlEnabled=   0   'False
+      Tab(1).Control(0)=   "SSFrame6"
+      Tab(1).Control(0).Enabled=   0   'False
+      Tab(1).Control(1)=   "SSFrame5"
+      Tab(1).Control(1).Enabled=   0   'False
+      Tab(1).Control(2)=   "SSFrame4"
+      Tab(1).Control(2).Enabled=   0   'False
+      Tab(1).Control(3)=   "SSFrame3"
+      Tab(1).Control(3).Enabled=   0   'False
+      Tab(1).Control(4)=   "cmbTipoCliente"
+      Tab(1).Control(4).Enabled=   0   'False
+      Tab(1).Control(5)=   "cmbPais"
+      Tab(1).Control(5).Enabled=   0   'False
+      Tab(1).Control(6)=   "TxtTelefono"
+      Tab(1).Control(6).Enabled=   0   'False
+      Tab(1).Control(7)=   "TxtFax"
+      Tab(1).Control(7).Enabled=   0   'False
+      Tab(1).Control(8)=   "TxtDireccion"
+      Tab(1).Control(8).Enabled=   0   'False
+      Tab(1).Control(9)=   "CmbCiudad"
+      Tab(1).Control(9).Enabled=   0   'False
+      Tab(1).Control(10)=   "CmbComuna"
+      Tab(1).Control(10).Enabled=   0   'False
+      Tab(1).ControlCount=   11
+      TabCaption(2)   =   "Datos Generales"
+      TabPicture(2)   =   "BacMntClie.frx":0342
+      Tab(2).ControlEnabled=   0   'False
+      Tab(2).Control(0)=   "SSFrame10"
+      Tab(2).Control(0).Enabled=   0   'False
+      Tab(2).Control(1)=   "SSFrame9"
+      Tab(2).Control(1).Enabled=   0   'False
+      Tab(2).Control(2)=   "SSFrame8"
+      Tab(2).Control(2).Enabled=   0   'False
+      Tab(2).Control(3)=   "cmbCategoriaDeudor"
+      Tab(2).Control(3).Enabled=   0   'False
+      Tab(2).Control(4)=   "cmbRelBanco"
+      Tab(2).Control(4).Enabled=   0   'False
+      Tab(2).Control(5)=   "cmbRGBanco"
+      Tab(2).Control(5).Enabled=   0   'False
+      Tab(2).Control(6)=   "CmbMercado"
+      Tab(2).Control(6).Enabled=   0   'False
+      Tab(2).Control(7)=   "CmbCalidadJuridica"
+      Tab(2).Control(7).Enabled=   0   'False
+      Tab(2).Control(8)=   "TxtCtaUSD"
+      Tab(2).Control(8).Enabled=   0   'False
+      Tab(2).Control(9)=   "txtctacte"
+      Tab(2).Control(9).Enabled=   0   'False
+      Tab(2).ControlCount=   10
+      TabCaption(3)   =   "Mesa Empresa"
+      TabPicture(3)   =   "BacMntClie.frx":035E
+      Tab(3).ControlEnabled=   -1  'True
+      Tab(3).Control(0)=   "SSFrame15"
+      Tab(3).Control(0).Enabled=   0   'False
+      Tab(3).Control(1)=   "SSFrame17"
+      Tab(3).Control(1).Enabled=   0   'False
+      Tab(3).Control(2)=   "SSFrame14"
+      Tab(3).Control(2).Enabled=   0   'False
+      Tab(3).Control(3)=   "SSFrame13"
+      Tab(3).Control(3).Enabled=   0   'False
+      Tab(3).Control(4)=   "Frame2"
+      Tab(3).Control(4).Enabled=   0   'False
+      Tab(3).Control(5)=   "SSFrame12"
+      Tab(3).Control(5).Enabled=   0   'False
+      Tab(3).Control(6)=   "SSFrame11"
+      Tab(3).Control(6).Enabled=   0   'False
+      Tab(3).Control(7)=   "frame85"
+      Tab(3).Control(7).Enabled=   0   'False
+      Tab(3).Control(8)=   "cmbClasificacion"
+      Tab(3).Control(8).Enabled=   0   'False
+      Tab(3).Control(9)=   "cmbActividadEconomica"
+      Tab(3).Control(9).Enabled=   0   'False
+      Tab(3).Control(10)=   "cmbComInstitucional"
+      Tab(3).Control(10).Enabled=   0   'False
+      Tab(3).Control(11)=   "Frame1"
+      Tab(3).Control(11).Enabled=   0   'False
+      Tab(3).Control(12)=   "chkFirma"
+      Tab(3).Control(12).Enabled=   0   'False
+      Tab(3).Control(13)=   "chkPoder"
+      Tab(3).Control(13).Enabled=   0   'False
+      Tab(3).Control(14)=   "chkInformeSocial"
+      Tab(3).Control(14).Enabled=   0   'False
+      Tab(3).Control(15)=   "txtCodigoSuper"
+      Tab(3).Control(15).Enabled=   0   'False
+      Tab(3).Control(16)=   "txtCodigoBCCH"
+      Tab(3).Control(16).Enabled=   0   'False
+      Tab(3).Control(17)=   "chkOficinas"
+      Tab(3).Control(17).Enabled=   0   'False
+      Tab(3).Control(18)=   "txtCRiesgo"
+      Tab(3).Control(18).Enabled=   0   'False
+      Tab(3).Control(19)=   "CmbCodigoOtc"
+      Tab(3).Control(19).Enabled=   0   'False
+      Tab(3).Control(20)=   "TxtCodigo3"
+      Tab(3).Control(20).Enabled=   0   'False
+      Tab(3).Control(21)=   "ChkBloqueado"
+      Tab(3).Control(21).Enabled=   0   'False
+      Tab(3).ControlCount=   22
+      Begin VB.CheckBox ChkBloqueado 
+         Caption         =   "Bloqueado"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   6285
+         TabIndex        =   90
+         Top             =   3120
+         Width           =   1665
+      End
+      Begin VB.TextBox TxtCodigo3 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   2295
+         TabIndex        =   89
+         Top             =   2910
+         Width           =   1515
+      End
+      Begin VB.ComboBox CmbCodigoOtc 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   2280
+         Style           =   2  'Dropdown List
+         TabIndex        =   88
+         Top             =   3240
+         Width           =   2430
+      End
+      Begin Threed.SSOption SSOption2 
+         Height          =   195
+         Left            =   -74790
+         TabIndex        =   39
+         Top             =   1725
+         Width           =   1005
+         _Version        =   65536
+         _ExtentX        =   1773
+         _ExtentY        =   344
+         _StockProps     =   78
+         Caption         =   "Juridico"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         Font3D          =   3
+      End
+      Begin VB.TextBox TxtNombre 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -74820
+         MaxLength       =   40
+         TabIndex        =   4
+         TabStop         =   0   'False
+         Top             =   2385
+         Visible         =   0   'False
+         Width           =   7575
+      End
+      Begin VB.TextBox Txt2Apellido 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -72930
+         MaxLength       =   15
+         TabIndex        =   6
+         Top             =   2385
+         Width           =   1890
+      End
+      Begin VB.TextBox Txt1Apellido 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -74820
+         MaxLength       =   15
+         TabIndex        =   5
+         Top             =   2385
+         Width           =   1890
+      End
+      Begin VB.TextBox Txt2Nombre 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -69135
+         MaxLength       =   15
+         TabIndex        =   8
+         Top             =   2385
+         Width           =   1890
+      End
+      Begin VB.TextBox Txt1Nombre 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -71025
+         MaxLength       =   15
+         TabIndex        =   7
+         Top             =   2385
+         Width           =   1890
+      End
+      Begin VB.TextBox txtCRiesgo 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   2880
+         MaxLength       =   10
+         TabIndex        =   28
+         Top             =   1665
+         Width           =   1470
+      End
+      Begin VB.CheckBox chkOficinas 
+         Caption         =   "Oficinas en Chile"
+         Enabled         =   0   'False
+         ForeColor       =   &H00800000&
+         Height          =   330
+         Left            =   5700
+         TabIndex        =   34
+         Top             =   2460
+         Width           =   1530
+      End
+      Begin VB.TextBox txtCodigoBCCH 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   1530
+         MaxLength       =   3
+         TabIndex        =   27
+         Text            =   "0"
+         Top             =   1665
+         Width           =   720
+      End
+      Begin VB.TextBox txtCodigoSuper 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   180
+         MaxLength       =   3
+         TabIndex        =   26
+         Text            =   "0"
+         Top             =   1650
+         Width           =   675
+      End
+      Begin VB.CheckBox chkInformeSocial 
+         Caption         =   "Informe Social"
+         ForeColor       =   &H00800000&
+         Height          =   255
+         Left            =   5700
+         TabIndex        =   33
+         Top             =   2220
+         Width           =   1350
+      End
+      Begin VB.CheckBox chkPoder 
+         Caption         =   "Poder"
+         ForeColor       =   &H00800000&
+         Height          =   255
+         Left            =   7230
+         TabIndex        =   35
+         Top             =   2220
+         Width           =   735
+      End
+      Begin VB.CheckBox chkFirma 
+         Caption         =   "Firma"
+         ForeColor       =   &H00800000&
+         Height          =   255
+         Left            =   7230
+         TabIndex        =   37
+         Top             =   2490
+         Width           =   690
+      End
+      Begin VB.Frame Frame1 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   795
+         Left            =   2265
+         TabIndex        =   40
+         Top             =   2040
+         Width           =   3330
+         Begin VB.TextBox TxtCod 
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   285
+            Left            =   2130
+            MaxLength       =   11
+            TabIndex        =   32
+            Top             =   270
+            Width           =   1110
+         End
+         Begin Threed.SSOption OpImplic 
+            Height          =   255
+            Index           =   2
+            Left            =   1425
+            TabIndex        =   31
+            Top             =   285
+            Width           =   735
+            _Version        =   65536
+            _ExtentX        =   1296
+            _ExtentY        =   450
+            _StockProps     =   78
+            Caption         =   "Swift"
+            ForeColor       =   8388608
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+         End
+         Begin Threed.SSOption OpImplic 
+            Height          =   255
+            Index           =   1
+            Left            =   735
+            TabIndex        =   30
+            Top             =   285
+            Width           =   660
+            _Version        =   65536
+            _ExtentX        =   1164
+            _ExtentY        =   450
+            _StockProps     =   78
+            Caption         =   "Chips"
+            ForeColor       =   8388608
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+         End
+         Begin Threed.SSOption OpImplic 
+            Height          =   255
+            Index           =   0
+            Left            =   90
+            TabIndex        =   29
+            Top             =   285
+            Width           =   660
+            _Version        =   65536
+            _ExtentX        =   1164
+            _ExtentY        =   450
+            _StockProps     =   78
+            Caption         =   " Aba"
+            ForeColor       =   8388608
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Value           =   -1  'True
+         End
+      End
+      Begin VB.ComboBox cmbComInstitucional 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   180
+         Style           =   2  'Dropdown List
+         TabIndex        =   23
+         Top             =   810
+         Width           =   2430
+      End
+      Begin VB.ComboBox cmbActividadEconomica 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   2775
+         Style           =   2  'Dropdown List
+         TabIndex        =   24
+         Top             =   810
+         Width           =   2385
+      End
+      Begin VB.ComboBox cmbClasificacion 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   5415
+         Style           =   2  'Dropdown List
+         TabIndex        =   25
+         Top             =   825
+         Width           =   2535
+      End
+      Begin VB.TextBox txtctacte 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -72075
+         MaxLength       =   15
+         TabIndex        =   17
+         Top             =   795
+         Width           =   2475
+      End
+      Begin VB.TextBox TxtCtaUSD 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -69435
+         MaxLength       =   15
+         TabIndex        =   18
+         Top             =   795
+         Width           =   2385
+      End
+      Begin VB.ComboBox CmbCalidadJuridica 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -74850
+         Style           =   2  'Dropdown List
+         TabIndex        =   16
+         Top             =   780
+         Width           =   2610
+      End
+      Begin VB.ComboBox CmbMercado 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -74805
+         Style           =   2  'Dropdown List
+         TabIndex        =   19
+         Top             =   1485
+         Width           =   2595
+      End
+      Begin VB.ComboBox cmbRGBanco 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -69420
+         Style           =   2  'Dropdown List
+         TabIndex        =   21
+         Top             =   1485
+         Width           =   2385
+      End
+      Begin VB.ComboBox cmbRelBanco 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -74820
+         Style           =   2  'Dropdown List
+         TabIndex        =   22
+         Top             =   2205
+         Width           =   2595
+      End
+      Begin VB.ComboBox cmbCategoriaDeudor 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -72075
+         Style           =   2  'Dropdown List
+         TabIndex        =   20
+         Top             =   1485
+         Width           =   2490
+      End
+      Begin VB.ComboBox CmbComuna 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -69510
+         Style           =   2  'Dropdown List
+         TabIndex        =   12
+         Top             =   1635
+         Width           =   2385
+      End
+      Begin VB.ComboBox CmbCiudad 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -72120
+         Style           =   2  'Dropdown List
+         TabIndex        =   11
+         Top             =   1650
+         Width           =   2460
+      End
+      Begin VB.TextBox TxtDireccion 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -74760
+         MaxLength       =   40
+         TabIndex        =   9
+         Top             =   795
+         Width           =   7560
+      End
+      Begin VB.TextBox TxtFax 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -69510
+         MaxLength       =   20
+         TabIndex        =   15
+         Top             =   2400
+         Width           =   2400
+      End
+      Begin VB.TextBox TxtTelefono 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -72120
+         MaxLength       =   20
+         TabIndex        =   14
+         Top             =   2415
+         Width           =   2445
+      End
+      Begin VB.ComboBox cmbPais 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -74820
+         Style           =   2  'Dropdown List
+         TabIndex        =   10
+         Top             =   1665
+         Width           =   2550
+      End
+      Begin VB.ComboBox cmbTipoCliente 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   315
+         Left            =   -74820
+         Style           =   2  'Dropdown List
+         TabIndex        =   13
+         Top             =   2415
+         Width           =   2550
+      End
+      Begin VB.TextBox TxtCodigo 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -71040
+         MaxLength       =   3
+         TabIndex        =   2
+         Text            =   "1"
+         Top             =   840
+         Width           =   645
+      End
+      Begin VB.TextBox txtDigito 
+         Enabled         =   0   'False
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -72705
+         MaxLength       =   1
+         TabIndex        =   36
+         Top             =   855
+         Width           =   255
+      End
+      Begin VB.TextBox txtrut 
+         Alignment       =   1  'Right Justify
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -73935
+         MaxLength       =   9
+         MouseIcon       =   "BacMntClie.frx":037A
+         MousePointer    =   99  'Custom
+         MultiLine       =   -1  'True
+         TabIndex        =   1
+         Top             =   855
+         Width           =   1125
+      End
+      Begin VB.TextBox txtgeneric 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Left            =   -69150
+         MaxLength       =   5
+         TabIndex        =   3
+         Top             =   840
+         Width           =   1185
+      End
+      Begin Threed.SSOption SSOption1 
+         Height          =   195
+         Left            =   -74775
+         TabIndex        =   38
+         Top             =   1365
+         Width           =   915
+         _Version        =   65536
+         _ExtentX        =   1614
+         _ExtentY        =   344
+         _StockProps     =   78
+         Caption         =   "Natural"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         Value           =   -1  'True
+         Font3D          =   3
+      End
+      Begin Threed.SSFrame frame85 
+         Height          =   780
+         Left            =   105
+         TabIndex        =   41
+         Top             =   2055
+         Width           =   2070
+         _Version        =   65536
+         _ExtentX        =   3651
+         _ExtentY        =   1376
+         _StockProps     =   14
+         Caption         =   "Articulo 85"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         Begin Threed.SSOption opCliente 
+            Height          =   255
+            Left            =   135
+            TabIndex        =   42
+            Top             =   300
+            Width           =   810
+            _Version        =   65536
+            _ExtentX        =   1429
+            _ExtentY        =   450
+            _StockProps     =   78
+            Caption         =   "Cliente"
+            ForeColor       =   8388608
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Enabled         =   0   'False
+            Value           =   -1  'True
+         End
+         Begin Threed.SSOption opBanco 
+            Height          =   255
+            Left            =   1050
+            TabIndex        =   43
+            Top             =   300
+            Width           =   780
+            _Version        =   65536
+            _ExtentX        =   1376
+            _ExtentY        =   450
+            _StockProps     =   78
+            Caption         =   "Banco"
+            ForeColor       =   8388608
+            BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Enabled         =   0   'False
+         End
+      End
+      Begin Threed.SSFrame SSFrame3 
+         Height          =   1620
+         Left            =   -74895
+         TabIndex        =   52
+         Top             =   1230
+         Width           =   2685
+         _Version        =   65536
+         _ExtentX        =   4736
+         _ExtentY        =   2857
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Clasificación Cliente"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   27
+            Left            =   75
+            TabIndex        =   60
+            Top             =   900
+            Width           =   1740
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "País"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   240
+            Index           =   9
+            Left            =   105
+            TabIndex        =   53
+            Top             =   225
+            Width           =   405
+         End
+      End
+      Begin Threed.SSFrame SSFrame4 
+         Height          =   1620
+         Left            =   -72195
+         TabIndex        =   54
+         Top             =   1230
+         Width           =   2610
+         _Version        =   65536
+         _ExtentX        =   4604
+         _ExtentY        =   2857
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Teléfono"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   15
+            Left            =   75
+            TabIndex        =   59
+            Top             =   915
+            Width           =   765
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Ciudad"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   11
+            Left            =   90
+            TabIndex        =   55
+            Top             =   195
+            Width           =   600
+         End
+      End
+      Begin Threed.SSFrame SSFrame5 
+         Height          =   1620
+         Left            =   -69570
+         TabIndex        =   56
+         Top             =   1230
+         Width           =   2520
+         _Version        =   65536
+         _ExtentX        =   4445
+         _ExtentY        =   2857
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            Caption         =   "Fax"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   255
+            Index           =   16
+            Left            =   90
+            TabIndex        =   58
+            Top             =   930
+            Width           =   375
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Comuna"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   10
+            Left            =   75
+            TabIndex        =   57
+            Top             =   180
+            Width           =   690
+         End
+      End
+      Begin Threed.SSFrame SSFrame6 
+         Height          =   810
+         Left            =   -74895
+         TabIndex        =   61
+         Top             =   405
+         Width           =   7845
+         _Version        =   65536
+         _ExtentX        =   13838
+         _ExtentY        =   1429
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Dirección"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   5
+            Left            =   90
+            TabIndex        =   62
+            Top             =   150
+            Width           =   825
+         End
+      End
+      Begin Threed.SSFrame SSFrame7 
+         Height          =   690
+         Left            =   -74895
+         TabIndex        =   63
+         Top             =   570
+         Width           =   7875
+         _Version        =   65536
+         _ExtentX        =   13891
+         _ExtentY        =   1217
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Generico"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   3
+            Left            =   4575
+            TabIndex        =   66
+            Top             =   300
+            Width           =   780
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "R.U.T."
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   0
+            Left            =   75
+            TabIndex        =   65
+            Top             =   300
+            Width           =   585
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Código"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   31
+            Left            =   2790
+            TabIndex        =   64
+            Top             =   315
+            Width           =   600
+         End
+      End
+      Begin Threed.SSFrame SSFrame2 
+         Height          =   825
+         Left            =   -74895
+         TabIndex        =   51
+         Top             =   1215
+         Width           =   7875
+         _Version        =   65536
+         _ExtentX        =   13891
+         _ExtentY        =   1455
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+      Begin Threed.SSFrame SSFrame1 
+         Height          =   855
+         Left            =   -74895
+         TabIndex        =   46
+         Top             =   1995
+         Width           =   7875
+         _Version        =   65536
+         _ExtentX        =   13891
+         _ExtentY        =   1508
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Paterno"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   2
+            Left            =   120
+            TabIndex        =   50
+            Top             =   150
+            Width           =   675
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Materno"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   20
+            Left            =   2040
+            TabIndex        =   49
+            Top             =   135
+            Width           =   705
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Nombres"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   21
+            Left            =   3930
+            TabIndex        =   48
+            Top             =   150
+            Width           =   750
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Razón Social"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   18
+            Left            =   105
+            TabIndex        =   47
+            Top             =   150
+            Visible         =   0   'False
+            Width           =   1500
+         End
+      End
+      Begin Threed.SSFrame SSFrame8 
+         Height          =   2490
+         Left            =   -74910
+         TabIndex        =   67
+         Top             =   390
+         Width           =   2745
+         _Version        =   65536
+         _ExtentX        =   4842
+         _ExtentY        =   4392
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Relación Banco"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   26
+            Left            =   105
+            TabIndex        =   70
+            Top             =   1575
+            Width           =   1365
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Mercado"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   8
+            Left            =   90
+            TabIndex        =   69
+            Top             =   855
+            Width           =   750
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Calidad Jurídica"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   13
+            Left            =   75
+            TabIndex        =   68
+            Top             =   135
+            Width           =   1395
+         End
+      End
+      Begin Threed.SSFrame SSFrame9 
+         Height          =   2490
+         Left            =   -72135
+         TabIndex        =   71
+         Top             =   390
+         Width           =   2625
+         _Version        =   65536
+         _ExtentX        =   4630
+         _ExtentY        =   4392
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Categoría Deudor"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   33
+            Left            =   90
+            TabIndex        =   73
+            Top             =   855
+            Width           =   1530
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   " Numero Cta Corriente $"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   17
+            Left            =   30
+            TabIndex        =   72
+            Top             =   135
+            Width           =   2055
+         End
+      End
+      Begin Threed.SSFrame SSFrame10 
+         Height          =   2490
+         Left            =   -69480
+         TabIndex        =   74
+         Top             =   390
+         Width           =   2505
+         _Version        =   65536
+         _ExtentX        =   4419
+         _ExtentY        =   4392
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Relación Gestión Banco"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   24
+            Left            =   90
+            TabIndex        =   76
+            Top             =   870
+            Width           =   2070
+         End
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   " Numero Cta Corriente USD"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   23
+            Left            =   30
+            TabIndex        =   75
+            Top             =   180
+            Width           =   2340
+         End
+      End
+      Begin Threed.SSFrame SSFrame11 
+         Height          =   915
+         Left            =   105
+         TabIndex        =   77
+         Top             =   345
+         Width           =   2580
+         _Version        =   65536
+         _ExtentX        =   4551
+         _ExtentY        =   1614
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Composición Institucional"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   28
+            Left            =   105
+            TabIndex        =   78
+            Top             =   180
+            Width           =   2175
+         End
+      End
+      Begin Threed.SSFrame SSFrame12 
+         Height          =   915
+         Left            =   2700
+         TabIndex        =   79
+         Top             =   345
+         Width           =   2640
+         _Version        =   65536
+         _ExtentX        =   4657
+         _ExtentY        =   1614
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Actividad Económica"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+            Height          =   195
+            Index           =   32
+            Left            =   105
+            TabIndex        =   80
+            Top             =   180
+            Width           =   1800
+         End
+      End
+      Begin VB.Frame Frame2 
+         Height          =   930
+         Left            =   5355
+         TabIndex        =   81
+         Top             =   330
+         Width           =   2655
+         Begin VB.Label Label 
+            AutoSize        =   -1  'True
+            Caption         =   "Clasificación Riesgo"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   8.25
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00800000&
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

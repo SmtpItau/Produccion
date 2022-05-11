@@ -1,0 +1,2987 @@
+VERSION 5.00
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "THREED32.OCX"
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{05BDEB52-1755-11D5-9109-000102BF881D}#1.0#0"; "BacControles.ocx"
+Begin VB.Form BacVI 
+   Caption         =   "Venta con Pacto"
+   ClientHeight    =   6135
+   ClientLeft      =   465
+   ClientTop       =   2235
+   ClientWidth     =   9945
+   ForeColor       =   &H00C0C0C0&
+   Icon            =   "Bacmdvi.frx":0000
+   KeyPreview      =   -1  'True
+   LinkTopic       =   "Form1"
+   MDIChild        =   -1  'True
+   NegotiateMenus  =   0   'False
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   6135
+   ScaleWidth      =   9945
+   Begin MSComctlLib.Toolbar Toolbar1 
+      Align           =   1  'Align Top
+      Height          =   495
+      Left            =   0
+      TabIndex        =   37
+      Top             =   0
+      Width           =   9945
+      _ExtentX        =   17542
+      _ExtentY        =   873
+      ButtonWidth     =   847
+      ButtonHeight    =   820
+      Appearance      =   1
+      Style           =   1
+      ImageList       =   "ImageList1"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   8
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Style           =   3
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmbgrabar"
+            Description     =   "GRABAR"
+            Object.ToolTipText     =   "Grabar"
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmbvende"
+            Description     =   "VENDE"
+            Object.ToolTipText     =   "Vende"
+            ImageIndex      =   2
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmbrestaura"
+            Description     =   "RESTAURA"
+            Object.ToolTipText     =   "Restaura"
+            ImageIndex      =   3
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmdfiltra"
+            Description     =   "filtra"
+            Object.ToolTipText     =   "Filtrar"
+            ImageIndex      =   4
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "CmdTipoFiltro"
+            Description     =   "Ver Sel."
+            Object.ToolTipText     =   "Ver Selección"
+            ImageIndex      =   5
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmdemision"
+            Description     =   "emisor"
+            Object.ToolTipText     =   "Emisor del Papel"
+            ImageIndex      =   6
+         EndProperty
+         BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmdcortes"
+            Description     =   "cortes"
+            Object.ToolTipText     =   "Cortes"
+            ImageIndex      =   7
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+   End
+   Begin VB.TextBox Text2 
+      BackColor       =   &H00C0C0C0&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H00800000&
+      Height          =   285
+      Left            =   240
+      TabIndex        =   36
+      Top             =   2880
+      Visible         =   0   'False
+      Width           =   1335
+   End
+   Begin VB.ComboBox Combo1 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00C0C0C0&
+      ForeColor       =   &H00800000&
+      Height          =   315
+      ItemData        =   "Bacmdvi.frx":030A
+      Left            =   3960
+      List            =   "Bacmdvi.frx":0317
+      Style           =   2  'Dropdown List
+      TabIndex        =   35
+      Top             =   2760
+      Visible         =   0   'False
+      Width           =   1455
+   End
+   Begin BacControles.txtNumero text1 
+      Height          =   255
+      Left            =   1695
+      TabIndex        =   33
+      Top             =   2835
+      Visible         =   0   'False
+      Width           =   1095
+      _ExtentX        =   1931
+      _ExtentY        =   450
+      BackColor       =   12632256
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   192
+      SelStart        =   5
+      Text            =   "0.0000"
+      Max             =   "999999999999.9999"
+      BorderStyle     =   0
+   End
+   Begin MSFlexGridLib.MSFlexGrid Table1 
+      Height          =   2775
+      Left            =   120
+      TabIndex        =   32
+      Top             =   2535
+      Width           =   9735
+      _ExtentX        =   17171
+      _ExtentY        =   4895
+      _Version        =   393216
+      Cols            =   14
+      FixedCols       =   2
+      BackColor       =   12632256
+      ForeColor       =   8388608
+      BackColorFixed  =   8421376
+      ForeColorFixed  =   16777215
+      GridLines       =   2
+   End
+   Begin BacControles.txtNumero TxtTotal 
+      Height          =   255
+      Left            =   1920
+      TabIndex        =   27
+      Top             =   2160
+      Width           =   1920
+      _ExtentX        =   3387
+      _ExtentY        =   450
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Text            =   "0"
+      CantidadDecimales=   "0"
+      Min             =   "-99999999999999"
+      Max             =   "999999999999999"
+   End
+   Begin VB.Frame FrmMontos 
+      Height          =   600
+      Left            =   30
+      TabIndex        =   13
+      Top             =   5475
+      Width           =   9990
+      Begin BacControles.txtNumero TXTSALDO 
+         Height          =   255
+         Left            =   8640
+         TabIndex        =   31
+         Top             =   240
+         Width           =   1215
+         _ExtentX        =   2143
+         _ExtentY        =   450
+         Enabled         =   0   'False
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         CantidadDecimales=   "0"
+         Min             =   "-9999999999999999"
+         Max             =   "99999999999999"
+      End
+      Begin BacControles.txtNumero TxtSel 
+         Height          =   255
+         Left            =   5880
+         TabIndex        =   30
+         Top             =   240
+         Width           =   1815
+         _ExtentX        =   3201
+         _ExtentY        =   450
+         Enabled         =   0   'False
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         CantidadDecimales=   "0"
+         Min             =   "-9999999999999999"
+         Max             =   "99999999999999"
+      End
+      Begin BacControles.txtNumero TxtInv 
+         Height          =   255
+         Left            =   3360
+         TabIndex        =   29
+         Top             =   240
+         Width           =   1575
+         _ExtentX        =   2778
+         _ExtentY        =   450
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         CantidadDecimales=   "0"
+         Min             =   "-9999999999999999"
+         Max             =   "99999999999999"
+      End
+      Begin BacControles.txtNumero TxtCartera 
+         Height          =   255
+         Left            =   960
+         TabIndex        =   28
+         Top             =   240
+         Width           =   1335
+         _ExtentX        =   2355
+         _ExtentY        =   450
+         Enabled         =   0   'False
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         CantidadDecimales=   "0"
+         Max             =   "99999999999999"
+      End
+      Begin VB.Label Label4 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   " Saldo"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   315
+         Left            =   7770
+         TabIndex        =   17
+         Top             =   195
+         Width           =   795
+      End
+      Begin VB.Label Label3 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   "Selec."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   315
+         Left            =   5040
+         TabIndex        =   16
+         Top             =   195
+         Width           =   795
+      End
+      Begin VB.Label Label2 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   "Inversión"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   315
+         Left            =   2460
+         TabIndex        =   15
+         Top             =   195
+         Width           =   855
+      End
+      Begin VB.Label Label6 
+         AutoSize        =   -1  'True
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   " Cartera"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   315
+         Left            =   90
+         TabIndex        =   14
+         Top             =   195
+         Width           =   795
+      End
+   End
+   Begin VB.Data Data1 
+      Caption         =   "Data1"
+      Connect         =   "Access"
+      DatabaseName    =   "C:\BTRADER\Mdb\BACTRD.mdb"
+      DefaultCursorType=   0  'DefaultCursor
+      DefaultType     =   2  'UseODBC
+      Exclusive       =   0   'False
+      Height          =   300
+      Left            =   3360
+      Options         =   0
+      ReadOnly        =   0   'False
+      RecordsetType   =   1  'Dynaset
+      RecordSource    =   "MDDI"
+      Top             =   6720
+      Visible         =   0   'False
+      Width           =   2910
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   1515
+      Index           =   0
+      Left            =   60
+      TabIndex        =   1
+      Top             =   480
+      Width           =   2835
+      _Version        =   65536
+      _ExtentX        =   5001
+      _ExtentY        =   2672
+      _StockProps     =   14
+      Caption         =   "Inicio"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+      Begin BacControles.txtNumero txtIniPMS 
+         Height          =   255
+         Left            =   720
+         TabIndex        =   23
+         Top             =   1080
+         Width           =   1935
+         _ExtentX        =   3413
+         _ExtentY        =   450
+         Enabled         =   0   'False
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         CantidadDecimales=   "0"
+         Max             =   "999999999999"
+      End
+      Begin BacControles.txtNumero txtIniPMP 
+         Height          =   255
+         Left            =   720
+         TabIndex        =   22
+         Top             =   720
+         Width           =   1935
+         _ExtentX        =   3413
+         _ExtentY        =   450
+         Enabled         =   0   'False
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SelStart        =   5
+         Text            =   "0.0000"
+         Max             =   "99999999999999.9999"
+      End
+      Begin BacControles.txtFecha TxtFecIni 
+         Height          =   255
+         Left            =   1440
+         TabIndex        =   21
+         Top             =   360
+         Width           =   1215
+         _ExtentX        =   2143
+         _ExtentY        =   450
+         Text            =   "16/11/2000"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Enabled         =   0   'False
+         MinDate         =   -328716
+         MaxDate         =   2958465
+      End
+      Begin Threed.SSPanel PnlDiaIni 
+         Height          =   315
+         Left            =   120
+         TabIndex        =   11
+         Top             =   300
+         Width           =   1095
+         _Version        =   65536
+         _ExtentX        =   1931
+         _ExtentY        =   556
+         _StockProps     =   15
+         Caption         =   "Miércoles"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BevelOuter      =   0
+         Font3D          =   3
+         Alignment       =   5
+      End
+      Begin VB.Label Label 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "UF"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   1
+         Left            =   90
+         TabIndex        =   3
+         Top             =   750
+         Width           =   435
+      End
+      Begin VB.Label Label 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "$$"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   255
+         Index           =   2
+         Left            =   120
+         TabIndex        =   2
+         Top             =   1095
+         Width           =   375
+      End
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   1515
+      Index           =   1
+      Left            =   3000
+      TabIndex        =   4
+      Top             =   480
+      Width           =   3735
+      _Version        =   65536
+      _ExtentX        =   6588
+      _ExtentY        =   2672
+      _StockProps     =   14
+      Caption         =   "Pacto"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Alignment       =   2
+      Font3D          =   3
+      Begin BacControles.txtNumero txtplazo 
+         Height          =   255
+         Left            =   2760
+         TabIndex        =   34
+         Top             =   960
+         Width           =   855
+         _ExtentX        =   1508
+         _ExtentY        =   450
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         CantidadDecimales=   "0"
+         Max             =   "9999999999.9999"
+      End
+      Begin BacControles.txtNumero TxtTasa 
+         Height          =   255
+         Left            =   960
+         TabIndex        =   24
+         Top             =   960
+         Width           =   975
+         _ExtentX        =   1720
+         _ExtentY        =   450
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SelStart        =   5
+         Text            =   "0.0000"
+      End
+      Begin VB.ComboBox CmbBase 
+         BackColor       =   &H00FFFFFF&
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         ItemData        =   "Bacmdvi.frx":0331
+         Left            =   840
+         List            =   "Bacmdvi.frx":033E
+         Style           =   2  'Dropdown List
+         TabIndex        =   19
+         Top             =   1800
+         Width           =   795
+      End
+      Begin VB.ComboBox CmbMon 
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         Left            =   975
+         Style           =   2  'Dropdown List
+         TabIndex        =   0
+         Top             =   435
+         Width           =   1245
+      End
+      Begin VB.Label Label 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         Caption         =   "Tasa"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   3
+         Left            =   390
+         TabIndex        =   8
+         Top             =   960
+         Width           =   435
+      End
+      Begin VB.Label Label 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Base"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   4
+         Left            =   150
+         TabIndex        =   7
+         Top             =   1935
+         Width           =   435
+      End
+      Begin VB.Label Label 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         Caption         =   "Plazo"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   5
+         Left            =   2205
+         TabIndex        =   6
+         Top             =   990
+         Width           =   480
+      End
+      Begin VB.Label Label 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         Caption         =   "Moneda"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   6
+         Left            =   180
+         TabIndex        =   5
+         Top             =   480
+         Width           =   690
+      End
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   1515
+      Index           =   2
+      Left            =   6840
+      TabIndex        =   9
+      Top             =   480
+      Width           =   3015
+      _Version        =   65536
+      _ExtentX        =   5318
+      _ExtentY        =   2672
+      _StockProps     =   14
+      Caption         =   "Vencimiento"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Alignment       =   1
+      Font3D          =   3
+      Begin BacControles.txtNumero txtVenPMP 
+         Height          =   255
+         Left            =   840
+         TabIndex        =   26
+         Top             =   720
+         Width           =   2055
+         _ExtentX        =   3625
+         _ExtentY        =   450
+         Enabled         =   0   'False
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SelStart        =   5
+         Text            =   "0.0000"
+         Max             =   "999999999999"
+      End
+      Begin BacControles.txtFecha TxtFecVct 
+         Height          =   255
+         Left            =   1560
+         TabIndex        =   25
+         Top             =   360
+         Width           =   1335
+         _ExtentX        =   2355
+         _ExtentY        =   450
+         Text            =   "16/11/2000"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MinDate         =   -328716
+         MaxDate         =   2958465
+      End
+      Begin Threed.SSPanel PnlDiaFin 
+         Height          =   315
+         Left            =   90
+         TabIndex        =   12
+         Top             =   300
+         Width           =   1140
+         _Version        =   65536
+         _ExtentX        =   2011
+         _ExtentY        =   556
+         _StockProps     =   15
+         Caption         =   "Miércoles"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BevelOuter      =   0
+         Font3D          =   3
+         Alignment       =   5
+      End
+      Begin VB.Label Label 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "UF "
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   8
+         Left            =   180
+         TabIndex        =   10
+         Top             =   750
+         Width           =   345
+      End
+   End
+   Begin Threed.SSCommand CmdTipoFiltro 
+      Height          =   450
+      Left            =   6225
+      TabIndex        =   20
+      TabStop         =   0   'False
+      Top             =   2130
+      Visible         =   0   'False
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      Font3D          =   3
+      RoundedCorners  =   0   'False
+   End
+   Begin MSComctlLib.ImageList ImageList1 
+      Left            =   4680
+      Top             =   1980
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   25
+      ImageHeight     =   25
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   7
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacmdvi.frx":0350
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacmdvi.frx":07A2
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacmdvi.frx":0ABC
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacmdvi.frx":0F0E
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacmdvi.frx":389C8
+            Key             =   "S"
+         EndProperty
+         BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacmdvi.frx":38E1A
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacmdvi.frx":39134
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin VB.Label Label 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "Total Operación "
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
+      Height          =   240
+      Index           =   0
+      Left            =   60
+      TabIndex        =   18
+      Top             =   2145
+      Width           =   1755
+   End
+End
+Attribute VB_Name = "BacVI"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+Dim Monto As Double
+Dim Tecla As String
+Dim FormHandle      As Long
+Dim iFlagKeyDown    As Integer
+Dim bufNominal      As Double
+Dim bufRutCart      As Long
+Dim sFecPro         As String
+Dim sFiltro         As String
+Dim nRutCartV       As String
+Dim cDvCartV        As String
+Dim cNomCartV       As String
+Dim dTipcam#
+Public FiltraVentaAutomatico As Boolean
+Dim Color As String
+Dim colorletra As String
+Dim z As Integer
+Dim filita As Integer
+Dim bold As String
+Dim columnita As Integer
+
+
+Private Sub Text2_GotFocus()
+Call Proc_Posi_Texto(Table1, Text2)
+Text2.SelLength = Len(Text2)
+Text2.SelStart = Len(Text2)
+End Sub
+
+Private Sub Text2_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = 27 Then
+    Text2_LostFocus
+End If
+If KeyCode = 13 Then
+  If Not Table1.Rows = 1 Then
+      Call Colocardata1
+  Else
+      Data1.Recordset.MoveFirst
+  End If
+   Data1.Recordset.Edit
+   Data1.Recordset!tm_clave_dcv = Text2.Text
+   Data1.Recordset.Update
+   Table1.TextMatrix(Table1.Row, 8) = Trim(Text2.Text)
+   BacControlWindows 100
+   Table1.SetFocus
+End If
+End Sub
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+    KeyAscii = Asc(UCase(Chr(KeyAscii)))
+End Sub
+
+Private Sub Text2_LostFocus()
+Text2.Text = ""
+Text2.Visible = False
+Table1.SetFocus
+End Sub
+Private Sub Combo1_GotFocus()
+    Call Proc_Posi_Texto(Table1, Combo1)
+End Sub
+
+Private Sub Combo1_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = 27 Then
+    Combo1_LostFocus
+    'Combo1.Visible = False
+    
+End If
+If KeyCode = 13 Then
+      If Not Table1.Rows = 1 Then
+        Call Colocardata1
+      Else
+         Data1.Recordset.MoveFirst
+      End If
+    
+        If Table1.Col = 7 Then
+            Data1.Recordset.Edit
+            Select Case Combo1.ListIndex 'UCase$(Left(Combo1.Text, 1)) 'Chr(KeyCode))
+            Case 0:
+                Data1.Recordset("tm_custodia") = "CLIENTE"
+                Data1.Recordset("tm_clave_dcv") = " "
+                Table1.TextMatrix(Table1.Row, 7) = "CLIENTE"
+                Table1.TextMatrix(Table1.Row, 8) = ""
+                KeyCode = 13
+            Case "1":
+               ' If Not IsNull(Data1.Recordset("tm_custodia")) Then
+               '     If Trim$(Data1.Recordset("tm_custodia")) <> "DCV" Then
+               '         Data1.Recordset("tm_custodia") = "DCV"
+               '         Data1.Recordset("tm_clave_dcv") = FUNC_GENERA_CLAVE_DCV
+               '         Table1.TextMatrix(Table1.Row, 6) = "DCV"
+               '         Table1.TextMatrix(Table1.Row, 7) = Data1.Recordset("tm_clave_dcv")
+               '         KeyCode = 13
+               '     Else
+               '         KeyCode = 0
+               '     End If
+               ' Else
+                    Data1.Recordset("tm_custodia") = "DCV"
+                    Data1.Recordset("tm_clave_dcv") = FUNC_GENERA_CLAVE_DCV
+                    Table1.TextMatrix(Table1.Row, 7) = "DCV"
+                    Table1.TextMatrix(Table1.Row, 8) = Data1.Recordset("tm_clave_dcv")
+                        
+                    KeyCode = 13
+               ' End If
+            Case "2":
+                Data1.Recordset("tm_custodia") = "PROPIA"
+                Data1.Recordset("tm_clave_dcv") = " "
+                Table1.TextMatrix(Table1.Row, 7) = "PROPIA"
+                Table1.TextMatrix(Table1.Row, 8) = ""
+                
+                KeyCode = 13
+            Case Else
+                KeyCode = 0
+            End Select
+            Data1.Recordset.Update
+            Combo1.Visible = False
+   
+        End If
+   
+End If
+End Sub
+
+Private Sub Combo1_LostFocus()
+
+    Combo1.Visible = False
+    'Table1.SetFocus
+
+    If Table1.Col + 1 < Table1.Cols Then
+        Table1.Col = Table1.Col + 1
+    End If
+    BacControlWindows 100
+    Table1.SetFocus
+End Sub
+
+Private Sub refresca()
+
+     Dim i As Integer
+     Data1.Refresh
+    For i = 1 To Table1.Rows - 1
+          Table1.Row = i
+          Call Llenar_Grilla
+          If Not Data1.Recordset.EOF Then
+            Data1.Recordset.MoveNext
+          End If
+    Next i
+        Table1.Refresh
+End Sub
+
+Private Function colores()
+
+If Data1.Recordset!tm_venta = "*" Then
+  Color = &HC0C0C0
+  colorletra = &HC0&
+  bold = False
+End If
+If Data1.Recordset!tm_venta = "V" Then
+  Color = &HFF0000
+  colorletra = &HFFFFFF
+  bold = True
+End If
+If Data1.Recordset!tm_venta = " " Then
+  Color = &HC0C0C0
+  colorletra = &H800000
+  bold = False
+End If
+
+ For z = 2 To Table1.Cols - 1
+      Table1.Col = z
+      ' Color = &HFF0000
+      Table1.CellBackColor = Color
+      ' colorletra = &HFFFFFF
+      Table1.CellForeColor = colorletra
+      Table1.CellFontBold = bold
+  Next z
+  Table1.Col = 2
+
+End Function
+
+Private Sub Llenar_Grilla()
+Dim z As Integer
+
+If Not Data1.Recordset.EOF Then
+'    Data1.Recordset.MoveLast
+    Table1.TextMatrix(Table1.Row, 0) = Data1.Recordset!tm_venta
+    Table1.TextMatrix(Table1.Row, 1) = Data1.Recordset!TM_INSTSER
+    Table1.TextMatrix(Table1.Row, 2) = Data1.Recordset!TM_NEMMON
+    Table1.TextMatrix(Table1.Row, 3) = Format(Data1.Recordset!tm_nominal, "#,##0.0000")
+    Table1.TextMatrix(Table1.Row, 4) = Format(Data1.Recordset!TM_TIR, "#,##0.0000")
+    Table1.TextMatrix(Table1.Row, 5) = Format(Data1.Recordset!TM_Pvp, "#,##0.0000")
+    Table1.TextMatrix(Table1.Row, 6) = Format(Data1.Recordset!TM_VP, "#,##0.0000")
+    Table1.TextMatrix(Table1.Row, 7) = IIf(IsNull(Data1.Recordset!tm_custodia) = True, " ", Data1.Recordset!tm_custodia)
+    Table1.TextMatrix(Table1.Row, 8) = IIf(IsNull(Data1.Recordset!tm_clave_dcv) = True, " ", Data1.Recordset!tm_clave_dcv)
+    Table1.TextMatrix(Table1.Row, 9) = Format(Data1.Recordset!TM_tircomp, "#,##0.0000")
+    Table1.TextMatrix(Table1.Row, 10) = Format(Data1.Recordset!TM_pvpcomp, "#,##0.0000")
+    Table1.TextMatrix(Table1.Row, 11) = Format(Data1.Recordset!tm_vptirc, "#,##0.0000")
+    Table1.TextMatrix(Table1.Row, 12) = Format(Val(Data1.Recordset!TM_VP) - Val(Data1.Recordset!tm_vptirc), "#,###,###,##0")
+    If Data1.Recordset!tm_carterasuper = "T" Then
+         Table1.TextMatrix(Table1.Row, 13) = "TRANSABLE"
+    ElseIf Data1.Recordset!tm_carterasuper = "P" Then
+         Table1.TextMatrix(Table1.Row, 13) = "PERMANENTE"
+    End If
+    Call colores
+   Table1.Col = 2
+End If
+
+End Sub
+
+Public Function Colocardata1()
+  Dim i As Integer
+  Monto = CDbl(Table1.TextMatrix(Table1.Row, 3))
+  
+  Data1.Recordset.MoveFirst
+  For i = 1 To Table1.Row - 1
+        Data1.Recordset.MoveNext
+  Next i
+  
+  
+End Function
+
+Private Sub cmbBase_LostFocus()
+    Call CalcularValorFinal
+End Sub
+
+
+Private Sub CmbMon_Change()
+Dim MonPac As Integer
+
+    If CmbMon.ListIndex = -1 Then
+        Exit Sub
+    End If
+    
+    CmbBase.ListIndex = CmbMon.ListIndex
+     MonPac = CmbMon.ItemData(CmbMon.ListIndex)
+    If Val(CmbMon.Tag) <> MonPac Then
+        'Actualizo los registros con moneda igual a la de liquidación
+        'DB.Execute "Update mddi Set tm_tcml = 1 , tm_mt = tm_vp WHERE tm_hwnd = " & FormHandle & " AND tm_monemi = " & MonPac
+        
+        'Actualizo los registros con moneda diferente a la de liquidación
+        'DB.Execute "Update mddi Set tm_tcml = 0 , tm_mt = 0 WHERE tm_hwnd = " & FormHandle & " AND tm_monemi <> " & MonPac
+        
+'        TxtTotal.Text = VI_SumarTotal(FormHandle)
+        
+        If dTipcam = 0 Then
+          txtIniPMP.Text = 0
+        Else
+          txtIniPMP.Text = TxtTotal.Text / dTipcam#
+        End If
+        
+    End If
+     BacControlWindows 12
+    'data1.Refresh
+End Sub
+Private Sub CmbMon_Click()
+Dim NemMon      As String
+Dim i           As Integer
+    If CmbMon.ListIndex <> -1 Then
+        NemMon = Trim$(CmbMon.List(CmbMon.ListIndex))
+        Label(1).Caption = NemMon
+        Label(8).Caption = NemMon
+        If giMonLoc <> CmbMon.ItemData(CmbMon.ListIndex) Then
+            sFecPro = Str(gsBac_Fecp)
+            
+          ' Call objValMon.Leer(CmbMon.ItemData(CmbMon.ListIndex), sFecPro)
+          ' Busco Tipo Cambio
+          
+            dTipcam# = funcBuscaTipcambio(CmbMon.ItemData(CmbMon.ListIndex), sFecPro)
+            
+            If dTipcam# = 0 Then
+               MsgBox "Tipo de cambio para : " & NemMon & " con fecha " & gsBac_Fecp & Chr(10) & Chr(13) & " NO ha sido ingresado.", vbExclamation, gsBac_Version
+               
+                For i% = 0 To CmbMon.ListCount - 1
+                   If Mid(CmbMon.List(i%), 1, 1) = "$" Then
+                      CmbMon.ListIndex = i%
+                      Exit For
+                   End If
+               Next i%
+
+            End If
+        Else
+            dTipcam# = 1
+        End If
+        
+        If dTipcam# = 0 Then
+           txtIniPMP.Text = 0
+        Else
+           txtIniPMP.Text = TxtTotal.Text / dTipcam#
+        End If
+        
+    End If
+    
+End Sub
+Private Sub cmbMon_GotFocus()
+
+    If CmbMon.ListIndex <> -1 Then
+        CmbMon.Tag = CmbMon.ItemData(CmbMon.ListIndex)
+    Else
+        CmbMon.Tag = "0"
+    End If
+
+End Sub
+
+
+ Sub Corta()
+
+   Dim Nominal#
+   Dim Fila       As Long
+If Table1.Row = 0 Then Exit Sub 'insertado05/02/2001
+   Fila = Table1.RowSel
+
+   If Data1.Recordset.RecordCount = 0 Then
+      Exit Sub
+
+   End If
+
+   Table1.Row = Fila
+
+   If Not Table1.Row = 1 Then
+      Call Colocardata1
+
+   Else
+      Data1.Recordset.MoveFirst
+
+   End If
+
+   Nominal# = CDbl(Table1.TextMatrix(Table1.Row, Ven_NOMINAL))
+   bufNominal = Val(Data1.Recordset("tm_nominalo"))
+
+   If Nominal = 0 Then
+      Exit Sub
+   End If
+    
+   If VENTA_VerDispon(FormHandle, Data1) = False Then
+      Exit Sub
+
+   End If
+
+   Set BacFrmIRF = Me
+    
+   BacControlWindows 30
+   BacIrfCo.Show 1
+   BacControlWindows 30
+
+   Table1.Row = Fila
+    
+   If Not Table1.Row = 1 Then
+      Call Colocardata1
+
+   Else
+      Data1.Recordset.MoveFirst
+
+   End If
+    
+   Data1.Recordset.Edit
+   Data1.Recordset!tm_nominal = Table1.TextMatrix(Table1.Row, Ven_NOMINAL)
+   Data1.Recordset.Update
+   
+   If Nominal# <> CDbl(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) Then
+      If VENTA_Bloquear(FormHandle, Data1) Then
+         Data1.Recordset.Edit
+         If CDbl(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) < Nominal# Then
+            Data1.Recordset!tm_venta = "P"
+
+         Else
+            Data1.Recordset!tm_venta = "V"
+
+         End If
+
+         Data1.Recordset.Update
+
+      End If
+
+   Else
+      Data1.Recordset.Edit
+      Data1.Recordset.Update
+
+   End If
+
+   Call Llenar_Grilla
+
+   Table1.SetFocus
+'
+'   Dim Nominal#
+'
+'    If Data1.Recordset.RecordCount = 0 Then
+'        Exit Sub
+'    End If
+'
+'    Nominal# = CDbl(Table1.TextMatrix(Table1.Row, Ven_NOMINAL))
+'    bufNominal = Val(Data1.Recordset("tm_nominalo"))
+'
+'    If Nominal = 0 Then Exit Sub
+'
+'    If VENTA_VerDispon(FormHandle, Data1) = False Then
+'       Exit Sub
+'    End If
+'
+'    Set BacFrmIRF = Me
+'    BacControlWindows 30
+'    BacIrfCo.Show 1
+'    BacControlWindows 30
+'
+'    Data1.Recordset.Edit
+'    Data1.Recordset!tm_nominal = Table1.TextMatrix(Table1.Row, Ven_NOMINAL)
+'    Data1.Recordset.Update
+'
+'    If Nominal# <> CDbl(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) Then
+'        'bufNominal = CDbl(table1.textmatrix(table1.row,5))
+'        'Call Table1_ExitEdit
+'        If VENTA_Bloquear(FormHandle, Data1) Then
+'            Data1.Recordset.Edit
+'            If CDbl(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) < Nominal# Then
+'                Data1.Recordset!tm_venta = "P"
+'
+'            Else
+'                Data1.Recordset!tm_venta = "V"
+'            End If
+'            Data1.Recordset.Update
+'        End If
+'
+'    Else
+'        Data1.Recordset.Edit
+'        Data1.Recordset.Update
+'
+'    End If
+'    Call Llenar_Grilla
+'    Table1.SetFocus
+'
+End Sub
+
+
+ Sub Emite()
+If Table1.Row = 0 Then Exit Sub 'insertado05/02/2001
+    BacControlWindows 100
+    If Data1.Recordset.RecordCount = 0 Then
+        Exit Sub
+    End If
+    If Data1.Recordset.EOF = True Then
+        Exit Sub
+    End If
+    
+    
+    BacControlWindows 100
+    If Not Table1.Row = 1 Then
+            BacControlWindows 50
+            Call Colocardata1
+            BacControlWindows 50
+    Else
+            Data1.Recordset.MoveFirst
+    End If
+    
+    If Trim$(Data1.Recordset("tm_instser")) = "" Then
+        Exit Sub
+    End If
+     BacControlWindows 50
+    'Guarda datos en variable global
+    With BacDatEmi
+         BacControlWindows 100
+        .sInstSer = Data1.Recordset("tm_instser")
+        .lRutemi = Data1.Recordset("tm_rutemi")
+        .iMonemi = Data1.Recordset("tm_monemi")
+        .sFecEmi = Data1.Recordset("tm_fecemi")
+        .sFecvct = Data1.Recordset("tm_fecven")
+        .dTasEmi = Data1.Recordset("tm_tasemi")
+        .iBasemi = Data1.Recordset("tm_basemi")
+        
+        .sFecpcup = Data1.Recordset("tm_fecpcup")
+        .dNumoper = Data1.Recordset("tm_numdocu")
+        .sTipOper = Data1.Recordset("tm_tipoper")
+        .sFecvtop = Data1.Recordset("tm_fecsal")
+        .iDiasdis = DateDiff("d", gsBac_Fecp, CDate(Data1.Recordset("tm_fecsal")))
+        BacControlWindows 200
+    End With
+    
+    BacIrfDg.varPsSeriado = Data1.Recordset("tm_mdse")
+    
+    BacIrfDg.Tag = "VI"
+    BacIrfDg.Show 1
+    
+    BacControlWindows 12
+    Table1.SetFocus
+
+End Sub
+
+Sub Filtrar()
+Dim Datos()
+
+    'Table1.Redraw = False
+    If Not FiltraVentaAutomatico Then
+        BacIrfSl.proTipOper = "VI"
+        BacIrfSl.Show vbModal
+    End If
+    
+    If giAceptar% = True Then
+  
+        nRutCartV = RutCartV
+        cDvCartV = DvCartV
+        cNomCartV = NomCartV
+  
+        Screen.MousePointer = 11
+    
+        Call VENTA_EliminarBloqueados(Data1, FormHandle)
+        Call VENTA_BorrarTx(FormHandle)
+    
+        Data1.Refresh
+'        Sql = "execute sp_filtrarcart_vi " & gSQL
+
+        Envia = Array(gSQL)
+      
+        If Bac_Sql_Execute("sp_filtrarcart_vi", Envia) Then
+    
+            sFiltro = gSQL
+            Table1.Rows = 2
+            
+            Do While Bac_SQL_Fetch(Datos())
+                
+                Call VENTA_Agregar(Data1, Datos(), hWnd, "VI")
+
+                Data1.Refresh
+                
+                If Not Data1.Recordset.EOF Then
+                    Data1.Recordset.MoveLast
+                    Call Llenar_Grilla
+                    Table1.Rows = Table1.Rows + 1
+                    Table1.Row = Table1.Rows - 1
+                End If
+                
+            Loop
+            
+            Data1.Refresh
+            
+            Toolbar1.Buttons(6).Tag = "Ver Sel."
+       
+            Data1.RecordSource = "SELECT * FROM mdventa WHERE tm_hwnd = " & hWnd & " AND tm_diasdisp >= " & txtplazo.Text
+            Data1.Refresh
+       
+            TxtTotal.Text = VENTA_SumarTotal(FormHandle)
+            txtCartera.Text = VENTA_SumarCartera(FormHandle, txtplazo.Text, Toolbar1)
+       
+            Table1.Enabled = True
+            Table1.SetFocus
+            
+            If Data1.Recordset.RecordCount > 0 Then
+                Toolbar1.Buttons(6).Enabled = True
+                Toolbar1.Buttons(7).Enabled = True
+                Toolbar1.Buttons(2).Enabled = True
+                Toolbar1.Buttons(3).Enabled = True
+                Toolbar1.Buttons(4).Enabled = True
+                Toolbar1.Buttons(5).Enabled = True
+                Toolbar1.Buttons(8).Enabled = True
+                TxtTotal.Enabled = True
+            End If
+          
+        Else
+            Table1.Rows = 1
+            MsgBox "Servidor SQL no Responde", vbExclamation, gsBac_Version
+        End If
+    
+        Screen.MousePointer = 0
+
+    End If
+    'SE AGREGO EL CONTROL A LA GRILLA
+    If Table1.Rows < 2 Then 'INSERTADO01/02/2001
+    Else 'INSERTADO01/02/2001
+        Table1.Rows = Table1.Rows - 1
+    End If 'INSERTADO01/02/2001
+    If Table1.Rows <> 1 And Table1.Rows > 0 Then Table1.Row = 1: Table1.SetFocus
+    'Table1.Redraw = True
+    
+End Sub
+
+Private Sub cmdlimpiar_Click()
+
+End Sub
+
+Sub Restaura()
+On Error Resume Next
+'Dim z As Integer
+If Table1.Row = 0 Then Exit Sub 'insertado05/02/2001
+If Trim(Table1.TextMatrix(Table1.Row, 0)) = "" Then
+    Table1.SetFocus
+    Exit Sub
+End If
+
+
+ filita = Table1.Row
+    If Data1.Recordset.RecordCount = 0 Then
+        Exit Sub
+    End If
+
+    Call VENTA_VerDispon(FormHandle, Data1)
+    If Not Table1.Row = 1 Then
+            Call Colocardata1
+    Else
+            Data1.Recordset.MoveFirst
+    End If
+
+    If Data1.Recordset("tm_venta") = "V" Or Data1.Recordset("tm_venta") = "P" Then
+        If VENTA_DesBloquear(FormHandle, Data1) Then
+            Data1.Recordset.Edit
+            Data1.Recordset("tm_venta") = " "
+            Data1.Recordset.Update
+        End If
+    End If
+
+    If Data1.Recordset("tm_venta") = "*" Then
+        If VENTA_VerBloqueo(FormHandle, Data1) Then
+            Data1.Recordset.Edit
+            Data1.Recordset("tm_venta") = " "
+            Data1.Recordset.Update
+        End If
+    End If
+
+    If Data1.Recordset.RecordCount > 0 Then
+        Call VENTA_Restaurar(Data1)
+    End If
+
+    Call CO_EliminarCortesMDB(FormHandle, Data1.Recordset("tm_correlao"))
+
+    TxtTotal.Text = VENTA_SumarTotal(FormHandle)
+
+    If Val(txtIniPMP.Text) > 0 Then
+        Call CalcularValorFinal
+    Else
+        txtVenPMP.Text = 0
+    End If
+'    Table1.TextMatrix(Table1.Row, 0) = Data1.Recordset("tm_venta")
+    Data1.Recordset.MoveLast
+    Table1.Rows = Data1.Recordset.RecordCount + 1
+    Data1.Refresh
+    Call refresca
+    Data1.Refresh
+    Table1.Refresh
+    Table1.Col = 2
+    If filita <= Table1.Rows - 1 Then
+        Table1.Row = filita
+    Else
+        Table1.Row = Table1.Rows - 1
+    End If
+
+    Table1.SetFocus
+
+End Sub
+Sub TipoFiltro()
+
+ If Toolbar1.Buttons(6).Tag = "Ver Todos" Then
+        Toolbar1.Buttons(6).Tag = "Ver Sel."
+        Toolbar1.Buttons(6).ToolTipText = "Ver Selección"
+            'CmdTipoFiltro.Caption = "Ver Sel."
+        Data1.RecordSource = "SELECT * FROM mdventa WHERE tm_hwnd = " & hWnd & " AND tm_diasdisp >= " & txtplazo.Text
+        Data1.Refresh
+    Else
+        filita = Table1.Row
+        If TxtTotal.Text > 0 Then
+         Toolbar1.Buttons(6).Tag = "Ver Todos"
+         Toolbar1.Buttons(6).ToolTipText = "Ver Todos"
+            'CmdTipoFiltro.Caption = "Ver Todos"
+            Data1.RecordSource = "SELECT * FROM mdventa WHERE tm_hwnd = " & hWnd & " AND tm_diasdisp >= " & txtplazo.Text & " AND ( tm_venta = " & Chr(34) & "V" & Chr(34) & " OR tm_venta = " & Chr(34) & "P" & Chr(34) & " )"
+            Data1.Refresh
+        End If
+    End If
+    
+    txtCartera.Text = VENTA_SumarCartera(FormHandle, txtplazo.Text, Toolbar1)
+    
+    Table1.Rows = 1
+    Table1.Row = 0
+    Do While Not Data1.Recordset.EOF
+       Table1.Rows = Table1.Rows + 1
+       Table1.Row = Table1.Rows - 1
+       Call Llenar_Grilla
+       Data1.Recordset.MoveNext
+    Loop
+   If filita <= Table1.Rows - 1 Then
+    Table1.Row = filita
+   End If
+    'Table1.SetFocus
+ 
+End Sub
+
+Sub Vende()
+'Dim z As Integer
+If Table1.Row = 0 Then Exit Sub 'insertado05/02/2001
+If Trim(Table1.TextMatrix(Table1.Row, 0)) <> "" Then
+    Table1.SetFocus
+    Exit Sub
+End If
+
+   filita = Table1.Row
+   
+   If Data1.Recordset.RecordCount = 0 Then
+      Exit Sub
+   End If
+   
+   If Not Table1.Rows = 1 Then
+      Call Colocardata1
+   Else
+      Data1.Recordset.MoveFirst
+   End If
+        
+    If VENTA_VerDispon(FormHandle, Data1) Then
+            If Data1.Recordset("tm_venta") = "V" Then
+               If VENTA_DesBloquear(FormHandle, Data1) Then
+                   Data1.Recordset.Edit
+                   Data1.Recordset("tm_venta") = " "
+                   Data1.Recordset.Update
+               End If
+            Else
+                If Data1.Recordset("tm_venta") = " " Or Data1.Recordset("tm_venta") = "*" Then
+                    If VENTA_Bloquear(FormHandle, Data1) Then
+                        Data1.Recordset.Edit
+                        Data1.Recordset("tm_venta") = "V"
+                        If Mid(Data1.Recordset("tm_custodia"), 1, 1) = "D" Then
+                           Data1.Recordset("tm_clave_dcv") = FUNC_GENERA_CLAVE_DCV
+                        Else
+                           Data1.Recordset("tm_clave_dcv") = ""
+                        End If
+                        Data1.Recordset.Update
+                        Table1.TextMatrix(Table1.Row, 8) = Data1.Recordset("tm_clave_dcv")
+                    Else
+                        Data1.Recordset.Edit
+                        Data1.Recordset("tm_venta") = "*"
+                        Data1.Recordset.Update
+                    End If
+                End If
+            End If
+        End If
+      
+        TxtTotal.Text = VENTA_SumarTotal(FormHandle)
+        Table1.TextMatrix(Table1.Row, 0) = Data1.Recordset!tm_venta
+        Call colores
+    '    KeyAscii = 0
+   If filita <= Table1.Rows - 1 Then
+    Table1.Row = filita
+   Else
+    Table1.Row = Table1.Rows - 1
+   End If
+
+    Table1.Col = 2
+    Table1.SetFocus
+
+End Sub
+
+Private Sub data1_Error(DataErr As Integer, Response As Integer)
+
+    'No Current Record
+    If DataErr = 3021 Then
+        DataErr = 0
+        Response = 0
+    End If
+    
+End Sub
+
+Private Sub Form_Activate()
+    Me.Tag = "VI"
+
+    BacControlWindows 30
+    Data1.Refresh
+    iFlagKeyDown = True
+
+    Screen.MousePointer = vbDefault
+    
+    RutCartV = nRutCartV
+    DvCartV = cDvCartV
+    NomCartV = cNomCartV
+    FiltraVentaAutomatico = False
+'    BacCentrarPantalla Me
+    
+    Exit Sub
+
+BacErrHnd:
+    
+    Screen.MousePointer = vbDefault
+    On Error GoTo 0
+    Exit Sub
+    
+End Sub
+Private Sub Form_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii = 13 Then
+        KeyAscii = 0
+        SendKeys "{TAB}"
+    End If
+    
+End Sub
+
+
+Private Sub Form_Load()
+Dim nSw%
+Dim nCont%
+
+    Screen.MousePointer = 11
+    'Me.Left = 0
+    Me.Top = 0
+    'Me.Width = 11925
+    Me.Height = 6000
+
+    FormHandle = Me.hWnd
+    iFlagKeyDown = True
+  
+    Toolbar1.Buttons(1).Enabled = True    'Separador
+    Toolbar1.Buttons(2).Enabled = False   'Grabar
+    Toolbar1.Buttons(3).Enabled = False   'Vende
+    Toolbar1.Buttons(4).Enabled = False   'Restaura
+    Toolbar1.Buttons(5).Enabled = True    'Filtro
+    Toolbar1.Buttons(6).Enabled = False    'tipoFiltro
+    Toolbar1.Buttons(7).Enabled = False   'Emision
+    Toolbar1.Buttons(8).Enabled = False   'Cortes
+   
+    TxtTotal.Enabled = False
+    
+    Call funcFindMonVal(CmbMon, CmbBase, "VI")
+    
+    If CmbMon.ListCount > -1 Then
+
+      CmbMon.ListIndex = 0
+      
+    End If
+    TxtFecIni.Text = Format$(gsBac_Fecp, "dd/mm/yyyy")
+    
+    nSw = 0
+    nCont = 1
+    
+    Do While nSw = 0
+    
+       txtplazo.Text = nCont
+       TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+
+       If EsFeriado(CDate(TxtFecVct.Text), "00001") Then
+            nCont = nCont + 1
+       Else
+            nSw = 1
+       End If
+       
+    Loop
+    txtplazo.Text = DateDiff("D", TxtFecIni.Text, TxtFecVct.Text)
+    PnlDiaIni.Caption = BacDiaSem(TxtFecIni.Text)
+    PnlDiaFin.Caption = BacDiaSem(TxtFecVct.Text)
+    
+    Call VENTA_IniciarTx(FormHandle, Data1, txtplazo.Text)
+    
+    
+    If CmbMon.ListIndex > -1 Then
+
+      CmbMon.ListIndex = 1
+      
+      sFecPro = Str(gsBac_Fecp)
+    
+      dTipcam# = funcBuscaTipcambio(CmbMon.ItemData(CmbMon.ListIndex), sFecPro)
+    
+    End If
+  ' Configurar las columnas de la grid.-
+    Table1.TextMatrix(0, 0) = "M"
+    Table1.TextMatrix(0, 1) = "Serie"
+    Table1.TextMatrix(0, 2) = "UM"
+    Table1.TextMatrix(0, 3) = "Nominal"
+    Table1.TextMatrix(0, 4) = "%Tir"
+    Table1.TextMatrix(0, 5) = "%Vpar"
+    Table1.TextMatrix(0, 6) = "Valor Presente"
+    Table1.TextMatrix(0, 7) = "Custodia"
+    Table1.TextMatrix(0, 8) = "Clave DCV"
+    Table1.TextMatrix(0, 9) = "%Tir C."
+    Table1.TextMatrix(0, 10) = "%Vpar C."
+    Table1.TextMatrix(0, 11) = "Valor de Compra"
+    Table1.TextMatrix(0, 12) = "Utilidad"
+    Table1.TextMatrix(0, 13) = "Categoria Cartera Super"
+    Table1.ColWidth(0) = 400
+    Table1.ColWidth(1) = 1500
+    Table1.ColWidth(2) = 500
+    Table1.ColWidth(3) = 1800
+    Table1.ColWidth(4) = 900
+    Table1.ColWidth(5) = 900
+    Table1.ColWidth(6) = 2800 'antes 1800
+    Table1.ColWidth(7) = 1200
+    Table1.ColWidth(8) = 1200
+    Table1.ColWidth(9) = 900
+    Table1.ColWidth(10) = 900
+    Table1.ColWidth(11) = 1800
+    Table1.ColWidth(12) = 0 '2500
+    Table1.ColWidth(13) = 2500
+'    Table1.ColumnCellAttrs(1) = True
+'    Table1.ColumnCellAttrs(2) = True
+'    Table1.ColumnCellAttrs(3) = True
+'    Table1.ColumnCellAttrs(4) = True
+'    Table1.ColumnCellAttrs(5) = True
+'    Table1.ColumnCellAttrs(6) = True
+'    Table1.ColumnCellAttrs(7) = True
+'    Table1.ColumnCellAttrs(8) = True
+'    Table1.ColumnCellAttrs(9) = True
+'    Table1.ColumnCellAttrs(10) = True
+'    Table1.ColumnCellAttrs(11) = True
+'    Table1.ColumnCellAttrs(12) = True
+'    Table1.ColumnCellAttrs(13) = True
+'    Table1.ColumnCellAttrs(14) = True
+'
+    
+    Toolbar1.Buttons(6).Tag = "Ver Sel."
+      'CmdTipoFiltro.Caption = "Ver Sel."
+    Toolbar1.Buttons(6).Enabled = False
+      'CmdTipoFiltro.Enabled = False
+    Table1.Enabled = False
+    TxtInv.Enabled = True
+       
+    Screen.MousePointer = 0
+
+End Sub
+
+Private Sub Form_Resize()
+On Error GoTo BacErrHnd
+
+Dim lScaleWidth&, lScaleHeight&, lPosIni&
+    
+  ' Cuando la ventana es minimizada, se ignora la rutina.-
+    If Me.WindowState = 1 Then
+    
+        ' Pinta borde del icono.-
+        Dim X!, y!, J%
+        
+        X = Me.Width
+        y = Me.Height
+           
+        For J% = 1 To 15
+            Line (0, 0)-(X, 0), QBColor(Int(Rnd * 15))
+            Line (X, 0)-(X, y), QBColor(Int(Rnd * 15))
+            Line (X, y)-(0, y), QBColor(Int(Rnd * 15))
+            Line (0, y)-(0, 0), QBColor(Int(Rnd * 15))
+            DoEvents
+        Next
+        Exit Sub
+           
+    End If
+    
+    lScaleWidth& = Me.ScaleWidth
+    lScaleHeight& = Me.ScaleHeight
+    If Me.WindowState <> 1 And Me.Width > 400 And Me.Height > 3600 Then
+        Table1.Width = Me.Width - 260
+        Table1.Height = Me.Height - 3590
+        FrmMontos.Top = Me.Height - 1050
+    End If
+    
+    Exit Sub
+
+BacErrHnd:
+    
+    On Error GoTo 0
+    Resume Next
+
+End Sub
+Private Sub Form_Unload(Cancel As Integer)
+
+    Call VENTA_EliminarBloqueados(Data1, FormHandle)
+    Call VENTA_BorrarTx(FormHandle)
+
+End Sub
+
+
+
+
+Private Sub CalcularValorFinal()
+Dim base%, Tasa#, ValIni#, Plazo&
+
+
+    base = funcBaseMoneda(CmbMon.ItemData(CmbMon.ListIndex))
+
+    Plazo = Val(txtplazo.Text)
+    If Plazo = 0 Then Exit Sub
+    
+    
+    ValIni = Val(txtIniPMP.Text)
+    If ValIni = 0 Then Exit Sub
+    
+    
+    Tasa = Val(TxtTasa.Text)
+    If Tasa = 0 Then Exit Sub
+    
+    
+    If dTipcam# = 1 Then
+      txtVenPMP.Text = Int(VI_ValorFinal(ValIni#, Tasa#, Plazo&, base%))
+    Else
+      txtVenPMP.Text = VI_ValorFinal(ValIni#, Tasa#, Plazo&, base%)
+    End If
+ 
+End Sub
+
+
+ Sub Graba()
+
+    BacIrfGr.proMoneda = Trim$(Mid$(CmbMon.Text, 1, 3))
+    BacIrfGr.proMtoOper = TxtTotal.Text
+    BacIrfGr.proHwnd = hWnd
+    'BacIrfGr.Show
+   
+    Call BacGrabarTX
+     
+    BacControlWindows 100
+     
+    If Not Grabacion_Operacion Then
+        Data1.Refresh
+    Else
+        FiltraVentaAutomatico = True
+        giAceptar = True
+      Call TipoFiltro
+        Me.Tag = "VI"
+    End If
+     
+End Sub
+
+
+
+Private Sub Table1_ColumnChange()
+    iFlagKeyDown = True
+End Sub
+
+Private Sub Table1_EnterEdit()
+
+    iFlagKeyDown = False
+    
+    If Table1.Col = Ven_NOMINAL Then
+        bufNominal = Val(Data1.Recordset("tm_nominalo"))
+    End If
+        
+End Sub
+
+
+Private Sub ChkMoneda(Columna%)
+Dim MonLiq As Integer
+Dim Mt#, MtMl#, TcMl#
+
+    'Recupera Moneda de Liquidación
+    If CmbMon.ListIndex = -1 Then
+        Exit Sub
+    End If
+    
+    Mt# = Data1.Recordset("tm_vp")
+    MtMl# = Data1.Recordset("tm_mtml")
+    TcMl# = Data1.Recordset("tm_tcml")
+    If TcMl# = 0 Then
+        TcMl# = dTipcam#
+    End If
+
+    MonLiq = CmbMon.ItemData(CmbMon.ListIndex)
+    If MonLiq = giMonLoc Then
+        If Data1.Recordset("tm_monemi") = MonLiq Then
+            TcMl# = 1
+            MtMl# = Mt#
+        Else
+            If Columna = 7 Then
+                MtMl# = Mt# * TcMl#
+            ElseIf Columna = 8 Then
+                MtMl# = Mt# * TcMl#
+            ElseIf Columna = 9 Then
+                Mt# = MtMl# * TcMl#
+            Else
+                MtMl# = Mt# * TcMl#
+            End If
+        End If
+    Else
+        'Divido por el tipo de cambio
+        If Data1.Recordset("tm_monemi") = MonLiq Then
+            TcMl# = 1
+            MtMl# = Mt#
+        Else
+            If TcMl# = 0 Then Exit Sub
+            If Columna = 7 Then
+                MtMl# = Mt# / TcMl#
+            ElseIf Columna = 8 Then
+                MtMl# = Mt# / TcMl#
+            ElseIf Columna = 9 Then
+                Mt# = MtMl# / TcMl#
+            Else
+                MtMl# = Mt# / TcMl#
+            End If
+        End If
+    End If
+    
+    BacControlWindows 30
+    
+    Data1.Recordset.Edit
+    Data1.Recordset("tm_vp") = Mt#
+    Data1.Recordset("tm_mtml") = MtMl#
+    Data1.Recordset("tm_tcml") = TcMl#
+    Data1.Recordset.Update
+
+End Sub
+
+Private Sub Table1_ExitEdit()
+     iFlagKeyDown = True
+End Sub
+
+Private Sub Table1_FetchAttributes(Status As Integer, Split As Integer, Row As Long, Col As Integer, FgColor As Long, BgColor As Long, FontStyle As Integer)
+
+'    If Col = TABLE1.Col And Row = TABLE1.Row Then
+'        FgColor = BacToolTip.Color_Dest.ForeColor
+'        BgColor = BacToolTip.Color_Dest.BackColor
+'    Else
+'
+'        If Data1.Recordset.RecordCount > 0 Then
+'            If TABLE1.TextMatrix(TABLE1.Row, Ven_MARCA) = "V" Then
+'                FgColor = BacToolTip.Color_VentaNormal.ForeColor
+'                BgColor = BacToolTip.Color_VentaNormal.BackColor
+'            ElseIf TABLE1.TextMatrix(TABLE1.Row, Ven_MARCA) = "P" Then
+'                    FgColor = BacToolTip.Color_ParcialED.ForeColor
+'                    BgColor = BacToolTip.Color_ParcialED.BackColor
+'            ElseIf TABLE1.TextMatrix(TABLE1.Row, Ven_MARCA) = "*" Then
+'                    FgColor = BacToolTip.Color_Bloqueado.ForeColor
+'                    BgColor = BacToolTip.Color_Bloqueado.BackColor
+'            ElseIf (Col > 0 And Col < 4) Or Col > 7 Then
+'                FgColor = BacToolTip.Color_No_Edit.ForeColor
+'                BgColor = BacToolTip.Color_No_Edit.BackColor
+'            Else
+'                FgColor = BacToolTip.Color_Normal.ForeColor
+'            End If
+'
+'        End If
+'
+'    End If
+
+End Sub
+
+Private Sub Table1_DblClick()
+
+If Table1.Col = 7 And (Table1.TextMatrix(Table1.Row, 0) = "V" Or Table1.TextMatrix(Table1.Row, 0) = "P") Then
+        Combo1.Visible = True
+        Combo1.SetFocus
+ End If
+
+End Sub
+
+Private Sub Table1_KeyDown(KeyCode As Integer, Shift As Integer)
+ columnita = Table1.Col
+
+ If KeyCode = 13 And KeyCode <> 86 And KeyCode <> 82 And KeyCode <> 118 And KeyCode <> 114 And Table1.Col > 2 And Table1.Col < 7 Then
+            BacControlWindows 100
+             Table1.Col = columnita
+             text1.Top = Table1.CellTop + Table1.Top + 20
+             text1.Left = Table1.CellLeft + Table1.Left + 20
+             text1.Width = Table1.CellWidth - 20
+             'Call PROC_POSI_TEXTO(BacVP.TABLE1, TEXT1)
+            text1.Visible = True
+            If KeyCode > 47 And KeyCode < 58 Then text1.Text = Chr(KeyCode)
+            If KeyCode = 13 Then text1.Text = Table1.TextMatrix(Table1.Row, Table1.Col)
+            text1.SetFocus
+            Exit Sub
+ End If
+ If KeyCode = 13 Then
+    BacControlWindows 100
+    Table1.Col = columnita
+    Table1.SetFocus
+ End If
+Exit Sub
+
+KeyDownError:
+
+    MsgBox error(Err), vbExclamation, "Mensaje"
+    Data1.Refresh
+    Exit Sub
+    
+End Sub
+
+
+Private Sub Table1_KeyPress(KeyAscii As Integer)
+
+filita = Table1.Row
+If Table1.Col = 8 And Trim(Table1.TextMatrix(Table1.Row, 7)) = "DCV" And (Trim(Table1.TextMatrix(Table1.Row, 0)) = "V" Or Trim(Table1.TextMatrix(Table1.Row, 0)) = "P") Then
+       BacControlWindows 100
+       Text2.Text = Table1.TextMatrix(Table1.Row, Table1.Col)
+       Text2.Visible = True
+       Text2.MaxLength = 9
+       If KeyAscii <> 13 Then
+          Text2.Text = UCase(Chr(KeyAscii))
+       Else
+          Text2.Text = Table1.TextMatrix(Table1.Row, Table1.Col)
+       End If
+       Text2.SetFocus
+       BacControlWindows 100
+       Exit Sub
+  End If
+
+If KeyAscii <> 86 And KeyAscii <> 82 And KeyAscii <> 118 And KeyAscii <> 114 And Table1.Col = 7 And (Table1.TextMatrix(Table1.Row, 0) = "V" Or Table1.TextMatrix(Table1.Row, 0) = "P") Then
+        If KeyAscii = 80 Or KeyAscii = 112 Then
+           Combo1.ListIndex = 2
+        ElseIf KeyAscii = 68 Or KeyAscii = 100 Then
+           Combo1.ListIndex = 1
+        ElseIf KeyAscii = 67 Or KeyAscii = 99 Then
+           Combo1.ListIndex = 0
+        End If
+         Combo1.Visible = True
+        Combo1.SetFocus
+  
+        Exit Sub
+End If
+       
+    columnita = Table1.Col
+    BacToUCase KeyAscii
+    If KeyAscii <> 86 And KeyAscii <> 82 And Table1.Col > 2 And Table1.Col < 7 Then
+'    If KeyAscii <> 86 And KeyAscii <> 82 And Table1.Col > 2 And Table1.Col < 7 Then
+            BacControlWindows 100
+            Table1.Col = columnita
+            text1.Top = Table1.CellTop + Table1.Top + 20
+            text1.Left = Table1.CellLeft + Table1.Left + 20
+            text1.Width = Table1.CellWidth - 20
+            text1.Visible = True
+            If KeyAscii > 47 And KeyAscii < 58 Then text1.Text = Chr(KeyAscii)
+            If KeyAscii = 13 Then text1.Text = Table1.TextMatrix(Table1.Row, Table1.Col)
+            text1.SetFocus
+            BacControlWindows 100
+            Exit Sub
+    End If
+
+'Dim z As Integer
+'Dim Color As String
+'Dim colorletra As String
+ filita = Table1.Row
+'color = &HC0C0C0
+'colorletra = &H800000
+        
+        
+        
+        
+    If Not Table1.Row = 1 Then
+            Call Colocardata1
+    Else
+            Data1.Recordset.MoveFirst
+    End If
+    
+    If UCase$(Table1.TextMatrix(Table1.Row, Table1.Col)) = "CLAVE DCV" Then
+        If Trim$(Data1.Recordset("tm_custodia")) <> "DCV" Or (Trim$(Data1.Recordset("tm_venta")) = "" Or Trim$(Data1.Recordset("tm_venta")) = "*") Then
+            KeyAscii = 0
+            Exit Sub
+        End If
+    End If
+     
+    If Chr(KeyAscii) = "." Or Chr(KeyAscii) = "," Then
+        KeyAscii = Asc(gsBac_PtoDec)
+    End If
+    
+    If KeyAscii = 27 Then
+       iFlagKeyDown = True
+       Exit Sub
+    End If
+    
+    If KeyAscii <> 82 And KeyAscii <> 86 Then
+       Select Case Table1.Col
+       Case Ven_NOMINAL, Ven_VPS
+            If Not iFlagKeyDown Then
+             KeyAscii = BacPunto(Table1, KeyAscii, 12, 4)
+            End If
+             KeyAscii = BACValIngNumGrid(KeyAscii)
+       Case Ven_TIR, Ven_VPAR
+            If Not iFlagKeyDown Then
+             KeyAscii = BacPunto(Table1, KeyAscii, 3, 4)
+            End If
+             KeyAscii = BACValIngNumGrid(KeyAscii)
+       End Select
+    End If
+                 
+        
+           
+    'Tecla "R"
+    If KeyAscii = 82 Then
+ '       color = &HC0C0C0
+ '       colorletra = &H800000
+        If Trim(Table1.TextMatrix(Table1.Row, 0)) <> "" Then
+            KeyAscii = 0
+            'Restaura Valores Originales
+
+            Call VENTA_VerDispon(FormHandle, Data1)
+
+            If Data1.Recordset("tm_venta") = "V" Or Data1.Recordset("tm_venta") = "P" Then
+                If VENTA_DesBloquear(FormHandle, Data1) Then
+                    Data1.Recordset.Edit
+                    Data1.Recordset("tm_venta") = " "
+                    Data1.Recordset.Update
+                    If Toolbar1.Buttons(6).Tag = "Ver Todos" And Table1.Rows - 1 = 1 Then
+                        Toolbar1.Buttons(6).Tag = "Ver Sel."
+                           'CmdTipoFiltro.Caption = "Ver Sel."
+                        Data1.RecordSource = "SELECT * FROM mdventa WHERE tm_hwnd = " & hWnd & " AND tm_diasdisp >= 1"
+                        Data1.Refresh
+
+                    ElseIf Toolbar1.Buttons(6).Tag = "Ver Todos" And Table1.Rows > 1 Then
+                        Data1.RecordSource = "SELECT * FROM mdventa WHERE tm_hwnd = " & hWnd & " AND tm_diasdisp >= 1" & " AND ( tm_venta = " & Chr(34) & "V" & Chr(34) & " OR tm_venta = " & Chr(34) & "P" & Chr(34) & " )"
+                        Data1.Refresh
+                    End If
+
+                    Table1.Row = 1
+               End If
+            End If
+
+            If Data1.Recordset("tm_venta") = "*" Then
+               If VENTA_VerBloqueo(FormHandle, Data1) Then
+                      Data1.Recordset.Edit
+                      Data1.Recordset("tm_venta") = " "
+                      Data1.Recordset.Update
+                End If
+            End If
+
+            If Data1.Recordset.RecordCount > 0 Then
+               Call VENTA_Restaurar(Data1)
+            End If
+
+            Call CO_EliminarCortesMDB(FormHandle, Data1.Recordset("tm_correlao"))
+
+            TxtTotal.Text = VENTA_SumarTotal(FormHandle)
+
+            If Val(txtIniPMP.Text) > 0 Then
+                Call CalcularValorFinal
+            Else
+                txtVenPMP.Text = 0
+            End If
+                Data1.Recordset.MoveLast
+                Table1.Rows = Data1.Recordset.RecordCount + 1
+                Data1.Refresh
+                Call refresca
+                Table1.Refresh
+
+            'Table1.TextMatrix(Table1.Row, 0) = Data1.Recordset!tm_venta
+            'Table1.TextMatrix(Table1.Row, 7) = Data1.Recordset!tm_clave_dcv
+        End If
+ 
+        End If
+        
+    'TECLA "V"
+    If KeyAscii = 86 Then
+      '  Color = &HFF0000
+      '  colorletra = &HFFFFFF
+        If Trim(Table1.TextMatrix(Table1.Row, 0)) = "" Then
+          If VENTA_VerDispon(FormHandle, Data1) Then
+          
+              If Data1.Recordset("tm_venta") = "V" Then
+                 If VENTA_DesBloquear(FormHandle, Data1) Then
+                     Data1.Recordset.Edit
+                     Data1.Recordset("tm_venta") = " "
+                     Data1.Recordset.Update
+                 End If
+              Else
+                  If Data1.Recordset("tm_venta") = " " Or Data1.Recordset("tm_venta") = "*" Then
+                      If VENTA_Bloquear(FormHandle, Data1) Then
+                          Data1.Recordset.Edit
+                          Data1.Recordset("tm_venta") = "V"
+                          If Mid(Data1.Recordset("tm_custodia"), 1, 1) = "D" Then
+                             Data1.Recordset("tm_clave_dcv") = FUNC_GENERA_CLAVE_DCV
+                          Else
+                             Data1.Recordset("tm_clave_dcv") = ""
+                          End If
+                          Data1.Recordset.Update
+                          Table1.TextMatrix(Table1.Row, 8) = Data1.Recordset("tm_clave_dcv")
+                      Else
+                          Data1.Recordset.Edit
+                          Data1.Recordset("tm_venta") = "*"
+                          Data1.Recordset.Update
+                          
+                          
+                      End If
+                  End If
+              
+              End If
+              
+          End If
+        
+          TxtTotal.Text = VENTA_SumarTotal(FormHandle)
+          Table1.TextMatrix(Table1.Row, 0) = Data1.Recordset!tm_venta
+          Call colores
+          KeyAscii = 0
+         
+        End If
+    End If
+    Data1.Refresh
+If filita <= Table1.Rows - 1 Then
+    Table1.Row = filita
+Else
+    Table1.Row = Table1.Rows - 1
+End If
+ 
+ Table1.Col = columnita
+ Table1.SetFocus
+
+End Sub
+
+Private Sub Table1_Update(Row As Long, Col As Integer, Value As String)
+On Error GoTo ExitEditError
+
+Dim Columna%
+
+    MousePointer = 11
+    
+    Columna = Table1.Col
+    
+    If Data1.Recordset.RecordCount = 0 Then
+        MousePointer = 0
+        Exit Sub
+    End If
+
+    Data1.Recordset.Edit
+    Data1.Recordset.Update
+    
+    'Para que el datos aparezca en la grid
+    BacControlWindows 60
+    
+    If Columna = Ven_NOMINAL Then
+        If VENTA_VerDispon(FormHandle, Data1) Then
+            If Val(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) <> Data1.Recordset("tm_nominalo") Then
+                If Val(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) > bufNominal Then
+                    MsgBox "NOMINAL INGRESADO MAYOR AL DISPONIBLE, " & NL & NL & "SE RESTAURARA EL NOMINAL INICIAL", vbExclamation, "Mensaje"
+                    Data1.Recordset.Edit
+                    Data1.Recordset("tm_nominal") = Data1.Recordset("tm_nominalo")
+                    Data1.Recordset.Update
+                    BacControlWindows 30
+                
+                    If Data1.Recordset("tm_venta") = "V" Or Data1.Recordset("tm_venta") = "P" Then
+                        If VENTA_DesBloquear(FormHandle, Data1) Then
+                            Data1.Recordset.Edit
+                            Data1.Recordset("tm_venta") = " "
+                            Data1.Recordset.Update
+                        End If
+                    End If
+                    
+                    Call VENTA_Restaurar(Data1)
+                    Call CO_EliminarCortesMDB(FormHandle, Data1.Recordset("tm_correlao"))
+                Else
+                    If VPVI_LeerCortes(Data1, FormHandle) Then
+                        If Trim(Data1.Recordset("tm_venta")) = "" And Data1.Recordset("tm_nominal") <> Data1.Recordset("tm_nominalo") Then
+                            If VENTA_Bloquear(FormHandle, Data1) Then
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = "P"
+                                Data1.Recordset.Update
+                            Else
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = "*"
+                                Data1.Recordset.Update
+                            End If
+                        Else
+                            If Data1.Recordset("tm_venta") = "V" Then
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = "P"
+                                Data1.Recordset.Update
+                            End If
+                        End If
+                    Else
+                        If Data1.Recordset("tm_venta") = "V" Or Data1.Recordset("tm_venta") = "P" Then
+                            If VENTA_DesBloquear(FormHandle, Data1) Then
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = " "
+                                Data1.Recordset.Update
+                            End If
+                        End If
+        
+                        Call VENTA_Restaurar(Data1)
+                        Call CO_EliminarCortesMDB(FormHandle, Data1.Recordset("tm_correlao"))
+                    End If
+                End If
+            Else
+                If Data1.Recordset("tm_venta") = "P" Then
+                    Data1.Recordset.Edit
+                    Data1.Recordset("tm_venta") = "V"
+                    Data1.Recordset.Update
+                ElseIf Data1.Recordset("tm_venta") = " " Then
+                        If VENTA_Bloquear(FormHandle, Data1) Then
+                            Data1.Recordset.Edit
+                            Data1.Recordset("tm_venta") = "V"
+                            Data1.Recordset.Update
+                        Else
+                            Data1.Recordset.Edit
+                            Data1.Recordset("tm_venta") = "*"
+                            Data1.Recordset.Update
+                        End If
+                End If
+            End If
+        End If
+        
+        If CDbl(Table1.TextMatrix(Table1.Row, Ven_TIR)) <> 0 Then
+            Call VENTA_Valorizar(2, Data1)
+        ElseIf Val(Table1.TextMatrix(Table1.Row, Ven_VPAR)) <> 0 Then
+            Call VENTA_Valorizar(1, Data1)
+        ElseIf Val(Table1.TextMatrix(Table1.Row, Ven_VPS)) <> 0 Then
+            Call VENTA_Valorizar(3, Data1)
+        End If
+   
+    ElseIf Columna = Ven_TIR Then
+            Call VENTA_Valorizar(2, Data1)
+    ElseIf Columna = Ven_VPAR Then
+            Call VENTA_Valorizar(1, Data1)
+    ElseIf Columna = Ven_VPS Then
+            Call VENTA_Valorizar(3, Data1)
+    End If
+    
+    BacControlWindows 12
+    Call ChkMoneda(Columna%)
+    BacControlWindows 12
+
+    If Columna > 3 And Columna < 13 Then
+    
+       'Chequea contra la moneda de liquidación
+        Call ChkMoneda(Columna%)
+        BacControlWindows 12
+        
+       'Sumar el total y desplegar.-
+        TxtTotal.Text = VENTA_SumarTotal(FormHandle)
+        
+        If dTipcam = 0 Then
+          txtIniPMP.Text = 0
+        Else
+          txtIniPMP.Text = TxtTotal.Text / dTipcam#
+        End If
+
+    End If
+    
+    If Columna = Ven_NOMINAL Then
+        SendKeys "{TAB 1}"
+    ElseIf Columna = Ven_TIR Then
+        SendKeys "{TAB 2}"
+    ElseIf Columna = Ven_VPS Then
+        SendKeys "{TAB 1}"
+    End If
+        
+    MousePointer = 0
+    iFlagKeyDown = True
+
+    Exit Sub
+    
+ExitEditError:
+
+    MousePointer = 0
+    MsgBox error(Err), vbExclamation, "Mensaje"
+    Data1.Refresh
+    iFlagKeyDown = True
+    Exit Sub
+
+End Sub
+
+Private Sub Table1_LeaveCell()
+
+    If Table1.Row <> 0 And Table1.Col > 1 Then
+        Table1.CellFontBold = True
+        If Table1.TextMatrix(Table1.Row, 0) = "V" Then
+            Table1.CellBackColor = vbBlue
+            Table1.CellForeColor = vbWhite
+        ElseIf Table1.TextMatrix(Table1.Row, 0) = "P" Then
+            Table1.CellBackColor = vbCyan
+            Table1.CellForeColor = vbBlack
+        ElseIf Table1.TextMatrix(Table1.Row, 0) = "*" Then
+            Table1.CellBackColor = vbGreen + vbWhite    'vbBlack
+            Table1.CellForeColor = vbWhite
+        Else
+            Table1.CellBackColor = vbBlack
+            Table1.CellForeColor = vbBlack
+        
+        End If
+        Table1.CellFontBold = False
+        
+    End If
+
+End Sub
+
+Private Sub Table1_RowColChange()
+
+    Table1.CellBackColor = &H808000
+    Table1.CellForeColor = vbWhite
+
+End Sub
+
+Private Sub Table1_Scroll()
+   Text1_LostFocus
+End Sub
+
+Private Sub Table1_SelChange()
+
+    If Table1.Row <> 0 Then
+        'TABLE1.CellBackColor = &H808000:
+        Table1.CellFontBold = True
+        If Table1.TextMatrix(Table1.Row, 0) = "V" Then
+            Table1.CellBackColor = vbBlue
+            Table1.CellForeColor = vbWhite
+        ElseIf Table1.TextMatrix(Table1.Row, 0) = "P" Then
+            Table1.CellBackColor = vbCyan
+            Table1.CellForeColor = vbBlack
+        ElseIf Table1.TextMatrix(Table1.Row, 0) = "*" Then
+            Table1.CellBackColor = vbGreen + vbWhite    'vbBlack
+            Table1.CellForeColor = vbWhite
+        Else
+            Table1.CellBackColor = vbBlack
+            Table1.CellForeColor = vbBlack
+            
+        End If
+        Table1.CellFontBold = False
+    
+    End If
+End Sub
+
+Private Sub Text1_GotFocus()
+'text1.Text = Table1.TextMatrix(Table1.Row, Table1.Col)
+'Call PROC_POSI_TEXTO(Table1, text1)
+'text1.SelStart = Len(text1)
+End Sub
+
+Private Sub Text1_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = 27 Then
+    Text1_LostFocus
+End If
+
+Dim Value As String
+Dim colum As Integer
+If KeyCode = 13 Then
+    colum = Table1.Col
+    BacControlWindows 100
+    If Not Table1.Row = 1 Then
+            Call Colocardata1
+    Else
+            Data1.Recordset.MoveFirst
+    End If
+    
+        'enteredit
+    BacControlWindows 100
+    iFlagKeyDown = False
+    
+    If Table1.Col = Ven_NOMINAL Then
+        bufNominal = Val(Data1.Recordset("tm_nominalo"))
+    End If
+    'validate
+     
+   ' If Data1.Recordset.RecordCount = 0 Then
+    '    VALUE = ""
+        'Exit Sub
+   ' End If
+    
+    'If UCase((Table1.TextMatrix(Table1.Row, Table1.COL))) <> "CLAVE DCV" Then
+    '    If IsNumeric(VALUE) = False Then
+    '        'Cancel = True
+    '    End If
+    'End If
+    'update
+    On Error GoTo ExitEditError
+
+Dim Columna%
+
+    MousePointer = 11
+    
+    Columna = Table1.Col
+    
+    If Data1.Recordset.RecordCount = 0 Then
+        MousePointer = 0
+        Exit Sub
+    End If
+
+    Data1.Recordset.Edit
+    'Data1.Recordset.Update
+    
+    'Para que el datos aparezca en la grid
+    BacControlWindows 100
+    'Table1.TextMatrix(Table1.Row, Table1.Col) = Format(Text1.Text, "#,##0.0000")'modificado
+    Table1.TextMatrix(Table1.Row, Table1.Col) = text1.Text
+   BacControlWindows 100
+    If Columna = Ven_NOMINAL Then
+        Data1.Recordset!tm_nominal = text1.Text
+        Data1.Recordset.Update
+        If VENTA_VerDispon(FormHandle, Data1) Then
+            If Val(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) <> Data1.Recordset("tm_nominalo") Then
+                If Val(Table1.TextMatrix(Table1.Row, Ven_NOMINAL)) > bufNominal Then
+                    MsgBox "Nominal Ingresado Mayor Al Disponible, " & NL & NL & "Se Restaurara El Nominal Inicial", vbExclamation, "Mensaje"
+                    Data1.Recordset.Edit
+                    Data1.Recordset("tm_nominal") = Data1.Recordset("tm_nominalo")
+                    Data1.Recordset.Update
+                    BacControlWindows 30
+                
+                    If Data1.Recordset("tm_venta") = "V" Or Data1.Recordset("tm_venta") = "P" Then
+                        If VENTA_DesBloquear(FormHandle, Data1) Then
+                            Data1.Recordset.Edit
+                            Data1.Recordset("tm_venta") = " "
+                            Data1.Recordset!tm_clave_dcv = ""
+                            Data1.Recordset.Update
+                        End If
+                    End If
+                    
+                    Call VENTA_Restaurar(Data1)
+                    
+                    Call CO_EliminarCortesMDB(FormHandle, Data1.Recordset("tm_correlao"))
+                Else
+                    If VPVI_LeerCortes(Data1, FormHandle) Then
+                        If Trim(Data1.Recordset("tm_venta")) = "" And Data1.Recordset("tm_nominal") <> Data1.Recordset("tm_nominalo") Then
+                            If VENTA_Bloquear(FormHandle, Data1) Then
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = "P"
+                                Data1.Recordset.Update
+                            Else
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = "*"
+                                Data1.Recordset.Update
+                            End If
+                        Else
+                            If Data1.Recordset("tm_venta") = "V" Then
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = "P"
+                                Data1.Recordset.Update
+                            End If
+                        End If
+                    Else
+                        If Data1.Recordset("tm_venta") = "V" Or Data1.Recordset("tm_venta") = "P" Then
+                            If VENTA_DesBloquear(FormHandle, Data1) Then
+                                Data1.Recordset.Edit
+                                Data1.Recordset("tm_venta") = " "
+                                'Data1.Recordset!tm_custodia = ""
+                                Data1.Recordset.Update
+                            End If
+                        End If
+        
+                        Call VENTA_Restaurar(Data1)
+                        Call VENTA_DesBloquear(FormHandle, Data1)
+                        Call CO_EliminarCortesMDB(FormHandle, Data1.Recordset("tm_correlao"))
+                    End If
+                End If
+            Else
+                If Data1.Recordset("tm_venta") = "P" Then
+                    Data1.Recordset.Edit
+                    Data1.Recordset("tm_venta") = "V"
+                    Data1.Recordset.Update
+                ElseIf Data1.Recordset("tm_venta") = " " Then
+                        If VENTA_Bloquear(FormHandle, Data1) Then
+                            Data1.Recordset.Edit
+                            Data1.Recordset("tm_venta") = "V"
+                            Data1.Recordset.Update
+                        Else
+                            Data1.Recordset.Edit
+                            Data1.Recordset("tm_venta") = "*"
+                            Data1.Recordset.Update
+                        End If
+                End If
+            End If
+            If Trim(Table1.TextMatrix(Table1.Row, 7)) = "DCV" And (Data1.Recordset!tm_venta = "V" Or Data1.Recordset!tm_venta = "P") Then
+                 Data1.Recordset.Edit
+                 Data1.Recordset("tm_clave_dcv") = FUNC_GENERA_CLAVE_DCV
+                 Data1.Recordset.Update
+                 Table1.TextMatrix(Table1.Row, 8) = Data1.Recordset("tm_clave_dcv")
+            End If
+        End If
+        
+        If CDbl(Table1.TextMatrix(Table1.Row, Ven_TIR)) <> 0 Then
+            Call VENTA_Valorizar(2, Data1)
+        ElseIf Val(Table1.TextMatrix(Table1.Row, Ven_VPAR)) <> 0 Then
+            Call VENTA_Valorizar(1, Data1)
+        ElseIf Val(Table1.TextMatrix(Table1.Row, Ven_VPS)) <> 0 Then
+            Call VENTA_Valorizar(3, Data1)
+        End If
+    BacControlWindows 100
+    ElseIf Columna = Ven_TIR Then
+            Data1.Recordset!TM_TIR = text1.Text
+            Data1.Recordset.Update
+           Call VENTA_Valorizar(2, Data1)
+            
+    ElseIf Columna = Ven_VPAR Then
+            Data1.Recordset!TM_Pvp = text1.Text
+            Data1.Recordset.Update
+            Call VENTA_Valorizar(1, Data1)
+            
+    ElseIf Columna = Ven_VPS Then
+            Data1.Recordset!TM_VP = text1.Text
+            Data1.Recordset.Update
+            
+            Call VENTA_Valorizar(3, Data1)
+            
+    End If
+    
+    BacControlWindows 100
+    Call ChkMoneda(Columna%)
+    BacControlWindows 100
+
+    If Columna > 2 And Columna < 12 Then '2(3) 12(13)
+    
+       'Chequea contra la moneda de liquidación
+        Call ChkMoneda(Columna%)
+        BacControlWindows 100
+        
+       'Sumar el total y desplegar.-
+        TxtTotal.Text = VENTA_SumarTotal(FormHandle)
+        
+        If dTipcam = 0 Then
+          txtIniPMP.Text = 0
+        Else
+          txtIniPMP.Text = TxtTotal.Text / dTipcam#
+        End If
+
+    End If
+    
+    If Columna = Ven_NOMINAL Then
+        SendKeys "{TAB 1}"
+    ElseIf Columna = Ven_TIR Then
+        SendKeys "{TAB 2}"
+    ElseIf Columna = Ven_VPS Then
+        SendKeys "{TAB 1}"
+    End If
+        
+    MousePointer = 0
+    iFlagKeyDown = True
+    BacControlWindows 100
+    Llenar_Grilla
+    BacControlWindows 100
+    Text1_LostFocus
+    Table1.Col = colum
+End If
+Exit Sub
+
+ExitEditError:
+
+    MousePointer = 0
+'    MsgBox Error(Err), vbExclamation, "Mensaje"
+    'Data1.Refresh
+   iFlagKeyDown = True
+    Table1.Row = Table1.Rows - 1
+    Table1.TextMatrix(Table1.Row, 3) = Format(Monto, "###,###,###,##0.0000")
+    text1.Visible = False
+    Exit Sub
+End Sub
+
+Private Sub Text1_LostFocus()
+On Error GoTo error
+'text1.Text = 0
+text1.Visible = False
+BacControlWindows 100
+Table1.SetFocus
+'SendKeys "{right}"
+error:
+
+End Sub
+
+Private Sub Toolbar1_ButtonClick(ByVal Button As MSComctlLib.Button)
+Select Case Button.Key
+   Case Is = "cmbgrabar"
+      Call Graba
+   Case Is = "cmbvende"
+      Call Vende
+   Case Is = "cmbrestaura"
+      Call Restaura
+   Case Is = "cmdfiltra"
+      Call Filtrar
+   Case Is = "cmdemision"
+      Call Emite
+   Case Is = "cmdcortes"
+      Call Corta
+   Case Is = "CmdTipoFiltro"
+      Call TipoFiltro
+End Select
+End Sub
+
+Private Sub TxtFecVct_Change()
+txtplazo.Text = DateDiff("D", TxtFecIni.Text, TxtFecVct.Text)
+End Sub
+
+Private Sub TxtFecVct_LostFocus()
+
+    If Format(TxtFecVct.Text, "yyyymmdd") < Format(TxtFecIni.Text, "yyyymmdd") Then
+       MsgBox "La Fecha de Vencimiento debe ser Mayor a Fecha de Inicio.", 16
+       TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+       Exit Sub
+    End If
+
+    txtplazo.Tag = txtplazo.Text
+    txtplazo.Text = DateDiff("d", TxtFecIni.Text, TxtFecVct.Text)
+    
+    PnlDiaFin.Caption = BacDiaSem(TxtFecVct.Text)
+    'PnlDiaFin.ForeColor = BacToolTip.Color_VentaNormal.ForeColor
+
+    'Validar que Fecha de Vcto. NO sea Feriado
+    If EsFeriado(CDate(TxtFecVct.Text), "00001") Then
+        'PnlDiaFin.ForeColor = BacToolTip.Color_Bloqueado.ForeColor
+        MsgBox "La Fecha de Vcto. ingresada retorna un día No Hábil; Por favor reingrese", vbCritical, "FERIADOS"
+        txtplazo.Text = txtplazo.Tag
+        TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+        PnlDiaFin.Caption = BacDiaSem(TxtFecVct.Text)
+        'PnlDiaFin.ForeColor = BacToolTip.Color_VentaNormal.ForeColor
+        Exit Sub
+    End If
+    
+    If txtplazo.Text = 0 Then
+        MsgBox "Fecha de Vcto. Ingresada igual a la de Proceso; Por favor reingrese", vbCritical, "DIAS PACTOS"
+        txtplazo.Text = txtplazo.Tag
+        TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+        Exit Sub
+    End If
+    
+    Call CalcularValorFinal
+    
+End Sub
+Private Sub txtIniPMP_Change()
+
+    Call CalcularValorFinal
+    txtIniPMS.Text = TxtTotal.Text
+
+End Sub
+
+Private Sub TxtPlazo_GotFocus()
+
+  txtplazo.Tag = txtplazo.Text
+
+End Sub
+Private Sub TxtPlazo_LostFocus()
+Dim rs As Recordset
+Dim Sql As String
+
+    If txtplazo.Text <> txtplazo.Tag Then
+  
+        Sql = "SELECT SUM(tm_vp) As Total FROM mdventa WHERE ( tm_venta = 'V' OR tm_venta = 'P' ) AND tm_hwnd = " & hWnd & " AND tm_diasdisp < " & txtplazo.Text
+        Set rs = db.OpenRecordset(Sql, dbOpenSnapshot)
+    
+        If rs.RecordCount > 0 Then
+            If Not IsNull(rs.Fields("Total")) Then
+                If rs.Fields("Total") > 0 Then
+                    MsgBox "Existen Inst. Seleccionados con menor disponibilidad al Plazo ingresado, Debe Desmarcar", vbCritical, "Días Pacto"
+                    txtplazo.Text = txtplazo.Tag
+                    TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+                    Exit Sub
+                End If
+            End If
+        End If
+  
+        TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+        PnlDiaFin.Caption = BacDiaSem(TxtFecVct.Text)
+        'PnlDiaFin.ForeColor = BacToolTip.Color_VentaNormal.ForeColor
+        
+        If EsFeriado(CDate(TxtFecVct.Text), "00001") Then
+            'PnlDiaFin.ForeColor = BacToolTip.Color_Bloqueado.ForeColor
+            MsgBox "La Fecha de Vcto. ingresada retorna un día No Hábil; Por favor reingrese", vbCritical, "Feriados"
+            txtplazo.Text = txtplazo.Tag
+            TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+            PnlDiaFin.Caption = BacDiaSem(TxtFecVct.Text)
+            'PnlDiaFin.ForeColor = BacToolTip.Color_VentaNormal.ForeColor
+            Exit Sub
+        End If
+    
+        If txtplazo.Text = 0 Then
+            MsgBox "Fecha de Vcto. Ingresada igual a la de Proceso; Por favor reingrese", vbCritical, "DIAS PACTOS"
+            txtplazo.Text = txtplazo.Tag
+            TxtFecVct.Text = Format$(DateAdd("d", txtplazo.Text, TxtFecIni.Text), "dd/mm/yyyy")
+        Exit Sub
+        
+    End If
+    
+    Data1.RecordSource = "SELECT * FROM mdventa WHERE tm_hwnd = " & hWnd & " AND tm_diasdisp >= " & txtplazo.Text
+    Toolbar1.Buttons(6).Tag = "Ver Sel."
+      'CmdTipoFiltro.Caption = "Ver Sel."
+    
+    Data1.Refresh
+    
+    txtCartera.Text = VENTA_SumarCartera(FormHandle, txtplazo.Text, Toolbar1)
+    
+    Call CalcularValorFinal
+    
+  End If
+   
+End Sub
+
+Private Sub TxtSel_Change()
+
+    If TxtInv.Text > 0 Then
+       TxtSaldo.Text = TxtSel.Text - TxtInv.Text
+    Else
+       TxtSaldo.Text = 0
+    End If
+    
+End Sub
+
+Private Sub TxtTasa_KeyPress(KeyAscii As Integer)
+    
+    If Chr(KeyAscii) = "." Or Chr(KeyAscii) = "," Then
+        KeyAscii = Asc(gsBac_PtoDec)
+    End If
+
+End Sub
+
+Private Sub TxtTasa_LostFocus()
+    
+    Call CalcularValorFinal
+
+End Sub
+
+
+Private Sub TxtTotal_Change()
+    
+    txtIniPMS.Text = TxtTotal.Text
+    
+    If dTipcam = 0 Then
+      txtIniPMP.Text = 0
+    Else
+      txtIniPMP.Text = TxtTotal.Text / dTipcam
+    End If
+    
+    TxtSel.Text = TxtTotal.Text
+    
+    If Toolbar1.Buttons(6).Tag = "Ver Sel." And Val(TxtTotal.Text) = 0 Then
+       Toolbar1.Buttons(6).Enabled = False
+         'CmdTipoFiltro.Enabled = False
+    Else
+      Toolbar1.Buttons(6).Enabled = True
+         'CmdTipoFiltro.Enabled = True
+    End If
+    
+End Sub
+
+Private Sub TxtTotal_GotFocus()
+    
+    TxtTotal.Tag = TxtTotal.Text
+
+End Sub
+
+Private Sub TxtTotal_KeyDown(KeyCode As Integer, Shift As Integer)
+If KeyCode = 13 Then
+     Tecla = "13"
+Else
+    Tecla = ""
+End If
+
+End Sub
+
+Private Sub TxtTotal_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii% = vbKeyReturn Then
+        KeyAscii% = 0
+        SendKeys$ "{TAB}"
+    End If
+        
+End Sub
+
+
+Private Sub TxtTotal_LostFocus()
+Dim dTotalNuevo#, dTotalActual#
+Dim i As Integer
+If Not Table1.Row = 1 Then
+            Call Colocardata1
+    Else
+            Data1.Recordset.MoveFirst
+End If
+    
+    If TxtTotal.Tag <> TxtTotal.Text Then
+    
+        dTotalActual# = TxtTotal.Tag
+        dTotalNuevo# = TxtTotal.Text
+        
+        Call VENTA_ValorizarTotal(Data1, dTotalNuevo#, dTotalActual#)
+        Data1.Refresh
+        Data1.Recordset.MoveFirst
+        For i = 1 To Table1.Rows - 1
+          Table1.Row = i
+          Call Llenar_Grilla
+          If Not Data1.Recordset.EOF Then
+            Data1.Recordset.MoveNext
+          End If
+        Next i
+        Table1.Refresh
+    End If
+    
+'  If Tecla = "13" Then
+'      TxtTotal.SetFocus
+'  Else
+'      Table1.SetFocus
+'  End If
+
+
+End Sub
+

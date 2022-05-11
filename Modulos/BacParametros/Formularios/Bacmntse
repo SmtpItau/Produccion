@@ -1,0 +1,1925 @@
+VERSION 5.00
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "Threed32.ocx"
+Object = "{316A9483-A459-11D4-9073-005004A524B9}#1.0#0"; "BacControles.ocx"
+Begin VB.Form BacMntSe 
+   Appearance      =   0  'Flat
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Mantención de Series"
+   ClientHeight    =   5355
+   ClientLeft      =   1845
+   ClientTop       =   1950
+   ClientWidth     =   7995
+   BeginProperty Font 
+      Name            =   "MS Sans Serif"
+      Size            =   8.25
+      Charset         =   0
+      Weight          =   700
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
+   ForeColor       =   &H00C0C0C0&
+   Icon            =   "Bacmntse.frx":0000
+   KeyPreview      =   -1  'True
+   LinkTopic       =   "Form4"
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   MinButton       =   0   'False
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   5355
+   ScaleWidth      =   7995
+   Begin VB.CheckBox ChkBonos 
+      Caption         =   "BONOS"
+      ForeColor       =   &H00800000&
+      Height          =   270
+      Left            =   6675
+      TabIndex        =   57
+      Top             =   3255
+      Width           =   1095
+   End
+   Begin BacControles.txtNumero itbDia 
+      Height          =   315
+      Left            =   120
+      TabIndex        =   18
+      Top             =   4080
+      Width           =   375
+      _ExtentX        =   661
+      _ExtentY        =   556
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Text            =   "0"
+      CantidadDecimales=   "0"
+      Max             =   "99"
+   End
+   Begin BacControles.txtNumero FltCorte 
+      Height          =   315
+      Left            =   2850
+      TabIndex        =   20
+      Top             =   4095
+      Width           =   1710
+      _ExtentX        =   3016
+      _ExtentY        =   556
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      SelStart        =   5
+      Text            =   "0.0000"
+      Min             =   "0.0000"
+   End
+   Begin BacControles.txtNumero IntBaseCupones 
+      Height          =   315
+      Left            =   4680
+      TabIndex        =   21
+      Top             =   4080
+      Width           =   975
+      _ExtentX        =   1720
+      _ExtentY        =   556
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Text            =   "0"
+      CantidadDecimales=   "0"
+      Max             =   "9999999"
+   End
+   Begin BacControles.txtNumero itbNumDecimales 
+      Height          =   315
+      Left            =   4695
+      TabIndex        =   17
+      Top             =   3480
+      Width           =   975
+      _ExtentX        =   1720
+      _ExtentY        =   556
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Text            =   "0"
+      CantidadDecimales=   "0"
+      Max             =   "9"
+   End
+   Begin BacControles.txtNumero itbNumAmortizacion 
+      Height          =   315
+      Left            =   2865
+      TabIndex        =   16
+      Top             =   3480
+      Width           =   1695
+      _ExtentX        =   2990
+      _ExtentY        =   556
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Text            =   "0"
+      CantidadDecimales=   "0"
+      Max             =   "999"
+   End
+   Begin BacControles.txtNumero itbperiodo 
+      Height          =   315
+      Left            =   1650
+      TabIndex        =   15
+      Top             =   3480
+      Width           =   975
+      _ExtentX        =   1720
+      _ExtentY        =   556
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Text            =   "0"
+      CantidadDecimales=   "0"
+      Max             =   "99"
+   End
+   Begin BacControles.txtNumero itbcupones 
+      Height          =   315
+      Left            =   120
+      TabIndex        =   13
+      Top             =   3480
+      Width           =   615
+      _ExtentX        =   1085
+      _ExtentY        =   556
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Text            =   "0"
+      CantidadDecimales=   "0"
+      Max             =   "999"
+   End
+   Begin VB.ComboBox cmbTipoAmortizacion 
+      Enabled         =   0   'False
+      Height          =   315
+      Left            =   120
+      Style           =   2  'Dropdown List
+      TabIndex        =   22
+      Top             =   4680
+      Width           =   2055
+   End
+   Begin VB.ComboBox cmbTipoPeriodo 
+      Enabled         =   0   'False
+      Height          =   315
+      Left            =   855
+      Style           =   2  'Dropdown List
+      TabIndex        =   14
+      Top             =   3480
+      Width           =   690
+   End
+   Begin VB.TextBox txtSubSerie 
+      Enabled         =   0   'False
+      Height          =   315
+      Left            =   2280
+      MaxLength       =   12
+      TabIndex        =   23
+      Top             =   4680
+      Visible         =   0   'False
+      Width           =   1575
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   975
+      Index           =   0
+      Left            =   30
+      TabIndex        =   41
+      Top             =   480
+      Width           =   7725
+      _Version        =   65536
+      _ExtentX        =   13626
+      _ExtentY        =   1720
+      _StockProps     =   14
+      Caption         =   " Datos Serie "
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+      Begin BacControles.txtNumero ftbtera 
+         Height          =   315
+         Left            =   2925
+         TabIndex        =   2
+         Top             =   540
+         Width           =   1200
+         _ExtentX        =   2117
+         _ExtentY        =   556
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SelStart        =   5
+         Text            =   "0.0000"
+         Max             =   "99999.0000"
+      End
+      Begin VB.ComboBox Cmb_Moneda 
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   4440
+         Style           =   2  'Dropdown List
+         TabIndex        =   3
+         Top             =   540
+         Width           =   1170
+      End
+      Begin VB.ComboBox Cmb_Base 
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   5880
+         Style           =   2  'Dropdown List
+         TabIndex        =   4
+         Top             =   540
+         Width           =   750
+      End
+      Begin VB.TextBox txtMascara 
+         Height          =   315
+         Left            =   1530
+         MaxLength       =   10
+         MouseIcon       =   "Bacmntse.frx":030A
+         MousePointer    =   99  'Custom
+         TabIndex        =   1
+         Top             =   540
+         Width           =   1335
+      End
+      Begin VB.TextBox txtFamilia 
+         Height          =   315
+         Left            =   120
+         MaxLength       =   8
+         MouseIcon       =   "Bacmntse.frx":0614
+         MousePointer    =   99  'Custom
+         TabIndex        =   0
+         Top             =   540
+         Width           =   1335
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Máscara"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   1
+         Left            =   1575
+         TabIndex        =   46
+         Top             =   345
+         Width           =   735
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Familia"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   0
+         Left            =   150
+         TabIndex        =   45
+         Top             =   345
+         Width           =   600
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Moneda"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   3
+         Left            =   4560
+         TabIndex        =   44
+         Top             =   330
+         Width           =   690
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Base"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   4
+         Left            =   6000
+         TabIndex        =   43
+         Top             =   330
+         Width           =   435
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Tera"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   2
+         Left            =   3075
+         TabIndex        =   42
+         Top             =   330
+         Width           =   405
+      End
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   1665
+      Index           =   1
+      Left            =   -15
+      TabIndex        =   47
+      Top             =   1470
+      Width           =   7815
+      _Version        =   65536
+      _ExtentX        =   13785
+      _ExtentY        =   2937
+      _StockProps     =   14
+      Caption         =   " Datos de Emisión "
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+      Begin BacControles.txtNumero ftbtotalemitido 
+         Height          =   315
+         Left            =   5160
+         TabIndex        =   12
+         Top             =   1170
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   556
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SelStart        =   5
+         Text            =   "0.0000"
+      End
+      Begin BacControles.txtNumero ftbtasaemision 
+         Height          =   315
+         Left            =   3840
+         TabIndex        =   11
+         Top             =   1170
+         Width           =   1095
+         _ExtentX        =   1931
+         _ExtentY        =   556
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         SelStart        =   5
+         Text            =   "0.0000"
+         Max             =   "9999.9999"
+      End
+      Begin BacControles.txtNumero ftbplazo 
+         Height          =   315
+         Left            =   2760
+         TabIndex        =   10
+         Top             =   1170
+         Width           =   855
+         _ExtentX        =   1508
+         _ExtentY        =   556
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Text            =   "0"
+         CantidadDecimales=   "0"
+         Max             =   "9999"
+      End
+      Begin BacControles.txtFecha dtbfechavcto 
+         Height          =   315
+         Left            =   1440
+         TabIndex        =   9
+         Top             =   1170
+         Width           =   1215
+         _ExtentX        =   2143
+         _ExtentY        =   556
+         Text            =   "09/11/2000"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MinDate         =   -328716
+         MaxDate         =   2958465
+      End
+      Begin BacControles.txtFecha dtbfechaemision 
+         Height          =   315
+         Left            =   120
+         TabIndex        =   8
+         Top             =   1170
+         Width           =   1215
+         _ExtentX        =   2143
+         _ExtentY        =   556
+         Text            =   "09/11/2000"
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MinDate         =   -328716
+         MaxDate         =   2958465
+      End
+      Begin VB.TextBox txtDigito 
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   1380
+         MaxLength       =   1
+         TabIndex        =   6
+         Top             =   540
+         Width           =   225
+      End
+      Begin VB.TextBox txtNombreEmisor 
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   1800
+         MaxLength       =   40
+         TabIndex        =   7
+         Top             =   540
+         Width           =   5700
+      End
+      Begin VB.TextBox txtRutEmi 
+         Enabled         =   0   'False
+         Height          =   315
+         Left            =   120
+         MaxLength       =   9
+         MouseIcon       =   "Bacmntse.frx":091E
+         MousePointer    =   99  'Custom
+         TabIndex        =   5
+         Top             =   540
+         Width           =   1095
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Total Emitido"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   19
+         Left            =   5175
+         TabIndex        =   56
+         Top             =   930
+         Width           =   1125
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Nombre"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   6
+         Left            =   1815
+         TabIndex        =   54
+         Top             =   315
+         Width           =   660
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Rut Emisor"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   5
+         Left            =   135
+         TabIndex        =   53
+         Top             =   315
+         Width           =   930
+      End
+      Begin VB.Label Label 
+         AutoSize        =   -1  'True
+         Caption         =   "-"
+         BeginProperty Font 
+            Name            =   "Symbol"
+            Size            =   12
+            Charset         =   2
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   285
+         Index           =   17
+         Left            =   1215
+         TabIndex        =   52
+         Top             =   540
+         Width           =   165
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Tasa Emisión"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   10
+         Left            =   3855
+         TabIndex        =   51
+         Top             =   930
+         Width           =   1140
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Fecha Vcto."
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   8
+         Left            =   1440
+         TabIndex        =   50
+         Top             =   930
+         Width           =   1050
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Fecha Emisión"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   7
+         Left            =   120
+         TabIndex        =   49
+         Top             =   930
+         Width           =   1245
+      End
+      Begin VB.Label Label 
+         Appearance      =   0  'Flat
+         AutoSize        =   -1  'True
+         BackColor       =   &H80000005&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Plazo (años)"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Index           =   9
+         Left            =   2715
+         TabIndex        =   48
+         Top             =   930
+         Width           =   1065
+      End
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   1620
+      Index           =   3
+      Left            =   5910
+      TabIndex        =   55
+      Top             =   3525
+      Width           =   1995
+      _Version        =   65536
+      _ExtentX        =   3519
+      _ExtentY        =   2857
+      _StockProps     =   14
+      Caption         =   "BONOS"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+      Begin VB.OptionButton bonos_op1 
+         Caption         =   "Unica Emisión"
+         ForeColor       =   &H00800000&
+         Height          =   195
+         Left            =   300
+         TabIndex        =   24
+         Top             =   480
+         Width           =   1650
+      End
+      Begin VB.OptionButton bonos_op2 
+         Caption         =   "Emisión Variable"
+         ForeColor       =   &H00800000&
+         Height          =   450
+         Left            =   300
+         TabIndex        =   32
+         Top             =   885
+         Width           =   1305
+      End
+   End
+   Begin Threed.SSCommand cmdTabDes 
+      Height          =   600
+      Left            =   4800
+      TabIndex        =   26
+      Top             =   4560
+      Width           =   600
+      _Version        =   65536
+      _ExtentX        =   1058
+      _ExtentY        =   1058
+      _StockProps     =   78
+      Caption         =   "TD"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Courier New"
+         Size            =   15.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      Font3D          =   3
+   End
+   Begin Threed.SSCommand cmdTabPre 
+      Height          =   600
+      Left            =   4140
+      TabIndex        =   25
+      Top             =   4560
+      Width           =   600
+      _Version        =   65536
+      _ExtentX        =   1058
+      _ExtentY        =   1058
+      _StockProps     =   78
+      Caption         =   "TP"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Courier New"
+         Size            =   15.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      Font3D          =   3
+   End
+   Begin Threed.SSCheck chFlujosFijos 
+      Height          =   255
+      Left            =   795
+      TabIndex        =   19
+      Top             =   4110
+      Width           =   1095
+      _Version        =   65536
+      _ExtentX        =   1931
+      _ExtentY        =   450
+      _StockProps     =   78
+      Caption         =   "Flujos Fijos"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+   End
+   Begin Threed.SSCommand cmdLimpiar 
+      Height          =   450
+      Left            =   2400
+      TabIndex        =   29
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Limpiar"
+      ForeColor       =   8388608
+      Font3D          =   3
+   End
+   Begin Threed.SSCommand cmdEliminar 
+      Height          =   450
+      Left            =   1185
+      TabIndex        =   28
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Eliminar"
+      ForeColor       =   8388608
+      Font3D          =   3
+   End
+   Begin Threed.SSCommand cmdGrabar 
+      Height          =   450
+      Left            =   0
+      TabIndex        =   27
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Grabar"
+      ForeColor       =   8388608
+      Font3D          =   3
+   End
+   Begin Threed.SSCommand cmdSalir 
+      Height          =   450
+      Left            =   3600
+      TabIndex        =   30
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Salir"
+      ForeColor       =   8388608
+      Font3D          =   3
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Nº Decimales"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   15
+      Left            =   4635
+      TabIndex        =   40
+      Top             =   3240
+      Width           =   1155
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Nº Amortizaciones"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   14
+      Left            =   2925
+      TabIndex        =   39
+      Top             =   3240
+      Width           =   1560
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Período V/C"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   12
+      Left            =   1590
+      TabIndex        =   38
+      Top             =   3240
+      Width           =   1080
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Día V/C"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   13
+      Left            =   105
+      TabIndex        =   37
+      Top             =   3840
+      Width           =   720
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Cupones"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   11
+      Left            =   120
+      TabIndex        =   36
+      Top             =   3240
+      Width           =   750
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Base Cupones"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   20
+      Left            =   4560
+      TabIndex        =   35
+      Top             =   3870
+      Visible         =   0   'False
+      Width           =   1230
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Corte"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   21
+      Left            =   2895
+      TabIndex        =   34
+      Top             =   3870
+      Width           =   465
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Tipo Amortización"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   16
+      Left            =   120
+      TabIndex        =   33
+      Top             =   4440
+      Width           =   1530
+   End
+   Begin VB.Label Label 
+      Appearance      =   0  'Flat
+      AutoSize        =   -1  'True
+      BackColor       =   &H80000005&
+      BackStyle       =   0  'Transparent
+      Caption         =   "Sub Serie"
+      ForeColor       =   &H00800000&
+      Height          =   195
+      Index           =   18
+      Left            =   2280
+      TabIndex        =   31
+      Top             =   4440
+      Visible         =   0   'False
+      Width           =   840
+   End
+End
+Attribute VB_Name = "BacMntSe"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+Option Explicit
+Dim Sql As String
+Dim Datos()
+Public xincodigo As Double
+Dim xinrutemi    As Double
+Dim xinmonemi    As Double
+Dim xinbasemi    As Single
+Dim xemdv        As String
+Dim xemnombre    As String
+Dim xinmdtd      As String
+Dim xinmdpr      As String
+Dim xintipfec    As Single
+Dim xsefecemi    As Date
+Dim xsefecven    As Date
+Dim xsetasemi    As Double
+Dim xsetera      As Double
+Dim xsecupones   As Single
+Dim xsediavcup   As Single
+Dim xsepervcup   As Single
+Dim xsetipvcup   As Single
+Dim xseplazo     As Single
+Dim xsetipamor   As Single
+Dim xsenumamor   As Single
+Dim xseffijos    As String
+Dim xsemonemi    As String
+Dim xsebascup    As Single
+Dim xsedecs      As Single
+Dim xseserie     As Single
+Dim xsecorte     As Double
+Dim xserutemi    As Double
+Dim xinserie     As String
+Dim xsebasemi    As Integer
+Dim xsetotale    As Double
+Dim xrefnomi     As String
+
+
+
+
+Function EliminarSerie() As Boolean
+On Error GoTo ErrEliminar
+EliminarSerie = False
+
+Sql = "Sp_Elimina_Serie '" & txtMascara.Text & "'"
+If SQL_Execute(Sql) = 0 Then
+ Do While SQL_Fetch(Datos()) = 0
+   If Datos(1) = "NO" Then
+     Exit Function
+   End If
+ Loop
+End If
+
+EliminarSerie = True
+Exit Function
+ErrEliminar:
+ MsgBox "Error " & Err.Description, vbOKOnly + vbCritical
+ Exit Function
+End Function
+
+Function GrabarSerie() As Boolean
+
+GrabarSerie = False
+
+On Error GoTo ErrGrabar
+
+
+Sql = ""
+Sql = "Sp_Graba_Serie " & xincodigo & "," & Chr(10)
+Sql = Sql & "'" & txtMascara.Text & "'," & Chr(10)
+Sql = Sql & "'" & txtMascara.Text & "'," & Chr(10)
+Sql = Sql & ftbtera.Text & "," & Chr(10)
+Sql = Sql & Cmb_Moneda.ItemData(Cmb_Moneda.ListIndex) & "," & Chr(10)
+Sql = Sql & Cmb_Base.Text & "," & Chr(10)
+Sql = Sql & txtRutEmi.Text & "," & Chr(10)
+Sql = Sql & "'" & Format(dtbfechaemision.Text, "yyyymmdd") & "'," & Chr(10)
+Sql = Sql & "'" & Format(dtbfechavcto.Text, "yyyymmdd") & "'," & Chr(10)
+Sql = Sql & ftbplazo.Text & "," & Chr(10)
+Sql = Sql & ftbtasaemision.Text & "," & Chr(10)
+
+Sql = Sql & itbcupones.Text & "," & Chr(10)
+Sql = Sql & "'" & Trim(Left(cmbTipoPeriodo.Text, Len(cmbTipoPeriodo.Text) - 5)) & "'," & Chr(10)
+Sql = Sql & itbperiodo.Text & "," & Chr(10)
+Sql = Sql & itbNumAmortizacion.Text & "," & Chr(10)
+Sql = Sql & itbNumDecimales.Text & "," & Chr(10)
+Sql = Sql & itbDia.Text & "," & Chr(10)
+Sql = Sql & "'" & IIf(chFlujosFijos.Value, "S", "N") & "'," & Chr(10)
+Sql = Sql & IntBaseCupones.Text & "," & Chr(10)
+Sql = Sql & FltCorte.Text & "," & Chr(10)
+Sql = Sql & Right(cmbTipoAmortizacion.Text, 5) & "," & Chr(10)
+Sql = Sql & ftbtotalemitido.Text
+
+If SQL_Execute(Sql) = 0 Then
+  Do While SQL_Fetch(Datos()) = 0
+    If Datos(1) = "NO" Then
+      Exit Function
+    End If
+  Loop
+End If
+
+GrabarSerie = True
+Exit Function
+ErrGrabar:
+  MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+  Exit Function
+End Function
+
+Function LeerFamilia(xFamilia As String) As Boolean
+Dim Cont As Single
+
+    LeerFamilia = False
+    Cont = 0
+
+    Sql = "Sp_Trae_Instrumentos '" & xFamilia & "'"
+    If SQL_Execute(Sql) = 0 Then
+        Do While SQL_Fetch(Datos()) = 0
+            Cont = Cont + 1
+            xinserie = Datos(1)
+            xincodigo = Datos(3)
+            xinrutemi = Datos(6)
+            xinmonemi = Datos(7)
+            xinbasemi = Datos(8)
+            xintipfec = Datos(14)
+            xinmdpr = Datos(12)
+            xinmdtd = Datos(13)
+            xrefnomi = Datos(5)
+            cmdTabDes.Enabled = IIf(xinmdtd = "S", True, False)
+            cmdTabPre.Enabled = IIf(xinmdpr = "S", True, False)
+        Loop
+    Else
+        Exit Function
+    End If
+    
+    If Cont = 0 Then
+        Exit Function
+    End If
+    
+    LeerFamilia = True
+
+End Function
+
+Function LeerSeries(xSerie As String) As Boolean
+Dim Cont As Single
+LeerSeries = False
+Cont = 0
+Sql = "Sp_Trae_Serie '" & txtMascara & "'"
+If SQL_Execute(Sql) = 0 Then
+   Do While SQL_Fetch(Datos()) = 0
+    Cont = Cont + 1
+        xsebasemi = Val(Datos(6))
+        xserutemi = Datos(7)
+        xsemonemi = Datos(5)
+        xsefecemi = IIf(IsDate(Datos(8)), Datos(8), "01/01/1900")
+        xsefecven = IIf(IsDate(Datos(9)), Datos(9), "01/01/1900")
+        xsetasemi = Val(Datos(11))
+        xsetera = Val(Datos(4))
+        xsecupones = Val(Datos(12))
+        xsediavcup = Val(Datos(17))
+        xsepervcup = Val(Datos(14))
+        xsetipvcup = Val(Datos(13))
+        xseplazo = Val(Datos(10))
+        xsetipamor = Val(Datos(21))
+        xsenumamor = Val(Datos(15))
+        xseffijos = Datos(18)
+        xsebascup = Val(Datos(19))
+        xsedecs = Val(Datos(16))
+        xsecorte = Val(Datos(20))
+        xsetotale = Datos(22)
+   Loop
+End If
+If Cont = 0 Then
+  Exit Function
+End If
+LeerSeries = True
+End Function
+
+Private Sub Limpiar()
+On Error GoTo Label1
+
+    txtFamilia.Tag = "FAMILIA"
+    Call LimpiarControles
+    
+    
+    txtFamilia.Enabled = True
+    txtMascara.Enabled = True
+    txtFamilia.Tag = ""
+    cmdGrabar.Enabled = True
+    CmdEliminar.Enabled = True
+    cmdTabDes.Enabled = False
+    cmdTabPre.Enabled = False
+    cmdTabDes.Enabled = False
+    cmdTabPre.Enabled = False
+    cmdGrabar.Enabled = False
+    CmdEliminar.Enabled = False
+    
+    txtFamilia.SetFocus
+
+    Exit Sub
+
+Label1:
+    MousePointer = 0
+    MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+    Exit Sub
+
+End Sub
+
+Private Sub LimpiarControles()
+
+On Error GoTo Label1
+
+    txtFamilia.Text = ""
+    txtMascara.Text = ""
+    ftbtera.Text = ""
+    Cmb_Moneda.ListIndex = 0
+   
+    txtRutEmi.Text = ""
+    Txtdigito.Text = ""
+    txtNombreEmisor.Text = ""
+    dtbfechaemision.Text = Date
+    dtbfechavcto.Text = Date
+    ftbplazo.Text = ""
+    ftbtasaemision.Text = ""
+    
+    itbcupones.Text = ""
+    itbperiodo.Text = ""
+    cmbTipoPeriodo.ListIndex = -1
+    itbDia.Text = ""
+    cmbTipoAmortizacion.ListIndex = -1
+    itbNumAmortizacion.Text = ""
+    chFlujosFijos.Value = False
+    IntBaseCupones.Text = 0
+    itbNumDecimales.Text = ""
+    txtSubSerie.Text = ""
+    FltCorte.Text = 0
+    bonos_op1.Value = False
+    bonos_op2.Value = False
+        
+Exit Sub
+
+Label1:
+
+End Sub
+
+
+Private Function ValidaDatos() As Integer
+
+On Error GoTo Label1
+
+    ValidaDatos = False
+    
+        
+    ValidaDatos = True
+
+    Exit Function
+
+Label1:
+    
+
+End Function
+
+Private Sub bonos_op2_Click()
+   'problema valor invalido
+    dtbfechaemision.Text = ""
+    dtbfechavcto.Text = ""
+End Sub
+
+Private Sub Check1_Click()
+
+End Sub
+
+Private Sub ChkBonos_Click()
+   If ChkBonos.Value = 1 Then
+      Frame(3).Enabled = True
+      bonos_op1.Enabled = True
+      bonos_op2.Enabled = True
+   Else
+      Frame(3).Enabled = False
+      bonos_op1.Value = False
+      bonos_op1.Enabled = False
+      bonos_op2.Value = False
+      bonos_op2.Enabled = False
+   End If
+End Sub
+
+Private Sub Cmb_Moneda_Click()
+
+Select Case funcBaseMoneda(Cmb_Moneda.ItemData(Cmb_Moneda.ListIndex))
+       Case 30:   Cmb_Base.ListIndex = 0
+       Case 360:  Cmb_Base.ListIndex = 1
+       Case Else: Cmb_Base.ListIndex = 2
+End Select
+
+End Sub
+
+Private Sub cmdLimpiar_Click()
+    Call Limpiar
+   ActivaControles False
+End Sub
+
+Private Sub cmdTabDes_Click()
+
+On Error GoTo Label1
+
+Dim Frase As String
+  
+   
+    If ValidaDatos() = False Then
+       Exit Sub
+    End If
+     
+     
+    Me.Tag = "TD"
+       
+    'Parámetros para el form de Desarrollo, para no usar una variable global
+    Frase = ""
+    Frase = Frase + Trim$(CStr(txtSubSerie.Text)) + "@"         'Subserie antes era(Máscara)
+    Frase = Frase + Trim$(CStr(Val(ftbtera.Text))) + "@"        'interes
+    Frase = Frase + Trim$(CStr(itbcupones.Text)) + "@"          'cupones
+    Frase = Frase + Trim$(CStr(itbNumAmortizacion.Text)) + "@"  'Amortización
+    Frase = Frase + Trim$(CStr(itbperiodo.Text)) + "@"          'periodo
+    Frase = Frase + Trim$(CStr(itbNumDecimales.Text)) + "@"     'Num Decimales
+    
+    If UCase$(Trim$(txtFamilia.Text)) = "BONOS" Then
+        If bonos_op1.Value = True Then
+            Frase = Frase + Format(Trim$(dtbfechaemision.Text), "mm/dd/yyyy")            'Fecha Emisión
+        End If
+    Else
+        If xintipfec = 1 Then
+            Frase = Frase + Format(Trim$(dtbfechaemision.Text), "mm/dd/yyyy")            'Fecha Emisión
+        End If
+    End If
+      
+    BacMnSe1.proOrigense = "SE"
+    BacMnSe1.Tag = Frase
+    BacMnSe1.Show 1
+    Exit Sub
+
+Label1:
+   If Err.Number <> 364 Then
+    MsgBox "Error : " & Err.Description, vbOKOnly + vbExclamation
+   End If
+    Exit Sub
+
+End Sub
+
+Private Sub ActivaControles(Valor As Boolean)
+    txtFamilia.Enabled = Not Valor
+    txtMascara.Enabled = Not Valor
+    ftbtera.Enabled = Valor
+    Cmb_Moneda.Enabled = Valor
+    Cmb_Base.Enabled = Valor
+    txtRutEmi.Enabled = Valor
+    dtbfechaemision.Enabled = Valor
+    dtbfechavcto.Enabled = Valor
+    ftbplazo.Enabled = Valor
+    ftbtasaemision.Enabled = Valor
+    ftbtotalemitido.Enabled = Valor
+    itbcupones.Enabled = Valor
+    cmbTipoPeriodo.Enabled = Valor
+    itbperiodo.Enabled = Valor
+    itbNumAmortizacion.Enabled = Valor
+    itbNumDecimales.Enabled = Valor
+    itbDia.Enabled = Valor
+    chFlujosFijos.Enabled = Valor
+    FltCorte.Enabled = Valor
+    IntBaseCupones.Enabled = Valor
+    cmbTipoAmortizacion.Enabled = Valor
+    txtSubSerie.Enabled = Valor
+    Frame(3).Enabled = Valor
+End Sub
+
+
+Private Sub CalculaFechas()
+
+On Error GoTo Label1
+
+Dim sString        As String
+Dim CantidadAnn    As Long
+Dim FechaEmision   As String
+Dim FechaVen       As String
+    
+    If Val(itbperiodo.Text) = 0 Or Val(itbDia.Text) = 0 Then
+       CantidadAnn = 0
+       Exit Sub
+    Else
+       If ftbplazo.Tag = "TRUE" Then
+          CantidadAnn = Val(ftbplazo.Text)
+          ftbplazo.Tag = ""
+       Else
+          CantidadAnn = Val(itbcupones.Text) / (Int(12 / Val(itbperiodo.Text)))
+       End If
+    End If
+     
+         
+    If Trim$(dtbfechaemision.Text) <> "" Then
+        FechaEmision = Format(Val(itbDia.Text), "00") + "/" + Format(DatePart("m", dtbfechaemision.Text), "00") + "/" + Format(DatePart("yyyy", dtbfechaemision.Text), "0000")
+        FechaVen = DateAdd("yyyy", CantidadAnn, FechaEmision)
+    End If
+    
+    If Trim$(dtbfechaemision.Text) = "" And Trim$(dtbfechavcto.Text) <> "" Then
+        FechaEmision = Format$(DatePart("d", dtbfechavcto.Text), "00") + "/" + Format$(DatePart("m", dtbfechavcto.Text), "00") + "/" + Format$(DatePart("yyyy", dtbfechavcto.Text) - Val(ftbplazo.Text), "0000")
+        FechaVen = DateAdd("yyyy", CantidadAnn, FechaEmision)
+    End If
+    
+    ftbplazo.Text = CantidadAnn
+    dtbfechaemision.Text = FechaEmision
+    dtbfechavcto.Text = FechaVen
+
+    Exit Sub
+
+Label1:
+    MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+    Exit Sub
+    
+    
+End Sub
+
+
+Private Sub cmdTabPre_Click()
+
+On Error GoTo Label1
+
+Dim Frase As String
+    
+    Me.Tag = "TP"
+    
+    'Parámetros para el form de Premios, para no usar una variable global
+    Frase = ""
+    Frase = Frase + Trim$(CStr(xincodigo)) + "@"      'codigo
+    Frase = Frase + Trim$(CStr(txtSubSerie.Text)) + "@"         'SubSerie antes era(mascara)
+    Frase = Frase + Trim$(CStr(itbcupones.Text)) + "@"          'cupones
+    Frase = Frase + Trim$(CStr(itbNumDecimales.Text)) + "@"     'Num Decimales
+    Frase = Frase + Trim$(CStr(txtMascara.Text))                'Mascara
+
+    BacMnSe2.Tag = Frase
+     
+    BacMnSe2.Show 1
+    
+    BacControlWindows 60
+
+    Exit Sub
+
+Label1:
+    
+
+End Sub
+
+Private Sub dtbFechaEmision_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii = 13 Then
+        Call CalculaFechas
+        If UCase$(Trim$(txtFamilia.Text)) = "BONOS" Then
+            If dtbfechaemision.Text = "" Then
+                bonos_op1.Value = False
+                bonos_op2.Value = True
+            Else
+                bonos_op1.Value = True
+                bonos_op2.Value = False
+            End If
+        End If
+    End If
+
+End Sub
+
+
+Private Sub dtbFechaVcto_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii = 13 Then
+        Call CalculaFechas
+        If UCase$(Trim$(txtFamilia.Text)) = "BONOS" Then
+           If dtbfechavcto.Text = "" Then
+                bonos_op1.Value = False
+                bonos_op2.Value = True
+            Else
+                bonos_op1.Value = True
+                bonos_op2.Value = False
+            End If
+        End If
+    End If
+
+End Sub
+
+
+
+Private Sub FltCorte_KeyPress(KeyAscii As Integer)
+
+    If Chr(KeyAscii) = "." Or Chr(KeyAscii) = "," Then
+        KeyAscii = Asc(gsBac_PtoDec)
+    End If
+
+End Sub
+
+
+Private Sub ftbPlazo_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii = 13 Then
+        ftbplazo.Tag = "TRUE"
+        Call CalculaFechas
+    End If
+
+End Sub
+
+
+Private Sub ftbTasaEmision_KeyPress(KeyAscii As Integer)
+
+    If Chr(KeyAscii) = "." Or Chr(KeyAscii) = "," Then
+        KeyAscii = Asc(gsBac_PtoDec)
+    End If
+
+    If KeyAscii = 13 Then
+        Call CalculaFechas
+    End If
+
+End Sub
+
+
+Private Sub ftbTera_KeyPress(KeyAscii As Integer)
+    If Chr(KeyAscii) = "." Or Chr(KeyAscii) = "," Then
+        KeyAscii = Asc(gsBac_PtoDec)
+    End If
+End Sub
+
+
+Private Sub itbCupones_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii = 13 Then
+        Call CalculaFechas
+    End If
+
+End Sub
+
+
+Private Sub itbDia_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii = 13 Then
+        Call CalculaFechas
+    End If
+
+End Sub
+
+
+Private Sub itbPeriodo_KeyPress(KeyAscii As Integer)
+
+    If KeyAscii = 13 Then
+        Call CalculaFechas
+    End If
+    
+End Sub
+
+
+
+Private Sub cmdEliminar_Click()
+On Error GoTo Label1
+
+Dim nFlag As Integer
+Screen.MousePointer = 11
+If EliminarSerie Then
+   MsgBox "La eliminación se realizó con exito", vbOKOnly + vbInformation
+   Call Limpiar
+Else
+   MsgBox "No se completo la elimininación", vbOKOnly + vbExclamation
+End If
+Screen.MousePointer = 0
+Exit Sub
+
+Label1:
+  Screen.MousePointer = 11
+  MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+  Exit Sub
+End Sub
+
+
+Private Sub CmdGrabar_Click()
+
+On Error GoTo Label1
+
+     If ValidaDatos() = False Then
+        Exit Sub
+     End If
+     
+     Screen.MousePointer = 11
+     
+     If GrabarSerie Then
+        MsgBox "Serie Grabada Correctamente.", vbOKOnly + vbInformation
+        Call Limpiar
+     Else
+        MsgBox "No se completo la grabación de Serie.", vbOKOnly + vbExclamation
+     End If
+     
+   Screen.MousePointer = 0
+     
+    Exit Sub
+
+Label1:
+      MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+      Exit Sub
+      
+End Sub
+
+
+Private Sub cmdSalir_Click()
+        Unload Me
+End Sub
+
+
+Private Sub Form_KeyPress(KeyAscii As Integer)
+        
+    If KeyAscii = 13 Then
+       SendKeys "{tab}"
+    End If
+        
+End Sub
+
+Private Sub Form_Load()
+
+Cmb_Base.AddItem "30"
+Cmb_Base.AddItem "360"
+Cmb_Base.AddItem "365"
+Cmb_Base.ListIndex = 0
+
+On Error GoTo Label1
+ActivaControles False
+    'Cargar Tipo Amortización
+    '-------------------------------------------
+    If Not Llenar_Combos(cmbTipoAmortizacion, MDSE_TIPOAMORTIZACION) Then  '212
+       MsgBox "No existen tipos de amortización", vbOKOnly + vbExclamation
+       Unload Me
+'       Exit Sub
+    End If
+      
+    If Not Llenar_Combos(cmbTipoPeriodo, MDSE_TIPOPERIODO) Then    ' 216
+       MsgBox "No existen tipos de periodo", vbOKOnly + vbCritical
+       Unload Me
+       Exit Sub
+    End If
+    
+    If funcFindMonVal(Cmb_Moneda, Cmb_Base, "") Then
+       Cmb_Moneda.ListIndex = 0
+    End If
+    
+    txtFamilia.Enabled = True
+    txtMascara.Enabled = True
+    cmdGrabar.Enabled = True
+    CmdEliminar.Enabled = True
+    cmdTabDes.Enabled = False
+    cmdTabPre.Enabled = False
+    
+   
+
+Exit Sub
+
+Label1:
+       MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+       Unload Me
+       Exit Sub
+End Sub
+
+Private Sub txtFamilia_Change()
+    If UCase$(Trim$(txtFamilia.Text)) = "BONOS" Then
+       Frame(3).Enabled = True
+    Else
+       bonos_op1.Value = False
+       bonos_op1.Value = False
+       Frame(3).Enabled = False
+    End If
+End Sub
+
+Private Sub txtFamilia_DblClick()
+   Call Familia
+End Sub
+Sub Familia()
+
+   On Error GoTo Label1
+    BacAyuda.Tag = "MDIN"
+    BacAyuda.Show 1
+   If giAceptar% = True Then
+      txtFamilia.Enabled = True
+      txtFamilia.Text = gsSerie$
+      txtFamilia.SetFocus
+      SendKeys "{ENTER}"
+   End If
+   Exit Sub
+Label1:
+    MousePointer = 0
+    MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+    Exit Sub
+
+End Sub
+Private Sub txtFamilia_KeyDown(KeyCode As Integer, Shift As Integer)
+   If KeyCode = vbKeyF3 Then Call Familia
+End Sub
+
+Private Sub txtFamilia_KeyPress(KeyAscii As Integer)
+
+    BacToUCase KeyAscii
+    
+End Sub
+
+Private Sub txtFamilia_LostFocus()
+On Error GoTo Label1
+
+    If Trim(txtFamilia.Text) = "" Then Exit Sub
+    
+    If LeerFamilia(txtFamilia.Text) Then
+        If xincodigo <> 0 Then
+            txtRutEmi.Text = xinrutemi
+            Call txtRutEmi_LostFocus
+            txtFamilia.Enabled = False
+        Else
+            txtFamilia.Text = ""
+        End If
+    Else
+        MsgBox "Familia no existe", vbOKOnly + vbExclamation
+        txtFamilia.Text = ""
+        txtFamilia.SetFocus
+        Exit Sub
+    End If
+
+    
+Exit Sub
+
+Label1:
+    MousePointer = 0
+    MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+    Exit Sub
+    
+End Sub
+
+Private Sub txtMascara_DblClick()
+   Call Mascara
+End Sub
+Sub Mascara()
+On Error GoTo Label2
+      If txtFamilia.Text = "" Then Exit Sub
+         BacAyuda.Tag = "MDSE"
+         BacAyuda.Show 1
+      If giAceptar% = True Then
+         txtMascara.Enabled = True
+         txtMascara.Text = BacAyuda.Mascara
+         ftbtera.Enabled = True
+         ftbtera.SetFocus
+         txtMascara.Enabled = False
+         'txtMascara.SetFocus
+         'SendKeys "{ENTER}"
+      End If
+      Exit Sub
+Label2:
+      MousePointer = 0
+      MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+      Exit Sub
+End Sub
+Private Sub txtMascara_KeyDown(KeyCode As Integer, Shift As Integer)
+   If KeyCode = vbKeyF3 Then Call Mascara
+End Sub
+
+Private Sub txtMascara_KeyPress(KeyAscii As Integer)
+
+    BacToUCase KeyAscii
+    
+End Sub
+
+Private Sub txtMoneda_Change()
+
+  
+End Sub
+
+Private Sub txtRutEmi_Change()
+
+    Txtdigito.Text = ""
+    txtNombreEmisor.Text = ""
+           
+End Sub
+
+Private Sub txtMascara_LostFocus()
+Dim IdFamilia As String
+Dim IdMascara As String
+Dim IdMoneda  As Integer
+Dim idRut     As Long
+Dim i%
+
+On Error GoTo Label1
+
+    If Trim$(txtFamilia.Text) = "" Then
+       Exit Sub
+    End If
+    
+    If Trim$(txtMascara.Text) = "" Then
+       'Call Limpiar
+       Exit Sub
+    End If
+
+    Screen.MousePointer = 11
+    
+    cmdTabDes.Enabled = False
+    cmdTabPre.Enabled = False
+              
+    If LeerSeries(Trim$(txtMascara.Text)) = True Then
+           
+                ActivaControles True
+           
+                If UCase$(xinmdtd) = "S" Then
+               cmdTabDes.Enabled = True
+                Else
+               cmdTabDes.Enabled = False
+            End If
+    
+            'Para botón tabla de premios
+            '------------------------------
+            If UCase$(xinmdpr) = "S" Then
+               cmdTabPre.Enabled = True
+            Else
+               cmdTabPre.Enabled = False
+            End If
+            
+            For i% = 0 To Cmb_Moneda.ListCount - 1
+                If xsemonemi = Cmb_Moneda.ItemData(i%) Then
+                   Cmb_Moneda.ListIndex = i%
+                   Exit For
+                End If
+            Next i%
+
+            Select Case xsebasemi
+                   Case 30:  Cmb_Base.ListIndex = 0
+                   Case 360: Cmb_Base.ListIndex = 1
+                   Case 365: Cmb_Base.ListIndex = 2
+            End Select
+            
+            dtbfechaemision.Text = xsefecemi
+            dtbfechavcto.Text = xsefecven
+            ftbtasaemision.Text = xsetasemi
+            '----------------------------------------------
+            txtRutEmi.Text = xserutemi
+            txtRutEmi_LostFocus
+            
+            ftbtera = xsetera
+            itbcupones.Text = xsecupones
+            itbDia.Text = xsediavcup
+            itbperiodo.Text = xsepervcup
+            cmbTipoPeriodo.ListIndex = xsetipvcup
+            ftbplazo.Text = xseplazo
+            cmbTipoAmortizacion.ListIndex = BuscaEnCombo(cmbTipoAmortizacion, Str(xsetipamor), "C")
+            itbNumAmortizacion.Text = xsenumamor
+            If xseffijos = "S" Then
+               chFlujosFijos.Value = True
+            Else
+               chFlujosFijos.Value = False
+            End If
+            ftbtotalemitido.Text = xsetotale
+            IntBaseCupones.Text = Val(xsebascup)
+            itbNumDecimales.Text = Val(xsedecs)
+            txtSubSerie.Text = xseserie
+            FltCorte.Text = xsecorte
+            CmdEliminar.Enabled = True
+            cmdGrabar.Enabled = True
+            
+            If UCase$(Trim$(txtFamilia.Text)) = "BONOS" Then
+                If dtbfechaemision.Text = "" Then
+                   bonos_op1.Value = False
+                   bonos_op2.Value = True
+                Else
+                   bonos_op1.Value = True
+                   bonos_op2.Value = False
+                End If
+            End If
+    Else
+        ActivaControles True
+          If UCase$(xinmdtd) = "S" Then
+               cmdTabDes.Enabled = True
+                Else
+               cmdTabDes.Enabled = False
+            End If
+    
+            'Para botón tabla de premios
+            '------------------------------
+            If UCase$(xinmdpr) = "S" Then
+               cmdTabPre.Enabled = True
+            Else
+               cmdTabPre.Enabled = False
+            End If
+            
+       Screen.MousePointer = 0
+       Exit Sub
+    End If
+
+    txtSubSerie = txtMascara.Text
+    
+    Screen.MousePointer = 0
+    
+                 
+    Exit Sub
+    
+
+Label1:
+    Screen.MousePointer = 0
+    MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+    Exit Sub
+
+End Sub
+
+
+Sub RutEmi()
+On Error GoTo Label1
+    'Ayuda para Emisores
+    '----------------------------------
+    BacAyuda.Tag = "MDEM"
+    BacAyuda.Show 1
+    If giAceptar% = True Then
+        txtRutEmi.Text = gsCodigo$
+        Txtdigito.Text = gsDigito$
+        txtNombreEmisor.Text = gsDescripcion$
+        SendKeys "{ENTER}"
+    End If
+    Exit Sub
+Label1:
+    MousePointer = 0
+    MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+    Exit Sub
+End Sub
+Private Sub txtRutEmi_DblClick()
+Call RutEmi
+End Sub
+
+Private Sub txtRutEmi_KeyDown(KeyCode As Integer, Shift As Integer)
+   If KeyCode = vbKeyF3 Then Call RutEmi
+End Sub
+
+Private Sub txtRutEmi_KeyPress(KeyAscii As Integer)
+    
+    If Not ((KeyAscii > 47 And KeyAscii < 58) Or KeyAscii = 8) Then
+       KeyAscii = 0
+    End If
+
+End Sub
+
+Private Sub txtRutEmi_LostFocus()
+If Val(txtRutEmi.Text) = 0 Then Exit Sub
+Dim Cont As Single
+On Error GoTo Label1
+Cont = 0
+    Sql = "Sp_Trae_Emisor " & Val(txtRutEmi.Text)
+    If SQL_Execute(Sql) = 0 Then
+      Do While SQL_Fetch(Datos()) = 0
+        Cont = Cont + 1
+        Txtdigito.Text = Datos(7)
+        txtNombreEmisor.Text = Datos(2)
+      Loop
+    End If
+    If Cont = 0 Then
+       MsgBox "El emisor no existe", vbOKOnly + vbExclamation
+       txtRutEmi.Text = ""
+       Txtdigito.Text = ""
+       txtNombreEmisor.Text = ""
+    End If
+    
+    
+    Exit Sub
+    
+Label1:
+   MsgBox "Error : " & Err.Description, vbOKOnly + vbCritical
+   Exit Sub
+
+End Sub
+
+Private Sub txtSubSerie_KeyPress(KeyAscii As Integer)
+       BacToUCase KeyAscii
+End Sub
+
+Function BuscaMonedaFox(Moneda As Integer) As Integer
+Dim Sql As String
+Dim Datos()
+    BuscaMonedaFox = 0
+    Sql = ""
+    Sql = "SELECT mncodbanco FROM  mdmn WHERE mncodmon = " & Moneda
+    
+    If SQL_Execute(Sql) = 0 Then
+        If SQL_Fetch(Datos()) = 0 Then
+            BuscaMonedaFox = Datos(1)
+        End If
+    End If
+        
+End Function

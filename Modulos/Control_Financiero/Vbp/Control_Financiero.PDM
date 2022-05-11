@@ -1,0 +1,384 @@
+[Root]
+Most Recent Package=Paquete de instalación estándar 1
+
+
+[Package|Paquete de instalación estándar 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Vbp\Paquete
+
+[Package|Paquete de instalación estándar 1|Configure DAO ISAMs]
+Applicable=Yes
+Xbase=Yes
+Excel=Yes
+Exchange=Yes
+Text=Yes
+Jet 2.x=Yes
+Lotus=Yes
+
+[Package|Paquete de instalación estándar 1|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|Paquete de instalación estándar 1|Files Found]
+
+[Package|Paquete de instalación estándar 1|Files Released]
+u2LBAR.DLL=
+u25TOTAL.DLL=
+u25STORE.DLL=
+P2SSTES.DLL=
+P3DBEES.DLL=
+Crystal=
+MFC40Loc.dll=
+User.DLL=
+
+[Package|Paquete de instalación estándar 1|Missing Dependency Information]
+C:\Windows\System32\msexch35.dll=
+C:\Windows\Crystal\u3520es.dll=
+C:\Windows\Crystal\u3ls1es.dll=
+C:\Windows\Crystal\u3l20es.dll=
+C:\Windows\Crystal\x3fxles.dll=
+C:\Windows\Crystal\x3fwdes.dll=
+C:\Windows\Crystal\x3fwkes.dll=
+C:\Windows\Crystal\x3ftxes.dll=
+C:\Windows\Crystal\x3fsves.dll=
+C:\Windows\Crystal\x3frtes.dll=
+C:\Windows\Crystal\x3frces.dll=
+C:\Windows\Crystal\x3fodes.dll=
+C:\Windows\Crystal\x3fhtes.dll=
+C:\Windows\Crystal\x3fcres.dll=
+C:\Windows\Crystal\x3dapes.dll=
+C:\Windows\Crystal\x3dvmes.dll=
+C:\Windows\Crystal\x3dptes.dll=
+C:\Windows\Crystal\x3dntes.dll=
+C:\Windows\Crystal\x3dmpes.dll=
+C:\Windows\Crystal\x3ddkes.dll=
+C:\Windows\Crystal\p3soles.dll=
+C:\Windows\Crystal\p3ssqes.dll=
+C:\Windows\Crystal\p3so7es.dll=
+C:\Windows\SysWOW64\p3sodes.dll=
+C:\Windows\SysWOW64\p3smnes.dll=
+C:\Windows\Crystal\p3sifes.dll=
+C:\Windows\SysWOW64\p3rdoes.dll=
+C:\Windows\SysWOW64\p3tdoes.dll=
+C:\Windows\Crystal\p3dxbes.dll=
+C:\Windows\SysWOW64\p3ddoes.dll=
+C:\Windows\SysWOW64\p3dbdes.dll=
+C:\Windows\SysWOW64\BacControles.ocx=
+C:\Program Files (x86)\Microsoft Office\Office15\MSWORD.OLB=
+C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE=
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=
+C:\Windows\SysWOW64\BTPADODB.dll=
+
+[Package|Paquete de instalación estándar 1|Out-of-Date Dependency Information]
+C:\Windows\System32\MSRDO20.DLL=
+C:\Windows\SysWOW64\comdlg32.ocx=
+C:\Windows\SysWOW64\TABCTL32.OCX=
+C:\Windows\SysWOW64\MSMASK32.OCX=
+C:\Windows\SysWOW64\Msflxgrd.ocx=
+C:\Windows\SysWOW64\MSCOMCTL.OCX=
+
+[Package|Paquete de instalación estándar 1|Files Added]
+
+[Package|Paquete de instalación estándar 1|Files Removed]
+
+[Package|Paquete de instalación estándar 1|Files In Project]
+C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Exe\Control_Financiero25221.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6ES.DLL=Yes
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\Dao2535.tlb=Yes
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\DAO350.DLL=Yes
+C:\Windows\System32\MSJET35.DLL=Yes
+C:\Windows\System32\MSJTER35.DLL=Yes
+C:\Windows\System32\MSJINT35.DLL=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\MSRD2X35.DLL=Yes
+C:\Windows\System32\MSREPL35.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Windows\SysWOW64\BTPADODB.dll=Yes
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=Yes
+C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE=Yes
+C:\Program Files (x86)\Microsoft Office\Office15\MSWORD.OLB=Yes
+C:\Windows\SysWOW64\MSCOMCTL.OCX=Yes
+C:\Windows\SysWOW64\MSCMCES.DLL=Yes
+C:\Windows\SysWOW64\RICHTX32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\SysWOW64\RCHTXES.DLL=Yes
+C:\Windows\SysWOW64\Msflxgrd.ocx=Yes
+C:\Windows\SysWOW64\FLXGDES.DLL=Yes
+C:\Windows\SysWOW64\MSMASK32.OCX=Yes
+C:\Windows\SysWOW64\MSMSKES.DLL=Yes
+C:\Windows\SysWOW64\TABCTL32.OCX=Yes
+C:\Windows\SysWOW64\TABCTES.DLL=Yes
+C:\Windows\SysWOW64\THREED32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MFC40.DLL=Yes
+C:\Windows\SysWOW64\BacControles.ocx=Yes
+C:\Windows\SysWOW64\comdlg32.ocx=Yes
+C:\Windows\SysWOW64\CMDLGES.DLL=Yes
+C:\Windows\SysWOW64\MSWINSCK.OCX=Yes
+C:\Windows\SysWOW64\WINSKES.DLL=Yes
+C:\Windows\SysWOW64\Crystl32.OCX=Yes
+C:\Windows\SysWOW64\crpe32.dll=Yes
+C:\Windows\SysWOW64\implode.dll=Yes
+C:\Windows\SysWOW64\Crpaig80.dll=Yes
+C:\Windows\SysWOW64\msvcrt.dll=Yes
+C:\Windows\SysWOW64\mfc42.dll=Yes
+C:\Windows\Crystal\Crxlat32.dll=Yes
+C:\Windows\SysWOW64\crpe32_res_es.dll=Yes
+C:\Windows\SysWOW64\p2bbde.dll=Yes
+C:\Windows\SysWOW64\P2bbnd.dll=Yes
+C:\Windows\SysWOW64\p3dbdes.dll=Yes
+C:\Windows\SysWOW64\p2bdao.dll=Yes
+C:\Windows\SysWOW64\p3ddoes.dll=Yes
+C:\Windows\Crystal\p2bxbse.dll=Yes
+C:\Windows\Crystal\p3dxbes.dll=Yes
+C:\Windows\SysWOW64\p2ctdao.dll=Yes
+C:\Windows\SysWOW64\p3tdoes.dll=Yes
+C:\Windows\SysWOW64\p2irdao.dll=Yes
+C:\Windows\SysWOW64\p3rdoes.dll=Yes
+C:\Windows\Crystal\p2sifmx.dll=Yes
+C:\Windows\Crystal\p3sifes.dll=Yes
+C:\Windows\SysWOW64\P2smon.dll=Yes
+C:\Windows\SysWOW64\p3smnes.dll=Yes
+C:\Windows\SysWOW64\p2sodbc.dll=Yes
+C:\Windows\SysWOW64\p3sodes.dll=Yes
+C:\Windows\Crystal\p2sora7.dll=Yes
+C:\Windows\Crystal\p3so7es.dll=Yes
+C:\Windows\Crystal\p2ssql.dll=Yes
+C:\Windows\Crystal\p3ssqes.dll=Yes
+C:\Windows\Crystal\p2ssyb10.dll=Yes
+C:\Windows\Crystal\p2soledb.dll=Yes
+C:\Windows\Crystal\p3soles.dll=Yes
+C:\Windows\Crystal\u2ddisk.dll=Yes
+C:\Windows\Crystal\x3ddkes.dll=Yes
+C:\Windows\Crystal\u2dmapi.dll=Yes
+C:\Windows\Crystal\x3dmpes.dll=Yes
+C:\Windows\Crystal\u2dnotes.dll=Yes
+C:\Windows\Crystal\x3dntes.dll=Yes
+C:\Windows\Crystal\u2dpost.dll=Yes
+C:\Windows\Crystal\x3dptes.dll=Yes
+C:\Windows\Crystal\u2dvim.dll=Yes
+C:\Windows\Crystal\x3dvmes.dll=Yes
+C:\Windows\Crystal\u2dapp.dll=Yes
+C:\Windows\Crystal\x3dapes.dll=Yes
+C:\Windows\Crystal\u2fcr.dll=Yes
+C:\Windows\Crystal\x3fcres.dll=Yes
+C:\Windows\Crystal\u2fhtml.dll=Yes
+C:\Windows\Crystal\x3fhtes.dll=Yes
+C:\Windows\Crystal\u2fodbc.dll=Yes
+C:\Windows\Crystal\x3fodes.dll=Yes
+C:\Windows\Crystal\u2frec.dll=Yes
+C:\Windows\Crystal\x3frces.dll=Yes
+C:\Windows\Crystal\u2frtf.dll=Yes
+C:\Windows\Crystal\x3frtes.dll=Yes
+C:\Windows\Crystal\u2fsepv.dll=Yes
+C:\Windows\Crystal\x3fsves.dll=Yes
+C:\Windows\Crystal\u2ftext.dll=Yes
+C:\Windows\Crystal\x3ftxes.dll=Yes
+C:\Windows\Crystal\u2fwks.dll=Yes
+C:\Windows\Crystal\x3fwkes.dll=Yes
+C:\Windows\Crystal\u2fwordw.dll=Yes
+C:\Windows\Crystal\x3fwdes.dll=Yes
+C:\Windows\Crystal\u2fxls.dll=Yes
+C:\Windows\Crystal\x3fxles.dll=Yes
+C:\Windows\Crystal\u25dts.dll=Yes
+C:\Windows\Crystal\u2l2000.dll=Yes
+C:\Windows\Crystal\u3l20es.dll=Yes
+C:\Windows\Crystal\u2lcom.dll=Yes
+C:\Windows\Crystal\u2ldts.dll=Yes
+C:\Windows\Crystal\u2lsamp1.dll=Yes
+C:\Windows\Crystal\u3ls1es.dll=Yes
+C:\Windows\Crystal\u252000.dll=Yes
+C:\Windows\Crystal\u3520es.dll=Yes
+C:\Windows\SysWOW64\sscsdk80.dll=Yes
+C:\Windows\SysWOW64\COMCTL32.OCX=Yes
+C:\Windows\SysWOW64\CMCTLES.DLL=Yes
+C:\Windows\System32\msexcl35.dll=Yes
+C:\Windows\System32\msexch35.dll=Yes
+C:\Windows\System32\msltus35.dll=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Windows\System32\MSRDO20.DLL=Yes
+C:\Windows\System32\RDOCURS.DLL=Yes
+C:\Windows\System32\RDO20ES.DLL=Yes
+C:\Windows\System32\mstext35.dll=Yes
+C:\Windows\System32\msxbse35.dll=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Paquete de instalación estándar 1|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Install Locations]
+C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Exe\Control_Financiero25221.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6ES.DLL=$(WinSysPath)
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\Dao2535.tlb=$(MSDAOPath)
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Windows\System32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\BTPADODB.dll=$(WinSysPath)
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Office\Office15\MSWORD.OLB=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCMCES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\RCHTXES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\Msflxgrd.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\FLXGDES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSMSKES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\THREED32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MFC40.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\BacControles.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\comdlg32.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\CMDLGES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSWINSCK.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\WINSKES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\Crystl32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\crpe32.dll=$(WinSysPath)
+C:\Windows\SysWOW64\implode.dll=$(WinSysPath)
+C:\Windows\SysWOW64\Crpaig80.dll=$(WinSysPath)
+C:\Windows\SysWOW64\msvcrt.dll=$(WinSysPath)
+C:\Windows\SysWOW64\mfc42.dll=$(WinSysPath)
+C:\Windows\Crystal\Crxlat32.dll=$(WinSysPath)
+C:\Windows\SysWOW64\crpe32_res_es.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2bbde.dll=$(WinSysPath)
+C:\Windows\SysWOW64\P2bbnd.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p3dbdes.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2bdao.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p3ddoes.dll=$(WinSysPath)
+C:\Windows\Crystal\p2bxbse.dll=$(WinSysPath)
+C:\Windows\Crystal\p3dxbes.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2ctdao.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p3tdoes.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2irdao.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p3rdoes.dll=$(WinSysPath)
+C:\Windows\Crystal\p2sifmx.dll=$(WinSysPath)
+C:\Windows\Crystal\p3sifes.dll=$(WinSysPath)
+C:\Windows\SysWOW64\P2smon.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p3smnes.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p2sodbc.dll=$(WinSysPath)
+C:\Windows\SysWOW64\p3sodes.dll=$(WinSysPath)
+C:\Windows\Crystal\p2sora7.dll=$(WinSysPath)
+C:\Windows\Crystal\p3so7es.dll=$(WinSysPath)
+C:\Windows\Crystal\p2ssql.dll=$(WinSysPath)
+C:\Windows\Crystal\p3ssqes.dll=$(WinSysPath)
+C:\Windows\Crystal\p2ssyb10.dll=$(WinSysPath)
+C:\Windows\Crystal\p2soledb.dll=$(WinSysPath)
+C:\Windows\Crystal\p3soles.dll=$(WinSysPath)
+C:\Windows\Crystal\u2ddisk.dll=$(WinSysPath)
+C:\Windows\Crystal\x3ddkes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dmapi.dll=$(WinSysPath)
+C:\Windows\Crystal\x3dmpes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dnotes.dll=$(WinSysPath)
+C:\Windows\Crystal\x3dntes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dpost.dll=$(WinSysPath)
+C:\Windows\Crystal\x3dptes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dvim.dll=$(WinSysPath)
+C:\Windows\Crystal\x3dvmes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2dapp.dll=$(WinSysPath)
+C:\Windows\Crystal\x3dapes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fcr.dll=$(WinSysPath)
+C:\Windows\Crystal\x3fcres.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fhtml.dll=$(WinSysPath)
+C:\Windows\Crystal\x3fhtes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fodbc.dll=$(WinSysPath)
+C:\Windows\Crystal\x3fodes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2frec.dll=$(WinSysPath)
+C:\Windows\Crystal\x3frces.dll=$(WinSysPath)
+C:\Windows\Crystal\u2frtf.dll=$(WinSysPath)
+C:\Windows\Crystal\x3frtes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fsepv.dll=$(WinSysPath)
+C:\Windows\Crystal\x3fsves.dll=$(WinSysPath)
+C:\Windows\Crystal\u2ftext.dll=$(WinSysPath)
+C:\Windows\Crystal\x3ftxes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fwks.dll=$(WinSysPath)
+C:\Windows\Crystal\x3fwkes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fwordw.dll=$(WinSysPath)
+C:\Windows\Crystal\x3fwdes.dll=$(WinSysPath)
+C:\Windows\Crystal\u2fxls.dll=$(WinSysPath)
+C:\Windows\Crystal\x3fxles.dll=$(WinSysPath)
+C:\Windows\Crystal\u25dts.dll=$(WinSysPath)
+C:\Windows\Crystal\u2l2000.dll=$(WinSysPath)
+C:\Windows\Crystal\u3l20es.dll=$(WinSysPath)
+C:\Windows\Crystal\u2lcom.dll=$(WinSysPath)
+C:\Windows\Crystal\u2ldts.dll=$(WinSysPath)
+C:\Windows\Crystal\u2lsamp1.dll=$(WinSysPath)
+C:\Windows\Crystal\u3ls1es.dll=$(WinSysPath)
+C:\Windows\Crystal\u252000.dll=$(WinSysPath)
+C:\Windows\Crystal\u3520es.dll=$(WinSysPath)
+C:\Windows\SysWOW64\sscsdk80.dll=$(WinSysPath)
+C:\Windows\SysWOW64\COMCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\CMCTLES.DLL=$(WinSysPath)
+C:\Windows\System32\msexcl35.dll=$(WinSysPathSysFile)
+C:\Windows\System32\msexch35.dll=$(WinSysPath)
+C:\Windows\System32\msltus35.dll=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Windows\System32\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\System32\RDOCURS.DLL=$(WinSysPath)
+C:\Windows\System32\RDO20ES.DLL=$(WinSysPath)
+C:\Windows\System32\mstext35.dll=$(WinSysPathSysFile)
+C:\Windows\System32\msxbse35.dll=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Paquete de instalación estándar 1|Configure Shared Files]
+Applicable=Yes
+C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Exe\Control_Financiero25221.exe=Yes
+C:\Program Files (x86)\Microsoft Office\Office15\EXCEL.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+
+[Package|Paquete de instalación estándar 1|Distribution]
+Type=single
+Size=
+Title=Control_Financiero
+
+[Package|Paquete de instalación estándar 1|IconGroups]
+Group0=Control_Financiero
+PrivateGroup0=Verdadero
+Parent0=$(Programs)
+
+[Package|Paquete de instalación estándar 1|Control_Financiero]
+Icon1=Control_Financiero25221.exe
+Title1=Control_Financiero
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación estándar 1|Package]
+PackageFolder=C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Vbp\Paquete
+ProjectFolder=C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Vbp
+ServerSideCab=
+File1=C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Vbp\Paquete\setup.exe
+File2=C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Vbp\Paquete\Setup.Lst
+File3=C:\FreddyMorales\Visual Basic\Control_Financiero - engine\Vbp\Paquete\Control_Financiero25221.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

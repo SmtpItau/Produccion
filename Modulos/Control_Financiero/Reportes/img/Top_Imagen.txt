@@ -1,0 +1,8 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary=----=_NextPart_01CAC780.13504750
+
+------=_NextPart_01CAC780.13504750
+Content-Location: file:///C:/0F64D8E6/dsfsdf.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+

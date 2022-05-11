@@ -1,0 +1,540 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "Threed32.ocx"
+Begin VB.Form Cambio_Password 
+   BorderStyle     =   3  'Fixed Dialog
+   Caption         =   "Cambio Clave"
+   ClientHeight    =   2160
+   ClientLeft      =   2325
+   ClientTop       =   2715
+   ClientWidth     =   5385
+   Icon            =   "Campwd.frx":0000
+   LinkTopic       =   "Form1"
+   LockControls    =   -1  'True
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   Moveable        =   0   'False
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   2160
+   ScaleWidth      =   5385
+   ShowInTaskbar   =   0   'False
+   StartUpPosition =   2  'CenterScreen
+   Begin Threed.SSPanel SSPanel2 
+      Height          =   1635
+      Left            =   15
+      TabIndex        =   5
+      Top             =   525
+      Width           =   5370
+      _Version        =   65536
+      _ExtentX        =   9472
+      _ExtentY        =   2884
+      _StockProps     =   15
+      BackColor       =   12632256
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Begin VB.PictureBox Picture1 
+         Height          =   1200
+         Left            =   90
+         Picture         =   "Campwd.frx":030A
+         ScaleHeight     =   1140
+         ScaleWidth      =   1155
+         TabIndex        =   6
+         TabStop         =   0   'False
+         Top             =   150
+         Width           =   1215
+      End
+      Begin Threed.SSFrame SSFrame1 
+         Height          =   1545
+         Left            =   1410
+         TabIndex        =   7
+         Top             =   15
+         Width           =   3855
+         _Version        =   65536
+         _ExtentX        =   6800
+         _ExtentY        =   2725
+         _StockProps     =   14
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ShadowStyle     =   1
+         Begin VB.TextBox TxtClaveNueva 
+            BeginProperty Font 
+               Name            =   "Verdana"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   315
+            IMEMode         =   3  'DISABLE
+            Left            =   1725
+            PasswordChar    =   "*"
+            TabIndex        =   1
+            Top             =   795
+            Width           =   2025
+         End
+         Begin VB.TextBox TxtClaveConfirma 
+            BeginProperty Font 
+               Name            =   "Verdana"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   315
+            IMEMode         =   3  'DISABLE
+            Left            =   1725
+            PasswordChar    =   "*"
+            TabIndex        =   3
+            Top             =   1110
+            Width           =   2025
+         End
+         Begin VB.TextBox TxtClave 
+            BeginProperty Font 
+               Name            =   "Verdana"
+               Size            =   9
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   315
+            IMEMode         =   3  'DISABLE
+            Left            =   1725
+            PasswordChar    =   "*"
+            TabIndex        =   0
+            TabStop         =   0   'False
+            Top             =   465
+            Width           =   2025
+         End
+         Begin VB.Label Label3 
+            AutoSize        =   -1  'True
+            Caption         =   "Clave Nueva"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Left            =   315
+            TabIndex        =   12
+            Top             =   825
+            Width           =   1350
+         End
+         Begin VB.Label Label4 
+            AutoSize        =   -1  'True
+            Caption         =   "Confirma Clave"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Left            =   90
+            TabIndex        =   11
+            Top             =   1155
+            Width           =   1590
+         End
+         Begin VB.Label LblUsuario 
+            BorderStyle     =   1  'Fixed Single
+            BeginProperty Font 
+               Name            =   "Verdana"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            ForeColor       =   &H00000000&
+            Height          =   315
+            Left            =   1725
+            TabIndex        =   10
+            Top             =   135
+            Width           =   2025
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            Caption         =   "Usuario"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Left            =   810
+            TabIndex        =   9
+            Top             =   180
+            Width           =   825
+         End
+         Begin VB.Label Label2 
+            AutoSize        =   -1  'True
+            Caption         =   "Clave"
+            BeginProperty Font 
+               Name            =   "MS Sans Serif"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Left            =   990
+            TabIndex        =   8
+            Top             =   510
+            Width           =   615
+         End
+      End
+   End
+   Begin MSComctlLib.ImageList ImageList1 
+      Left            =   4620
+      Top             =   -45
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   22
+      ImageHeight     =   22
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   2
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Campwd.frx":4A48
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Campwd.frx":4E9A
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin Threed.SSPanel SSPanel1 
+      Height          =   525
+      Left            =   15
+      TabIndex        =   2
+      Top             =   0
+      Width           =   5370
+      _Version        =   65536
+      _ExtentX        =   9472
+      _ExtentY        =   926
+      _StockProps     =   15
+      ForeColor       =   12632256
+      BackColor       =   -2147483644
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Begin MSComctlLib.Toolbar Toolbar1 
+         Height          =   480
+         Left            =   75
+         TabIndex        =   4
+         Top             =   15
+         Width           =   1005
+         _ExtentX        =   1773
+         _ExtentY        =   847
+         ButtonWidth     =   767
+         ButtonHeight    =   741
+         AllowCustomize  =   0   'False
+         Wrappable       =   0   'False
+         ImageList       =   "ImageList1"
+         _Version        =   393216
+         BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+            NumButtons      =   2
+            BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+               Object.ToolTipText     =   "Grabar"
+               ImageIndex      =   1
+            EndProperty
+            BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+               Object.ToolTipText     =   "Salir"
+               ImageIndex      =   2
+            EndProperty
+         EndProperty
+      End
+   End
+End
+Attribute VB_Name = "Cambio_Password"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private clave           As String
+Private fecha_expira    As Date
+Private cambio_clave    As String
+Private bloqueado       As String
+Private clave_anterior1 As String
+Private clave_anterior2 As String
+Private clave_anterior3 As String
+Private Largo_Clave     As Integer
+Private Tipo_Clave      As String
+Private Dias_Expiracion As Integer
+
+Private Sub Cancelar()
+
+'   If Trim(Me.Tag) = "X" Then
+      End
+'   Else
+'      Unload Me
+'   End If
+   
+End Sub
+
+Private Sub Grabar()
+
+   If Trim(TxtClaveNueva.Text) = "" Or Trim(TxtClaveConfirma.Text) = "" Then
+      MsgBox "Debe Ingresar Clave Nueva y Confirmación de Clave Nueva.", vbCritical, TITSISTEMA
+      Exit Sub
+   End If
+   
+   If Len(TxtClaveNueva.Text) < 6 And Largo_Clave Then
+      MsgBox "La Clave debe tener mínimo 6 caracteres", vbOKOnly + vbInformation, TITSISTEMA
+      Exit Sub
+   End If
+
+   If TxtClaveNueva.Text <> TxtClaveConfirma.Text Then
+      MsgBox "La Clave Nueva y la Clave Confirmación deben ser Iguales.", vbCritical, TITSISTEMA
+      Exit Sub
+   End If
+   
+   sCadena = "AABBCCDDEEFFGGHHIIJJKKLLMMNNÑÑOOPPQQRRSSTTUUVVWWXXYYZZ"
+   sCadena = sCadena & "aabbccddeeffgghhiijjkkllmmnnññooppqqrrssttuuvvxxyyzz"
+   sCadena = sCadena & "11223344556677889900"
+   For nCaracter = 1 To Len(sCadena) Step 2
+      If TxtClaveNueva.Text Like "*" & Mid$(sCadena, nCaracter, 2) & "*" Then
+         MsgBox "No pueden existir 2 caracteres iguales consecutivos en la Clave.", vbCritical, TITSISTEMA
+         Screen.MousePointer = 0
+         Exit Sub
+      End If
+   Next nCaracter
+   
+   If Trim(LblUsuario.Caption) = Trim(TxtClaveNueva.Text) Then
+      MsgBox "Clave no puede ser igual al Nombre de Usuario.", vbCritical, gsBac_Version, TITSISTEMA
+      Exit Sub
+   End If
+
+   If MsgBox("Seguro de Grabar ?", 36, TITSISTEMA) <> vbYes Then Exit Sub
+
+   If Not FUNC_GRABA_CAMBIO_CLAVE() Then Exit Sub
+   
+   MsgBox "Clave ha sido cambiada satisfactoriamente.", vbInformation, TITSISTEMA
+   Me.Tag = ""
+   
+   Unload Me
+
+End Sub
+
+Function FUNC_GRABA_CAMBIO_CLAVE() As Boolean
+   On Error GoTo ErrGraba
+    
+   FUNC_GRABA_CAMBIO_CLAVE = False
+    
+   Envia = Array()
+   AddParam Envia, LblUsuario.Caption
+   AddParam Envia, Encript(TxtClaveNueva.Text, True)
+    
+   If Not Bac_Sql_Execute("Sp_Graba_Cambio_Clave", Envia) Then
+      
+      Exit Function
+      
+   End If
+    
+   FUNC_GRABA_CAMBIO_CLAVE = True
+
+   Exit Function
+
+ErrGraba:
+  
+  MsgBox Err.Description
+  Exit Function
+  
+End Function
+
+
+Private Sub Form_Activate()
+   LblUsuario.Caption = gsBAC_User
+   TxtClaveNueva.MaxLength = Largo_Clave
+   TxtClaveConfirma.MaxLength = Largo_Clave
+   'Me.TxtClaveNueva.SetFocus
+   
+'   If gsCamPas = False Then
+'    '  Me.TxtClave = Acceso_Usuario.TxtClave
+'    '  TxtClave.Enabled = False
+'   Else
+'      TxtClave.Enabled = True
+'      TxtClave.SetFocus
+'   End If
+'
+   TxtClave.SetFocus
+End Sub
+
+Private Sub Form_Load()
+   Dim datos()
+   Me.Icon = BacCambio.Icon
+   
+   If Not Bac_Sql_Execute("Sp_ValoresPassword", Array(gsBAC_User)) Then
+      MsgBox "Problemas al leer registro del usuario."
+      End
+   End If
+   
+   If Bac_SQL_Fetch(datos()) Then
+      clave = Encript(CStr(datos(1)), False)
+      fecha_expira = datos(2)
+      cambio_clave = datos(3)
+      bloqueado = datos(4)
+      clave_anterior1 = IIf(Len(datos(5)) > 0, Encript(CStr(datos(5)), False), "")
+      clave_anterior2 = IIf(Len(datos(6)) > 0, Encript(CStr(datos(6)), False), "")
+      clave_anterior3 = IIf(Len(datos(7)) > 0, Encript(CStr(datos(7)), False), "")
+      Largo_Clave = datos(8)
+      Tipo_Clave = datos(9)
+      Dias_Expiracion = datos(10)
+   End If
+End Sub
+
+
+Private Sub Form_Unload(Cancel As Integer)
+   If Trim(Me.Tag) = "X" Then
+      End
+   End If
+End Sub
+
+Private Sub SSPanel3_Click()
+
+End Sub
+
+Private Sub Toolbar1_ButtonClick(ByVal Button As MSComctlLib.Button)
+   Select Case Button.Index
+      Case 1
+         Call Grabar
+      Case 2
+         Call Cancelar
+   End Select
+End Sub
+
+
+Private Sub TxtClave_KeyPress(KeyAscii As Integer)
+
+   TxtClave.MaxLength = 12
+
+   If KeyAscii = 13 And Trim(TxtClave.Text) <> "" Then
+    
+      If Not FUNC_VALIDA_CLAVE() Then Exit Sub
+      
+      TxtClave.Enabled = True
+      TxtClaveNueva.Enabled = True
+      TxtClaveConfirma.Enabled = True
+      
+      TxtClaveNueva.SetFocus
+      
+   End If
+
+End Sub
+
+Private Sub TxtClaveConfirma_KeyPress(KeyAscii As Integer)
+   If KeyAscii <> 13 And KeyAscii <> 8 Then
+      Select Case Tipo_Clave
+         Case Is = "N"
+            If Not IsNumeric(Chr(KeyAscii)) Then
+               KeyAscii = 0
+            End If
+         Case Is = "C"
+            If Not UCase(Chr(KeyAscii)) >= "A" And UCase(Chr(KeyAscii)) <= "Z" Then
+               KeyAscii = 0
+            End If
+      End Select
+   ElseIf KeyAscii = 13 And Trim(TxtClaveConfirma.Text) <> "" Then
+      Call Grabar
+      'TxtClaveNueva.SetFocus
+   End If
+End Sub
+
+Private Sub TxtClaveNueva_KeyPress(KeyAscii As Integer)
+   If KeyAscii <> 13 And KeyAscii <> 8 Then
+      Select Case Tipo_Clave
+         Case Is = "N"
+            If Not IsNumeric(Chr(KeyAscii)) Then
+               KeyAscii = 0
+            End If
+         Case Is = "C"
+            If Not UCase(Chr(KeyAscii)) >= "A" And UCase(Chr(KeyAscii)) <= "Z" Then
+               KeyAscii = 0
+            End If
+      End Select
+   ElseIf KeyAscii = 13 And Trim(TxtClaveNueva.Text) <> "" Then
+      TxtClaveConfirma.SetFocus
+   End If
+End Sub
+
+Private Sub TxtClaveNueva_LostFocus()
+   If TxtClaveNueva.Text = clave Or TxtClaveNueva.Text = clave_anterior1 Or _
+      TxtClaveNueva.Text = clave_anterior2 Or TxtClaveNueva.Text = clave_anterior3 Then
+      MsgBox "La clave fue utilizada anteriormente", vbExclamation, TITSISTEMA
+      TxtClaveNueva.SetFocus
+      Exit Sub
+   End If
+End Sub
+Function FUNC_VALIDA_CLAVE() As Boolean
+   Dim datos()
+   Dim Password_Usuario As String
+
+   FUNC_VALIDA_CLAVE = False
+   
+   Envia = Array(LblUsuario.Caption)
+   
+   If Not Bac_Sql_Execute(giSQL_DatabaseCommon & "..SP_VALIDA_INGRESO_USUARIO ", Envia) Then
+      
+      MsgBox "Usuario NO Existe.", vbCritical, gsBac_Version
+      Exit Function
+   End If
+   
+   If Bac_SQL_Fetch(datos()) Then
+   
+      Password_Usuario = datos(1)
+   
+   End If
+   
+   If Trim(Password_Usuario) <> Encript(Trim(TxtClave.Text), True) Then
+      
+      MsgBox "Clave Invalida." & Chr(10) & Chr(10) & "Verifique la tecla [Bloq Mayús].", vbExclamation
+      Exit Function
+   
+   End If
+   
+   FUNC_VALIDA_CLAVE = True
+
+End Function
+

@@ -1,0 +1,1531 @@
+VERSION 5.00
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "THREED32.OCX"
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{B32E9168-9676-11D5-B8E1-000102BF8447}#1.0#0"; "BACControles.ocx"
+Begin VB.Form BacIniDia 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "Parámetros Diarios"
+   ClientHeight    =   4110
+   ClientLeft      =   2265
+   ClientTop       =   2460
+   ClientWidth     =   9315
+   ForeColor       =   &H00C0C0C0&
+   Icon            =   "Bacinidi.frx":0000
+   LinkTopic       =   "Form2"
+   LockControls    =   -1  'True
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   4110
+   ScaleWidth      =   9315
+   Begin VB.Frame Frame1 
+      Enabled         =   0   'False
+      Height          =   2475
+      Left            =   0
+      TabIndex        =   9
+      Top             =   1635
+      Width           =   2925
+      Begin Threed.SSCheck ChkRc 
+         Height          =   315
+         Left            =   105
+         TabIndex        =   10
+         Top             =   690
+         Width           =   2370
+         _Version        =   65536
+         _ExtentX        =   4180
+         _ExtentY        =   556
+         _StockProps     =   78
+         Caption         =   "Recompras Automáticas"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.26
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Font3D          =   1
+      End
+      Begin Threed.SSCheck ChkVenCap 
+         Height          =   315
+         Left            =   105
+         TabIndex        =   11
+         Top             =   1185
+         Width           =   2670
+         _Version        =   65536
+         _ExtentX        =   4710
+         _ExtentY        =   556
+         _StockProps     =   78
+         Caption         =   "Vencimiento de Captaciones "
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.26
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Font3D          =   1
+      End
+      Begin Threed.SSCheck Chkrv 
+         Height          =   315
+         Left            =   105
+         TabIndex        =   12
+         Top             =   930
+         Width           =   2550
+         _Version        =   65536
+         _ExtentX        =   4498
+         _ExtentY        =   556
+         _StockProps     =   78
+         Caption         =   "Reventas Automáticas"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.26
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Font3D          =   1
+      End
+      Begin Threed.SSCheck ChKact 
+         Height          =   315
+         Left            =   105
+         TabIndex        =   13
+         Top             =   435
+         Width           =   2370
+         _Version        =   65536
+         _ExtentX        =   4180
+         _ExtentY        =   556
+         _StockProps     =   78
+         Caption         =   "Actualiza Cartera"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.26
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Font3D          =   1
+      End
+      Begin Threed.SSCheck chkDevengamientoDolares 
+         Height          =   315
+         Left            =   105
+         TabIndex        =   17
+         Top             =   180
+         Width           =   2370
+         _Version        =   65536
+         _ExtentX        =   4180
+         _ExtentY        =   556
+         _StockProps     =   78
+         Caption         =   "Devengamiento Dolares"
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.26
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Font3D          =   1
+      End
+      Begin VB.Label Label3 
+         Caption         =   "VC :"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   165
+         Left            =   105
+         TabIndex        =   16
+         Top             =   2205
+         Width           =   2565
+      End
+      Begin VB.Label Label2 
+         Caption         =   "RV :"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   165
+         Left            =   105
+         TabIndex        =   15
+         Top             =   1950
+         Width           =   2565
+      End
+      Begin VB.Label Label1 
+         Caption         =   "RC : "
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   165
+         Left            =   105
+         TabIndex        =   14
+         Top             =   1680
+         Width           =   2610
+      End
+   End
+   Begin MSComctlLib.Toolbar Toolbar1 
+      Align           =   1  'Align Top
+      Height          =   510
+      Left            =   0
+      TabIndex        =   8
+      Top             =   0
+      Width           =   9315
+      _ExtentX        =   16431
+      _ExtentY        =   900
+      ButtonWidth     =   767
+      ButtonHeight    =   741
+      AllowCustomize  =   0   'False
+      Appearance      =   1
+      ImageList       =   "ImageList1"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   4
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmdBuscar"
+            Description     =   "Buscar"
+            Object.ToolTipText     =   "Buscar Datos"
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmdGrabar"
+            Description     =   "Grabar"
+            ImageIndex      =   2
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmdLimpiar"
+            Description     =   "Limpiar"
+            Object.ToolTipText     =   "Limpiar Pantalla"
+            ImageIndex      =   3
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "cmdSalir"
+            Description     =   "Salir"
+            Object.ToolTipText     =   "Salir"
+            ImageIndex      =   4
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+   End
+   Begin MSComctlLib.ImageList ImageList1 
+      Left            =   2490
+      Top             =   105
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   22
+      ImageHeight     =   22
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   4
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacinidi.frx":030A
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacinidi.frx":075C
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacinidi.frx":0BAE
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Bacinidi.frx":0EC8
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin Threed.SSFrame FrmMonedas 
+      Height          =   3615
+      Left            =   2955
+      TabIndex        =   4
+      Top             =   495
+      Width           =   6360
+      _Version        =   65536
+      _ExtentX        =   11218
+      _ExtentY        =   6376
+      _StockProps     =   14
+      Caption         =   " Valores de Monedas "
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+      Begin BACControles.TXTNumero text1 
+         Height          =   255
+         Left            =   105
+         TabIndex        =   3
+         Top             =   645
+         Visible         =   0   'False
+         Width           =   975
+         _ExtentX        =   1720
+         _ExtentY        =   450
+         BackColor       =   12632256
+         ForeColor       =   8388608
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         BorderStyle     =   0
+         Text            =   "0"
+         Text            =   "0"
+         Max             =   "99999999999999999.9999"
+      End
+      Begin MSFlexGridLib.MSFlexGrid Grilla 
+         Height          =   3255
+         Left            =   30
+         TabIndex        =   2
+         Top             =   330
+         Width           =   6285
+         _ExtentX        =   11086
+         _ExtentY        =   5741
+         _Version        =   393216
+         Cols            =   5
+         FixedCols       =   0
+         BackColor       =   12632256
+         ForeColor       =   8388608
+         BackColorFixed  =   8421376
+         ForeColorFixed  =   16777215
+         BackColorSel    =   8388608
+         ForeColorSel    =   8388608
+         GridColor       =   255
+         GridColorFixed  =   8421504
+         FillStyle       =   1
+         GridLines       =   2
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+   End
+   Begin Threed.SSFrame FrmFechas 
+      Height          =   1095
+      Left            =   0
+      TabIndex        =   5
+      Top             =   495
+      Width           =   2925
+      _Version        =   65536
+      _ExtentX        =   5159
+      _ExtentY        =   1931
+      _StockProps     =   14
+      Caption         =   " Fechas de Proceso "
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+      Begin BACControles.TXTFecha TxtFecProx 
+         Height          =   315
+         Left            =   1545
+         TabIndex        =   1
+         Top             =   330
+         Width           =   1245
+         _ExtentX        =   2196
+         _ExtentY        =   556
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MaxDate         =   2958465
+         MinDate         =   -328716
+         Text            =   "07/11/2000"
+      End
+      Begin BACControles.TXTFecha TxtFecPro 
+         Height          =   315
+         Left            =   120
+         TabIndex        =   0
+         Top             =   330
+         Width           =   1250
+         _ExtentX        =   2196
+         _ExtentY        =   556
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MaxDate         =   2958465
+         MinDate         =   -328716
+         Text            =   "07/11/2000"
+      End
+      Begin VB.Label Lbl_FecPrx 
+         Alignment       =   2  'Center
+         BorderStyle     =   1  'Fixed Single
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   300
+         Left            =   1545
+         TabIndex        =   7
+         Top             =   690
+         Width           =   1245
+      End
+      Begin VB.Label Lbl_FecPro 
+         Alignment       =   2  'Center
+         BorderStyle     =   1  'Fixed Single
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
+         Height          =   300
+         Left            =   120
+         TabIndex        =   6
+         Top             =   690
+         Width           =   1250
+      End
+   End
+End
+Attribute VB_Name = "BacIniDia"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+
+Dim Status_Dev             As String         'Estado del devengamiento
+                                             '  0: Proceso OK
+                                             '  1: Problemas en la ejecución y
+                                             '  2:Problema en el devengamiento
+Dim Mensaje_Dev            As String         'Mensaje devengamiento
+Dim Retorno_Dev            As String         'Retorno del procedimiento del devengamiento
+Dim swDevengo              As String         'Flag que identifica si esta devengado
+Dim Fecha_Proceso_Dev      As String         'Fecha Proceso del devengo
+Dim Fecha_Proximo_Dev      As String         'Fecha Proximo Proceso del devengo
+Dim Fecha_Cierre_Mes       As String         'Cierre de Mes
+Dim Fecha_Proceso          As String         'Fecha Proceso
+Dim Fecha_Anterior         As String         'Fecha Proceso
+Dim Fecha_Proximo_Proceso  As String         'Fecha Proximo Proceso
+Dim valPCDUSD              As Double
+Dim valPCDUF               As Double
+Dim valPTF                 As Double
+Dim gsBac_FM               As Date
+
+Dim cCategoria             As Single
+Dim cTasa                  As Single
+Dim cFecpro                As String
+Dim cFecprox               As String
+Dim cSW_PD                 As String
+Private objMensajesPD      As Object
+Dim bFlagEdit              As Boolean
+Dim bParidadesBCCH         As Boolean
+
+Dim Vcol%
+Dim I%
+Dim mens1$
+Dim J%
+Dim a1%
+Dim nPos%
+Dim ContOp$
+Dim VCodigo$
+Dim VGlosa$
+Dim KeyAscii%
+
+'Variables utilizadas en Sql Server
+Dim Sql                    As String
+Dim datos()
+Dim Proceso As String
+Dim Prox_Proc As String
+Dim Anterior As String
+Private Sub Func_Devengar_Dolares()
+
+    Call Func_Cartera_Inversiones
+    
+    If Status_Dev <> "0" Then
+        Exit Sub
+    End If
+    
+'    Call Func_Compras_Con_Pacto
+    
+    If Status_Dev <> "0" Then
+        Exit Sub
+    End If
+    
+    Call Func_Interbancario
+    
+
+End Sub
+
+Private Sub Func_Cartera_Inversiones()
+Dim Sw_Devengo_OK    As String
+Dim Msg_Devengo      As String
+
+    
+    If gsBac_Fecp <> gsBac_FM And Fecha_Proceso_Dev > gsBac_FM Then
+         Fecha_Anterior = gsBac_FM
+    End If
+
+    Status_Dev = "0"
+
+    Envia = Array()
+    AddParam Envia, Fecha_Anterior
+    AddParam Envia, Fecha_Proceso_Dev
+    AddParam Envia, valPCDUSD
+    AddParam Envia, valPCDUF
+    AddParam Envia, valPTF
+    AddParam Envia, "S"
+
+    If Bac_Sql_Execute("Sp_DevPropiaInter", Envia) Then
+        Do While Bac_SQL_Fetch(datos())
+            If datos(1) <> "SI" Then
+                Status_Dev = "2"
+                MsgBox datos(2), vbCritical, Me.Caption
+            End If
+            Retorno_Dev = datos(2)
+        Loop
+
+        If Status_Dev = "0" Then
+            Mensaje_Dev = "El Proceso de Devengamiento de la CARTERA DE INVERSIONES Termino OK"
+        Else
+            Mensaje_Dev = "El Proceso de Devengamiento de la CARTERA DE INVERSIONES Ha Fallado"
+        End If
+
+   Else
+
+      'Problema en la ejecución del procedimiento
+      Status_Dev = "1"
+      Mensaje_Dev = "El Proceso de Devengamiento de la CARTERA DE INVERSIONES Ha Fallado"
+      Retorno_Dev = ""
+
+   End If
+    
+     Valor_antiguo = " "
+     Valor_antiguo = "Fecha anterior = " & Fecha_Anterior & ";Fecha Proceso Devengo=" & Fecha_Proceso_Dev & ";Mensaje=" & Mensaje_Dev
+
+      Call GRABA_LOG_AUDITORIA(1, gsBac_Fecp, gsBac_Term, gsBac_User, _
+     "BTR", "Opc_10100", "01", "Devengo en Dólares Cart Inv.", "mdrs", Valor_antiguo, " ")
+     
+End Sub
+
+Private Sub Func_Compras_Con_Pacto()
+Dim Sw_Devengo_OK    As String
+Dim Msg_Devengo      As String
+
+    If gsBac_Fecp <> gsBac_FM And Fecha_Proceso_Dev > gsBac_FM Then
+         Fecha_Anterior = gsBac_FM
+    End If
+
+    Status_Dev = "0"
+   
+    Envia = Array(Format(Fecha_Anterior, "yyyymmdd"), _
+            Format(Fecha_Proceso_Dev, "yyyymmdd"), _
+            CDbl(valPCDUSD), _
+            CDbl(valPCDUF), _
+            CDbl(valPTF), _
+            "S")
+
+    If Bac_Sql_Execute("sp_devengo_compras_con_pacto", Envia) Then
+        Do While Bac_SQL_Fetch(datos())
+            If datos(1) <> "OK" Then
+                Status_Dev = "2"
+            End If
+            Retorno_Dev = datos(2)
+        Loop
+        If Status_Dev = "0" Then
+            Mensaje_Dev = "El Proceso de Devengamiento de las COMPRAS CON PACTO Termino OK"
+        Else
+            Mensaje_Dev = "El Proceso de Devengamiento de las COMPRAS CON PACTO Ha Fallado"
+        End If
+
+      'Grabación del LOG
+'      Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, Trim(Mensaje_Dev) + " (" + Trim$(Retorno_Dev) + ")")
+
+    Else
+
+      'Problema en la ejecución del procedimiento
+        Status_Dev = "1"
+        Mensaje_Dev = "El Proceso de Devengamiento de las COMPRAS CON PACTO Ha Fallado"
+        Retorno_Dev = ""
+
+'      Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Devengamiento ha fallado")
+
+    End If
+
+     Valor_antiguo = " "
+     Valor_antiguo = "Fecha anterior = " & Fecha_Anterior & ";Fecha Proceso Devengo=" & Fecha_Proceso_Dev & ";Mensaje=" & Mensaje_Dev
+
+      Call GRABA_LOG_AUDITORIA(1, gsBac_Fecp, gsBac_Term, gsBac_User, _
+     "BTR", "Opc_10100", "01", "Devengo en Dólares Compras con Pacto", "mdrs", Valor_antiguo, " ")
+     
+End Sub
+
+Private Sub Func_Interbancario()
+
+    Dim Sw_Devengo_OK    As String
+    Dim Msg_Devengo      As String
+
+    If gsBac_Fecp <> gsBac_FM And Fecha_Proceso_Dev > gsBac_FM Then
+         Fecha_Anterior = gsBac_FM
+    End If
+
+    Status_Dev = "0"
+   
+    Envia = Array(Format(Fecha_Anterior, "yyyymmdd"), _
+            Format(Fecha_Proceso_Dev, "yyyymmdd"), _
+            "S")
+
+    If Bac_Sql_Execute("Sp_Devengo_InterBancarios", Envia) Then
+        Do While Bac_SQL_Fetch(datos())
+            If datos(1) <> "OK" Then
+                Status_Dev = "2"
+                MsgBox datos(2), vbCritical, Me.Caption
+            End If
+            Retorno_Dev = datos(2)
+        Loop
+        If Status_Dev = "0" Then
+            Mensaje_Dev = "El Proceso de Devengamiento de INTERBANCARIOS Termino OK"
+        Else
+            Mensaje_Dev = "El Proceso de Devengamiento de INTERBANCARIOS Ha Fallado"
+        End If
+
+      'Grabación del LOG
+'      Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, Trim(Mensaje_Dev) + " (" + Trim$(Retorno_Dev) + ")")
+
+    Else
+
+      'Problema en la ejecución del procedimiento
+        Status_Dev = "1"
+        Mensaje_Dev = "El Proceso de Devengamiento INTERBANCARIOS Ha Fallado"
+        Retorno_Dev = ""
+
+'      Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Devengamiento ha fallado")
+
+    End If
+     
+     Valor_antiguo = " "
+     Valor_antiguo = "Fecha anterior = " & Fecha_Anterior & ";Fecha Proceso Devengo=" & Fecha_Proceso_Dev & ";Mensaje=" & Mensaje_Dev
+
+      Call GRABA_LOG_AUDITORIA(1, gsBac_Fecp, gsBac_Term, gsBac_User, _
+     "BTR", "Opc_10100", "01", "Devengo Interbancarios en Dólares.", "mdrs", Valor_antiguo, " ")
+     
+End Sub
+
+
+
+' ==================================================================
+'   Función     :   funcProcesaRecompras
+'   Objetivo    :   Realiza el proceso de recompras automaticas
+' ==================================================================
+Function funcProcesaRecompras() As Boolean
+
+    funcProcesaRecompras = False
+    
+'    Sql = "sp_recompra_automatica " & "'" & gsBac_User & "','" & gsBac_Term & "'"
+    
+    Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Inicio de proceso de recompras automaticas")
+    
+    Screen.MousePointer = vbHourglass
+    
+    Envia = Array(gsBac_User, gsBac_Term)
+
+    If Not Bac_Sql_Execute("sp_recompra_automatica", Envia) Then
+        Label1.Caption = Label1.Caption & " ERROR"
+        Screen.MousePointer = vbDefault
+        Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Proceso de Recompras Automaticas Falló ")
+        Exit Function
+    End If
+    
+    If Bac_SQL_Fetch(datos()) Then
+        If datos(1) = "NO" Then
+'            MsgBox "Problemas con respuesta de proceso " & Sql, vbCritical, gsBac_Version
+            Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Proceso de recompras automaticas falló ")
+
+            Screen.MousePointer = vbDefault
+            MsgBox datos(2), vbCritical, gsBac_Version
+            Exit Function
+        Else
+            Valor_antiguo = " "
+            Valor_antiguo = "Fecha Proceso = " & TxtFecPro.Text & ";Nº RC =" & datos(2)
+            Label1.Caption = Label1.Caption & " " & Left(datos(2), 11)
+        End If
+    End If
+    
+    Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, (datos(2)))
+        
+    funcProcesaRecompras = True
+    Screen.MousePointer = vbDefault
+     
+     
+      Call GRABA_LOG_AUDITORIA(1, gsBac_Fecp, gsBac_Term, gsBac_User, _
+     "BTR", "Opc_10100", "01", "Recompras", "mdmo", Valor_antiguo, " ")
+         
+
+End Function
+
+
+
+Function funcProcesaReventas() As Boolean
+
+    funcProcesaReventas = False
+    
+'    Sql = "sp_reventa_automatica " & "'" & gsBac_User & "','" & gsBac_Term & "'"
+    
+    
+    Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Inicio de proceso de reventas automaticas")
+    
+    Screen.MousePointer = vbHourglass
+
+    Envia = Array(gsBac_User, gsBac_Term)
+    
+    If Not Bac_Sql_Execute("sp_reventa_automatica", Envia) Then
+        Screen.MousePointer = vbDefault
+        Label2.Caption = Label2.Caption & " ERROR "
+        Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Proceso de Reventas Automaticas Falló ")
+        Exit Function
+    End If
+    
+    If Bac_SQL_Fetch(datos()) Then
+        If datos(1) = "NO" Then
+            Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Proceso de Recompras Automaticas Falló ")
+            Screen.MousePointer = vbDefault
+            MsgBox datos(2), vbCritical, gsBac_Version
+            Exit Function
+        Else
+            Valor_antiguo = " "
+            Valor_antiguo = "Fecha Proceso = " & TxtFecPro.Text & ";Nº RV =" & datos(2)
+            Label2.Caption = Label2.Caption & " " & Left(datos(2), 11)
+        End If
+    End If
+    
+    Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, (datos(2)))
+        
+    funcProcesaReventas = True
+    Screen.MousePointer = vbDefault
+     
+     Valor_antiguo = " "
+     Valor_antiguo = "Fecha Proceso = " & TxtFecPro.Text & ";" & Label2.Caption
+
+      Call GRABA_LOG_AUDITORIA(1, gsBac_Fecp, gsBac_Term, gsBac_User, _
+     "BTR", "Opc_10100", "01", "Reventas", "mdmo", Valor_antiguo, " ")
+     
+End Function
+
+Function funcProcesaVencCaptaciones() As Boolean
+
+'    funcProcesaVencCaptaciones = False
+    
+''''''    Sql = "sp_procesavencimientos " & "'" & gsBac_User & "','" & gsBac_Term & "'"
+    
+'    Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Inicio de proceso de vencimientos de captaciones")
+       
+'    Screen.MousePointer = vbHourglass
+'    Envia = Array(gsBac_User, gsBac_Term)
+
+'    If Not Bac_Sql_Execute("sp_procesavencimientos", Envia) Then
+'        Screen.MousePointer = vbDefault
+'        Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Proceso de vencimientos de captaciones falló ")
+'        Exit Function
+'    End If
+    
+'    If Bac_SQL_Fetch(DATOS()) Then
+'        If DATOS(1) = "NO" Then
+'            Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, "Proceso de vencimientos de captaciones falló ")
+'            Screen.MousePointer = vbDefault
+'            MsgBox DATOS(2), vbCritical, gsBac_Version
+'            Exit Function
+'        Else
+'            Label3.Caption = Label3.Caption & " " & Left(DATOS(2), 15)
+'        End If
+'    End If
+    
+'    Call Grabar_Log("BTR", gsBac_User, gsBac_Fecp, (DATOS(2)))
+        
+    funcProcesaVencCaptaciones = True
+    Screen.MousePointer = vbDefault
+
+End Function
+
+Private Sub Func_Grabar_Datos()
+On Error GoTo Label1
+
+Dim iRow             As Long
+Dim cCodigo          As Integer
+Dim nValor           As Double
+Dim nCodBcch         As Integer
+Dim objValoresMoneda As Object
+Dim bOk              As Boolean
+   
+    Screen.MousePointer = vbHourglass
+
+    If BacChkFechas() = False Then
+        Screen.MousePointer = vbDefault
+        MsgBox "Error en Fecha de proceso o Fecha de próximo proceso"
+        On Error GoTo 0
+        Exit Sub
+    End If
+
+    Set objValoresMoneda = New clsValoresMoneda
+
+   'Grabamos Valores de Monedas
+    If objValoresMoneda.grabar() = True Then
+      
+      ' VB+  15/02/2000
+      ' Se realiza proceso de devengamiento de dolares
+      ' ===========================================================================
+        bOk = False
+           
+           'SE CAMBIO PARA REALIZAR LOS VENCIMIENTOS
+           'Primero se debe cambiar la fecha
+           
+        cFecpro = CStr(TxtFecPro.Text)
+        cFecprox = CStr(TxtFecProx.Text)
+
+        Call BacGrabarParamAc(cFecpro, cFecprox)
+
+      'Devengar
+
+        If Bac_Sql_Execute("sp_chkfechasdevengamiento") Then
+            Do While Bac_SQL_Fetch(datos())
+                Fecha_Proceso = datos(1)
+                Fecha_Proximo_Proceso = datos(2)
+                Fecha_Cierre_Mes = datos(3)
+                valPCDUSD = datos(4)
+                valPCDUF = datos(5)
+                valPTF = datos(6)
+                swDevengo = datos(7)
+                Fecha_Anterior = datos(11)
+            Loop
+        End If
+
+        Fecha_Proceso_Dev = Fecha_Proceso
+        Fecha_Proximo_Dev = Fecha_Cierre_Mes
+
+         gsBac_FM = CDate("01/" + Str(Month(Fecha_Anterior)) + "/" + Str(Year(Fecha_Anterior)))
+         gsBac_FM = DateAdd("m", 1, gsBac_FM)
+         gsBac_FM = DateAdd("d", -1, gsBac_FM)
+      
+        Call Func_Devengar_Dolares
+
+        If Status_Dev <> "0" Then
+            MsgBox "Problemas al Realizar el Devengamiento de los Dólares", vbExclamation, Me.Caption
+            Call Volver_Sw
+            Screen.MousePointer = 0
+            Exit Sub
+        End If
+
+        chkDevengamientoDolares.Value = True
+
+    ' ACTUALIZACION DE CARTERA
+'   Sql = "sp_actualiza_cartera"
+
+        If Bac_Sql_Execute("sp_actualiza_cartera") Then
+            Do While Bac_SQL_Fetch(datos())
+                If datos(1) = "SI" Then
+                    ChKact.Value = True
+                Else
+                    Screen.MousePointer = vbDefault
+                    MsgBox datos(2), vbCritical, gsBac_Version
+                    Call Volver_Sw
+                End If
+            Loop
+        End If
+     
+     Valor_antiguo = " "
+     Valor_antiguo = "Fecha Proceso = " & TxtFecPro.Text
+
+      Call GRABA_LOG_AUDITORIA(1, gsBac_Fecp, gsBac_Term, gsBac_User, _
+     "BTR", "Opc_10100", "01", "Actualización de Cartera", "mdrs", Valor_antiguo, " ")
+     
+
+    ' PROCESO DE RECOMPRA
+        If Not ChkRc.Value Then
+            If Not funcProcesaRecompras Then
+                Call Volver_Sw
+                Exit Sub
+            End If
+            ChkRc.Value = True
+        End If
+
+    ' PROCESO DE REVENTA
+        If Not Chkrv.Value Then
+            If Not funcProcesaReventas Then
+                Call Volver_Sw
+                Exit Sub
+            End If
+            Chkrv.Value = True
+        End If
+
+    ' PROCESO DE VENCIMIENTOS CAPTACIONES
+        If Not ChkVenCap.Value Then
+            If Not funcProcesaVencCaptaciones Then
+                Call Volver_Sw
+                Exit Sub
+            End If
+            ChkVenCap.Value = True
+        End If
+
+        gsBac_Fecp = cFecpro
+        gsBac_Fecx = cFecprox
+        BacTrader.Pnl_Fecha.Caption = Format(gsBac_Fecp, "dd/mm/yyyy")
+
+        If Not grilla.Rows > 1 Then
+            On Error GoTo 0
+            Exit Sub
+        End If
+
+        With grilla
+            For iRow = 1 To grilla.Rows - 1
+                .Row = iRow
+
+                If Trim$(.TextMatrix(.Row, 0)) <> "" Then
+                    .Col = 3: cCodigo = .Text
+                    nValor = F_FomateaValor(.TextMatrix(.Row, 1), ",", ".")
+    
+                    .Col = 4: nCodBcch = Val(.Text)
+
+                    TxtFecPro.Text = Format(TxtFecPro.Text, "dd/mm/yyyy")
+                    Call objValoresMoneda.Agregar(cCodigo, CStr(TxtFecPro.Text), nValor)
+
+                    nValor = F_FomateaValor(.TextMatrix(.Row, 2), ",", ".")
+
+                    TxtFecProx.Text = Format(TxtFecProx.Text, "dd/mm/yyyy")
+                    Call objValoresMoneda.Agregar(cCodigo, CStr(TxtFecProx.Text), nValor)
+                End If
+            Next iRow
+        End With
+
+        ' ===========================================================================
+        ' VB-
+        ' Ejecuto Proceso que se encarga de cambiar datos por el cambio de Fechas
+        ' ========================================================================
+        Call Proc_Carga_Parametros
+        ' ========================================================================
+
+        Toolbar1.Buttons(2).Enabled = False
+        MsgBox "Parámetros Diarios Grabados Satisfactoriamente.", vbInformation, gsBac_Version
+    Else
+        MsgBox "Parámetros diarios no se pueden grabar.", vbCritical, gsBac_Version
+        Call Volver_Sw
+        Unload Me
+    End If
+
+    Set objValoresMoneda = Nothing
+    Screen.MousePointer = vbDefault
+
+    On Error GoTo 0
+    Exit Sub
+
+
+Label1:
+    On Error GoTo 0
+    Screen.MousePointer = vbDefault
+    Call objMensajesPD.BacMsgError
+
+End Sub
+
+Private Sub Func_Limpiar_Pantalla()
+
+   On Error GoTo Label1
+
+   grilla.Rows = 2
+   Call F_BacLimpiaGrilla(grilla)
+
+   grilla.Enabled = False
+   Toolbar1.Buttons(3).Enabled = True
+   Toolbar1.Buttons(2).Enabled = False
+   TxtFecPro.Enabled = False
+   TxtFecProx.Enabled = False
+   TxtFecPro.Text = cFecpro
+   TxtFecProx.Text = cFecprox
+   Lbl_FecPrx.Caption = ""
+   Lbl_FecPro.Caption = ""
+   ChKact.Value = 0
+   ChkRc.Value = 0
+   Chkrv.Value = 0
+   ChkVenCap.Value = 0
+   FrmMonedas.Enabled = False
+
+   On Error GoTo 0
+   Exit Sub
+
+Label1:
+   On Error GoTo 0
+   Call objMensajesPD.BacMsgError
+
+End Sub
+
+Private Sub Func_Buscar_Datos()
+
+   On Error GoTo Label1
+
+   Dim Fila             As Long
+
+   cFecpro = TxtFecPro.Text
+   cFecprox = TxtFecProx.Text
+
+   With grilla
+
+      .Rows = 1
+      
+      If BacChkFechas() = False Then
+         .Enabled = False
+         Toolbar1.Buttons(2).Enabled = False
+         Exit Sub
+
+      End If
+    
+      If BacLeeParamPd(TxtFecPro.Text, TxtFecProx.Text, grilla) = True Then
+         .Enabled = True
+         Toolbar1.Buttons(2).Enabled = IIf(cSW_PD = "1", False, True)
+'         ChKact.Value = 1
+'         ChkRc.Value = 1
+'         Chkrv.Value = 1
+'         ChkVenCap.Value = 1
+
+      Else
+         .Enabled = False
+         Toolbar1.Buttons(2).Enabled = False
+
+      End If
+   
+      TxtFecPro.Enabled = False
+      TxtFecProx.Enabled = False
+      'Toolbar1.Buttons(2).Enabled = False
+
+   End With
+
+  ' Toolbar1.Buttons(4).Enabled = True esto
+
+   FrmMonedas.Enabled = IIf(cSW_PD = "1", False, True)
+  ' Me.Height = 5520
+
+   On Error GoTo 0
+
+   Exit Sub
+
+Label1:
+   On Error GoTo 0
+
+   'OJO DMV
+   Call objMensajesPD.BacMsgError
+
+End Sub
+
+Private Function BacChkFechas() As Boolean
+
+   On Error GoTo Label1
+
+   BacChkFechas = True
+
+   If Not BacChkFecpro() Then
+      BacChkFechas = False
+      Exit Function
+
+   End If
+
+   If Not BacChkFecprx() Then
+      BacChkFechas = False
+
+   End If
+
+   On Error GoTo 0
+
+   Exit Function
+
+Label1:
+   On Error GoTo 0
+   Call objMensajesPD.BacMsgError
+
+End Function
+
+Public Sub BacGrabarParamAc(cFecpro As String, cFecprox As String)
+On Error GoTo Label1
+
+'   Sql = "SP_GRABARPARAMAC "
+'   Sql = Sql & "'" & Format(cFecpro, "YYYYMMDD") & "',"
+'   Sql = Sql & "'" & Format(cFecprox, "YYYYMMDD") & "'"
+
+    Envia = Array(Format(cFecpro, "YYYYMMDD"), Format(cFecprox, "YYYYMMDD"))
+    
+    If Not Bac_Sql_Execute("SP_GRABARPARAMAC", Envia) Then
+        Exit Sub
+    End If
+
+    Valor_antiguo = " "
+    Valor_antiguo = "Fecha Proceso=" & cFecpro & ";Fecha Prox Proceso= " & cFecprox
+    
+     Call GRABA_LOG_AUDITORIA(1, gsBac_Fecp, gsBac_Term, gsBac_User, _
+     "BTR", "Opc_10100", "01", "Grabación de Fechas y actualización de Swith Diarios", "mdac", Valor_antiguo, " ")
+
+    On Error GoTo 0
+
+    Exit Sub
+
+
+Label1:
+    On Error GoTo 0
+    Call objMensajesPD.BacMsgError
+
+End Sub
+
+Public Function BacLeeParamPd(Fechapro As String, Fechaprox As String, Grd As MSFlexGrid)
+   On Error GoTo Label1
+
+   BacLeeParamPd = False
+
+   Envia = Array(Fechapro, Fechaprox)
+
+   If Not Bac_Sql_Execute("sp_leerpd", Envia) Then
+      
+      Exit Function
+   
+   End If
+
+   With Grd
+        
+      .Rows = 1
+      
+      Do While Bac_SQL_Fetch(datos())
+      
+         .Rows = .Rows + 1
+         
+         .TextMatrix(.Rows - 1, 0) = datos(2)
+         .TextMatrix(.Rows - 1, 1) = Format(datos(3), FDecimal)
+         .TextMatrix(.Rows - 1, 2) = Format(datos(4), FDecimal)
+         .TextMatrix(.Rows - 1, 3) = datos(1)
+         .TextMatrix(.Rows - 1, 4) = datos(5)
+      
+      Loop
+        
+      If .Rows > 1 Then
+         
+         Grd.Enabled = True
+         
+         .RowSel = 1
+         .Col = 0
+         .ColSel = 0
+      
+      End If
+
+    End With
+    
+    BacLeeParamPd = True
+
+    On Error GoTo 0
+
+    Exit Function
+
+
+Label1:
+    On Error GoTo 0
+    Call objMensajesPD.BacMsgError
+
+End Function
+
+Public Function BacLeerParamAc(ByRef cFecpro As String, ByRef cFecprox As String, ByRef cSW_PD As String) As Boolean
+
+   On Error GoTo Label1
+
+   BacLeerParamAc = False
+
+   If Not Bac_Sql_Execute("SP_LEERPARAMAC") Then
+      
+      Exit Function
+
+   End If
+
+   If Bac_SQL_Fetch(datos()) Then
+      cFecpro = datos(2)
+      cFecprox = datos(2)
+      cSW_PD = datos(3)
+      cFecprox = DateAdd("d", 1, cFecprox)
+
+      BacLeerParamAc = True
+
+   End If
+
+   While Weekday(cFecprox) = vbSunday Or Weekday(cFecprox) = vbSaturday Or Not BacEsHabil(cFecprox)
+      cFecprox = DateAdd("d", 1, cFecprox)
+
+   Wend
+
+   BacLeerParamAc = True
+
+   On Error GoTo 0
+
+   Exit Function
+
+Label1:
+   On Error GoTo 0
+   Call objMensajesPD.BacMsgError
+
+End Function
+
+Private Function BacChkFecpro() As Boolean
+
+   On Error GoTo Label1
+
+   If BacEsHabil(TxtFecPro.Text) = True Then
+      Lbl_FecPro.ForeColor = &H0&
+      Lbl_FecPro.Caption = BacDiaSem(TxtFecPro.Text)
+      BacChkFecpro = True
+
+   Else
+      If Month(TxtFecPro.Text) = Month(DateAdd("d", 1, TxtFecPro.Text)) Then
+         Lbl_FecPro.ForeColor = &HFF&
+         Lbl_FecPro.Caption = BacDiaSem(TxtFecPro.Text)
+         MsgBox "Fecha proceso ingresada no es Día Hábil", vbOKOnly, "Parámetros Diarios"
+
+      Else
+         BacChkFecpro = True
+
+      End If
+
+   End If
+
+   On Error GoTo 0
+   Exit Function
+
+Label1:
+   On Error GoTo 0
+   Call objMensajesPD.BacMsgError
+
+End Function
+Private Function BacChkFecprx() As Boolean
+
+   On Error GoTo Label1
+
+   If DateDiff("d", CDate(TxtFecPro.Text), CDate(TxtFecProx.Text)) <= 0 Then
+      MsgBox "Fecha próximo proceso menor o igual a la de proceso?", vbOKOnly, "Parámetros diarios"
+      BacChkFecprx = False
+      Exit Function
+
+   End If
+
+   If BacEsHabil(TxtFecProx.Text) = True Then
+      Lbl_FecPrx.ForeColor = &H0&
+      Lbl_FecPrx.Caption = BacDiaSem(TxtFecProx.Text)
+      BacChkFecprx = True
+   Else
+      If Month(TxtFecProx.Text) = Month(DateAdd("d", 1, TxtFecProx.Text)) Then
+         Lbl_FecPrx.ForeColor = &HFF&
+         Lbl_FecPrx.Caption = BacDiaSem(TxtFecProx.Text)
+         MsgBox "Fecha próximo proceso ingresada no es Día Hábil", vbOKOnly, "Parámetros Diarios"
+         BacChkFecprx = False
+
+      Else
+         BacChkFecprx = True
+
+      End If
+
+   End If
+
+   On Error GoTo 0
+   Exit Function
+
+Label1:
+   On Error GoTo 0
+   Call objMensajesPD.BacMsgError
+
+End Function
+
+
+Private Sub Form_Activate()
+
+   On Error GoTo Label1
+
+   Screen.MousePointer = 0
+
+   Call CargarParam_Grilla(grilla)
+
+  ' Me.Height = 2070
+   FrmMonedas.Enabled = False
+
+   On Error GoTo 0
+
+   Exit Sub
+
+Label1:
+   On Error GoTo 0
+   Call objMensajesPD.BacMsgError
+
+End Sub
+
+Private Sub Form_Load()
+
+   Set objMensajesPD = New ClsMsg
+
+   On Error GoTo Label1
+
+   'Lee Parametros.-
+   Me.Tag = ""
+
+   cCategoria = 21
+   cTasa = 0
+   
+   
+   Proceso = gsBac_Fecp
+   Prox_Proc = gsBac_Fecx
+   Anterior = gsBac_Feca
+
+   If BacLeerParamAc(cFecpro, cFecprox, cSW_PD) = False Then
+      Me.Tag = "S"
+      Exit Sub
+
+   End If
+
+   Me.Tag = ""
+   TxtFecPro.Text = cFecpro
+   TxtFecProx.Text = cFecprox
+
+   TxtFecPro.Enabled = False
+   TxtFecProx.Enabled = False
+
+   grilla.Enabled = False
+   Toolbar1.Buttons(2).Enabled = False
+
+   On Error GoTo 0
+   Exit Sub
+
+Label1:
+   On Error GoTo 0
+   Call objMensajesPD.BacMsgError
+
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+
+   Set objMensajesPD = Nothing
+
+End Sub
+
+Private Sub Grilla_GotFocus()
+
+   J = 1
+
+End Sub
+
+Private Sub Grilla_KeyPress(KeyAscii As Integer)
+
+   If grilla.Enabled = True Then
+   
+      If Trim(grilla.TextMatrix(grilla.Row, 0)) <> "" Then
+      
+         If (KeyAscii = 13 Or IsNumeric(Chr(KeyAscii))) And grilla.Col = 1 Or grilla.Col = 2 Then
+         
+            Text1.Visible = True
+
+            If KeyAscii = 13 Then
+            
+               Text1.Text = grilla.TextMatrix(grilla.RowSel, grilla.Col)
+
+            ElseIf IsNumeric(Chr(KeyAscii)) Then
+            
+               Text1.Text = Chr(KeyAscii)
+
+            End If
+
+            Call PROC_POSI_TEXTO(grilla, Text1)
+            Text1.SetFocus
+
+         End If
+
+      End If
+
+   End If
+
+End Sub
+
+Private Sub Grilla_LostFocus()
+
+   J = 1
+
+End Sub
+
+Private Sub Text1_GotFocus()
+
+   J = 1
+
+End Sub
+
+Private Sub Text1_KeyPress(KeyAscii As Integer)
+
+   If KeyAscii = 13 Then
+      grilla.TextMatrix(grilla.RowSel, grilla.Col) = Format(Text1.Text, "###,###,###0.###0")
+      Text1.Visible = False
+      grilla.SetFocus
+
+   ElseIf KeyAscii = 27 Then
+      Text1.Visible = False
+      grilla.SetFocus
+
+   End If
+
+End Sub
+
+Private Sub Text1_LostFocus()
+
+   J = 1
+   Text1.Visible = False
+
+End Sub
+
+Private Sub Toolbar1_ButtonClick(ByVal Button As MSComctlLib.Button)
+
+   Select Case Button.Index
+   Case 1
+      Call Func_Buscar_Datos
+
+   Case 2
+      Call Func_Grabar_Datos
+      Me.MousePointer = vbDefault
+   Case 3
+      Call Func_Limpiar_Pantalla
+
+   Case 4
+      Unload Me
+
+   End Select
+     
+End Sub
+
+Private Function Volver_Sw()
+Envia = Array()
+Envia = Array(Proceso, Prox_Proc, Anterior)
+If Not Bac_Sql_Execute("sp_Volver_Sw", Envia) Then
+    MsgBox ("Problemas al cambiar SW")
+    Screen.MousePointer = 0
+    Exit Function
+End If
+
+End Function
+Private Sub TxtFecPro_KeyPress(KeyAscii As Integer)
+
+   If Format$(TxtFecPro.Text, "yyyymmdd") < Format$(gsBac_Fecp, "yyyymmdd") Then
+      MsgBox "Fecha de proceso debe ser igual o mayor a la del proceso en curso ", vbExclamation, gsBac_Version
+      Exit Sub
+
+   End If
+
+End Sub
+
+Private Sub TxtFecPro_LostFocus()
+
+   Lbl_FecPrx.ForeColor = &H0&
+
+   If Trim$(TxtFecPro.Tag) = "" Then
+      TxtFecPro.Tag = TxtFecPro.Text
+
+   End If
+
+   Lbl_FecPro.Caption = BacDiaSem(TxtFecPro.Text)
+
+End Sub
+
+Private Sub TxtFecProx_LostFocus()
+
+   Lbl_FecPrx.ForeColor = &H0&
+   Lbl_FecPrx.Caption = BacDiaSem(TxtFecProx.Text)
+
+End Sub
+
+Private Sub CargarParam_Grilla(Grillas As Object)
+
+   With grilla
+      .ColWidth(0) = 2730
+      .ColWidth(1) = 1700
+      .ColWidth(2) = 1700
+      .ColWidth(3) = 0
+      .ColWidth(4) = 0
+
+      .RowHeight(0) = 350
+      .CellFontWidth = 4
+      .Row = 0
+
+      .Col = 0
+      .FixedAlignment(0) = 4
+      .CellFontBold = True
+      .Text = " Moneda/Tasa "
+      .ColAlignment(0) = 2
+
+      .Col = 1
+      .FixedAlignment(1) = 4
+      .CellFontBold = True
+      .Text = " Proceso "
+      .ColAlignment(1) = 8
+
+      .Col = 2
+      .FixedAlignment(2) = 4
+      .CellFontBold = True
+      .Text = " Proximo Proceso "
+      .ColAlignment(2) = 8
+
+   End With
+
+End Sub
+

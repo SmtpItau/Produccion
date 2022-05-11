@@ -1,0 +1,682 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{989C9190-EDF5-45A8-AB6C-98E6EF0384D7}#1.0#0"; "Bac_Controles_Pas.ocx"
+Begin VB.Form FRM_RPT_DIFERENCIA_CARTERA 
+   BorderStyle     =   3  'Fixed Dialog
+   Caption         =   "Informes Diferencia de Carteras"
+   ClientHeight    =   2820
+   ClientLeft      =   45
+   ClientTop       =   435
+   ClientWidth     =   4500
+   ForeColor       =   &H8000000A&
+   Icon            =   "FRM_RPT_DIFERENCIA_CARTERA.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   MinButton       =   0   'False
+   ScaleHeight     =   2820
+   ScaleWidth      =   4500
+   ShowInTaskbar   =   0   'False
+   Begin VB.Frame Frame3 
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00000000&
+      Height          =   780
+      Left            =   150
+      TabIndex        =   4
+      Top             =   495
+      Width           =   4200
+      Begin VB.Frame Frame2 
+         BorderStyle     =   0  'None
+         Height          =   660
+         Index           =   0
+         Left            =   75
+         TabIndex        =   5
+         Top             =   1515
+         Width           =   3825
+      End
+      Begin BACControles.TXTFecha TxtFecProc 
+         Height          =   315
+         Left            =   1560
+         TabIndex        =   6
+         Top             =   210
+         Width           =   1215
+         _ExtentX        =   2143
+         _ExtentY        =   556
+         Enabled         =   -1  'True
+         Enabled         =   -1  'True
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         MaxDate         =   402133
+         MinDate         =   18264
+         Text            =   "18/06/2001"
+      End
+      Begin VB.Label lblEtiqueta 
+         AutoSize        =   -1  'True
+         Caption         =   "Fecha Proceso"
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H80000007&
+         Height          =   210
+         Index           =   1
+         Left            =   240
+         TabIndex        =   7
+         Top             =   225
+         Width           =   1215
+      End
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Listados  de Cartera"
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000007&
+      Height          =   1275
+      Left            =   150
+      TabIndex        =   0
+      Top             =   1350
+      Width           =   4185
+      Begin VB.PictureBox SinCheck 
+         BorderStyle     =   0  'None
+         Height          =   330
+         Index           =   0
+         Left            =   240
+         Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":2EFA
+         ScaleHeight     =   330
+         ScaleWidth      =   375
+         TabIndex        =   12
+         Top             =   360
+         Width           =   375
+      End
+      Begin VB.PictureBox ConCheck 
+         BorderStyle     =   0  'None
+         Height          =   330
+         Index           =   0
+         Left            =   3495
+         Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":3262
+         ScaleHeight     =   330
+         ScaleWidth      =   330
+         TabIndex        =   11
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   330
+      End
+      Begin VB.PictureBox SinCheck 
+         BorderStyle     =   0  'None
+         Height          =   330
+         Index           =   1
+         Left            =   240
+         Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":35E8
+         ScaleHeight     =   330
+         ScaleWidth      =   375
+         TabIndex        =   10
+         Top             =   720
+         Width           =   375
+      End
+      Begin VB.PictureBox ConCheck 
+         BorderStyle     =   0  'None
+         Height          =   330
+         Index           =   1
+         Left            =   3495
+         Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":3950
+         ScaleHeight     =   330
+         ScaleWidth      =   330
+         TabIndex        =   9
+         Top             =   720
+         Visible         =   0   'False
+         Width           =   330
+      End
+      Begin VB.PictureBox SinCheck 
+         BorderStyle     =   0  'None
+         Height          =   330
+         Index           =   4
+         Left            =   255
+         ScaleHeight     =   330
+         ScaleWidth      =   375
+         TabIndex        =   2
+         Top             =   1755
+         Visible         =   0   'False
+         Width           =   375
+      End
+      Begin VB.PictureBox ConCheck 
+         BorderStyle     =   0  'None
+         Height          =   330
+         Index           =   4
+         Left            =   3510
+         ScaleHeight     =   330
+         ScaleWidth      =   330
+         TabIndex        =   1
+         Top             =   1740
+         Visible         =   0   'False
+         Width           =   330
+      End
+      Begin VB.Label Etiqueta 
+         AutoSize        =   -1  'True
+         Caption         =   "Bonos Propia Emision"
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H80000007&
+         Height          =   210
+         Index           =   0
+         Left            =   720
+         TabIndex        =   14
+         Top             =   405
+         Width           =   1800
+      End
+      Begin VB.Label Etiqueta 
+         AutoSize        =   -1  'True
+         Caption         =   "Creditos Corfo"
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H80000007&
+         Height          =   210
+         Index           =   1
+         Left            =   720
+         TabIndex        =   13
+         Top             =   765
+         Width           =   1230
+      End
+      Begin VB.Label Etiqueta 
+         AutoSize        =   -1  'True
+         Caption         =   "Letras Hipotecarias"
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H80000007&
+         Height          =   210
+         Index           =   4
+         Left            =   735
+         TabIndex        =   3
+         Top             =   1800
+         Visible         =   0   'False
+         Width           =   1860
+      End
+   End
+   Begin MSComctlLib.Toolbar Tlb_Movimiento 
+      Align           =   1  'Align Top
+      Height          =   450
+      Left            =   0
+      TabIndex        =   8
+      Top             =   0
+      Width           =   4500
+      _ExtentX        =   7938
+      _ExtentY        =   794
+      ButtonWidth     =   820
+      ButtonHeight    =   794
+      AllowCustomize  =   0   'False
+      Wrappable       =   0   'False
+      Style           =   1
+      ImageList       =   "Img_opciones"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   3
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Object.ToolTipText     =   "Imprimir"
+            ImageIndex      =   17
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Object.ToolTipText     =   "Vista Previa"
+            ImageIndex      =   18
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Object.ToolTipText     =   "Salir"
+            ImageIndex      =   2
+         EndProperty
+      EndProperty
+      Begin MSComctlLib.ImageList Img_opciones 
+         Left            =   3840
+         Top             =   0
+         _ExtentX        =   1005
+         _ExtentY        =   1005
+         BackColor       =   -2147483643
+         ImageWidth      =   24
+         ImageHeight     =   24
+         MaskColor       =   12632256
+         _Version        =   393216
+         BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+            NumListImages   =   25
+            BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":3CD6
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":413D
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":4633
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":4AC6
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":4FAE
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":54C1
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":59FE
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":5E40
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":62FA
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":67CD
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":6C11
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage12 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":7178
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage13 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":7647
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage14 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":7A66
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage15 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":7F5E
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage16 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":8357
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage17 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":87DA
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage18 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":8CA0
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage19 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":9197
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage20 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":964D
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage21 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":9A12
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage22 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":9E08
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage23 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":A1FF
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage24 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":A608
+               Key             =   ""
+            EndProperty
+            BeginProperty ListImage25 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+               Picture         =   "FRM_RPT_DIFERENCIA_CARTERA.frx":AAC6
+               Key             =   ""
+            EndProperty
+         EndProperty
+      End
+   End
+End
+Attribute VB_Name = "FRM_RPT_DIFERENCIA_CARTERA"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+
+Dim Sql As String
+Dim Datos()
+Dim TCartera As String
+Dim tipo As String
+Dim cOptLocal As String
+Const ForeSeleccion = &H8000000E
+Const BackSeleccion = &H8000000D
+Const ForeNormal = &H80000007
+Const BackNormal = &H8000000F
+Private Sub Generar_Listado(cTipo_Salida As String)
+   
+   Dim nContador        As Integer
+   Dim cFecha_Desde     As String
+   Dim cFecha_Hasta     As String
+   Dim Titulo                             As String
+   Dim bExisten_Marcados                  As Boolean
+
+ On Error GoTo Control:
+
+
+    Call Chequeo_Estado(GLB_Sistema, cOptLocal, False)
+   
+            Screen.MousePointer = 11
+            bExisten_Marcados = False
+            
+            If cTipo_Salida = "Impresora" Then
+            
+                FRM_MDI_PASIVO.Pasivo_Rpt.Destination = 1
+                cTipo_Salida = "P"
+            
+            Else
+                
+                FRM_MDI_PASIVO.Pasivo_Rpt.Destination = 0
+                cTipo_Salida = "V"
+            
+            End If
+         
+          
+            For nContador = 0 To 1
+            
+               If ConCheck.Item(nContador).Visible = True Then
+                  
+                  bExisten_Marcados = True
+               
+               End If
+            
+            Next nContador
+             
+            If bExisten_Marcados = False Then
+            
+               MsgBox "Debe Seleccionar Tipo de Listado ", vbInformation
+               Screen.MousePointer = vbDefault
+               Exit Sub
+            
+            End If
+             
+             
+            If ConCheck.Item(1).Visible Then
+            
+                           
+                  Call PROC_LIMPIAR_CRISTAL
+                     
+                  cFecha_Desde = Format(TxtFecProc.Text, "yyyymmdd")
+                  cFecha_Hasta = Format(GLB_Fecha_Proxima, "yyyymmdd")
+                  
+                  FRM_MDI_PASIVO.Pasivo_Rpt.WindowTitle = " Informe de Diferencia de Cartera Credito corfo."
+                  FRM_MDI_PASIVO.Pasivo_Rpt.ReportFileName = GLB_Ubicacion_Reporte & "RPT_DIFERENCIA_CARTERA_CORFO.RPT"
+                  PROC_ESTABLECE_UBICACION FRM_MDI_PASIVO.Pasivo_Rpt.RetrieveDataFiles, FRM_MDI_PASIVO.Pasivo_Rpt
+                  FRM_MDI_PASIVO.Pasivo_Rpt.StoredProcParam(0) = cFecha_Desde
+                  FRM_MDI_PASIVO.Pasivo_Rpt.Formulas(0) = "xUsuario='" & GLB_Usuario & "'"
+                  FRM_MDI_PASIVO.Pasivo_Rpt.Connect = GLB_CONECCION
+                  FRM_MDI_PASIVO.Pasivo_Rpt.Action = 1
+               
+                  Call PROC_LOG_AUDITORIA("10", cOptLocal, Me.Caption & " Credito Corfos : " & TxtFecProc.Text, "", "")
+                               
+     
+            End If
+               
+               
+            If ConCheck.Item(0).Visible Then
+            
+                           
+                  Call PROC_LIMPIAR_CRISTAL
+                     
+                  cFecha_Desde = Format(TxtFecProc.Text, "yyyymmdd")
+                  cFecha_Hasta = Format(GLB_Fecha_Proxima, "yyyymmdd")
+                  
+                  FRM_MDI_PASIVO.Pasivo_Rpt.WindowTitle = " Informe de Diferencia de Cartera Credito Bono."
+                  FRM_MDI_PASIVO.Pasivo_Rpt.ReportFileName = GLB_Ubicacion_Reporte & "RPT_DIFERENCIA_CARTERA_BONOS.RPT"
+                  PROC_ESTABLECE_UBICACION FRM_MDI_PASIVO.Pasivo_Rpt.RetrieveDataFiles, FRM_MDI_PASIVO.Pasivo_Rpt
+                  FRM_MDI_PASIVO.Pasivo_Rpt.StoredProcParam(0) = cFecha_Desde
+                  FRM_MDI_PASIVO.Pasivo_Rpt.Formulas(0) = "xUsuario='" & GLB_Usuario & "'"
+                  FRM_MDI_PASIVO.Pasivo_Rpt.Connect = GLB_CONECCION
+                  FRM_MDI_PASIVO.Pasivo_Rpt.Action = 1
+               
+                  Call PROC_LOG_AUDITORIA("10", cOptLocal, Me.Caption & " Bonos Propios: " & TxtFecProc.Text, "", "")
+                                 
+     
+            End If
+               
+               
+               Call Grabar_Estado(GLB_Sistema, cOptLocal, 1, False)
+               
+               Screen.MousePointer = 0
+   
+
+
+Exit Sub
+
+Control:
+
+   Call PROC_LOG_AUDITORIA("10", cOptLocal, Me.Caption & " Error al emitir reporte- Informe de Diferencia Cartera - Fecha Proceso: " & TxtFecProc.Text, "", "")
+   MsgBox "Problemas al generar Informe de Diferencia Cartera . " & Err.Description, vbCritical
+
+                   Screen.MousePointer = 0
+   
+End Sub
+
+Function PROC_VALIDA_FECHAS() As Boolean
+
+   PROC_VALIDA_FECHAS = False
+   
+   If CDate(TxtFecProc.Text) > CDate(GLB_Fecha_Proceso) Then
+   
+      MsgBox "Fecha desde no puede ser mayor a la fecha hasta.", vbInformation
+      TxtFecProc.SetFocus
+      Exit Function
+   
+      End If
+        
+   PROC_VALIDA_FECHAS = True
+   
+End Function
+
+Private Sub ConCheck_Click(Index As Integer)
+
+   SinCheck.Item(Index).Visible = Not SinCheck.Item(Index).Visible
+   ConCheck.Item(Index).Visible = Not ConCheck.Item(Index).Visible
+   DoEvents
+   SinCheck.Item(Index).SetFocus
+   
+End Sub
+
+Private Sub ConCheck_KeyPress(Index As Integer, KeyAscii As Integer)
+    If KeyAscii = 109 Or KeyAscii = 32 Then
+        
+        ConCheck_Click (Index)
+    
+    End If
+    
+    If KeyAscii = 13 Then
+        
+        FUNC_ENVIA_TECLA (vbKeyTab)
+    
+    End If
+
+End Sub
+
+Private Sub ConCheck_LostFocus(Index As Integer)
+      Etiqueta(Index).BackColor = BackNormal
+      Etiqueta(Index).ForeColor = ForeNormal
+End Sub
+
+Private Sub Form_Activate()
+   PROC_CARGA_AYUDA Me
+
+End Sub
+
+Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim nOpcion As Integer
+
+    If KeyCode <> vbKeyControl And (Shift = 2 Or (Shift = 0 And (KeyCode = vbKeyReturn Or KeyCode = vbKeyEscape Or (KeyCode >= vbKeyF1 And KeyCode <= vbKeyF12)))) Then
+
+        Select Case KeyCode
+            
+            Case VbKeyImprimir 'Imprimir
+                
+                nOpcion = 1
+            
+            Case vbKeyVistaPrevia 'Vista Previa
+                
+                nOpcion = 2
+            
+            Case vbKeySalir 'Salir
+                
+                nOpcion = 3
+        
+        End Select
+        
+        If nOpcion > 0 Then
+            
+            If Tlb_Movimiento.Buttons(nOpcion).Enabled Then
+                
+                Tlb_Movimiento_ButtonClick Tlb_Movimiento.Buttons(nOpcion)
+            
+            End If
+        
+        End If
+    
+    End If
+
+
+End Sub
+
+Private Sub Form_Load()
+Dim X As Integer
+
+    Me.Icon = FRM_MDI_PASIVO.Icon
+    TxtFecProc.Text = GLB_Fecha_Proceso
+    Me.top = 0
+    Me.left = 0
+    SinCheck(0).top = 360
+    ConCheck(0).top = 360
+    Etiqueta(0).top = 405
+  
+    Screen.MousePointer = 11
+   
+    Screen.MousePointer = 0
+    cOptLocal = GLB_Opcion_Menu
+    DoEvents
+    
+    
+    Call PROC_LOG_AUDITORIA("07", cOptLocal, Me.Caption, "", "")
+
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+   Call PROC_LOG_AUDITORIA("08", cOptLocal, Me.Caption, "", "")
+End Sub
+
+Private Sub SinCheck_Click(Index As Integer)
+    
+    ConCheck.Item(Index).left = SinCheck.Item(Index).left
+    SinCheck.Item(Index).Visible = Not SinCheck.Item(Index).Visible
+    ConCheck.Item(Index).Visible = Not ConCheck.Item(Index).Visible
+    DoEvents
+    ConCheck.Item(Index).SetFocus
+
+End Sub
+
+Private Sub SinCheck_GotFocus(Index As Integer)
+      
+      Etiqueta(Index).BackColor = BackSeleccion
+      Etiqueta(Index).ForeColor = ForeSeleccion
+End Sub
+
+Private Sub SinCheck_KeyPress(Index As Integer, KeyAscii As Integer)
+    If KeyAscii = 109 Or KeyAscii = 32 Then
+        
+        SinCheck_Click (Index)
+    
+    End If
+    
+    If KeyAscii = 13 Then
+        
+        FUNC_ENVIA_TECLA (vbKeyTab)
+    
+    End If
+End Sub
+
+Private Sub SinCheck_LostFocus(Index As Integer)
+      Etiqueta(Index).BackColor = BackNormal
+      Etiqueta(Index).ForeColor = ForeNormal
+End Sub
+
+Private Sub Tlb_Movimiento_ButtonClick(ByVal Button As MSComctlLib.Button)
+   Select Case Button.Index
+
+   Case 1
+         
+      If PROC_VALIDA_FECHAS = False Then Exit Sub
+
+      Call Generar_Listado("Impresora")
+
+   Case 2
+         
+      If PROC_VALIDA_FECHAS = False Then Exit Sub
+
+      Call Generar_Listado("Pantalla")
+
+   Case 3
+   
+      Unload Me
+
+   End Select
+
+End Sub

@@ -1,0 +1,427 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Begin VB.Form Acceso_Usuario 
+   BorderStyle     =   3  'Fixed Dialog
+   Caption         =   "Acceso Usuario"
+   ClientHeight    =   1935
+   ClientLeft      =   2700
+   ClientTop       =   3930
+   ClientWidth     =   4575
+   ForeColor       =   &H00C0C0C0&
+   Icon            =   "Acceso.frx":0000
+   LinkTopic       =   "Form1"
+   LockControls    =   -1  'True
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   1935
+   ScaleWidth      =   4575
+   ShowInTaskbar   =   0   'False
+   StartUpPosition =   2  'CenterScreen
+   Begin MSComctlLib.ImageList ImageList2 
+      Left            =   4020
+      Top             =   0
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   22
+      ImageHeight     =   22
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   2
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Acceso.frx":030A
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "Acceso.frx":0624
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin VB.TextBox TxtClave 
+      BeginProperty Font 
+         Name            =   "Verdana"
+         Size            =   8,25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   360
+      IMEMode         =   3  'DISABLE
+      Left            =   2385
+      MaxLength       =   15
+      PasswordChar    =   "*"
+      TabIndex        =   1
+      Text            =   "administra"
+      Top             =   1290
+      Width           =   2025
+   End
+   Begin VB.TextBox TxtUsuario 
+      BeginProperty Font 
+         Name            =   "Verdana"
+         Size            =   8,25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000FF&
+      Height          =   360
+      Left            =   2370
+      TabIndex        =   0
+      Text            =   "ADMINISTRA"
+      Top             =   795
+      Width           =   2040
+   End
+   Begin VB.PictureBox Picture1 
+      DrawStyle       =   5  'Transparent
+      Height          =   1200
+      Left            =   135
+      Picture         =   "Acceso.frx":093E
+      ScaleHeight     =   1140
+      ScaleWidth      =   1155
+      TabIndex        =   2
+      TabStop         =   0   'False
+      Top             =   570
+      Width           =   1215
+   End
+   Begin MSComctlLib.Toolbar TB 
+      Height          =   450
+      Left            =   0
+      TabIndex        =   5
+      Top             =   0
+      Width           =   4575
+      _ExtentX        =   8070
+      _ExtentY        =   794
+      ButtonWidth     =   767
+      ButtonHeight    =   741
+      AllowCustomize  =   0   'False
+      Appearance      =   1
+      Style           =   1
+      ImageList       =   "ImageList2"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   3
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Style           =   3
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Object.ToolTipText     =   "Cerrar"
+            ImageIndex      =   2
+         EndProperty
+      EndProperty
+      BorderStyle     =   1
+   End
+   Begin VB.Label Label2 
+      AutoSize        =   -1  'True
+      Caption         =   "Clave"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8,25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   240
+      Left            =   1665
+      TabIndex        =   4
+      Top             =   1305
+      Width           =   615
+   End
+   Begin VB.Label Label1 
+      AutoSize        =   -1  'True
+      Caption         =   "Usuario"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8,25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   240
+      Left            =   1470
+      TabIndex        =   3
+      Top             =   840
+      Width           =   825
+   End
+End
+Attribute VB_Name = "Acceso_Usuario"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Public Intentos As Single
+
+Private Sub Form_Load()
+    gsBac_User$ = ""
+End Sub
+
+Private Sub TB_ButtonClick(ByVal Button As MSComctlLib.Button)
+   Select Case Button.Index
+      Case Is = 2
+         TxtClave_KeyPress 13
+      Case Is = 3
+         Unload Me
+   End Select
+End Sub
+
+Private Sub TxtClave_GotFocus()
+    TxtClave.SelStart = 0
+    TxtClave.SelLength = Len(TxtClave.Text)
+End Sub
+
+
+Private Sub TxtClave_KeyDown(KeyCode As Integer, Shift As Integer)
+   If KeyCode = 27 Then
+   
+      Unload Me
+      
+   End If
+End Sub
+
+Private Sub TxtClave_KeyPress(KeyAscii As Integer)
+   If Not IsNumeric(Chr(KeyAscii)) And Not (UCase(Chr(KeyAscii)) >= "A" And UCase(Chr(KeyAscii)) <= "Z") And KeyAscii <> 13 And KeyAscii <> 8 Then
+     KeyAscii = 0
+   End If
+   
+   TxtClave.MaxLength = 12
+   If KeyAscii = 13 Then
+     
+      If Bloqueado(TxtUsuario.Text) Then
+          
+          Call Grabar_Log("BTR", TxtUsuario.Text, gsBac_Fecp, "No pudo entrar al sistema: usuario bloqueado")
+          MsgBox "Usuario esta Bloqueado", vbOKOnly + vbExclamation
+          End
+      
+      End If
+      
+      If FUNC_VALIDA_USUARIO() Then
+          
+         If Not Expira(Fecha_Expira) Then
+             
+            If Bloquea_Usuario(True, TxtUsuario.Text) Then
+                
+               Call Grabar_Log("BTR", TxtUsuario.Text, gsBac_Fecp, "Entrada al Sistema sin problemas")
+               
+               Call Activar_Usuario 'ACTIVA AL USUARIO
+                              
+               Unload Me
+               
+               Exit Sub
+         
+            End If
+      
+         Else
+          
+            If Trim(TxtUsuario.Text) <> "ADMINISTRA" Then
+              
+               If (MsgBox("La password ha expirado " & Chr(10) & "¿ Desea Cambiarla ?", vbYesNo + vbQuestion)) = vbYes Then
+                   
+                  On Error GoTo ErrUNLOAD
+                  Cambio_Password.Tag = "X"
+                  Cambio_Password.Show vbModal
+                  
+                  If Bloquea_Usuario(True, TxtUsuario.Text) Then
+                  
+                     Call Grabar_Log("BTR", TxtUsuario.Text, gsBac_Fecp, "Entrada al Sistema sin problemas : cambio de password")
+                     Unload Me
+                     Exit Sub
+                     
+                  End If
+                  
+               Else
+                   
+                  End
+               
+               End If
+            
+            Else
+            
+               Unload Me
+               Exit Sub
+               
+            End If
+            
+         End If
+      
+      Else
+         
+         Intentos = Intentos + 1
+   
+      End If
+      
+      If Intentos > 2 Then
+         
+         If Bloquea_Usuario(True, TxtUsuario.Text) And Trim(TxtUsuario.Text) <> "ADMINISTRA" Then
+         
+            Call Grabar_Log("BTR", TxtUsuario.Text, gsBac_Fecp, "Usuario ha sido bloqueado")
+            MsgBox "Usuario ha sido Bloqueado", vbOKOnly + vbCritical
+            
+         End If
+         
+         Unload Me
+         Exit Sub
+         
+      End If
+         
+   End If
+
+   Exit Sub
+
+ErrUNLOAD:
+   If Err.Number = 364 Then
+      End
+   End If
+
+End Sub
+
+
+Function FUNC_VALIDA_USUARIO() As Boolean
+Dim DATOS()
+Dim Sql              As String
+Dim Password_Usuario As String
+
+    Screen.MousePointer = vbHourglass
+    
+    FUNC_VALIDA_USUARIO = False
+    
+    gsBac_User$ = ""
+    gsBac_Pass$ = ""
+    gsUsuario = ""
+
+'    Sql = "EXECUTE " & giSQL_DatabaseCommon & "..sp_valida_ingreso_usuario "
+'    Sql = Sql + "'" + TxtUsuario.Text + "'"
+
+    Envia = Array(TxtUsuario.Text)
+    
+    If Not Bac_Sql_Execute("sp_valida_ingreso_usuario", Envia) Then
+        Screen.MousePointer = 0
+        Exit Function
+    End If
+
+    If Not Bac_SQL_Fetch(DATOS) Then
+       Screen.MousePointer = 0
+       MsgBox "Usuario NO Existe.", vbCritical
+       Exit Function
+    End If
+
+    Password_Usuario = DATOS(1)
+    gsBac_Tipo_Usuario = DATOS(2)
+    Fecha_Expira = DATOS(3)
+
+    If Trim(Password_Usuario) <> Encript(Trim(TxtClave.Text), True) Then
+       Screen.MousePointer = 0
+       Call Grabar_Log("BTR", TxtUsuario.Text, gsBac_Fecp, "Clave ingresada no es válida")
+       MsgBox "Clave Invalida." & Chr(10) & Chr(10) & "Verifique la tecla [Bloq Mayús].", vbExclamation
+       Exit Function
+    End If
+
+
+    Screen.MousePointer = vbDefault
+
+    gsBac_User$ = TxtUsuario.Text
+    gsBac_Pass$ = TxtClave.Text
+    gsUsuario = TxtUsuario.Text
+    gbBac_Login = True
+    
+    FUNC_VALIDA_USUARIO = True
+
+End Function
+
+Private Sub TxtUsuario_GotFocus()
+
+    TxtUsuario.SelStart = 0
+    TxtUsuario.SelLength = Len(TxtUsuario.Text)
+
+End Sub
+
+
+
+
+Private Sub TxtUsuario_KeyDown(KeyCode As Integer, Shift As Integer)
+   If KeyCode = 27 Then
+   
+      Unload Me
+      
+   End If
+End Sub
+
+Private Sub TxtUsuario_KeyPress(KeyAscii As Integer)
+
+    TxtUsuario.MaxLength = 12
+
+    BacToUCase KeyAscii
+
+    If KeyAscii = 13 And Trim(TxtUsuario.Text) <> "" Then TxtClave.SetFocus
+
+End Sub
+
+Sub Activar_Usuario()
+Dim DATOS()
+Dim Sw As Boolean
+Dim J As Integer
+    
+    J = 1
+    
+   ' If TxtUsuario.Text <> "ADMINISTRA" Then
+        
+        Envia = Array(TxtUsuario.Text, _
+                    "BTR", _
+                    Format(Date, "yyyymmdd"), _
+                    Format(Date, "yyyymmdd"))
+
+'        Sql = "SP_Control_Bloq_Usuarios_ACTIVAR "
+'        Sql = Sql & "'" & TxtUsuario.Text & "'"
+'        Sql = Sql & ",'BTR'"
+'        Sql = Sql & ",'" & Date & "'"
+'        Sql = Sql & ",'" & Date & "'"  'CAMBIAR A FECHA DEL SISTEMA
+        
+        gsUsuario = TxtUsuario.Text
+        gsSistema = "BTR"
+        Sw = False
+
+        If Bac_Sql_Execute("SP_Control_Bloq_Usuarios_ACTIVAR", Envia) Then
+            
+            Do While Bac_SQL_Fetch(DATOS())
+                gsTerminal = DATOS(1)
+                gsUsuarioReal = DATOS(2)
+                
+                If DATOS(1) = "LLENO" Then Sw = True
+            Loop
+            
+'''        Else
+            
+''''''            Sql = "SP_Control_Bloq_Usuarios_ACTIVAR "
+''''''            Sql = Sql & "'" & TxtUsuario.Text + Trim(Str(J)) & "'"
+''''''            Sql = Sql & ",'BTR'"
+''''''            Sql = Sql & ",'" & gsBac_Fecp & "'"
+''''''            Sql = Sql & ",'" & Date & "'"  'CAMBIAR A FECHA DEL SISTEMA
+''''''            J = J + 1
+''''''            GoTo Aca:
+        
+        End If
+        
+            
+            
+        If Sw = True Then
+            MsgBox "No Pueden Entrar Mas Usuarios al Sistema", vbCritical + vbOKOnly, "Bac-Parametros"
+            End
+        End If
+    
+   ' End If
+
+End Sub
+

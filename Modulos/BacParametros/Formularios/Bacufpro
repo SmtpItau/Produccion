@@ -1,0 +1,177 @@
+VERSION 5.00
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "Threed32.ocx"
+Begin VB.Form BacUFPro 
+   BorderStyle     =   1  'Fixed Single
+   ClientHeight    =   5280
+   ClientLeft      =   1035
+   ClientTop       =   1395
+   ClientWidth     =   4155
+   Icon            =   "Bacufpro.frx":0000
+   LinkTopic       =   "Form1"
+   LockControls    =   -1  'True
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   5280
+   ScaleWidth      =   4155
+   Begin VB.Frame Frame1 
+      Height          =   5145
+      Left            =   120
+      TabIndex        =   0
+      Top             =   15
+      Width           =   3885
+      Begin MSFlexGridLib.MSFlexGrid Table1 
+         Height          =   4935
+         Left            =   75
+         TabIndex        =   4
+         Top             =   150
+         Width           =   3735
+         _ExtentX        =   6588
+         _ExtentY        =   8705
+         _Version        =   393216
+         Cols            =   3
+         FixedCols       =   0
+         BackColor       =   12632256
+         ForeColor       =   12582912
+         BackColorFixed  =   8421376
+         ForeColorFixed  =   16777215
+         GridLines       =   2
+         GridLinesFixed  =   0
+         Appearance      =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   5640
+      Index           =   3
+      Left            =   4320
+      TabIndex        =   1
+      Top             =   0
+      Width           =   4200
+      _Version        =   65536
+      _ExtentX        =   7408
+      _ExtentY        =   9948
+      _StockProps     =   14
+      ShadowStyle     =   1
+      Begin VB.Label Label 
+         BackColor       =   &H00800000&
+         Caption         =   "Label(1)"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   405
+         Index           =   1
+         Left            =   225
+         TabIndex        =   3
+         Top             =   4995
+         Width           =   855
+      End
+      Begin VB.Label Label 
+         BackColor       =   &H00800000&
+         Caption         =   "Label(0)"
+         ForeColor       =   &H00FFFFFF&
+         Height          =   405
+         Index           =   0
+         Left            =   225
+         TabIndex        =   2
+         Top             =   4560
+         Width           =   855
+      End
+   End
+End
+Attribute VB_Name = "BacUFPro"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+Private ClsValorMoneda           As Object
+Sub Dibuja_Grilla()
+Table1.TextMatrix(0, 0) = ""
+Table1.TextMatrix(0, 1) = "Dia"
+Table1.TextMatrix(0, 2) = "Valor"
+
+Table1.RowHeight(0) = 500
+
+Table1.ColWidth(0) = 0
+Table1.ColWidth(1) = 1300
+Table1.ColWidth(2) = 2000
+
+Table1.ColAlignment(1) = 4
+Table1.ColAlignment(2) = 7
+
+End Sub
+Static Function LlenaGrilla()
+   Dim cMes   As String
+   Dim cFecha As String
+   Dim nDias  As Integer
+   
+   BacMntIp.Table1.Row = BacMntIp.Table1.Row
+   BacMntIp.Table1.Col = 0
+   cFecha = Format("01" + Mid(BacMntIp.Table1.Text, 3, 8), gsc_FechaDMA)
+   
+   BacMntIp.Table1.Col = 1
+   cMes = BacMntIp.Table1.Text
+   
+   BacUFPro.Caption = cMes
+   
+   BacMntIp.Table1.Col = 4
+   nDias = BacMntIp.Table1.Text
+   
+   Table1.Rows = 1
+   
+   For nCont = 1 To nDias
+      Table1.Rows = Table1.Rows + 1
+      Table1.Row = Table1.Rows - 1
+      Table1.Col = 0
+      Table1.Text = nCont
+      
+      Table1.Col = 1
+      Table1.Text = nCont
+      
+      Call ClsValorMoneda.ValorUFProyect(cFecha)
+      Table1.Col = 2
+      Table1.Text = Format(ClsValorMoneda.nUfProyec, "#,##0.00")
+      
+      cFecha = Format(DateAdd("d", 1, CDate(cFecha)), gsc_FechaDMA)
+   Next
+   
+   Table1.Enabled = True
+   
+End Function
+
+Private Sub Form_Load()
+   Dim iCol       As Integer
+   
+   Call BacSetMinBox(Me, False)
+   Screen.MousePointer = 11
+   Set ClsValorMoneda = New ClsValorMoneda
+   
+   Dibuja_Grilla
+   
+   Call LlenaGrilla
+   Screen.MousePointer = 0
+End Sub
+
+Private Sub Table1_Click()
+    Call PintaCelda(Table1)
+End Sub
+
+Private Sub Table1_GotFocus()
+    Call PintaCelda(Table1)
+End Sub
+
+Private Sub Table1_LeaveCell()
+    Call CellPintaCelda(Table1)
+End Sub
+
+Private Sub Table1_SelChange()
+    Call PintaCelda(Table1)
+End Sub

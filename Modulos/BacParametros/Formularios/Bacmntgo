@@ -1,0 +1,491 @@
+VERSION 5.00
+Object = "{0BA686C6-F7D3-101A-993E-0000C0EF6F5E}#1.0#0"; "Threed32.ocx"
+Begin VB.Form BacMntGlosa 
+   BorderStyle     =   3  'Fixed Dialog
+   Caption         =   " Mantención de Glosas por Clientes"
+   ClientHeight    =   3225
+   ClientLeft      =   2550
+   ClientTop       =   2070
+   ClientWidth     =   5400
+   FillStyle       =   0  'Solid
+   Icon            =   "Bacmntgo.frx":0000
+   LinkTopic       =   "Form2"
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   MinButton       =   0   'False
+   PaletteMode     =   1  'UseZOrder
+   ScaleHeight     =   3225
+   ScaleWidth      =   5400
+   ShowInTaskbar   =   0   'False
+   Begin Threed.SSFrame Frame 
+      Height          =   1620
+      Index           =   1
+      Left            =   30
+      TabIndex        =   5
+      Top             =   1440
+      Width           =   5295
+      _Version        =   65536
+      _ExtentX        =   9340
+      _ExtentY        =   2858
+      _StockProps     =   14
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Begin VB.TextBox txtcodigo 
+         Height          =   315
+         Left            =   3900
+         MaxLength       =   20
+         TabIndex        =   3
+         Top             =   330
+         Width           =   1125
+      End
+      Begin VB.TextBox Txtdigito 
+         Height          =   315
+         Left            =   2760
+         MaxLength       =   1
+         TabIndex        =   0
+         Top             =   330
+         Width           =   255
+      End
+      Begin VB.TextBox Txtrut 
+         Alignment       =   1  'Right Justify
+         Height          =   315
+         Left            =   1410
+         MaxLength       =   9
+         MouseIcon       =   "Bacmntgo.frx":030A
+         MousePointer    =   99  'Custom
+         TabIndex        =   2
+         Top             =   330
+         Width           =   1290
+      End
+      Begin VB.TextBox TxtNombre 
+         Height          =   315
+         Left            =   1410
+         MaxLength       =   35
+         TabIndex        =   4
+         Top             =   945
+         Width           =   3615
+      End
+      Begin VB.Label Label 
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   "Código"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00E0E0E0&
+         Height          =   315
+         Index           =   4
+         Left            =   3060
+         TabIndex        =   11
+         Top             =   330
+         Width           =   780
+      End
+      Begin VB.Label Label 
+         AutoSize        =   -1  'True
+         Caption         =   "-"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   12
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00000000&
+         Height          =   315
+         Index           =   1
+         Left            =   2685
+         TabIndex        =   10
+         Top             =   330
+         Width           =   105
+      End
+      Begin VB.Label Label1 
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   " Rut Cliente"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   315
+         Left            =   120
+         TabIndex        =   7
+         Top             =   330
+         Width           =   1140
+      End
+      Begin VB.Label Label 
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   " Nombre"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   315
+         Index           =   2
+         Left            =   135
+         TabIndex        =   6
+         Top             =   945
+         Width           =   1170
+      End
+   End
+   Begin Threed.SSFrame Frame 
+      Height          =   945
+      Index           =   0
+      Left            =   15
+      TabIndex        =   8
+      Top             =   450
+      Width           =   5310
+      _Version        =   65536
+      _ExtentX        =   9366
+      _ExtentY        =   1667
+      _StockProps     =   14
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Begin VB.TextBox TxtGlosa 
+         Alignment       =   1  'Right Justify
+         Height          =   315
+         Left            =   1800
+         MaxLength       =   35
+         MouseIcon       =   "Bacmntgo.frx":0614
+         MousePointer    =   99  'Custom
+         TabIndex        =   1
+         Top             =   330
+         Width           =   3240
+      End
+      Begin VB.Label Label 
+         BackColor       =   &H00808000&
+         BorderStyle     =   1  'Fixed Single
+         Caption         =   " Glosa"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00FFFFFF&
+         Height          =   315
+         Index           =   0
+         Left            =   135
+         TabIndex        =   9
+         Top             =   345
+         Width           =   1500
+      End
+   End
+   Begin Threed.SSCommand cmdGrabar 
+      Height          =   450
+      Left            =   0
+      TabIndex        =   15
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Grabar"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      Font3D          =   3
+   End
+   Begin Threed.SSCommand cmdEliminar 
+      Height          =   450
+      Left            =   1200
+      TabIndex        =   14
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Eliminar"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Enabled         =   0   'False
+      Font3D          =   3
+   End
+   Begin Threed.SSCommand cmdSalir 
+      Height          =   450
+      Left            =   3600
+      TabIndex        =   13
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Salir"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+   End
+   Begin Threed.SSCommand cmdLimpiar 
+      Height          =   450
+      Left            =   2400
+      TabIndex        =   12
+      Tag             =   "C"
+      Top             =   0
+      Width           =   1200
+      _Version        =   65536
+      _ExtentX        =   2117
+      _ExtentY        =   794
+      _StockProps     =   78
+      Caption         =   "&Limpiar"
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Font3D          =   3
+   End
+End
+Attribute VB_Name = "BacMntGlosa"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+Dim Sql As String, Datos()
+Function ActivaBoton(Valor As Boolean)
+  TxtGlosa.Enabled = Not Valor
+  Txtcodigo.Enabled = Valor
+  TxtNombre.Enabled = Valor
+  Txtrut.Enabled = Valor
+  Txtdigito.Enabled = Valor
+  cmdGrabar.Enabled = Valor
+  cmdEliminar.Enabled = Valor
+End Function
+Private Sub cmdEliminar_Click()
+ If validaelimi() Then
+  If MsgBox("Está seguro de eliminar el registro", 36, "Eliminación de Registro") = 6 Then
+   Sql = "sp_eglos  " & Txtrut & " ," & Txtcodigo & " ,'" & Trim(TxtGlosa.Text) & "'"
+      If MISQL.SQL_Execute(Sql) <> 0 Then
+     If MISQL.SQL_Fetch(Datos()) = 0 Then If Trim(Datos(1)) <> "OK" Then MsgBox "No puede Eliminar el Registro hay Datos"
+     Else
+       MsgBox " Registro eliminado ", 64, "Bac-Cambio"
+     End If
+     Call Limpiar
+  Else
+   Txtrut.SetFocus
+  End If
+ End If
+End Sub
+Private Sub CmdGrabar_Click()
+   Me.MousePointer = 11
+ If validaelimi() Then
+  Sql = "sp_gglos  " & Txtrut & " ," & Txtcodigo & " ,'" & Trim(TxtGlosa.Text) & "'"
+  If MISQL.SQL_Execute(Sql) <> 0 Then
+   If MISQL.SQL_Fetch(Datos()) = 0 Then If Trim(Datos(1)) = "NO" Then MsgBox "No se puede grabar el registro", 64, "Bac-Cambio"
+  Else
+    MsgBox "Grabación se realizó con éxito ", 64, "Bac-Cambio"
+  End If
+ End If
+   Call Limpiar
+   Me.MousePointer = 0
+End Sub
+Private Sub cmdLimpiar_Click()
+ Call Limpiar
+End Sub
+Private Sub cmdSalir_Click()
+ Unload Me
+End Sub
+Private Sub Form_Load()
+ Me.Top = 1
+ Left = 15
+ Call ActivaBoton(False)
+End Sub
+Private Sub txtglosa_DblClick()
+  BacControlWindows 100
+  BacAyuda.Tag = "MECLA"
+  BacAyuda.Show 1
+ If giAceptar% = True Then
+  Call ActivaBoton(True)
+  Txtdigito.Text = gsDigito$
+  TxtGlosa.Text = gsGlosa$
+  Txtrut.Text = gsCodigo$
+  TxtNombre.Text = gsDescripcion$
+  Txtcodigo.Text = gsValor
+  Txtrut.SetFocus
+  Txtdigito.Enabled = False
+  TxtNombre.Enabled = False
+  Txtcodigo.Enabled = False
+ End If
+End Sub
+Public Function Cargapanel(Valor As Boolean)
+  cmdGrabar.Enabled = Valor
+  cmdEliminar.Enabled = Valor
+End Function
+
+Private Sub txtglosa_KeyDown(KeyCode As Integer, Shift As Integer)
+ If KeyCode = vbKeyF3 Then Call txtglosa_DblClick
+End Sub
+
+Private Sub txtGlosa_KeyPress(KeyAscii As Integer)
+  If KeyAscii% = vbKeyReturn And Len(Trim(TxtGlosa.Text)) > 0 Then
+     Call ActivaBoton(True)
+     Sql = "sp_Bglos '" & TxtGlosa.Text & "'"
+   If MISQL.SQL_Execute(Sql) <> 0 Then
+     Call Limpiar
+     Exit Sub
+   End If
+   If MISQL.SQL_Fetch(Datos()) = 0 Then
+    ' Encontro el registro
+    Txtrut.Text = CDbl(Val(Datos(1)))
+    Txtdigito.Text = Trim(Datos(3))
+    TxtNombre.Text = Trim(Datos(4))
+    Txtcodigo.Text = CDbl(Val(Datos(5)))
+   End If
+    Txtdigito.Enabled = False
+    TxtNombre.Enabled = False
+    Txtrut.SetFocus
+  Else
+     Call BacToUCase(KeyAscii)
+  End If
+ End Sub
+
+Private Sub TxtNombre_Change()
+  If Trim(TxtNombre.Text) <> "" Then cmdGrabar.Enabled = True
+End Sub
+Private Sub txtNombre_KeyPress(KeyAscii As Integer)
+ Call BacToUCase(KeyAscii)
+ If KeyAscii = 13 And Trim(TxtNombre) <> "" Then SendKeys "{tab}"
+End Sub
+Public Function Limpiar()
+ TxtGlosa = ""
+ Txtcodigo = ""
+ TxtNombre = ""
+ Txtrut = ""
+ Txtdigito = ""
+ Call ActivaBoton(False)
+ TxtGlosa.SetFocus
+End Function
+Public Function validaelimi()
+  validaelimi = True
+  If (TxtGlosa) = "" Then
+    MsgBox "ERROR : Glosa vacía", 16, "Bac-Cambio"
+    TxtGlosa.SetFocus
+    validaelimi = False
+   End If
+   If Trim$(Txtrut) = "" Then
+       MsgBox "ERROR :Rut vacío", 16, "Bac-Cambio"
+       Txtrut.SetFocus
+       validaelimi = False
+   End If
+   If (Txtcodigo) = "" Then
+    MsgBox "ERROR : Código vacío", 16, "Bac-Cambio"
+    Txtcodigo.SetFocus
+    validaelimi = False
+   End If
+ End Function
+
+Private Sub txtCodigo_KeyPress(KeyAscii As Integer)
+ If KeyAscii = 13 And Trim(Txtcodigo) <> "" Then
+  Call BuscaCliGlosa(Txtrut.Text, Txtcodigo.Text)
+ Else
+  If Not ((KeyAscii > 47 And KeyAscii < 58) Or KeyAscii = 8) Then KeyAscii = 0
+ End If
+End Sub
+
+Private Sub txtRut_DblClick()
+   BacControlWindows 100
+   BacAyuda.Tag = "MDCL"
+   BacAyuda.Show 1
+ If giAceptar% = True Then
+   TxtNombre.Text = gsDescripcion$
+   Txtrut.Text = gsCodigo$
+   Txtcodigo.Text = gsValor
+   Txtdigito.Text = gsDigito
+   Call BuscaCliGlosa(Txtrut.Text, Txtcodigo.Text)
+   End If
+End Sub
+
+Private Sub txtRut_KeyDown(KeyCode As Integer, Shift As Integer)
+ If KeyCode = vbKeyF3 Then Call txtRut_DblClick
+End Sub
+
+Private Sub txtRut_KeyPress(KeyAscii As Integer)
+ If KeyAscii = 13 And Trim(Txtrut) <> "" Then
+  SendKeys "{TAB}"
+ Else
+  If Not ((KeyAscii > 47 And KeyAscii < 58) Or KeyAscii = 8) Then KeyAscii = 0
+ End If
+End Sub
+
+Public Sub BuscaCliGlosa(varut As String, varutco As String)
+     Sql = "sp_Bclie " & varut & "," & varutco & ""
+  If MISQL.SQL_Execute(Sql) <> 0 Then
+     Exit Sub
+  End If
+  If MISQL.SQL_Fetch(Datos()) <> 0 Then
+     MsgBox "Rut erróneo", 16, " Bac-Cambio "
+     Call Limpiar
+  Else
+     Txtdigito.Text = Datos(1)
+     TxtNombre.Text = Datos(2)
+  End If
+End Sub

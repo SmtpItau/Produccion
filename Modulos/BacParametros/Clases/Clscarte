@@ -1,0 +1,95 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "clsCarteras"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Option Explicit
+
+Public ObjCartera As Object
+Public coleccion As New Collection
+
+Public Function LeerCarteras() As Boolean
+
+   Dim Sql           As String
+   Dim objBuffer     As Object
+   Dim Datos()
+
+   LeerCarteras = False
+
+   
+
+   If Not Bac_Sql_Execute("SP_LEERCARTERAS ") Then
+      Exit Function
+
+   End If
+
+   Call VaciarColeccion
+
+   Do While Bac_SQL_Fetch(Datos())
+
+      'Set objBuffer = New Clscartera
+      
+      With objBuffer
+         .rccodcar = Val(Datos(1))
+         .rcrut = Val(Datos(2))
+         .rcdv = Datos(3)
+         .rcnombre = Datos(4)
+         .rcnumoper = Val(Datos(5))
+         .rctelefono = Datos(6)
+         .rcfax = Datos(7)
+         .rcdirecc = Datos(8)
+
+      End With
+
+      coleccion.Add objBuffer
+
+      Set objBuffer = Nothing
+
+   Loop
+
+   LeerCarteras = True
+
+End Function
+
+Public Sub LLenarCombo(objControl As Object)
+
+   Dim Filas As Long
+   Dim Max   As Long
+
+   With objControl
+
+      .Clear
+
+      Max = coleccion.Count
+
+      For Filas = 1 To Max
+         .AddItem coleccion(Filas).rcnombre
+         .ItemData(.NewIndex) = coleccion(Filas).rcrut
+
+      Next Filas
+
+   End With
+
+End Sub
+
+Public Sub VaciarColeccion()
+
+   Dim Filas&, Max&
+
+   Max& = coleccion.Count
+
+   For Filas& = 1 To Max&
+      coleccion.Remove 1
+
+   Next Filas&
+
+End Sub
+
