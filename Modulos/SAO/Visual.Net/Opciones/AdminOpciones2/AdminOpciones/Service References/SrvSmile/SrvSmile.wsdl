@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Fwd_Delta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nominal" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_vencimiento" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fwd_DeltaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Fwd_DeltaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpcionVanilla">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compraVenta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nominal" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot_smile" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike_delta" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaVenc" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numComponente_Estruc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayOff" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estruct_Indiv" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpcionVanillaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpcionVanillaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallPut_Vanilla">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compraVenta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nominal" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="MtM_objetivo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaVenc" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallPut_VanillaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_CallPut_VanillaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="double" type="s:double" />
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Fwd_DeltaSoapIn">
+    <wsdl:part name="parameters" element="tns:Fwd_Delta" />
+  </wsdl:message>
+  <wsdl:message name="Fwd_DeltaSoapOut">
+    <wsdl:part name="parameters" element="tns:Fwd_DeltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpcionVanillaSoapIn">
+    <wsdl:part name="parameters" element="tns:OpcionVanilla" />
+  </wsdl:message>
+  <wsdl:message name="OpcionVanillaSoapOut">
+    <wsdl:part name="parameters" element="tns:OpcionVanillaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_VanillaSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_CallPut_Vanilla" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_VanillaSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_CallPut_VanillaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fwd_DeltaHttpGetIn">
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="fecha_vencimiento" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Fwd_DeltaHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="OpcionVanillaHttpGetIn">
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spot_smile" type="s:string" />
+    <wsdl:part name="puntos" type="s:string" />
+    <wsdl:part name="strike_delta" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaVenc" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="numComponente_Estruc" type="s:string" />
+    <wsdl:part name="PayOff" type="s:string" />
+    <wsdl:part name="Estruct_Indiv" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionVanillaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_VanillaHttpGetIn">
+    <wsdl:part name="BsSpot_BsFwd_flag" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="puntos" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="MtM_objetivo" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaVenc" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_VanillaHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="Fwd_DeltaHttpPostIn">
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="fecha_vencimiento" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Fwd_DeltaHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="OpcionVanillaHttpPostIn">
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spot_smile" type="s:string" />
+    <wsdl:part name="puntos" type="s:string" />
+    <wsdl:part name="strike_delta" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaVenc" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="numComponente_Estruc" type="s:string" />
+    <wsdl:part name="PayOff" type="s:string" />
+    <wsdl:part name="Estruct_Indiv" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionVanillaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_VanillaHttpPostIn">
+    <wsdl:part name="BsSpot_BsFwd_flag" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="puntos" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="MtM_objetivo" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaVenc" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_VanillaHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:portType name="SrvSmileSoap">
+    <wsdl:operation name="Fwd_Delta">
+      <wsdl:input message="tns:Fwd_DeltaSoapIn" />
+      <wsdl:output message="tns:Fwd_DeltaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionVanilla">
+      <wsdl:input message="tns:OpcionVanillaSoapIn" />
+      <wsdl:output message="tns:OpcionVanillaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Vanilla">
+      <wsdl:input message="tns:Solver_CallPut_VanillaSoapIn" />
+      <wsdl:output message="tns:Solver_CallPut_VanillaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvSmileHttpGet">
+    <wsdl:operation name="Fwd_Delta">
+      <wsdl:input message="tns:Fwd_DeltaHttpGetIn" />
+      <wsdl:output message="tns:Fwd_DeltaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionVanilla">
+      <wsdl:input message="tns:OpcionVanillaHttpGetIn" />
+      <wsdl:output message="tns:OpcionVanillaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Vanilla">
+      <wsdl:input message="tns:Solver_CallPut_VanillaHttpGetIn" />
+      <wsdl:output message="tns:Solver_CallPut_VanillaHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvSmileHttpPost">
+    <wsdl:operation name="Fwd_Delta">
+      <wsdl:input message="tns:Fwd_DeltaHttpPostIn" />
+      <wsdl:output message="tns:Fwd_DeltaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionVanilla">
+      <wsdl:input message="tns:OpcionVanillaHttpPostIn" />
+      <wsdl:output message="tns:OpcionVanillaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Vanilla">
+      <wsdl:input message="tns:Solver_CallPut_VanillaHttpPostIn" />
+      <wsdl:output message="tns:Solver_CallPut_VanillaHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SrvSmileSoap" type="tns:SrvSmileSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fwd_Delta">
+      <soap:operation soapAction="http://tempuri.org/Fwd_Delta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionVanilla">
+      <soap:operation soapAction="http://tempuri.org/OpcionVanilla" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Vanilla">
+      <soap:operation soapAction="http://tempuri.org/Solver_CallPut_Vanilla" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvSmileSoap12" type="tns:SrvSmileSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Fwd_Delta">
+      <soap12:operation soapAction="http://tempuri.org/Fwd_Delta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionVanilla">
+      <soap12:operation soapAction="http://tempuri.org/OpcionVanilla" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Vanilla">
+      <soap12:operation soapAction="http://tempuri.org/Solver_CallPut_Vanilla" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvSmileHttpGet" type="tns:SrvSmileHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Fwd_Delta">
+      <http:operation location="/Fwd_Delta" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionVanilla">
+      <http:operation location="/OpcionVanilla" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Vanilla">
+      <http:operation location="/Solver_CallPut_Vanilla" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvSmileHttpPost" type="tns:SrvSmileHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Fwd_Delta">
+      <http:operation location="/Fwd_Delta" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionVanilla">
+      <http:operation location="/OpcionVanilla" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Vanilla">
+      <http:operation location="/Solver_CallPut_Vanilla" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SrvSmile">
+    <wsdl:port name="SrvSmileSoap" binding="tns:SrvSmileSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/Smile/SrvSmile.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvSmileSoap12" binding="tns:SrvSmileSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/Smile/SrvSmile.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvSmileHttpGet" binding="tns:SrvSmileHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Smile/SrvSmile.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvSmileHttpPost" binding="tns:SrvSmileHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Smile/SrvSmile.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

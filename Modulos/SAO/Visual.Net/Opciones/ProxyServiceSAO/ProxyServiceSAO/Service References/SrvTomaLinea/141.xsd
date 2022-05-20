@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd25" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd26" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd5" />
+  <xsd:complexType name="PersonPartyInfo_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="PersonData" type="tns:PersonData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BirthDt" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Gender" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MaritalStat" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Nationality" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Employment" type="tns:Employment_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Proffesionalind" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SpouseName" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Proffesion" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="UniversityCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OEDRelationship" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SchoolPrestigeInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EducationLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DurationSchoolMissed" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SpouseRent" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Dependents" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EducationDuration" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MarriedStat" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BirthCountry" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ResidenceCountry" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="NationalityCountry" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FinancialData" type="tns:FinancialData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TaxIndicator" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TaxNumber1" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TaxNumber2" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TaxNumber3" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ResidenceCountry1" type="tns:CountryCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ResidenceCountry2" type="tns:CountryCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ResidenceCountry3" type="tns:CountryCode_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

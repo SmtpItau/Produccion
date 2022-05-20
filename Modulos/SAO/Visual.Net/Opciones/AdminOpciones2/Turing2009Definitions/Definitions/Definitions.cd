@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Definición de Enum del Proceso">
+    <Position X="0.5" Y="0.5" Height="0.385" Width="13.519" />
+  </Comment>
+  <Enum Name="Turing2009Definitions.Definitions.enumStatus">
+    <Position X="0.5" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAFAAQQAAAAABAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Definitions\enumStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumConnectionMode">
+    <Position X="3.25" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAACAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Definitions\enumConnectionMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumExecuteMode">
+    <Position X="6" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Definitions\enumExecuteMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumStatusSQL">
+    <Position X="8.75" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAEAABAAQQAAAAAAIAgAgAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Definitions\enumStatusSQL.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumQueryType">
+    <Position X="11.5" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAgEAAAAAAAAAAAAAAAAAAAAEAEAAAAAACAAAAAAA=</HashCode>
+      <FileName>Definitions\enumQueryType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumSource">
+    <Position X="0.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAACAAAAAgAAAAQAAQAAAAAAA=</HashCode>
+      <FileName>Definitions\enumSource.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumSourceExchangeRate">
+    <Position X="3.25" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Definitions\enumSourceExchangeRate.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumIntervalType">
+    <Position X="6" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJAAAAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAA=</HashCode>
+      <FileName>Definitions\enumIntervalType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumConvention">
+    <Position X="8.75" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgACAAAAAgAAAAAAAAAAAAAAIAAIAAIAAAAACAA=</HashCode>
+      <FileName>Definitions\enumConvention.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumFlagFixedFloating">
+    <Position X="11.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Definitions\enumFlagFixedFloating.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumBrokenPeriod">
+    <Position X="0.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Definitions\enumBrokenPeriod.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumFlagBackStarting">
+    <Position X="3.25" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Definitions\enumFlagBackStarting.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumPayment">
+    <Position X="6" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Definitions\enumPayment.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumDevelopmentTableType">
+    <Position X="8.75" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Definitions\enumDevelopmentTableType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumExchangeNotional">
+    <Position X="11.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Definitions\enumExchangeNotional.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumBasis">
+    <Position X="0.5" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAIAAIAAAAgBAAAAAAAAAgBAAA=</HashCode>
+      <FileName>Definitions\enumBasis.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumSetPrincing">
+    <Position X="3.25" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAQAABAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Definitions\enumSetPrincing.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Turing2009Definitions.Definitions.enumProcessStatus">
+    <Position X="6" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgwAQAgAAAAAgAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Definitions\enumProcessStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

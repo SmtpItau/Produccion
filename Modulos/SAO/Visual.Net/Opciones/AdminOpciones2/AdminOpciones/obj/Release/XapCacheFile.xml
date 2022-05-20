@@ -1,0 +1,27 @@
+﻿<xapCache source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="25-08-2014 12:24:08">
+  <file source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.dll" archivePath="AdminOpciones.dll" lastWriteTime="25-08-2014 12:23:56" />
+  <file source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\DLL\Liquid.Menu.dll" archivePath="Liquid.Menu.dll" lastWriteTime="30-07-2014 15:17:48" />
+  <file source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\DLL\Liquid.Popup.dll" archivePath="Liquid.Popup.dll" lastWriteTime="30-07-2014 15:17:48" />
+  <file source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\DLL\Liquid.TreeView.dll" archivePath="Liquid.TreeView.dll" lastWriteTime="30-07-2014 15:17:49" />
+  <file source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\DLL\Microsoft.Windows.Controls.dll" archivePath="Microsoft.Windows.Controls.dll" lastWriteTime="30-07-2014 15:17:49" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Data.Services.Client.dll" archivePath="System.Data.Services.Client.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Input.dll" archivePath="System.Windows.Controls.Input.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="26-08-2010 1:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Data.Services.Client.resources.dll" archivePath="es\System.Data.Services.Client.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Windows.Controls.resources.dll" archivePath="es\System.Windows.Controls.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Windows.Controls.Data.resources.dll" archivePath="es\System.Windows.Controls.Data.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Windows.Controls.Input.resources.dll" archivePath="es\System.Windows.Controls.Input.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Xml.Linq.resources.dll" archivePath="es\System.Xml.Linq.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Xml.Serialization.resources.dll" archivePath="es\System.Xml.Serialization.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Windows.Controls.Data.Input.resources.dll" archivePath="es\System.Windows.Controls.Data.Input.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.ComponentModel.DataAnnotations.resources.dll" archivePath="es\System.ComponentModel.DataAnnotations.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\es\System.Windows.Data.resources.dll" archivePath="es\System.Windows.Data.resources.dll" lastWriteTime="26-08-2010 4:33:36" />
+  <file source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="19-07-2014 0:01:13" />
+  <file source="C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="25-08-2014 12:24:07" />
+</xapCache>

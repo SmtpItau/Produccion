@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="AdminOpciones.OpcionesFX.OpcionesDeCartera.OpcionesCartera"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="196" Height="230">
+    <Border  BorderThickness="1,1,1,1" BorderBrush="#FF3A7ECB" Width="196" Height="230">
+        <Grid x:Name="LayoutRootClasificacionCartera" Background="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Background="#FF3A7ECB">
+                <TextBlock Text="Clasificacion de Cartera" Height="20" Width="160" Margin="10,0,0,0" Foreground="White" VerticalAlignment="Center"/>
+                <Button Name="btnXButtonOpcionesCartera" Content="X" Height="24" Width="24" HorizontalAlignment="Right" Click="event_btnXButton_Click" />
+            </StackPanel>
+
+            <Canvas Name="CanvasRoot" Grid.Row="1">
+                <Border Height="192" Width="190" BorderThickness="1" BorderBrush="#FF97A1AB" Canvas.Left="3" CornerRadius="5" Canvas.Top="5"/>
+
+                <ComboBox Height="24" Width="168" Canvas.Left="10" Canvas.Top="30" x:Name="comboLibro" SelectionChanged="event_comboLibro_SelectionChanged" />
+                <ComboBox Height="24" Width="168" Canvas.Left="10" Canvas.Top="75" x:Name="comboCarteraFinanciera" SelectionChanged="event_comboCarteraFinanciera_SelectionChanged"/>
+                <ComboBox Height="24" Width="168" Canvas.Left="10" Canvas.Top="119" x:Name="comboCarteraNormativa" SelectionChanged="event_comboCarteraNormativa_SelectionChanged"/>
+                <ComboBox Height="24" Width="168" Canvas.Left="10" Canvas.Top="164" x:Name="comboSubCarteraNormativa" SelectionChanged="event_comboSubCarteraNormativa_SelectionChanged"/>
+
+                <TextBlock Height="14" Text="Libro" TextWrapping="Wrap" FontSize="10" Width="51" Canvas.Left="10" Canvas.Top="15"/>
+                <TextBlock Height="14.545" Width="104.386" Canvas.Left="10" Canvas.Top="60" Text="Cartera Financiera" TextWrapping="Wrap" FontSize="10"/>
+                <TextBlock Height="16" Width="141.723" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="103" FontSize="10"  Text="Cartera Normativa"/>
+                <TextBlock Height="15" Width="120" TextWrapping="Wrap" Canvas.Left="10" Canvas.Top="148" FontSize="10" Text="Sub Cartera Normativa"/>
+
+
+            </Canvas>
+
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/common/xsd/1" targetNamespace="http://itau.cl/xmlns/common/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="AdditionalStatus_Type">
+    <xsd:all>
+      <xsd:element minOccurs="0" maxOccurs="1" name="StatusCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="StatusDesc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Severity" type="xsd:string" />
+    </xsd:all>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,8 @@
+clsTrader = 198, 261, 788, 852, 
+ModGeneralTrader = -231, 183, 825, 774, 
+clsFeriado = 0, 0, 0, 0, C
+clsValoresMoneda = 44, 58, 1089, 532, C
+clsWinIp = 154, 203, 984, 695, C
+clsValorMoneda = 0, 0, 1056, 591, C
+BacCalculoRec = 22, 29, 1144, 503, Z
+SendMailCDO = 198, 198, 659, 811, C

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="BalType_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="Avail" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Ledger" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CreditLimit" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DebitHeld" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DebitHeld24" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DebitHeld48" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DebitHeldOther" type="xsd:double" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

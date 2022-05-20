@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetApplicationSetting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplicationSetting" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationSettingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationSettingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllApplicationSetting">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllApplicationSettingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllApplicationSettingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArrayApplicationSetting">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetArrayApplicationSettingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArrayApplicationSettingResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLocalPath">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLocalPathResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocalPathResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocalPathNull">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocalPathNullResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocalPathNullResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetApplicationSetting">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parametro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetApplicationSettingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetApplicationSettingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckApplicationSettings">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckApplicationSettingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckApplicationSettingsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetApplicationSettingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationSetting" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationSettingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationSettingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllApplicationSettingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllApplicationSetting" />
+  </wsdl:message>
+  <wsdl:message name="GetAllApplicationSettingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllApplicationSettingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArrayApplicationSettingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArrayApplicationSetting" />
+  </wsdl:message>
+  <wsdl:message name="GetArrayApplicationSettingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArrayApplicationSettingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocalPath" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocalPathResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathNullSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocalPathNull" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathNullSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocalPathNullResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingSoapIn">
+    <wsdl:part name="parameters" element="tns:SetApplicationSetting" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingSoapOut">
+    <wsdl:part name="parameters" element="tns:SetApplicationSettingResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckApplicationSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckApplicationSettings" />
+  </wsdl:message>
+  <wsdl:message name="CheckApplicationSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckApplicationSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationSettingHttpGetIn">
+    <wsdl:part name="ApplicationSetting" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationSettingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllApplicationSettingHttpGetIn" />
+  <wsdl:message name="GetAllApplicationSettingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetArrayApplicationSettingHttpGetIn" />
+  <wsdl:message name="GetArrayApplicationSettingHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathHttpGetIn" />
+  <wsdl:message name="GetLocalPathHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathNullHttpGetIn">
+    <wsdl:part name="path" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathNullHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingHttpGetIn">
+    <wsdl:part name="key" type="s:string" />
+    <wsdl:part name="parametro" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckApplicationSettingsHttpGetIn" />
+  <wsdl:message name="CheckApplicationSettingsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationSettingHttpPostIn">
+    <wsdl:part name="ApplicationSetting" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationSettingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllApplicationSettingHttpPostIn" />
+  <wsdl:message name="GetAllApplicationSettingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetArrayApplicationSettingHttpPostIn" />
+  <wsdl:message name="GetArrayApplicationSettingHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathHttpPostIn" />
+  <wsdl:message name="GetLocalPathHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathNullHttpPostIn">
+    <wsdl:part name="path" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLocalPathNullHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingHttpPostIn">
+    <wsdl:part name="key" type="s:string" />
+    <wsdl:part name="parametro" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckApplicationSettingsHttpPostIn" />
+  <wsdl:message name="CheckApplicationSettingsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="SrvConfigSoap">
+    <wsdl:operation name="GetApplicationSetting">
+      <wsdl:input message="tns:GetApplicationSettingSoapIn" />
+      <wsdl:output message="tns:GetApplicationSettingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllApplicationSetting">
+      <wsdl:input message="tns:GetAllApplicationSettingSoapIn" />
+      <wsdl:output message="tns:GetAllApplicationSettingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArrayApplicationSetting">
+      <wsdl:input message="tns:GetArrayApplicationSettingSoapIn" />
+      <wsdl:output message="tns:GetArrayApplicationSettingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPath">
+      <wsdl:input message="tns:GetLocalPathSoapIn" />
+      <wsdl:output message="tns:GetLocalPathSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPathNull">
+      <wsdl:input message="tns:GetLocalPathNullSoapIn" />
+      <wsdl:output message="tns:GetLocalPathNullSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSetting">
+      <wsdl:input message="tns:SetApplicationSettingSoapIn" />
+      <wsdl:output message="tns:SetApplicationSettingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckApplicationSettings">
+      <wsdl:input message="tns:CheckApplicationSettingsSoapIn" />
+      <wsdl:output message="tns:CheckApplicationSettingsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvConfigHttpGet">
+    <wsdl:operation name="GetApplicationSetting">
+      <wsdl:input message="tns:GetApplicationSettingHttpGetIn" />
+      <wsdl:output message="tns:GetApplicationSettingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllApplicationSetting">
+      <wsdl:input message="tns:GetAllApplicationSettingHttpGetIn" />
+      <wsdl:output message="tns:GetAllApplicationSettingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArrayApplicationSetting">
+      <wsdl:input message="tns:GetArrayApplicationSettingHttpGetIn" />
+      <wsdl:output message="tns:GetArrayApplicationSettingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPath">
+      <wsdl:input message="tns:GetLocalPathHttpGetIn" />
+      <wsdl:output message="tns:GetLocalPathHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPathNull">
+      <wsdl:input message="tns:GetLocalPathNullHttpGetIn" />
+      <wsdl:output message="tns:GetLocalPathNullHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSetting">
+      <wsdl:input message="tns:SetApplicationSettingHttpGetIn" />
+      <wsdl:output message="tns:SetApplicationSettingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckApplicationSettings">
+      <wsdl:input message="tns:CheckApplicationSettingsHttpGetIn" />
+      <wsdl:output message="tns:CheckApplicationSettingsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvConfigHttpPost">
+    <wsdl:operation name="GetApplicationSetting">
+      <wsdl:input message="tns:GetApplicationSettingHttpPostIn" />
+      <wsdl:output message="tns:GetApplicationSettingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllApplicationSetting">
+      <wsdl:input message="tns:GetAllApplicationSettingHttpPostIn" />
+      <wsdl:output message="tns:GetAllApplicationSettingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArrayApplicationSetting">
+      <wsdl:input message="tns:GetArrayApplicationSettingHttpPostIn" />
+      <wsdl:output message="tns:GetArrayApplicationSettingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPath">
+      <wsdl:input message="tns:GetLocalPathHttpPostIn" />
+      <wsdl:output message="tns:GetLocalPathHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPathNull">
+      <wsdl:input message="tns:GetLocalPathNullHttpPostIn" />
+      <wsdl:output message="tns:GetLocalPathNullHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSetting">
+      <wsdl:input message="tns:SetApplicationSettingHttpPostIn" />
+      <wsdl:output message="tns:SetApplicationSettingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckApplicationSettings">
+      <wsdl:input message="tns:CheckApplicationSettingsHttpPostIn" />
+      <wsdl:output message="tns:CheckApplicationSettingsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SrvConfigSoap" type="tns:SrvConfigSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetApplicationSetting">
+      <soap:operation soapAction="http://tempuri.org/GetApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllApplicationSetting">
+      <soap:operation soapAction="http://tempuri.org/GetAllApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArrayApplicationSetting">
+      <soap:operation soapAction="http://tempuri.org/GetArrayApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPath">
+      <soap:operation soapAction="http://tempuri.org/GetLocalPath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPathNull">
+      <soap:operation soapAction="http://tempuri.org/GetLocalPathNull" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSetting">
+      <soap:operation soapAction="http://tempuri.org/SetApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckApplicationSettings">
+      <soap:operation soapAction="http://tempuri.org/CheckApplicationSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvConfigSoap12" type="tns:SrvConfigSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetApplicationSetting">
+      <soap12:operation soapAction="http://tempuri.org/GetApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllApplicationSetting">
+      <soap12:operation soapAction="http://tempuri.org/GetAllApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArrayApplicationSetting">
+      <soap12:operation soapAction="http://tempuri.org/GetArrayApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPath">
+      <soap12:operation soapAction="http://tempuri.org/GetLocalPath" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPathNull">
+      <soap12:operation soapAction="http://tempuri.org/GetLocalPathNull" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSetting">
+      <soap12:operation soapAction="http://tempuri.org/SetApplicationSetting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckApplicationSettings">
+      <soap12:operation soapAction="http://tempuri.org/CheckApplicationSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvConfigHttpGet" type="tns:SrvConfigHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetApplicationSetting">
+      <http:operation location="/GetApplicationSetting" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllApplicationSetting">
+      <http:operation location="/GetAllApplicationSetting" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArrayApplicationSetting">
+      <http:operation location="/GetArrayApplicationSetting" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPath">
+      <http:operation location="/GetLocalPath" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPathNull">
+      <http:operation location="/GetLocalPathNull" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSetting">
+      <http:operation location="/SetApplicationSetting" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckApplicationSettings">
+      <http:operation location="/CheckApplicationSettings" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvConfigHttpPost" type="tns:SrvConfigHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetApplicationSetting">
+      <http:operation location="/GetApplicationSetting" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllApplicationSetting">
+      <http:operation location="/GetAllApplicationSetting" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArrayApplicationSetting">
+      <http:operation location="/GetArrayApplicationSetting" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPath">
+      <http:operation location="/GetLocalPath" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalPathNull">
+      <http:operation location="/GetLocalPathNull" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSetting">
+      <http:operation location="/SetApplicationSetting" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckApplicationSettings">
+      <http:operation location="/CheckApplicationSettings" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SrvConfig">
+    <wsdl:port name="SrvConfigSoap" binding="tns:SrvConfigSoap">
+      <soap:address location="http://localhost:24084/WebService/SrvConfig.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvConfigSoap12" binding="tns:SrvConfigSoap12">
+      <soap12:address location="http://localhost:24084/WebService/SrvConfig.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvConfigHttpGet" binding="tns:SrvConfigHttpGet">
+      <http:address location="http://localhost:24084/WebService/SrvConfig.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvConfigHttpPost" binding="tns:SrvConfigHttpPost">
+      <http:address location="http://localhost:24084/WebService/SrvConfig.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

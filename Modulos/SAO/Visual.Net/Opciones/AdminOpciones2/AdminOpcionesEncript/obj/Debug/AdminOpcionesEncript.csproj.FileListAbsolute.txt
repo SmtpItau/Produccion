@@ -1,0 +1,78 @@
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.csprojResolveAssemblyReference.cache
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\bin\Debug\AdminOpcionesEncript.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesEncript\obj\Debug\AdminOpcionesEncript.pdb

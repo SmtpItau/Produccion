@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="AdminOpciones.OpcionesFX.TopologiaVegaPricing.TopoLogiaVegaPricingControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:Controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    xmlns:SisWinControlsData="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"         
+    Width="405" Height="255">
+    <Border x:Name="BorderTopologiaVegaPricing" BorderBrush="#FF3A7ECB" BorderThickness="1"  Width="405" Height="255" >
+        <Canvas x:Name="CanvasPrincipalTopologiaVegaPricing" Background="White">
+
+            <Controls:TabControl Name="TabControl_TopologiaVegaPricing" Height="250" Width="400" Canvas.Left="0" Canvas.Top="0" SelectedIndex="0" SelectionChanged="event_TabControl_TopologiaVegaPricing_SelectedChanged" >                
+                <Controls:TabItem Header="CALL PUT" Name="itemTabControl_CALLPUT">
+                    <SisWinControlsData:DataGrid x:Name="grdTopologiaVegaCALLPUTPricing" HorizontalContentAlignment="Right" AutoGenerateColumns="False"  Canvas.Left="10" Canvas.Top="5" Height="200" Width="370" GridLinesVisibility="All"  >
+                        <SisWinControlsData:DataGrid.Columns>
+                            <SisWinControlsData:DataGridTextColumn MinWidth="40" Header="(t)" Binding="{Binding Path=Tenor}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="PUT10D" Binding="{Binding Path=sTopologiaPut10}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="PUT25D" Binding="{Binding Path=sTopologiaPut25}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="ATM" Binding="{Binding Path=sTopologiaAtm}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="CALL25D" Binding="{Binding Path=sTopologiaCall25}"  />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="CALL10D" Binding="{Binding Path=sTopologiaCall10}" />
+                        </SisWinControlsData:DataGrid.Columns>
+                    </SisWinControlsData:DataGrid>
+                </Controls:TabItem>
+                <Controls:TabItem Header="RRFLY" Name="itemTabControl_RRFLY">
+                    <SisWinControlsData:DataGrid x:Name="grdTopologiaVegaRRFLYPricing" HorizontalContentAlignment="Right" AutoGenerateColumns="False"  Canvas.Left="10" Canvas.Top="5" Height="200" Width="370" GridLinesVisibility="All" HorizontalScrollBarVisibility="Visible">
+                        <SisWinControlsData:DataGrid.Columns>
+                            <SisWinControlsData:DataGridTextColumn MinWidth="40" Header="(t)" Binding="{Binding Path=Tenor}"/>
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="ATM" Binding="{Binding Path=sTopologiaATM}"  />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="RR25D" Binding="{Binding Path=sTopologiaRR25D}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="BF25D" Binding="{Binding Path=sTopologiaBF25D}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="RR10D" Binding="{Binding Path=sTopologiaRR10D}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="BF10D" Binding="{Binding Path=sTopologiaBF10D}" />
+                        </SisWinControlsData:DataGrid.Columns>
+                    </SisWinControlsData:DataGrid>
+                </Controls:TabItem>
+                <Controls:TabItem Header="Volatilidades" Name="itemTabControl_Volatilidades">
+                    <SisWinControlsData:DataGrid x:Name="grdTopologiaVolatilidadesPricing" HorizontalContentAlignment="Right" AutoGenerateColumns="False"  Canvas.Left="10" Canvas.Top="5" Height="200" Width="370" GridLinesVisibility="All" HorizontalScrollBarVisibility="Visible">
+                        <SisWinControlsData:DataGrid.Columns>
+                            <SisWinControlsData:DataGridTextColumn MinWidth="40" Header="(t)" Binding="{Binding Path=Tenor}"/>
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="ATM" Binding="{Binding Path=sATM}"  />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="RR25D" Binding="{Binding Path=sRR25D}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="BF25D" Binding="{Binding Path=sBF25D}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="RR10D" Binding="{Binding Path=sRR10D}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="BF10D" Binding="{Binding Path=sBF10D}" />
+                        </SisWinControlsData:DataGrid.Columns>
+                    </SisWinControlsData:DataGrid>
+                </Controls:TabItem>
+                <Controls:TabItem Header="Strikes" Name="itemTabControl_Strikes">
+                    <SisWinControlsData:DataGrid x:Name="grdTopologiaVegaStrikesPricing" HorizontalContentAlignment="Right" AutoGenerateColumns="False"  Canvas.Left="10" Canvas.Top="5" Height="200" Width="370" GridLinesVisibility="All" HorizontalScrollBarVisibility="Visible">
+                        <SisWinControlsData:DataGrid.Columns>
+                            <SisWinControlsData:DataGridTextColumn MinWidth="40" Header="(t)" Binding="{Binding Path=Tenor}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="PUT10D" Binding="{Binding Path=sPut10}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="PUT25D" Binding="{Binding Path=sPut25}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="ATM" Binding="{Binding Path=sAtm}" />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="CALL25D" Binding="{Binding Path=sCall25}"  />
+                            <SisWinControlsData:DataGridTextColumn MinWidth="60" Header="CALL10D" Binding="{Binding Path=sCall10}" />
+                        </SisWinControlsData:DataGrid.Columns>
+                    </SisWinControlsData:DataGrid>
+                </Controls:TabItem>
+            </Controls:TabControl>
+        </Canvas>
+    </Border>
+</UserControl>

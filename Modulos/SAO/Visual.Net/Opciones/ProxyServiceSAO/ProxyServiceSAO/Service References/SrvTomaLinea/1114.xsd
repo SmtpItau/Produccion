@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd28" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd119" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd14" />
+  <complexType name="CreditRisk_Type">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="InternalScore" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="RiskCategory" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ProbabilityScore" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="LastRefiDt" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="LastRenDt" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="TotalDirec" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="TotalIndir" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="TotalInvoice" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="TotalSpend" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ProtVigCount" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="DeterioroInd" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ScoreGeneratedDt" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="ScoreGeneratedMonth" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="Creditors" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="CreditBureauSummary" type="tns:CreditBureauSummary_Type" />
+    </sequence>
+  </complexType>
+</schema>

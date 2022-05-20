@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="AdminOpciones.OpcionesFX.Componentes.Componentes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             Width="395"
+             Height="289"
+             SizeChanged="UserControl_SizeChanged"
+             xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data">
+    
+    <Grid x:Name="GridPrincipalComponentes">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2" />
+        </Grid.RowDefinitions>
+
+        <Border x:Name="BorderComponentes"
+                BorderBrush="#FF3A7ECB"
+                BorderThickness="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="0"
+                Grid.RowSpan="3"
+                Width="Auto"
+                Height="Auto" />
+
+        <data:DataGrid Name="grdComponentes"
+                       AutoGenerateColumns="False"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       FrozenColumnCount="1">
+		    <data:DataGrid.Columns>
+		    </data:DataGrid.Columns>
+	    </data:DataGrid>
+        
+    </Grid>
+    
+</UserControl>

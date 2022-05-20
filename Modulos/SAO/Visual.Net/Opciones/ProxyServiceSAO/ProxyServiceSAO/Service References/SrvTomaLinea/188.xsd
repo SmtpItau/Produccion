@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Bpm_Type">
+    <all>
+      <element minOccurs="0" maxOccurs="1" name="CurrentActivity" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="Usrbpm" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="Action" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="Option" type="string" />
+    </all>
+  </complexType>
+</schema>

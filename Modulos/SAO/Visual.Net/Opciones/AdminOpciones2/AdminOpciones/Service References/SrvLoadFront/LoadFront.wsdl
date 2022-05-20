@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LoadSpot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetPricingLoading" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetdePrecios" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadSpotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadSpotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PuntosForward">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fechaVal" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaVcto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="Spot" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="CurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PuntosForwardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PuntosForwardResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDateProcess">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoadDateProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadDateProcessResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadFrontData">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoadFrontDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadFrontDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="double" type="s:double" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoadSpotSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadSpot" />
+  </wsdl:message>
+  <wsdl:message name="LoadSpotSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadSpotResponse" />
+  </wsdl:message>
+  <wsdl:message name="PuntosForwardSoapIn">
+    <wsdl:part name="parameters" element="tns:PuntosForward" />
+  </wsdl:message>
+  <wsdl:message name="PuntosForwardSoapOut">
+    <wsdl:part name="parameters" element="tns:PuntosForwardResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadDateProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadDateProcess" />
+  </wsdl:message>
+  <wsdl:message name="LoadDateProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadDateProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadFrontDataSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadFrontData" />
+  </wsdl:message>
+  <wsdl:message name="LoadFrontDataSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadFrontDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadSpotHttpGetIn">
+    <wsdl:part name="SetPricingLoading" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadSpotHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PuntosForwardHttpGetIn">
+    <wsdl:part name="fechaVal" type="s:string" />
+    <wsdl:part name="fechaVcto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="Spot" type="s:string" />
+    <wsdl:part name="CurvaDom" type="s:string" />
+    <wsdl:part name="CurvaFor" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PuntosForwardHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="LoadDateProcessHttpGetIn" />
+  <wsdl:message name="LoadDateProcessHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadFrontDataHttpGetIn" />
+  <wsdl:message name="LoadFrontDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadSpotHttpPostIn">
+    <wsdl:part name="SetPricingLoading" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadSpotHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PuntosForwardHttpPostIn">
+    <wsdl:part name="fechaVal" type="s:string" />
+    <wsdl:part name="fechaVcto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="Spot" type="s:string" />
+    <wsdl:part name="CurvaDom" type="s:string" />
+    <wsdl:part name="CurvaFor" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PuntosForwardHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="LoadDateProcessHttpPostIn" />
+  <wsdl:message name="LoadDateProcessHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadFrontDataHttpPostIn" />
+  <wsdl:message name="LoadFrontDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="LoadFrontSoap">
+    <wsdl:operation name="LoadSpot">
+      <wsdl:input message="tns:LoadSpotSoapIn" />
+      <wsdl:output message="tns:LoadSpotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PuntosForward">
+      <wsdl:input message="tns:PuntosForwardSoapIn" />
+      <wsdl:output message="tns:PuntosForwardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadDateProcess">
+      <wsdl:input message="tns:LoadDateProcessSoapIn" />
+      <wsdl:output message="tns:LoadDateProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFrontData">
+      <wsdl:input message="tns:LoadFrontDataSoapIn" />
+      <wsdl:output message="tns:LoadFrontDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="LoadFrontHttpGet">
+    <wsdl:operation name="LoadSpot">
+      <wsdl:input message="tns:LoadSpotHttpGetIn" />
+      <wsdl:output message="tns:LoadSpotHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PuntosForward">
+      <wsdl:input message="tns:PuntosForwardHttpGetIn" />
+      <wsdl:output message="tns:PuntosForwardHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadDateProcess">
+      <wsdl:input message="tns:LoadDateProcessHttpGetIn" />
+      <wsdl:output message="tns:LoadDateProcessHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFrontData">
+      <wsdl:input message="tns:LoadFrontDataHttpGetIn" />
+      <wsdl:output message="tns:LoadFrontDataHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="LoadFrontHttpPost">
+    <wsdl:operation name="LoadSpot">
+      <wsdl:input message="tns:LoadSpotHttpPostIn" />
+      <wsdl:output message="tns:LoadSpotHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PuntosForward">
+      <wsdl:input message="tns:PuntosForwardHttpPostIn" />
+      <wsdl:output message="tns:PuntosForwardHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadDateProcess">
+      <wsdl:input message="tns:LoadDateProcessHttpPostIn" />
+      <wsdl:output message="tns:LoadDateProcessHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFrontData">
+      <wsdl:input message="tns:LoadFrontDataHttpPostIn" />
+      <wsdl:output message="tns:LoadFrontDataHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoadFrontSoap" type="tns:LoadFrontSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadSpot">
+      <soap:operation soapAction="http://tempuri.org/LoadSpot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuntosForward">
+      <soap:operation soapAction="http://tempuri.org/PuntosForward" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDateProcess">
+      <soap:operation soapAction="http://tempuri.org/LoadDateProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFrontData">
+      <soap:operation soapAction="http://tempuri.org/LoadFrontData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadFrontSoap12" type="tns:LoadFrontSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadSpot">
+      <soap12:operation soapAction="http://tempuri.org/LoadSpot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuntosForward">
+      <soap12:operation soapAction="http://tempuri.org/PuntosForward" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDateProcess">
+      <soap12:operation soapAction="http://tempuri.org/LoadDateProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFrontData">
+      <soap12:operation soapAction="http://tempuri.org/LoadFrontData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadFrontHttpGet" type="tns:LoadFrontHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="LoadSpot">
+      <http:operation location="/LoadSpot" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuntosForward">
+      <http:operation location="/PuntosForward" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDateProcess">
+      <http:operation location="/LoadDateProcess" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFrontData">
+      <http:operation location="/LoadFrontData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadFrontHttpPost" type="tns:LoadFrontHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="LoadSpot">
+      <http:operation location="/LoadSpot" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PuntosForward">
+      <http:operation location="/PuntosForward" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDateProcess">
+      <http:operation location="/LoadDateProcess" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFrontData">
+      <http:operation location="/LoadFrontData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoadFront">
+    <wsdl:port name="LoadFrontSoap" binding="tns:LoadFrontSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/Load/LoadFront.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoadFrontSoap12" binding="tns:LoadFrontSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/Load/LoadFront.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoadFrontHttpGet" binding="tns:LoadFrontHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Load/LoadFront.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoadFrontHttpPost" binding="tns:LoadFrontHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Load/LoadFront.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

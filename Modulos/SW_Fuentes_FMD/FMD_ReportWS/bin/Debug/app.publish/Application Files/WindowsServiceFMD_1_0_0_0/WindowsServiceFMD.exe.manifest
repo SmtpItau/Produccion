@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="WindowsServiceFMD.exe" version="1.0.0.0" publicKeyToken="80a3986ea1cbb471" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WindowsServiceFMD" version="1.0.0.0" publicKeyToken="A7D3531D225EDD60" language="neutral" processorArchitecture="x86" />
+    <commandLine file="WindowsServiceFMD.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CoreLib.dll" size="60928">
+      <assemblyIdentity name="CoreLib" version="1.0.0.0" publicKeyToken="1B21A699714A1806" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>U+Sx596ZCeh1Ng82gpVLJj/09yk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EPPlus.dll" size="673280">
+      <assemblyIdentity name="EPPlus" version="3.1.3.0" publicKeyToken="EA159FDAA78159A1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>GxnIiT221NhTik3J/T46FEb8kKY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsServiceFMD.exe" size="32256">
+      <assemblyIdentity name="WindowsServiceFMD" version="1.0.0.0" publicKeyToken="A7D3531D225EDD60" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>/yzQtfj7GUeAXVjFwmkuKjyB52s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="WindowsServiceFMD.exe.config" size="3697">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7XSjTfNfwMQc5u5afrW+NmX2nQA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CORPORATIVO\gcacblg" issuerKeyHash="71d2cfc8140a6c7d3970296b66d5ed7eafb4bd9a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>y1gX+WYQvsjZ8X593DhrkkyvwE4=</DigestValue></Reference></SignedInfo><SignatureValue>hJGXw4caoBuOSbJXOubW/M0rXaKSfEgcsMiGN+4OGxBZ0KEuREBzQgHyz6brPgt6Lb7F0Za91aEovGQvqs3B31TM0S6/3SsaQnWn9OqnzTyi6Eyw2h671aawQ4OOQ/Gi3io8bD0mQZt61HRCP3aRfO2GL/NTwwoya+IQN+DsYYg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vHV2BZgeHNKWabnMx+THF9CRvE2XeWOdhEY1U9RvXAAJWcDyeMHpBzYNoUdvLVHgGZZWDvoeO8T3opq5FGc8O4vhUfTYxdHwLMZsImCp5AmnfpUtGj70eulRbABLgHFXfOIzTDJHfZO9TUg5og4F2zHyZMEZiw+cW0/XmMOy6Ws=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4ec0af4c926b38dc7d7ef1d9c8be1066f91758cb" Description="" Url=""><as:assemblyIdentity name="WindowsServiceFMD.exe" version="1.0.0.0" publicKeyToken="80a3986ea1cbb471" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CORPORATIVO\gcacblg</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>yvLMRezWXXBs5Muc52VBnRlOryY=</DigestValue></Reference></SignedInfo><SignatureValue>TElSSrRxzsUUtxAxPpaX5IvyTMO324z5zaXHWUwEBnJeAGes0iR7JZHcHVeKmH2pxBxMLtO1qKOWV0vmuExC4LQeQpMPwTCUAPp5gVWTTPSUnXTU0rks1sLA1TMuq7dbB4aWi/AmeDgKercjfOK86YQSozpsgZKbyPquHy61hCI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vHV2BZgeHNKWabnMx+THF9CRvE2XeWOdhEY1U9RvXAAJWcDyeMHpBzYNoUdvLVHgGZZWDvoeO8T3opq5FGc8O4vhUfTYxdHwLMZsImCp5AmnfpUtGj70eulRbABLgHFXfOIzTDJHfZO9TUg5og4F2zHyZMEZiw+cW0/XmMOy6Ws=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQTnHSYtfusYtA/cn3mXIMTDANBgkqhkiG9w0BAQUFADAxMS8wLQYDVQQDHiYAQwBPAFIAUABPAFIAQQBUAEkAVgBPAFwAZwBjAGEAYwBiAGwAZzAeFw0xNjAxMDYxNzQ5NTdaFw0xNzAxMDUyMzQ5NTdaMDExLzAtBgNVBAMeJgBDAE8AUgBQAE8AUgBBAFQASQBWAE8AXABnAGMAYQBjAGIAbABnMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8dXYFmB4c0pZpuczH5McX0JG8TZd5Y52ERjVT1G9cAAlZwPJ4wekHNg2hR28tUeAZllYO+h47xPeimrkUZzw7i+FR9NjF0fAsxmwiYKnkCad+lS0aPvR66VFsAEuAcVd84jNMMkd9k71NSDmiDgXbMfJkwRmLD5xbT9eYw7LpawIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAHg0RILrAHqIzz4cUDEUtvZuZ+SLHYw8A5zjM0ZjKHFsaogx2ssORDV2fPoMJrScEeta2OSweWaZJcRcky3KzY1H5eFAkZkCYFTBloXAvl+zUFAhxBpkeYKNfI486vaGL2Kd53Mqsluq2mRtsm/hsaFVmSnCy8E/EUjR+7tdui1r</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

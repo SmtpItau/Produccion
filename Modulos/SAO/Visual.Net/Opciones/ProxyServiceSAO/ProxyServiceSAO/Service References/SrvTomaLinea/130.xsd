@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:Q1="http://itau.cl/xmlns/common/xsd/1" xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd56" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd38" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd57" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd58" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd59" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd60" />
+  <xsd:complexType name="AcctTrnInfo_Type">
+    <xsd:all>
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctRef" type="tns:AcctRef_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PostedDt" type="xsd:date" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PostedTime" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EffDt" type="xsd:date" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Memo" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrigDt" type="xsd:date" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TotalCurAmt" type="tns:TotalCurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurA84Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TrnType" type="tns:TrnType_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TrnSubType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="StmtRunningBal" type="tns:StmtRunningBal_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ChkNum" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RegPmt" type="tns:RegPmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExchangeRate" type="tns:ExchangeRate_Type" />
+    </xsd:all>
+  </xsd:complexType>
+</xsd:schema>

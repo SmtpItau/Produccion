@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="generateFixingTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Town" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaFin" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="intervalo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoPeso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nominal" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPrecios" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="flagSmile" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="generateFixingTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="generateFixingTableResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReLoadFixingTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaFin" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="intervalo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipoPeso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPrecios" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FixingTableXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReLoadFixingTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReLoadFixingTableResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Opcion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compraVenta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nominal" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot_smile" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencimiento" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numComponente_Estruc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayOff" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estruct_Indiv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fijacionesDataXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpcionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpcionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallPut_Asiatico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compraVenta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nominal" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="MtM_objetivo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaVenc" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fijacionesDataXML" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallPut_AsiaticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_CallPut_AsiaticoResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateStripTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Town" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaInicio" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaFin" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="intervalo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoPeso" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nominal" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="strike" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameCurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPrecios" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="flagSmile" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Strip" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateStripTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateStripTableResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="double" type="s:double" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="generateFixingTableSoapIn">
+    <wsdl:part name="parameters" element="tns:generateFixingTable" />
+  </wsdl:message>
+  <wsdl:message name="generateFixingTableSoapOut">
+    <wsdl:part name="parameters" element="tns:generateFixingTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReLoadFixingTableSoapIn">
+    <wsdl:part name="parameters" element="tns:ReLoadFixingTable" />
+  </wsdl:message>
+  <wsdl:message name="ReLoadFixingTableSoapOut">
+    <wsdl:part name="parameters" element="tns:ReLoadFixingTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpcionSoapIn">
+    <wsdl:part name="parameters" element="tns:Opcion" />
+  </wsdl:message>
+  <wsdl:message name="OpcionSoapOut">
+    <wsdl:part name="parameters" element="tns:OpcionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_AsiaticoSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_CallPut_Asiatico" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_AsiaticoSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_CallPut_AsiaticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateStripTableSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateStripTable" />
+  </wsdl:message>
+  <wsdl:message name="GenerateStripTableSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateStripTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="generateFixingTableHttpGetIn">
+    <wsdl:part name="Town" type="s:string" />
+    <wsdl:part name="fechaInicio" type="s:string" />
+    <wsdl:part name="fechaFin" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="intervalo" type="s:string" />
+    <wsdl:part name="TipoPeso" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPrecios" type="s:string" />
+    <wsdl:part name="flagSmile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="generateFixingTableHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ReLoadFixingTableHttpGetIn">
+    <wsdl:part name="fechaInicio" type="s:string" />
+    <wsdl:part name="fechaFin" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="intervalo" type="s:string" />
+    <wsdl:part name="tipoPeso" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPrecios" type="s:string" />
+    <wsdl:part name="FixingTableXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ReLoadFixingTableHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionHttpGetIn">
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spot_smile" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="fecha_Vencimiento" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+    <wsdl:part name="numComponente_Estruc" type="s:string" />
+    <wsdl:part name="PayOff" type="s:string" />
+    <wsdl:part name="Estruct_Indiv" type="s:string" />
+    <wsdl:part name="fijacionesDataXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_AsiaticoHttpGetIn">
+    <wsdl:part name="BsSpot_BsFwd_flag" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="MtM_objetivo" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaVenc" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="fijacionesDataXML" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_AsiaticoHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="GenerateStripTableHttpGetIn">
+    <wsdl:part name="Town" type="s:string" />
+    <wsdl:part name="fechaInicio" type="s:string" />
+    <wsdl:part name="fechaFin" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="intervalo" type="s:string" />
+    <wsdl:part name="TipoPeso" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPrecios" type="s:string" />
+    <wsdl:part name="flagSmile" type="s:string" />
+    <wsdl:part name="Strip" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GenerateStripTableHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="generateFixingTableHttpPostIn">
+    <wsdl:part name="Town" type="s:string" />
+    <wsdl:part name="fechaInicio" type="s:string" />
+    <wsdl:part name="fechaFin" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="intervalo" type="s:string" />
+    <wsdl:part name="TipoPeso" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPrecios" type="s:string" />
+    <wsdl:part name="flagSmile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="generateFixingTableHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ReLoadFixingTableHttpPostIn">
+    <wsdl:part name="fechaInicio" type="s:string" />
+    <wsdl:part name="fechaFin" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="intervalo" type="s:string" />
+    <wsdl:part name="tipoPeso" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPrecios" type="s:string" />
+    <wsdl:part name="FixingTableXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ReLoadFixingTableHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionHttpPostIn">
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spot_smile" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="fecha_Vencimiento" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+    <wsdl:part name="numComponente_Estruc" type="s:string" />
+    <wsdl:part name="PayOff" type="s:string" />
+    <wsdl:part name="Estruct_Indiv" type="s:string" />
+    <wsdl:part name="fijacionesDataXML" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_AsiaticoHttpPostIn">
+    <wsdl:part name="BsSpot_BsFwd_flag" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compraVenta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="MtM_objetivo" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaVenc" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="fijacionesDataXML" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPut_AsiaticoHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="GenerateStripTableHttpPostIn">
+    <wsdl:part name="Town" type="s:string" />
+    <wsdl:part name="fechaInicio" type="s:string" />
+    <wsdl:part name="fechaFin" type="s:string" />
+    <wsdl:part name="fecha_val" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="intervalo" type="s:string" />
+    <wsdl:part name="TipoPeso" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="call_put_flag" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nominal" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="strike" type="s:string" />
+    <wsdl:part name="YieldNameCurvaDom" type="s:string" />
+    <wsdl:part name="YieldNameCurvaFor" type="s:string" />
+    <wsdl:part name="enumSetPrecios" type="s:string" />
+    <wsdl:part name="flagSmile" type="s:string" />
+    <wsdl:part name="Strip" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GenerateStripTableHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="SrvAsiaticasSoap">
+    <wsdl:operation name="generateFixingTable">
+      <wsdl:input message="tns:generateFixingTableSoapIn" />
+      <wsdl:output message="tns:generateFixingTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReLoadFixingTable">
+      <wsdl:input message="tns:ReLoadFixingTableSoapIn" />
+      <wsdl:output message="tns:ReLoadFixingTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Opcion">
+      <wsdl:input message="tns:OpcionSoapIn" />
+      <wsdl:output message="tns:OpcionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Asiatico">
+      <wsdl:input message="tns:Solver_CallPut_AsiaticoSoapIn" />
+      <wsdl:output message="tns:Solver_CallPut_AsiaticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateStripTable">
+      <wsdl:input message="tns:GenerateStripTableSoapIn" />
+      <wsdl:output message="tns:GenerateStripTableSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvAsiaticasHttpGet">
+    <wsdl:operation name="generateFixingTable">
+      <wsdl:input message="tns:generateFixingTableHttpGetIn" />
+      <wsdl:output message="tns:generateFixingTableHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReLoadFixingTable">
+      <wsdl:input message="tns:ReLoadFixingTableHttpGetIn" />
+      <wsdl:output message="tns:ReLoadFixingTableHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Opcion">
+      <wsdl:input message="tns:OpcionHttpGetIn" />
+      <wsdl:output message="tns:OpcionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Asiatico">
+      <wsdl:input message="tns:Solver_CallPut_AsiaticoHttpGetIn" />
+      <wsdl:output message="tns:Solver_CallPut_AsiaticoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateStripTable">
+      <wsdl:input message="tns:GenerateStripTableHttpGetIn" />
+      <wsdl:output message="tns:GenerateStripTableHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvAsiaticasHttpPost">
+    <wsdl:operation name="generateFixingTable">
+      <wsdl:input message="tns:generateFixingTableHttpPostIn" />
+      <wsdl:output message="tns:generateFixingTableHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReLoadFixingTable">
+      <wsdl:input message="tns:ReLoadFixingTableHttpPostIn" />
+      <wsdl:output message="tns:ReLoadFixingTableHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Opcion">
+      <wsdl:input message="tns:OpcionHttpPostIn" />
+      <wsdl:output message="tns:OpcionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Asiatico">
+      <wsdl:input message="tns:Solver_CallPut_AsiaticoHttpPostIn" />
+      <wsdl:output message="tns:Solver_CallPut_AsiaticoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateStripTable">
+      <wsdl:input message="tns:GenerateStripTableHttpPostIn" />
+      <wsdl:output message="tns:GenerateStripTableHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SrvAsiaticasSoap" type="tns:SrvAsiaticasSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="generateFixingTable">
+      <soap:operation soapAction="http://tempuri.org/generateFixingTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReLoadFixingTable">
+      <soap:operation soapAction="http://tempuri.org/ReLoadFixingTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Opcion">
+      <soap:operation soapAction="http://tempuri.org/Opcion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Asiatico">
+      <soap:operation soapAction="http://tempuri.org/Solver_CallPut_Asiatico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateStripTable">
+      <soap:operation soapAction="http://tempuri.org/GenerateStripTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvAsiaticasSoap12" type="tns:SrvAsiaticasSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="generateFixingTable">
+      <soap12:operation soapAction="http://tempuri.org/generateFixingTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReLoadFixingTable">
+      <soap12:operation soapAction="http://tempuri.org/ReLoadFixingTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Opcion">
+      <soap12:operation soapAction="http://tempuri.org/Opcion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Asiatico">
+      <soap12:operation soapAction="http://tempuri.org/Solver_CallPut_Asiatico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateStripTable">
+      <soap12:operation soapAction="http://tempuri.org/GenerateStripTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvAsiaticasHttpGet" type="tns:SrvAsiaticasHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="generateFixingTable">
+      <http:operation location="/generateFixingTable" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReLoadFixingTable">
+      <http:operation location="/ReLoadFixingTable" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Opcion">
+      <http:operation location="/Opcion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Asiatico">
+      <http:operation location="/Solver_CallPut_Asiatico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateStripTable">
+      <http:operation location="/GenerateStripTable" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvAsiaticasHttpPost" type="tns:SrvAsiaticasHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="generateFixingTable">
+      <http:operation location="/generateFixingTable" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReLoadFixingTable">
+      <http:operation location="/ReLoadFixingTable" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Opcion">
+      <http:operation location="/Opcion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPut_Asiatico">
+      <http:operation location="/Solver_CallPut_Asiatico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateStripTable">
+      <http:operation location="/GenerateStripTable" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SrvAsiaticas">
+    <wsdl:port name="SrvAsiaticasSoap" binding="tns:SrvAsiaticasSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/Asiatica/SrvAsiaticas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvAsiaticasSoap12" binding="tns:SrvAsiaticasSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/Asiatica/SrvAsiaticas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvAsiaticasHttpGet" binding="tns:SrvAsiaticasHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Asiatica/SrvAsiaticas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvAsiaticasHttpPost" binding="tns:SrvAsiaticasHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Asiatica/SrvAsiaticas.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="Email_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="EmailAddr" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

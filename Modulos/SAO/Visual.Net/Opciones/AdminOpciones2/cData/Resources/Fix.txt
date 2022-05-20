@@ -1,0 +1,1 @@
+Insert into PRE_FIJACION values (@contrato, @usuario, @estructura, @numfix, @valorfix)

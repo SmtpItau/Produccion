@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd17" />
+  <complexType name="CreditReviewTimeFrame_Type">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="Duration" type="tns:Duration_Type" />
+      <element minOccurs="0" maxOccurs="1" name="StartDt" type="dateTime" />
+    </sequence>
+  </complexType>
+</schema>

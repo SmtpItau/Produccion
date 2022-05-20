@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebServiceFMD.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UseFileLog" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AppName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">wsReportes_CM</Value>
+    </Setting>
+    <Setting Name="UploadFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Upload</Value>
+    </Setting>
+    <Setting Name="DownloadFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Download</Value>
+    </Setting>
+    <Setting Name="TemplateFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Templates</Value>
+    </Setting>
+    <Setting Name="AllowPaging" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DefaultCatalog" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Reportes</Value>
+    </Setting>
+    <Setting Name="UseFriendlyLog" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LogFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{0}_{1}_Process.log.txt</Value>
+    </Setting>
+    <Setting Name="DeleteFiles" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DBConnections" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">
+          [
+          {
+          "DBCatalog":"Reportes"
+          ,"DBMaxConnection":6
+          ,"DBMinConnection":2
+          ,"DBPooling":true
+          ,"DBServerName":"CLSTGBDD995V95"
+          ,"DBUserName":"app_reportes"
+        ,"DBUserPass":"0rbt/Ehi9yeuWpdIcfEZtw=="
+        ,"DB_IP_Address":null
+        ,"IntegratedSecurity":false
+        ,"TrustedConnection":false
+        ,"Use_IP_Address":false
+        }
+        ,
+        {
+        "DBCatalog": "Bacfwdsuda"
+        ,"DBMaxConnection":6
+        ,"DBMinConnection":2
+        ,"DBPooling": true
+        ,"DBServerName":"CORPSQL05"
+        ,"DBUserName": "bacuser"
+        ,"DBUserPass":"TBpzrQQSRg1W/wFJeOPowQ=="
+          ,"DB_IP_Address":null
+          ,"IntegratedSecurity":false
+          ,"TrustedConnection":false
+          ,"Use_IP_Address":false
+          }
+          ]
+        </Value>
+    </Setting>
+    <Setting Name="LogFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\SITIOS\SFMC\FMD\LOG</Value>
+    </Setting>
+    <Setting Name="InterfaceRootFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Interfaces\SFMC\FMD</Value>
+    </Setting>
+    <Setting Name="LogFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Sitios\SFMC\FMD\LOG</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

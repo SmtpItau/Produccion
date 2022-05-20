@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://fmdsfmc.corpbanca.cl/fmd" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://fmdsfmc.corpbanca.cl/fmd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://fmdsfmc.corpbanca.cl/fmd">
+      <s:element name="GenerateAndSendReports">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="process" type="tns:ProcessType" />
+            <s:element minOccurs="0" maxOccurs="1" name="reportType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modulo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="withMergeFiles" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ProcessType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Input" />
+          <s:enumeration value="Output" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GenerateAndSendReportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateAndSendReportsResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Automated_RCM_SendReports">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="process" type="tns:ProcessType" />
+            <s:element minOccurs="0" maxOccurs="1" name="reportType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Automated_RCM_SendReportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Automated_RCM_SendReportsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GenerateAndSendReportsSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateAndSendReports" />
+  </wsdl:message>
+  <wsdl:message name="GenerateAndSendReportsSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateAndSendReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Automated_RCM_SendReportsSoapIn">
+    <wsdl:part name="parameters" element="tns:Automated_RCM_SendReports" />
+  </wsdl:message>
+  <wsdl:message name="Automated_RCM_SendReportsSoapOut">
+    <wsdl:part name="parameters" element="tns:Automated_RCM_SendReportsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsReportServicesSoap">
+    <wsdl:operation name="GenerateAndSendReports">
+      <wsdl:input message="tns:GenerateAndSendReportsSoapIn" />
+      <wsdl:output message="tns:GenerateAndSendReportsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Automated_RCM_SendReports">
+      <wsdl:input message="tns:Automated_RCM_SendReportsSoapIn" />
+      <wsdl:output message="tns:Automated_RCM_SendReportsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsReportServicesSoap" type="tns:wsReportServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateAndSendReports">
+      <soap:operation soapAction="http://fmdsfmc.corpbanca.cl/fmd/GenerateAndSendReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Automated_RCM_SendReports">
+      <soap:operation soapAction="http://fmdsfmc.corpbanca.cl/fmd/Automated_RCM_SendReports" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsReportServicesSoap12" type="tns:wsReportServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateAndSendReports">
+      <soap12:operation soapAction="http://fmdsfmc.corpbanca.cl/fmd/GenerateAndSendReports" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Automated_RCM_SendReports">
+      <soap12:operation soapAction="http://fmdsfmc.corpbanca.cl/fmd/Automated_RCM_SendReports" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsReportServices">
+    <wsdl:port name="wsReportServicesSoap" binding="tns:wsReportServicesSoap">
+      <soap:address location="http://localhost:58254/wsReportServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsReportServicesSoap12" binding="tns:wsReportServicesSoap12">
+      <soap12:address location="http://localhost:58254/wsReportServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

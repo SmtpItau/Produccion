@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd64" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd65" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd66" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd67" />
+  <xsd:complexType name="AcctRec_Type">
+    <xsd:all>
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctId" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctInfo" type="tns:AcctInfo_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TerminalIdent" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctStatus" type="tns:AcctStatus_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctEnvr" type="tns:AcctEnvr_Type" />
+    </xsd:all>
+  </xsd:complexType>
+</xsd:schema>

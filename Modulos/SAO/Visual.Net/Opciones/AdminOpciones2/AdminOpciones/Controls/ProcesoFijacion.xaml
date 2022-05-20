@@ -1,0 +1,264 @@
+﻿<UserControl x:Class="AdminOpciones.Controls.ProcesoFijacion"
+             xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"         
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"    
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:liquidPopup="clr-namespace:Liquid;assembly=Liquid.Popup"
+             mc:Ignorable="d"    
+             Height="424"
+             Width="927"
+             xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls">
+
+        <Grid x:Name="LayoutRoot"
+              Background="White"
+              Height="424"
+              Width="927">
+            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="923"/>
+            <ColumnDefinition Width="2" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="320"/>
+            <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="4"
+                BorderThickness="2,2,2,2"
+                CornerRadius="0"
+                BorderBrush="#FF0A82C5"/>
+        
+        <Grid Background="#FF0A82C5"
+              VerticalAlignment="Top"
+              Grid.Row="1"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="2"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Foreground="#FFFFFFFF"
+                       Text="Fecha Fijación Desde"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Height="20"
+                       Width="132"
+                       HorizontalAlignment="Left"/>
+            <basics:DatePicker x:Name="Dt_FechaDesde"
+                               HorizontalAlignment="Left"
+                               Width="111"
+                               SelectedDateFormat="Short"
+                               IsEnabled="True"
+                               Grid.Row="1"
+                               Grid.Column="2"
+                               Grid.ColumnSpan="2"
+                               VerticalAlignment="Top"
+                               Height="20"
+                               d:LayoutOverrides="GridBox"/>
+
+            <TextBlock Foreground="#FFFFFFFF"
+                       TextWrapping="Wrap"
+                       Width="132"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       Text="Fecha Fijación Hasta"/>
+            <basics:DatePicker x:Name="Dt_FechaDesde_Copy"
+                               HorizontalAlignment="Left"
+                               Width="111"
+                               Height="20"
+                               Grid.Row="2"
+                               Grid.Column="2"
+                               Grid.ColumnSpan="2"
+                               SelectedDateFormat="Short"
+                               IsEnabled="True"
+                               d:LayoutOverrides="GridBox"/>
+
+            <TextBlock Foreground="#FFFFFFFF"
+                       TextWrapping="Wrap"
+                       Width="132"
+                       Height="20"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       Text="Contrato N°"/>
+            <TextBox x:Name="txtContrato"
+                     Text="0"
+                     Width="75"
+                     Height="20"
+                     Grid.Row="3"
+                     Grid.Column="2"
+                     Grid.ColumnSpan="2"
+                     TextWrapping="Wrap"
+                     HorizontalAlignment="Left"
+                     MaxLength="8"/>
+            <Button x:Name="btn_preparar"
+                Height="24"
+                VerticalAlignment="Top"
+                Content="Cargar Datos"
+                Click="Buscar_Click"
+                Grid.Row="3"
+                Grid.Column="5"
+                Width="150"
+                HorizontalAlignment="Left"/>
+            <Button x:Name="btn_preparar_Copy"
+                Height="24"
+                Grid.Row="3"
+                Grid.Column="6"
+                Content="Grabar Fijación y Pagos"
+                Click="Procesar_Fijacion"
+                HorizontalAlignment="Left"
+                Width="150"/>
+
+            <TextBlock Foreground="#FFFFFFFF"
+                       TextWrapping="Wrap"
+                       Width="132"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       Text="Filtro"/>
+            <ComboBox x:Name="comboboxFiltro"
+                      Width="100"
+                      Height="20"
+                      Grid.Row="4"
+                      Grid.Column="2">
+                <ComboBoxItem Content="Todas" IsSelected="True" />
+                <ComboBoxItem Content="Fijables" />
+                <ComboBoxItem Content="No-Fijables" />
+            </ComboBox>
+            <Image x:Name="FiltroFijacion"
+                   Width="26"
+                   Height="21.125"
+                   Source="../Images/player_play.png"
+                   ToolTipService.ToolTip="Filtrar Operaciones"
+                   MouseLeftButtonUp="FiltroFijacion_MouseLeftButtonUp"
+                   Grid.Row="4"
+                   Grid.Column="3" />
+
+        </Grid>
+        
+        <data:DataGrid x:Name="dgPersona"
+    		           AutoGenerateColumns="False"
+    		           CanUserResizeColumns="True"    
+                       PreparingCellForEdit="dgPersona_PreparingCellForEdit"
+                       Background="White"
+                       RowBackground="White"
+                       AlternatingRowBackground="White"
+                       Grid.Row="2"
+                       Grid.Column="1">
+            <data:DataGrid.Columns>
+                <data:DataGridTextColumn Header="Número Contrato"
+                                         Binding="{Binding Mode=TwoWay, Path=NumContrato}"
+                                         IsReadOnly="True" />
+                <data:DataGridTemplateColumn Header="Fecha Fijación">
+                    <data:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock FontSize="10" 
+                                       FontFamily="Arial" 
+                                       Text="{Binding Path=sFechaFijacion}" 
+                                       Margin="4"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center" />
+                        </DataTemplate>
+                    </data:DataGridTemplateColumn.CellTemplate>
+                    <data:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <basics:DatePicker SelectedDate="{Binding Mode=TwoWay, Path=FechaFijacion}" />
+                        </DataTemplate>
+                    </data:DataGridTemplateColumn.CellEditingTemplate>
+                </data:DataGridTemplateColumn>
+                <data:DataGridTextColumn Header="Estructura"
+                                         Binding="{Binding Mode=TwoWay, Path=OpcEstDsc}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Rut"
+                                         Binding="{Binding Mode=TwoWay, Path=CliRut}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Dv"
+                                         Binding="{Binding Mode=TwoWay, Path=CliDv}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Cod"
+                                         Binding="{Binding Mode=TwoWay, Path=CliCod}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Nombre Cliente"
+                                         Binding="{Binding Mode=TwoWay, Path=CliNom}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Num.Comp."
+                                         Binding="{Binding Mode=TwoWay, Path=NumComponente}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Pay Off"
+                                         Binding="{Binding Mode=TwoWay, Path=PayOffTipDsc}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Call/Put"
+                                         Binding="{Binding Mode=TwoWay, Path=CallPut}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Compra Venta Comp."
+                                         Binding="{Binding Mode=TwoWay, Path=CompraVentaOpcDsc}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Fecha Pago Ejercicio"
+                                         Binding="{Binding Mode=TwoWay, Path=FechaPagoEjer}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Mda.Transada"
+                                         Binding="{Binding Mode=TwoWay, Path=Mon1Dsc}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Modalidad"
+                                         Binding="{Binding Mode=TwoWay, Path=ModalidadDsc}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Mda.Comp."
+                                         Binding="{Binding Mode=TwoWay, Path=MdaCompensacionDsc}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Strike"
+                                         Binding="{Binding Mode=TwoWay, Path=Strike}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Peso Fijación"
+                                         Binding="{Binding Mode=TwoWay, Path=PesoFijacion}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Benchmark"
+                                         Binding="{Binding Mode=TwoWay, Path=FixBenchCompDsc}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Formato Benchmark"
+                                         Binding="{Binding Mode=TwoWay, Path=FixParBench}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Hora"
+                                         Binding="{Binding Mode=TwoWay, Path=FixBenchCompHora}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Valor Actual"
+                                         Binding="{Binding Mode=TwoWay, Path=FixValorFijacion}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Valor a Fijar"
+                                         Binding="{Binding Mode=TwoWay, Path=FixBenchMdaCodValorDefValor}"
+                                         IsReadOnly="False"/>
+                <data:DataGridTextColumn Header="Refijar"
+                                         Binding="{Binding Mode=TwoWay, Path=Refijable}"
+                                         IsReadOnly="True" />
+                <data:DataGridTextColumn Header="Número de Fijación"
+                                         Binding="{Binding Mode=TwoWay, Path=NumeroFijacion}"
+                                         IsReadOnly="True" />
+            </data:DataGrid.Columns>
+        </data:DataGrid>
+        
+    </Grid>
+</UserControl>

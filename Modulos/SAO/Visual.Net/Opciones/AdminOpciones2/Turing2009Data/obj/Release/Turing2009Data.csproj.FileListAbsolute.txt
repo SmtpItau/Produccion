@@ -1,0 +1,33 @@
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Data.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Connect.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Definitions.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Connect.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Definitions.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Release\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Release\Turing2009Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Release\Turing2009Data.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Data.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Connect.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Definitions.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Connect.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Definitions.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Release\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Release\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Release\Turing2009Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Release\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Connect.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Definitions.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Connect.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\Turing2009Definitions.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Release\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\obj\Release\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\obj\Release\Turing2009Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\obj\Release\Turing2009Data.pdb

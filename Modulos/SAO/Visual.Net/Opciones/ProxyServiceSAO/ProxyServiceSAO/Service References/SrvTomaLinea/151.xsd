@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:this="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd42" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd43" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd44" />
+  <xsd:complexType name="OrgData_Type">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="this:PartyData_Type">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="OrgName" type="this:OrgName_Type" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="OrgCategory" type="this:OrgCategory_Type" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="OrgCategoryInd" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="BussinessInd" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

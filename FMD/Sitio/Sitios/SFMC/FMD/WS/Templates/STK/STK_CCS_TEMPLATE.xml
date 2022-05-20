@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TemplateID="1" TemplateDirection="InputOutput" UseStoreProc="true" AdditionalInfo="true">
+  <DBCatalog>Reportes</DBCatalog>
+  <Name>Operaciones CCS</Name>
+  <DataBindingName>CCS</DataBindingName>
+  <Description>Contiene las operaciones Cross Currency Swap registradas el día de reporte, esto es, contratos nuevos, modificados, actualizados (1) y terminados en el día.</Description>
+  <TemplateFileName>C:\BaseDirectory\CCS_TEMPLATE.xml</TemplateFileName>
+  <ListStoreProcsInfo>
+    <StoreProcsInfo>
+      <Direction>Output</Direction>
+      <ConnectionTimeout>0</ConnectionTimeout>
+      <SheetName>CCS</SheetName>
+      <StoreProcName>SP_REPORTES_STOCK</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_REPORTES_STOCK</StoreProcName>
+          <ParameterName>tipo_reporte</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <ParameterValue xsi:type="xsd:string">CCS</ParameterValue>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_REPORTES_STOCK</StoreProcName>
+          <ParameterName>fecha</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Date</DBType>
+          <Nullable>true</Nullable>
+          <ParameterValue xsi:type="xsd:string"></ParameterValue>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+  </ListStoreProcsInfo>
+  <ListQueryInfo />
+  <ListXmlInfo />
+  <IOFileName>Template_CCS.xlsx</IOFileName>
+  <IOFileDirection>InputOutput</IOFileDirection>
+  <IOFileNamePattern>
+    <Prefix />
+    <Pattern>yyyyMMdd</Pattern>
+    <Suffix>_IBBA_CL_CCS</Suffix>
+    <Extension>.xlsx</Extension>
+    <useDatePattern>true</useDatePattern>
+    <useNumericPattern>false</useNumericPattern>
+  </IOFileNamePattern>
+  <IOFileBaseDirectory>\STOCK</IOFileBaseDirectory>
+  <IOFileCopyDirectories>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\HIST</FolderName>
+      <MainFolder>false</MainFolder>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\DAILY</FolderName>
+      <MainFolder>true</MainFolder>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Backup</FolderDirection>
+      <FolderName>\IN\HIST</FolderName>
+      <MainFolder>false</MainFolder>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Input</FolderDirection>
+      <FolderName>\IN\DAILY</FolderName>
+      <MainFolder>true</MainFolder>
+    </IOFileCopyFolders>
+  </IOFileCopyDirectories>
+  <useAppFolders>false</useAppFolders>
+  <ListExcelInfo>
+    <ExcelInfo ValueSource="Table" AllowPaging="true" PageSize="300">
+      <SheetDirection>InputOutput</SheetDirection>
+      <SheetName>CCS</SheetName>
+      <RowStart>13</RowStart>
+      <ColumnStart>1</ColumnStart>
+      <SaveAsPrompt>false</SaveAsPrompt>
+      <AddressCollection>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>1</ColumnPosition>
+          <ColumnName>A</ColumnName>
+          <ColumnTitle>Type</ColumnTitle>
+          <ValueMember>Type</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>2</ColumnPosition>
+          <ColumnName>B</ColumnName>
+          <ColumnTitle>Contract Update Reason</ColumnTitle>
+          <ValueMember>Contract Update Reason</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="false" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>3</ColumnPosition>
+          <ColumnName>C</ColumnName>
+          <ColumnTitle>Part Account</ColumnTitle>
+          <ValueMember>Part Account</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>4</ColumnPosition>
+          <ColumnName>D</ColumnName>
+          <ColumnTitle>Part Position</ColumnTitle>
+          <ValueMember>Part Position</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>5</ColumnPosition>
+          <ColumnName>E</ColumnName>
+          <ColumnTitle>Part Code</ColumnTitle>
+          <ValueMember>Part Code</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>6</ColumnPosition>
+          <ColumnName>F</ColumnName>
+          <ColumnTitle>Part CPF/CNPJ</ColumnTitle>
+          <ValueMember>Part CPF/CNPJ</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>7</ColumnPosition>
+          <ColumnName>G</ColumnName>
+          <ColumnTitle>Part</ColumnTitle>
+          <ValueMember>Part</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="false" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>8</ColumnPosition>
+          <ColumnName>H</ColumnName>
+          <ColumnTitle>Counterpart Indentified</ColumnTitle>
+          <ValueMember>Counterpart Indentified</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>9</ColumnPosition>
+          <ColumnName>I</ColumnName>
+          <ColumnTitle>Counterpart Position</ColumnTitle>
+          <ValueMember>Counterpart Position</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>10</ColumnPosition>
+          <ColumnName>J</ColumnName>
+          <ColumnTitle>Counterpart Code</ColumnTitle>
+          <ValueMember>Counterpart Code</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>11</ColumnPosition>
+          <ColumnName>K</ColumnName>
+          <ColumnTitle>Counterpart CPF/CNPJ</ColumnTitle>
+          <ValueMember>Counterpart CPF/CNPJ</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>12</ColumnPosition>
+          <ColumnName>L</ColumnName>
+          <ColumnTitle>Counterpart</ColumnTitle>
+          <ValueMember>Counterpart</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>13</ColumnPosition>
+          <ColumnName>M</ColumnName>
+          <ColumnTitle>Derivative Type</ColumnTitle>
+          <ValueMember>Derivative Type</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>14</ColumnPosition>
+          <ColumnName>N</ColumnName>
+          <ColumnTitle>Trading Place</ColumnTitle>
+          <ValueMember>Trading Place</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>15</ColumnPosition>
+          <ColumnName>O</ColumnName>
+          <ColumnTitle>Contract Number</ColumnTitle>
+          <ValueMember>Contract Number</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>16</ColumnPosition>
+          <ColumnName>P</ColumnName>
+          <ColumnTitle>Notional Amount</ColumnTitle>
+          <ValueMember>Notional Amount</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>17</ColumnPosition>
+          <ColumnName>Q</ColumnName>
+          <ColumnTitle>Reference Currency</ColumnTitle>
+          <ValueMember>Reference Currency</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>18</ColumnPosition>
+          <ColumnName>R</ColumnName>
+          <ColumnTitle>Settlement Reference Currency</ColumnTitle>
+          <ValueMember>Settlement Reference Currency</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>19</ColumnPosition>
+          <ColumnName>S</ColumnName>
+          <ColumnTitle>Underlying asset</ColumnTitle>
+          <ValueMember>Underlying asset</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>20</ColumnPosition>
+          <ColumnName>T</ColumnName>
+          <ColumnTitle>Trade Date</ColumnTitle>
+          <ValueMember>Trade Date</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>21</ColumnPosition>
+          <ColumnName>U</ColumnName>
+          <ColumnTitle>Effective Date</ColumnTitle>
+          <ValueMember>Effective Date</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>22</ColumnPosition>
+          <ColumnName>V</ColumnName>
+          <ColumnTitle>Settlement Date</ColumnTitle>
+          <ValueMember>Settlement Date</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>23</ColumnPosition>
+          <ColumnName>W</ColumnName>
+          <ColumnTitle>Asset Index</ColumnTitle>
+          <ValueMember>Asset Index</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>24</ColumnPosition>
+          <ColumnName>X</ColumnName>
+          <ColumnTitle>Liability Index</ColumnTitle>
+          <ValueMember>Liability Index</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>25</ColumnPosition>
+          <ColumnName>Y</ColumnName>
+          <ColumnTitle>Asset Rate Percent</ColumnTitle>
+          <ValueMember>Asset Rate Percent</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>26</ColumnPosition>
+          <ColumnName>Z</ColumnName>
+          <ColumnTitle>Liability Rate Percent</ColumnTitle>
+          <ValueMember>Liability Rate Percent</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>27</ColumnPosition>
+          <ColumnName>AA</ColumnName>
+          <ColumnTitle>Asset Notional Amount</ColumnTitle>
+          <ValueMember>Asset Notional Amount</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>28</ColumnPosition>
+          <ColumnName>AB</ColumnName>
+          <ColumnTitle>Asset Referency Currency</ColumnTitle>
+          <ValueMember>Asset Referency Currency</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>29</ColumnPosition>
+          <ColumnName>AC</ColumnName>
+          <ColumnTitle>Liability Notional Amount</ColumnTitle>
+          <ValueMember>Liability Notional Amount</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>30</ColumnPosition>
+          <ColumnName>AD</ColumnName>
+          <ColumnTitle>Liability Referency Currency</ColumnTitle>
+          <ValueMember>Liability Referency Currency</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>31</ColumnPosition>
+          <ColumnName>AE</ColumnName>
+          <ColumnTitle>Asset Spread</ColumnTitle>
+          <ValueMember>Asset Spread</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>32</ColumnPosition>
+          <ColumnName>AF</ColumnName>
+          <ColumnTitle>Liability Spread</ColumnTitle>
+          <ValueMember>Liability Spread</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>33</ColumnPosition>
+          <ColumnName>AG</ColumnName>
+          <ColumnTitle>Cash-Flow</ColumnTitle>
+          <ValueMember>Cash-Flow</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>34</ColumnPosition>
+          <ColumnName>AH</ColumnName>
+          <ColumnTitle>Cash Flow Number</ColumnTitle>
+          <ValueMember>Cash Flow Number</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>35</ColumnPosition>
+          <ColumnName>AI</ColumnName>
+          <ColumnTitle>Country Origin</ColumnTitle>
+          <ValueMember>Country Origin</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>36</ColumnPosition>
+          <ColumnName>AJ</ColumnName>
+          <ColumnTitle>Registration</ColumnTitle>
+          <ValueMember>Registration</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>37</ColumnPosition>
+          <ColumnName>AK</ColumnName>
+          <ColumnTitle>Derivative Master Agreement</ColumnTitle>
+          <ValueMember>Derivative Master Agreement</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>38</ColumnPosition>
+          <ColumnName>AL</ColumnName>
+          <ColumnTitle>Barrier</ColumnTitle>
+          <ValueMember>Barrier</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>39</ColumnPosition>
+          <ColumnName>AM</ColumnName>
+          <ColumnTitle>Settlement Rate Type</ColumnTitle>
+          <ValueMember>Settlement Rate Type</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>40</ColumnPosition>
+          <ColumnName>AN</ColumnName>
+          <ColumnTitle>Addicional information</ColumnTitle>
+          <ValueMember>Addicional information</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>41</ColumnPosition>
+          <ColumnName>AO</ColumnName>
+          <ColumnTitle>DCE Contract</ColumnTitle>
+          <ValueMember>DCE Contract</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>42</ColumnPosition>
+          <ColumnName>AP</ColumnName>
+          <ColumnTitle>US Person</ColumnTitle>
+          <ValueMember>US Person</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>43</ColumnPosition>
+          <ColumnName>AQ</ColumnName>
+          <ColumnTitle>OTC</ColumnTitle>
+          <ValueMember>OTC</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>44</ColumnPosition>
+          <ColumnName>AR</ColumnName>
+          <ColumnTitle>Dealing Activity</ColumnTitle>
+          <ValueMember>Dealing Activity</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>45</ColumnPosition>
+          <ColumnName>AS</ColumnName>
+          <ColumnTitle>IntraGroup</ColumnTitle>
+          <ValueMember>IntraGroup</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>46</ColumnPosition>
+          <ColumnName>AT</ColumnName>
+          <ColumnTitle>Unwind</ColumnTitle>
+          <ValueMember>Unwind</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="false" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>47</ColumnPosition>
+          <ColumnName>AU</ColumnName>
+          <ColumnTitle>Trade Done In Brazil</ColumnTitle>
+          <ValueMember>Trade Done In Brazil</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="InputOutput" MaxWritableRows="300">
+          <RowPosition>13</RowPosition>
+          <ColumnPosition>48</ColumnPosition>
+          <ColumnName>AV</ColumnName>
+          <ColumnTitle>USD Notional</ColumnTitle>
+          <ValueMember>USD Notional</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+      </AddressCollection>
+    </ExcelInfo>
+ </ListExcelInfo>
+</Template>

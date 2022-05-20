@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:Q1="http://itau.cl/xmlns/xsd/1" xmlns:tns="http://itau.cl/xmlns/common/xsd/1" xmlns:Q2="http://www.example.org/SvcIdent_Type-1.0.1" targetNamespace="http://itau.cl/xmlns/common/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd106" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd107" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd18" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd108" />
+  <xsd:complexType name="MsgRqHdr_Type">
+    <xsd:all>
+      <xsd:element minOccurs="0" maxOccurs="1" name="AsyncRqUID" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ContextRqHdr" type="tns:ContextRqHdr_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Bpm" type="Q1:Bpm_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IndAlm" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CredentialsRqHdr" type="tns:CredentialsRqHdr_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SvcIdent" type="Q1:SvcIdent_Type" />
+    </xsd:all>
+  </xsd:complexType>
+</xsd:schema>

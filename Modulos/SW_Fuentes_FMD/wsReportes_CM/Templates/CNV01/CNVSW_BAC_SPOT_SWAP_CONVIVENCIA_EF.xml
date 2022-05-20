@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TemplateID="1" TemplateDirection="Output" UseStoreProc="true" AdditionalInfo="false">
+  <DBCatalog>Reportes</DBCatalog>
+	<Name>CNVSW_BAC_SPOT_SWAP_CONVIVENCIA_EF</Name>
+	<DataBindingName>CNV01</DataBindingName>
+	<Description>Contiene la interfaz Spot_Swap_Convivencia_EF_BAC.</Description>
+	<TemplateFileName>C:\BaseDirectory\Templates\CNV01\CNVSW_BAC_SPOT_SWAP_CONVIVENCIA_EF.xml</TemplateFileName>
+	<ListStoreProcsInfo>
+		<StoreProcsInfo>
+			<DBCatalog>Reportes</DBCatalog>
+			<Direction>Output</Direction>
+			<ConnectionTimeout>120</ConnectionTimeout>
+			<SheetName />
+			<StoreProcName>SP_CNVSW_BAC_SPOT_SWAP_CONVIVENCIA_EF</StoreProcName>
+		</StoreProcsInfo>
+	</ListStoreProcsInfo>
+	<ListPlainTextInfo>
+		<PlainTextInfo>
+			<PlainTextDirecction>Output</PlainTextDirecction>
+			<AddressCollection>
+				<PlainTextFieldInfo IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+					<RowPosition>0</RowPosition>
+					<ColumnPosition>0</ColumnPosition>
+					<ColumnTitle>REG_SALIDA</ColumnTitle>
+					<ValueMember>REG_SALIDA</ValueMember>
+					<SheetName>Table1</SheetName>
+					<DataAlign>Right</DataAlign>
+				</PlainTextFieldInfo>
+			</AddressCollection>
+			<MaxRowSize>8000</MaxRowSize>
+			<DataOnly>true</DataOnly>
+			<ValueSource>Table1</ValueSource>
+			<ValidateMaxSize>false</ValidateMaxSize>
+		</PlainTextInfo>
+	</ListPlainTextInfo>
+	<IOFileDirection>Output</IOFileDirection>
+	<IOFileNamePattern>
+		<Prefix>Spot_Swap_Convivencia_EF_BAC_</Prefix>
+		<Pattern>yyyyMMdd_Hmmss</Pattern>
+		<Extension>.csv</Extension>
+		<useDatePattern>true</useDatePattern>
+		<useNumericPattern>false</useNumericPattern>
+	</IOFileNamePattern>
+	<IOFileBaseDirectory>\CONV01</IOFileBaseDirectory>
+	<IOFileCopyDirectories>
+		<IOFileCopyFolders>
+			<FolderDirection>Output</FolderDirection>
+			<FolderName>\OUT\DAILY</FolderName>
+			<MainFolder>false</MainFolder>
+			<CompressedFiles>false</CompressedFiles>
+		</IOFileCopyFolders>
+		<IOFileCopyFolders>
+			<FolderDirection>Output</FolderDirection>
+			<FolderName>\OUT\HIST</FolderName>
+			<MainFolder>true</MainFolder>
+			<CompressedFiles>true</CompressedFiles>
+		</IOFileCopyFolders>
+	</IOFileCopyDirectories>
+	<useAppFolders>false</useAppFolders>
+</Template>

@@ -1,0 +1,27 @@
+DECLARE @usuario VARCHAR(13) 
+DECLARE @tipo_usuario VARCHAR(13) 
+
+Select @usuario = '{0}'
+Select @tipo_usuario = 'NO ESTA'
+Select * into #usuario from dbo.usuario nolock 
+
+Select @tipo_usuario = tipo_usuario 
+From #usuario nolock 
+Where usuario = @usuario 
+
+Select * into #privilegios 
+From dbo.GEN_PRIVILEGIOS nolock 
+Where entidad = 'OPT' 
+
+Select @usuario,  entidad ,opcion ,habilitado 
+From #privilegios 
+Where Habilitado = 'S' and usuario = @tipo_usuario and entidad = 'OPT'   
+And not opcion in ( Select Opcion  from #privilegios 
+where Habilitado = 'N' and usuario = @usuario and entidad = 'OPT') 
+Union 
+Select usuario, entidad ,opcion ,habilitado 
+From #privilegios 
+Where Habilitado = 'S' and usuario = @usuario and entidad = 'OPT' and tipo_privilegio = 'U'
+
+DROP TABLE #usuario
+DROP TABLE #privilegios

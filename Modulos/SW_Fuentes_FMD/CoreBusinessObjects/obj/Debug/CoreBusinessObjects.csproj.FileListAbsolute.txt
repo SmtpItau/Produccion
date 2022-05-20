@@ -1,0 +1,9 @@
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Debug\CoreBusinessObjects.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Debug\CoreBusinessObjects.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Debug\CoreLib.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Debug\EPPlus.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Debug\CoreLib.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Debug\CoreLib.xml
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Debug\CoreBusinessObjects.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Debug\CoreBusinessObjects.pdb

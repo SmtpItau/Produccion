@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getCustomersData">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCustomersDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCustomersDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCustomersDataCondicionesGenerales">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCustomersDataCondicionesGeneralesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCustomersDataCondicionesGeneralesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getCustomersDataSoapIn">
+    <wsdl:part name="parameters" element="tns:getCustomersData" />
+  </wsdl:message>
+  <wsdl:message name="getCustomersDataSoapOut">
+    <wsdl:part name="parameters" element="tns:getCustomersDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCustomersDataCondicionesGeneralesSoapIn">
+    <wsdl:part name="parameters" element="tns:getCustomersDataCondicionesGenerales" />
+  </wsdl:message>
+  <wsdl:message name="getCustomersDataCondicionesGeneralesSoapOut">
+    <wsdl:part name="parameters" element="tns:getCustomersDataCondicionesGeneralesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCustomersDataHttpGetIn" />
+  <wsdl:message name="getCustomersDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getCustomersDataCondicionesGeneralesHttpGetIn" />
+  <wsdl:message name="getCustomersDataCondicionesGeneralesHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getCustomersDataHttpPostIn" />
+  <wsdl:message name="getCustomersDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getCustomersDataCondicionesGeneralesHttpPostIn" />
+  <wsdl:message name="getCustomersDataCondicionesGeneralesHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="SrvCustomersSoap">
+    <wsdl:operation name="getCustomersData">
+      <wsdl:input message="tns:getCustomersDataSoapIn" />
+      <wsdl:output message="tns:getCustomersDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomersDataCondicionesGenerales">
+      <wsdl:input message="tns:getCustomersDataCondicionesGeneralesSoapIn" />
+      <wsdl:output message="tns:getCustomersDataCondicionesGeneralesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvCustomersHttpGet">
+    <wsdl:operation name="getCustomersData">
+      <wsdl:input message="tns:getCustomersDataHttpGetIn" />
+      <wsdl:output message="tns:getCustomersDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomersDataCondicionesGenerales">
+      <wsdl:input message="tns:getCustomersDataCondicionesGeneralesHttpGetIn" />
+      <wsdl:output message="tns:getCustomersDataCondicionesGeneralesHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvCustomersHttpPost">
+    <wsdl:operation name="getCustomersData">
+      <wsdl:input message="tns:getCustomersDataHttpPostIn" />
+      <wsdl:output message="tns:getCustomersDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomersDataCondicionesGenerales">
+      <wsdl:input message="tns:getCustomersDataCondicionesGeneralesHttpPostIn" />
+      <wsdl:output message="tns:getCustomersDataCondicionesGeneralesHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SrvCustomersSoap" type="tns:SrvCustomersSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCustomersData">
+      <soap:operation soapAction="http://tempuri.org/getCustomersData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomersDataCondicionesGenerales">
+      <soap:operation soapAction="http://tempuri.org/getCustomersDataCondicionesGenerales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvCustomersSoap12" type="tns:SrvCustomersSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCustomersData">
+      <soap12:operation soapAction="http://tempuri.org/getCustomersData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomersDataCondicionesGenerales">
+      <soap12:operation soapAction="http://tempuri.org/getCustomersDataCondicionesGenerales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvCustomersHttpGet" type="tns:SrvCustomersHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="getCustomersData">
+      <http:operation location="/getCustomersData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomersDataCondicionesGenerales">
+      <http:operation location="/getCustomersDataCondicionesGenerales" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvCustomersHttpPost" type="tns:SrvCustomersHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getCustomersData">
+      <http:operation location="/getCustomersData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomersDataCondicionesGenerales">
+      <http:operation location="/getCustomersDataCondicionesGenerales" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SrvCustomers">
+    <wsdl:port name="SrvCustomersSoap" binding="tns:SrvCustomersSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/Customers/SrvCustomers.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvCustomersSoap12" binding="tns:SrvCustomersSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/Customers/SrvCustomers.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvCustomersHttpGet" binding="tns:SrvCustomersHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Customers/SrvCustomers.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvCustomersHttpPost" binding="tns:SrvCustomersHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Customers/SrvCustomers.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="Z:\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\Publicacion Proxy" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="ProxyLineaCredito.svc" publishTime="02/26/2018 16:06:44" />
+    <file relUrl="bin/ProxyServiceSAO.pdb" publishTime="03/30/2018 20:36:06" />
+    <file relUrl="bin/ProxyServiceSAO.dll" publishTime="03/30/2018 20:36:06" />
+    <file relUrl="Web.config" publishTime="03/30/2018 20:37:22" />
+    <file relUrl="crossdomain.xml" publishTime="02/26/2018 16:06:44" />
+    <file relUrl="clientaccesspolicy.xml" publishTime="02/26/2018 16:06:44" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,154 @@
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\Opciones17477_V2\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.csprojResolveAssemblyReference.cache
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.csprojResolveAssemblyReference.cache
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.csprojResolveAssemblyReference.cache
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.csprojResolveAssemblyReference.cache
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Data.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Connect.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\Turing2009Definitions.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\Debug\AdminOpcionesEncript.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\Debug\Turing2009Data.pdb

@@ -1,0 +1,143 @@
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.config
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.manifest
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.application
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.pdb
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\ResolveAssemblyReference.cache
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.Installer1.resources
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.TickersBCSR.resources
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.read.1.tlog
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.write.1.tlog
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe.manifest
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.application
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe
+V:\1 - Banco\15006\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.pdb
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.config
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.manifest
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.application
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.pdb
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\ResolveAssemblyReference.cache
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.BTPADODB.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Objeto_Centraliza.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Bonex.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Forward.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Opciones.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_RentaFija.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Spot.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Swap.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Parametros.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.VBA.dll
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.csproj.ResolveComReference.cache
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.Installer1.resources
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.TickersBCSR.resources
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.read.1.tlog
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.write.1.tlog
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe.manifest
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.application
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe
+\\prodapps315\Homologación\1 - Banco\18611\3.- Certificacion\V.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.pdb
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.config
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.BTPADODB.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Objeto_Centraliza.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Bonex.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Forward.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Opciones.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_RentaFija.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Spot.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Swap.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Parametros.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.VBA.dll
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.csproj.ResolveComReference.cache
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.pdb
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.manifest
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.application
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.pdb
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\ResolveAssemblyReference.cache
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.Installer1.resources
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.TickersBCSR.resources
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.read.1.tlog
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.write.1.tlog
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe.manifest
+Y:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.application
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.config
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.BTPADODB.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Objeto_Centraliza.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Bonex.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Forward.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Opciones.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Spot.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Swap.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Parametros.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.VBA.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.csproj.ResolveComReference.cache
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.pdb
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_RentaFija.dll
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.manifest
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.application
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.pdb
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\ResolveAssemblyReference.cache
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.Installer1.resources
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.TickersBCSR.resources
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.read.1.tlog
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.write.1.tlog
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe.manifest
+V:\1 - Banco\20626\3.- Certificacion\Visual.Net\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.application
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.config
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.manifest
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.application
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.pdb
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.BTPADODB.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Objeto_Centraliza.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_CentralizaNY.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.OBJ_Fin_Dia_Centralizado.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Bonex.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_BonexNY.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Forward.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_ForwardNY.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Opciones.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_OpcionesNY.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_RentaFija.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Spot.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Swap.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_SwapNY.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Parametros.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_ParametrosNY.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.VBA.dll
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.csproj.ResolveComReference.cache
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.Installer1.resources
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.TickersBCSR.resources
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe.manifest
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.application
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.exe
+C:\DEPLOY_LOCAL\21515\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.pdb
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.VBA.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.csproj.ResolveComReference.cache
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.Installer1.resources
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers_BCS_RST.TickersBCSR.resources
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Tickers BCS RST.csproj.GenerateResource.Cache
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\bin\Debug\Tickers BCS RST.exe.config
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Objeto_Centraliza.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_CentralizaNY.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Bonex.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Forward.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_ForwardNY.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Opciones.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_OpcionesNY.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_RentaFija.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Spot.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_Swap.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_SwapNY.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Parametros.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_ParametrosNY.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.BTPADODB.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.OBJ_Fin_Dia_Centralizado.dll
+D:\Bancos\ITAU\3_Victor\TickersBCSR\Fuentes\TickersBCSR\TickersRestart\Tickers BCS RST\obj\x86\Debug\Interop.Obj_Inicio_BonexNY.dll

@@ -1,0 +1,1159 @@
+<?xml version="1.0"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TemplateID="1" TemplateDirection="Output" UseStoreProc="true" AdditionalInfo="false">
+  <DBCatalog>Reportes</DBCatalog>
+  <Name>ODS</Name>
+  <DataBindingName>ODS</DataBindingName>
+  <Description>Contiene las operaciones diarias para interface ODS</Description>
+  <TemplateFileName>C:\BaseDirectory\ODS_PRODUCTOS.xml</TemplateFileName>
+  <ListStoreProcsInfo>
+    <StoreProcsInfo>
+      <DBCatalog>Reportes</DBCatalog>
+      <Direction>Output</Direction>
+      <ConnectionTimeout>120</ConnectionTimeout>
+      <SheetName />
+      <StoreProcName>SP_FUSION_REPORTE_ODS</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_FUSION_REPORTE_ODS</StoreProcName>
+          <ParameterName>RETURN_VALUE</ParameterName>
+          <Direction>ReturnValue</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Object</DBType>
+          <Nullable>true</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+  </ListStoreProcsInfo>
+  <ListQueryInfo />
+  <ListXmlInfo>
+    <XmlInfo ValueSource="Table1">
+      <AddressCollection>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_deal_num</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_deal_num</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_status_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_status_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_trade_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_trade_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_start_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_start_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_end_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_end_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_ET</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_ET</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_modalidad_pago</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_modalidad_pago</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_paymentconv_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_paymentconv_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_nemo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_nemo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_serie</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_serie</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_TIR_compra</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_TIR_compra</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_TIR_mercado</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_TIR_mercado</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_strike</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_strike</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_id_group</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_id_group</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_type</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_type</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_fix_flt</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_fix_flt</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_frec_p</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_frec_p</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_reset_p</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_reset_p</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_notional</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_notional</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_notional_ccy_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_notional_ccy_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_payment_ccy_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_payment_ccy_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_rate</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_rate</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_rate_spread</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_rate_spread</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_rate_type_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_rate_type_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_projection_index</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_projection_index</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_yield_basis_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_yield_basis_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_start_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_start_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_end_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_end_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_payment_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_payment_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_fixing_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_fixing_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_fixing_rate</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_fixing_rate</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_accounting_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_accounting_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_rate</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_rate</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_payment</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_payment</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_df</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_df</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_npv</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_npv</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflowtype_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflowtype_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_start_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_start_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_end_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_end_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_accounting_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_accounting_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_fixing_date</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_fixing_date</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_fixing_rate</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_fixing_rate</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_amount</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_amount</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_df</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_df</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_npv</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_npv</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>facility_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>facility_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_tc_costo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_tc_costo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_tc_cliente</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_tc_cliente</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_paridad_costo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_paridad_costo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_paridad_cliente</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_paridad_cliente</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_spread_tc</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_spread_tc</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_spread_paridad</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_spread_paridad</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_spot_cliente</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_spot_cliente</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_fwd_costo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_fwd_costo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_fwd_cliente</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_fwd_cliente</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_puntos_fwd</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_puntos_fwd</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_uf_spot</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_uf_spot</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_uf_tasa_costo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_uf_tasa_costo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_uf_tasa_margen</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_uf_tasa_margen</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_uf_tasa_cliente</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_uf_tasa_cliente</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_spot_margen</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_spot_margen</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_fwd_margen</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_fwd_margen</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_uf_tasa_sucia_costo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_uf_tasa_sucia_costo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_fx_uf_tasa_sucia_cliente</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_fx_uf_tasa_sucia_cliente</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>equivalente_credito_corporativo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>equivalente_credito_corporativo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>equivalente_credito_normativo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>equivalente_credito_normativo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>equivalente_credito_factor</ColumnName>
+          <ColumnTitle />
+          <ValueMember>equivalente_credito_factor</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>equivalente_credito_factor_inter</ColumnName>
+          <ColumnTitle />
+          <ValueMember>equivalente_credito_factor_inter</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>equivalente_credito_factor_normativo</ColumnName>
+          <ColumnTitle />
+          <ValueMember>equivalente_credito_factor_normativo</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>medio_transaccional_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>medio_transaccional_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>canal_transaccional_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>canal_transaccional_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>profit_value</ColumnName>
+          <ColumnTitle />
+          <ValueMember>profit_value</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>profit_ccy_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>profit_ccy_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>profit_mesa_clientes_clp</ColumnName>
+          <ColumnTitle />
+          <ValueMember>profit_mesa_clientes_clp</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>profit_mesa_trading_clp</ColumnName>
+          <ColumnTitle />
+          <ValueMember>profit_mesa_trading_clp</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>portfolio_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>portfolio_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>instrument_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>instrument_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>product_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>product_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>party_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>party_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>party_rut</ColumnName>
+          <ColumnTitle />
+          <ValueMember>party_rut</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>party_secuencia</ColumnName>
+          <ColumnTitle />
+          <ValueMember>party_secuencia</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_mtm</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_mtm</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_mtm_ccy_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_mtm_ccy_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_base_mtm</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_base_mtm</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_pnl</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_pnl</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_pnl_fx_unrealized</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_pnl_fx_unrealized</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_delta</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_delta</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_gamma</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_gamma</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_vega</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_vega</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_beta</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_beta</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_rho_local</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_rho_local</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_rho_foranea</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_rho_foranea</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_theta</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_theta</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_volga</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_volga</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>call_put_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>call_put_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_emisor_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_emisor_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_plazo_pacto</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_plazo_pacto</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_tasa_costo_pacto</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_tasa_costo_pacto</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_tasa_pacto</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_tasa_pacto</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_tir_compra_origen</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_tir_compra_origen</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_tir_compra_ppa</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_tir_compra_ppa</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_dev_tir_compra</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_dev_tir_compra</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_tipo_operacion_id</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_tipo_operacion_id</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_fecha_compra_ins</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_fecha_compra_ins</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_fecha_cupon</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_fecha_cupon</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_cuenta_gl</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_cuenta_gl</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>transaction_info_cuenta_sbif</ColumnName>
+          <ColumnTitle />
+          <ValueMember>transaction_info_cuenta_sbif</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>cashflow_amount_add</ColumnName>
+          <ColumnTitle />
+          <ValueMember>cashflow_amount_add</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>portfolio_super</ColumnName>
+          <ColumnTitle />
+          <ValueMember>portfolio_super</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>portfolio_scn</ColumnName>
+          <ColumnTitle />
+          <ValueMember>portfolio_scn</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>side_discount_index</ColumnName>
+          <ColumnTitle />
+          <ValueMember>side_discount_index</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>interest_rate_icp</ColumnName>
+          <ColumnTitle />
+          <ValueMember>interest_rate_icp</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>TRANSACTION_OPTION_DESC</ColumnName>
+          <ColumnTitle />
+          <ValueMember>TRANSACTION_OPTION_DESC</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>TRANSACTION_OPTION_CV</ColumnName>
+          <ColumnTitle />
+          <ValueMember>TRANSACTION_OPTION_CV</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_mtm_itau</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_mtm_itau</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnName>pricing_base_mtm_itau</ColumnName>
+          <ColumnTitle />
+          <ValueMember>pricing_base_mtm_itau</ValueMember>
+          <Format />
+          <SheetName />
+        </CellInfoAddress>
+          <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+            <RowPosition>0</RowPosition>
+            <ColumnPosition>0</ColumnPosition>
+            <ColumnName>transaction_info_party_original</ColumnName>
+            <ColumnTitle />
+            <ValueMember>transaction_info_party_original</ValueMember>
+            <Format />
+            <SheetName />
+        </CellInfoAddress>
+		  <CellInfoAddress IsReadOnly="false" RenderAsAttribute="true" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+			  <RowPosition>0</RowPosition>
+			  <ColumnPosition>0</ColumnPosition>
+			  <ColumnName>transaction_info_codigo_idd</ColumnName>
+			  <ColumnTitle />
+			  <ValueMember>transaction_info_codigo_idd</ValueMember>
+			  <Format />
+			  <SheetName />
+		  </CellInfoAddress>
+	  </AddressCollection>
+      <ColumnStart>0</ColumnStart>
+      <DBCatalog>Reportes</DBCatalog>
+      <RowStart>0</RowStart>
+      <SaveAsPrompt>false</SaveAsPrompt>
+      <XmlDirection>Output</XmlDirection>
+      <XmlNodeName>Operacion</XmlNodeName>
+      <XmlRootNode>Operaciones</XmlRootNode>
+    </XmlInfo>
+  </ListXmlInfo>
+  <IOFileDirection>Output</IOFileDirection>
+  <IOFileNamePattern>
+    <Prefix>Cartera_Vigente_TURING-BAC_</Prefix>
+    <Pattern>yyyyMMdd</Pattern>
+    <Suffix />
+    <Extension>.xml</Extension>
+    <useDatePattern>true</useDatePattern>
+    <useNumericPattern>false</useNumericPattern>
+  </IOFileNamePattern>
+  <IOFileBaseDirectory>\ODS</IOFileBaseDirectory>
+  <IOFileCopyDirectories>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\HIST</FolderName>
+      <MainFolder>false</MainFolder>
+      <CompressedFiles>true</CompressedFiles>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\DAILY</FolderName>
+      <MainFolder>true</MainFolder>
+      <CompressedFiles>false</CompressedFiles>
+    </IOFileCopyFolders>
+  </IOFileCopyDirectories>
+  <useAppFolders>false</useAppFolders>
+  <ListExcelInfo />
+</Template>

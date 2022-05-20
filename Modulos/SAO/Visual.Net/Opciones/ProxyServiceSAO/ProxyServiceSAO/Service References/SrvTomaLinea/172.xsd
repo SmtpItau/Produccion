@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd27" />
+  <xsd:complexType name="PostAddr_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="Addr1" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Addr2" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="City" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CountryCode" type="tns:CountryCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CountyDistrict" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PostalCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="StateProv" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AddrNumberDepartment" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FloorNum" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AddrType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AddrNum" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Addr3" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Addr4" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Addr5" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

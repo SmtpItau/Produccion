@@ -1,0 +1,372 @@
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Interop.DLLBacCalculoREC.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\Opciones17477_V2\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Interop.DLLBacCalculoREC.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+V:\19-TuringBeta\13053\3.- Certificacion\V.Net\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Interop.DLLBacCalculoREC.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\OPCIONES\13053\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Interop.DLLBacCalculoREC.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\OpcionesNew\PRD12567\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+Y:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\DEPLOY_LOCAL\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\Users\CGGP3603\Desktop\rtc\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\Users\mavila\Desktop\SAO\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\AdminOpcionesTool.csprojResolveAssemblyReference.cache
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\AdminOpcionesTool.csprojResolveAssemblyReference.cache
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\AdminOpcionesTool.csprojResolveAssemblyReference.cache
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\Milton - Tesoreria\Proyectos\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\AdminOpcionesTool.csprojResolveAssemblyReference.cache
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+C:\SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Tool.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\FFTWDLL.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\GSLDLL.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cData.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cFinancialTools.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Jacques.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\cConnectionDB.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\AdminOpcionesEncript.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Data.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Definitions.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Debug\Turing2009Connect.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\AdminOpcionesTool.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Debug\Turing2009Tool.pdb

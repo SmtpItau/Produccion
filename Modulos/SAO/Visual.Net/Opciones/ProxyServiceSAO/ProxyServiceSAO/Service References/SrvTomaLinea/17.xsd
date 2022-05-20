@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="IssuedIdent_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="IssuedIdentType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IssuedIdentValue" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IssuedIdentValueNum" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IssuedIdentValueDig" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

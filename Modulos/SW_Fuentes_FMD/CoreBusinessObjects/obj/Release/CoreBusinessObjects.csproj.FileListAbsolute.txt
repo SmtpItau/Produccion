@@ -1,0 +1,26 @@
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreBusinessObjects.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreBusinessObjects.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreLib.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\EPPlus.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreLib.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Release\ResolveAssemblyReference.cache
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Release\CoreBusinessObjects.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Release\CoreBusinessObjects.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreBusinessObjects.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreBusinessObjects.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreLib.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\EPPlus.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\CoreLib.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\bin\Release\EPPlus.xml
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Release\ResolveAssemblyReference.cache
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Release\CoreBusinessObjects.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreBusinessObjects\obj\Release\CoreBusinessObjects.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\bin\Release\CoreBusinessObjects.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\bin\Release\CoreBusinessObjects.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\bin\Release\CoreLib.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\bin\Release\EPPlus.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\bin\Release\CoreLib.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\bin\Release\EPPlus.xml
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\obj\Release\CoreBusinessObjects.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\obj\Release\CoreBusinessObjects.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\obj\Release\CoreBusinessObjects.pdb

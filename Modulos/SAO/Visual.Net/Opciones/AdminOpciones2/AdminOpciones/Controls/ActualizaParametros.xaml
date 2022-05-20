@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="AdminOpciones.Controls.ActualizaParametros"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="330" Height="147">
+
+    <UserControl.OpacityMask>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF4C4B48"/>
+            <GradientStop Color="#FFFFFFFF" Offset="1"/>
+        </LinearGradientBrush>
+    </UserControl.OpacityMask>
+    <Canvas x:Name="LayoutRoot" Width="316" Height="147">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF558092" Offset="0.326"/>
+                <GradientStop Color="#FFCFD3D5" Offset="0.951"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Canvas Height="80" Width="300" Canvas.Left="8" Canvas.Top="55" Background="#FFFFFFFF" x:Name="canvasLogin">
+            <Button Height="30" Width="134.853" Canvas.Left="8" Canvas.Top="26.537" Content="Actualizar" x:Name="btnAct" Click="Procesar_Click"/>
+            <!--Button Height="30" Width="134.853" Canvas.Left="157" Canvas.Top="26.537" Content="Carga Relacion Leasing" x:Name="btnCargaLeasing" Click="CargaRelacionLeasingClick"/-->
+        </Canvas>
+        <Canvas Height="43" Width="300" Canvas.Left="8" Canvas.Top="8" Background="#FF0A82C5">
+            <TextBlock Height="43" Width="299" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontFamily="Portable User Interface" FontSize="14" Foreground="#FFFFFFFF" ><Run Text="Control "/><Run Text="Actualiza"/><Run Text=" Parametros"/></TextBlock>
+        </Canvas>
+    </Canvas>
+
+</UserControl>
+

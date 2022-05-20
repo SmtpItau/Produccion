@@ -1,0 +1,15 @@
+c:\users\daniel inostroza\documents\visual studio 2010\Projects\ProxyServiceSAO\ProxyServiceSAO\bin\ProxyServiceSAO.dll
+c:\users\daniel inostroza\documents\visual studio 2010\Projects\ProxyServiceSAO\ProxyServiceSAO\bin\ProxyServiceSAO.pdb
+c:\users\daniel inostroza\documents\visual studio 2010\Projects\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.dll
+c:\users\daniel inostroza\documents\visual studio 2010\Projects\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.pdb
+C:\Users\Daniel Inostroza\documents\visual studio 2010\Projects\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.csprojResolveAssemblyReference.cache
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\bin\ProxyServiceSAO.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\bin\ProxyServiceSAO.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.dll
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.pdb
+\\certapps048\Homologación\Itaú - RTC\CCC\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.csprojResolveAssemblyReference.cache
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\bin\ProxyServiceSAO.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\bin\ProxyServiceSAO.pdb
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ResolveAssemblyReference.cache
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.dll
+\\certapps048\Homologación\Itaú - RTC\CPP\171507048PR\171114104\Software\Fuentes\Visual.Net\Opciones\ProxyServiceSAO\ProxyServiceSAO\obj\Debug\ProxyServiceSAO.pdb

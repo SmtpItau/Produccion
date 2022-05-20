@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBEB155D-E48B-4088-9324-1CB93BE4AA22}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdminOpciones</RootNamespace>
+    <AssemblyName>AdminOpciones</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>es</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>AdminOpciones.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>AdminOpciones.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\AdminOpciones.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\AdminOpciones.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Debug\AdminOpciones.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\AdminOpciones.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Liquid.Menu, Version=5.2.0.26379, Culture=neutral, PublicKeyToken=7fbdd25c3fcc3919, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Liquid.Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="Liquid.Popup, Version=5.1.6.34566, Culture=neutral, PublicKeyToken=7fbdd25c3fcc3919, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Liquid.Popup.dll</HintPath>
+    </Reference>
+    <Reference Include="Liquid.TreeView">
+      <HintPath>..\DLL\Liquid.TreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Windows.Controls, Version=2.0.21024.1838, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\System.Windows.Controls.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <BlendEmbeddedFont Include="Fonts\framd.ttf">
+      <IsSystemFont>True</IsSystemFont>
+    </BlendEmbeddedFont>
+    <BlendEmbeddedFont Include="Fonts\framdit.ttf">
+      <IsSystemFont>True</IsSystemFont>
+    </BlendEmbeddedFont>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ActualizaParametros.xaml.cs">
+      <DependentUpon>ActualizaParametros.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CambioClave.xaml.cs">
+      <DependentUpon>CambioClave.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CierreAbreMesa.xaml.cs">
+      <DependentUpon>CierreAbreMesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CondicionesGenerales.xaml.cs">
+      <DependentUpon>CondicionesGenerales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlCliente.xaml.cs">
+      <DependentUpon>ControlCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlReportes.xaml.cs">
+      <DependentUpon>ControlReportes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetalleCartera.xaml.cs">
+      <DependentUpon>DetalleCartera.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\DetalleLiquidacionDef.xaml.cs">
+      <DependentUpon>DetalleLiquidacionDef.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetalleMovimiento.xaml.cs">
+      <DependentUpon>DetalleMovimiento.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\FinDia.xaml.cs">
+      <DependentUpon>FinDia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InicioDia.xaml.cs">
+      <DependentUpon>InicioDia.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Loading.xaml.cs">
+      <DependentUpon>Loading.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LogAuditoria.cs" />
+    <Compile Include="Controls\NewWindonwsControls.cs" />
+    <Compile Include="Controls\PagosCompensados.xaml.cs">
+      <DependentUpon>PagosCompensados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PagosEntregaFisica.xaml.cs">
+      <DependentUpon>PagosEntregaFisica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProcesoDecisionEjer.xaml.cs">
+      <DependentUpon>ProcesoDecisionEjer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProcesoFijacion.xaml.cs">
+      <DependentUpon>ProcesoFijacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Process.xaml.cs">
+      <DependentUpon>Process.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SolicitudSDA.xaml.cs">
+      <DependentUpon>SolicitudSDA.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\WindowsControls.cs" />
+    <Compile Include="Delegados\Delegados.cs" />
+    <Compile Include="OpcionesFX\Asiatica\TablaFixing.xaml.cs">
+      <DependentUpon>TablaFixing.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\Componentes\Componentes.xaml.cs">
+      <DependentUpon>Componentes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\Converter\Converter.cs" />
+    <Compile Include="OpcionesFX\DataGrids\DetCartera.xaml.cs">
+      <DependentUpon>DetCartera.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionesFX\DataGrids\EncCartera.xaml.cs">
+      <DependentUpon>EncCartera.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionesFX\Front\Auxiliares.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.Butterfly.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.Opciones.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.Spread.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.ForwardAmericano.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.ForwardEntradaSalida.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.ForwardSintetico.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.Straddle.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.Strangle.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.Strip.cs" />
+    <Compile Include="OpcionesFX\Front\FontOpciones.xaml.cs">
+      <DependentUpon>FontOpciones.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\Front\FrontOpciones.CopyPaste.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.ForwardAcotado.cs" />
+    <Compile Include="OpcionesFX\Front\Productos\FrontOpciones.RiskReversal.cs" />
+    <Compile Include="OpcionesFX\Griegas\Griegas.xaml.cs">
+      <DependentUpon>Griegas.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\Guardar\GuardarOpcion.xaml.cs">
+      <DependentUpon>GuardarOpcion.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\OpcionesDeCartera\OpcionesCartera.xaml.cs">
+      <DependentUpon>OpcionesCartera.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\RotateIcon\Icon.xaml.cs">
+      <DependentUpon>Icon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionesFX\SmileControl\SmileControl.xaml.cs">
+      <DependentUpon>SmileControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionesFX\SmileFx\InterVol.xaml.cs">
+      <DependentUpon>InterVol.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\SmileFx\Inversionstrikes.xaml.cs">
+      <DependentUpon>Inversionstrikes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\SmileFx\SmileFxAtmRrFly.xaml.cs">
+      <DependentUpon>SmileFxAtmRrFly.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\SmileFx\SmileFxCallPut.xaml.cs">
+      <DependentUpon>SmileFxCallPut.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpcionesFX\TopologiaVegaPricing\TopoLogiaVegaPricingControl.xaml.cs">
+      <DependentUpon>TopoLogiaVegaPricingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionesFX\ValorizadorCartera\ValorizadorCartera.xaml.cs">
+      <DependentUpon>ValorizadorCartera.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Recursos\HttpHelper.cs" />
+    <Compile Include="Recursos\Globales.cs" />
+    <Compile Include="Recursos\Encript.cs" />
+    <Compile Include="Login\LoginControl.xaml.cs">
+      <DependentUpon>LoginControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page.xaml.cs">
+      <DependentUpon>Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageSwitcher.xaml.cs">
+      <DependentUpon>PageSwitcher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursos\InspectorBehavior.cs" />
+    <Compile Include="Service References\SrvAcciones\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvArt84\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvAsiaticas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvBDOpciones\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvConfig\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvCustomers\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvDetalles\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvEstructura\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvLeasing\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvLoadFront\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvLogin\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvNumeroIBSPorOperacion84\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvOperaciones84\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvPortfolioAndBook\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvSmile\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvTicket84\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvTomaLinea\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvValorizador\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Struct\Componentes\ItemComponentes.cs" />
+    <Compile Include="Struct\Componentes\StructComponentes.cs" />
+    <Compile Include="Struct\Generic\StructCodigoDescripcion.cs" />
+    <Compile Include="Struct\Generic\StructGeneric.cs" />
+    <Compile Include="Struct\OpcionesXF\Asiatica\StructFixingData.cs" />
+    <Compile Include="Struct\OpcionesXF\Customers\StructCustomers.cs" />
+    <Compile Include="Struct\OpcionesXF\PortFolioAndBook\StructPortfolioAndBook.cs" />
+    <Compile Include="Struct\OpcionesXF\Smile\StructGriegas.cs" />
+    <Compile Include="Struct\OpcionesXF\Smile\StructSmile.cs" />
+    <Compile Include="Struct\OpcionesXF\Smile\StructSmileATMRRFLY.cs" />
+    <Compile Include="Struct\OpcionesXF\Smile\StructSmileCallPut.cs" />
+    <Compile Include="Struct\OpcionesXF\ValorizacionCartera\StructCurvaMoneda.cs" />
+    <Compile Include="Struct\OpcionesXF\ValorizacionCartera\StructDetContrato.cs" />
+    <Compile Include="Struct\OpcionesXF\ValorizacionCartera\StructEncContrato.cs" />
+    <Compile Include="Struct\OpcionesXF\ValorizacionCartera\StructFixingDataContrato.cs" />
+    <Compile Include="Struct\OpcionesXF\ValorizacionCartera\StructSensibilidad.cs" />
+    <Compile Include="Struct\StructCaContrato.cs" />
+    <Compile Include="Struct\StructClave.cs" />
+    <Compile Include="Struct\StructCondicionesGenerales.cs" />
+    <Compile Include="Struct\StructConfiguracionPortFolio.cs" />
+    <Compile Include="Struct\StructFechaProxH.cs" />
+    <Compile Include="Struct\StructFinancialPortFolio.cs" />
+    <Compile Include="Struct\StructIniDia.cs" />
+    <Compile Include="Struct\StructLiquidacionDef.cs" />
+    <Compile Include="Struct\StructMenu.cs" />
+    <Compile Include="Struct\StructMoContrato.cs" />
+    <Compile Include="Struct\StructMoCotizacion.cs" />
+    <Compile Include="Struct\StructMonedaFormaPago.cs" />
+    <Compile Include="Struct\StructPagosCompensados.cs" />
+    <Compile Include="Struct\StructPagosFisica.cs" />
+    <Compile Include="Struct\StructProcesoDecisionEjer.cs" />
+    <Compile Include="Struct\StructProcesoFijacion.cs" />
+    <Compile Include="Struct\StructRelacionForward.cs" />
+    <Compile Include="Struct\StructStrip.cs" />
+    <Compile Include="Valid\TermValidate.cs" />
+    <Compile Include="Valid\ValidAmount.cs" />
+    <Compile Include="Valid\ValidNumber.cs" />
+    <Compile Include="Valid\ValidParity.cs" />
+    <Compile Include="Valid\ValidRate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\ActualizaParametros.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CambioClave.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CierreAbreMesa.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CondicionesGenerales.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ControlCliente.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ControlReportes.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DetalleCartera.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DetalleLiquidacionDef.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DetalleMovimiento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\FinDia.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\InicioDia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Loading.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PagosCompensados.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PagosEntregaFisica.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ProcesoDecisionEjer.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ProcesoFijacion.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Process.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SolicitudSDA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login\LoginControl.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MenuPrincipal\Menu.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\Asiatica\TablaFixing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\Componentes\Componentes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\DataGrids\DetCartera.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\DataGrids\EncCartera.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\Front\FontOpciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\Griegas\Griegas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\Guardar\GuardarOpcion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\OpcionesDeCartera\OpcionesCartera.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\RotateIcon\Icon.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\SmileControl\SmileControl.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\SmileFx\InterVol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\SmileFx\Inversionstrikes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\SmileFx\SmileFxAtmRrFly.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\SmileFx\SmileFxCallPut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\TopologiaVegaPricing\TopoLogiaVegaPricingControl.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpcionesFX\ValorizadorCartera\ValorizadorCartera.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PageSwitcher.xaml">
+      <SubType>Page</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\SrvAcciones\WebAcciones.wsdl" />
+    <None Include="Service References\SrvArt84\AdminOpciones.SrvArt84.Return_XML_IBS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvArt84\WSArticulo841.wsdl" />
+    <None Include="Service References\SrvAsiaticas\SrvAsiaticas.wsdl" />
+    <None Include="Service References\SrvBDOpciones\BDOpciones.wsdl" />
+    <None Include="Service References\SrvConfig\SrvConfig.wsdl" />
+    <None Include="Service References\SrvCustomers\SrvCustomers.wsdl" />
+    <None Include="Service References\SrvDetalles\AdminOpciones.SrvDetalles.InterContableOpcResponseInterContableOpcResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvDetalles\AdminOpciones.SrvDetalles.InterfazBalanceOpcionesResponseInterfazBalanceOpcionesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvDetalles\AdminOpciones.SrvDetalles.InterfazDerivadosOpcionesResponseInterfazDerivadosOpcionesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvDetalles\AdminOpciones.SrvDetalles.InterfazOperacionesOpcionesResponseInterfazOperacionesOpcionesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvDetalles\WebDetalles.wsdl" />
+    <None Include="Service References\SrvDetalles\WebDetalles2.wsdl" />
+    <None Include="Service References\SrvEstructura\SrvEstructura.wsdl" />
+    <Resource Include="Images\agt_stop.png" />
+    <Resource Include="Images\spreadsheet.png" />
+    <Resource Include="Images\checkedbox.png" />
+    <Resource Include="Images\fileprint.png" />
+    <Resource Include="Images\uncheked.PNG" />
+    <Resource Include="Images\player_play.png" />
+    <Resource Include="Images\player_stop.png" />
+    <None Include="Service References\SrvLoadFront\LoadFront.wsdl" />
+    <None Include="Service References\SrvLogin\WebLogin.wsdl" />
+    <Resource Include="Images\3floppy_unmount.png" />
+    <None Include="Service References\SrvNumeroIBSPorOperacion84\AdminOpciones.SrvNumeroIBSPorOperacion84.Return_XML_Operaciones.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvNumeroIBSPorOperacion84\WSNumeroIBSporOperacion.wsdl" />
+    <None Include="Service References\SrvOperaciones84\AdminOpciones.SrvOperaciones84.Return_XML_Status.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvOperaciones84\WSOperaciones.wsdl" />
+    <None Include="Service References\SrvPortfolioAndBook\LoadPortfolio.wsdl" />
+    <Resource Include="Images\check.jpg" />
+    <Resource Include="Images\reloadIcon.JPG" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\icon_edit_fixing.gif" />
+    <None Include="Service References\SrvBDOpciones\configuration91.svcinfo" />
+    <None Include="Service References\SrvBDOpciones\configuration.svcinfo" />
+    <None Include="Service References\SrvBDOpciones\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvAsiaticas\SrvAsiaticas.disco" />
+    <None Include="Service References\SrvAsiaticas\configuration91.svcinfo" />
+    <None Include="Service References\SrvAsiaticas\configuration.svcinfo" />
+    <None Include="Service References\SrvAsiaticas\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvSmile\SrvSmile.wsdl" />
+    <None Include="Service References\SrvCustomers\SrvCustomers.disco" />
+    <None Include="Service References\SrvCustomers\configuration91.svcinfo" />
+    <None Include="Service References\SrvCustomers\configuration.svcinfo" />
+    <None Include="Service References\SrvCustomers\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvDetalles\WebDetalles.disco" />
+    <None Include="Service References\SrvDetalles\configuration91.svcinfo" />
+    <None Include="Service References\SrvDetalles\configuration.svcinfo" />
+    <None Include="Service References\SrvDetalles\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvEstructura\SrvEstructura.disco" />
+    <None Include="Service References\SrvEstructura\configuration91.svcinfo" />
+    <None Include="Service References\SrvEstructura\configuration.svcinfo" />
+    <None Include="Service References\SrvEstructura\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvLoadFront\LoadFront.disco" />
+    <None Include="Service References\SrvLoadFront\configuration91.svcinfo" />
+    <None Include="Service References\SrvLoadFront\configuration.svcinfo" />
+    <None Include="Service References\SrvLoadFront\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvLogin\WebLogin.disco" />
+    <None Include="Service References\SrvLogin\configuration91.svcinfo" />
+    <None Include="Service References\SrvLogin\configuration.svcinfo" />
+    <None Include="Service References\SrvLogin\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvPortfolioAndBook\LoadPortfolio.disco" />
+    <None Include="Service References\SrvPortfolioAndBook\configuration91.svcinfo" />
+    <None Include="Service References\SrvPortfolioAndBook\configuration.svcinfo" />
+    <None Include="Service References\SrvPortfolioAndBook\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvSmile\SrvSmile.disco" />
+    <None Include="Service References\SrvSmile\configuration91.svcinfo" />
+    <None Include="Service References\SrvSmile\configuration.svcinfo" />
+    <None Include="Service References\SrvSmile\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvTicket84\AdminOpciones.SrvTicket84.Return_XML_Ticket.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvTicket84\WSTicket.wsdl" />
+    <None Include="Service References\SrvTomaLinea\AdminOpciones.SrvTomaLinea.ProxyClientResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvTomaLinea\ProxyLineaCredito.wsdl" />
+    <None Include="Service References\SrvTomaLinea\ProxyLineaCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\ProxyLineaCredito1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\ProxyLineaCredito2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvValorizador\SrvValorizadorCartera.wsdl">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvValorizador\SrvValorizadorCartera.disco" />
+    <None Include="Service References\SrvValorizador\configuration91.svcinfo" />
+    <None Include="Service References\SrvValorizador\configuration.svcinfo" />
+    <None Include="Service References\SrvValorizador\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvConfig\configuration91.svcinfo" />
+    <None Include="Service References\SrvConfig\configuration.svcinfo" />
+    <None Include="Service References\SrvConfig\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvLeasing\configuration91.svcinfo" />
+    <None Include="Service References\SrvLeasing\configuration.svcinfo" />
+    <None Include="Service References\SrvLeasing\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvLeasing\Leasing.disco" />
+    <None Include="Service References\SrvAcciones\WebAcciones.disco" />
+    <None Include="Service References\SrvAcciones\configuration91.svcinfo" />
+    <None Include="Service References\SrvAcciones\configuration.svcinfo" />
+    <None Include="Service References\SrvAcciones\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvConfig\SrvConfig.disco" />
+    <None Include="Service References\SrvArt84\configuration91.svcinfo" />
+    <None Include="Service References\SrvArt84\configuration.svcinfo" />
+    <None Include="Service References\SrvArt84\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvNumeroIBSPorOperacion84\WSNumeroIBSporOperacion.disco" />
+    <None Include="Service References\SrvNumeroIBSPorOperacion84\configuration91.svcinfo" />
+    <None Include="Service References\SrvNumeroIBSPorOperacion84\configuration.svcinfo" />
+    <None Include="Service References\SrvNumeroIBSPorOperacion84\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvOperaciones84\WSOperaciones.disco" />
+    <None Include="Service References\SrvOperaciones84\configuration91.svcinfo" />
+    <None Include="Service References\SrvOperaciones84\configuration.svcinfo" />
+    <None Include="Service References\SrvOperaciones84\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvTicket84\WSTicket.disco" />
+    <None Include="Service References\SrvTicket84\configuration91.svcinfo" />
+    <None Include="Service References\SrvTicket84\configuration.svcinfo" />
+    <None Include="Service References\SrvTicket84\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvTomaLinea\configuration91.svcinfo" />
+    <None Include="Service References\SrvTomaLinea\configuration.svcinfo" />
+    <None Include="Service References\SrvTomaLinea\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvBDOpciones\BDOpciones.disco" />
+    <None Include="Service References\SrvDetalles\WebDetalles2.disco" />
+    <None Include="Service References\SrvArt84\WSArticulo841.disco" />
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\header.JPG" />
+    <Resource Include="Images\logo.JPG" />
+    <Resource Include="Images\logocbc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SrvAcciones\" />
+    <WCFMetadataStorage Include="Service References\SrvArt84\" />
+    <WCFMetadataStorage Include="Service References\SrvAsiaticas\" />
+    <WCFMetadataStorage Include="Service References\SrvBDOpciones\" />
+    <WCFMetadataStorage Include="Service References\SrvConfig\" />
+    <WCFMetadataStorage Include="Service References\SrvCustomers\" />
+    <WCFMetadataStorage Include="Service References\SrvDetalles\" />
+    <WCFMetadataStorage Include="Service References\SrvEstructura\" />
+    <WCFMetadataStorage Include="Service References\SrvLeasing\" />
+    <WCFMetadataStorage Include="Service References\SrvLoadFront\" />
+    <WCFMetadataStorage Include="Service References\SrvLogin\" />
+    <WCFMetadataStorage Include="Service References\SrvNumeroIBSPorOperacion84\" />
+    <WCFMetadataStorage Include="Service References\SrvOperaciones84\" />
+    <WCFMetadataStorage Include="Service References\SrvPortfolioAndBook\" />
+    <WCFMetadataStorage Include="Service References\SrvSmile\" />
+    <WCFMetadataStorage Include="Service References\SrvTicket84\" />
+    <WCFMetadataStorage Include="Service References\SrvTomaLinea\" />
+    <WCFMetadataStorage Include="Service References\SrvValorizador\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="SubsetFontSilverlight.targets" />
+</Project>

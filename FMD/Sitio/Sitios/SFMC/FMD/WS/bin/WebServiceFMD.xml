@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebServiceFMD</name>
+    </assembly>
+    <members>
+        <member name="T:WebServiceFMD.Common.Const">
+            <summary>
+            Struct con Constantes de mensajes enviadas por el servicio.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_DATANOTFOUND">
+            <summary>
+            Mensaje que indica que no se encontraron datos para procesar.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_FAILURE_OPERATION">
+            <summary>
+            Mensaje de operación fallida.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_SUCCESS_OPERATION">
+            <summary>
+            Mensaje de operación exitosa.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_NOTVALID_OPERATION">
+            <summary>
+            Mensaje de operación no valida.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_NOTIMPLEMENTED">
+            <summary>
+            Mensaje de operación no implmenentada.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_PRODUCTTYPE_NOTFOUND">
+            <summary>
+            Mensaje que indica que el producto o modulo para la generación de reportes no se encuentra.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_REPORTTYPE_NOTFOUND">
+            <summary>
+            Mensaje que indica que el tipo de reporte no se encuentra o no es el indicado.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_PROCESS_NOTSUPORTED">
+            <summary>
+            Mensaje que el proceso indicado no esta soportado por la aplicación.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_PROCESS_FILESNOTFOUND">
+            <summary>
+            Mensaje que indica que no hay archivos para procesar.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.Const.MSG_TEMPLATE_FILESNOTFOUND">
+            <summary>
+            Mensaje que indica que no se encuentran los archivos de plantilla para procesar
+            </summary>
+        </member>
+        <member name="T:WebServiceFMD.Common.ProcessType">
+            <summary>
+            Enumera los tipos de proceso soportado
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.ProcessType.Input">
+            <summary>
+            Indica importacion de información, utilizado para el proceso de apertura de dia.
+            </summary>
+        </member>
+        <member name="F:WebServiceFMD.Common.ProcessType.Output">
+            <summary>
+            Indica exportacion de información, utilizado para el proceso de cierre de dia.
+            </summary>
+        </member>
+        <member name="T:WebServiceFMD.wsReportServices">
+            <summary>
+            Servicios de Reporteria.
+            </summary>
+            <summary>
+            Servicios de Reporteria.
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.#ctor">
+            <summary>
+            Default Constructor.
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.LoadFileToImport(System.String,System.String)">
+            <summary>
+            Carga una lista de file info en base al directorio base y patron de busqueda
+            </summary>
+            <param name="BaseDirectory">Directorio base en el cual se van a buscar archivos</param>
+            <param name="FileNamePattern">Patron de busqueda para archivos.</param>
+            <returns>Lista de FileInfo</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.LoadFileToImport(WebServiceFMD.Common.DTO.ReportType,System.String,System.String)">
+            <summary>
+            Carga una lista de file info en base al tipo de reporte, al directorio base y patron de busqueda
+            </summary>
+            <param name="TReport">Tipo de reporte</param>
+            <param name="BaseDirectory">Directorio base en el cual se van a buscar archivos</param>
+            <param name="FileNamePattern">Patron de busqueda para archivos.</param>
+            <returns>Lista de FileInfo</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.LoadFileTemplates(WebServiceFMD.Common.DTO.ReportType)">
+            <summary>
+            Lee segun tipo de reporte los archivos de plantilla.
+            </summary>
+            <param name="TReport"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.LoadTemplates(System.Collections.Generic.List{System.IO.FileInfo},WebServiceFMD.Common.ProcessType,System.Boolean)">
+            <summary>
+            Carga en memoria los archivos de plantilla
+            </summary>
+            <param name="TemplateFiles">Lista de archivos de plantilla</param>
+            <param name="process">Tipo de proceso(para filtrar las plantillas)</param>
+            <param name="IncludeInputOutput">Indica si se incluyen las plantillas de tipo InputOutput</param>
+            <returns>Collection de objetos TemplateData</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.LoadFolios(WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType)">
+            <summary>
+            Extrae de la base de datos el ultimo de folio para la generacion de informes
+            </summary>
+            <param name="TReport">Tipo de Reporte.</param>
+            <param name="TModule">Tipo de Modulo/Producto</param>
+            <returns>Integer. con un nuevo numero de folio</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.UpdateFolios(WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.String,System.Int32)">
+            <summary>
+            Actualiza la tabla de folios
+            </summary>
+            <param name="TReport">Tipo de reporte</param>
+            <param name="TModule">Tipo de Modulo</param>
+            <param name="newFileName"></param>
+            <param name="seed">Folio a actualizar</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.NewFileName(CoreBusinessObjects.DTO.TemplateData,System.Object)">
+            <summary>
+            Genera nombre de archivo.
+            </summary>
+            <param name="TData"></param>
+            <param name="seed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.InitializeEncrypted">
+            <summary>
+            Carga configuracion y miscelaneos para el servicio (webconfig encryptado.)
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.PrintLogHeader(WebServiceFMD.Common.ProcessType,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime,System.Boolean)">
+            <summary>
+            Imprime encabezado en archivo de log
+            </summary>
+            <param name="process">Tipo de Proceso</param>
+            <param name="TReport">Tipo de Reporte</param>
+            <param name="TModule">Modulo </param>
+            <param name="date">Fecha</param>
+            <param name="Auto">Indica si es de generacion automatica o normal</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.ExecOutputTemplateStoreProcedure(CoreBusinessObjects.DTO.TemplateData,System.DateTime,System.Data.DataSet@,System.String@)">
+            <summary>
+            Ejecuta el procedimiento almancenado de salida de datos
+            </summary>
+            <param name="TData">Template Data</param>
+            <param name="data">DataSet resultante</param>
+            <param name="date">Fecha a enviar en la ejecucion del sp</param>
+            <param name="error">Errores</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.ExecOutputTemplateStoreProcedure(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet@,System.String@)">
+            <summary>
+            Ejecuta el procedimiento almancenado de salida de datos
+            </summary>
+            <param name="TData">Template Data</param>
+            <param name="data">DataSet resultante</param>        
+            <param name="error">Errores</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.PrepareTemplateStoreProcedureCommand(CoreBusinessObjects.DTO.TemplateData,System.Collections.Generic.List{System.Tuple{System.String,System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter}}}@,System.String@)">
+            <summary>
+            Prepara una lista de SqlCommand para ejecutar por el motor, segun configuracion de la plantilla/Motor.
+            </summary>
+            <param name="TData">Informacion de la plantilla</param>
+            <param name="sqlcmd">Lista de SqlCommand para ejecutar.</param>
+            <param name="error">Mensaje de error devuelto por la rutina.</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.CopyOutputFiles(CoreBusinessObjects.DTO.TemplateData,System.String@)">
+            <summary>
+            Copia un archivo en los directorios indicados por TData.IOFileCopyFolders
+            </summary>
+            <param name="TData">Template Data</param>
+            <param name="FileName">nombre del archivo a copiar</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.CopyOutputFiles(CoreBusinessObjects.DTO.TemplateData,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Copia archivo en rutas de destino
+            </summary>
+            <param name="TData">Template Data</param>
+            <param name="FileNames">Lista de archivos a copiar</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.MergeFiles(CoreBusinessObjects.DTO.TemplateData,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime,System.Boolean,System.Data.DataSet@)">
+            <summary>
+            Agrupación de funciones para mezcla de archivos
+            </summary>
+            <param name="TData">Template Data</param>
+            <param name="TReport">Tipo de Reporte</param>
+            <param name="TModule">Modulo o producto</param>
+            <param name="date">Fecha a procesar o generar reporte</param>
+            <param name="withMergeFiles">Indica si mezclan los archivos FINDUR/TURING</param>
+            <param name="ds">DataSet de resultado</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.ProcessDate(WebServiceFMD.Common.DTO.ModuleType,System.String)">
+            <summary>
+            Valida que el string de fecha sea valido, si no devuelve la fecha de proceso.
+            </summary>
+            <param name="TModule">Tipo modulo</param>
+            <param name="date">fecha en string para revision</param>
+            <returns>DateTime</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.CheckConnectionDB(WebServiceFMD.Common.wsReportContext)">
+            <summary>
+            Chequeo de Conexion a BD
+            </summary>
+            <param name="ctx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.CleanTemporaryFiles(WebServiceFMD.Common.wsReportContext)">
+            <summary>
+            Limpia el directorio temporal de generacion de interfaces 
+            </summary>
+            <param name="ctx">Contexto de Aplicacion</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.MaintenanceMode(WebServiceFMD.Common.wsReportContext,System.DateTime,System.String@,System.Boolean)">
+            <summary>
+            Modo mantencion, comprime los archivos generados, limpia la carpeta temporal 
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="date">Fecha de la cual se toma el mes y el año para realizar el respaldo</param>
+            <param name="error">Mensaje devuelto por el servicio</param>
+            <param name="comprimir_principales">Indica si se respaldaran los directorios principales // no recomendado</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.MaintenanceMode_Log(WebServiceFMD.Common.wsReportContext,System.DateTime,System.String@)">
+            <summary>
+            Modo mantencion, comprime los archivos de log
+            </summary>
+            <param name="ctx"></param>
+            <param name="date"></param>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.LogDataDebug(System.Data.DataSet,CoreBusinessObjects.DTO.TemplateData,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.String)">
+            <summary>Escribe en log de aplicacion el status de los dataset, para revision.</summary>
+            <param name="ds">DataSet a Revisar</param>
+            <param name="TData">Datos de Plantilla</param>
+            <param name="TReport">Tipo de Reporte</param>
+            <param name="TModule">Modulo de Reporte</param>
+            <param name="Method">Metodo en el cual se esta revisando la data.</param>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.GenerateAndSendReports(WebServiceFMD.Common.ProcessType,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Boxing para generacion de reportes
+            </summary>
+            <param name="process">Tipo de proceso Input/Output</param>
+            <param name="reportType">Tipo de reporte a generar</param>
+            <param name="modulo">Modulo o producto del cual se va a generar el Input/Ouput</param>
+            <param name="date">Fecha de proceso para la obtencion de datos.</param>
+            <param name="withMergeFiles">Indica si se mesclaran los archivos</param>
+            <returns>String con resultado de operacion.</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.Automated_RCM_SendReports(WebServiceFMD.Common.ProcessType,System.String,System.String)">
+            <summary>
+            Generacion automatica de reportes para casa matriz
+            </summary>
+            <param name="process">Tipo de proceso Input/Output</param>
+            <param name="reportType">Tipo de reporte a generar</param>
+            <param name="date">Fecha de proceso para la obtencion de datos.</param>
+            <returns>List de string con mensajes generados por los sub-procesos.</returns>    
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.RCM_Reports(WebServiceFMD.Common.ProcessType,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime,System.Boolean,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Genera los reportes para casa Matriz
+            </summary>
+            <param name="process">Tipo de proceso (Input/Output)</param>
+            <param name="TReport">Tipo de reporte a generar (solo ODS)</param>
+            <param name="TModule">Tipo de modulo a generar (SWAP, FWD, NDF, CSS, etc)</param>
+            <param name="date">Fecha de proceso para obtencion de datos para exportacion</param>
+            <param name="withMergeFiles"> indica si se hace mix de archivos  </param>
+            <param name="FileNames"> Listado de nombres generados     </param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.STOCK_Reports(WebServiceFMD.Common.ProcessType,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Genera reportes de Stock para casa Matriz
+            </summary>
+            <param name="process">Tipo de proceso (Input/Output)</param>
+            <param name="TReport">Tipo de reporte a generar (solo ODS)</param>
+            <param name="TModule">Tipo de modulo a generar (SWAP, FWD, NDF, CSS, etc)</param>
+            <param name="date">Fecha de proceso para obtencion de datos para exportacion</param>
+            <param name="FileNames"> Listado de nombres generados     </param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.ODS_Reports(WebServiceFMD.Common.ProcessType,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime)">
+            <summary>
+            Genera los datos para ODS
+            </summary>
+            <param name="process">Tipo de proceso (Input/Output)</param>
+            <param name="TReport">Tipo de reporte a generar (solo ODS)</param>
+            <param name="TModule">Tipo de modulo a generar (SWAP, FWD, NDF, CSS, etc)</param>
+            <param name="date">Fecha de proceso para obtencion de datos para exportacion ODS</param>
+            <returns>Cadena con resultado de operacion.</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.ADM_Reports(WebServiceFMD.Common.ProcessType,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime)">
+            <summary>
+            Genera los datos para ADM
+            </summary>
+            <param name="process">Tipo de proceso (Input/Output)</param>
+            <param name="TReport">Tipo de reporte a generar (solo ODS)</param>
+            <param name="TModule">Tipo de modulo a generar (SWAP, FWD, NDF, CSS, etc)</param>
+            <param name="date">Fecha de proceso para obtencion de datos para exportacion ODS</param>
+            <returns>Cadena con resultado de operacion.</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.RNT_Reports(WebServiceFMD.Common.ProcessType,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime)">
+            <summary>
+            Genera los datos para reportes RENTABILIDAD
+            </summary>
+            <param name="process">Tipo de proceso (Input/Output)</param>
+            <param name="TReport">Tipo de reporte a generar (solo ODS)</param>
+            <param name="TModule">Tipo de modulo a generar (SWAP, FWD, NDF, CSS, etc)</param>
+            <param name="date">Fecha de proceso para obtencion de datos para exportacion ODS</param>
+            <returns>Cadena con resultado de operacion.</returns>
+        </member>
+        <member name="M:WebServiceFMD.wsReportServices.Export_Report(WebServiceFMD.Common.ProcessType,WebServiceFMD.Common.DTO.ReportType,WebServiceFMD.Common.DTO.ModuleType,System.DateTime)">
+            <summary>
+            Procesa la plantilla para la exportacion de datos.
+            </summary>
+            <param name="process">Tipo de proceso (Input/Output)</param>
+            <param name="TReport">Tipo de reporte a generar (solo ODS)</param>
+            <param name="TModule">Tipo de modulo a generar (SWAP, FWD, NDF, CSS, etc)</param>
+            <param name="date">Fecha de proceso para obtencion de datos para exportacion</param>
+            <returns>Cadena con resultado de operacion.</returns>
+        </member>
+        <member name="T:WebServiceFMD.Common.wsReportContext">
+            <summary>
+            Extension para clase appcontext
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.wsReportContext.#ctor">
+            <summary>
+            Constructor publico
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.DBContextCollection">
+            <summary>
+            Coleccion de contextos de conexion a bd.
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.DownloadFolder">
+            <summary>
+            Directorio de descarga.
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.LogFolder">
+            <summary>
+            Directorio para el log de proceso.
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.TemplateFolder">
+            <summary>
+            Directorio para los archivos de Plantilla(TemplateData).
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.UploadFolder">
+            <summary>
+            Directorio de entrega de archivos para cargar.
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.InterfaceRootFolder">
+            <summary>
+            Directorio base de entrega de archivos 
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.AllowPaging">
+            <summary>
+            Habilita procesamiento de 1 archivo a generacion de N archivos segun datos a exportar
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.wsReportContext.DeleteFiles">
+            <summary>
+            Habilita la eliminacion en el proceso de copia y respaldo de archivos procesados.
+            </summary>
+        </member>
+        <member name="T:WebServiceFMD.Common.DAO.ModuleTypeDao">
+            <summary>
+            Data Access Object para ModuleType
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DAO.ModuleTypeDao.GetModuleTypeCollectionByIdReport(CoreLib.Common.DBContext,System.Int32)">
+            <summary>
+            Retorna coleccion de modulos por id de reporte
+            </summary>
+            <param name="ctx">Contexto de BD</param>
+            <param name="id_reporte">Id de reporte para buscar los modulos</param>
+            <returns>ModuleCollection</returns>
+        </member>
+        <member name="M:WebServiceFMD.Common.DAO.ModuleTypeDao.GetModuleTypeCollection(CoreLib.Common.DBContext)">
+            <summary>
+            Retorna coleccion de modulos (TODOS)
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <returns>ModuleTypeCollection</returns>
+        </member>
+        <member name="T:WebServiceFMD.Common.DTO.ModuleType">
+            <summary>
+            Clase dto de modulo
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ModuleType.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ModuleType.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor con parametros DataRow (Transforma un DataRow en objeto ModuleType) 
+            </summary>
+            <param name="row">DataRow</param>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ModuleType.Finalize">
+            <summary>
+            Default destructor.
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ModuleType.Dispose(System.Boolean)">
+            <summary>
+            Dispose de objeto
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ModuleType.System#IDisposable#Dispose">
+            <summary>
+            Dispose de objeto
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.UniqueID">
+            <summary>
+            Guid Unico de instancia
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.id_modulo">
+            <summary>
+            Id de modulo
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.id_reporte">
+            <summary>
+            Id de reporte
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.modulo">
+            <summary>
+            nombre de modulo (AS400)
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.modulo_h">
+            <summary>
+            nombre de modulo homologado (FINDUR)
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.desc_modulo">
+            <summary>
+            descripcion del modulo
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.engine">
+            <summary>
+            Motor de Importacion/Exportacion
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.starting">
+            <summary>
+            hora de inicio
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.finish">
+            <summary>
+            Hora de fin
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.priority">
+            <summary>
+            prioridad
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.processType">
+            <summary>
+            Tipo de proceso
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.require">
+            <summary>
+            Dependencia de proceso 
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.active">
+            <summary>
+            activo
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.special_mode">
+            <summary>
+            Indica si correra de manera especial en sabado o domingo
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ModuleType.db_context">
+            <summary>
+            Conexion a bd.
+            </summary>
+        </member>
+        <member name="T:WebServiceFMD.Common.Collection.ModuleTypeEnumerator`1">
+            <summary>
+            Enumerador de ReportType
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:WebServiceFMD.Common.Collection.ModuleTypeCollection`1">
+            <summary>
+            Coleccion de Objetos TemplateAddress
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:WebServiceFMD.Common.DAO.ReportTypeDao">
+            <summary>
+            Data Access Object para ReportType
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DAO.ReportTypeDao.FindByDescription(CoreLib.Common.DBContext,System.String)">
+            <summary>
+            Busca ReportType por Descripcion
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="reportDescription">Descripcion a buscar</param>
+            <returns>ReportType object</returns>
+        </member>
+        <member name="M:WebServiceFMD.Common.DAO.ReportTypeDao.FindByID(CoreLib.Common.DBContext,System.Int32)">
+            <summary>
+            Retorna objeto ReportType por su id
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="id">Identificador por cual se busca</param>
+            <returns>ReportType object</returns>
+        </member>
+        <member name="M:WebServiceFMD.Common.DAO.ReportTypeDao.GetReportTypeCollection(CoreLib.Common.DBContext)">
+            <summary>
+            Retorna una colletion de ReportType
+            </summary>
+            <param name="ctx">Contexto de Aplicacion</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ReportType.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ReportType.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor con parametros DataRow (Transforma un DataRow en objeto ReportType) 
+            </summary>
+            <param name="row">DataRow</param>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ReportType.Finalize">
+            <summary>
+            Default destructor
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ReportType.Dispose(System.Boolean)">
+            <summary>
+            Implementacion de Dispose
+            </summary>
+            <param name="disposing">indica si esta haciendo GC</param>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.ReportType.System#IDisposable#Dispose">
+            <summary>
+            Implementacion IDisposable.Dispose
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ReportType.UniqueID">
+            <summary>
+            Unique GUID de instancia 
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ReportType.id_reporte">
+            <summary>
+            Id de reporte
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ReportType.desc_reporte">
+            <summary>
+            Descripcion de reporte
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.ReportType.error_coding">
+            <summary>
+            Codificación de Errores /Log
+            </summary>
+        </member>
+        <member name="T:WebServiceFMD.Common.Collection.ReportTypeEnumerator`1">
+            <summary>
+            Enumerador de ReportType
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:WebServiceFMD.Common.Collection.ReportTypeCollection`1">
+            <summary>
+            Coleccion de Objetos TemplateAddress
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:WebServiceFMD.Common.DAO.DateProcessDao">
+            <summary>
+            Data Access Object para obtencion de fechas de proceso
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DAO.DateProcessDao.GetDateProcessCollectionByModulo(CoreLib.Common.DBContext,System.String)">
+            <summary>
+            Retorna la una coleccion con las fechas de proceso de los modulo indicados
+            </summary>
+            <param name="ctx">Contexto de Base de Datos</param>
+            <param name="modulo">Modulo a buscar</param>
+            <returns>Collection de DateProcessCollection</returns>
+        </member>
+        <member name="M:WebServiceFMD.Common.DAO.DateProcessDao.GetDateProcessCollection(CoreLib.Common.DBContext)">
+            <summary>
+            Retorna una colecction de DateProcess, con todas las fechas de proceso de todos los modulos.
+            </summary>
+            <param name="ctx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.DateProcess.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.DateProcess.#ctor(System.Data.DataRow)">
+            <summary>
+            Constructor con parametros DataRow (Transforma un DataRow en objeto DateProcess) 
+            </summary>
+            <param name="row">DataRow</param>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.DateProcess.Finalize">
+            <summary>
+            Default destructor.
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.DateProcess.Dispose(System.Boolean)">
+            <summary>
+            Dispose de objeto
+            </summary>
+        </member>
+        <member name="M:WebServiceFMD.Common.DTO.DateProcess.System#IDisposable#Dispose">
+            <summary>
+            Dispose de objeto
+            </summary>
+        </member>
+        <member name="P:WebServiceFMD.Common.DTO.DateProcess.UniqueID">
+            <summary>
+            Guid Unico de instancia
+            </summary>
+        </member>
+        <member name="T:WebServiceFMD.Common.Collection.DateProcessEnumerator`1">
+            <summary>
+            Enumerador de ReportType
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:WebServiceFMD.Common.Collection.DateProcessCollection`1">
+            <summary>
+            Coleccion de Objetos TemplateAddress
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+    </members>
+</doc>

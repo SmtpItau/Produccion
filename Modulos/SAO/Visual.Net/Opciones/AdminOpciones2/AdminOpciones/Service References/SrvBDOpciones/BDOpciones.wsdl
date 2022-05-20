@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertOption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xdocInsert" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NomUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumFolio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumContrato" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fProceso" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="_Turing" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertOptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertOptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaContrato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NumContrato" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumFolio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecuperaContratoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecuperaContratoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOption">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xdocInsert" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateOptionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFlagValuator">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateFlagValuatorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateFlagValuatorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTransactionIDD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Aplicacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modulo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numOp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numDoc" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="correlativo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTransactionIDDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTransactionIDDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTransaccionIDD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="statusIDD" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Aplicacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modulo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numOp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numDoc" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="correlativo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensajeIDD" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroIDD" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="controlLinea" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTransaccionIDDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateTransaccionIDDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertOptionSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertOption" />
+  </wsdl:message>
+  <wsdl:message name="InsertOptionSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaContratoSoapIn">
+    <wsdl:part name="parameters" element="tns:RecuperaContrato" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaContratoSoapOut">
+    <wsdl:part name="parameters" element="tns:RecuperaContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOptionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateOption" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOptionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagValuatorSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFlagValuator" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagValuatorSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFlagValuatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTransactionIDDSoapIn">
+    <wsdl:part name="parameters" element="tns:getTransactionIDD" />
+  </wsdl:message>
+  <wsdl:message name="getTransactionIDDSoapOut">
+    <wsdl:part name="parameters" element="tns:getTransactionIDDResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateTransaccionIDDSoapIn">
+    <wsdl:part name="parameters" element="tns:updateTransaccionIDD" />
+  </wsdl:message>
+  <wsdl:message name="updateTransaccionIDDSoapOut">
+    <wsdl:part name="parameters" element="tns:updateTransaccionIDDResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertOptionHttpGetIn">
+    <wsdl:part name="xdocInsert" type="s:string" />
+    <wsdl:part name="NomUser" type="s:string" />
+    <wsdl:part name="Estado" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="fProceso" type="s:string" />
+    <wsdl:part name="_Turing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertOptionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaContratoHttpGetIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaContratoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOptionHttpGetIn">
+    <wsdl:part name="xdocInsert" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOptionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagValuatorHttpGetIn" />
+  <wsdl:message name="UpdateFlagValuatorHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getTransactionIDDHttpGetIn">
+    <wsdl:part name="Aplicacion" type="s:string" />
+    <wsdl:part name="modulo" type="s:string" />
+    <wsdl:part name="numOp" type="s:string" />
+    <wsdl:part name="numDoc" type="s:string" />
+    <wsdl:part name="correlativo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getTransactionIDDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="updateTransaccionIDDHttpGetIn">
+    <wsdl:part name="statusIDD" type="s:string" />
+    <wsdl:part name="Aplicacion" type="s:string" />
+    <wsdl:part name="modulo" type="s:string" />
+    <wsdl:part name="numOp" type="s:string" />
+    <wsdl:part name="numDoc" type="s:string" />
+    <wsdl:part name="correlativo" type="s:string" />
+    <wsdl:part name="mensajeIDD" type="s:string" />
+    <wsdl:part name="numeroIDD" type="s:string" />
+    <wsdl:part name="controlLinea" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="updateTransaccionIDDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertOptionHttpPostIn">
+    <wsdl:part name="xdocInsert" type="s:string" />
+    <wsdl:part name="NomUser" type="s:string" />
+    <wsdl:part name="Estado" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="fProceso" type="s:string" />
+    <wsdl:part name="_Turing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertOptionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaContratoHttpPostIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecuperaContratoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOptionHttpPostIn">
+    <wsdl:part name="xdocInsert" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOptionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagValuatorHttpPostIn" />
+  <wsdl:message name="UpdateFlagValuatorHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getTransactionIDDHttpPostIn">
+    <wsdl:part name="Aplicacion" type="s:string" />
+    <wsdl:part name="modulo" type="s:string" />
+    <wsdl:part name="numOp" type="s:string" />
+    <wsdl:part name="numDoc" type="s:string" />
+    <wsdl:part name="correlativo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getTransactionIDDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="updateTransaccionIDDHttpPostIn">
+    <wsdl:part name="statusIDD" type="s:string" />
+    <wsdl:part name="Aplicacion" type="s:string" />
+    <wsdl:part name="modulo" type="s:string" />
+    <wsdl:part name="numOp" type="s:string" />
+    <wsdl:part name="numDoc" type="s:string" />
+    <wsdl:part name="correlativo" type="s:string" />
+    <wsdl:part name="mensajeIDD" type="s:string" />
+    <wsdl:part name="numeroIDD" type="s:string" />
+    <wsdl:part name="controlLinea" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="updateTransaccionIDDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="BDOpcionesSoap">
+    <wsdl:operation name="InsertOption">
+      <wsdl:input message="tns:InsertOptionSoapIn" />
+      <wsdl:output message="tns:InsertOptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaContrato">
+      <wsdl:input message="tns:RecuperaContratoSoapIn" />
+      <wsdl:output message="tns:RecuperaContratoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOption">
+      <wsdl:input message="tns:UpdateOptionSoapIn" />
+      <wsdl:output message="tns:UpdateOptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagValuator">
+      <wsdl:input message="tns:UpdateFlagValuatorSoapIn" />
+      <wsdl:output message="tns:UpdateFlagValuatorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTransactionIDD">
+      <wsdl:input message="tns:getTransactionIDDSoapIn" />
+      <wsdl:output message="tns:getTransactionIDDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTransaccionIDD">
+      <wsdl:input message="tns:updateTransaccionIDDSoapIn" />
+      <wsdl:output message="tns:updateTransaccionIDDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="BDOpcionesHttpGet">
+    <wsdl:operation name="InsertOption">
+      <wsdl:input message="tns:InsertOptionHttpGetIn" />
+      <wsdl:output message="tns:InsertOptionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaContrato">
+      <wsdl:input message="tns:RecuperaContratoHttpGetIn" />
+      <wsdl:output message="tns:RecuperaContratoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOption">
+      <wsdl:input message="tns:UpdateOptionHttpGetIn" />
+      <wsdl:output message="tns:UpdateOptionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagValuator">
+      <wsdl:input message="tns:UpdateFlagValuatorHttpGetIn" />
+      <wsdl:output message="tns:UpdateFlagValuatorHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTransactionIDD">
+      <wsdl:input message="tns:getTransactionIDDHttpGetIn" />
+      <wsdl:output message="tns:getTransactionIDDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTransaccionIDD">
+      <wsdl:input message="tns:updateTransaccionIDDHttpGetIn" />
+      <wsdl:output message="tns:updateTransaccionIDDHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="BDOpcionesHttpPost">
+    <wsdl:operation name="InsertOption">
+      <wsdl:input message="tns:InsertOptionHttpPostIn" />
+      <wsdl:output message="tns:InsertOptionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaContrato">
+      <wsdl:input message="tns:RecuperaContratoHttpPostIn" />
+      <wsdl:output message="tns:RecuperaContratoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOption">
+      <wsdl:input message="tns:UpdateOptionHttpPostIn" />
+      <wsdl:output message="tns:UpdateOptionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagValuator">
+      <wsdl:input message="tns:UpdateFlagValuatorHttpPostIn" />
+      <wsdl:output message="tns:UpdateFlagValuatorHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTransactionIDD">
+      <wsdl:input message="tns:getTransactionIDDHttpPostIn" />
+      <wsdl:output message="tns:getTransactionIDDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTransaccionIDD">
+      <wsdl:input message="tns:updateTransaccionIDDHttpPostIn" />
+      <wsdl:output message="tns:updateTransaccionIDDHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BDOpcionesSoap" type="tns:BDOpcionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertOption">
+      <soap:operation soapAction="http://tempuri.org/InsertOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaContrato">
+      <soap:operation soapAction="http://tempuri.org/RecuperaContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOption">
+      <soap:operation soapAction="http://tempuri.org/UpdateOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagValuator">
+      <soap:operation soapAction="http://tempuri.org/UpdateFlagValuator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTransactionIDD">
+      <soap:operation soapAction="http://tempuri.org/getTransactionIDD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTransaccionIDD">
+      <soap:operation soapAction="http://tempuri.org/updateTransaccionIDD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BDOpcionesSoap12" type="tns:BDOpcionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertOption">
+      <soap12:operation soapAction="http://tempuri.org/InsertOption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaContrato">
+      <soap12:operation soapAction="http://tempuri.org/RecuperaContrato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOption">
+      <soap12:operation soapAction="http://tempuri.org/UpdateOption" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagValuator">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFlagValuator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTransactionIDD">
+      <soap12:operation soapAction="http://tempuri.org/getTransactionIDD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTransaccionIDD">
+      <soap12:operation soapAction="http://tempuri.org/updateTransaccionIDD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BDOpcionesHttpGet" type="tns:BDOpcionesHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="InsertOption">
+      <http:operation location="/InsertOption" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaContrato">
+      <http:operation location="/RecuperaContrato" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOption">
+      <http:operation location="/UpdateOption" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagValuator">
+      <http:operation location="/UpdateFlagValuator" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTransactionIDD">
+      <http:operation location="/getTransactionIDD" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTransaccionIDD">
+      <http:operation location="/updateTransaccionIDD" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BDOpcionesHttpPost" type="tns:BDOpcionesHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="InsertOption">
+      <http:operation location="/InsertOption" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecuperaContrato">
+      <http:operation location="/RecuperaContrato" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOption">
+      <http:operation location="/UpdateOption" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagValuator">
+      <http:operation location="/UpdateFlagValuator" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTransactionIDD">
+      <http:operation location="/getTransactionIDD" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTransaccionIDD">
+      <http:operation location="/updateTransaccionIDD" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BDOpciones">
+    <wsdl:port name="BDOpcionesSoap" binding="tns:BDOpcionesSoap">
+      <soap:address location="http://saotest.corpbanca.cl/WebService/OpcionesFX/BDOpciones/BDOpciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BDOpcionesSoap12" binding="tns:BDOpcionesSoap12">
+      <soap12:address location="http://saotest.corpbanca.cl/WebService/OpcionesFX/BDOpciones/BDOpciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BDOpcionesHttpGet" binding="tns:BDOpcionesHttpGet">
+      <http:address location="http://saotest.corpbanca.cl/WebService/OpcionesFX/BDOpciones/BDOpciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BDOpcionesHttpPost" binding="tns:BDOpcionesHttpPost">
+      <http:address location="http://saotest.corpbanca.cl/WebService/OpcionesFX/BDOpciones/BDOpciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

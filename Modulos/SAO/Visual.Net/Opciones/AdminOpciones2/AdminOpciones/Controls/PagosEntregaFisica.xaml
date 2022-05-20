@@ -1,0 +1,403 @@
+﻿<UserControl x:Class="AdminOpciones.Controls.PagosEntregaFisica"
+             xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"         
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"    
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:liquidPopup="clr-namespace:Liquid;assembly=Liquid.Popup"
+             mc:Ignorable="d"    
+             Height="423"
+             Width="923"
+             xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls">
+
+    <Border Width="923"
+            Height="420"
+            BorderThickness="2,2,2,2"
+            CornerRadius="0"
+            BorderBrush="#FF0A82C5">
+        <Grid x:Name="LayoutRoot"
+              Background="White"
+              Height="420"
+              Width="923">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.172*"/>
+                <ColumnDefinition Width="0.828*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="Auto"
+                               MinHeight="424"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="#FF0A82C5"
+                  VerticalAlignment="Top"
+                  Grid.Row="1"
+                  Height="148"
+                  Grid.ColumnSpan="2"
+                  RenderTransformOrigin="0.496,0.465">
+                <TextBlock Margin="8,36,0,0"
+                           Foreground="#FFFFFFFF"
+                           Text="Fecha Pago Desde"
+                           TextWrapping="Wrap"
+                           Width="132"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Height="17"/>
+                <TextBox x:Name="txtCliRut"
+                         Height="20"
+                         Text="0"
+                         HorizontalAlignment="Left"
+                         Margin="139,11,0,0"
+                         VerticalAlignment="Top"
+                         Width="111"
+                         TextWrapping="Wrap"
+                         d:LayoutOverrides="VerticalAlignment"
+                         MaxLength="8"/>
+                <TextBlock Margin="8,66,0,62"
+                           Foreground="#FFFFFFFF"
+                           TextWrapping="Wrap"
+                           Width="132"
+                           HorizontalAlignment="Left"
+                           Text="Fecha Pago Hasta"/>
+                <TextBlock Margin="8,11,0,0"
+                           Foreground="#FFFFFFFF"
+                           TextWrapping="Wrap"
+                           Width="132"
+                           HorizontalAlignment="Left"
+                           Text="Cliente"
+                           VerticalAlignment="Top"
+                           Height="20"/>
+                <basics:DatePicker x:Name="Dt_FechaDesde"
+                                   HorizontalAlignment="Left"
+                                   Width="111"
+                                   Height="25"
+                                   SelectedDateFormat="Short"
+                                   IsEnabled="True"
+                                   Margin="139,35,0,0"
+                                   d:LayoutOverrides="GridBox"
+                                   VerticalAlignment="Top" />
+                <basics:DatePicker x:Name="Dt_FechaHasta"
+                                   HorizontalAlignment="Left"
+                                   Width="111"
+                                   Height="25"
+                                   SelectedDateFormat="Short"
+                                   IsEnabled="True"
+                                   Margin="139,64,0,59"
+                                   d:LayoutOverrides="GridBox"/>
+                <TextBox x:Name="txtCliCod"
+                         Height="20"
+                         Text="0"
+                         HorizontalAlignment="Left"
+                         Margin="259,11,0,0"
+                         VerticalAlignment="Top"
+                         Width="20"
+                         TextWrapping="Wrap"
+                         MaxLength="8"/>
+                <TextBlock Margin="9,0,0,34"
+                           Foreground="#FFFFFFFF"
+                           TextWrapping="Wrap"
+                           Width="110"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"
+                           Height="20"
+                           Text="Vigente / Historico"/>
+                <ComboBox x:Name="Cmb_Estado"
+                          Height="21"
+                          HorizontalAlignment="Left"
+                          Margin="139,0,0,34"
+                          VerticalAlignment="Bottom"
+                          Width="100">
+                    <ComboBoxItem Content="Vigente"
+                                  IsSelected="True"/>
+                    <ComboBoxItem Content="Historico"/>
+                    <ComboBoxItem Content="Futuro"/>
+                </ComboBox>
+            </Grid>
+            
+            <Canvas Margin="31,80,0,142"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Width="420"
+                    HorizontalAlignment="Left">
+                <data:DataGrid x:Name="dgPersona"
+            		           AutoGenerateColumns="False"
+            		           CanUserResizeColumns="True"  
+                               KeyDown="dgPersona_KeyDown"           
+            		           Width="915"
+                               Height="265"
+                               Canvas.Left="-188" 
+                               Background="White"
+                               RowBackground="White"
+                               AlternatingRowBackground="White"
+                               Canvas.Top="69">
+                    <data:DataGrid.Columns>
+                        <data:DataGridCheckBoxColumn Header=""
+                                                     Binding="{Binding Path=VF, Mode=TwoWay}"
+                                                     IsThreeState="False"
+                                                     MaxWidth="1.7976931348623157E+308"
+                                                     IsReadOnly="False" />
+
+                        <!-- ID -->
+                        <data:DataGridTemplateColumn Header="ID"
+                                                     Width="Auto">
+                            <data:DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button FontSize="10" 
+                                            Width="Auto"
+                                            Height="Auto"
+                                            Click="buttonID_Click"
+                                            FontFamily="Arial" 
+                                            Content="{Binding Path=ID}" 
+                                            Tag="{Binding Path=ID}" 
+                                            Margin="4"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center" />
+                                </DataTemplate>
+                            </data:DataGridTemplateColumn.CellTemplate>
+                        </data:DataGridTemplateColumn>
+
+                        <data:DataGridTextColumn Header="Num.Contrato"
+                                                 Binding="{Binding Mode=TwoWay, Path=NumContrato}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Num.Estructura"
+                                                 Binding="{Binding Mode=TwoWay, Path=NumEstructura}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Fecha Pago"
+                                                 Binding="{Binding Mode=TwoWay, Path=FechaEjercicio}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Fecha de Contrato"
+                                                 Binding="{Binding Mode=TwoWay, Path=FechaContrato}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Rut"
+                                                 Binding="{Binding Mode=TwoWay, Path=CliRut}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Dv"
+                                                 Binding="{Binding Mode=TwoWay, Path=CliDv}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Cod"
+                                                 Binding="{Binding Mode=TwoWay, Path=CliCod}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Nombre Cliente"
+                                                 Binding="{Binding Mode=TwoWay, Path=CliNom}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Moneda Recibir"
+                                                 Binding="{Binding Mode=TwoWay, Path=MdaRecibirDsc}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Forma de Pago Recibir"
+                                                 Binding="{Binding Mode=TwoWay, Path=FormaPagorecibirDsc}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Monto Recibir"
+                                                 Binding="{Binding Mode=TwoWay, Path=MontoRecibir}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Moneda Pagar"
+                                                 Binding="{Binding Mode=TwoWay, Path=MdaPagarDsc}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Forma de Pago a Pagar
+                                                 " Binding="{Binding Mode=TwoWay, Path=FormaPagoPagarDsc}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Monto Pagar"
+                                                 Binding="{Binding Mode=TwoWay, Path=MontoPagar}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Temporalidad"
+                                                 Binding="{Binding Mode=TwoWay, Path=Temporalidad}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Mtm Implicito"
+                                                 Binding="{Binding Mode=TwoWay, Path=MTMImplicito}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Vcto. Valuta Recibir"
+                                                 Binding="{Binding Mode=TwoWay, Path=VctoValutaRecibir}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Vcto. Valuta Pagar"
+                                                 Binding="{Binding Mode=TwoWay, Path=VctoValutaPagar}"
+                                                 IsReadOnly="True" />
+                    </data:DataGrid.Columns>
+                </data:DataGrid>
+            </Canvas>
+            
+            <TextBox x:Name="TextBox1"
+                     Height="26"
+                     Margin="139,8,0,0"
+                     VerticalAlignment="Top"
+                     Width="50"
+                     HorizontalAlignment="Left" />
+            <TextBlock x:Name="Block1"
+                       Margin="17,86,48,141" />
+            
+            <Button x:Name="btn_cargar"
+                    Height="24"
+                    Margin="100,49,0,0"
+                    VerticalAlignment="Top"
+                    Content="Cargar Datos"
+                    Click="Buscar_Click"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Width="98"
+                    HorizontalAlignment="Left"/>
+            <Image x:Name="SelTodo"
+                   Source="../Images/checkedbox.png"
+                   VerticalAlignment="Top"
+                   Height="21.125"
+                   ToolTipService.ToolTip="Seleccionar Todo"
+                   Margin="63,121.337,70,0"
+                   MouseLeftButtonUp="selTodo_Click"
+                   Grid.Row="1"/>
+            <liquidPopup:Dialog x:Name="_pop"
+                                Width="262"
+                                Height="194"
+                                ExpandedWidth="250"
+                                Buttons="None"
+                                Title="Resultado"
+                                IsMinimizeEnabled="False"
+                                IsMaximizeEnabled="False"
+                                Grid.Row="1"
+                                d:LayoutOverrides="HorizontalAlignment"
+                                CloseCompleted="CloseCompleted"
+                                Margin="120,190,0,0"
+                                Grid.Column="1">
+                <data:DataGrid x:Name="_gridresu"
+                               AutoGenerateColumns="False"
+                               CanUserResizeColumns="True"
+                               Width="290"
+                               Height="290">
+                    <data:DataGrid.Columns>
+                        <data:DataGridTextColumn Header="Estado"
+                                                 Binding="{Binding Mode=TwoWay, Path=Estado}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Mensaje"
+                                                 Binding="{Binding Mode=TwoWay, Path=Mensaje}"
+                                                 IsReadOnly="True"/>
+                    </data:DataGrid.Columns>
+                </data:DataGrid>
+            </liquidPopup:Dialog>
+            
+            <Image x:Name="Imprimir_Copy"
+                   Source="../Images/fileprint.png"
+                   Height="21.125"
+                   ToolTipService.ToolTip="Imprimir"
+                   HorizontalAlignment="Left"
+                   Width="26"
+                   Margin="34,120.337,0,0"
+                   MouseLeftButtonUp="Imprimir_Click"
+                   VerticalAlignment="Top"
+                   Grid.Row="1"
+                   d:LayoutOverrides="Width"/>
+            <Image x:Name="ExpExcel"
+                   HorizontalAlignment="Left"
+                   Margin="7,121.337,0,0"
+                   Width="26"
+                   Source="../Images/spreadsheet.png"
+                   Height="21.125"
+                   ToolTipService.ToolTip="Exportar a Excel"
+                   MouseLeftButtonUp="ExpExcel_MouseLeftButtonUp"
+                   VerticalAlignment="Top"
+                   Grid.Row="1"/>
+
+            <liquidPopup:Dialog x:Name="_PopEntregaFisica"
+                                Width="370"
+                                Height="140"
+                                ExpandedWidth="250"
+                                Buttons="None"
+                                Title="Entrega Física"
+                                IsMinimizeEnabled="False"
+                                IsMaximizeEnabled="False"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                d:LayoutOverrides="HorizontalAlignment"
+                                Margin="120,100,0,0">
+                <Grid x:Name="compensacion">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="0" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0" />
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="25" />
+                        <ColumnDefinition Width="175" />
+                        <ColumnDefinition Width="15" />
+                        <ColumnDefinition Width="0" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Contrato"
+                               Grid.Row="2"
+                               Grid.Column="2" />
+                    <TextBox x:Name="_Contrato"
+                             IsReadOnly="True"
+                             Grid.Row="2"
+                             Grid.Column="3"
+                             Grid.ColumnSpan="2" />
+
+                    <TextBlock Text="Estructura"
+                               Grid.Row="3" 
+                               Grid.Column="2" />
+                    <TextBox x:Name="_Estructura"
+                             IsReadOnly="True"
+                             Grid.Row="3"
+                             Grid.Column="3"
+                             Grid.ColumnSpan="2" />
+
+                    <TextBlock x:Name="_FormaPagoRecibirLabel"
+                               Text="Forma Pago Recibir"
+                               Grid.Row="4"
+                               Grid.Column="2" />
+                    <ComboBox x:Name="_FormaPagoRecibir"
+                              Grid.Row="4"
+                              Grid.Column="3"
+                             Grid.ColumnSpan="2" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Width="241">
+                                    <TextBlock Text="{Binding Path=Descripcion}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <TextBlock x:Name="_FormaPagoPagarLabel"
+                               Text="Forma Pago Pagar"
+                               Grid.Row="5"
+                               Grid.Column="2" />
+                    <ComboBox x:Name="_FormaPagoPagar"
+                              Grid.Row="5"
+                              Grid.Column="3"
+                             Grid.ColumnSpan="2" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Width="241">
+                                    <TextBlock Text="{Binding Path=Descripcion}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <Button x:Name="btnAceptar"
+                            Content="Aceptar"
+                            Click="btnAceptar_Click"
+                            MouseEnter="btnAceptar_MouseEnter"
+                            Grid.Row="6"
+                            Grid.Column="2"
+                             Grid.ColumnSpan="2" />
+
+                    <Button x:Name="btnCencelar"
+                            Content="Cancelar"
+                            Click="btnCancelar_Click"
+                            Grid.Row="6"
+                            Grid.Column="4" />
+
+                </Grid>
+
+            </liquidPopup:Dialog>
+
+        </Grid>
+    </Border>
+</UserControl>

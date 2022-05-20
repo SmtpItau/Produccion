@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:Q1="http://itau.cl/xmlns/xsd/1" xmlns:tns="http://itau.cl/xmlns/common/xsd/1" targetNamespace="http://itau.cl/xmlns/common/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd22" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:complexType name="CredentialsRqHdr_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="SeqNum" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PartyRef" type="Q1:PartyRef_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SecTokenLogin" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SecTokenKey" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

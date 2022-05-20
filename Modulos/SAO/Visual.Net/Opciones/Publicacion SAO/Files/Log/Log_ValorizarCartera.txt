@@ -1,0 +1,248 @@
+﻿
+Entrando ValorizarCartera: 07-03-2013 17:20:25
+Entrando ForwardAmericano: 07-03-2013 17:20:25
+Saliendo ValorizarCartera: 07-03-2013 17:20:25
+Total Vanillas  : 00:00:00.0312500
+Total Asiáticas : 00:00:00
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 07-03-2013 17:20:46
+Entrando ForwardAmericano: 07-03-2013 17:20:46
+Saliendo ValorizarCartera: 07-03-2013 17:20:46
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:00:00
+Total Forward ES: 00:00:00.0312500
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 07-03-2013 17:21:12
+Entrando ForwardAmericano: 07-03-2013 17:21:12
+Saliendo ValorizarCartera: 07-03-2013 17:21:13
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:00:00
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:01.2812500
+
+Entrando ValorizarCartera: 07-03-2013 17:21:41
+Entrando ForwardAmericano: 07-03-2013 17:21:41
+Saliendo ValorizarCartera: 07-03-2013 17:21:41
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:00:00
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 07-03-2013 17:52:29
+Entrando ForwardAmericano: 07-03-2013 17:52:37
+Saliendo ValorizarCartera: 07-03-2013 17:52:41
+Total Vanillas  : 00:00:00.2968750
+Total Asiáticas : 00:00:06.2812500
+Total Forward ES: 00:00:00.1718750
+Total Americanos: 00:00:04.6250000
+
+Entrando ValorizarCartera: 07-03-2013 17:57:50
+Entrando ForwardAmericano: 07-03-2013 17:57:58
+Saliendo ValorizarCartera: 07-03-2013 17:58:03
+Total Vanillas  : 00:00:00.3281250
+Total Asiáticas : 00:00:06.9843750
+Total Forward ES: 00:00:00.1093750
+Total Americanos: 00:00:04.3281250
+
+Entrando ValorizarCartera: 07-03-2013 18:01:49
+Entrando ForwardAmericano: 07-03-2013 18:01:57
+Saliendo ValorizarCartera: 07-03-2013 18:02:01
+Total Vanillas  : 00:00:00.2500000
+Total Asiáticas : 00:00:06.1250000
+Total Forward ES: 00:00:00.0937500
+Total Americanos: 00:00:04.0937500
+
+Entrando ValorizarCartera: 07-03-2013 18:07:29
+Entrando ForwardAmericano: 07-03-2013 18:07:37
+Saliendo ValorizarCartera: 07-03-2013 18:07:41
+Total Vanillas  : 00:00:00.1718750
+Total Asiáticas : 00:00:06.3125000
+Total Forward ES: 00:00:00.0937500
+Total Americanos: 00:00:03.7031250
+
+Entrando ValorizarCartera: 07-03-2013 18:17:54
+Entrando ForwardAmericano: 07-03-2013 18:18:02
+Saliendo ValorizarCartera: 07-03-2013 18:18:06
+Total Vanillas  : 00:00:00.2968750
+Total Asiáticas : 00:00:07.1562500
+Total Forward ES: 00:00:00.0625000
+Total Americanos: 00:00:03.6562500
+
+Entrando ValorizarCartera: 07-03-2013 18:24:40
+Entrando ForwardAmericano: 07-03-2013 18:24:47
+Saliendo ValorizarCartera: 07-03-2013 18:24:51
+Total Vanillas  : 00:00:00.2812500
+Total Asiáticas : 00:00:06.3125000
+Total Forward ES: 00:00:00.0312500
+Total Americanos: 00:00:04.1718750
+
+Entrando ValorizarCartera: 07-03-2013 18:30:58
+Entrando ForwardAmericano: 07-03-2013 18:31:06
+Saliendo ValorizarCartera: 07-03-2013 18:31:10
+Total Vanillas  : 00:00:00.3281250
+Total Asiáticas : 00:00:06.3281250
+Total Forward ES: 00:00:00.1406250
+Total Americanos: 00:00:03.9531250
+
+Entrando ValorizarCartera: 07-03-2013 18:31:56
+Entrando ForwardAmericano: 07-03-2013 18:32:03
+Saliendo ValorizarCartera: 07-03-2013 18:32:08
+Total Vanillas  : 00:00:00.3281250
+Total Asiáticas : 00:00:06.2343750
+Total Forward ES: 00:00:00.1562500
+Total Americanos: 00:00:04.5625000
+
+Entrando ValorizarCartera: 08-03-2013 9:07:30
+Entrando ForwardAmericano: 08-03-2013 9:07:37
+Saliendo ValorizarCartera: 08-03-2013 9:07:40
+Total Vanillas  : 00:00:00.2187500
+Total Asiáticas : 00:00:05.3281250
+Total Forward ES: 00:00:00.0937500
+Total Americanos: 00:00:03.2656250
+
+Entrando ValorizarCartera: 08-03-2013 13:04:41
+Entrando ForwardAmericano: 08-03-2013 13:04:47
+Saliendo ValorizarCartera: 08-03-2013 13:04:51
+Total Vanillas  : 00:00:00.2187500
+Total Asiáticas : 00:00:05.0625000
+Total Forward ES: 00:00:00.0937500
+Total Americanos: 00:00:04.2500000
+
+Entrando ValorizarCartera: 08-03-2013 13:05:08
+Entrando ForwardAmericano: 08-03-2013 13:05:13
+Saliendo ValorizarCartera: 08-03-2013 13:05:16
+Total Vanillas  : 00:00:00.2031250
+Total Asiáticas : 00:00:04.7968750
+Total Forward ES: 00:00:00.0468750
+Total Americanos: 00:00:02.9375000
+
+Entrando ValorizarCartera: 08-03-2013 16:38:31
+Entrando ForwardAmericano: 08-03-2013 16:38:42
+Saliendo ValorizarCartera: 08-03-2013 16:38:53
+Total Vanillas  : 00:00:00.2220222
+Total Asiáticas : 00:00:06.2456245
+Total Forward ES: 00:00:03.8303830
+Total Americanos: 00:00:09.2159215
+
+Entrando ValorizarCartera: 08-03-2013 16:41:04
+Entrando ForwardAmericano: 08-03-2013 16:41:11
+Saliendo ValorizarCartera: 08-03-2013 16:41:18
+Total Vanillas  : 00:00:00.2020202
+Total Asiáticas : 00:00:05.8945894
+Total Forward ES: 00:00:00.1440144
+Total Americanos: 00:00:06.7386738
+
+Entrando ValorizarCartera: 08-03-2013 16:43:53
+Entrando ForwardAmericano: 08-03-2013 16:44:00
+Saliendo ValorizarCartera: 08-03-2013 16:44:07
+Total Vanillas  : 00:00:00.2280228
+Total Asiáticas : 00:00:05.7275727
+Total Forward ES: 00:00:00.0690069
+Total Americanos: 00:00:06.7556755
+
+Entrando ValorizarCartera: 08-03-2013 16:49:08
+Entrando ForwardAmericano: 08-03-2013 16:49:15
+Saliendo ValorizarCartera: 08-03-2013 16:49:23
+Total Vanillas  : 00:00:00.1880188
+Total Asiáticas : 00:00:06.3116311
+Total Forward ES: 00:00:00.1180118
+Total Americanos: 00:00:07.5057505
+
+Entrando ValorizarCartera: 08-03-2013 18:44:06
+Entrando ForwardAmericano: 08-03-2013 18:44:13
+Saliendo ValorizarCartera: 08-03-2013 18:44:22
+Total Vanillas  : 00:00:00.2300230
+Total Asiáticas : 00:00:05.3315331
+Total Forward ES: 00:00:00.0610061
+Total Americanos: 00:00:08.9518951
+
+Entrando ValorizarCartera: 08-03-2013 19:01:47
+Entrando ForwardAmericano: 08-03-2013 19:01:53
+Saliendo ValorizarCartera: 08-03-2013 19:02:01
+Total Vanillas  : 00:00:00.2070000
+Total Asiáticas : 00:00:05.6300000
+Total Forward ES: 00:00:00.1000000
+Total Americanos: 00:00:07.0910000
+
+Entrando ValorizarCartera: 08-03-2013 19:06:10
+Entrando ForwardAmericano: 08-03-2013 19:06:16
+Saliendo ValorizarCartera: 08-03-2013 19:06:23
+Total Vanillas  : 00:00:00.2150000
+Total Asiáticas : 00:00:05.7120000
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:06.5090000
+
+Entrando ValorizarCartera: 08-03-2013 19:14:48
+Entrando ForwardAmericano: 08-03-2013 19:14:55
+Saliendo ValorizarCartera: 08-03-2013 19:15:03
+Total Vanillas  : 00:00:00.2520252
+Total Asiáticas : 00:00:06.0016001
+Total Forward ES: 00:00:00.0790079
+Total Americanos: 00:00:07.6717671
+
+Entrando ValorizarCartera: 03-04-2013 17:09:46
+Entrando ForwardAmericano: 03-04-2013 17:09:57
+Saliendo ValorizarCartera: 03-04-2013 17:10:22
+Total Vanillas  : 00:00:00.0140000
+Total Asiáticas : 00:00:10.7140000
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:25.0510000
+
+Entrando ValorizarCartera: 30-04-2013 19:01:24
+
+Entrando ValorizarCartera: 30-04-2013 19:20:19
+Entrando ForwardAmericano: 30-04-2013 19:29:46
+Saliendo ValorizarCartera: 30-04-2013 19:29:46
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:02:41.4661450
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 30-04-2013 19:30:12
+Entrando ForwardAmericano: 30-04-2013 19:30:15
+Saliendo ValorizarCartera: 30-04-2013 19:30:15
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:00:00.8490849
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 30-04-2013 19:31:04
+Entrando ForwardAmericano: 30-04-2013 19:31:48
+Saliendo ValorizarCartera: 30-04-2013 19:31:48
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:00:04.7904790
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 30-04-2013 19:32:31
+Entrando ForwardAmericano: 30-04-2013 19:48:17
+Saliendo ValorizarCartera: 30-04-2013 19:48:17
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:15:35.8585859
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 30-04-2013 19:55:05
+LOG: System.Collections.Generic.List`1[AdminOpcionesTool.Opciones.Struct.StructDetContrato]
+
+System.Collections.Generic.List`1[AdminOpcionesTool.Opciones.Struct.StructFixingDataContrato]
+Entrando ForwardAmericano: 30-04-2013 19:55:18
+Saliendo ValorizarCartera: 30-04-2013 19:55:18
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:00:03.3183318
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00
+
+Entrando ValorizarCartera: 30-04-2013 20:07:49
+LOG: System.Collections.Generic.List`1[AdminOpcionesTool.Opciones.Struct.StructDetContrato]
+
+System.Collections.Generic.List`1[AdminOpcionesTool.Opciones.Struct.StructFixingDataContrato]
+Entrando ForwardAmericano: 30-04-2013 20:07:58
+Saliendo ValorizarCartera: 30-04-2013 20:07:58
+Total Vanillas  : 00:00:00
+Total Asiáticas : 00:00:02.8962896
+Total Forward ES: 00:00:00
+Total Americanos: 00:00:00

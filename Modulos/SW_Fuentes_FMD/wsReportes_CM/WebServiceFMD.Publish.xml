@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\25739\3.- Certificacion\Fuentes\V.Net\FMD\Publicacion" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Default Web Site/fmdsfmcdesa" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Templates/STK/Template_SWAP.xlsx" publishTime="04/22/2016 10:48:27" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_RF_PACTOS_INGRESOS.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CASA_MATRIZ_OTROS_DER_FWD.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Upload/RCM/upload_dce.txt" publishTime="04/22/2016 10:48:27" />
+    <file relUrl="Templates/RCM/Template_OPTIONS.xlsx" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/Template_CCS.xlsx" publishTime="04/22/2016 10:48:27" />
+    <file relUrl="Templates/RCM/OPTIONS_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/RCM/DCE_ALL_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/STK_SWAP_TEMPLATE.xml" publishTime="04/22/2016 10:48:27" />
+    <file relUrl="Templates/RCM/Template_FRA.xlsx" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_RF_769TVM.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/RCM/NDF_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CARTERA_VIGENTE_FWD.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/STK_CCS_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_RF_PACTOS_VENCIMIENTOS.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="bin/CoreBusinessObjects.dll" publishTime="05/25/2016 12:45:17" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CVF_OPC.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_PASIVOS_34A_1.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Download/download_files.txt" publishTime="04/22/2016 10:48:22" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CARTERA_VIGENTE_NY.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_ITAU_SWAP_DIGITAL_NY.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/RCM/SWAP_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_TEMPLATE_SPOT.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/RCM/FRA_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_RF_PACTOS_MENSUAL.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_BASILEA_DERIVADOS_NY.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_BASILEA_DERIVADOS.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CARTERA_VIGENTE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/STK_OPTIONS_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ODS/ODS_PRODUCTOS.xml" publishTime="03/24/2016 13:07:15" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_BASILEA_SWAP_NY.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="bin/EPPlus.xml" publishTime="04/22/2016 10:48:21" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CARTERA_FWD_ARB.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/STK_FRA_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_PASIVOS_34A_2.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_PASIVOS_CAPTACION_DIARIA.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="bin/WebServiceFMD.dll" publishTime="05/25/2016 12:45:18" />
+    <file relUrl="bin/EPPlus.dll" publishTime="04/22/2016 10:48:21" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_PASIVOS_PAGOS.xml" publishTime="04/12/2016 11:29:39" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_ITAU_OTROS_DER_DIGITAL.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CASA_MATRIZ_OTROS_DER_OPC.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_ITAU_SWAP_DIGITAL.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CARTERA_VIGENTE_OPC.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/RCM/Template_SWAP.xlsx" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_BASILEA_SWAP.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/Template_FRA.xlsx" publishTime="04/22/2016 10:48:27" />
+    <file relUrl="Templates/RCM/Template_CCS.xlsx" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="wsReportServices.asmx" publishTime="04/22/2016 10:48:22" />
+    <file relUrl="web.config" publishTime="05/25/2016 12:47:57" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_RF_769BSL.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/RCM/CCS_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Log/log_files.txt" publishTime="04/22/2016 10:48:22" />
+    <file relUrl="Templates/STK/Template_OPTIONS.xlsx" publishTime="04/22/2016 10:48:27" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_ITAU_OTROS_DER_DIGITAL_OPC.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CVF_FORWARD.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/RCM/Template_NDF.xlsx" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_CARTERA_VIGENTE_FWD_COMDER.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="bin/CoreLib.dll" publishTime="05/25/2016 12:45:16" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_PASIVOS_OBLIGACIONES.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/STK_NDF_TEMPLATE.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/ADM/ADM_REPORTE_PASIVOS_CAPTACION_MENSUAL.xml" publishTime="04/22/2016 10:48:26" />
+    <file relUrl="Templates/STK/Template_NDF.xlsx" publishTime="04/22/2016 10:48:27" />
+  </publishProfile>
+</publishData>

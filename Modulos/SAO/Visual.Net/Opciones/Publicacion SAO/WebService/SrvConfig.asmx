@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="SrvConfig.asmx.cs" Class="AdminOpciones.Web.WebService.SrvConfig" %>

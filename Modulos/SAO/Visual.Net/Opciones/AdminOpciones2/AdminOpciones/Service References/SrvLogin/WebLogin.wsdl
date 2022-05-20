@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PermisosMenu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PermisosMenuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PermisosMenuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidaPasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebBloqueaUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebBloqueaUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebBloqueaUsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebEncript">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebEncriptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebEncriptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebDesencrypt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebDesencryptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebDesencryptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebCambioClave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="repPassword" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DateProcces" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebCambioClaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebCambioClaveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FecProcHabilProx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DateProcces" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FecProcHabilProxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FecProcHabilProxResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PermisosMenuSoapIn">
+    <wsdl:part name="parameters" element="tns:PermisosMenu" />
+  </wsdl:message>
+  <wsdl:message name="PermisosMenuSoapOut">
+    <wsdl:part name="parameters" element="tns:PermisosMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidaPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaPassword" />
+  </wsdl:message>
+  <wsdl:message name="ValidaPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebBloqueaUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:WebBloqueaUsuario" />
+  </wsdl:message>
+  <wsdl:message name="WebBloqueaUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:WebBloqueaUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebEncriptSoapIn">
+    <wsdl:part name="parameters" element="tns:WebEncript" />
+  </wsdl:message>
+  <wsdl:message name="WebEncriptSoapOut">
+    <wsdl:part name="parameters" element="tns:WebEncriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebDesencryptSoapIn">
+    <wsdl:part name="parameters" element="tns:WebDesencrypt" />
+  </wsdl:message>
+  <wsdl:message name="WebDesencryptSoapOut">
+    <wsdl:part name="parameters" element="tns:WebDesencryptResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebCambioClaveSoapIn">
+    <wsdl:part name="parameters" element="tns:WebCambioClave" />
+  </wsdl:message>
+  <wsdl:message name="WebCambioClaveSoapOut">
+    <wsdl:part name="parameters" element="tns:WebCambioClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="FecProcHabilProxSoapIn">
+    <wsdl:part name="parameters" element="tns:FecProcHabilProx" />
+  </wsdl:message>
+  <wsdl:message name="FecProcHabilProxSoapOut">
+    <wsdl:part name="parameters" element="tns:FecProcHabilProxResponse" />
+  </wsdl:message>
+  <wsdl:message name="PermisosMenuHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PermisosMenuHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaPasswordHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaPasswordHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebBloqueaUsuarioHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebBloqueaUsuarioHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebEncriptHttpGetIn">
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebEncriptHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebDesencryptHttpGetIn">
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebDesencryptHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebCambioClaveHttpGetIn">
+    <wsdl:part name="userName" type="s:string" />
+    <wsdl:part name="currentPassword" type="s:string" />
+    <wsdl:part name="newPassword" type="s:string" />
+    <wsdl:part name="repPassword" type="s:string" />
+    <wsdl:part name="DateProcces" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebCambioClaveHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FecProcHabilProxHttpGetIn">
+    <wsdl:part name="DateProcces" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FecProcHabilProxHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PermisosMenuHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PermisosMenuHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaPasswordHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaPasswordHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebBloqueaUsuarioHttpPostIn">
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebBloqueaUsuarioHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebEncriptHttpPostIn">
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebEncriptHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebDesencryptHttpPostIn">
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebDesencryptHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="WebCambioClaveHttpPostIn">
+    <wsdl:part name="userName" type="s:string" />
+    <wsdl:part name="currentPassword" type="s:string" />
+    <wsdl:part name="newPassword" type="s:string" />
+    <wsdl:part name="repPassword" type="s:string" />
+    <wsdl:part name="DateProcces" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WebCambioClaveHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FecProcHabilProxHttpPostIn">
+    <wsdl:part name="DateProcces" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FecProcHabilProxHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebLoginSoap">
+    <wsdl:operation name="PermisosMenu">
+      <wsdl:input message="tns:PermisosMenuSoapIn" />
+      <wsdl:output message="tns:PermisosMenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaPassword">
+      <wsdl:input message="tns:ValidaPasswordSoapIn" />
+      <wsdl:output message="tns:ValidaPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebBloqueaUsuario">
+      <wsdl:input message="tns:WebBloqueaUsuarioSoapIn" />
+      <wsdl:output message="tns:WebBloqueaUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebEncript">
+      <wsdl:input message="tns:WebEncriptSoapIn" />
+      <wsdl:output message="tns:WebEncriptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebDesencrypt">
+      <wsdl:input message="tns:WebDesencryptSoapIn" />
+      <wsdl:output message="tns:WebDesencryptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebCambioClave">
+      <wsdl:input message="tns:WebCambioClaveSoapIn" />
+      <wsdl:output message="tns:WebCambioClaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FecProcHabilProx">
+      <wsdl:input message="tns:FecProcHabilProxSoapIn" />
+      <wsdl:output message="tns:FecProcHabilProxSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebLoginHttpGet">
+    <wsdl:operation name="PermisosMenu">
+      <wsdl:input message="tns:PermisosMenuHttpGetIn" />
+      <wsdl:output message="tns:PermisosMenuHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaPassword">
+      <wsdl:input message="tns:ValidaPasswordHttpGetIn" />
+      <wsdl:output message="tns:ValidaPasswordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebBloqueaUsuario">
+      <wsdl:input message="tns:WebBloqueaUsuarioHttpGetIn" />
+      <wsdl:output message="tns:WebBloqueaUsuarioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebEncript">
+      <wsdl:input message="tns:WebEncriptHttpGetIn" />
+      <wsdl:output message="tns:WebEncriptHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebDesencrypt">
+      <wsdl:input message="tns:WebDesencryptHttpGetIn" />
+      <wsdl:output message="tns:WebDesencryptHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebCambioClave">
+      <wsdl:input message="tns:WebCambioClaveHttpGetIn" />
+      <wsdl:output message="tns:WebCambioClaveHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FecProcHabilProx">
+      <wsdl:input message="tns:FecProcHabilProxHttpGetIn" />
+      <wsdl:output message="tns:FecProcHabilProxHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebLoginHttpPost">
+    <wsdl:operation name="PermisosMenu">
+      <wsdl:input message="tns:PermisosMenuHttpPostIn" />
+      <wsdl:output message="tns:PermisosMenuHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaPassword">
+      <wsdl:input message="tns:ValidaPasswordHttpPostIn" />
+      <wsdl:output message="tns:ValidaPasswordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebBloqueaUsuario">
+      <wsdl:input message="tns:WebBloqueaUsuarioHttpPostIn" />
+      <wsdl:output message="tns:WebBloqueaUsuarioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebEncript">
+      <wsdl:input message="tns:WebEncriptHttpPostIn" />
+      <wsdl:output message="tns:WebEncriptHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebDesencrypt">
+      <wsdl:input message="tns:WebDesencryptHttpPostIn" />
+      <wsdl:output message="tns:WebDesencryptHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebCambioClave">
+      <wsdl:input message="tns:WebCambioClaveHttpPostIn" />
+      <wsdl:output message="tns:WebCambioClaveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FecProcHabilProx">
+      <wsdl:input message="tns:FecProcHabilProxHttpPostIn" />
+      <wsdl:output message="tns:FecProcHabilProxHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebLoginSoap" type="tns:WebLoginSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PermisosMenu">
+      <soap:operation soapAction="http://tempuri.org/PermisosMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaPassword">
+      <soap:operation soapAction="http://tempuri.org/ValidaPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebBloqueaUsuario">
+      <soap:operation soapAction="http://tempuri.org/WebBloqueaUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebEncript">
+      <soap:operation soapAction="http://tempuri.org/WebEncript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebDesencrypt">
+      <soap:operation soapAction="http://tempuri.org/WebDesencrypt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebCambioClave">
+      <soap:operation soapAction="http://tempuri.org/WebCambioClave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FecProcHabilProx">
+      <soap:operation soapAction="http://tempuri.org/FecProcHabilProx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebLoginSoap12" type="tns:WebLoginSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PermisosMenu">
+      <soap12:operation soapAction="http://tempuri.org/PermisosMenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaPassword">
+      <soap12:operation soapAction="http://tempuri.org/ValidaPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebBloqueaUsuario">
+      <soap12:operation soapAction="http://tempuri.org/WebBloqueaUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebEncript">
+      <soap12:operation soapAction="http://tempuri.org/WebEncript" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebDesencrypt">
+      <soap12:operation soapAction="http://tempuri.org/WebDesencrypt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebCambioClave">
+      <soap12:operation soapAction="http://tempuri.org/WebCambioClave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FecProcHabilProx">
+      <soap12:operation soapAction="http://tempuri.org/FecProcHabilProx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebLoginHttpGet" type="tns:WebLoginHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="PermisosMenu">
+      <http:operation location="/PermisosMenu" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaPassword">
+      <http:operation location="/ValidaPassword" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebBloqueaUsuario">
+      <http:operation location="/WebBloqueaUsuario" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebEncript">
+      <http:operation location="/WebEncript" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebDesencrypt">
+      <http:operation location="/WebDesencrypt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebCambioClave">
+      <http:operation location="/WebCambioClave" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FecProcHabilProx">
+      <http:operation location="/FecProcHabilProx" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebLoginHttpPost" type="tns:WebLoginHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="PermisosMenu">
+      <http:operation location="/PermisosMenu" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaPassword">
+      <http:operation location="/ValidaPassword" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebBloqueaUsuario">
+      <http:operation location="/WebBloqueaUsuario" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebEncript">
+      <http:operation location="/WebEncript" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebDesencrypt">
+      <http:operation location="/WebDesencrypt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebCambioClave">
+      <http:operation location="/WebCambioClave" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FecProcHabilProx">
+      <http:operation location="/FecProcHabilProx" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebLogin">
+    <wsdl:port name="WebLoginSoap" binding="tns:WebLoginSoap">
+      <soap:address location="http://localhost:4084/WebService/WebLogin.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebLoginSoap12" binding="tns:WebLoginSoap12">
+      <soap12:address location="http://localhost:4084/WebService/WebLogin.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebLoginHttpGet" binding="tns:WebLoginHttpGet">
+      <http:address location="http://localhost:4084/WebService/WebLogin.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebLoginHttpPost" binding="tns:WebLoginHttpPost">
+      <http:address location="http://localhost:4084/WebService/WebLogin.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21CCE710-5BFC-44FD-9965-740B81DF71FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdminOpciones.Web</RootNamespace>
+    <AssemblyName>AdminOpciones.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{EBEB155D-E48B-4088-9324-1CB93BE4AA22}|..\AdminOpciones\AdminOpciones.csproj|ClientBin|False</SilverlightApplicationList>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\AdminOpciones.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\AdminOpciones.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\AdminOpciones.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\AdminOpciones.Web.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BytesRoad.Net.Ftp">
+      <HintPath>..\DLL\BytesRoad.Net.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="BytesRoad.Net.Sockets">
+      <HintPath>..\DLL\BytesRoad.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Liquid.Menu, Version=5.2.0.26379, Culture=neutral, PublicKeyToken=7fbdd25c3fcc3919, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Liquid.Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Services.Client">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Silverlight, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminOpciones.html" />
+    <Content Include="ClientBin\AdminOpciones.xap" />
+    <Content Include="Default.aspx" />
+    <Content Include="ExportaExcel\Exporta.aspx" />
+    <Content Include="ExportaTexto\ExportaTxt.aspx" />
+    <Content Include="Files\BACK_TESTING_ENGINE-0-TRADING_ENGINE-0.txt" />
+    <Content Include="Files\BACK_TESTING_ENGINE-1-TRADING_ENGINE-1.txt" />
+    <Content Include="Files\BACK_TESTING_ENGINE_MASTER_FILE.txt" />
+    <Content Include="Files\BOOTSTRAPPING_ENGINE_MASTER_FILE.txt" />
+    <Content Include="Files\bteng.txt" />
+    <Content Include="Files\CALIBRATION_ENGINE-0-MOMENT_CALCULATOR-PERSISTENCE-1.txt" />
+    <Content Include="Files\CALIBRATION_ENGINE-1-MOMENT_CALCULATOR-PERSISTENCE-1.txt" />
+    <Content Include="Files\CALIBRATION_ENGINE-2-MOMENT_CALCULATOR-PERSISTENCE-1.txt" />
+    <Content Include="Files\CALIBRATION_ENGINE-3-MOMENT_CALCULATOR-PERSISTENCE-1.txt" />
+    <Content Include="Files\CALIBRATION_ENGINE-4-MOMENT_CALCULATOR-PERSISTENCE-1.txt" />
+    <Content Include="Files\CALIBRATION_ENGINE-5-MOMENT_CALCULATOR-PERSISTENCE-1.txt" />
+    <Content Include="Files\ceng.txt" />
+    <Content Include="Files\CHURCH.txt" />
+    <Content Include="Files\cur.txt" />
+    <Content Include="Files\ECONOMY_MASTER_FILE.txt" />
+    <Content Include="Files\ENGINE_BOARD.txt" />
+    <Content Include="Files\INFORMATION_BOARD.txt" />
+    <Content Include="Files\Jacques.dll" />
+    <Content Include="Files\Jacques.pdb" />
+    <Content Include="Files\Log\Log_Valoriza.txt" />
+    <Content Include="Files\Log\Log_ValorizarCartera.txt" />
+    <Content Include="Files\Log\Log_Vanilla.txt" />
+    <Content Include="Files\MARKET-0-USD_CLP.txt" />
+    <Content Include="Files\MARKET-1-CURVE_CAMARA_CLP.txt" />
+    <Content Include="Files\MARKET-2-CURVE_USD_LOCAL_USD.txt" />
+    <Content Include="Files\MARKET-3-VOL_FX_USD_CLP_CLP.txt" />
+    <Content Include="Files\MARKET-4-CURVE_SWAP_EUR_EUR.txt" />
+    <Content Include="Files\MARKET-5-CURVE_SWAP_EUR_LOCAL_EUR.txt" />
+    <Content Include="Files\MARKET-6-CURVE_SWAP_TAB_UF_UF.txt" />
+    <Content Include="Files\MARKET-7-CURVE_SWAP_UF_CLP.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-0-DATATEC.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-1-CORPBANCA.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-1-DATATEC.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-2-CORPBANCA.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-3-STANDARD_CHARTERED.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-4-CORPBANCA.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-5-CORPBANCA.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-6-CORPBANCA.txt" />
+    <Content Include="Files\MARKET_MAKER-MARKET-7-CORPBANCA.txt" />
+    <Content Include="Files\MARKET_MASTER_FILE.txt" />
+    <Content Include="Files\mdl.txt" />
+    <Content Include="Files\mkt.txt" />
+    <Content Include="Files\mmker.txt" />
+    <Content Include="Files\MODEL-0-BLACK_SCHOLES.txt" />
+    <Content Include="Files\MODEL-1-HULL_WHITE_SINGLE_CURRENCY.txt" />
+    <Content Include="Files\MODEL-2-HULL_WHITE_SINGLE_CURRENCY.txt" />
+    <Content Include="Files\MODEL-3-HULL_WHITE_CROSS_CURRENCY.txt" />
+    <Content Include="Files\MODEL-4-LOCAL_VOLATILITY.txt" />
+    <Content Include="Files\MODEL-5-BLACK_SCHOLES.txt" />
+    <Content Include="Files\MODEL_MASTER_FILE.txt" />
+    <Content Include="Files\NEWS_WIRE-0_0_0.txt" />
+    <Content Include="Files\NEWS_WIRE-1_0_0.txt" />
+    <Content Include="Files\NEWS_WIRE-2_0_0.txt" />
+    <Content Include="Files\NEWS_WIRE-3_0_0.txt" />
+    <Content Include="Files\nw.txt" />
+    <Content Include="Files\obs.txt" />
+    <Content Include="Files\OBSERVABLE-0-FX-CLP_USD.txt" />
+    <Content Include="Files\OBSERVABLE-0-FX-NULL_NULL.txt" />
+    <Content Include="Files\OBSERVABLE-1-ZERO_COUPON-CURVE_CAMARA.txt" />
+    <Content Include="Files\OBSERVABLE-2-MMA-QUOTE-0.txt" />
+    <Content Include="Files\OBSERVABLE-3-ZERO_COUPON-CURVE_USD_LOCAL.txt" />
+    <Content Include="Files\pdct.txt" />
+    <Content Include="Files\peng.txt" />
+    <Content Include="Files\PRICING_ENGINE-0-MODEL-0-FORMULA-BS_VANILLA.txt" />
+    <Content Include="Files\PRICING_ENGINE-1-MODEL-0-FORMULA-BS_FORWARD.txt" />
+    <Content Include="Files\PRICING_ENGINE-10-MODEL-3-MONTE_CARLO.txt" />
+    <Content Include="Files\PRICING_ENGINE-11-MODEL-0-FORMULA-BS_FORWARD_US.txt" />
+    <Content Include="Files\PRICING_ENGINE-11-MODEL-0-FOURIER.txt" />
+    <Content Include="Files\PRICING_ENGINE-12-MODEL-1-FORMULA-HW_VANILLA_ZERO.txt" />
+    <Content Include="Files\PRICING_ENGINE-13-MODEL-1-MONTE_CARLO.txt" />
+    <Content Include="Files\PRICING_ENGINE-14-MODEL-0-FORMULA-BS_FORWARD_US.txt" />
+    <Content Include="Files\PRICING_ENGINE-15-FORMULA-THIRD_PARTY_XML_CURVE_DV_0.txt" />
+    <Content Include="Files\PRICING_ENGINE-2-MODEL-0-FORMULA-BS_SPOT.txt" />
+    <Content Include="Files\PRICING_ENGINE-3-MODEL-1-FORMULA-ZERO.txt" />
+    <Content Include="Files\PRICING_ENGINE-4-MODEL-0-FD.txt" />
+    <Content Include="Files\PRICING_ENGINE-5-MODEL-3-FD.txt" />
+    <Content Include="Files\PRICING_ENGINE-6-MODEL-1-FD.txt" />
+    <Content Include="Files\PRICING_ENGINE-7-MODEL-4-FD.txt" />
+    <Content Include="Files\PRICING_ENGINE-8-MODEL-3-FD.txt" />
+    <Content Include="Files\PRICING_ENGINE-9-MODEL-0-MONTE_CARLO.txt" />
+    <Content Include="Files\PRICING_ENGINE_MASTER_FILE.txt" />
+    <Content Include="Files\PRODUCT-0-LONG_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-0-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-0-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-0-SHORT_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-1-LONG_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-1-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-1-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-1-SHORT_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-10-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-10-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-11-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-11-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-12-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-12-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-12-SHORT_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-13-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-13-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-13-SHORT_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-14-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-14-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-15-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-15-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-16-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-16-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-16-SHORT_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-17-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-17-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-17-SHORT_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-18-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-18-LONG_NONE_BUYER_SELF_FORWARD_CALL_STRUCTURE-7.txt" />
+    <Content Include="Files\PRODUCT-18-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-19-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-19-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-2-LONG_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-2-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-2-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-2-SHORT_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-20-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-20-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-21-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-21-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-22-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-22-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-23-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-23-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-24-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-25-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-26-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-27-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-28-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-29-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-3-LONG_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-3-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-3-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-3-SHORT_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-30-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-30-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-31-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-31-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-32-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-32-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-33-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-33-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-34-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-34-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-35-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-35-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-36-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-36-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-37-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-37-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-38-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-38-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-39-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-39-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-4-LONG_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-4-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-4-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-4-SHORT_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-40-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-40-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-41-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-41-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-42-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-42-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-43-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-43-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-44-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-44-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-45-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-45-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-46-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-47-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-5-LONG_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-5-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-5-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-5-SHORT_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-6-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-6-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-6-SHORT_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-7-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-7-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-7-SHORT_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-8-LONG_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-8-SHORT_EUROPEAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-8-SHORT_EUROPEAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-9-LONG_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-9-SHORT_AMERICAN_BUYER_FORWARD_CALL_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT-9-SHORT_AMERICAN_BUYER_FORWARD_PUT_OBSERVABLE-0.txt" />
+    <Content Include="Files\PRODUCT_MASTER_FILE.txt" />
+    <Content Include="Files\QUOTE-MARKET-0-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-1-MARKET_MAKER-0-ASK_2.txt" />
+    <Content Include="Files\QUOTE-MARKET-1-MARKET_MAKER-0-BID_1.txt" />
+    <Content Include="Files\QUOTE-MARKET-1-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-1-MARKET_MAKER-1-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-2-MARKET_MAKER-0-ASK_1.txt" />
+    <Content Include="Files\QUOTE-MARKET-2-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-3-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-4-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-5-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-6-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\QUOTE-MARKET-7-MARKET_MAKER-0-MID_0.txt" />
+    <Content Include="Files\spot.txt" />
+    <Content Include="Files\SPOT_MASTER_FILE.txt" />
+    <Content Include="Files\teng.txt" />
+    <Content Include="Files\TRADING_ENGINE-0-HEDGING-DELTA-STANDARD.txt" />
+    <Content Include="Files\TRADING_ENGINE-1-HEDGING-DELTA-AM_FWD_FX_HW.txt" />
+    <Content Include="Files\TRADING_ENGINE-2-HEDGING-DELTA-GAMMA.txt" />
+    <Content Include="Files\TRADING_ENGINE_MASTER_FILE.txt" />
+    <Content Include="Files\udlng.txt" />
+    <Content Include="Files\UNDERLYING_MASTER_FILE.txt" />
+    <Content Include="Files\vs.txt" />
+    <Content Include="Mensaje\Mensaje.aspx" />
+    <Content Include="Reportes\Report.aspx" />
+    <Content Include="Reportes\Reports.aspx" />
+    <Content Include="Silverlight.js" />
+    <Content Include="TuringOpciones.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebService\Leasing\MDOEA1001.asmx" />
+    <Content Include="WebService\Leasing\MDOEC1001.asmx" />
+    <Content Include="WebService\Leasing\MDOEC1002.asmx" />
+    <Content Include="WebService\OpcionesFX\BDOpciones\TuringSAO.asmx" />
+    <Content Include="WebService\SrvConfig.asmx" />
+    <Content Include="WebService\OpcionesFX\Asiatica\SrvAsiaticas.asmx" />
+    <Content Include="WebService\OpcionesFX\BDOpciones\BDOpciones.asmx" />
+    <Content Include="WebService\OpcionesFX\Customers\SrvCustomers.asmx" />
+    <Content Include="WebService\OpcionesFX\Estructura\SrvEstructura.asmx" />
+    <Content Include="WebService\OpcionesFX\Load\LoadFront.asmx" />
+    <Content Include="WebService\OpcionesFX\Portfolio\LoadPortfolio.asmx" />
+    <Content Include="WebService\OpcionesFX\Smile\SrvSmile.asmx" />
+    <Content Include="WebService\OpcionesFX\ValoriadorCartera\SrvCurvasMonedas.asmx" />
+    <Content Include="WebService\OpcionesFX\ValoriadorCartera\SrvValorizadorCartera.asmx" />
+    <Content Include="WebService\WebAcciones.asmx" />
+    <Content Include="WebService\WebDetalles.asmx" />
+    <Content Include="WebService\WebLogin.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReportes\BacLiquidaAnticipo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BacLiquidaAnticipo.RPT</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\CaNivContrato.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaNivContrato.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\CaNivOpciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CaNivOpciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\Contabilidad_Listado_Cuenta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contabilidad_Listado_Cuenta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\Contabilidad_Listado_Voucher.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contabilidad_Listado_Voucher.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_Asiatica.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_Asiatica.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_Butterfly.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_Butterfly.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_CallSpreadDoble.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_CallSpreadDoble.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_CondGeneral.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_CondGeneral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_ForwardAcotado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_ForwardAcotado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_ForwardAmericano.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_ForwardAmericano.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_ForwardAsiatico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_ForwardAsiatico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_Generico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_Generico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_RiskReversal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_RiskReversal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_Straddle.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_Straddle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_Strangle.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_Strangle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_StripAsiatico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_StripAsiatico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\ContratoLegal_Vanilla.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContratoLegal_Vanilla.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\Fax_Opciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fax_Opciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\LIQUIDACION_FORWARD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIQUIDACION_FORWARD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\LIQUIDACION_OPCIONES.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIQUIDACION_OPCIONES.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\LIQUIDACION_PRIMA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIQUIDACION_PRIMA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\MoControlPrecios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoControlPrecios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\MoNivOpciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoNivOpciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\Papeleta_Cartera_Nivel_Fixing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Papeleta_Cartera_Nivel_Fixing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\Papeleta_Movimiento_Nivel_Fixing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Papeleta_Movimiento_Nivel_Fixing.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\RESUMEN_LIQUIDACION_OPC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RESUMEN_LIQUIDACION_OPC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportes\Total_Por_Cuenta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Total_Por_Cuenta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportaExcel\Exporta.aspx.cs">
+      <DependentUpon>Exporta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportaExcel\Exporta.aspx.designer.cs">
+      <DependentUpon>Exporta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExportaTexto\ExportaTxt.aspx.cs">
+      <DependentUpon>ExportaTxt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportaTexto\ExportaTxt.aspx.designer.cs">
+      <DependentUpon>ExportaTxt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje\Mensaje.aspx.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje\Mensaje.aspx.designer.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos\SecureQueryString.cs" />
+    <Compile Include="Recursos\ServApoyo.cs" />
+    <Compile Include="Rec\LineasOpciones.cs" />
+    <Compile Include="Rec\LineasOpcionesTuringSAO.cs" />
+    <Compile Include="Reportes\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Struct\StructFixingData.cs" />
+    <Compile Include="Struct\StructMoConWeb.cs" />
+    <Compile Include="Struct\StructSmilleCallPut.cs" />
+    <Compile Include="TuringOpciones.aspx.cs">
+      <DependentUpon>TuringOpciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TuringOpciones.aspx.designer.cs">
+      <DependentUpon>TuringOpciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\Leasing\MDOEA1001.asmx.cs">
+      <DependentUpon>MDOEA1001.asmx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\Leasing\MDOEC1001.asmx.cs">
+      <DependentUpon>MDOEC1001.asmx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\Leasing\MDOEC1002.asmx.cs">
+      <DependentUpon>MDOEC1002.asmx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\BDOpciones\TuringSAO.asmx.cs">
+      <DependentUpon>TuringSAO.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\SrvConfig.asmx.cs">
+      <DependentUpon>SrvConfig.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\Asiatica\SrvAsiaticas.asmx.cs">
+      <DependentUpon>SrvAsiaticas.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\BDOpciones\BDOpciones.asmx.cs">
+      <DependentUpon>BDOpciones.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\Customers\SrvCustomers.asmx.cs">
+      <DependentUpon>SrvCustomers.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\Estructura\SrvEstructura.asmx.cs">
+      <DependentUpon>SrvEstructura.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\Load\LoadFront.asmx.cs">
+      <DependentUpon>LoadFront.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\Portfolio\LoadPortfolio.asmx.cs">
+      <DependentUpon>LoadPortfolio.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\Smile\SrvSmile.asmx.cs">
+      <DependentUpon>SrvSmile.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\ValoriadorCartera\SrvCurvasMonedas.asmx.cs">
+      <DependentUpon>SrvCurvasMonedas.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\OpcionesFX\ValoriadorCartera\SrvValorizadorCartera.asmx.cs">
+      <DependentUpon>SrvValorizadorCartera.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\WebAcciones.asmx.cs">
+      <DependentUpon>WebAcciones.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\WebDetalles.asmx.cs">
+      <DependentUpon>WebDetalles.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebService\WebLogin.asmx.cs">
+      <DependentUpon>WebLogin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdminOpcionesEncript\AdminOpcionesEncript.csproj">
+      <Project>{E9F128FD-A541-42B0-9880-F067FAB8B490}</Project>
+      <Name>AdminOpcionesEncript</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdminOpcionesTool\AdminOpcionesTool.csproj">
+      <Project>{810018AA-F9FA-4A84-85BF-4316B416DCC7}</Project>
+      <Name>AdminOpcionesTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdminOpciones\AdminOpciones.csproj">
+      <Project>{EBEB155D-E48B-4088-9324-1CB93BE4AA22}</Project>
+      <Name>AdminOpciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cData\cData.csproj">
+      <Project>{A2E10FAB-D118-4ECF-8054-F7147048FE65}</Project>
+      <Name>cData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cFinancialTools\cFinancialTools.csproj">
+      <Project>{06930E80-E55C-49FE-99CE-714F0292113C}</Project>
+      <Name>cFinancialTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReportes\BacLiquidaAnticipo.RPT">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BacLiquidaAnticipo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\CaNivContrato.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CaNivContrato.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\CaNivOpciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CaNivOpciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\Contabilidad_Listado_Cuenta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Contabilidad_Listado_Cuenta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\Contabilidad_Listado_Voucher.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Contabilidad_Listado_Voucher.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_Asiatica.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_Asiatica.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_Butterfly.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_Butterfly.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_CallSpreadDoble.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_CallSpreadDoble.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_CondGeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_CondGeneral.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_ForwardAcotado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_ForwardAcotado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_ForwardAmericano.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_ForwardAmericano.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_ForwardAsiatico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_ForwardAsiatico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_Generico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_Generico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_RiskReversal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_RiskReversal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_Straddle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_Straddle.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_Strangle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_Strangle.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_StripAsiatico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_StripAsiatico.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\ContratoLegal_Vanilla.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ContratoLegal_Vanilla.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\Fax_Opciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Fax_Opciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\LIQUIDACION_FORWARD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LIQUIDACION_FORWARD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\LIQUIDACION_OPCIONES.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LIQUIDACION_OPCIONES.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\LIQUIDACION_PRIMA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LIQUIDACION_PRIMA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\MoControlPrecios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MoControlPrecios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\MoNivOpciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MoNivOpciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\Papeleta_Cartera_Nivel_Fixing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Papeleta_Cartera_Nivel_Fixing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\Papeleta_Movimiento_Nivel_Fixing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Papeleta_Movimiento_Nivel_Fixing.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\RESUMEN_LIQUIDACION_OPC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RESUMEN_LIQUIDACION_OPC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportes\Total_Por_Cuenta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Total_Por_Cuenta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="Btrader\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>24084</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

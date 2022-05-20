@@ -1,0 +1,35 @@
+USE BacParamSuda
+GO
+
+DECLARE @Existe INT
+SET @Existe = 0
+SELECT @Existe = 1 FROM TABLA_GENERAL_GLOBAL  WHERE ctcateg = 8608
+
+IF @Existe = 0
+BEGIN
+	
+	INSERT INTO TABLA_GENERAL_GLOBAL  VALUES(8608,'EMAIL INICIO DIA',1,1,0,0,1,0,0,0,'') 
+	
+END
+
+
+
+DECLARE @ExisteDetalle INT
+SET @ExisteDetalle = 0
+SELECT @ExisteDetalle = 1 FROM TABLA_GENERAL_DETALLE  WHERE tbcateg = 8608
+
+IF @ExisteDetalle = 0
+BEGIN  
+    
+    
+    
+    INSERT INTO TABLA_GENERAL_DETALLE VALUES(8608,1,0,GETDATE(),0,'Apertura Sistemas Bac','ASUNTO')   
+	INSERT INTO TABLA_GENERAL_DETALLE VALUES(8608,2,0,GETDATE(),0,'Estimados,
+	Sistemas Bac Abiertos','CUERPO')  
+
+	INSERT INTO TABLA_GENERAL_DETALLE VALUES(8608,3,0,GETDATE(),0,'Patricio.Angulo@corpbanca.cl','DESTINO')
+	INSERT INTO TABLA_GENERAL_DETALLE VALUES(8608,4,0,GETDATE(),0,'Alan.Shomaly@corpbanca.cl','DESTINO')
+	INSERT INTO TABLA_GENERAL_DETALLE VALUES(8608,5,0,GETDATE(),0,'adrian.gonzalez@corpbanca.cl','DESTINO')
+		
+END
+

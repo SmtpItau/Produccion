@@ -1,0 +1,7 @@
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\x86\Debug\cConnectionDB.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\x86\Debug\cConnectionDB.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\x86\Debug\AdminOpcionesEncript.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\x86\Debug\AdminOpcionesEncript.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\x86\Debug\cConnectionDB.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\x86\Debug\cConnectionDB.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\x86\Debug\cConnectionDB.pdb

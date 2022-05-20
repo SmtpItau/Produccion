@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:Q1="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd96" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd97" />
+  <xsd:complexType name="ForExQuoteRec_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="ForExQuoteInfo" type="Q1:ForExQuoteInfo_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ForExQuoteId" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ForExQuoteEnvr" type="Q1:ForExQuoteEnvr_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

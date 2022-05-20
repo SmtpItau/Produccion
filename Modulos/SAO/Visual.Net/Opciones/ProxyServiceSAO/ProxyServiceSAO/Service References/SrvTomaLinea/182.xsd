@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd14" />
+  <complexType name="CollateralData_Type">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="CoverType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="CollateralType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="BienType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ActiveDt" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="RealAmtOri" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="RealAmtPes" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="MerAmtOri" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="MerAmtPes" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DisAmtOri" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DisAmtPes" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CollateralIndReq" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="AvalInd" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="CollateralInd" type="string" />
+    </sequence>
+  </complexType>
+</schema>

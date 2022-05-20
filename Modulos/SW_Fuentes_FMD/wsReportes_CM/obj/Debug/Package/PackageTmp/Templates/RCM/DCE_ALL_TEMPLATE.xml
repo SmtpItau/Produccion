@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TemplateID="1" TemplateDirection="Input" UseStoreProc="true" AdditionalInfo="true">
+  <DBCatalog>Reportes</DBCatalog>
+  <Name>DCE Input</Name>
+  <DataBindingName>DCE</DataBindingName>
+  <Description>Contiene los números DCE, asignados por casa matríz para las operaciones de mesa de dinero</Description>
+  <TemplateFileName>C:\BaseDirectory\DCE_ALL_TEMPLATE.xml</TemplateFileName>
+  <ListStoreProcsInfo>
+    <StoreProcsInfo>
+      <DBCatalog>Reportes</DBCatalog>
+      <Direction>Input</Direction>
+      <SheetName>SWAP</SheetName>
+      <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>dce_line</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>RowPosition</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Type</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Derivative Type</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Contract Number</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>DCE_contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>DCE Contract</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileName</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>fec_archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>DateTime</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileTime</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>RETURN_VALUE</ParameterName>
+          <Direction>Output</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>8000</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+    <StoreProcsInfo>
+      <DBCatalog>Reportes</DBCatalog>
+      <Direction>Input</Direction>
+      <SheetName>NDF</SheetName>
+      <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>dce_line</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>RowPosition</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Type</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Derivative Type</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Contract Number</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>DCE_contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>DCE Contract</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileName</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>fec_archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>DateTime</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileTime</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>RETURN_VALUE</ParameterName>
+          <Direction>Output</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>8000</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+    <StoreProcsInfo>
+      <DBCatalog>Reportes</DBCatalog>
+      <Direction>Input</Direction>
+      <SheetName>CCS</SheetName>
+      <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>dce_line</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>RowPosition</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Type</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Derivative Type</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Contract Number</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>DCE_contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>DCE Contract</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileName</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>fec_archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>DateTime</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileTime</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>RETURN_VALUE</ParameterName>
+          <Direction>Output</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>8000</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+    <StoreProcsInfo>
+      <DBCatalog>Reportes</DBCatalog>
+      <Direction>Input</Direction>
+      <SheetName>OPTIONS</SheetName>
+      <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>dce_line</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>RowPosition</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Type</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Derivative Type</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Contract Number</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>DCE_contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>DCE Contract</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileName</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>fec_archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>DateTime</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileTime</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>RETURN_VALUE</ParameterName>
+          <Direction>Output</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>8000</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+    <StoreProcsInfo>
+      <DBCatalog>Reportes</DBCatalog>
+      <Direction>Input</Direction>
+      <SheetName>FRA</SheetName>
+      <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>dce_line</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>RowPosition</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Type</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Derivative Type</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>Contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int32</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>Contract Number</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>DCE_contract</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>DCE Contract</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileName</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>fec_archivo</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>DateTime</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+          <SourceColumn>FileTime</SourceColumn>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_PROCESA_DCE</StoreProcName>
+          <ParameterName>RETURN_VALUE</ParameterName>
+          <Direction>Output</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>8000</Size>
+          <DBType>AnsiString</DBType>
+          <Nullable>false</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+  </ListStoreProcsInfo>
+  <ListQueryInfo />
+  <ListXmlInfo />
+  <IOFileDirection>Input</IOFileDirection>
+  <IOFileNamePattern>
+    <Prefix>R_Banco Itaú Chile_</Prefix>
+    <Pattern>ddMMyyyy</Pattern>
+    <Suffix />
+    <Extension>.xlsx</Extension>
+    <useDatePattern>true</useDatePattern>
+    <useNumericPattern>false</useNumericPattern>
+  </IOFileNamePattern>
+  <ListExcelInfo>
+    <ExcelInfo ValueSource="Table" AllowPaging="false" PageSize="0">
+      <SheetDirection>Input</SheetDirection>
+      <SheetName>SWAP</SheetName>
+      <RowStart>14</RowStart>
+      <ColumnStart>2</ColumnStart>
+      <SaveAsPrompt>false</SaveAsPrompt>
+      <AddressCollection>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>14</ColumnPosition>
+          <ColumnName>N</ColumnName>
+          <ColumnTitle>Derivative Type</ColumnTitle>
+          <ValueMember>Derivative Type</ValueMember>
+          <Format />
+          <SheetName>SWAP</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>16</ColumnPosition>
+          <ColumnName>P</ColumnName>
+          <ColumnTitle>Contract Number</ColumnTitle>
+          <ValueMember>Contract Number</ValueMember>
+          <Format />
+          <SheetName>SWAP</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>42</ColumnPosition>
+          <ColumnName>AP</ColumnName>
+          <ColumnTitle>DCE Contract</ColumnTitle>
+          <ValueMember>DCE Contract</ValueMember>
+          <Format />
+          <SheetName>SWAP</SheetName>
+        </CellInfoAddress>
+      </AddressCollection>
+    </ExcelInfo>
+    <ExcelInfo ValueSource="Table" AllowPaging="false" PageSize="0">
+      <SheetDirection>Input</SheetDirection>
+      <SheetName>NDF</SheetName>
+      <RowStart>14</RowStart>
+      <ColumnStart>2</ColumnStart>
+      <SaveAsPrompt>false</SaveAsPrompt>
+      <AddressCollection>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="50">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>14</ColumnPosition>
+          <ColumnName>N</ColumnName>
+          <ColumnTitle>Derivative Type</ColumnTitle>
+          <ValueMember>Derivative Type</ValueMember>
+          <Format />
+          <SheetName>NDF</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="50">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>16</ColumnPosition>
+          <ColumnName>P</ColumnName>
+          <ColumnTitle>Contract Number</ColumnTitle>
+          <ValueMember>Contract Number</ValueMember>
+          <Format />
+          <SheetName>NDF</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="50">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>35</ColumnPosition>
+          <ColumnName>AI</ColumnName>
+          <ColumnTitle>DCE Contract</ColumnTitle>
+          <ValueMember>DCE Contract</ValueMember>
+          <Format />
+          <SheetName>NDF</SheetName>
+        </CellInfoAddress>
+      </AddressCollection>
+    </ExcelInfo>
+    <ExcelInfo ValueSource="Table" AllowPaging="false" PageSize="0">
+      <SheetDirection>Input</SheetDirection>
+      <SheetName>CCS</SheetName>
+      <RowStart>14</RowStart>
+      <ColumnStart>2</ColumnStart>
+      <SaveAsPrompt>false</SaveAsPrompt>
+      <AddressCollection>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>14</ColumnPosition>
+          <ColumnName>N</ColumnName>
+          <ColumnTitle>Derivative Type</ColumnTitle>
+          <ValueMember>Derivative Type</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>16</ColumnPosition>
+          <ColumnName>P</ColumnName>
+          <ColumnTitle>Contract Number</ColumnTitle>
+          <ValueMember>Contract Number</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>42</ColumnPosition>
+          <ColumnName>AP</ColumnName>
+          <ColumnTitle>DCE Contract</ColumnTitle>
+          <ValueMember>DCE Contract</ValueMember>
+          <Format />
+          <SheetName>CCS</SheetName>
+        </CellInfoAddress>
+      </AddressCollection>
+    </ExcelInfo>
+    <ExcelInfo ValueSource="Table" AllowPaging="false" PageSize="0">
+      <SheetDirection>Input</SheetDirection>
+      <SheetName>FRA</SheetName>
+      <RowStart>14</RowStart>
+      <ColumnStart>2</ColumnStart>
+      <SaveAsPrompt>false</SaveAsPrompt>
+      <AddressCollection>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>14</ColumnPosition>
+          <ColumnName>N</ColumnName>
+          <ColumnTitle>Derivative Type</ColumnTitle>
+          <ValueMember>Derivative Type</ValueMember>
+          <Format />
+          <SheetName>FRA</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>16</ColumnPosition>
+          <ColumnName>P</ColumnName>
+          <ColumnTitle>Contract Number</ColumnTitle>
+          <ValueMember>Contract Number</ValueMember>
+          <Format />
+          <SheetName>FRA</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>42</ColumnPosition>
+          <ColumnName>AP</ColumnName>
+          <ColumnTitle>DCE Contract</ColumnTitle>
+          <ValueMember>DCE Contract</ValueMember>
+          <Format />
+          <SheetName>FRA</SheetName>
+        </CellInfoAddress>
+      </AddressCollection>
+    </ExcelInfo>
+    <ExcelInfo ValueSource="Table" AllowPaging="false" PageSize="0">
+      <SheetDirection>Input</SheetDirection>
+      <SheetName>OPTIONS</SheetName>
+      <RowStart>14</RowStart>
+      <ColumnStart>2</ColumnStart>
+      <SaveAsPrompt>false</SaveAsPrompt>
+      <AddressCollection>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>14</ColumnPosition>
+          <ColumnName>N</ColumnName>
+          <ColumnTitle>Derivative Type</ColumnTitle>
+          <ValueMember>Derivative Type</ValueMember>
+          <Format />
+          <SheetName>OPTIONS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>16</ColumnPosition>
+          <ColumnName>P</ColumnName>
+          <ColumnTitle>Contract Number</ColumnTitle>
+          <ValueMember>Contract Number</ValueMember>
+          <Format />
+          <SheetName>OPTIONS</SheetName>
+        </CellInfoAddress>
+        <CellInfoAddress IsReadOnly="false" RenderAsAttribute="false" DataAddressDirection="Input" MaxWritableRows="-1">
+          <RowPosition>14</RowPosition>
+          <ColumnPosition>42</ColumnPosition>
+          <ColumnName>AP</ColumnName>
+          <ColumnTitle>DCE Contract</ColumnTitle>
+          <ValueMember>DCE Contract</ValueMember>
+          <Format />
+          <SheetName>OPTIONS</SheetName>
+        </CellInfoAddress>
+      </AddressCollection>
+    </ExcelInfo>
+  </ListExcelInfo>
+</Template>

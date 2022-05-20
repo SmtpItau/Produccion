@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TemplateID="1" TemplateDirection="Output" UseStoreProc="true" AdditionalInfo="false">
+  <DBCatalog>Reportes</DBCatalog>
+  <Name>ANX</Name>
+  <DataBindingName>ANX</DataBindingName>
+  <Description>Contiene las operaciones diarias de capitulo 9 anexo 1</Description>
+  <TemplateFileName>C:\BaseDirectory\ANX_CAPITULO9.xml</TemplateFileName>
+  <ListStoreProcsInfo>
+    <StoreProcsInfo>
+      <DBCatalog>Reportes</DBCatalog>
+      <Direction>Output</Direction>
+      <ConnectionTimeout>120</ConnectionTimeout>
+      <SheetName />
+      <StoreProcName>ANX_CAPITULO09</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>ANX_CAPITULO09</StoreProcName>
+          <ParameterName>cFECHA</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Date</DBType>
+          <Nullable>true</Nullable>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>ANX_CAPITULO09</StoreProcName>
+          <ParameterName>TIPO_SALIDA</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Int16</DBType>
+          <Nullable>true</Nullable>
+          <ParameterValue xsi:type="xsd:int">0</ParameterValue>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>ANX_CAPITULO09</StoreProcName>
+            <ParameterName>RETURN_VALUE</ParameterName>
+          <Direction>ReturnValue</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Object</DBType>
+          <Nullable>true</Nullable>
+          </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+  </ListStoreProcsInfo>
+  <ListQueryInfo />
+  <ListPlainTextInfo>
+    <PlainTextInfo>
+      <PlainTextDirecction>Output</PlainTextDirecction>
+      <AddressCollection>
+        <PlainTextFieldInfo IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+          <RowPosition>0</RowPosition>
+          <ColumnPosition>0</ColumnPosition>
+          <ColumnTitle>REG_SALIDA</ColumnTitle>
+          <ValueMember>REG_SALIDA</ValueMember>
+          <SheetName>Table1</SheetName>
+          <DataAlign>Right</DataAlign>
+        </PlainTextFieldInfo>
+      </AddressCollection>
+      <MaxRowSize>229</MaxRowSize>
+      <DataOnly>true</DataOnly>
+      <ValueSource>Table1</ValueSource>
+      <ValidateMaxSize>false</ValidateMaxSize>
+    </PlainTextInfo>
+  </ListPlainTextInfo>
+  <IOFileDirection>Output</IOFileDirection>
+  <IOFileNamePattern>
+    <Prefix>ANX1_OPCIONES_</Prefix>
+    <Pattern>yyyyMMdd</Pattern>
+    <Suffix />
+    <Extension>.txt</Extension>
+    <useDatePattern>true</useDatePattern>
+    <useNumericPattern>false</useNumericPattern>
+  </IOFileNamePattern>
+  <IOFileBaseDirectory>\ANX</IOFileBaseDirectory>
+  <IOFileCopyDirectories>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\HIST</FolderName>
+      <MainFolder>false</MainFolder>
+      <CompressedFiles>true</CompressedFiles>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\DAILY</FolderName>
+      <MainFolder>true</MainFolder>
+      <CompressedFiles>false</CompressedFiles>
+    </IOFileCopyFolders>
+  </IOFileCopyDirectories>
+  <useAppFolders>false</useAppFolders>
+  <ListExcelInfo />
+</Template>

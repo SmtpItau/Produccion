@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" elementFormDefault="unqualified" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd52" />
+  <complexType name="PartyKeys_Type">
+    <all>
+      <element minOccurs="0" maxOccurs="1" name="LoginIdent" type="tns:LoginIdent_Type" />
+      <element minOccurs="0" maxOccurs="1" name="PartyId" type="string" />
+    </all>
+  </complexType>
+</schema>

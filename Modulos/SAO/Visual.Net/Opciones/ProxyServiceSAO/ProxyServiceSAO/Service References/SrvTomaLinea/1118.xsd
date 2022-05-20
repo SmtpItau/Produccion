@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="RelationshipMgr_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="Desc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationshipMgrIdent" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationshipRole" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AuthCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BranchCodeList" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CBSSCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EmailAddr" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FaxPhone" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IndicatorLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IndicatorOtherBranch" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="LevelCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="NameList" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrderBy" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Phone" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationshipId" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TypeBranch" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationshipMgrIdentApproval" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationShipMgAssistant" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

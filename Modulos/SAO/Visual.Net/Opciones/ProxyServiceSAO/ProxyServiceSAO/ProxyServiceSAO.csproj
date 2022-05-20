@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67B5C45B-F607-428E-A9E8-01894AF20BF1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProxyServiceSAO</RootNamespace>
+    <AssemblyName>ProxyServiceSAO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SrvTomaLinea\configuration91.svcinfo" />
+    <None Include="Service References\SrvTomaLinea\configuration.svcinfo" />
+    <None Include="Service References\SrvTomaLinea\ProxyServiceSAO.SrvTomaLinea.ControlLineaCreditoTesoreriaRs.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvTomaLinea\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="crossdomain.xml" />
+    <Content Include="ProxyLineaCredito.svc" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InspectorBehavior.cs" />
+    <Compile Include="Service References\SrvTomaLinea\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ProxyLineaCredito.svc.cs">
+      <DependentUpon>ProxyLineaCredito.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IProxyLineaCredito.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SrvTomaLinea\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SrvTomaLinea\1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1100.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1101.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1102.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1103.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1104.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1105.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1106.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1107.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1108.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1109.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\111.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1111.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1112.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1113.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1114.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1115.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1116.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1117.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1118.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\1119.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\112.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\113.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\114.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\115.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\116.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\117.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\118.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\119.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\120.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\121.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\122.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\123.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\124.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\125.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\126.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\127.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\128.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\129.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\130.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\131.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\132.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\133.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\134.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\135.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\136.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\137.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\138.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\139.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\140.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\141.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\142.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\143.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\144.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\145.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\146.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\147.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\148.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\149.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\150.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\151.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\152.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\153.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\154.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\155.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\156.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\157.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\158.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\159.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\160.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\161.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\162.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\163.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\164.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\165.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\166.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\167.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\168.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\169.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\170.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\171.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\172.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\173.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\174.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\175.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\176.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\177.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\178.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\179.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\180.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\181.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\182.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\183.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\184.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\185.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\186.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\187.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\188.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\189.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\190.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\191.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\192.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\193.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\194.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\195.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\196.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\197.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\198.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\199.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvTomaLinea\IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreria.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53201</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

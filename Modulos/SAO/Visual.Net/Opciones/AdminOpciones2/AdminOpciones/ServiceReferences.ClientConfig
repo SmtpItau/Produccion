@@ -1,0 +1,178 @@
+﻿<configuration>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="SrvAsiaticasSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="BDOpcionesSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="SrvCustomersSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="WebDetallesSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="SrvEstructuraSoap" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None">
+            <message algorithmSuite="Default" />
+          </security>
+        </binding>
+        <binding name="LoadFrontSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="WebLoginSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="LoadPortfolioSoap" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="SrvSmileSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="SrvValorizadorCarteraSoap" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="SrvConfigSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None">
+            <message algorithmSuite="Default" />
+          </security>
+        </binding>
+        <binding name="WebAccionesSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="WSArticulo84Soap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="WSNumeroIBSporOperacionSoap" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="WSOperacionesSoap" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="WSTicketSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+        <binding name="BasicHttpBinding_IProxyLineaCredito" maxBufferSize="2147483647"
+          maxReceivedMessageSize="2147483647">
+          <security mode="None" />
+        </binding>
+      </basicHttpBinding>
+    </bindings>
+    <!--client>
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Asiatica/SrvAsiaticas.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvAsiaticasSoap"
+        contract="SrvAsiaticas.SrvAsiaticasSoap" name="SrvAsiaticasSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Customers/SrvCustomers.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvCustomersSoap"
+        contract="SrvCustomers.SrvCustomersSoap" name="SrvCustomersSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Load/LoadFront.asmx"
+        binding="basicHttpBinding" bindingConfiguration="LoadFrontSoap"
+        contract="SrvLoadFront.LoadFrontSoap" name="LoadFrontSoap" />
+      <endpoint address="http://localhost:4084/WebService/WebLogin.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WebLoginSoap"
+        contract="SrvLogin.WebLoginSoap" name="WebLoginSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Portfolio/LoadPortfolio.asmx"
+        binding="basicHttpBinding" bindingConfiguration="LoadPortfolioSoap"
+        contract="SrvPortfolioAndBook.LoadPortfolioSoap" name="LoadPortfolioSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Smile/SrvSmile.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvSmileSoap"
+        contract="SrvSmile.SrvSmileSoap" name="SrvSmileSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Estructura/SrvEstructura.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvEstructuraSoap"
+        contract="SrvEstructura.SrvEstructuraSoap" name="SrvEstructuraSoap" />
+      <endpoint address="http://localhost:4084/WebService/WebAcciones.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WebAccionesSoap"
+        contract="SrvAcciones.WebAccionesSoap" name="WebAccionesSoap" />
+      <endpoint address="http://localhost:24084/WebService/SrvConfig.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvConfigSoap"
+        contract="SrvConfig.SrvConfigSoap" name="SrvConfigSoap" />
+      <endpoint address="http://wsart84.corpbanca.cl/WSNumeroIBSporOperacion.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSNumeroIBSporOperacionSoap"
+        contract="SrvNumeroIBSPorOperacion84.WSNumeroIBSporOperacionSoap"
+        name="WSNumeroIBSporOperacionSoap" />
+      <endpoint address="http://wsart84.corpbanca.cl/WSOperaciones.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSOperacionesSoap"
+        contract="SrvOperaciones84.WSOperacionesSoap" name="WSOperacionesSoap" />
+      <endpoint address="http://wsart84.corpbanca.cl/WSTicket.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSTicketSoap"
+        contract="SrvTicket84.WSTicketSoap" name="WSTicketSoap" />
+      <endpoint address="http://prodapps338:1345/ProxyLineaCredito.svc"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IProxyLineaCredito"
+        contract="SrvTomaLinea.IProxyLineaCredito" name="BasicHttpBinding_IProxyLineaCredito" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/BDOpciones/BDOpciones.asmx"
+        binding="basicHttpBinding" bindingConfiguration="BDOpcionesSoap"
+        contract="SrvBDOpciones.BDOpcionesSoap" name="BDOpcionesSoap" />
+      <endpoint address="http://localhost24084/WebService/WebDetalles.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WebDetallesSoap"
+        contract="SrvDetalles.WebDetallesSoap" name="WebDetallesSoap" />
+      <endpoint address="http://wsart84.corpbanca.cl/WSArticulo84.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSArticulo84Soap"
+        contract="SrvArt84.WSArticulo84Soap" name="WSArticulo84Soap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/ValoriadorCartera/SrvValorizadorCartera.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvValorizadorCarteraSoap"
+        contract="SrvValorizador.SrvValorizadorCarteraSoap" name="SrvValorizadorCarteraSoap" />
+    </client-->
+    <client>
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Asiatica/SrvAsiaticas.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvAsiaticasSoap"
+        contract="SrvAsiaticas.SrvAsiaticasSoap" name="SrvAsiaticasSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Customers/SrvCustomers.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvCustomersSoap"
+        contract="SrvCustomers.SrvCustomersSoap" name="SrvCustomersSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Load/LoadFront.asmx"
+        binding="basicHttpBinding" bindingConfiguration="LoadFrontSoap"
+        contract="SrvLoadFront.LoadFrontSoap" name="LoadFrontSoap" />
+      <endpoint address="http://localhost:4084/WebService/WebLogin.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WebLoginSoap"
+        contract="SrvLogin.WebLoginSoap" name="WebLoginSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Portfolio/LoadPortfolio.asmx"
+        binding="basicHttpBinding" bindingConfiguration="LoadPortfolioSoap"
+        contract="SrvPortfolioAndBook.LoadPortfolioSoap" name="LoadPortfolioSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Smile/SrvSmile.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvSmileSoap"
+        contract="SrvSmile.SrvSmileSoap" name="SrvSmileSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/ValoriadorCartera/SrvValorizadorCartera.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvValorizadorCarteraSoap"
+        contract="SrvValorizador.SrvValorizadorCarteraSoap" name="SrvValorizadorCarteraSoap" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/Estructura/SrvEstructura.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvEstructuraSoap"
+        contract="SrvEstructura.SrvEstructuraSoap" name="SrvEstructuraSoap" />
+      <endpoint address="http://localhost:4084/WebService/WebAcciones.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WebAccionesSoap"
+        contract="SrvAcciones.WebAccionesSoap" name="WebAccionesSoap" />
+      <endpoint address="http://localhost:24084/WebService/SrvConfig.asmx"
+        binding="basicHttpBinding" bindingConfiguration="SrvConfigSoap"
+        contract="SrvConfig.SrvConfigSoap" name="SrvConfigSoap" />
+      <endpoint address="http://wsart84test.corpbanca.cl/WSNumeroIBSporOperacion.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSNumeroIBSporOperacionSoap"
+        contract="SrvNumeroIBSPorOperacion84.WSNumeroIBSporOperacionSoap"
+        name="WSNumeroIBSporOperacionSoap" />
+      <endpoint address="http://wsart84test.corpbanca.cl/WSOperaciones.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSOperacionesSoap"
+        contract="SrvOperaciones84.WSOperacionesSoap" name="WSOperacionesSoap" />
+      <endpoint address="http://wsart84test.corpbanca.cl/WSTicket.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSTicketSoap"
+        contract="SrvTicket84.WSTicketSoap" name="WSTicketSoap" />
+      <endpoint address="10.191.0.21:7657/ProxyLineaCredito.svc"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IProxyLineaCredito"
+        contract="SrvTomaLinea.IProxyLineaCredito" name="BasicHttpBinding_IProxyLineaCredito" />
+      <endpoint address="http://localhost:4084/WebService/OpcionesFX/BDOpciones/BDOpciones.asmx"
+        binding="basicHttpBinding" bindingConfiguration="BDOpcionesSoap"
+        contract="SrvBDOpciones.BDOpcionesSoap" name="BDOpcionesSoap" />
+      <endpoint address="http://localhost24084/WebService/WebDetalles.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WebDetallesSoap"
+        contract="SrvDetalles.WebDetallesSoap" name="WebDetallesSoap" />
+      <endpoint address="http://wsart84test.corpbanca.cl/WSArticulo84.asmx"
+        binding="basicHttpBinding" bindingConfiguration="WSArticulo84Soap"
+        contract="SrvArt84.WSArticulo84Soap" name="WSArticulo84Soap" />
+    </client>
+
+  </system.serviceModel>
+</configuration>

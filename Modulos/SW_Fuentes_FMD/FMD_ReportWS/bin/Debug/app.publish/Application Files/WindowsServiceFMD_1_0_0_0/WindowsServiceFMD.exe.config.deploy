@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="WindowsServiceFMD.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+            <section name="FMD_ReportWS.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="wsReportServicesSoap" />
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:58254/wsReportServices.asmx"
+                binding="basicHttpBinding" bindingConfiguration="wsReportServicesSoap"
+                contract="WebServiceFMD.wsReportServicesSoap" name="wsReportServicesSoap" />
+        </client>
+    </system.serviceModel>
+    <applicationSettings>
+        <WindowsServiceFMD.Properties.Settings>
+            <setting name="UseFileLog" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="LogFileName" serializeAs="String">
+                <value>FMD_Report_{0}.log</value>
+            </setting>
+            <setting name="AppName" serializeAs="String">
+                <value>WindowsServiceFMD</value>
+            </setting>
+            <setting name="UseFriendlyLog" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="TimeInterval" serializeAs="String">
+                <value>30000</value>
+            </setting>
+            <setting name="Schedules" serializeAs="String">
+                <value>
+                  [{
+                    "StartingAt":"07:40:00"
+                    ,"FinishAt":"10:00:00"
+                    ,"Type":0
+                    ,"Description":"TimeSpan para proceso DCE"
+                   },{
+                    "StartingAt":"20:30:00"
+                    ,"FinishAt":"23:00:00"
+                    ,"Type":1
+                    ,"Description":"TimeSpan para proceso ODS y RCM"
+                    }]
+                  </value>
+            </setting>
+            <setting name="ServiceEndPoint" serializeAs="String">
+                <value>http://fmdsfmcQA.corpbanca.cl</value>
+            </setting>
+            <setting name="DBConnection" serializeAs="String">
+                <value>
+                {
+                  "DBCatalog":"Reportes"
+                  ,"DBMaxConnection":6
+                  ,"DBMinConnection":2
+                  ,"DBPooling":true
+                  ,"DBServerName":"CLSTGBDD995V95"
+                  ,"DBUserName":"app_reportes"
+                  ,"DBUserPass":"9pvRBgBKo8vo1yVrGi0WPA=="
+                  ,"DB_IP_Address":null
+                  ,"IntegratedSecurity":false
+                  ,"TrustedConnection":false
+                  ,"Use_IP_Address":false
+                  }
+                </value>
+            </setting>
+            <setting name="LogFolder" serializeAs="String">
+                <value>E:\SITIOS\SFMC\FMD\LOG</value>
+            </setting>
+        </WindowsServiceFMD.Properties.Settings>
+   </applicationSettings>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>

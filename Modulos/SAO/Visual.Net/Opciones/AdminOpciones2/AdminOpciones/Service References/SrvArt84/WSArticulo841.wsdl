@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="IBS" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="IBS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="IBS">
+      <s:element name="ConsultaIBSXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaIBSXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaIBSXmlResult" type="tns:Return_XML_IBS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Return_XML_IBS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Header" type="tns:Header" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:ArrayOfOutputIBS" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOG" type="tns:LOG_APLICACION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Header">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FLAG" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOutputIBS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OutputIBS" nillable="true" type="tns:OutputIBS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OutputIBS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="footer" type="tns:ArrayOfFooterOutputIBS" />
+          <s:element minOccurs="0" maxOccurs="1" name="flagCumplimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correlativoIngresoIBS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombreCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="alerta" type="tns:ArrayOfAlerta" />
+          <s:element minOccurs="0" maxOccurs="1" name="CalculosIBS" type="tns:CALCULOS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFooterOutputIBS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FooterOutputIBS" nillable="true" type="tns:FooterOutputIBS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FooterOutputIBS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="serviceName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="errors" type="tns:ArrayOfError" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="error" nillable="true" type="tns:error" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="error">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="source" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stackTrace" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAlerta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="alerta" nillable="true" type="tns:alerta" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="alerta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="flagAlerta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codigoAlerta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcionAlerta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="alerta" type="tns:ArrayOfDetalleAlertasIBS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDetalleAlertasIBS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DetalleAlertasIBS" nillable="true" type="tns:DetalleAlertasIBS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DetalleAlertasIBS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="detalleAlerta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CALCULOS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RUT_CLIENTE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MONTO_MTM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MONTO_OPERACION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADDON" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MONTO_AFECTO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PRODUCTO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PLAZO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MONEDA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_APLICACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_APLICACION" type="tns:ArrayOfLOG_ERRORES_APLICACION" />
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_CONEXION" type="tns:ArrayOfLOG_CONEXION" />
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_DATA" type="tns:ArrayOfLOG_EVENTOS_DATA" />
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_SQL_EXCEPTION" type="tns:ArrayOfLOG_SQL_EXCEPTION" />
+          <s:element minOccurs="0" maxOccurs="1" name="RETURN_VALUE" type="tns:ArrayOfLOG_RETURN_VALUE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_ERRORES_APLICACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_ERRORES_APLICACION" nillable="true" type="tns:LOG_ERRORES_APLICACION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_ERRORES_APLICACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="HORA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LINEA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="METODO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CLASE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_CONEXION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_CONEXION" nillable="true" type="tns:LOG_CONEXION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_CONEXION">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERVIDOR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BASE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HORA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_EVENTOS_DATA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_EVENTOS_DATA" nillable="true" type="tns:LOG_EVENTOS_DATA" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_EVENTOS_DATA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MENSAJE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_SQL_EXCEPTION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_SQL_EXCEPTION" nillable="true" type="tns:LOG_SQL_EXCEPTION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_SQL_EXCEPTION">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_RETURN_VALUE">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_RETURN_VALUE" nillable="true" type="tns:LOG_RETURN_VALUE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_RETURN_VALUE">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RETORNO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsultaIBSPar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCodUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRutCte" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intCodigoCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCodMonedaIBS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dblMontoOperacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dblMontoMTM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dblMontoGarantizado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intCantDiasPermanencia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNumSolicitudSistema" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intCodigoDeuda" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intCodigoTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCodigoProductoIBS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intCodigoPaisSBIF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIndicador" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSistema" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intTicket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intPlazo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strProducto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaIBSParResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaIBSParResult" type="tns:Return_XML_IBS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RESULTADOS" nillable="true" type="tns:Return_XML_IBS" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultaIBSXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaIBSXml" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaIBSXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSParSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaIBSPar" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSParSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaIBSParResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSXmlHttpGetIn">
+    <wsdl:part name="XmlString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSXmlHttpGetOut">
+    <wsdl:part name="Body" element="tns:RESULTADOS" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSParHttpGetIn">
+    <wsdl:part name="strEntidad" type="s:string" />
+    <wsdl:part name="strCodUsuario" type="s:string" />
+    <wsdl:part name="strRutCte" type="s:string" />
+    <wsdl:part name="intCodigoCliente" type="s:string" />
+    <wsdl:part name="strCodMonedaIBS" type="s:string" />
+    <wsdl:part name="dblMontoOperacion" type="s:string" />
+    <wsdl:part name="dblMontoMTM" type="s:string" />
+    <wsdl:part name="dblMontoGarantizado" type="s:string" />
+    <wsdl:part name="intCantDiasPermanencia" type="s:string" />
+    <wsdl:part name="strNumSolicitudSistema" type="s:string" />
+    <wsdl:part name="intCodigoDeuda" type="s:string" />
+    <wsdl:part name="intCodigoTransaccion" type="s:string" />
+    <wsdl:part name="strCodigoProductoIBS" type="s:string" />
+    <wsdl:part name="intCodigoPaisSBIF" type="s:string" />
+    <wsdl:part name="strIndicador" type="s:string" />
+    <wsdl:part name="strSistema" type="s:string" />
+    <wsdl:part name="intTicket" type="s:string" />
+    <wsdl:part name="intPlazo" type="s:string" />
+    <wsdl:part name="strProducto" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSParHttpGetOut">
+    <wsdl:part name="Body" element="tns:RESULTADOS" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSXmlHttpPostIn">
+    <wsdl:part name="XmlString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSXmlHttpPostOut">
+    <wsdl:part name="Body" element="tns:RESULTADOS" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSParHttpPostIn">
+    <wsdl:part name="strEntidad" type="s:string" />
+    <wsdl:part name="strCodUsuario" type="s:string" />
+    <wsdl:part name="strRutCte" type="s:string" />
+    <wsdl:part name="intCodigoCliente" type="s:string" />
+    <wsdl:part name="strCodMonedaIBS" type="s:string" />
+    <wsdl:part name="dblMontoOperacion" type="s:string" />
+    <wsdl:part name="dblMontoMTM" type="s:string" />
+    <wsdl:part name="dblMontoGarantizado" type="s:string" />
+    <wsdl:part name="intCantDiasPermanencia" type="s:string" />
+    <wsdl:part name="strNumSolicitudSistema" type="s:string" />
+    <wsdl:part name="intCodigoDeuda" type="s:string" />
+    <wsdl:part name="intCodigoTransaccion" type="s:string" />
+    <wsdl:part name="strCodigoProductoIBS" type="s:string" />
+    <wsdl:part name="intCodigoPaisSBIF" type="s:string" />
+    <wsdl:part name="strIndicador" type="s:string" />
+    <wsdl:part name="strSistema" type="s:string" />
+    <wsdl:part name="intTicket" type="s:string" />
+    <wsdl:part name="intPlazo" type="s:string" />
+    <wsdl:part name="strProducto" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaIBSParHttpPostOut">
+    <wsdl:part name="Body" element="tns:RESULTADOS" />
+  </wsdl:message>
+  <wsdl:portType name="WSArticulo84Soap">
+    <wsdl:operation name="ConsultaIBSXml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta IBS General por XML String</wsdl:documentation>
+      <wsdl:input message="tns:ConsultaIBSXmlSoapIn" />
+      <wsdl:output message="tns:ConsultaIBSXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaIBSPar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta IBS General por Parametros</wsdl:documentation>
+      <wsdl:input message="tns:ConsultaIBSParSoapIn" />
+      <wsdl:output message="tns:ConsultaIBSParSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSArticulo84HttpGet">
+    <wsdl:operation name="ConsultaIBSXml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta IBS General por XML String</wsdl:documentation>
+      <wsdl:input message="tns:ConsultaIBSXmlHttpGetIn" />
+      <wsdl:output message="tns:ConsultaIBSXmlHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaIBSPar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta IBS General por Parametros</wsdl:documentation>
+      <wsdl:input message="tns:ConsultaIBSParHttpGetIn" />
+      <wsdl:output message="tns:ConsultaIBSParHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSArticulo84HttpPost">
+    <wsdl:operation name="ConsultaIBSXml">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta IBS General por XML String</wsdl:documentation>
+      <wsdl:input message="tns:ConsultaIBSXmlHttpPostIn" />
+      <wsdl:output message="tns:ConsultaIBSXmlHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaIBSPar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta IBS General por Parametros</wsdl:documentation>
+      <wsdl:input message="tns:ConsultaIBSParHttpPostIn" />
+      <wsdl:output message="tns:ConsultaIBSParHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSArticulo84Soap" type="tns:WSArticulo84Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultaIBSXml">
+      <soap:operation soapAction="IBS/ConsultaIBSXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaIBSPar">
+      <soap:operation soapAction="IBS/ConsultaIBSPar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSArticulo84Soap12" type="tns:WSArticulo84Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultaIBSXml">
+      <soap12:operation soapAction="IBS/ConsultaIBSXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaIBSPar">
+      <soap12:operation soapAction="IBS/ConsultaIBSPar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSArticulo84HttpGet" type="tns:WSArticulo84HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ConsultaIBSXml">
+      <http:operation location="/ConsultaIBSXml" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaIBSPar">
+      <http:operation location="/ConsultaIBSPar" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSArticulo84HttpPost" type="tns:WSArticulo84HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ConsultaIBSXml">
+      <http:operation location="/ConsultaIBSXml" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaIBSPar">
+      <http:operation location="/ConsultaIBSPar" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSArticulo84">
+    <wsdl:port name="WSArticulo84Soap" binding="tns:WSArticulo84Soap">
+      <soap:address location="http://wsart84.corpbanca.cl/WSArticulo84.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSArticulo84Soap12" binding="tns:WSArticulo84Soap12">
+      <soap12:address location="http://wsart84.corpbanca.cl/WSArticulo84.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSArticulo84HttpGet" binding="tns:WSArticulo84HttpGet">
+      <http:address location="http://wsart84.corpbanca.cl/WSArticulo84.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSArticulo84HttpPost" binding="tns:WSArticulo84HttpPost">
+      <http:address location="http://wsart84.corpbanca.cl/WSArticulo84.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,11 @@
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\Turing2009Data.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\Turing2009Data.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\Turing2009Connect.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\Turing2009Definitions.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\AdminOpcionesEncript.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\Turing2009Connect.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\Turing2009Definitions.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\bin\x64\Debug\AdminOpcionesEncript.pdb
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\x64\Debug\Turing2009Data.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\x64\Debug\Turing2009Data.dll
+D:\Bancos\ITAU\Raul\2019-05-31 Fuentes SAO\2019-05-31 Fuentes SAO\Visual.Net\Opciones\AdminOpciones2\Turing2009Data\obj\x64\Debug\Turing2009Data.pdb

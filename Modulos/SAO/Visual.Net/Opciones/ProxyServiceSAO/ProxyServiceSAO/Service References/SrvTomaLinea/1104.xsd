@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd62" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd14" />
+  <xsd:complexType name="ExtAcctBal_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="BaseCurCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurGar2Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurMU1Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurDCoAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurTABClteAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurMU2Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurDToAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurTABGroupAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurMU3Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurGar1Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurOOEClteAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurMU4Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurOOEGroupAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurMU5Amt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ContraCurCode" type="tns:ContraCurCode_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

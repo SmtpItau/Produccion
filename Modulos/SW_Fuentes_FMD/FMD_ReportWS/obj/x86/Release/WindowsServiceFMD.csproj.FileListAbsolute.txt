@@ -1,0 +1,48 @@
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe.config
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe.manifest
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.application
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\CoreLib.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\EPPlus.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\CoreLib.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\ResolveAssemblyReference.cache
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.Installer.resources
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.ServiceReport.resources
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\GenerateResource.read.1.tlog
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\GenerateResource.write.1.tlog
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.exe.manifest
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.application
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.exe
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe.config
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe.manifest
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.application
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\CoreLib.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\EPPlus.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\CoreLib.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\bin\Release\EPPlus.xml
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\ResolveAssemblyReference.cache
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.Installer.resources
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.ServiceReport.resources
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\GenerateResource.read.1.tlog
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\GenerateResource.write.1.tlog
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.exe.manifest
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.application
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.exe
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe.config
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\CoreLib.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\EPPlus.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\CoreLib.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\EPPlus.xml
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.Installer.resources
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.ServiceReport.resources
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.csproj.GenerateResource.Cache
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.exe
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\obj\x86\Release\WindowsServiceFMD.pdb

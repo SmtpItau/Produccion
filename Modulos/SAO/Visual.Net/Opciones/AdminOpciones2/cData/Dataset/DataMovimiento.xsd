@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataMovimiento" targetNamespace="http://tempuri.org/Contrato.xsd" xmlns:mstns="http://tempuri.org/Contrato.xsd" xmlns="http://tempuri.org/Contrato.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CbMdbOpcConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CbMdbOpcConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.cData.Properties.Settings.GlobalReference.Default.CbMdbOpcConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataMovimiento" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataMovimiento" msprop:Generator_DataSetName="DataMovimiento" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MoEncContrato" msprop:Generator_UserTableName="MoEncContrato" msprop:Generator_RowDeletedName="MoEncContratoRowDeleted" msprop:Generator_RowChangedName="MoEncContratoRowChanged" msprop:Generator_RowClassName="MoEncContratoRow" msprop:Generator_RowChangingName="MoEncContratoRowChanging" msprop:Generator_RowEvArgName="MoEncContratoRowChangeEvent" msprop:Generator_RowEvHandlerName="MoEncContratoRowChangeEventHandler" msprop:Generator_TableClassName="MoEncContratoDataTable" msprop:Generator_TableVarName="tableMoEncContrato" msprop:Generator_RowDeletingName="MoEncContratoRowDeleting" msprop:Generator_TablePropName="MoEncContrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MoNumFolio" msprop:Generator_UserColumnName="MoNumFolio" msprop:Generator_ColumnPropNameInRow="MoNumFolio" msprop:Generator_ColumnVarNameInTable="columnMoNumFolio" msprop:Generator_ColumnPropNameInTable="MoNumFolioColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoTipoTransaccion" msprop:Generator_UserColumnName="MoTipoTransaccion" msprop:Generator_ColumnPropNameInRow="MoTipoTransaccion" msprop:Generator_ColumnVarNameInTable="columnMoTipoTransaccion" msprop:Generator_ColumnPropNameInTable="MoTipoTransaccionColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoNumContrato" msprop:Generator_UserColumnName="MoNumContrato" msprop:Generator_ColumnPropNameInRow="MoNumContrato" msprop:Generator_ColumnVarNameInTable="columnMoNumContrato" msprop:Generator_ColumnPropNameInTable="MoNumContratoColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoFechaContrato" msprop:Generator_UserColumnName="MoFechaContrato" msprop:Generator_ColumnPropNameInRow="MoFechaContrato" msprop:Generator_ColumnVarNameInTable="columnMoFechaContrato" msprop:Generator_ColumnPropNameInTable="MoFechaContratoColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoEstado" msprop:Generator_UserColumnName="MoEstado" msprop:Generator_ColumnPropNameInRow="MoEstado" msprop:Generator_ColumnVarNameInTable="columnMoEstado" msprop:Generator_ColumnPropNameInTable="MoEstadoColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCarteraFinanciera" msprop:Generator_UserColumnName="MoCarteraFinanciera" msprop:Generator_ColumnPropNameInRow="MoCarteraFinanciera" msprop:Generator_ColumnVarNameInTable="columnMoCarteraFinanciera" msprop:Generator_ColumnPropNameInTable="MoCarteraFinancieraColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoLibro" msprop:Generator_UserColumnName="MoLibro" msprop:Generator_ColumnPropNameInRow="MoLibro" msprop:Generator_ColumnVarNameInTable="columnMoLibro" msprop:Generator_ColumnPropNameInTable="MoLibroColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCarNormativa" msprop:Generator_UserColumnName="MoCarNormativa" msprop:Generator_ColumnPropNameInRow="MoCarNormativa" msprop:Generator_ColumnVarNameInTable="columnMoCarNormativa" msprop:Generator_ColumnPropNameInTable="MoCarNormativaColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoSubCarNormativa" msprop:Generator_UserColumnName="MoSubCarNormativa" msprop:Generator_ColumnPropNameInRow="MoSubCarNormativa" msprop:Generator_ColumnVarNameInTable="columnMoSubCarNormativa" msprop:Generator_ColumnPropNameInTable="MoSubCarNormativaColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoRutCliente" msprop:Generator_UserColumnName="MoRutCliente" msprop:Generator_ColumnPropNameInRow="MoRutCliente" msprop:Generator_ColumnVarNameInTable="columnMoRutCliente" msprop:Generator_ColumnPropNameInTable="MoRutClienteColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoCodigo" msprop:Generator_UserColumnName="MoCodigo" msprop:Generator_ColumnPropNameInRow="MoCodigo" msprop:Generator_ColumnVarNameInTable="columnMoCodigo" msprop:Generator_ColumnPropNameInTable="MoCodigoColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoTipoContrapartida" msprop:Generator_UserColumnName="MoTipoContrapartida" msprop:Generator_ColumnPropNameInRow="MoTipoContrapartida" msprop:Generator_ColumnVarNameInTable="columnMoTipoContrapartida" msprop:Generator_ColumnPropNameInTable="MoTipoContrapartidaColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoOperador" msprop:Generator_UserColumnName="MoOperador" msprop:Generator_ColumnPropNameInRow="MoOperador" msprop:Generator_ColumnVarNameInTable="columnMoOperador" msprop:Generator_ColumnPropNameInTable="MoOperadorColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCodEstructura" msprop:Generator_UserColumnName="MoCodEstructura" msprop:Generator_ColumnPropNameInRow="MoCodEstructura" msprop:Generator_ColumnVarNameInTable="columnMoCodEstructura" msprop:Generator_ColumnPropNameInTable="MoCodEstructuraColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCVEstructura" msprop:Generator_UserColumnName="MoCVEstructura" msprop:Generator_ColumnPropNameInRow="MoCVEstructura" msprop:Generator_ColumnVarNameInTable="columnMoCVEstructura" msprop:Generator_ColumnPropNameInTable="MoCVEstructuraColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoSistema" msprop:Generator_UserColumnName="MoSistema" msprop:Generator_ColumnPropNameInRow="MoSistema" msprop:Generator_ColumnVarNameInTable="columnMoSistema" msprop:Generator_ColumnPropNameInTable="MoSistemaColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoMonPrimaTrf" msprop:Generator_UserColumnName="MoMonPrimaTrf" msprop:Generator_ColumnPropNameInRow="MoMonPrimaTrf" msprop:Generator_ColumnVarNameInTable="columnMoMonPrimaTrf" msprop:Generator_ColumnPropNameInTable="MoMonPrimaTrfColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaTrf" msprop:Generator_UserColumnName="MoPrimaTrf" msprop:Generator_ColumnPropNameInRow="MoPrimaTrf" msprop:Generator_ColumnVarNameInTable="columnMoPrimaTrf" msprop:Generator_ColumnPropNameInTable="MoPrimaTrfColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaTrfML" msprop:Generator_UserColumnName="MoPrimaTrfML" msprop:Generator_ColumnPropNameInRow="MoPrimaTrfML" msprop:Generator_ColumnVarNameInTable="columnMoPrimaTrfML" msprop:Generator_ColumnPropNameInTable="MoPrimaTrfMLColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoMonPrimaCosto" msprop:Generator_UserColumnName="MoMonPrimaCosto" msprop:Generator_ColumnPropNameInRow="MoMonPrimaCosto" msprop:Generator_ColumnVarNameInTable="columnMoMonPrimaCosto" msprop:Generator_ColumnPropNameInTable="MoMonPrimaCostoColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaCosto" msprop:Generator_UserColumnName="MoPrimaCosto" msprop:Generator_ColumnPropNameInRow="MoPrimaCosto" msprop:Generator_ColumnVarNameInTable="columnMoPrimaCosto" msprop:Generator_ColumnPropNameInTable="MoPrimaCostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaCostoML" msprop:Generator_UserColumnName="MoPrimaCostoML" msprop:Generator_ColumnPropNameInRow="MoPrimaCostoML" msprop:Generator_ColumnVarNameInTable="columnMoPrimaCostoML" msprop:Generator_ColumnPropNameInTable="MoPrimaCostoMLColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCodMonPagPrima" msprop:Generator_UserColumnName="MoCodMonPagPrima" msprop:Generator_ColumnPropNameInRow="MoCodMonPagPrima" msprop:Generator_ColumnVarNameInTable="columnMoCodMonPagPrima" msprop:Generator_ColumnPropNameInTable="MoCodMonPagPrimaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaInicial" msprop:Generator_UserColumnName="MoPrimaInicial" msprop:Generator_ColumnPropNameInRow="MoPrimaInicial" msprop:Generator_ColumnVarNameInTable="columnMoPrimaInicial" msprop:Generator_ColumnPropNameInTable="MoPrimaInicialColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MofPagoPrima" msprop:Generator_UserColumnName="MofPagoPrima" msprop:Generator_ColumnPropNameInRow="MofPagoPrima" msprop:Generator_ColumnVarNameInTable="columnMofPagoPrima" msprop:Generator_ColumnPropNameInTable="MofPagoPrimaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMonCarryPrima" msprop:Generator_UserColumnName="MoMonCarryPrima" msprop:Generator_ColumnPropNameInRow="MoMonCarryPrima" msprop:Generator_ColumnVarNameInTable="columnMoMonCarryPrima" msprop:Generator_ColumnPropNameInTable="MoMonCarryPrimaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoCarryPrima" msprop:Generator_UserColumnName="MoCarryPrima" msprop:Generator_ColumnPropNameInRow="MoCarryPrima" msprop:Generator_ColumnVarNameInTable="columnMoCarryPrima" msprop:Generator_ColumnPropNameInTable="MoCarryPrimaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoParM2Spot" msprop:Generator_UserColumnName="MoParM2Spot" msprop:Generator_ColumnPropNameInRow="MoParM2Spot" msprop:Generator_ColumnVarNameInTable="columnMoParM2Spot" msprop:Generator_ColumnPropNameInTable="MoParM2SpotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoParMdaPrima" msprop:Generator_UserColumnName="MoParMdaPrima" msprop:Generator_ColumnPropNameInRow="MoParMdaPrima" msprop:Generator_ColumnVarNameInTable="columnMoParMdaPrima" msprop:Generator_ColumnPropNameInTable="MoParMdaPrimaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoFechaPagoPrima" msprop:Generator_UserColumnName="MoFechaPagoPrima" msprop:Generator_ColumnPropNameInRow="MoFechaPagoPrima" msprop:Generator_ColumnVarNameInTable="columnMoFechaPagoPrima" msprop:Generator_ColumnPropNameInTable="MoFechaPagoPrimaColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoFecValorizacion" msprop:Generator_UserColumnName="MoFecValorizacion" msprop:Generator_ColumnPropNameInRow="MoFecValorizacion" msprop:Generator_ColumnVarNameInTable="columnMoFecValorizacion" msprop:Generator_ColumnPropNameInTable="MoFecValorizacionColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoMon_vr" msprop:Generator_UserColumnName="MoMon_vr" msprop:Generator_ColumnPropNameInRow="MoMon_vr" msprop:Generator_ColumnVarNameInTable="columnMoMon_vr" msprop:Generator_ColumnPropNameInTable="MoMon_vrColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoVr" msprop:Generator_UserColumnName="MoVr" msprop:Generator_ColumnPropNameInRow="MoVr" msprop:Generator_ColumnVarNameInTable="columnMoVr" msprop:Generator_ColumnPropNameInTable="MoVrColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoMondelta" msprop:Generator_UserColumnName="MoMondelta" msprop:Generator_ColumnPropNameInRow="MoMondelta" msprop:Generator_ColumnVarNameInTable="columnMoMondelta" msprop:Generator_ColumnPropNameInTable="MoMondeltaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_gamma" msprop:Generator_UserColumnName="MoMon_gamma" msprop:Generator_ColumnPropNameInRow="MoMon_gamma" msprop:Generator_ColumnVarNameInTable="columnMoMon_gamma" msprop:Generator_ColumnPropNameInTable="MoMon_gammaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_vega" msprop:Generator_UserColumnName="MoMon_vega" msprop:Generator_ColumnPropNameInRow="MoMon_vega" msprop:Generator_ColumnVarNameInTable="columnMoMon_vega" msprop:Generator_ColumnPropNameInTable="MoMon_vegaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_vanna" msprop:Generator_UserColumnName="MoMon_vanna" msprop:Generator_ColumnPropNameInRow="MoMon_vanna" msprop:Generator_ColumnVarNameInTable="columnMoMon_vanna" msprop:Generator_ColumnPropNameInTable="MoMon_vannaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_volga" msprop:Generator_UserColumnName="MoMon_volga" msprop:Generator_ColumnPropNameInRow="MoMon_volga" msprop:Generator_ColumnVarNameInTable="columnMoMon_volga" msprop:Generator_ColumnPropNameInTable="MoMon_volgaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_theta" msprop:Generator_UserColumnName="MoMon_theta" msprop:Generator_ColumnPropNameInRow="MoMon_theta" msprop:Generator_ColumnVarNameInTable="columnMoMon_theta" msprop:Generator_ColumnPropNameInTable="MoMon_thetaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_rho" msprop:Generator_UserColumnName="MoMon_rho" msprop:Generator_ColumnPropNameInRow="MoMon_rho" msprop:Generator_ColumnVarNameInTable="columnMoMon_rho" msprop:Generator_ColumnPropNameInTable="MoMon_rhoColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_rhof" msprop:Generator_UserColumnName="MoMon_rhof" msprop:Generator_ColumnPropNameInRow="MoMon_rhof" msprop:Generator_ColumnVarNameInTable="columnMoMon_rhof" msprop:Generator_ColumnPropNameInTable="MoMon_rhofColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_charm" msprop:Generator_UserColumnName="MoMon_charm" msprop:Generator_ColumnPropNameInRow="MoMon_charm" msprop:Generator_ColumnVarNameInTable="columnMoMon_charm" msprop:Generator_ColumnPropNameInTable="MoMon_charmColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_zomma" msprop:Generator_UserColumnName="MoMon_zomma" msprop:Generator_ColumnPropNameInRow="MoMon_zomma" msprop:Generator_ColumnVarNameInTable="columnMoMon_zomma" msprop:Generator_ColumnPropNameInTable="MoMon_zommaColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMon_speed" msprop:Generator_UserColumnName="MoMon_speed" msprop:Generator_ColumnPropNameInRow="MoMon_speed" msprop:Generator_ColumnVarNameInTable="columnMoMon_speed" msprop:Generator_ColumnPropNameInTable="MoMon_speedColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaBSSpotCont" msprop:Generator_UserColumnName="MoPrimaBSSpotCont" msprop:Generator_ColumnPropNameInRow="MoPrimaBSSpotCont" msprop:Generator_ColumnVarNameInTable="columnMoPrimaBSSpotCont" msprop:Generator_ColumnPropNameInTable="MoPrimaBSSpotContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoDeltaSpotCont" msprop:Generator_UserColumnName="MoDeltaSpotCont" msprop:Generator_ColumnPropNameInRow="MoDeltaSpotCont" msprop:Generator_ColumnVarNameInTable="columnMoDeltaSpotCont" msprop:Generator_ColumnPropNameInTable="MoDeltaSpotContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoDeltaForwardCont" msprop:Generator_UserColumnName="MoDeltaForwardCont" msprop:Generator_ColumnPropNameInRow="MoDeltaForwardCont" msprop:Generator_ColumnVarNameInTable="columnMoDeltaForwardCont" msprop:Generator_ColumnPropNameInTable="MoDeltaForwardContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoGammaSpotCont" msprop:Generator_UserColumnName="MoGammaSpotCont" msprop:Generator_ColumnPropNameInRow="MoGammaSpotCont" msprop:Generator_ColumnVarNameInTable="columnMoGammaSpotCont" msprop:Generator_ColumnPropNameInTable="MoGammaSpotContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVegaCont" msprop:Generator_UserColumnName="MoVegaCont" msprop:Generator_ColumnPropNameInRow="MoVegaCont" msprop:Generator_ColumnVarNameInTable="columnMoVegaCont" msprop:Generator_ColumnPropNameInTable="MoVegaContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVannaSpotCont" msprop:Generator_UserColumnName="MoVannaSpotCont" msprop:Generator_ColumnPropNameInRow="MoVannaSpotCont" msprop:Generator_ColumnVarNameInTable="columnMoVannaSpotCont" msprop:Generator_ColumnPropNameInTable="MoVannaSpotContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVolgaCont" msprop:Generator_UserColumnName="MoVolgaCont" msprop:Generator_ColumnPropNameInRow="MoVolgaCont" msprop:Generator_ColumnVarNameInTable="columnMoVolgaCont" msprop:Generator_ColumnPropNameInTable="MoVolgaContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoThetaCont" msprop:Generator_UserColumnName="MoThetaCont" msprop:Generator_ColumnPropNameInRow="MoThetaCont" msprop:Generator_ColumnVarNameInTable="columnMoThetaCont" msprop:Generator_ColumnPropNameInTable="MoThetaContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoRhoDomCont" msprop:Generator_UserColumnName="MoRhoDomCont" msprop:Generator_ColumnPropNameInRow="MoRhoDomCont" msprop:Generator_ColumnVarNameInTable="columnMoRhoDomCont" msprop:Generator_ColumnPropNameInTable="MoRhoDomContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoRhoForCont" msprop:Generator_UserColumnName="MoRhoForCont" msprop:Generator_ColumnPropNameInRow="MoRhoForCont" msprop:Generator_ColumnVarNameInTable="columnMoRhoForCont" msprop:Generator_ColumnPropNameInTable="MoRhoForContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCharmSpotCont" msprop:Generator_UserColumnName="MoCharmSpotCont" msprop:Generator_ColumnPropNameInRow="MoCharmSpotCont" msprop:Generator_ColumnVarNameInTable="columnMoCharmSpotCont" msprop:Generator_ColumnPropNameInTable="MoCharmSpotContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoZommaSpotCont" msprop:Generator_UserColumnName="MoZommaSpotCont" msprop:Generator_ColumnPropNameInRow="MoZommaSpotCont" msprop:Generator_ColumnVarNameInTable="columnMoZommaSpotCont" msprop:Generator_ColumnPropNameInTable="MoZommaSpotContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpeedSpotCont" msprop:Generator_UserColumnName="MoSpeedSpotCont" msprop:Generator_ColumnPropNameInRow="MoSpeedSpotCont" msprop:Generator_ColumnVarNameInTable="columnMoSpeedSpotCont" msprop:Generator_ColumnPropNameInTable="MoSpeedSpotContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoFechaUnwind" msprop:Generator_UserColumnName="MoFechaUnwind" msprop:Generator_ColumnPropNameInRow="MoFechaUnwind" msprop:Generator_ColumnVarNameInTable="columnMoFechaUnwind" msprop:Generator_ColumnPropNameInTable="MoFechaUnwindColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoNominalUnwind" msprop:Generator_UserColumnName="MoNominalUnwind" msprop:Generator_ColumnPropNameInRow="MoNominalUnwind" msprop:Generator_ColumnVarNameInTable="columnMoNominalUnwind" msprop:Generator_ColumnPropNameInTable="MoNominalUnwindColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwindMon" msprop:Generator_UserColumnName="MoUnwindMon" msprop:Generator_ColumnPropNameInRow="MoUnwindMon" msprop:Generator_ColumnVarNameInTable="columnMoUnwindMon" msprop:Generator_ColumnPropNameInTable="MoUnwindMonColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwind" msprop:Generator_UserColumnName="MoUnwind" msprop:Generator_ColumnPropNameInRow="MoUnwind" msprop:Generator_ColumnVarNameInTable="columnMoUnwind" msprop:Generator_ColumnPropNameInTable="MoUnwindColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwindML" msprop:Generator_UserColumnName="MoUnwindML" msprop:Generator_ColumnPropNameInRow="MoUnwindML" msprop:Generator_ColumnVarNameInTable="columnMoUnwindML" msprop:Generator_ColumnPropNameInTable="MoUnwindMLColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoFormPagoUnwind" msprop:Generator_UserColumnName="MoFormPagoUnwind" msprop:Generator_ColumnPropNameInRow="MoFormPagoUnwind" msprop:Generator_ColumnVarNameInTable="columnMoFormPagoUnwind" msprop:Generator_ColumnPropNameInTable="MoFormPagoUnwindColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwindTransfMon" msprop:Generator_UserColumnName="MoUnwindTransfMon" msprop:Generator_ColumnPropNameInRow="MoUnwindTransfMon" msprop:Generator_ColumnVarNameInTable="columnMoUnwindTransfMon" msprop:Generator_ColumnPropNameInTable="MoUnwindTransfMonColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwindTransf" msprop:Generator_UserColumnName="MoUnwindTransf" msprop:Generator_ColumnPropNameInRow="MoUnwindTransf" msprop:Generator_ColumnVarNameInTable="columnMoUnwindTransf" msprop:Generator_ColumnPropNameInTable="MoUnwindTransfColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwindTransfML" msprop:Generator_UserColumnName="MoUnwindTransfML" msprop:Generator_ColumnPropNameInRow="MoUnwindTransfML" msprop:Generator_ColumnVarNameInTable="columnMoUnwindTransfML" msprop:Generator_ColumnPropNameInTable="MoUnwindTransfMLColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoVr_Costo" msprop:Generator_UserColumnName="MoVr_Costo" msprop:Generator_ColumnPropNameInRow="MoVr_Costo" msprop:Generator_ColumnVarNameInTable="columnMoVr_Costo" msprop:Generator_ColumnPropNameInTable="MoVr_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoGlosa" msprop:Generator_UserColumnName="MoGlosa" msprop:Generator_ColumnPropNameInRow="MoGlosa" msprop:Generator_ColumnVarNameInTable="columnMoGlosa" msprop:Generator_ColumnPropNameInTable="MoGlosaColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoUnwindCostoMon" msprop:Generator_UserColumnName="MoUnwindCostoMon" msprop:Generator_ColumnPropNameInRow="MoUnwindCostoMon" msprop:Generator_ColumnVarNameInTable="columnMoUnwindCostoMon" msprop:Generator_ColumnPropNameInTable="MoUnwindCostoMonColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwindCosto" msprop:Generator_UserColumnName="MoUnwindCosto" msprop:Generator_ColumnPropNameInRow="MoUnwindCosto" msprop:Generator_ColumnVarNameInTable="columnMoUnwindCosto" msprop:Generator_ColumnPropNameInTable="MoUnwindCostoColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoUnwindCostoML" msprop:Generator_UserColumnName="MoUnwindCostoML" msprop:Generator_ColumnPropNameInRow="MoUnwindCostoML" msprop:Generator_ColumnVarNameInTable="columnMoUnwindCostoML" msprop:Generator_ColumnPropNameInTable="MoUnwindCostoMLColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoGammaFwdCont" msprop:Generator_UserColumnName="MoGammaFwdCont" msprop:Generator_ColumnPropNameInRow="MoGammaFwdCont" msprop:Generator_ColumnVarNameInTable="columnMoGammaFwdCont" msprop:Generator_ColumnPropNameInTable="MoGammaFwdContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVannaFwdCont" msprop:Generator_UserColumnName="MoVannaFwdCont" msprop:Generator_ColumnPropNameInRow="MoVannaFwdCont" msprop:Generator_ColumnVarNameInTable="columnMoVannaFwdCont" msprop:Generator_ColumnPropNameInTable="MoVannaFwdContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCharmFwdCont" msprop:Generator_UserColumnName="MoCharmFwdCont" msprop:Generator_ColumnPropNameInRow="MoCharmFwdCont" msprop:Generator_ColumnVarNameInTable="columnMoCharmFwdCont" msprop:Generator_ColumnPropNameInTable="MoCharmFwdContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoZommaFwdCont" msprop:Generator_UserColumnName="MoZommaFwdCont" msprop:Generator_ColumnPropNameInRow="MoZommaFwdCont" msprop:Generator_ColumnVarNameInTable="columnMoZommaFwdCont" msprop:Generator_ColumnPropNameInTable="MoZommaFwdContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpeedFwdCont" msprop:Generator_UserColumnName="MoSpeedFwdCont" msprop:Generator_ColumnPropNameInRow="MoSpeedFwdCont" msprop:Generator_ColumnVarNameInTable="columnMoSpeedFwdCont" msprop:Generator_ColumnPropNameInTable="MoSpeedFwdContColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoImpreso" msprop:Generator_UserColumnName="MoImpreso" msprop:Generator_ColumnPropNameInRow="MoImpreso" msprop:Generator_ColumnVarNameInTable="columnMoImpreso" msprop:Generator_ColumnPropNameInTable="MoImpresoColumn" default="N" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoFechaCreacionRegistro" msprop:Generator_UserColumnName="MoFechaCreacionRegistro" msprop:Generator_ColumnPropNameInRow="MoFechaCreacionRegistro" msprop:Generator_ColumnVarNameInTable="columnMoFechaCreacionRegistro" msprop:Generator_ColumnPropNameInTable="MoFechaCreacionRegistroColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoPrimaInicialML" msprop:Generator_UserColumnName="MoPrimaInicialML" msprop:Generator_ColumnVarNameInTable="columnMoPrimaInicialML" msprop:Generator_ColumnPropNameInRow="MoPrimaInicialML" msprop:Generator_ColumnPropNameInTable="MoPrimaInicialMLColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoResultadoVentasML" msprop:Generator_UserColumnName="MoResultadoVentasML" msprop:Generator_ColumnVarNameInTable="columnMoResultadoVentasML" msprop:Generator_ColumnPropNameInRow="MoResultadoVentasML" msprop:Generator_ColumnPropNameInTable="MoResultadoVentasMLColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoRelacionaPAE" msprop:Generator_UserColumnName="MoRelacionaPAE" msprop:Generator_ColumnPropNameInRow="MoRelacionaPAE" msprop:Generator_ColumnVarNameInTable="columnMoRelacionaPAE" msprop:Generator_ColumnPropNameInTable="MoRelacionaPAEColumn" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MoDetContrato" msprop:Generator_UserTableName="MoDetContrato" msprop:Generator_RowDeletedName="MoDetContratoRowDeleted" msprop:Generator_RowChangedName="MoDetContratoRowChanged" msprop:Generator_RowClassName="MoDetContratoRow" msprop:Generator_RowChangingName="MoDetContratoRowChanging" msprop:Generator_RowEvArgName="MoDetContratoRowChangeEvent" msprop:Generator_RowEvHandlerName="MoDetContratoRowChangeEventHandler" msprop:Generator_TableClassName="MoDetContratoDataTable" msprop:Generator_TableVarName="tableMoDetContrato" msprop:Generator_RowDeletingName="MoDetContratoRowDeleting" msprop:Generator_TablePropName="MoDetContrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MoNumFolio" msprop:Generator_UserColumnName="MoNumFolio" msprop:Generator_ColumnPropNameInRow="MoNumFolio" msprop:Generator_ColumnVarNameInTable="columnMoNumFolio" msprop:Generator_ColumnPropNameInTable="MoNumFolioColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoNumEstructura" msprop:Generator_UserColumnName="MoNumEstructura" msprop:Generator_ColumnPropNameInRow="MoNumEstructura" msprop:Generator_ColumnVarNameInTable="columnMoNumEstructura" msprop:Generator_ColumnPropNameInTable="MoNumEstructuraColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoVinculacion" msprop:Generator_UserColumnName="MoVinculacion" msprop:Generator_ColumnPropNameInRow="MoVinculacion" msprop:Generator_ColumnVarNameInTable="columnMoVinculacion" msprop:Generator_ColumnPropNameInTable="MoVinculacionColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoTipoOpc" msprop:Generator_UserColumnName="MoTipoOpc" msprop:Generator_ColumnPropNameInRow="MoTipoOpc" msprop:Generator_ColumnVarNameInTable="columnMoTipoOpc" msprop:Generator_ColumnPropNameInTable="MoTipoOpcColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoSubyacente" msprop:Generator_UserColumnName="MoSubyacente" msprop:Generator_ColumnPropNameInRow="MoSubyacente" msprop:Generator_ColumnVarNameInTable="columnMoSubyacente" msprop:Generator_ColumnPropNameInTable="MoSubyacenteColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoTipoPayOff" msprop:Generator_UserColumnName="MoTipoPayOff" msprop:Generator_ColumnPropNameInRow="MoTipoPayOff" msprop:Generator_ColumnVarNameInTable="columnMoTipoPayOff" msprop:Generator_ColumnPropNameInTable="MoTipoPayOffColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCallPut" msprop:Generator_UserColumnName="MoCallPut" msprop:Generator_ColumnPropNameInRow="MoCallPut" msprop:Generator_ColumnVarNameInTable="columnMoCallPut" msprop:Generator_ColumnPropNameInTable="MoCallPutColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCVOpc" msprop:Generator_UserColumnName="MoCVOpc" msprop:Generator_ColumnPropNameInRow="MoCVOpc" msprop:Generator_ColumnVarNameInTable="columnMoCVOpc" msprop:Generator_ColumnPropNameInTable="MoCVOpcColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoTipoEmisionPT" msprop:Generator_UserColumnName="MoTipoEmisionPT" msprop:Generator_ColumnPropNameInRow="MoTipoEmisionPT" msprop:Generator_ColumnVarNameInTable="columnMoTipoEmisionPT" msprop:Generator_ColumnPropNameInTable="MoTipoEmisionPTColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoFechaInicioOpc" msprop:Generator_UserColumnName="MoFechaInicioOpc" msprop:Generator_ColumnPropNameInRow="MoFechaInicioOpc" msprop:Generator_ColumnVarNameInTable="columnMoFechaInicioOpc" msprop:Generator_ColumnPropNameInTable="MoFechaInicioOpcColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoFechaFijacion" msprop:Generator_UserColumnName="MoFechaFijacion" msprop:Generator_ColumnPropNameInRow="MoFechaFijacion" msprop:Generator_ColumnVarNameInTable="columnMoFechaFijacion" msprop:Generator_ColumnPropNameInTable="MoFechaFijacionColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoFechaVcto" msprop:Generator_UserColumnName="MoFechaVcto" msprop:Generator_ColumnPropNameInRow="MoFechaVcto" msprop:Generator_ColumnVarNameInTable="columnMoFechaVcto" msprop:Generator_ColumnPropNameInTable="MoFechaVctoColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoFormaPagoMon1" msprop:Generator_UserColumnName="MoFormaPagoMon1" msprop:Generator_ColumnPropNameInRow="MoFormaPagoMon1" msprop:Generator_ColumnVarNameInTable="columnMoFormaPagoMon1" msprop:Generator_ColumnPropNameInTable="MoFormaPagoMon1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoFechaPagMon1" msprop:Generator_UserColumnName="MoFechaPagMon1" msprop:Generator_ColumnPropNameInRow="MoFechaPagMon1" msprop:Generator_ColumnVarNameInTable="columnMoFechaPagMon1" msprop:Generator_ColumnPropNameInTable="MoFechaPagMon1Column" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoFormaPagoMon2" msprop:Generator_UserColumnName="MoFormaPagoMon2" msprop:Generator_ColumnPropNameInRow="MoFormaPagoMon2" msprop:Generator_ColumnVarNameInTable="columnMoFormaPagoMon2" msprop:Generator_ColumnPropNameInTable="MoFormaPagoMon2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoFechaPagMon2" msprop:Generator_UserColumnName="MoFechaPagMon2" msprop:Generator_ColumnPropNameInRow="MoFechaPagMon2" msprop:Generator_ColumnVarNameInTable="columnMoFechaPagMon2" msprop:Generator_ColumnPropNameInTable="MoFechaPagMon2Column" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoFechaPagoEjer" msprop:Generator_UserColumnName="MoFechaPagoEjer" msprop:Generator_ColumnPropNameInRow="MoFechaPagoEjer" msprop:Generator_ColumnVarNameInTable="columnMoFechaPagoEjer" msprop:Generator_ColumnPropNameInTable="MoFechaPagoEjerColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoCodMon1" msprop:Generator_UserColumnName="MoCodMon1" msprop:Generator_ColumnPropNameInRow="MoCodMon1" msprop:Generator_ColumnVarNameInTable="columnMoCodMon1" msprop:Generator_ColumnPropNameInTable="MoCodMon1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMontoMon1" msprop:Generator_UserColumnName="MoMontoMon1" msprop:Generator_ColumnPropNameInRow="MoMontoMon1" msprop:Generator_ColumnVarNameInTable="columnMoMontoMon1" msprop:Generator_ColumnPropNameInTable="MoMontoMon1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoCodMon2" msprop:Generator_UserColumnName="MoCodMon2" msprop:Generator_ColumnPropNameInRow="MoCodMon2" msprop:Generator_ColumnVarNameInTable="columnMoCodMon2" msprop:Generator_ColumnPropNameInTable="MoCodMon2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoMontoMon2" msprop:Generator_UserColumnName="MoMontoMon2" msprop:Generator_ColumnPropNameInRow="MoMontoMon2" msprop:Generator_ColumnVarNameInTable="columnMoMontoMon2" msprop:Generator_ColumnPropNameInTable="MoMontoMon2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoModalidad" msprop:Generator_UserColumnName="MoModalidad" msprop:Generator_ColumnPropNameInRow="MoModalidad" msprop:Generator_ColumnVarNameInTable="columnMoModalidad" msprop:Generator_ColumnPropNameInTable="MoModalidadColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoMdaCompensacion" msprop:Generator_UserColumnName="MoMdaCompensacion" msprop:Generator_ColumnPropNameInRow="MoMdaCompensacion" msprop:Generator_ColumnVarNameInTable="columnMoMdaCompensacion" msprop:Generator_ColumnPropNameInTable="MoMdaCompensacionColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoBenchComp" msprop:Generator_UserColumnName="MoBenchComp" msprop:Generator_ColumnPropNameInRow="MoBenchComp" msprop:Generator_ColumnVarNameInTable="columnMoBenchComp" msprop:Generator_ColumnPropNameInTable="MoBenchCompColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoParStrike" msprop:Generator_UserColumnName="MoParStrike" msprop:Generator_ColumnPropNameInRow="MoParStrike" msprop:Generator_ColumnVarNameInTable="columnMoParStrike" msprop:Generator_ColumnPropNameInTable="MoParStrikeColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoStrike" msprop:Generator_UserColumnName="MoStrike" msprop:Generator_ColumnPropNameInRow="MoStrike" msprop:Generator_ColumnVarNameInTable="columnMoStrike" msprop:Generator_ColumnPropNameInTable="MoStrikeColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoPorcStrike" msprop:Generator_UserColumnName="MoPorcStrike" msprop:Generator_ColumnPropNameInRow="MoPorcStrike" msprop:Generator_ColumnVarNameInTable="columnMoPorcStrike" msprop:Generator_ColumnPropNameInTable="MoPorcStrikeColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoTipoEjercicio" msprop:Generator_UserColumnName="MoTipoEjercicio" msprop:Generator_ColumnPropNameInRow="MoTipoEjercicio" msprop:Generator_ColumnVarNameInTable="columnMoTipoEjercicio" msprop:Generator_ColumnPropNameInTable="MoTipoEjercicioColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCurveMon1" msprop:Generator_UserColumnName="MoCurveMon1" msprop:Generator_ColumnPropNameInRow="MoCurveMon1" msprop:Generator_ColumnVarNameInTable="columnMoCurveMon1" msprop:Generator_ColumnPropNameInTable="MoCurveMon1Column" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCurveMon2" msprop:Generator_UserColumnName="MoCurveMon2" msprop:Generator_ColumnPropNameInRow="MoCurveMon2" msprop:Generator_ColumnVarNameInTable="columnMoCurveMon2" msprop:Generator_ColumnPropNameInTable="MoCurveMon2Column" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCurveSmile" msprop:Generator_UserColumnName="MoCurveSmile" msprop:Generator_ColumnPropNameInRow="MoCurveSmile" msprop:Generator_ColumnVarNameInTable="columnMoCurveSmile" msprop:Generator_ColumnPropNameInTable="MoCurveSmileColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoWf_mon1" msprop:Generator_UserColumnName="MoWf_mon1" msprop:Generator_ColumnPropNameInRow="MoWf_mon1" msprop:Generator_ColumnVarNameInTable="columnMoWf_mon1" msprop:Generator_ColumnPropNameInTable="MoWf_mon1Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoWf_mon2" msprop:Generator_UserColumnName="MoWf_mon2" msprop:Generator_ColumnPropNameInRow="MoWf_mon2" msprop:Generator_ColumnVarNameInTable="columnMoWf_mon2" msprop:Generator_ColumnPropNameInTable="MoWf_mon2Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVol" msprop:Generator_UserColumnName="MoVol" msprop:Generator_ColumnPropNameInRow="MoVol" msprop:Generator_ColumnVarNameInTable="columnMoVol" msprop:Generator_ColumnPropNameInTable="MoVolColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoFwd_teo" msprop:Generator_UserColumnName="MoFwd_teo" msprop:Generator_ColumnPropNameInRow="MoFwd_teo" msprop:Generator_ColumnVarNameInTable="columnMoFwd_teo" msprop:Generator_ColumnPropNameInTable="MoFwd_teoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoDelta_spot" msprop:Generator_UserColumnName="MoDelta_spot" msprop:Generator_ColumnPropNameInRow="MoDelta_spot" msprop:Generator_ColumnVarNameInTable="columnMoDelta_spot" msprop:Generator_ColumnPropNameInTable="MoDelta_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoDelta_spot_num" msprop:Generator_UserColumnName="MoDelta_spot_num" msprop:Generator_ColumnPropNameInRow="MoDelta_spot_num" msprop:Generator_ColumnVarNameInTable="columnMoDelta_spot_num" msprop:Generator_ColumnPropNameInTable="MoDelta_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoDelta_fwd" msprop:Generator_UserColumnName="MoDelta_fwd" msprop:Generator_ColumnPropNameInRow="MoDelta_fwd" msprop:Generator_ColumnVarNameInTable="columnMoDelta_fwd" msprop:Generator_ColumnPropNameInTable="MoDelta_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoDelta_fwd_num" msprop:Generator_UserColumnName="MoDelta_fwd_num" msprop:Generator_ColumnPropNameInRow="MoDelta_fwd_num" msprop:Generator_ColumnVarNameInTable="columnMoDelta_fwd_num" msprop:Generator_ColumnPropNameInTable="MoDelta_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoGamma_spot" msprop:Generator_UserColumnName="MoGamma_spot" msprop:Generator_ColumnPropNameInRow="MoGamma_spot" msprop:Generator_ColumnVarNameInTable="columnMoGamma_spot" msprop:Generator_ColumnPropNameInTable="MoGamma_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoGamma_spot_num" msprop:Generator_UserColumnName="MoGamma_spot_num" msprop:Generator_ColumnPropNameInRow="MoGamma_spot_num" msprop:Generator_ColumnVarNameInTable="columnMoGamma_spot_num" msprop:Generator_ColumnPropNameInTable="MoGamma_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoGamma_fwd" msprop:Generator_UserColumnName="MoGamma_fwd" msprop:Generator_ColumnPropNameInRow="MoGamma_fwd" msprop:Generator_ColumnVarNameInTable="columnMoGamma_fwd" msprop:Generator_ColumnPropNameInTable="MoGamma_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoGamma_fwd_num" msprop:Generator_UserColumnName="MoGamma_fwd_num" msprop:Generator_ColumnPropNameInRow="MoGamma_fwd_num" msprop:Generator_ColumnVarNameInTable="columnMoGamma_fwd_num" msprop:Generator_ColumnPropNameInTable="MoGamma_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVega" msprop:Generator_UserColumnName="MoVega" msprop:Generator_ColumnPropNameInRow="MoVega" msprop:Generator_ColumnVarNameInTable="columnMoVega" msprop:Generator_ColumnPropNameInTable="MoVegaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVega_num" msprop:Generator_UserColumnName="MoVega_num" msprop:Generator_ColumnPropNameInRow="MoVega_num" msprop:Generator_ColumnVarNameInTable="columnMoVega_num" msprop:Generator_ColumnPropNameInTable="MoVega_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVanna_spot" msprop:Generator_UserColumnName="MoVanna_spot" msprop:Generator_ColumnPropNameInRow="MoVanna_spot" msprop:Generator_ColumnVarNameInTable="columnMoVanna_spot" msprop:Generator_ColumnPropNameInTable="MoVanna_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVanna_spot_num" msprop:Generator_UserColumnName="MoVanna_spot_num" msprop:Generator_ColumnPropNameInRow="MoVanna_spot_num" msprop:Generator_ColumnVarNameInTable="columnMoVanna_spot_num" msprop:Generator_ColumnPropNameInTable="MoVanna_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVanna_fwd" msprop:Generator_UserColumnName="MoVanna_fwd" msprop:Generator_ColumnPropNameInRow="MoVanna_fwd" msprop:Generator_ColumnVarNameInTable="columnMoVanna_fwd" msprop:Generator_ColumnPropNameInTable="MoVanna_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVanna_fwd_num" msprop:Generator_UserColumnName="MoVanna_fwd_num" msprop:Generator_ColumnPropNameInRow="MoVanna_fwd_num" msprop:Generator_ColumnVarNameInTable="columnMoVanna_fwd_num" msprop:Generator_ColumnPropNameInTable="MoVanna_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVolga" msprop:Generator_UserColumnName="MoVolga" msprop:Generator_ColumnPropNameInRow="MoVolga" msprop:Generator_ColumnVarNameInTable="columnMoVolga" msprop:Generator_ColumnPropNameInTable="MoVolgaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVolga_num" msprop:Generator_UserColumnName="MoVolga_num" msprop:Generator_ColumnPropNameInRow="MoVolga_num" msprop:Generator_ColumnVarNameInTable="columnMoVolga_num" msprop:Generator_ColumnPropNameInTable="MoVolga_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoTheta" msprop:Generator_UserColumnName="MoTheta" msprop:Generator_ColumnPropNameInRow="MoTheta" msprop:Generator_ColumnVarNameInTable="columnMoTheta" msprop:Generator_ColumnPropNameInTable="MoThetaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoTheta_num" msprop:Generator_UserColumnName="MoTheta_num" msprop:Generator_ColumnPropNameInRow="MoTheta_num" msprop:Generator_ColumnVarNameInTable="columnMoTheta_num" msprop:Generator_ColumnPropNameInTable="MoTheta_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoRho" msprop:Generator_UserColumnName="MoRho" msprop:Generator_ColumnPropNameInRow="MoRho" msprop:Generator_ColumnVarNameInTable="columnMoRho" msprop:Generator_ColumnPropNameInTable="MoRhoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoRho_num" msprop:Generator_UserColumnName="MoRho_num" msprop:Generator_ColumnPropNameInRow="MoRho_num" msprop:Generator_ColumnVarNameInTable="columnMoRho_num" msprop:Generator_ColumnPropNameInTable="MoRho_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoRhof" msprop:Generator_UserColumnName="MoRhof" msprop:Generator_ColumnPropNameInRow="MoRhof" msprop:Generator_ColumnVarNameInTable="columnMoRhof" msprop:Generator_ColumnPropNameInTable="MoRhofColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoRhof_num" msprop:Generator_UserColumnName="MoRhof_num" msprop:Generator_ColumnPropNameInRow="MoRhof_num" msprop:Generator_ColumnVarNameInTable="columnMoRhof_num" msprop:Generator_ColumnPropNameInTable="MoRhof_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCharm_spot" msprop:Generator_UserColumnName="MoCharm_spot" msprop:Generator_ColumnPropNameInRow="MoCharm_spot" msprop:Generator_ColumnVarNameInTable="columnMoCharm_spot" msprop:Generator_ColumnPropNameInTable="MoCharm_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCharm_spot_num" msprop:Generator_UserColumnName="MoCharm_spot_num" msprop:Generator_ColumnPropNameInRow="MoCharm_spot_num" msprop:Generator_ColumnVarNameInTable="columnMoCharm_spot_num" msprop:Generator_ColumnPropNameInTable="MoCharm_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCharm_fwd" msprop:Generator_UserColumnName="MoCharm_fwd" msprop:Generator_ColumnPropNameInRow="MoCharm_fwd" msprop:Generator_ColumnVarNameInTable="columnMoCharm_fwd" msprop:Generator_ColumnPropNameInTable="MoCharm_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCharm_fwd_num" msprop:Generator_UserColumnName="MoCharm_fwd_num" msprop:Generator_ColumnPropNameInRow="MoCharm_fwd_num" msprop:Generator_ColumnVarNameInTable="columnMoCharm_fwd_num" msprop:Generator_ColumnPropNameInTable="MoCharm_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoZomma_spot" msprop:Generator_UserColumnName="MoZomma_spot" msprop:Generator_ColumnPropNameInRow="MoZomma_spot" msprop:Generator_ColumnVarNameInTable="columnMoZomma_spot" msprop:Generator_ColumnPropNameInTable="MoZomma_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoZomma_spot_num" msprop:Generator_UserColumnName="MoZomma_spot_num" msprop:Generator_ColumnPropNameInRow="MoZomma_spot_num" msprop:Generator_ColumnVarNameInTable="columnMoZomma_spot_num" msprop:Generator_ColumnPropNameInTable="MoZomma_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoZomma_fwd" msprop:Generator_UserColumnName="MoZomma_fwd" msprop:Generator_ColumnPropNameInRow="MoZomma_fwd" msprop:Generator_ColumnVarNameInTable="columnMoZomma_fwd" msprop:Generator_ColumnPropNameInTable="MoZomma_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoZomma_fwd_num" msprop:Generator_UserColumnName="MoZomma_fwd_num" msprop:Generator_ColumnPropNameInRow="MoZomma_fwd_num" msprop:Generator_ColumnVarNameInTable="columnMoZomma_fwd_num" msprop:Generator_ColumnPropNameInTable="MoZomma_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpeed_spot" msprop:Generator_UserColumnName="MoSpeed_spot" msprop:Generator_ColumnPropNameInRow="MoSpeed_spot" msprop:Generator_ColumnVarNameInTable="columnMoSpeed_spot" msprop:Generator_ColumnPropNameInTable="MoSpeed_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpeed_spot_num" msprop:Generator_UserColumnName="MoSpeed_spot_num" msprop:Generator_ColumnPropNameInRow="MoSpeed_spot_num" msprop:Generator_ColumnVarNameInTable="columnMoSpeed_spot_num" msprop:Generator_ColumnPropNameInTable="MoSpeed_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpeed_fwd" msprop:Generator_UserColumnName="MoSpeed_fwd" msprop:Generator_ColumnPropNameInRow="MoSpeed_fwd" msprop:Generator_ColumnVarNameInTable="columnMoSpeed_fwd" msprop:Generator_ColumnPropNameInTable="MoSpeed_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpeed_fwd_num" msprop:Generator_UserColumnName="MoSpeed_fwd_num" msprop:Generator_ColumnPropNameInRow="MoSpeed_fwd_num" msprop:Generator_ColumnVarNameInTable="columnMoSpeed_fwd_num" msprop:Generator_ColumnPropNameInTable="MoSpeed_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVrDet" msprop:Generator_UserColumnName="MoVrDet" msprop:Generator_ColumnPropNameInRow="MoVrDet" msprop:Generator_ColumnVarNameInTable="columnMoVrDet" msprop:Generator_ColumnPropNameInTable="MoVrDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpotDet" msprop:Generator_UserColumnName="MoSpotDet" msprop:Generator_ColumnPropNameInRow="MoSpotDet" msprop:Generator_ColumnVarNameInTable="columnMoSpotDet" msprop:Generator_ColumnPropNameInTable="MoSpotDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoSpotDetCosto" msprop:Generator_UserColumnName="MoSpotDetCosto" msprop:Generator_ColumnPropNameInRow="MoSpotDetCosto" msprop:Generator_ColumnVarNameInTable="columnMoSpotDetCosto" msprop:Generator_ColumnPropNameInTable="MoSpotDetCostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoWf_Mon1_Costo" msprop:Generator_UserColumnName="MoWf_Mon1_Costo" msprop:Generator_ColumnPropNameInRow="MoWf_Mon1_Costo" msprop:Generator_ColumnVarNameInTable="columnMoWf_Mon1_Costo" msprop:Generator_ColumnPropNameInTable="MoWf_Mon1_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoWf_Mon2_Costo" msdata:ReadOnly="true" msprop:Generator_UserColumnName="MoWf_Mon2_Costo" msprop:Generator_ColumnPropNameInRow="MoWf_Mon2_Costo" msprop:Generator_ColumnVarNameInTable="columnMoWf_Mon2_Costo" msprop:Generator_ColumnPropNameInTable="MoWf_Mon2_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVol_Costo" msprop:Generator_UserColumnName="MoVol_Costo" msprop:Generator_ColumnPropNameInRow="MoVol_Costo" msprop:Generator_ColumnVarNameInTable="columnMoVol_Costo" msprop:Generator_ColumnPropNameInTable="MoVol_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoFwd_Teo_Costo" msprop:Generator_UserColumnName="MoFwd_Teo_Costo" msprop:Generator_ColumnPropNameInRow="MoFwd_Teo_Costo" msprop:Generator_ColumnVarNameInTable="columnMoFwd_Teo_Costo" msprop:Generator_ColumnPropNameInTable="MoFwd_Teo_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVr_CostoDet" msprop:Generator_UserColumnName="MoVr_CostoDet" msprop:Generator_ColumnPropNameInRow="MoVr_CostoDet" msprop:Generator_ColumnVarNameInTable="columnMoVr_CostoDet" msprop:Generator_ColumnPropNameInTable="MoVr_CostoDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaBSSpotDet" msprop:Generator_UserColumnName="MoPrimaBSSpotDet" msprop:Generator_ColumnPropNameInRow="MoPrimaBSSpotDet" msprop:Generator_ColumnVarNameInTable="columnMoPrimaBSSpotDet" msprop:Generator_ColumnPropNameInTable="MoPrimaBSSpotDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoIteAsoSis" msprop:Generator_UserColumnName="MoIteAsoSis" msprop:Generator_ColumnPropNameInRow="MoIteAsoSis" msprop:Generator_ColumnVarNameInTable="columnMoIteAsoSis" msprop:Generator_ColumnPropNameInTable="MoIteAsoSisColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoIteAsoCon" msprop:Generator_UserColumnName="MoIteAsoCon" msprop:Generator_ColumnPropNameInRow="MoIteAsoCon" msprop:Generator_ColumnVarNameInTable="columnMoIteAsoCon" msprop:Generator_ColumnPropNameInTable="MoIteAsoConColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoFormaPagoComp" msprop:Generator_UserColumnName="MoFormaPagoComp" msprop:Generator_ColumnPropNameInRow="MoFormaPagoComp" msprop:Generator_ColumnVarNameInTable="columnMoFormaPagoComp" msprop:Generator_ColumnPropNameInTable="MoFormaPagoCompColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoVrDetML" msprop:Generator_UserColumnName="MoVrDetML" msprop:Generator_ColumnPropNameInRow="MoVrDetML" msprop:Generator_ColumnVarNameInTable="columnMoVrDetML" msprop:Generator_ColumnPropNameInTable="MoVrDetMLColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoPrimaInicialDet" msdata:ReadOnly="true" msprop:Generator_UserColumnName="MoPrimaInicialDet" msprop:Generator_ColumnPropNameInRow="MoPrimaInicialDet" msprop:Generator_ColumnVarNameInTable="columnMoPrimaInicialDet" msprop:Generator_ColumnPropNameInTable="MoPrimaInicialDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoWf_ML" msprop:Generator_UserColumnName="MoWf_ML" msprop:Generator_ColumnPropNameInRow="MoWf_ML" msprop:Generator_ColumnVarNameInTable="columnMoWf_ML" msprop:Generator_ColumnPropNameInTable="MoWf_MLColumn" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MoFixing" msprop:Generator_UserTableName="MoFixing" msprop:Generator_RowDeletedName="MoFixingRowDeleted" msprop:Generator_RowChangedName="MoFixingRowChanged" msprop:Generator_RowClassName="MoFixingRow" msprop:Generator_RowChangingName="MoFixingRowChanging" msprop:Generator_RowEvArgName="MoFixingRowChangeEvent" msprop:Generator_RowEvHandlerName="MoFixingRowChangeEventHandler" msprop:Generator_TableClassName="MoFixingDataTable" msprop:Generator_TableVarName="tableMoFixing" msprop:Generator_RowDeletingName="MoFixingRowDeleting" msprop:Generator_TablePropName="MoFixing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MoNumFolio" msprop:Generator_UserColumnName="MoNumFolio" msprop:Generator_ColumnPropNameInRow="MoNumFolio" msprop:Generator_ColumnVarNameInTable="columnMoNumFolio" msprop:Generator_ColumnPropNameInTable="MoNumFolioColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoNumEstructura" msprop:Generator_UserColumnName="MoNumEstructura" msprop:Generator_ColumnPropNameInRow="MoNumEstructura" msprop:Generator_ColumnVarNameInTable="columnMoNumEstructura" msprop:Generator_ColumnPropNameInTable="MoNumEstructuraColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoFixFecha" msprop:Generator_UserColumnName="MoFixFecha" msprop:Generator_ColumnPropNameInRow="MoFixFecha" msprop:Generator_ColumnVarNameInTable="columnMoFixFecha" msprop:Generator_ColumnPropNameInTable="MoFixFechaColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoFixNumero" msprop:Generator_UserColumnName="MoFixNumero" msprop:Generator_ColumnPropNameInRow="MoFixNumero" msprop:Generator_ColumnVarNameInTable="columnMoFixNumero" msprop:Generator_ColumnPropNameInTable="MoFixNumeroColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoPesoFij" msprop:Generator_UserColumnName="MoPesoFij" msprop:Generator_ColumnPropNameInRow="MoPesoFij" msprop:Generator_ColumnVarNameInTable="columnMoPesoFij" msprop:Generator_ColumnPropNameInTable="MoPesoFijColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoVolFij" msprop:Generator_UserColumnName="MoVolFij" msprop:Generator_ColumnPropNameInRow="MoVolFij" msprop:Generator_ColumnVarNameInTable="columnMoVolFij" msprop:Generator_ColumnPropNameInTable="MoVolFijColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoFijacion" msprop:Generator_UserColumnName="MoFijacion" msprop:Generator_ColumnPropNameInRow="MoFijacion" msprop:Generator_ColumnVarNameInTable="columnMoFijacion" msprop:Generator_ColumnPropNameInTable="MoFijacionColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoFixBenchComp" msprop:Generator_UserColumnName="MoFixBenchComp" msprop:Generator_ColumnPropNameInRow="MoFixBenchComp" msprop:Generator_ColumnVarNameInTable="columnMoFixBenchComp" msprop:Generator_ColumnPropNameInTable="MoFixBenchCompColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoFixParBench" msprop:Generator_UserColumnName="MoFixParBench" msprop:Generator_ColumnPropNameInRow="MoFixParBench" msprop:Generator_ColumnVarNameInTable="columnMoFixParBench" msprop:Generator_ColumnPropNameInTable="MoFixParBenchColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoFixEstado" msprop:Generator_UserColumnName="MoFixEstado" msprop:Generator_ColumnPropNameInRow="MoFixEstado" msprop:Generator_ColumnVarNameInTable="columnMoFixEstado" msprop:Generator_ColumnPropNameInTable="MoFixEstadoColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MoCaja" msprop:Generator_UserTableName="MoCaja" msprop:Generator_RowDeletedName="MoCajaRowDeleted" msprop:Generator_RowChangedName="MoCajaRowChanged" msprop:Generator_RowClassName="MoCajaRow" msprop:Generator_RowChangingName="MoCajaRowChanging" msprop:Generator_RowEvArgName="MoCajaRowChangeEvent" msprop:Generator_RowEvHandlerName="MoCajaRowChangeEventHandler" msprop:Generator_TableClassName="MoCajaDataTable" msprop:Generator_TableVarName="tableMoCaja" msprop:Generator_RowDeletingName="MoCajaRowDeleting" msprop:Generator_TablePropName="MoCaja">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MoNumFolio" msprop:Generator_UserColumnName="MoNumFolio" msprop:Generator_ColumnPropNameInRow="MoNumFolio" msprop:Generator_ColumnVarNameInTable="columnMoNumFolio" msprop:Generator_ColumnPropNameInTable="MoNumFolioColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoNumEstructura" msprop:Generator_UserColumnName="MoNumEstructura" msprop:Generator_ColumnPropNameInRow="MoNumEstructura" msprop:Generator_ColumnVarNameInTable="columnMoNumEstructura" msprop:Generator_ColumnPropNameInTable="MoNumEstructuraColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoCajFolio" msprop:Generator_UserColumnName="MoCajFolio" msprop:Generator_ColumnPropNameInRow="MoCajFolio" msprop:Generator_ColumnVarNameInTable="columnMoCajFolio" msprop:Generator_ColumnPropNameInTable="MoCajFolioColumn" type="xs:decimal" default="0" />
+              <xs:element name="MoCajFechaGen" msprop:Generator_UserColumnName="MoCajFechaGen" msprop:Generator_ColumnPropNameInRow="MoCajFechaGen" msprop:Generator_ColumnVarNameInTable="columnMoCajFechaGen" msprop:Generator_ColumnPropNameInTable="MoCajFechaGenColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoCajFecPago" msprop:Generator_UserColumnName="MoCajFecPago" msprop:Generator_ColumnPropNameInRow="MoCajFecPago" msprop:Generator_ColumnVarNameInTable="columnMoCajFecPago" msprop:Generator_ColumnPropNameInTable="MoCajFecPagoColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="MoCajFDeMon1" msprop:Generator_UserColumnName="MoCajFDeMon1" msprop:Generator_ColumnPropNameInRow="MoCajFDeMon1" msprop:Generator_ColumnVarNameInTable="columnMoCajFDeMon1" msprop:Generator_ColumnPropNameInTable="MoCajFDeMon1Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCajMtoMon1" msprop:Generator_UserColumnName="MoCajMtoMon1" msprop:Generator_ColumnPropNameInRow="MoCajMtoMon1" msprop:Generator_ColumnVarNameInTable="columnMoCajMtoMon1" msprop:Generator_ColumnPropNameInTable="MoCajMtoMon1Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCajFDeMon2" msprop:Generator_UserColumnName="MoCajFDeMon2" msprop:Generator_ColumnPropNameInRow="MoCajFDeMon2" msprop:Generator_ColumnVarNameInTable="columnMoCajFDeMon2" msprop:Generator_ColumnPropNameInTable="MoCajFDeMon2Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCajMtoMon2" msprop:Generator_UserColumnName="MoCajMtoMon2" msprop:Generator_ColumnPropNameInRow="MoCajMtoMon2" msprop:Generator_ColumnVarNameInTable="columnMoCajMtoMon2" msprop:Generator_ColumnPropNameInTable="MoCajMtoMon2Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCajEstado" msprop:Generator_UserColumnName="MoCajEstado" msprop:Generator_ColumnPropNameInRow="MoCajEstado" msprop:Generator_ColumnVarNameInTable="columnMoCajEstado" msprop:Generator_ColumnPropNameInTable="MoCajEstadoColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoMTMImplicito" msprop:Generator_UserColumnName="MoMTMImplicito" msprop:Generator_ColumnPropNameInRow="MoMTMImplicito" msprop:Generator_ColumnVarNameInTable="columnMoMTMImplicito" msprop:Generator_ColumnPropNameInTable="MoMTMImplicitoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="MoCajFormaPagoMon1" msprop:Generator_UserColumnName="MoCajFormaPagoMon1" msprop:Generator_ColumnPropNameInRow="MoCajFormaPagoMon1" msprop:Generator_ColumnVarNameInTable="columnMoCajFormaPagoMon1" msprop:Generator_ColumnPropNameInTable="MoCajFormaPagoMon1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoCajFormaPagoMon2" msprop:Generator_UserColumnName="MoCajFormaPagoMon2" msprop:Generator_ColumnPropNameInRow="MoCajFormaPagoMon2" msprop:Generator_ColumnVarNameInTable="columnMoCajFormaPagoMon2" msprop:Generator_ColumnPropNameInTable="MoCajFormaPagoMon2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoCajMdaM1" msprop:Generator_UserColumnName="MoCajMdaM1" msprop:Generator_ColumnPropNameInRow="MoCajMdaM1" msprop:Generator_ColumnVarNameInTable="columnMoCajMdaM1" msprop:Generator_ColumnPropNameInTable="MoCajMdaM1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoCajMdaM2" msprop:Generator_UserColumnName="MoCajMdaM2" msprop:Generator_ColumnPropNameInRow="MoCajMdaM2" msprop:Generator_ColumnVarNameInTable="columnMoCajMdaM2" msprop:Generator_ColumnPropNameInTable="MoCajMdaM2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="MoCajOrigen" msprop:Generator_UserColumnName="MoCajOrigen" msprop:Generator_ColumnPropNameInRow="MoCajOrigen" msprop:Generator_ColumnVarNameInTable="columnMoCajOrigen" msprop:Generator_ColumnPropNameInTable="MoCajOrigenColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCajMotorPago" msprop:Generator_UserColumnName="MoCajMotorPago" msprop:Generator_ColumnPropNameInRow="MoCajMotorPago" msprop:Generator_ColumnVarNameInTable="columnMoCajMotorPago" msprop:Generator_ColumnPropNameInTable="MoCajMotorPagoColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoCajModalidad" msprop:Generator_UserColumnName="MoCajModalidad" msprop:Generator_ColumnPropNameInRow="MoCajModalidad" msprop:Generator_ColumnVarNameInTable="columnMoCajModalidad" msprop:Generator_ColumnPropNameInTable="MoCajModalidadColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OpcionesGeneral" msprop:Generator_UserTableName="OpcionesGeneral" msprop:Generator_RowDeletedName="OpcionesGeneralRowDeleted" msprop:Generator_RowChangedName="OpcionesGeneralRowChanged" msprop:Generator_RowClassName="OpcionesGeneralRow" msprop:Generator_RowChangingName="OpcionesGeneralRowChanging" msprop:Generator_RowEvArgName="OpcionesGeneralRowChangeEvent" msprop:Generator_RowEvHandlerName="OpcionesGeneralRowChangeEventHandler" msprop:Generator_TableClassName="OpcionesGeneralDataTable" msprop:Generator_TableVarName="tableOpcionesGeneral" msprop:Generator_RowDeletingName="OpcionesGeneralRowDeleting" msprop:Generator_TablePropName="OpcionesGeneral">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entidad" msprop:Generator_UserColumnName="entidad" msprop:Generator_ColumnVarNameInTable="columnentidad" msprop:Generator_ColumnPropNameInRow="entidad" msprop:Generator_ColumnPropNameInTable="entidadColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codigo" msprop:Generator_UserColumnName="codigo" msprop:Generator_ColumnVarNameInTable="columncodigo" msprop:Generator_ColumnPropNameInRow="codigo" msprop:Generator_ColumnPropNameInTable="codigoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre" msprop:Generator_UserColumnName="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rut" msprop:Generator_UserColumnName="rut" msprop:Generator_ColumnVarNameInTable="columnrut" msprop:Generator_ColumnPropNameInRow="rut" msprop:Generator_ColumnPropNameInTable="rutColumn" type="xs:decimal" />
+              <xs:element name="direccion" msprop:Generator_UserColumnName="direccion" msprop:Generator_ColumnVarNameInTable="columndireccion" msprop:Generator_ColumnPropNameInRow="direccion" msprop:Generator_ColumnPropNameInTable="direccionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="comuna" msprop:Generator_UserColumnName="comuna" msprop:Generator_ColumnVarNameInTable="columncomuna" msprop:Generator_ColumnPropNameInRow="comuna" msprop:Generator_ColumnPropNameInTable="comunaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ciudad" msprop:Generator_UserColumnName="ciudad" msprop:Generator_ColumnVarNameInTable="columnciudad" msprop:Generator_ColumnPropNameInRow="ciudad" msprop:Generator_ColumnPropNameInTable="ciudadColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefono" msprop:Generator_UserColumnName="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax" msprop:Generator_UserColumnName="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fechaant" msprop:Generator_UserColumnName="fechaant" msprop:Generator_ColumnVarNameInTable="columnfechaant" msprop:Generator_ColumnPropNameInRow="fechaant" msprop:Generator_ColumnPropNameInTable="fechaantColumn" type="xs:dateTime" />
+              <xs:element name="fechaproc" msprop:Generator_UserColumnName="fechaproc" msprop:Generator_ColumnVarNameInTable="columnfechaproc" msprop:Generator_ColumnPropNameInRow="fechaproc" msprop:Generator_ColumnPropNameInTable="fechaprocColumn" type="xs:dateTime" />
+              <xs:element name="fechaprox" msprop:Generator_UserColumnName="fechaprox" msprop:Generator_ColumnVarNameInTable="columnfechaprox" msprop:Generator_ColumnPropNameInRow="fechaprox" msprop:Generator_ColumnPropNameInTable="fechaproxColumn" type="xs:dateTime" />
+              <xs:element name="numero_Contrato" msprop:Generator_UserColumnName="numero_Contrato" msprop:Generator_ColumnVarNameInTable="columnnumero_Contrato" msprop:Generator_ColumnPropNameInRow="numero_Contrato" msprop:Generator_ColumnPropNameInTable="numero_ContratoColumn" type="xs:decimal" />
+              <xs:element name="numero_Folio" msprop:Generator_UserColumnName="numero_Folio" msprop:Generator_ColumnVarNameInTable="columnnumero_Folio" msprop:Generator_ColumnPropNameInRow="numero_Folio" msprop:Generator_ColumnPropNameInTable="numero_FolioColumn" type="xs:decimal" />
+              <xs:element name="rutbcch" msprop:Generator_UserColumnName="rutbcch" msprop:Generator_ColumnVarNameInTable="columnrutbcch" msprop:Generator_ColumnPropNameInRow="rutbcch" msprop:Generator_ColumnPropNameInTable="rutbcchColumn" type="xs:decimal" />
+              <xs:element name="iniciodia" msprop:Generator_UserColumnName="iniciodia" msprop:Generator_ColumnVarNameInTable="columniniciodia" msprop:Generator_ColumnPropNameInRow="iniciodia" msprop:Generator_ColumnPropNameInTable="iniciodiaColumn" type="xs:decimal" />
+              <xs:element name="findia" msprop:Generator_UserColumnName="findia" msprop:Generator_ColumnVarNameInTable="columnfindia" msprop:Generator_ColumnPropNameInRow="findia" msprop:Generator_ColumnPropNameInTable="findiaColumn" type="xs:decimal" />
+              <xs:element name="cierreMesa" msprop:Generator_UserColumnName="cierreMesa" msprop:Generator_ColumnVarNameInTable="columncierreMesa" msprop:Generator_ColumnPropNameInRow="cierreMesa" msprop:Generator_ColumnPropNameInTable="cierreMesaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="devengo" msprop:Generator_UserColumnName="devengo" msprop:Generator_ColumnVarNameInTable="columndevengo" msprop:Generator_ColumnPropNameInRow="devengo" msprop:Generator_ColumnPropNameInTable="devengoColumn" type="xs:decimal" />
+              <xs:element name="contabilidad" msprop:Generator_UserColumnName="contabilidad" msprop:Generator_ColumnVarNameInTable="columncontabilidad" msprop:Generator_ColumnPropNameInRow="contabilidad" msprop:Generator_ColumnPropNameInTable="contabilidadColumn" type="xs:decimal" />
+              <xs:element name="Vencimientos" msprop:Generator_UserColumnName="Vencimientos" msprop:Generator_ColumnVarNameInTable="columnVencimientos" msprop:Generator_ColumnPropNameInRow="Vencimientos" msprop:Generator_ColumnPropNameInTable="VencimientosColumn" type="xs:int" />
+              <xs:element name="Fijacion" msprop:Generator_UserColumnName="Fijacion" msprop:Generator_ColumnVarNameInTable="columnFijacion" msprop:Generator_ColumnPropNameInRow="Fijacion" msprop:Generator_ColumnPropNameInTable="FijacionColumn" type="xs:int" />
+              <xs:element name="VoucherNumero" msprop:Generator_UserColumnName="VoucherNumero" msprop:Generator_ColumnVarNameInTable="columnVoucherNumero" msprop:Generator_ColumnPropNameInRow="VoucherNumero" msprop:Generator_ColumnPropNameInTable="VoucherNumeroColumn" type="xs:decimal" />
+              <xs:element name="RutaIntCon" msprop:Generator_UserColumnName="RutaIntCon" msprop:Generator_ColumnVarNameInTable="columnRutaIntCon" msprop:Generator_ColumnPropNameInRow="RutaIntCon" msprop:Generator_ColumnPropNameInTable="RutaIntConColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RutaIntSigir" msprop:Generator_UserColumnName="RutaIntSigir" msprop:Generator_ColumnVarNameInTable="columnRutaIntSigir" msprop:Generator_ColumnPropNameInRow="RutaIntSigir" msprop:Generator_ColumnPropNameInTable="RutaIntSigirColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CargaParamSudaCierre" msprop:Generator_UserColumnName="CargaParamSudaCierre" msprop:Generator_ColumnVarNameInTable="columnCargaParamSudaCierre" msprop:Generator_ColumnPropNameInRow="CargaParamSudaCierre" msprop:Generator_ColumnPropNameInTable="CargaParamSudaCierreColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MoEncContrato" />
+      <xs:field xpath="mstns:MoNumFolio" />
+    </xs:unique>
+    <xs:unique name="MoDetContrato_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MoDetContrato" />
+      <xs:field xpath="mstns:MoNumFolio" />
+      <xs:field xpath="mstns:MoNumEstructura" />
+    </xs:unique>
+    <xs:unique name="MoFixing_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MoFixing" />
+      <xs:field xpath="mstns:MoNumFolio" />
+      <xs:field xpath="mstns:MoNumEstructura" />
+      <xs:field xpath="mstns:MoFixNumero" />
+    </xs:unique>
+    <xs:unique name="MoCaja_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MoCaja" />
+      <xs:field xpath="mstns:MoNumFolio" />
+      <xs:field xpath="mstns:MoNumEstructura" />
+      <xs:field xpath="mstns:MoCajFolio" />
+    </xs:unique>
+    <xs:unique name="OpcionesGeneral_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OpcionesGeneral" />
+      <xs:field xpath="mstns:entidad" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreBusinessObjects</name>
+    </assembly>
+    <members>
+        <member name="T:CoreBusinessObjects.Common.Constants">
+            <summary>
+            Clase que expone constantes publicas de mensajes para las capas de negocio 
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_FILE_NOTFOUND">
+            <summary>Mensaje que indica que no se puede encontrar el/los archivos </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_FILE_EXTENSION">
+            <summary>Mensaje que indica que el archivo no tiene el formato correcto </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_FILE_EMPTYNAME">
+            <summary>Mensaje que indica que el nombre de archivo no puede ser nulo o vacio </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_PARAM_NOT_NULL">
+            <summary>Mensaje que indica que el parametro no puede ser nulo o vacio </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_NOT_NULL">
+            <summary>Mensaje que indica que se deben cargar los datos de la plantilla </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_INPUT">
+            <summary>Mensaje que indica que la plantilla esta configurada para solo entrada </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_OUTPUT">
+            <summary>Mensaje que indica que la plantilla esta configurada para solo salida </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_COLUMN">
+            <summary>Mensaje que indica que la columna de extraccion esta fuera de los rangos de los datos importados</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_EMPTY_COLUMNS">
+            <summary>Mensaje que indica que la plantilla no contiene columnas de entrada </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_EMPTY_ROWS">
+            <summary>Mensaje que indica que la plantilla no especifica filas de entrada. </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_ROW">
+            <summary>Mensaje que indica que la fila de extraccion se encuentra fuera del rango de datos importados</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_SHEET_NOT_FOUND">
+            <summary>Mensaje que indica que no se encuentra la hoja excel solicitada </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_STOREPARAMS_NOT_NULL">
+            <summary>Mensaje que indica que no se encuentran parametros en el storeprocedure </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_STOREPROCS_NOT_NULL">
+            <summary>Mensaje que indica que no se encuentra el store procedure </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_STOREPARAMS_VALUE">
+            <summary>Mensaje que indica que no se encuentra el valor del parametro </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_QUERYFILE_NOTFOUND">
+            <summary>Mensaje que indica que no se encuentra el archivo de consulta </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_QUERY_NOTNULL">
+            <summary>Mensaje que indica que no se encuentra la cadena de consulta</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_MISSCONFIG">
+            <summary>Mensaje que indica que la plantilla esta mal configurada</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_FILENAMEPATTERN">
+            <summary>Mensaje que indica que no se encuentra el patron de generacion de nombres de archivo</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_DATA_NOT_NULL">
+            <summary>Mensaje que indica que  se deben cargar datos antes de exportar</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_DATA_NOT_FOUND">
+            <summary>Mensaje que indica que no se encuentra datos para exportar  </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_SOURCE_MISMATCH">
+            <summary>Mensaje que indica que no coinciden DataSet.Tables vs ValueSource(TData)</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_SOURCE_NOTFOUND">
+            <summary>Mensaje que indica que no se encuentra el valor fuente en las tablas del conjunto de datos.</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_ZERO_VALUE">
+            <summary>Mensaje que indica que el valor del parametro/opcion no puede ser 0</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Constants.MSG_TDATA_INVALID_SIZE">
+            <summary>Mensaje que indica que tamaño (del parametro/cadena) no es valido.</summary>
+        </member>
+        <member name="T:CoreBusinessObjects.BLayer.PlainTextFacade">
+            <summary>
+            Implementacion de logica de negocio exportacion a texto plano, separador por coma, posicion y largo fijo.
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.BLayer.AFacade">
+            <summary>
+            Clase abstracta de Fachada para heredar según tipo de implementacion Xml, Excel, etc.
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.ExportData(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.String@)">
+            <summary>
+            Funcion de Exportacion para implementar por las clases heredadas
+            </summary>
+            <param name="TData">Objeto con informacion de plantilla</param>
+            <param name="data">DataSet con la informacion a exportar</param>
+            <param name="newFileName">Si la plantilla no indica generacion automagica de nombres, se debe incluir este.</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.ImportData(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData,System.String,System.Data.DataSet@,System.Boolean)">
+            <summary>
+            Funcion de Importacion para implementar por las clases heredadas
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="TData">Objeto con informacion de plantilla</param>
+            <param name="fileToImport">Nombre de archivo a importar</param>
+            <param name="ds">DataSet con la informacion importada, incluye errores y filas en blanco</param>
+            <param name="execStoreProc">Indica si se debe ejecutar los StoreProcedure indicados en la plantilla.</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.ValidParameters(CoreBusinessObjects.Collections.TemplateStoreProcParamsCollection{CoreBusinessObjects.DTO.TemplateStoreProcParams},System.Data.DataRow,System.Boolean)">
+            <summary>
+            Retorna una lista de SqlParameters, con sus respectivos valores        
+            Nota: el TemplateStoreProcsParams debe tener mapeado su property SourceColumn, con tal de \r\nrealizar un binding entre SorceColumn y ColumnName del DataRow.
+            </summary>
+            <param name="ParametersCollection">Objeto tipo TemplateStoreProcsParamsCollection</param>
+            <param name="row">DataRow con valores para llenar en los parametros</param>
+            <param name="checkValue">Indica si se checkean los valores de los parametros vs opcion isNullable==false</param>
+            <returns>List&lt;SqlParameter&gt;</returns>
+            <remarks>
+            
+            </remarks>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.CheckEmptyRows(System.Data.DataRow,CoreBusinessObjects.Collections.TemplateDataAddressCollection{CoreBusinessObjects.DTO.TemplateDataAddress})">
+            <summary>
+            Check para el datarow esta empty o no.
+            </summary>
+            <param name="row">DataRow para chequear</param>
+            <param name="TData">Plantilla</param>
+            <returns>true: is empty / false: not empty</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.ExecureOutputProcedure(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet@)">
+            <summary>
+            Ejecuta el store procedure indicado en la plantilla en calidad de salida de datos.
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="TData">Datos de la plantilla</param>
+            <param name="ds">DataSet con los datos devueltos por el store procedure</param>
+            <returns>DataSet, true/false</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.ExecuteInputProcedure(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.Collections.Generic.List{System.Data.DataTable}@)">
+            <summary>
+            Ejecuta el store procedure indicado en la plantilla en calidad de entrada de datos.
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="TData">Plantilla</param>
+            <param name="ds">Datos para ingresar</param>
+            <param name="dt_errores">DataTable con errores de los procedimientos</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.LoadQuery(System.String)">
+            <summary>
+            Carga un archivo sql en memoria
+            </summary>
+            <param name="fileName">Nombre del archivo a cargar</param>
+            <returns>String</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.LoadTemplate(System.String)">
+            <summary>
+            Carga un archivo de plantilla y devuelve un objeto TemplataData.
+            </summary>
+            <param name="fileName">Nombre del archivo de plantilla</param>
+            <returns>TemplateData object</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.SaveTemplate(System.String,CoreBusinessObjects.DTO.TemplateData)">
+            <summary>
+            Guarda el objeto plantilla en un nuevo archivo .xml
+            </summary>
+            <param name="fileName">nombre del archivo a guardar</param>
+            <param name="TData">Objeto TemplateData a guardar</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.GenerateFileName(CoreBusinessObjects.DTO.TemplateData,System.Object,System.Boolean)">
+            <summary>
+            Genera Nombre de Archivo segun informacion de plantilla
+            </summary>
+            <param name="TData">Plantilla</param>
+            <param name="seed">semilla para generacion de nombre</param>
+            <param name="includeBaseDirectory">indica si se incluye el directorio base en la generacion del nombre</param>
+            <returns>nombre de archivo a generar</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.AFacade.PrepareCommand(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData)">
+            <summary>
+            Prepara una lista de SqlCommand, para ejecutar
+            </summary>
+            <param name="ctx">Contexto de Aplicacion</param>
+            <param name="TData">Plantilla</param>
+            <returns>Lista de SqlCommand</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.PlainTextFacade.ExportData(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.String@)">
+            <summary>
+            Rutina de exportacion a texto plano, delimitado o de largo fijo
+            </summary>
+            <param name="TData">Datos de Plantilla</param>
+            <param name="data">Datos a exportar</param>
+            <param name="newFileName">Nombre de archivo a usar para la exportacion</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.PlainTextFacade.ExportDataRaw(System.String,CoreBusinessObjects.DTO.TemplateData,System.Collections.Generic.List{System.Tuple{System.String,System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter}}},System.String@,System.String)">
+            <summary>
+            Rutina de exportacion a texto plano, en bruto.
+            </summary>
+            <param name="context">Contexto de Aplicacion</param>
+            <param name="TData">Datos de Plantilla</param>        
+            <param name="cmdProcedures">Lista de Procedimientos preparados para ejecutar</param>
+            <param name="token">token separador de campos.</param>
+            <param name="newFileName">Nombre de archivo a usar para la exportacion</param>
+            <returns>True/False</returns>
+            <remarks>
+            Procesa un unico procedimiento almacenado, que devuelva 2 tablas, procesa la primera directo al archivo
+            y la segunda tabla la arroja como encabezado del archivo (esto se debe mejorar y ajustar a la mecanica de la plantilla)
+            o ver algun mecanismo que permita la generalizacion (flags o algo por el estilo)
+            </remarks>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.PlainTextFacade.ExportDataRaw(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.String@)">
+            <summary>
+            Rutina de exportacion a texto plano, en bruto.
+            </summary>
+            <param name="TData">Datos de Plantilla</param>
+            <param name="data">Datos a exportar</param>
+            <param name="newFileName">Nombre de archivo a usar para la exportacion</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.PlainTextFacade.ImportData(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData,System.String,System.Data.DataSet@,System.Boolean)">
+            <summary>
+            Importa la data indicada por fileToImport y mapeado por TData
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="TData">Plantilla</param>
+            <param name="fileToImport">Nombre de archivo a importar</param>
+            <param name="ds">DataSet devuelto con los datos importados</param>
+            <param name="execStoreProc">Indica si se ejecutaran los store procs configurados en la plantilla</param>
+            <returns>True/False</returns>                
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.PlainTextFacade.Validate(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.String,CoreBusinessObjects.Common.ProcessEngineType)">
+            <summary>
+            Validacion basica para las distintas operaciones a realizar por el motor.
+            </summary>
+            <param name="TData">Plantilla de proceso</param>
+            <param name="data">Datos a procesar por la plantilla</param>
+            <param name="newFileName">nombre de archivo a generar</param>
+            <param name="proctype">Tipo de Proceso Input/Output</param>
+        </member>
+        <member name="T:CoreBusinessObjects.BLayer.PlainTextFacade.FixedFieldSize">
+            <summary>
+            estructura para generar campo de largo fijo.
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.BLayer.XmlFacadeBL">
+            <summary>
+            Implementacion de logica de negocio XML
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.XmlFacadeBL.ExportData(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.String@)">
+            <summary>
+            Proceso de volcado de los datos, segun datos de la plantilla.
+            </summary>
+            <param name="TData">Plantilla de exportacion</param>
+            <param name="data">DataSet con el conjunto de datos a exportar</param>
+            <param name="newFileName">Retorna el nombre de archivo </param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.XmlFacadeBL.ImportData(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData,System.String,System.Data.DataSet@,System.Boolean)">
+            <summary>
+            Importa la data indicada por fileToImport y mapeado por TData
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="TData">Plantilla</param>
+            <param name="fileToImport">Nombre de archivo a importar</param>
+            <param name="ds">DataSet devuelto con los datos importados</param>
+            <param name="execStoreProc">Indica si se ejecutaran los store procs configurados en la plantilla</param>
+            <returns>True/False</returns>        
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateStoreProcParams.#ctor">
+            <summary>
+            Default Construct
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateStoreProcParams.Parameter">
+            <summary>
+            Retorna IDataParameter del parametro de plantilla.
+            </summary>
+            <returns>IDataParameter</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateStoreProcParams.ToXML">
+            <summary>
+            Convierte el objeto en un xml
+            </summary>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateStoreProcParams.ToXML(System.Text.Encoding)">
+            <summary>
+            Convierte el objeto en un xml e incorpora codificacion distinta a UTF-8
+            </summary>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateStoreProcParams.FromXML(System.Xml.XmlDocument)">
+            <summary>
+            Lee un documento xml y lo transforma a objeto
+            </summary>
+            <param name="doc">XmlDocument con la informacion del objeto</param>
+            <returns>Objeto de tipo</returns>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.StoreProcName">
+            <summary>
+            Nombre del procedimiento almacenado
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.ParameterName">
+            <summary>
+            Nombre del parametro
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.Direction">
+            <summary>
+            Direccion del parametro
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.Precision">
+            <summary>
+            Cantidad de digitos
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.Scale">
+            <summary>
+            Determina la escala de los parametros numericos (cant. de decimales)
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.Size">
+            <summary>
+            Tamaño maximo de caracteres o numeros admitidos por el parametro
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.DBType">
+            <summary>
+            Tipo de dato SQL
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.IsNullable">
+            <summary>
+            Inidica si puede ser nulo o no.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.ParameterValue">
+            <summary>
+            Valor por defecto del parametro
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.UseParameterValue">
+            <summary>
+            Indica si se debe utilizar el valor del parametro o solicitar al usuario
+            por defecto utiliza el parametro (true)
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateStoreProcParams.SourceColumn">
+            <summary>
+            Obtiene o establece la columna del origen de datos (cuando la plantilla es de input / inputoutput
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.DTO.TemplateData">
+            <summary>
+            Clase que con la informacion del reporte a generar
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateData.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateData.ToXML">
+            <summary>
+            Convierte el objeto en un xml
+            </summary>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateData.ToXML(System.Text.Encoding)">
+            <summary>
+            Convierte el objeto en un xml e incorpora codificacion distinta a UTF-8
+            </summary>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateData.FromXML(System.Xml.XmlDocument)">
+            <summary>
+            Lee un documento xml y lo transforma a objeto
+            </summary>
+            <param name="doc">XmlDocument con la informacion del objeto</param>
+            <returns>Objeto de tipo</returns>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.DBCatalog">
+            <summary>
+            Nombre del catalogo de BD para obtener los datos.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.UniqueID">
+            <summary>
+            Id interno de la plantilla.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.TemplateID">
+            <summary>
+            Identificador de base de datos.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.TemplateName">
+            <summary>
+            Nombre de la Plantilla
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.DataBindingName">
+            <summary>
+            Nombre de campo para asociacion con procesos
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.TemplateDescription">
+            <summary>
+            Descripcion de la Plantilla
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.TemplateDirection">
+            <summary>
+            Direccion de la plantilla Input/Output
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.TemplateFile">
+            <summary>
+            Archivo de Plantilla 
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.TemplateFileName">
+            <summary>
+            Nombre del Archivo de Plantilla.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.UseStoreProc">
+            <summary>
+            Indica si la plantilla utiliza procedimientos almancenados.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.ListStoreProcsInfo">
+            <summary>
+            Lista de procedimientos almacenados
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.Item(System.String,System.String,CoreBusinessObjects.Common.DataDirection)">
+            <summary>
+            Retorna un objeto StoreProcsInfo
+            </summary>
+            <param name="storeProcName">Nombre del procedimiento almacenado a buscar</param>
+            <param name="sheetName">Nombre de hoja configurada del StoreProcsInfo</param>
+            <param name="direction">Direccion configurada del StoreProcsInfo</param>
+            <returns>StoreProcsInfo</returns>       
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.Item(System.String)">
+            <summary>
+            Busca todos los procedimientos almacenados asociados a un catalogo en particular.
+            </summary>
+            <param name="DBCatalog">Nombre del catalogo a buscar</param>
+            <returns>List&lt;StoreProcsInfo&gt;</returns>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.ListQueryInfo">
+            <summary>
+            Lista de informacion de las querys.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.ListXmlInfo">
+            <summary>
+            Lista de informacion para XML
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.ListExcelInfo">
+            <summary>
+            Lista de informacion de Excel.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.ListPlainTextInfo">
+            <summary>
+            Lista de Informacion para Generacion de Archivos en Texto Plano
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.IOFile">
+            <summary>
+            FileInfo del Archivo Excel al cual se volcaran los datos
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.IOFileName">
+            <summary>
+            Nombre del archivo al cual se volcaran los datos
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.IOFileDirection">
+            <summary>
+            Indica la direccion de los datos hacia o desde el archivo Excel
+            </summary>
+            <remarks>Valor por defecto: Output</remarks>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.IOFileNamePattern">
+            <summary>
+            Patron de nombre de archivo para generacion automagica..
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.IOFileBaseDirectory">
+            <summary>
+            Directorio para entrega de archivos
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.IOFileCopyFolders">
+            <summary>
+            Directorios para copia
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.useAppFolders">
+            <summary>
+            Indica si usaran los directorios por default de la aplicacion 
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateData.AdditionalInfo">
+            <summary>
+            Indica si se agregara la sig informacion al proceso de lectura de archivo : RowPosition,FileName,FileTime
+            </summary>        
+            <remarks>Default: False</remarks>
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.TemplateStoreProcParamsEnumerator`1">
+            <summary>
+            Enumerador de TemplateStoreProcParams
+            </summary>
+            <typeparam name="T"></typeparam>    
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.TemplateStoreProcParamsCollection`1">
+            <summary>
+            Coleccion de Objetos TemplateStoreProcParams
+            </summary>
+            <typeparam name="T"></typeparam>        
+        </member>
+        <member name="P:CoreBusinessObjects.Collections.TemplateStoreProcParamsCollection`1.Item(System.String)">
+            <summary>
+            Retorna un objeto TemplateStoreProcParams por el nombre del parametro
+            </summary>
+            <param name="ParameterName">Nombre del parametro</param>
+            <returns>TemplateStoreProcParams</returns>
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.TemplateDataAddressEnumerator`1">
+            <summary>
+            Enumerador de TemplateDataAddress
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.TemplateDataAddressCollection`1">
+            <summary>
+            Coleccion de Objetos TemplateAddress
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:CoreBusinessObjects.DTO.IOFileCopyFolders">
+            <summary>
+            Clase Implementacion multiples directorios.
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileCopyFolders._MainFolder">
+            <summary>
+            Marca el Folder como primario
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileCopyFolders._FolderDirection">
+            <summary>
+            Direccion del directorio
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileCopyFolders._FolderName">
+            <summary>
+            Nombre del directorio
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileCopyFolders._DirInfo">
+            <summary>
+            aux
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileCopyFolders.Copy">
+            <summary>
+            Copia el objeto IOFileCopyFolders
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileCopyFolders._UniqueID">
+            <summary>
+            guid del objeto
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileCopyFolders.Finalize">
+            <summary>
+            Default Destructor
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileCopyFolders.disposed">
+            <summary>
+            Disposing Flag
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileCopyFolders.Dispose(System.Boolean)">
+            <summary>
+            Virtual Dispose Method
+            </summary>
+            <param name="disposing">true/false</param>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileCopyFolders.Dispose">
+            <summary>
+            Dispose Method
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileCopyFolders.FolderDirection">
+            <summary>
+            Direccion de entrega del Directorio.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileCopyFolders.FolderName">
+            <summary>
+            Nombre del directorio
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileCopyFolders.MainFolder">
+            <summary>
+            Marca el directorio como principal (si existe en la coleccion mas de un principal, tomara el ultimo marcado.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileCopyFolders.CompressedFiles">
+            <summary>
+            Indica si los archivo en este directorio se debe comprimir para ahorrar espacio
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileCopyFolders.DirectoryInfo">
+            <summary>
+            DirectoryInfo Object
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileCopyFolders.UniqueID">
+            <summary>
+            Id Interno del objeto
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.IOFileCopyFoldersEnumerator`1">
+            <summary>
+            Enumerador de IOFileCopyFoldersAddres
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.IOFileCopyFoldersCollection`1">
+            <summary>
+            Coleccion de Objetos IOFileCopyFolders
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:CoreBusinessObjects.DTO.PlainTextInfo">
+            <summary>
+            Clase de informacion para generar archivo de texto plano,csv y de campo fijo
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.PlainTextInfo.#ctor">
+            <summary>Default Constructor.</summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.PlainTextInfo.Finalize">
+            <summary>Default Destructor</summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.PlainTextInfo.Dispose">
+            <summary>Dispose Object</summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.PlainTextInfo.Dispose(System.Boolean)">
+            <summary>Dispose Object</summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.PlainTextInfo.PlainTextDirection">
+            <summary>Indica la direccion de la plantilla.</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.PlainTextInfo.AddressCollection">
+            <summary>Retorna la especificacion de campos </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.PlainTextInfo.Token">
+            <summary>Separador para CSV</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.PlainTextInfo.MaxRowSize">
+            <summary>Tamaño maximo de la fila (para comprobacion) / Total de caracteres x fila.</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.PlainTextInfo.DataOnly">
+            <summary>
+            Indica si se utilizara solamente la data o las columnas para el volcado de informacion.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.PlainTextInfo.ValueSource">
+            <summary>
+            Fuente de donde se obtendra el dato, debe ser el nombre del DataTable
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.DTO.IOFileNamePattern">
+            <summary>
+            Representa parametrizacion del nombre de archivo de salida para TemplateData
+            </summary>
+            <remarks>
+            El resultado se conforma de la sig forma:
+            <c>Prefix + Pattern&gt;useDatePattern|useNumericPattern&lt;+Suffix.Extension</c>
+            </remarks>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileNamePattern._UniqueID">
+            <summary>guid del objeto</summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileNamePattern.newFileName">
+            <summary>
+            Devuelve un nombre de archivo con la forma
+            <c>Prefix + Pattern&gt;useDatePattern|useNumericPattern&lt;+Suffix.Extension</c>
+            </summary>        
+            <returns>string con el nombre de archivo generado, utiliza el patrón como parte de.</returns>              
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileNamePattern.newFileName(System.Int32)">
+            <summary>
+            Devuelve un nombre de archivo con la forma
+            <c>Prefix + Pattern&gt;useDatePattern|useNumericPattern&lt;+Suffix.Extension</c>
+            </summary>
+            <param name="seed">semilla numerica para generar nombre de archivo (experimental)</param>
+            <returns>string con el nombre de archivo generado</returns>    
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileNamePattern.newFileName(System.DateTime)">
+            <summary>
+            Devuelve un nombre de archivo con la forma
+            <c>Prefix + Pattern&gt;useDatePattern|useNumericPattern&lt;+Suffix.Extension</c>
+            </summary>
+            <param name="seed">semilla de fecha para generar nombre de archivo</param>
+            <returns>string con el nombre de archivo generado</returns>    
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileNamePattern.#ctor">
+            <summary>Default Constructor</summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileNamePattern.Finalize">
+            <summary>Default Destructor</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.IOFileNamePattern.disposed">
+            <summary>Disposing Flag</summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileNamePattern.Dispose(System.Boolean)">
+            <summary>Virtual Dispose Method</summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.IOFileNamePattern.Dispose">
+            <summary>Dispose Method</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileNamePattern.UniqueID">
+            <summary>Id Interno del objeto</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileNamePattern.Prefix">
+            <summary>Prefijo para nombre de archivo</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileNamePattern.Pattern">
+            <summary>
+            Patron personalizado a utilizar en caso de:
+            ej : 
+            - DatePattern    : yyyyMMdd | yyyyMMdd_Hmmss
+            - NumericPattern : N0 (en base 1) | 9## -> 901,902, etc -> experimental.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileNamePattern.Suffix">
+            <summary>Sufijo para nombre de archivo</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileNamePattern.Extension">
+            <summary>Extension del archivo</summary>
+            <remarks>
+            No implica necesariamente que el archivo a generar cumpla con la extension del archivo.
+            </remarks>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileNamePattern.useDatePattern">
+            <summary>Indica si usa patron de fecha para la generacion del nombre de archivo</summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.IOFileNamePattern.useNumericPattern">
+            <summary>Indica si usa patron de numero para generacion del nombre de archivo.</summary>
+            <remarks>Experimental...</remarks>
+        </member>
+        <member name="T:CoreBusinessObjects.DTO.XmlInfo">
+            <summary>
+            Clase de informacion para archivo xml input/ouput
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.AddressCollection">
+            <summary>
+            Retorna la Coleccion de Campos asociadas a la plantilla.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.ColumnStart">
+            <summary>
+            Indica la colunna donde empiezan los datos para lectura
+            </summary>
+            <remarks>Independiente si las columnas se encuentran en rango</remarks>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.DBCatalog">
+            <summary>
+            Catalogo.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.RowStart">
+            <summary>
+            Indica la fila donde empiezan los datos para lectura
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.SaveAsPrompt">
+            <summary>
+            Indica si se pregunta al usuario por el nombre de archivo excel a guardar
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.ValueSource">
+            <summary>
+            Fuente de donde se obtendra el dato, debe ser el nombre del DataTable
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.XmlDirection">
+            <summary>
+            Indica la direccion de la hoja input/output/inputoutput
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.XmlNodeName">
+            <summary>
+            Indica el nombre de la enumeracion del elemento xml
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.XmlInfo.XmlRootNode">
+            <summary>
+            Indica el nombre del nodo raiz xml
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.QueryInfo.QueryDirection">
+            <summary>
+            Direccion de la query Input/Output
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.QueryInfo.DBCatalog">
+            <summary>
+            Catalogo de la query.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.QueryInfo.QueryString">
+            <summary>
+            Consulta SQL Asociada a la Plantilla
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.QueryInfo.QueryFile">
+            <summary>
+            Archivo de Consulta
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.QueryInfo.QueryFileName">
+            <summary>
+            Nombre del Archivo de Consulta
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.DTO.ExcelInfo">
+            <summary>
+            Clase de informacion de archivo excel para input/ouput
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.ExcelSheetDirection">
+            <summary>
+            Indica la direccion de la hoja input/output/inputoutput
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.ExcelSheetName">
+            <summary>
+            Indica el nombre de la hoja con la que se realiza la lectura
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.ExcelRowStart">
+            <summary>
+            Indica la fila donde empiezan los datos para lectura
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.ExcelColumnStart">
+            <summary>
+            Indica la colunna donde empiezan los datos para lectura
+            </summary>
+            <remarks>Independiente si las columnas se encuentran en rango</remarks>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.ExcelSaveAsPrompt">
+            <summary>
+            Indica si se pregunta al usuario por el nombre de archivo excel a guardar
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.ExcelValueSource">
+            <summary>
+            Fuente de donde se obtendra el dato, debe ser el nombre del DataTable
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.AllowPaging">
+            <summary>
+            Admite paginacion
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.PageSize">
+            <summary>
+            Tamañano de pagina
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.ExcelInfo.AddressCollection">
+            <summary>
+            Retorna la Coleccion de Direcciones de celdas asociadas a la plantilla.
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.DTO.TemplateDataAddress">
+            <summary>
+            Clase que almacena las coordenadas F/C e informacion adicional
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateDataAddress.Finalize">
+            <summary>
+            Default Destructor
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.DTO.TemplateDataAddress.disposed">
+            <summary>
+            Disposing Flag
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateDataAddress.Dispose(System.Boolean)">
+            <summary>
+            Virtual Dispose Method
+            </summary>
+            <param name="disposing">true/false</param>        
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateDataAddress.Dispose">
+            <summary>
+            Dispose Method
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateDataAddress.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateDataAddress.ToXML">
+            <summary>
+            Convierte el objeto en xml
+            </summary>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.DTO.TemplateDataAddress.FromXML(System.Xml.XmlDocument)">
+            <summary>
+            Carga de un xml un TemplateDataAddress
+            </summary>
+            <returns>TemplateDataAddress</returns>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.UniqueID">
+            <summary>
+            Id unico de cada posicion de celda.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.RowPosition">
+            <summary>
+            Posicion de Fila 
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.ColumnPosition">
+            <summary>
+            Posicion de Columna
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.ColumnName">
+            <summary>
+            Nombre de Columna (A,B,C,D,E,F,...)
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.ColumnTitle">
+            <summary>
+            Titulo de la Columna 
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.ValueMember">
+            <summary>
+            Identificador de columna (SQL) que contiene los datos a escribir en el Excel
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.IsReadOnly">
+            <summary>Indica si la columna es de solo lectura</summary>        
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.RenderAsAttribute">
+            <summary>
+            Indica si la celda se mostrara como attributo (solo para XML)
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.CauseValidation">
+            <summary>
+            Indica si la celda se utiliza en la validacion de contenido
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.Direction">
+            <summary>
+            Indica direccion de volcado de los datos en el archivo excel.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.Comments">
+            <summary>
+            Comentarios para aplicar a la cabecera de la columna
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.MaxWritableRows">
+            <summary>
+            Maximo de filas a escribir , default: 50
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.RowColumnPosition">
+            <summary>
+            Retorna las coordenadas de la celda
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.Format">
+            <summary>
+            Formato del dato de la celda
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.Formula">
+            <summary>
+            Formula para aplicar a la celda
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.SheetName">
+            <summary>
+            Indica el nombre de la hoja a la que pertenece la columna
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.MaxFieldSize">
+            <summary>
+            Tamaño Maximo del campo(caracteres)
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.DataAlign">
+            <summary>
+            Alineacion de la data (izquierda/derecha)
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.TemplateDataAddress.FillWith">
+            <summary>Caracter de relleno para campos</summary>
+        </member>
+        <member name="T:CoreBusinessObjects.Common.DataDirection">
+            <summary>    
+            Indica direccion de volcado/extracción de los datos en el excel
+            </summary>    
+            <remarks>
+            Hay que distinguir dos procesos: 
+            - Escritura Excel (cuando se vuelcan los datos en el archivo), por lo tanto la direccion es OutPut
+            - Lectura Excel (cuando se va a procesar de vuelta el archivo), por lo tonto la direccion es Input
+            </remarks>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.DataDirection.Input">
+            <summary>
+            Indica que la celda/plantilla/store proc. es de solo entrada (para proceso de lectura)
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.DataDirection.InputOutput">
+            <summary>
+            Indica que la celda/plantilla/store proc. es de entrada/salida (por lo tanto se procesara en la lectura y escritura de archivo)
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.DataDirection.Output">
+            <summary>
+            Indica que la celda/plantilla/store proc. es de solo salida (para proceso de escritura)
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.Common.Align">
+            <summary>
+            Indica la alineacion de la data (para motor PlainText)
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Align.Right">
+            <summary>Alineacion de la data a al derecha</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Align.Left">
+            <summary>Alineacion de la data a la izquierda</summary>
+        </member>
+        <member name="T:CoreBusinessObjects.Common.Engine">
+            <summary>
+            Indica al sistema cual va a ser el motor de exportacion/importacion
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Engine.Excel">
+            <summary>Excel Engine (OpenExcel standar), para utilizar plantilla de volcado de datos.</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Engine.ExcelRaw">
+            <summary>Excel Engine (OpenExcel standar), para utilizar exportacion directa (sin plantilla para volcado de datos)/// </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Engine.PlainText">
+            <summary>Plain Text/CSV (fixed field size)</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Engine.PlainTextRaw">
+            <summary>Plain Text/CSV Volcado en bruto...</summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.Engine.Xml">
+            <summary>Xml Engine</summary>
+        </member>
+        <member name="T:CoreBusinessObjects.Common.ProcessEngineType">
+            <summary>
+            Indica el tipo de proceso que esta realizando el programa
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.ProcessEngineType.Input">
+            <summary>
+            Proceso Input (Ingreso de Datos a/los sistema(s))
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.ProcessEngineType.Output">
+            <summary>
+            Proceso Output (Salidad de datos a/los sistema(s))
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.Common.FolderDirection">
+            <summary>
+            Indica direccion del directorio de copia 
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.FolderDirection.Input">
+            <summary>
+            Indica si es de solo entrada
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.FolderDirection.Output">
+            <summary>
+            Indica si es de solo salida
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.FolderDirection.Backup">
+            <summary>
+            Indica si el directorio es de respaldo //se ignora el directorio
+            </summary>
+        </member>
+        <member name="F:CoreBusinessObjects.Common.FolderDirection.Ignore">
+            <summary>
+            Indica si se ignora el directorio
+            </summary>
+        </member>
+        <member name="T:CoreBusinessObjects.BLayer.ExcelFacadeBL">
+            <summary>
+            Implementacion de logica de negocio para exportacion/importacion desde y hacia archivo excel
+            </summary>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.ExcelFacadeBL.ExportData(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.String@)">
+            <summary>
+            Proceso de volcado de los datos en excel, dato por los datos de la plantilla
+            </summary>
+            <param name="TData">Plantilla de exportacion</param>
+            <param name="data">DataSet con el conjunto de datos a exportar</param>
+            <param name="newFileName">Retorna el nombre de archivo </param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.ExcelFacadeBL.ImportData(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData,System.String,System.Data.DataSet@,System.Boolean)">
+            <summary>
+            Importa la data indicada por fileToImport y mapeado por TData
+            </summary>
+            <param name="ctx">Contexto de aplicacion</param>
+            <param name="TData">Plantilla</param>
+            <param name="fileToImport">Nombre de archivo a importar</param>
+            <param name="ds">DataSet devuelto con los datos importados</param>
+            <param name="execStoreProc">Indica si se ejecutaran los store procs configurados en la plantilla</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.ExcelFacadeBL.WorksheetList(OfficeOpenXml.ExcelPackage)">
+            <summary>
+            Devuelve un Dictionary con los nombres y las hojas del libro
+            </summary>
+            <param name="pkg">Libro excel a obtener las hojas.</param>
+            <returns>Dictionary</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.ExcelFacadeBL.ExportData(CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.String,System.DateTime,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Exporta un dataset a excel con la informacion indicada por la plantilla
+            </summary>
+            <param name="TData">Objeto plantilla con informacion para generar archivos</param>
+            <param name="data">Conjunto de datos a exportar</param>
+            <param name="FileNames">Lista con nombres de archivos generados</param>
+            <param name="processDate">Fecha de Proceso</param>
+            <param name="BaseDirectory">Directorio base para entrega de archivos</param>        
+            <returns>true</returns>
+        </member>
+        <member name="M:CoreBusinessObjects.BLayer.ExcelFacadeBL.DCEMatching(CoreLib.Common.AppContext,CoreBusinessObjects.DTO.TemplateData,System.Data.DataSet,System.Data.DataSet@)">
+            <summary>
+            Metodo de matching de lectura de DCE 
+            </summary>
+            <param name="ctx">Contexto de Aplicacion.</param>
+            <param name="TData">Template object.</param>
+            <param name="matching_data">data resultante del proceso.</param>
+            <param name="data">data para hacer match con DCE.</param>
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.TemplateDataEnumerator`1">
+            <summary>
+            Enumerador de TemplateDataAddress
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:CoreBusinessObjects.Collections.TemplateDataCollection`1">
+            <summary>
+            Coleccion de Objetos TemplateData
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.StoreProcsInfo.DBCatalog">
+            <summary>
+            Nombre del catalogo o base de datos donde buscar el procedimiento.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.StoreProcsInfo.Direction">
+            <summary>
+            Indica direccion de los resultados del store procs
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.StoreProcsInfo.ConnectionTimeout">
+            <summary>
+            Especifica un time out para la conexion.
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.StoreProcsInfo.hasParameters">
+            <summary>
+            Indica si tiene parametros la ejecucion del store procedure
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.StoreProcsInfo.SheetName">
+            <summary>
+            Nombre de la hoja asociada a la ejecucion del Store Procedure
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.StoreProcsInfo.StoreProcName">
+            <summary>
+            Nombre del Store Procedure Input/Output
+            </summary>
+        </member>
+        <member name="P:CoreBusinessObjects.DTO.StoreProcsInfo.ListStoreProcParams">
+            <summary>
+            Coleccion de parametros para el store procedure
+            </summary>
+        </member>
+    </members>
+</doc>

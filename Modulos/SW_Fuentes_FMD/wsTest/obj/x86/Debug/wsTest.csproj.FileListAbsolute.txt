@@ -1,0 +1,10 @@
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\bin\Debug\wsTest.exe.config
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\bin\Debug\wsTest.exe
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\bin\Debug\wsTest.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\obj\x86\Debug\wsTest.Properties.Resources.resources
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\obj\x86\Debug\wsTest.TestingWS.resources
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\obj\x86\Debug\GenerateResource.read.1.tlog
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\obj\x86\Debug\GenerateResource.write.1.tlog
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\obj\x86\Debug\wsTest.exe
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\wsTest\obj\x86\Debug\wsTest.pdb

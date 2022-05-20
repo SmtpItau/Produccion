@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd47" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd48" />
+  <xsd:complexType name="PartyData_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="Contact" type="tns:Contact_Type" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="IssuedIdent" type="tns:IssuedIdent_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

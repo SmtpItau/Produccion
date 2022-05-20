@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" elementFormDefault="unqualified" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd10" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd11" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd12" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd13" />
+  <xsd:complexType name="OfferInfo_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="CampaignIdent" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OfferCommentId" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctKeys" type="tns:AcctKeys_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PricingPlanIdent" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IntrnlFundsAllwdInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Comment" type="tns:Comment_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="LOCLimit" type="tns:LOCLimit_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OfferResponseInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OfferDuration" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurAmtRange" type="tns:CurAmtRange_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrigLOCLimit" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExpDt" type="xsd:date" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OfferDt" type="xsd:date" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CostRate" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MinAnnualIncome" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InterestRate" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ResponseMethod" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ResponseType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MaxLimit" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ProductIdent" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IntrnlFundsAllwdIndExt" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OfferResponse" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MigrationInd" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

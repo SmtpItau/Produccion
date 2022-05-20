@@ -1,0 +1,2781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ForwardSintetico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntosCosto" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strikes_Delta_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardSinteticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForwardSinteticoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_FwdSintetico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="price_objective" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_FwdSinteticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_FwdSinteticoResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Straddle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strikes_Delta_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StraddleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StraddleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Strangle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StrangleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrangleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Butterfly">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="VegaWeighted" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="NocionalStrangle" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ButterflyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ButterflyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RiskReversal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotSmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RiskReversalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RiskReversalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardAmericano">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardAmericanoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForwardAmericanoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestForwardAmericano">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestForwardAmericanoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestForwardAmericanoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_RiskReversal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="price_objective" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ceiling_Floor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_RiskReversalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_RiskReversalResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardGananciaAcotada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntosCosto" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardGananciaAcotadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForwardGananciaAcotadaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardPerdidaAcotada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardPerdidaAcotadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForwardPerdidaAcotadaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_FwdAcotado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="price_objective" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Puntos_Cota" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Perdida_Ganancia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotFwd" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="putnosFwd" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_FwdAcotadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_FwdAcotadoResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_ForwardAmericano">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_ForwardAmericanoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Solver_ForwardAmericanoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StripAsiatico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntosCosto" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strikes_Delta_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlStrip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StripAsiaticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StripAsiaticoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_StripAsiatico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MtM_objetivo" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntosCosto" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strikes_Delta_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlStrip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_StripAsiaticoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_StripAsiaticoResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallPutSpread">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotSmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoEstructura" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallPutSpreadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallPutSpreadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallPutSpread">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="price_objective" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ceiling_Floor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoEstruct" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallPutSpreadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_CallPutSpreadResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardAsiaticoEntradaSalida">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntosCosto" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strikes_Delta_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enumSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForwardAsiaticoEntradaSalidaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForwardAsiaticoEntradaSalidaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallSpreadDoble">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="call_put" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotSmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallSpreadDobleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallSpreadDobleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallSpreadDoble">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="price_objective" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ceiling_Floor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spotsmile" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoEstruct" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_CallSpreadDobleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_CallSpreadDobleResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_ForwardAsiaticoEntradaSalida">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="price_objective" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="strikes_delta_flag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vanilla_asiatica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpot_BsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fijaciones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estructura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="payoff" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="puntos_fwd_costo" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Val" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha_Vencto" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetDePrecios" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compra_venta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nocional" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="spot" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="Strike_Delta_Values_XML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YieldNameFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Solver_ForwardAsiaticoEntradaSalidaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Solver_ForwardAsiaticoEntradaSalidaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="double" type="s:double" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ForwardSinteticoSoapIn">
+    <wsdl:part name="parameters" element="tns:ForwardSintetico" />
+  </wsdl:message>
+  <wsdl:message name="ForwardSinteticoSoapOut">
+    <wsdl:part name="parameters" element="tns:ForwardSinteticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdSinteticoSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_FwdSintetico" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdSinteticoSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_FwdSinteticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="StraddleSoapIn">
+    <wsdl:part name="parameters" element="tns:Straddle" />
+  </wsdl:message>
+  <wsdl:message name="StraddleSoapOut">
+    <wsdl:part name="parameters" element="tns:StraddleResponse" />
+  </wsdl:message>
+  <wsdl:message name="StrangleSoapIn">
+    <wsdl:part name="parameters" element="tns:Strangle" />
+  </wsdl:message>
+  <wsdl:message name="StrangleSoapOut">
+    <wsdl:part name="parameters" element="tns:StrangleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ButterflySoapIn">
+    <wsdl:part name="parameters" element="tns:Butterfly" />
+  </wsdl:message>
+  <wsdl:message name="ButterflySoapOut">
+    <wsdl:part name="parameters" element="tns:ButterflyResponse" />
+  </wsdl:message>
+  <wsdl:message name="RiskReversalSoapIn">
+    <wsdl:part name="parameters" element="tns:RiskReversal" />
+  </wsdl:message>
+  <wsdl:message name="RiskReversalSoapOut">
+    <wsdl:part name="parameters" element="tns:RiskReversalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAmericanoSoapIn">
+    <wsdl:part name="parameters" element="tns:ForwardAmericano" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAmericanoSoapOut">
+    <wsdl:part name="parameters" element="tns:ForwardAmericanoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestForwardAmericanoSoapIn">
+    <wsdl:part name="parameters" element="tns:TestForwardAmericano" />
+  </wsdl:message>
+  <wsdl:message name="TestForwardAmericanoSoapOut">
+    <wsdl:part name="parameters" element="tns:TestForwardAmericanoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_RiskReversalSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_RiskReversal" />
+  </wsdl:message>
+  <wsdl:message name="Solver_RiskReversalSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_RiskReversalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForwardGananciaAcotadaSoapIn">
+    <wsdl:part name="parameters" element="tns:ForwardGananciaAcotada" />
+  </wsdl:message>
+  <wsdl:message name="ForwardGananciaAcotadaSoapOut">
+    <wsdl:part name="parameters" element="tns:ForwardGananciaAcotadaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForwardPerdidaAcotadaSoapIn">
+    <wsdl:part name="parameters" element="tns:ForwardPerdidaAcotada" />
+  </wsdl:message>
+  <wsdl:message name="ForwardPerdidaAcotadaSoapOut">
+    <wsdl:part name="parameters" element="tns:ForwardPerdidaAcotadaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdAcotadoSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_FwdAcotado" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdAcotadoSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_FwdAcotadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAmericanoSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_ForwardAmericano" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAmericanoSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_ForwardAmericanoResponse" />
+  </wsdl:message>
+  <wsdl:message name="StripAsiaticoSoapIn">
+    <wsdl:part name="parameters" element="tns:StripAsiatico" />
+  </wsdl:message>
+  <wsdl:message name="StripAsiaticoSoapOut">
+    <wsdl:part name="parameters" element="tns:StripAsiaticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_StripAsiaticoSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_StripAsiatico" />
+  </wsdl:message>
+  <wsdl:message name="Solver_StripAsiaticoSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_StripAsiaticoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CallPutSpreadSoapIn">
+    <wsdl:part name="parameters" element="tns:CallPutSpread" />
+  </wsdl:message>
+  <wsdl:message name="CallPutSpreadSoapOut">
+    <wsdl:part name="parameters" element="tns:CallPutSpreadResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPutSpreadSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_CallPutSpread" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPutSpreadSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_CallPutSpreadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAsiaticoEntradaSalidaSoapIn">
+    <wsdl:part name="parameters" element="tns:ForwardAsiaticoEntradaSalida" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAsiaticoEntradaSalidaSoapOut">
+    <wsdl:part name="parameters" element="tns:ForwardAsiaticoEntradaSalidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CallSpreadDobleSoapIn">
+    <wsdl:part name="parameters" element="tns:CallSpreadDoble" />
+  </wsdl:message>
+  <wsdl:message name="CallSpreadDobleSoapOut">
+    <wsdl:part name="parameters" element="tns:CallSpreadDobleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallSpreadDobleSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_CallSpreadDoble" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallSpreadDobleSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_CallSpreadDobleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAsiaticoEntradaSalidaSoapIn">
+    <wsdl:part name="parameters" element="tns:Solver_ForwardAsiaticoEntradaSalida" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAsiaticoEntradaSalidaSoapOut">
+    <wsdl:part name="parameters" element="tns:Solver_ForwardAsiaticoEntradaSalidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForwardSinteticoHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardSinteticoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdSinteticoHttpGetIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdSinteticoHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="StraddleHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StraddleHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="StrangleHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StrangleHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ButterflyHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="VegaWeighted" type="s:string" />
+    <wsdl:part name="NocionalStrangle" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ButterflyHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RiskReversalHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotSmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RiskReversalHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAmericanoHttpGetIn">
+    <wsdl:part name="value" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAmericanoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TestForwardAmericanoHttpGetIn" />
+  <wsdl:message name="TestForwardAmericanoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_RiskReversalHttpGetIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Ceiling_Floor" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_RiskReversalHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="ForwardGananciaAcotadaHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardGananciaAcotadaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardPerdidaAcotadaHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardPerdidaAcotadaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdAcotadoHttpGetIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Puntos_Cota" type="s:string" />
+    <wsdl:part name="Perdida_Ganancia" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="spotFwd" type="s:string" />
+    <wsdl:part name="putnosFwd" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdAcotadoHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAmericanoHttpGetIn">
+    <wsdl:part name="value" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAmericanoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="StripAsiaticoHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+    <wsdl:part name="xmlStrip" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StripAsiaticoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_StripAsiaticoHttpGetIn">
+    <wsdl:part name="MtM_objetivo" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+    <wsdl:part name="xmlStrip" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_StripAsiaticoHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="CallPutSpreadHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotSmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+    <wsdl:part name="TipoEstructura" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CallPutSpreadHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPutSpreadHttpGetIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Ceiling_Floor" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+    <wsdl:part name="TipoEstruct" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPutSpreadHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAsiaticoEntradaSalidaHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAsiaticoEntradaSalidaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CallSpreadDobleHttpGetIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotSmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CallSpreadDobleHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallSpreadDobleHttpGetIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Ceiling_Floor" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+    <wsdl:part name="TipoEstruct" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallSpreadDobleHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAsiaticoEntradaSalidaHttpGetIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAsiaticoEntradaSalidaHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="ForwardSinteticoHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardSinteticoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdSinteticoHttpPostIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdSinteticoHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="StraddleHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StraddleHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="StrangleHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StrangleHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ButterflyHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="VegaWeighted" type="s:string" />
+    <wsdl:part name="NocionalStrangle" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ButterflyHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RiskReversalHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotSmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RiskReversalHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAmericanoHttpPostIn">
+    <wsdl:part name="value" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAmericanoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TestForwardAmericanoHttpPostIn" />
+  <wsdl:message name="TestForwardAmericanoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_RiskReversalHttpPostIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Ceiling_Floor" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_RiskReversalHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="ForwardGananciaAcotadaHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardGananciaAcotadaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardPerdidaAcotadaHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardPerdidaAcotadaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdAcotadoHttpPostIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Puntos_Cota" type="s:string" />
+    <wsdl:part name="Perdida_Ganancia" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="spotFwd" type="s:string" />
+    <wsdl:part name="putnosFwd" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_FwdAcotadoHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAmericanoHttpPostIn">
+    <wsdl:part name="value" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAmericanoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="StripAsiaticoHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+    <wsdl:part name="xmlStrip" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StripAsiaticoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_StripAsiaticoHttpPostIn">
+    <wsdl:part name="MtM_objetivo" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+    <wsdl:part name="xmlStrip" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_StripAsiaticoHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="CallPutSpreadHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotSmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+    <wsdl:part name="TipoEstructura" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CallPutSpreadHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPutSpreadHttpPostIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Ceiling_Floor" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+    <wsdl:part name="TipoEstruct" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallPutSpreadHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAsiaticoEntradaSalidaHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntosCosto" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strikes_Delta_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="enumSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForwardAsiaticoEntradaSalidaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CallSpreadDobleHttpPostIn">
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="call_put" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotSmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CallSpreadDobleHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallSpreadDobleHttpPostIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="Ceiling_Floor" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="spotsmile" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+    <wsdl:part name="TipoEstruct" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_CallSpreadDobleHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAsiaticoEntradaSalidaHttpPostIn">
+    <wsdl:part name="price_objective" type="s:string" />
+    <wsdl:part name="strikes_delta_flag" type="s:string" />
+    <wsdl:part name="vanilla_asiatica" type="s:string" />
+    <wsdl:part name="BsSpot_BsFwd" type="s:string" />
+    <wsdl:part name="Fijaciones" type="s:string" />
+    <wsdl:part name="estructura" type="s:string" />
+    <wsdl:part name="payoff" type="s:string" />
+    <wsdl:part name="puntos_fwd_costo" type="s:string" />
+    <wsdl:part name="fecha_Val" type="s:string" />
+    <wsdl:part name="fecha_Vencto" type="s:string" />
+    <wsdl:part name="FechaSetDePrecios" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="compra_venta" type="s:string" />
+    <wsdl:part name="nocional" type="s:string" />
+    <wsdl:part name="spot" type="s:string" />
+    <wsdl:part name="Strike_Delta_Values_XML" type="s:string" />
+    <wsdl:part name="YieldNameDom" type="s:string" />
+    <wsdl:part name="YieldNameFor" type="s:string" />
+    <wsdl:part name="setPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Solver_ForwardAsiaticoEntradaSalidaHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:portType name="SrvEstructuraSoap">
+    <wsdl:operation name="ForwardSintetico">
+      <wsdl:input message="tns:ForwardSinteticoSoapIn" />
+      <wsdl:output message="tns:ForwardSinteticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdSintetico">
+      <wsdl:input message="tns:Solver_FwdSinteticoSoapIn" />
+      <wsdl:output message="tns:Solver_FwdSinteticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Straddle">
+      <wsdl:input message="tns:StraddleSoapIn" />
+      <wsdl:output message="tns:StraddleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Strangle">
+      <wsdl:input message="tns:StrangleSoapIn" />
+      <wsdl:output message="tns:StrangleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Butterfly">
+      <wsdl:input message="tns:ButterflySoapIn" />
+      <wsdl:output message="tns:ButterflySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RiskReversal">
+      <wsdl:input message="tns:RiskReversalSoapIn" />
+      <wsdl:output message="tns:RiskReversalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAmericano">
+      <wsdl:input message="tns:ForwardAmericanoSoapIn" />
+      <wsdl:output message="tns:ForwardAmericanoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestForwardAmericano">
+      <wsdl:input message="tns:TestForwardAmericanoSoapIn" />
+      <wsdl:output message="tns:TestForwardAmericanoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_RiskReversal">
+      <wsdl:input message="tns:Solver_RiskReversalSoapIn" />
+      <wsdl:output message="tns:Solver_RiskReversalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardGananciaAcotada">
+      <wsdl:input message="tns:ForwardGananciaAcotadaSoapIn" />
+      <wsdl:output message="tns:ForwardGananciaAcotadaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardPerdidaAcotada">
+      <wsdl:input message="tns:ForwardPerdidaAcotadaSoapIn" />
+      <wsdl:output message="tns:ForwardPerdidaAcotadaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdAcotado">
+      <wsdl:input message="tns:Solver_FwdAcotadoSoapIn" />
+      <wsdl:output message="tns:Solver_FwdAcotadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAmericano">
+      <wsdl:input message="tns:Solver_ForwardAmericanoSoapIn" />
+      <wsdl:output message="tns:Solver_ForwardAmericanoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StripAsiatico">
+      <wsdl:input message="tns:StripAsiaticoSoapIn" />
+      <wsdl:output message="tns:StripAsiaticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_StripAsiatico">
+      <wsdl:input message="tns:Solver_StripAsiaticoSoapIn" />
+      <wsdl:output message="tns:Solver_StripAsiaticoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallPutSpread">
+      <wsdl:input message="tns:CallPutSpreadSoapIn" />
+      <wsdl:output message="tns:CallPutSpreadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPutSpread">
+      <wsdl:input message="tns:Solver_CallPutSpreadSoapIn" />
+      <wsdl:output message="tns:Solver_CallPutSpreadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAsiaticoEntradaSalida">
+      <wsdl:input message="tns:ForwardAsiaticoEntradaSalidaSoapIn" />
+      <wsdl:output message="tns:ForwardAsiaticoEntradaSalidaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSpreadDoble">
+      <wsdl:input message="tns:CallSpreadDobleSoapIn" />
+      <wsdl:output message="tns:CallSpreadDobleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallSpreadDoble">
+      <wsdl:input message="tns:Solver_CallSpreadDobleSoapIn" />
+      <wsdl:output message="tns:Solver_CallSpreadDobleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAsiaticoEntradaSalida">
+      <wsdl:input message="tns:Solver_ForwardAsiaticoEntradaSalidaSoapIn" />
+      <wsdl:output message="tns:Solver_ForwardAsiaticoEntradaSalidaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvEstructuraHttpGet">
+    <wsdl:operation name="ForwardSintetico">
+      <wsdl:input message="tns:ForwardSinteticoHttpGetIn" />
+      <wsdl:output message="tns:ForwardSinteticoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdSintetico">
+      <wsdl:input message="tns:Solver_FwdSinteticoHttpGetIn" />
+      <wsdl:output message="tns:Solver_FwdSinteticoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Straddle">
+      <wsdl:input message="tns:StraddleHttpGetIn" />
+      <wsdl:output message="tns:StraddleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Strangle">
+      <wsdl:input message="tns:StrangleHttpGetIn" />
+      <wsdl:output message="tns:StrangleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Butterfly">
+      <wsdl:input message="tns:ButterflyHttpGetIn" />
+      <wsdl:output message="tns:ButterflyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RiskReversal">
+      <wsdl:input message="tns:RiskReversalHttpGetIn" />
+      <wsdl:output message="tns:RiskReversalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAmericano">
+      <wsdl:input message="tns:ForwardAmericanoHttpGetIn" />
+      <wsdl:output message="tns:ForwardAmericanoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestForwardAmericano">
+      <wsdl:input message="tns:TestForwardAmericanoHttpGetIn" />
+      <wsdl:output message="tns:TestForwardAmericanoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_RiskReversal">
+      <wsdl:input message="tns:Solver_RiskReversalHttpGetIn" />
+      <wsdl:output message="tns:Solver_RiskReversalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardGananciaAcotada">
+      <wsdl:input message="tns:ForwardGananciaAcotadaHttpGetIn" />
+      <wsdl:output message="tns:ForwardGananciaAcotadaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardPerdidaAcotada">
+      <wsdl:input message="tns:ForwardPerdidaAcotadaHttpGetIn" />
+      <wsdl:output message="tns:ForwardPerdidaAcotadaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdAcotado">
+      <wsdl:input message="tns:Solver_FwdAcotadoHttpGetIn" />
+      <wsdl:output message="tns:Solver_FwdAcotadoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAmericano">
+      <wsdl:input message="tns:Solver_ForwardAmericanoHttpGetIn" />
+      <wsdl:output message="tns:Solver_ForwardAmericanoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StripAsiatico">
+      <wsdl:input message="tns:StripAsiaticoHttpGetIn" />
+      <wsdl:output message="tns:StripAsiaticoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_StripAsiatico">
+      <wsdl:input message="tns:Solver_StripAsiaticoHttpGetIn" />
+      <wsdl:output message="tns:Solver_StripAsiaticoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallPutSpread">
+      <wsdl:input message="tns:CallPutSpreadHttpGetIn" />
+      <wsdl:output message="tns:CallPutSpreadHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPutSpread">
+      <wsdl:input message="tns:Solver_CallPutSpreadHttpGetIn" />
+      <wsdl:output message="tns:Solver_CallPutSpreadHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAsiaticoEntradaSalida">
+      <wsdl:input message="tns:ForwardAsiaticoEntradaSalidaHttpGetIn" />
+      <wsdl:output message="tns:ForwardAsiaticoEntradaSalidaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSpreadDoble">
+      <wsdl:input message="tns:CallSpreadDobleHttpGetIn" />
+      <wsdl:output message="tns:CallSpreadDobleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallSpreadDoble">
+      <wsdl:input message="tns:Solver_CallSpreadDobleHttpGetIn" />
+      <wsdl:output message="tns:Solver_CallSpreadDobleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAsiaticoEntradaSalida">
+      <wsdl:input message="tns:Solver_ForwardAsiaticoEntradaSalidaHttpGetIn" />
+      <wsdl:output message="tns:Solver_ForwardAsiaticoEntradaSalidaHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvEstructuraHttpPost">
+    <wsdl:operation name="ForwardSintetico">
+      <wsdl:input message="tns:ForwardSinteticoHttpPostIn" />
+      <wsdl:output message="tns:ForwardSinteticoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdSintetico">
+      <wsdl:input message="tns:Solver_FwdSinteticoHttpPostIn" />
+      <wsdl:output message="tns:Solver_FwdSinteticoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Straddle">
+      <wsdl:input message="tns:StraddleHttpPostIn" />
+      <wsdl:output message="tns:StraddleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Strangle">
+      <wsdl:input message="tns:StrangleHttpPostIn" />
+      <wsdl:output message="tns:StrangleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Butterfly">
+      <wsdl:input message="tns:ButterflyHttpPostIn" />
+      <wsdl:output message="tns:ButterflyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RiskReversal">
+      <wsdl:input message="tns:RiskReversalHttpPostIn" />
+      <wsdl:output message="tns:RiskReversalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAmericano">
+      <wsdl:input message="tns:ForwardAmericanoHttpPostIn" />
+      <wsdl:output message="tns:ForwardAmericanoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestForwardAmericano">
+      <wsdl:input message="tns:TestForwardAmericanoHttpPostIn" />
+      <wsdl:output message="tns:TestForwardAmericanoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_RiskReversal">
+      <wsdl:input message="tns:Solver_RiskReversalHttpPostIn" />
+      <wsdl:output message="tns:Solver_RiskReversalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardGananciaAcotada">
+      <wsdl:input message="tns:ForwardGananciaAcotadaHttpPostIn" />
+      <wsdl:output message="tns:ForwardGananciaAcotadaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardPerdidaAcotada">
+      <wsdl:input message="tns:ForwardPerdidaAcotadaHttpPostIn" />
+      <wsdl:output message="tns:ForwardPerdidaAcotadaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdAcotado">
+      <wsdl:input message="tns:Solver_FwdAcotadoHttpPostIn" />
+      <wsdl:output message="tns:Solver_FwdAcotadoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAmericano">
+      <wsdl:input message="tns:Solver_ForwardAmericanoHttpPostIn" />
+      <wsdl:output message="tns:Solver_ForwardAmericanoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StripAsiatico">
+      <wsdl:input message="tns:StripAsiaticoHttpPostIn" />
+      <wsdl:output message="tns:StripAsiaticoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_StripAsiatico">
+      <wsdl:input message="tns:Solver_StripAsiaticoHttpPostIn" />
+      <wsdl:output message="tns:Solver_StripAsiaticoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallPutSpread">
+      <wsdl:input message="tns:CallPutSpreadHttpPostIn" />
+      <wsdl:output message="tns:CallPutSpreadHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPutSpread">
+      <wsdl:input message="tns:Solver_CallPutSpreadHttpPostIn" />
+      <wsdl:output message="tns:Solver_CallPutSpreadHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAsiaticoEntradaSalida">
+      <wsdl:input message="tns:ForwardAsiaticoEntradaSalidaHttpPostIn" />
+      <wsdl:output message="tns:ForwardAsiaticoEntradaSalidaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallSpreadDoble">
+      <wsdl:input message="tns:CallSpreadDobleHttpPostIn" />
+      <wsdl:output message="tns:CallSpreadDobleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallSpreadDoble">
+      <wsdl:input message="tns:Solver_CallSpreadDobleHttpPostIn" />
+      <wsdl:output message="tns:Solver_CallSpreadDobleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAsiaticoEntradaSalida">
+      <wsdl:input message="tns:Solver_ForwardAsiaticoEntradaSalidaHttpPostIn" />
+      <wsdl:output message="tns:Solver_ForwardAsiaticoEntradaSalidaHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SrvEstructuraSoap" type="tns:SrvEstructuraSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ForwardSintetico">
+      <soap:operation soapAction="http://tempuri.org/ForwardSintetico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdSintetico">
+      <soap:operation soapAction="http://tempuri.org/Solver_FwdSintetico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Straddle">
+      <soap:operation soapAction="http://tempuri.org/Straddle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Strangle">
+      <soap:operation soapAction="http://tempuri.org/Strangle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Butterfly">
+      <soap:operation soapAction="http://tempuri.org/Butterfly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RiskReversal">
+      <soap:operation soapAction="http://tempuri.org/RiskReversal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAmericano">
+      <soap:operation soapAction="http://tempuri.org/ForwardAmericano" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestForwardAmericano">
+      <soap:operation soapAction="http://tempuri.org/TestForwardAmericano" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_RiskReversal">
+      <soap:operation soapAction="http://tempuri.org/Solver_RiskReversal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardGananciaAcotada">
+      <soap:operation soapAction="http://tempuri.org/ForwardGananciaAcotada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardPerdidaAcotada">
+      <soap:operation soapAction="http://tempuri.org/ForwardPerdidaAcotada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdAcotado">
+      <soap:operation soapAction="http://tempuri.org/Solver_FwdAcotado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAmericano">
+      <soap:operation soapAction="http://tempuri.org/Solver_ForwardAmericano" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StripAsiatico">
+      <soap:operation soapAction="http://tempuri.org/StripAsiatico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_StripAsiatico">
+      <soap:operation soapAction="http://tempuri.org/Solver_StripAsiatico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallPutSpread">
+      <soap:operation soapAction="http://tempuri.org/CallPutSpread" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPutSpread">
+      <soap:operation soapAction="http://tempuri.org/Solver_CallPutSpread" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAsiaticoEntradaSalida">
+      <soap:operation soapAction="http://tempuri.org/ForwardAsiaticoEntradaSalida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSpreadDoble">
+      <soap:operation soapAction="http://tempuri.org/CallSpreadDoble" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallSpreadDoble">
+      <soap:operation soapAction="http://tempuri.org/Solver_CallSpreadDoble" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAsiaticoEntradaSalida">
+      <soap:operation soapAction="http://tempuri.org/Solver_ForwardAsiaticoEntradaSalida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvEstructuraSoap12" type="tns:SrvEstructuraSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ForwardSintetico">
+      <soap12:operation soapAction="http://tempuri.org/ForwardSintetico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdSintetico">
+      <soap12:operation soapAction="http://tempuri.org/Solver_FwdSintetico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Straddle">
+      <soap12:operation soapAction="http://tempuri.org/Straddle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Strangle">
+      <soap12:operation soapAction="http://tempuri.org/Strangle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Butterfly">
+      <soap12:operation soapAction="http://tempuri.org/Butterfly" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RiskReversal">
+      <soap12:operation soapAction="http://tempuri.org/RiskReversal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAmericano">
+      <soap12:operation soapAction="http://tempuri.org/ForwardAmericano" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestForwardAmericano">
+      <soap12:operation soapAction="http://tempuri.org/TestForwardAmericano" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_RiskReversal">
+      <soap12:operation soapAction="http://tempuri.org/Solver_RiskReversal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardGananciaAcotada">
+      <soap12:operation soapAction="http://tempuri.org/ForwardGananciaAcotada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardPerdidaAcotada">
+      <soap12:operation soapAction="http://tempuri.org/ForwardPerdidaAcotada" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdAcotado">
+      <soap12:operation soapAction="http://tempuri.org/Solver_FwdAcotado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAmericano">
+      <soap12:operation soapAction="http://tempuri.org/Solver_ForwardAmericano" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StripAsiatico">
+      <soap12:operation soapAction="http://tempuri.org/StripAsiatico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_StripAsiatico">
+      <soap12:operation soapAction="http://tempuri.org/Solver_StripAsiatico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallPutSpread">
+      <soap12:operation soapAction="http://tempuri.org/CallPutSpread" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPutSpread">
+      <soap12:operation soapAction="http://tempuri.org/Solver_CallPutSpread" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAsiaticoEntradaSalida">
+      <soap12:operation soapAction="http://tempuri.org/ForwardAsiaticoEntradaSalida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSpreadDoble">
+      <soap12:operation soapAction="http://tempuri.org/CallSpreadDoble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallSpreadDoble">
+      <soap12:operation soapAction="http://tempuri.org/Solver_CallSpreadDoble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAsiaticoEntradaSalida">
+      <soap12:operation soapAction="http://tempuri.org/Solver_ForwardAsiaticoEntradaSalida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvEstructuraHttpGet" type="tns:SrvEstructuraHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ForwardSintetico">
+      <http:operation location="/ForwardSintetico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdSintetico">
+      <http:operation location="/Solver_FwdSintetico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Straddle">
+      <http:operation location="/Straddle" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Strangle">
+      <http:operation location="/Strangle" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Butterfly">
+      <http:operation location="/Butterfly" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RiskReversal">
+      <http:operation location="/RiskReversal" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAmericano">
+      <http:operation location="/ForwardAmericano" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestForwardAmericano">
+      <http:operation location="/TestForwardAmericano" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_RiskReversal">
+      <http:operation location="/Solver_RiskReversal" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardGananciaAcotada">
+      <http:operation location="/ForwardGananciaAcotada" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardPerdidaAcotada">
+      <http:operation location="/ForwardPerdidaAcotada" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdAcotado">
+      <http:operation location="/Solver_FwdAcotado" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAmericano">
+      <http:operation location="/Solver_ForwardAmericano" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StripAsiatico">
+      <http:operation location="/StripAsiatico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_StripAsiatico">
+      <http:operation location="/Solver_StripAsiatico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallPutSpread">
+      <http:operation location="/CallPutSpread" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPutSpread">
+      <http:operation location="/Solver_CallPutSpread" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAsiaticoEntradaSalida">
+      <http:operation location="/ForwardAsiaticoEntradaSalida" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSpreadDoble">
+      <http:operation location="/CallSpreadDoble" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallSpreadDoble">
+      <http:operation location="/Solver_CallSpreadDoble" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAsiaticoEntradaSalida">
+      <http:operation location="/Solver_ForwardAsiaticoEntradaSalida" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvEstructuraHttpPost" type="tns:SrvEstructuraHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ForwardSintetico">
+      <http:operation location="/ForwardSintetico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdSintetico">
+      <http:operation location="/Solver_FwdSintetico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Straddle">
+      <http:operation location="/Straddle" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Strangle">
+      <http:operation location="/Strangle" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Butterfly">
+      <http:operation location="/Butterfly" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RiskReversal">
+      <http:operation location="/RiskReversal" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAmericano">
+      <http:operation location="/ForwardAmericano" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestForwardAmericano">
+      <http:operation location="/TestForwardAmericano" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_RiskReversal">
+      <http:operation location="/Solver_RiskReversal" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardGananciaAcotada">
+      <http:operation location="/ForwardGananciaAcotada" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardPerdidaAcotada">
+      <http:operation location="/ForwardPerdidaAcotada" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_FwdAcotado">
+      <http:operation location="/Solver_FwdAcotado" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAmericano">
+      <http:operation location="/Solver_ForwardAmericano" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StripAsiatico">
+      <http:operation location="/StripAsiatico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_StripAsiatico">
+      <http:operation location="/Solver_StripAsiatico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallPutSpread">
+      <http:operation location="/CallPutSpread" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallPutSpread">
+      <http:operation location="/Solver_CallPutSpread" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForwardAsiaticoEntradaSalida">
+      <http:operation location="/ForwardAsiaticoEntradaSalida" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallSpreadDoble">
+      <http:operation location="/CallSpreadDoble" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_CallSpreadDoble">
+      <http:operation location="/Solver_CallSpreadDoble" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Solver_ForwardAsiaticoEntradaSalida">
+      <http:operation location="/Solver_ForwardAsiaticoEntradaSalida" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SrvEstructura">
+    <wsdl:port name="SrvEstructuraSoap" binding="tns:SrvEstructuraSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/Estructura/SrvEstructura.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvEstructuraSoap12" binding="tns:SrvEstructuraSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/Estructura/SrvEstructura.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvEstructuraHttpGet" binding="tns:SrvEstructuraHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Estructura/SrvEstructura.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvEstructuraHttpPost" binding="tns:SrvEstructuraHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Estructura/SrvEstructura.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd82" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd83" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd28" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd34" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd60" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd14" />
+  <xsd:complexType name="Fee_Type">
+    <xsd:all>
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RegPmt" type="tns:RegPmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrigCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="UFCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MinCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PAC" type="tns:Term_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FeeWaiver" type="tns:FeeWaiver_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TimeFrame" type="tns:TimeFrame_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="LOCUFCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="LOCCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="LifeInsPercent" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CardUFCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CardCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExUseMXCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExUseCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExPurchMXCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExPurchCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MaxCurAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Discount" type="tns:Discount_Type" />
+    </xsd:all>
+  </xsd:complexType>
+</xsd:schema>

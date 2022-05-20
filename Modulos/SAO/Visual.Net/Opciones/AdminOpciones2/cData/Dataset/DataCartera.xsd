@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataCartera" targetNamespace="http://tempuri.org/DataCartera.xsd" xmlns:mstns="http://tempuri.org/DataCartera.xsd" xmlns="http://tempuri.org/DataCartera.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CbMdbOpcConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CbMdbOpcConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.cData.Properties.Settings.GlobalReference.Default.CbMdbOpcConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataCartera" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataCartera" msprop:Generator_DataSetName="DataCartera" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CaEncContrato" msprop:Generator_UserTableName="CaEncContrato" msprop:Generator_RowDeletedName="CaEncContratoRowDeleted" msprop:Generator_RowChangedName="CaEncContratoRowChanged" msprop:Generator_RowClassName="CaEncContratoRow" msprop:Generator_RowChangingName="CaEncContratoRowChanging" msprop:Generator_RowEvArgName="CaEncContratoRowChangeEvent" msprop:Generator_RowEvHandlerName="CaEncContratoRowChangeEventHandler" msprop:Generator_TableClassName="CaEncContratoDataTable" msprop:Generator_TableVarName="tableCaEncContrato" msprop:Generator_RowDeletingName="CaEncContratoRowDeleting" msprop:Generator_TablePropName="CaEncContrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaNumFolio" msprop:Generator_UserColumnName="CaNumFolio" msprop:Generator_ColumnPropNameInRow="CaNumFolio" msprop:Generator_ColumnVarNameInTable="columnCaNumFolio" msprop:Generator_ColumnPropNameInTable="CaNumFolioColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaTipoTransaccion" msprop:Generator_UserColumnName="CaTipoTransaccion" msprop:Generator_ColumnPropNameInRow="CaTipoTransaccion" msprop:Generator_ColumnVarNameInTable="columnCaTipoTransaccion" msprop:Generator_ColumnPropNameInTable="CaTipoTransaccionColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaNumContrato" msprop:Generator_UserColumnName="CaNumContrato" msprop:Generator_ColumnPropNameInRow="CaNumContrato" msprop:Generator_ColumnVarNameInTable="columnCaNumContrato" msprop:Generator_ColumnPropNameInTable="CaNumContratoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaFechaContrato" msprop:Generator_UserColumnName="CaFechaContrato" msprop:Generator_ColumnPropNameInRow="CaFechaContrato" msprop:Generator_ColumnVarNameInTable="columnCaFechaContrato" msprop:Generator_ColumnPropNameInTable="CaFechaContratoColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" />
+              <xs:element name="CaEstado" msprop:Generator_UserColumnName="CaEstado" msprop:Generator_ColumnPropNameInRow="CaEstado" msprop:Generator_ColumnVarNameInTable="columnCaEstado" msprop:Generator_ColumnPropNameInTable="CaEstadoColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCarteraFinanciera" msprop:Generator_UserColumnName="CaCarteraFinanciera" msprop:Generator_ColumnPropNameInRow="CaCarteraFinanciera" msprop:Generator_ColumnVarNameInTable="columnCaCarteraFinanciera" msprop:Generator_ColumnPropNameInTable="CaCarteraFinancieraColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaLibro" msprop:Generator_UserColumnName="CaLibro" msprop:Generator_ColumnPropNameInRow="CaLibro" msprop:Generator_ColumnVarNameInTable="columnCaLibro" msprop:Generator_ColumnPropNameInTable="CaLibroColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCarNormativa" msprop:Generator_UserColumnName="CaCarNormativa" msprop:Generator_ColumnPropNameInRow="CaCarNormativa" msprop:Generator_ColumnVarNameInTable="columnCaCarNormativa" msprop:Generator_ColumnPropNameInTable="CaCarNormativaColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaSubCarNormativa" msprop:Generator_UserColumnName="CaSubCarNormativa" msprop:Generator_ColumnPropNameInRow="CaSubCarNormativa" msprop:Generator_ColumnVarNameInTable="columnCaSubCarNormativa" msprop:Generator_ColumnPropNameInTable="CaSubCarNormativaColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaRutCliente" msprop:Generator_UserColumnName="CaRutCliente" msprop:Generator_ColumnPropNameInRow="CaRutCliente" msprop:Generator_ColumnVarNameInTable="columnCaRutCliente" msprop:Generator_ColumnPropNameInTable="CaRutClienteColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaCodigo" msprop:Generator_UserColumnName="CaCodigo" msprop:Generator_ColumnPropNameInRow="CaCodigo" msprop:Generator_ColumnVarNameInTable="columnCaCodigo" msprop:Generator_ColumnPropNameInTable="CaCodigoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaTipoContrapartida" msprop:Generator_UserColumnName="CaTipoContrapartida" msprop:Generator_ColumnPropNameInRow="CaTipoContrapartida" msprop:Generator_ColumnVarNameInTable="columnCaTipoContrapartida" msprop:Generator_ColumnPropNameInTable="CaTipoContrapartidaColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaOperador" msprop:Generator_UserColumnName="CaOperador" msprop:Generator_ColumnPropNameInRow="CaOperador" msprop:Generator_ColumnVarNameInTable="columnCaOperador" msprop:Generator_ColumnPropNameInTable="CaOperadorColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCodEstructura" msprop:Generator_UserColumnName="CaCodEstructura" msprop:Generator_ColumnPropNameInRow="CaCodEstructura" msprop:Generator_ColumnVarNameInTable="columnCaCodEstructura" msprop:Generator_ColumnPropNameInTable="CaCodEstructuraColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCVEstructura" msprop:Generator_UserColumnName="CaCVEstructura" msprop:Generator_ColumnPropNameInRow="CaCVEstructura" msprop:Generator_ColumnVarNameInTable="columnCaCVEstructura" msprop:Generator_ColumnPropNameInTable="CaCVEstructuraColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaSistema" msprop:Generator_UserColumnName="CaSistema" msprop:Generator_ColumnPropNameInRow="CaSistema" msprop:Generator_ColumnVarNameInTable="columnCaSistema" msprop:Generator_ColumnPropNameInTable="CaSistemaColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaMonPrimaTrf" msprop:Generator_UserColumnName="CaMonPrimaTrf" msprop:Generator_ColumnPropNameInRow="CaMonPrimaTrf" msprop:Generator_ColumnVarNameInTable="columnCaMonPrimaTrf" msprop:Generator_ColumnPropNameInTable="CaMonPrimaTrfColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaPrimaTrf" msprop:Generator_UserColumnName="CaPrimaTrf" msprop:Generator_ColumnPropNameInRow="CaPrimaTrf" msprop:Generator_ColumnVarNameInTable="columnCaPrimaTrf" msprop:Generator_ColumnPropNameInTable="CaPrimaTrfColumn" type="xs:double" default="0" />
+              <xs:element name="CaPrimaTrfML" msprop:Generator_UserColumnName="CaPrimaTrfML" msprop:Generator_ColumnPropNameInRow="CaPrimaTrfML" msprop:Generator_ColumnVarNameInTable="columnCaPrimaTrfML" msprop:Generator_ColumnPropNameInTable="CaPrimaTrfMLColumn" type="xs:double" default="0" />
+              <xs:element name="CaMonPrimaCosto" msprop:Generator_UserColumnName="CaMonPrimaCosto" msprop:Generator_ColumnPropNameInRow="CaMonPrimaCosto" msprop:Generator_ColumnVarNameInTable="columnCaMonPrimaCosto" msprop:Generator_ColumnPropNameInTable="CaMonPrimaCostoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaPrimaCosto" msprop:Generator_UserColumnName="CaPrimaCosto" msprop:Generator_ColumnPropNameInRow="CaPrimaCosto" msprop:Generator_ColumnVarNameInTable="columnCaPrimaCosto" msprop:Generator_ColumnPropNameInTable="CaPrimaCostoColumn" type="xs:double" default="0" />
+              <xs:element name="CaPrimaCostoML" msprop:Generator_UserColumnName="CaPrimaCostoML" msprop:Generator_ColumnPropNameInRow="CaPrimaCostoML" msprop:Generator_ColumnVarNameInTable="columnCaPrimaCostoML" msprop:Generator_ColumnPropNameInTable="CaPrimaCostoMLColumn" type="xs:double" default="0" />
+              <xs:element name="CaCodMonPagPrima" msprop:Generator_UserColumnName="CaCodMonPagPrima" msprop:Generator_ColumnPropNameInRow="CaCodMonPagPrima" msprop:Generator_ColumnVarNameInTable="columnCaCodMonPagPrima" msprop:Generator_ColumnPropNameInTable="CaCodMonPagPrimaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaPrimaInicial" msprop:Generator_UserColumnName="CaPrimaInicial" msprop:Generator_ColumnPropNameInRow="CaPrimaInicial" msprop:Generator_ColumnVarNameInTable="columnCaPrimaInicial" msprop:Generator_ColumnPropNameInTable="CaPrimaInicialColumn" type="xs:double" default="0" />
+              <xs:element name="CafPagoPrima" msprop:Generator_UserColumnName="CafPagoPrima" msprop:Generator_ColumnPropNameInRow="CafPagoPrima" msprop:Generator_ColumnVarNameInTable="columnCafPagoPrima" msprop:Generator_ColumnPropNameInTable="CafPagoPrimaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMonCarryPrima" msprop:Generator_UserColumnName="CaMonCarryPrima" msprop:Generator_ColumnPropNameInRow="CaMonCarryPrima" msprop:Generator_ColumnVarNameInTable="columnCaMonCarryPrima" msprop:Generator_ColumnPropNameInTable="CaMonCarryPrimaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaCarryPrima" msprop:Generator_UserColumnName="CaCarryPrima" msprop:Generator_ColumnPropNameInRow="CaCarryPrima" msprop:Generator_ColumnVarNameInTable="columnCaCarryPrima" msprop:Generator_ColumnPropNameInTable="CaCarryPrimaColumn" type="xs:double" default="0" />
+              <xs:element name="CaParM2Spot" msprop:Generator_UserColumnName="CaParM2Spot" msprop:Generator_ColumnPropNameInRow="CaParM2Spot" msprop:Generator_ColumnVarNameInTable="columnCaParM2Spot" msprop:Generator_ColumnPropNameInTable="CaParM2SpotColumn" type="xs:double" default="0" />
+              <xs:element name="CaParMdaPrima" msprop:Generator_UserColumnName="CaParMdaPrima" msprop:Generator_ColumnPropNameInRow="CaParMdaPrima" msprop:Generator_ColumnVarNameInTable="columnCaParMdaPrima" msprop:Generator_ColumnPropNameInTable="CaParMdaPrimaColumn" type="xs:double" default="0" />
+              <xs:element name="CaFechaPagoPrima" msprop:Generator_UserColumnName="CaFechaPagoPrima" msprop:Generator_ColumnPropNameInRow="CaFechaPagoPrima" msprop:Generator_ColumnVarNameInTable="columnCaFechaPagoPrima" msprop:Generator_ColumnPropNameInTable="CaFechaPagoPrimaColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" />
+              <xs:element name="CaFecValorizacion" msprop:Generator_UserColumnName="CaFecValorizacion" msprop:Generator_ColumnPropNameInRow="CaFecValorizacion" msprop:Generator_ColumnVarNameInTable="columnCaFecValorizacion" msprop:Generator_ColumnPropNameInTable="CaFecValorizacionColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" />
+              <xs:element name="CaMon_vr" msprop:Generator_UserColumnName="CaMon_vr" msprop:Generator_ColumnPropNameInRow="CaMon_vr" msprop:Generator_ColumnVarNameInTable="columnCaMon_vr" msprop:Generator_ColumnPropNameInTable="CaMon_vrColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaVr" msprop:Generator_UserColumnName="CaVr" msprop:Generator_ColumnPropNameInRow="CaVr" msprop:Generator_ColumnVarNameInTable="columnCaVr" msprop:Generator_ColumnPropNameInTable="CaVrColumn" type="xs:double" default="0" />
+              <xs:element name="CaMondelta" msprop:Generator_UserColumnName="CaMondelta" msprop:Generator_ColumnPropNameInRow="CaMondelta" msprop:Generator_ColumnVarNameInTable="columnCaMondelta" msprop:Generator_ColumnPropNameInTable="CaMondeltaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_gamma" msprop:Generator_UserColumnName="CaMon_gamma" msprop:Generator_ColumnPropNameInRow="CaMon_gamma" msprop:Generator_ColumnVarNameInTable="columnCaMon_gamma" msprop:Generator_ColumnPropNameInTable="CaMon_gammaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_vega" msprop:Generator_UserColumnName="CaMon_vega" msprop:Generator_ColumnPropNameInRow="CaMon_vega" msprop:Generator_ColumnVarNameInTable="columnCaMon_vega" msprop:Generator_ColumnPropNameInTable="CaMon_vegaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_vanna" msprop:Generator_UserColumnName="CaMon_vanna" msprop:Generator_ColumnPropNameInRow="CaMon_vanna" msprop:Generator_ColumnVarNameInTable="columnCaMon_vanna" msprop:Generator_ColumnPropNameInTable="CaMon_vannaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_volga" msprop:Generator_UserColumnName="CaMon_volga" msprop:Generator_ColumnPropNameInRow="CaMon_volga" msprop:Generator_ColumnVarNameInTable="columnCaMon_volga" msprop:Generator_ColumnPropNameInTable="CaMon_volgaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_theta" msprop:Generator_UserColumnName="CaMon_theta" msprop:Generator_ColumnPropNameInRow="CaMon_theta" msprop:Generator_ColumnVarNameInTable="columnCaMon_theta" msprop:Generator_ColumnPropNameInTable="CaMon_thetaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_rho" msprop:Generator_UserColumnName="CaMon_rho" msprop:Generator_ColumnPropNameInRow="CaMon_rho" msprop:Generator_ColumnVarNameInTable="columnCaMon_rho" msprop:Generator_ColumnPropNameInTable="CaMon_rhoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_rhof" msprop:Generator_UserColumnName="CaMon_rhof" msprop:Generator_ColumnPropNameInRow="CaMon_rhof" msprop:Generator_ColumnVarNameInTable="columnCaMon_rhof" msprop:Generator_ColumnPropNameInTable="CaMon_rhofColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_charm" msprop:Generator_UserColumnName="CaMon_charm" msprop:Generator_ColumnPropNameInRow="CaMon_charm" msprop:Generator_ColumnVarNameInTable="columnCaMon_charm" msprop:Generator_ColumnPropNameInTable="CaMon_charmColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_zomma" msprop:Generator_UserColumnName="CaMon_zomma" msprop:Generator_ColumnPropNameInRow="CaMon_zomma" msprop:Generator_ColumnVarNameInTable="columnCaMon_zomma" msprop:Generator_ColumnPropNameInTable="CaMon_zommaColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaMon_speed" msprop:Generator_UserColumnName="CaMon_speed" msprop:Generator_ColumnPropNameInRow="CaMon_speed" msprop:Generator_ColumnVarNameInTable="columnCaMon_speed" msprop:Generator_ColumnPropNameInTable="CaMon_speedColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaPrimaBSSpotCont" msprop:Generator_UserColumnName="CaPrimaBSSpotCont" msprop:Generator_ColumnPropNameInRow="CaPrimaBSSpotCont" msprop:Generator_ColumnVarNameInTable="columnCaPrimaBSSpotCont" msprop:Generator_ColumnPropNameInTable="CaPrimaBSSpotContColumn" type="xs:double" default="0" />
+              <xs:element name="CaDeltaSpotCont" msprop:Generator_UserColumnName="CaDeltaSpotCont" msprop:Generator_ColumnPropNameInRow="CaDeltaSpotCont" msprop:Generator_ColumnVarNameInTable="columnCaDeltaSpotCont" msprop:Generator_ColumnPropNameInTable="CaDeltaSpotContColumn" type="xs:double" default="0" />
+              <xs:element name="CaDeltaForwardCont" msprop:Generator_UserColumnName="CaDeltaForwardCont" msprop:Generator_ColumnPropNameInRow="CaDeltaForwardCont" msprop:Generator_ColumnVarNameInTable="columnCaDeltaForwardCont" msprop:Generator_ColumnPropNameInTable="CaDeltaForwardContColumn" type="xs:double" default="0" />
+              <xs:element name="CaGammaSpotCont" msprop:Generator_UserColumnName="CaGammaSpotCont" msprop:Generator_ColumnPropNameInRow="CaGammaSpotCont" msprop:Generator_ColumnVarNameInTable="columnCaGammaSpotCont" msprop:Generator_ColumnPropNameInTable="CaGammaSpotContColumn" type="xs:double" default="0" />
+              <xs:element name="CaVegaCont" msprop:Generator_UserColumnName="CaVegaCont" msprop:Generator_ColumnPropNameInRow="CaVegaCont" msprop:Generator_ColumnVarNameInTable="columnCaVegaCont" msprop:Generator_ColumnPropNameInTable="CaVegaContColumn" type="xs:double" default="0" />
+              <xs:element name="CaVannaSpotCont" msprop:Generator_UserColumnName="CaVannaSpotCont" msprop:Generator_ColumnPropNameInRow="CaVannaSpotCont" msprop:Generator_ColumnVarNameInTable="columnCaVannaSpotCont" msprop:Generator_ColumnPropNameInTable="CaVannaSpotContColumn" type="xs:double" default="0" />
+              <xs:element name="CaVolgaCont" msprop:Generator_UserColumnName="CaVolgaCont" msprop:Generator_ColumnPropNameInRow="CaVolgaCont" msprop:Generator_ColumnVarNameInTable="columnCaVolgaCont" msprop:Generator_ColumnPropNameInTable="CaVolgaContColumn" type="xs:double" default="0" />
+              <xs:element name="CaThetaCont" msprop:Generator_UserColumnName="CaThetaCont" msprop:Generator_ColumnPropNameInRow="CaThetaCont" msprop:Generator_ColumnVarNameInTable="columnCaThetaCont" msprop:Generator_ColumnPropNameInTable="CaThetaContColumn" type="xs:double" default="0" />
+              <xs:element name="CaRhoDomCont" msprop:Generator_UserColumnName="CaRhoDomCont" msprop:Generator_ColumnPropNameInRow="CaRhoDomCont" msprop:Generator_ColumnVarNameInTable="columnCaRhoDomCont" msprop:Generator_ColumnPropNameInTable="CaRhoDomContColumn" type="xs:double" default="0" />
+              <xs:element name="CaRhoForCont" msprop:Generator_UserColumnName="CaRhoForCont" msprop:Generator_ColumnPropNameInRow="CaRhoForCont" msprop:Generator_ColumnVarNameInTable="columnCaRhoForCont" msprop:Generator_ColumnPropNameInTable="CaRhoForContColumn" type="xs:double" default="0" />
+              <xs:element name="CaCharmSpotCont" msprop:Generator_UserColumnName="CaCharmSpotCont" msprop:Generator_ColumnPropNameInRow="CaCharmSpotCont" msprop:Generator_ColumnVarNameInTable="columnCaCharmSpotCont" msprop:Generator_ColumnPropNameInTable="CaCharmSpotContColumn" type="xs:double" default="0" />
+              <xs:element name="CaZommaSpotCont" msprop:Generator_UserColumnName="CaZommaSpotCont" msprop:Generator_ColumnPropNameInRow="CaZommaSpotCont" msprop:Generator_ColumnVarNameInTable="columnCaZommaSpotCont" msprop:Generator_ColumnPropNameInTable="CaZommaSpotContColumn" type="xs:double" default="0" />
+              <xs:element name="CaSpeedSpotCont" msprop:Generator_UserColumnName="CaSpeedSpotCont" msprop:Generator_ColumnPropNameInRow="CaSpeedSpotCont" msprop:Generator_ColumnVarNameInTable="columnCaSpeedSpotCont" msprop:Generator_ColumnPropNameInTable="CaSpeedSpotContColumn" type="xs:double" default="0" />
+              <xs:element name="CaFechaUnwind" msprop:Generator_UserColumnName="CaFechaUnwind" msprop:Generator_ColumnPropNameInRow="CaFechaUnwind" msprop:Generator_ColumnVarNameInTable="columnCaFechaUnwind" msprop:Generator_ColumnPropNameInTable="CaFechaUnwindColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" />
+              <xs:element name="CaNominalUnwind" msprop:Generator_UserColumnName="CaNominalUnwind" msprop:Generator_ColumnPropNameInRow="CaNominalUnwind" msprop:Generator_ColumnVarNameInTable="columnCaNominalUnwind" msprop:Generator_ColumnPropNameInTable="CaNominalUnwindColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwindMon" msprop:Generator_UserColumnName="CaUnwindMon" msprop:Generator_ColumnPropNameInRow="CaUnwindMon" msprop:Generator_ColumnVarNameInTable="columnCaUnwindMon" msprop:Generator_ColumnPropNameInTable="CaUnwindMonColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwind" msprop:Generator_UserColumnName="CaUnwind" msprop:Generator_ColumnPropNameInRow="CaUnwind" msprop:Generator_ColumnVarNameInTable="columnCaUnwind" msprop:Generator_ColumnPropNameInTable="CaUnwindColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwindML" msprop:Generator_UserColumnName="CaUnwindML" msprop:Generator_ColumnPropNameInRow="CaUnwindML" msprop:Generator_ColumnVarNameInTable="columnCaUnwindML" msprop:Generator_ColumnPropNameInTable="CaUnwindMLColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaFormPagoUnwind" msprop:Generator_UserColumnName="CaFormPagoUnwind" msprop:Generator_ColumnPropNameInRow="CaFormPagoUnwind" msprop:Generator_ColumnVarNameInTable="columnCaFormPagoUnwind" msprop:Generator_ColumnPropNameInTable="CaFormPagoUnwindColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwindTransfMon" msprop:Generator_UserColumnName="CaUnwindTransfMon" msprop:Generator_ColumnPropNameInRow="CaUnwindTransfMon" msprop:Generator_ColumnVarNameInTable="columnCaUnwindTransfMon" msprop:Generator_ColumnPropNameInTable="CaUnwindTransfMonColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwindTransf" msprop:Generator_UserColumnName="CaUnwindTransf" msprop:Generator_ColumnPropNameInRow="CaUnwindTransf" msprop:Generator_ColumnVarNameInTable="columnCaUnwindTransf" msprop:Generator_ColumnPropNameInTable="CaUnwindTransfColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwindTransfML" msprop:Generator_UserColumnName="CaUnwindTransfML" msprop:Generator_ColumnPropNameInRow="CaUnwindTransfML" msprop:Generator_ColumnVarNameInTable="columnCaUnwindTransfML" msprop:Generator_ColumnPropNameInTable="CaUnwindTransfMLColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaVr_Costo" msprop:Generator_UserColumnName="CaVr_Costo" msprop:Generator_ColumnPropNameInRow="CaVr_Costo" msprop:Generator_ColumnVarNameInTable="columnCaVr_Costo" msprop:Generator_ColumnPropNameInTable="CaVr_CostoColumn" type="xs:double" default="0" />
+              <xs:element name="CaGlosa" msprop:Generator_UserColumnName="CaGlosa" msprop:Generator_ColumnPropNameInRow="CaGlosa" msprop:Generator_ColumnVarNameInTable="columnCaGlosa" msprop:Generator_ColumnPropNameInTable="CaGlosaColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaUnwindCostoMon" msprop:Generator_UserColumnName="CaUnwindCostoMon" msprop:Generator_ColumnPropNameInRow="CaUnwindCostoMon" msprop:Generator_ColumnVarNameInTable="columnCaUnwindCostoMon" msprop:Generator_ColumnPropNameInTable="CaUnwindCostoMonColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwindCosto" msprop:Generator_UserColumnName="CaUnwindCosto" msprop:Generator_ColumnPropNameInRow="CaUnwindCosto" msprop:Generator_ColumnVarNameInTable="columnCaUnwindCosto" msprop:Generator_ColumnPropNameInTable="CaUnwindCostoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaUnwindCostoML" msprop:Generator_UserColumnName="CaUnwindCostoML" msprop:Generator_ColumnPropNameInRow="CaUnwindCostoML" msprop:Generator_ColumnVarNameInTable="columnCaUnwindCostoML" msprop:Generator_ColumnPropNameInTable="CaUnwindCostoMLColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaGammaFwdCont" msprop:Generator_UserColumnName="CaGammaFwdCont" msprop:Generator_ColumnPropNameInRow="CaGammaFwdCont" msprop:Generator_ColumnVarNameInTable="columnCaGammaFwdCont" msprop:Generator_ColumnPropNameInTable="CaGammaFwdContColumn" type="xs:double" default="0" />
+              <xs:element name="CaVannaFwdCont" msprop:Generator_UserColumnName="CaVannaFwdCont" msprop:Generator_ColumnPropNameInRow="CaVannaFwdCont" msprop:Generator_ColumnVarNameInTable="columnCaVannaFwdCont" msprop:Generator_ColumnPropNameInTable="CaVannaFwdContColumn" type="xs:double" default="0" />
+              <xs:element name="CaCharmFwdCont" msprop:Generator_UserColumnName="CaCharmFwdCont" msprop:Generator_ColumnPropNameInRow="CaCharmFwdCont" msprop:Generator_ColumnVarNameInTable="columnCaCharmFwdCont" msprop:Generator_ColumnPropNameInTable="CaCharmFwdContColumn" type="xs:double" default="0" />
+              <xs:element name="CaZommaFwdCont" msprop:Generator_UserColumnName="CaZommaFwdCont" msprop:Generator_ColumnPropNameInRow="CaZommaFwdCont" msprop:Generator_ColumnVarNameInTable="columnCaZommaFwdCont" msprop:Generator_ColumnPropNameInTable="CaZommaFwdContColumn" type="xs:double" default="0" />
+              <xs:element name="CaSpeedFwdCont" msprop:Generator_UserColumnName="CaSpeedFwdCont" msprop:Generator_ColumnPropNameInRow="CaSpeedFwdCont" msprop:Generator_ColumnVarNameInTable="columnCaSpeedFwdCont" msprop:Generator_ColumnPropNameInTable="CaSpeedFwdContColumn" type="xs:double" default="0" />
+              <xs:element name="CaImpreso" msprop:Generator_UserColumnName="CaImpreso" msprop:Generator_ColumnPropNameInRow="CaImpreso" msprop:Generator_ColumnVarNameInTable="columnCaImpreso" msprop:Generator_ColumnPropNameInTable="CaImpresoColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaFechaCreacionRegistro" msprop:Generator_UserColumnName="CaFechaCreacionRegistro" msprop:Generator_ColumnPropNameInRow="CaFechaCreacionRegistro" msprop:Generator_ColumnVarNameInTable="columnCaFechaCreacionRegistro" msprop:Generator_ColumnPropNameInTable="CaFechaCreacionRegistroColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" />
+              <xs:element name="CaRelacionaPAE" msprop:Generator_UserColumnName="CaRelacionaPAE" msprop:Generator_ColumnPropNameInRow="CaRelacionaPAE" msprop:Generator_ColumnVarNameInTable="columnCaRelacionaPAE" msprop:Generator_ColumnPropNameInTable="CaRelacionaPAEColumn" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CaDetContrato" msprop:Generator_UserTableName="CaDetContrato" msprop:Generator_RowDeletedName="CaDetContratoRowDeleted" msprop:Generator_RowChangedName="CaDetContratoRowChanged" msprop:Generator_RowClassName="CaDetContratoRow" msprop:Generator_RowChangingName="CaDetContratoRowChanging" msprop:Generator_RowEvArgName="CaDetContratoRowChangeEvent" msprop:Generator_RowEvHandlerName="CaDetContratoRowChangeEventHandler" msprop:Generator_TableClassName="CaDetContratoDataTable" msprop:Generator_TableVarName="tableCaDetContrato" msprop:Generator_RowDeletingName="CaDetContratoRowDeleting" msprop:Generator_TablePropName="CaDetContrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaNumContrato" msprop:Generator_UserColumnName="CaNumContrato" msprop:Generator_ColumnPropNameInRow="CaNumContrato" msprop:Generator_ColumnVarNameInTable="columnCaNumContrato" msprop:Generator_ColumnPropNameInTable="CaNumContratoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaNumEstructura" msprop:Generator_UserColumnName="CaNumEstructura" msprop:Generator_ColumnPropNameInRow="CaNumEstructura" msprop:Generator_ColumnVarNameInTable="columnCaNumEstructura" msprop:Generator_ColumnPropNameInTable="CaNumEstructuraColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaVinculacion" msprop:Generator_UserColumnName="CaVinculacion" msprop:Generator_ColumnPropNameInRow="CaVinculacion" msprop:Generator_ColumnVarNameInTable="columnCaVinculacion" msprop:Generator_ColumnPropNameInTable="CaVinculacionColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaTipoOpc" msprop:Generator_UserColumnName="CaTipoOpc" msprop:Generator_ColumnPropNameInRow="CaTipoOpc" msprop:Generator_ColumnVarNameInTable="columnCaTipoOpc" msprop:Generator_ColumnPropNameInTable="CaTipoOpcColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaSubyacente" msprop:Generator_UserColumnName="CaSubyacente" msprop:Generator_ColumnPropNameInRow="CaSubyacente" msprop:Generator_ColumnVarNameInTable="columnCaSubyacente" msprop:Generator_ColumnPropNameInTable="CaSubyacenteColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaTipoPayOff" msprop:Generator_UserColumnName="CaTipoPayOff" msprop:Generator_ColumnPropNameInRow="CaTipoPayOff" msprop:Generator_ColumnVarNameInTable="columnCaTipoPayOff" msprop:Generator_ColumnPropNameInTable="CaTipoPayOffColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCallPut" msprop:Generator_UserColumnName="CaCallPut" msprop:Generator_ColumnPropNameInRow="CaCallPut" msprop:Generator_ColumnVarNameInTable="columnCaCallPut" msprop:Generator_ColumnPropNameInTable="CaCallPutColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCVOpc" msprop:Generator_UserColumnName="CaCVOpc" msprop:Generator_ColumnPropNameInRow="CaCVOpc" msprop:Generator_ColumnVarNameInTable="columnCaCVOpc" msprop:Generator_ColumnPropNameInTable="CaCVOpcColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaTipoEmisionPT" msprop:Generator_UserColumnName="CaTipoEmisionPT" msprop:Generator_ColumnPropNameInRow="CaTipoEmisionPT" msprop:Generator_ColumnVarNameInTable="columnCaTipoEmisionPT" msprop:Generator_ColumnPropNameInTable="CaTipoEmisionPTColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaFechaInicioOpc" msprop:Generator_UserColumnName="CaFechaInicioOpc" msprop:Generator_ColumnPropNameInRow="CaFechaInicioOpc" msprop:Generator_ColumnVarNameInTable="columnCaFechaInicioOpc" msprop:Generator_ColumnPropNameInTable="CaFechaInicioOpcColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="CaFechaFijacion" msprop:Generator_UserColumnName="CaFechaFijacion" msprop:Generator_ColumnPropNameInRow="CaFechaFijacion" msprop:Generator_ColumnVarNameInTable="columnCaFechaFijacion" msprop:Generator_ColumnPropNameInTable="CaFechaFijacionColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="CaFechaVcto" msprop:Generator_UserColumnName="CaFechaVcto" msprop:Generator_ColumnPropNameInRow="CaFechaVcto" msprop:Generator_ColumnVarNameInTable="columnCaFechaVcto" msprop:Generator_ColumnPropNameInTable="CaFechaVctoColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="CaFormaPagoMon1" msprop:Generator_UserColumnName="CaFormaPagoMon1" msprop:Generator_ColumnPropNameInRow="CaFormaPagoMon1" msprop:Generator_ColumnVarNameInTable="columnCaFormaPagoMon1" msprop:Generator_ColumnPropNameInTable="CaFormaPagoMon1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaFechaPagMon1" msprop:Generator_UserColumnName="CaFechaPagMon1" msprop:Generator_ColumnPropNameInRow="CaFechaPagMon1" msprop:Generator_ColumnVarNameInTable="columnCaFechaPagMon1" msprop:Generator_ColumnPropNameInTable="CaFechaPagMon1Column" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="CaFormaPagoMon2" msprop:Generator_UserColumnName="CaFormaPagoMon2" msprop:Generator_ColumnPropNameInRow="CaFormaPagoMon2" msprop:Generator_ColumnVarNameInTable="columnCaFormaPagoMon2" msprop:Generator_ColumnPropNameInTable="CaFormaPagoMon2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaFechaPagMon2" msprop:Generator_UserColumnName="CaFechaPagMon2" msprop:Generator_ColumnPropNameInRow="CaFechaPagMon2" msprop:Generator_ColumnVarNameInTable="columnCaFechaPagMon2" msprop:Generator_ColumnPropNameInTable="CaFechaPagMon2Column" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="CaFechaPagoEjer" msprop:Generator_UserColumnName="CaFechaPagoEjer" msprop:Generator_ColumnPropNameInRow="CaFechaPagoEjer" msprop:Generator_ColumnVarNameInTable="columnCaFechaPagoEjer" msprop:Generator_ColumnPropNameInTable="CaFechaPagoEjerColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="CaCodMon1" msprop:Generator_UserColumnName="CaCodMon1" msprop:Generator_ColumnPropNameInRow="CaCodMon1" msprop:Generator_ColumnVarNameInTable="columnCaCodMon1" msprop:Generator_ColumnPropNameInTable="CaCodMon1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaMontoMon1" msprop:Generator_UserColumnName="CaMontoMon1" msprop:Generator_ColumnPropNameInRow="CaMontoMon1" msprop:Generator_ColumnVarNameInTable="columnCaMontoMon1" msprop:Generator_ColumnPropNameInTable="CaMontoMon1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaCodMon2" msprop:Generator_UserColumnName="CaCodMon2" msprop:Generator_ColumnPropNameInRow="CaCodMon2" msprop:Generator_ColumnVarNameInTable="columnCaCodMon2" msprop:Generator_ColumnPropNameInTable="CaCodMon2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaMontoMon2" msprop:Generator_UserColumnName="CaMontoMon2" msprop:Generator_ColumnPropNameInRow="CaMontoMon2" msprop:Generator_ColumnVarNameInTable="columnCaMontoMon2" msprop:Generator_ColumnPropNameInTable="CaMontoMon2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaModalidad" msprop:Generator_UserColumnName="CaModalidad" msprop:Generator_ColumnPropNameInRow="CaModalidad" msprop:Generator_ColumnVarNameInTable="columnCaModalidad" msprop:Generator_ColumnPropNameInTable="CaModalidadColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaMdaCompensacion" msprop:Generator_UserColumnName="CaMdaCompensacion" msprop:Generator_ColumnPropNameInRow="CaMdaCompensacion" msprop:Generator_ColumnVarNameInTable="columnCaMdaCompensacion" msprop:Generator_ColumnPropNameInTable="CaMdaCompensacionColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaBenchComp" msprop:Generator_UserColumnName="CaBenchComp" msprop:Generator_ColumnPropNameInRow="CaBenchComp" msprop:Generator_ColumnVarNameInTable="columnCaBenchComp" msprop:Generator_ColumnPropNameInTable="CaBenchCompColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaParStrike" msprop:Generator_UserColumnName="CaParStrike" msprop:Generator_ColumnPropNameInRow="CaParStrike" msprop:Generator_ColumnVarNameInTable="columnCaParStrike" msprop:Generator_ColumnPropNameInTable="CaParStrikeColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaStrike" msprop:Generator_UserColumnName="CaStrike" msprop:Generator_ColumnPropNameInRow="CaStrike" msprop:Generator_ColumnVarNameInTable="columnCaStrike" msprop:Generator_ColumnPropNameInTable="CaStrikeColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaPorcStrike" msprop:Generator_UserColumnName="CaPorcStrike" msprop:Generator_ColumnPropNameInRow="CaPorcStrike" msprop:Generator_ColumnVarNameInTable="columnCaPorcStrike" msprop:Generator_ColumnPropNameInTable="CaPorcStrikeColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaTipoEjercicio" msprop:Generator_UserColumnName="CaTipoEjercicio" msprop:Generator_ColumnPropNameInRow="CaTipoEjercicio" msprop:Generator_ColumnVarNameInTable="columnCaTipoEjercicio" msprop:Generator_ColumnPropNameInTable="CaTipoEjercicioColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCurveMon1" msprop:Generator_UserColumnName="CaCurveMon1" msprop:Generator_ColumnPropNameInRow="CaCurveMon1" msprop:Generator_ColumnVarNameInTable="columnCaCurveMon1" msprop:Generator_ColumnPropNameInTable="CaCurveMon1Column" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCurveMon2" msprop:Generator_UserColumnName="CaCurveMon2" msprop:Generator_ColumnPropNameInRow="CaCurveMon2" msprop:Generator_ColumnVarNameInTable="columnCaCurveMon2" msprop:Generator_ColumnPropNameInTable="CaCurveMon2Column" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCurveSmile" msprop:Generator_UserColumnName="CaCurveSmile" msprop:Generator_ColumnPropNameInRow="CaCurveSmile" msprop:Generator_ColumnVarNameInTable="columnCaCurveSmile" msprop:Generator_ColumnPropNameInTable="CaCurveSmileColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaWf_mon1" msprop:Generator_UserColumnName="CaWf_mon1" msprop:Generator_ColumnPropNameInRow="CaWf_mon1" msprop:Generator_ColumnVarNameInTable="columnCaWf_mon1" msprop:Generator_ColumnPropNameInTable="CaWf_mon1Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaWf_mon2" msprop:Generator_UserColumnName="CaWf_mon2" msprop:Generator_ColumnPropNameInRow="CaWf_mon2" msprop:Generator_ColumnVarNameInTable="columnCaWf_mon2" msprop:Generator_ColumnPropNameInTable="CaWf_mon2Column" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVol" msprop:Generator_UserColumnName="CaVol" msprop:Generator_ColumnPropNameInRow="CaVol" msprop:Generator_ColumnVarNameInTable="columnCaVol" msprop:Generator_ColumnPropNameInTable="CaVolColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaFwd_teo" msprop:Generator_UserColumnName="CaFwd_teo" msprop:Generator_ColumnPropNameInRow="CaFwd_teo" msprop:Generator_ColumnVarNameInTable="columnCaFwd_teo" msprop:Generator_ColumnPropNameInTable="CaFwd_teoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaDelta_spot" msprop:Generator_UserColumnName="CaDelta_spot" msprop:Generator_ColumnPropNameInRow="CaDelta_spot" msprop:Generator_ColumnVarNameInTable="columnCaDelta_spot" msprop:Generator_ColumnPropNameInTable="CaDelta_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaDelta_spot_num" msprop:Generator_UserColumnName="CaDelta_spot_num" msprop:Generator_ColumnPropNameInRow="CaDelta_spot_num" msprop:Generator_ColumnVarNameInTable="columnCaDelta_spot_num" msprop:Generator_ColumnPropNameInTable="CaDelta_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaDelta_fwd" msprop:Generator_UserColumnName="CaDelta_fwd" msprop:Generator_ColumnPropNameInRow="CaDelta_fwd" msprop:Generator_ColumnVarNameInTable="columnCaDelta_fwd" msprop:Generator_ColumnPropNameInTable="CaDelta_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaDelta_fwd_num" msprop:Generator_UserColumnName="CaDelta_fwd_num" msprop:Generator_ColumnPropNameInRow="CaDelta_fwd_num" msprop:Generator_ColumnVarNameInTable="columnCaDelta_fwd_num" msprop:Generator_ColumnPropNameInTable="CaDelta_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaGamma_spot" msprop:Generator_UserColumnName="CaGamma_spot" msprop:Generator_ColumnPropNameInRow="CaGamma_spot" msprop:Generator_ColumnVarNameInTable="columnCaGamma_spot" msprop:Generator_ColumnPropNameInTable="CaGamma_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaGamma_spot_num" msprop:Generator_UserColumnName="CaGamma_spot_num" msprop:Generator_ColumnPropNameInRow="CaGamma_spot_num" msprop:Generator_ColumnVarNameInTable="columnCaGamma_spot_num" msprop:Generator_ColumnPropNameInTable="CaGamma_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaGamma_fwd" msprop:Generator_UserColumnName="CaGamma_fwd" msprop:Generator_ColumnPropNameInRow="CaGamma_fwd" msprop:Generator_ColumnVarNameInTable="columnCaGamma_fwd" msprop:Generator_ColumnPropNameInTable="CaGamma_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaGamma_fwd_num" msprop:Generator_UserColumnName="CaGamma_fwd_num" msprop:Generator_ColumnPropNameInRow="CaGamma_fwd_num" msprop:Generator_ColumnVarNameInTable="columnCaGamma_fwd_num" msprop:Generator_ColumnPropNameInTable="CaGamma_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVega" msprop:Generator_UserColumnName="CaVega" msprop:Generator_ColumnPropNameInRow="CaVega" msprop:Generator_ColumnVarNameInTable="columnCaVega" msprop:Generator_ColumnPropNameInTable="CaVegaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVega_num" msprop:Generator_UserColumnName="CaVega_num" msprop:Generator_ColumnPropNameInRow="CaVega_num" msprop:Generator_ColumnVarNameInTable="columnCaVega_num" msprop:Generator_ColumnPropNameInTable="CaVega_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVanna_spot" msprop:Generator_UserColumnName="CaVanna_spot" msprop:Generator_ColumnPropNameInRow="CaVanna_spot" msprop:Generator_ColumnVarNameInTable="columnCaVanna_spot" msprop:Generator_ColumnPropNameInTable="CaVanna_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVanna_spot_num" msprop:Generator_UserColumnName="CaVanna_spot_num" msprop:Generator_ColumnPropNameInRow="CaVanna_spot_num" msprop:Generator_ColumnVarNameInTable="columnCaVanna_spot_num" msprop:Generator_ColumnPropNameInTable="CaVanna_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVanna_fwd" msprop:Generator_UserColumnName="CaVanna_fwd" msprop:Generator_ColumnPropNameInRow="CaVanna_fwd" msprop:Generator_ColumnVarNameInTable="columnCaVanna_fwd" msprop:Generator_ColumnPropNameInTable="CaVanna_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVanna_fwd_num" msprop:Generator_UserColumnName="CaVanna_fwd_num" msprop:Generator_ColumnPropNameInRow="CaVanna_fwd_num" msprop:Generator_ColumnVarNameInTable="columnCaVanna_fwd_num" msprop:Generator_ColumnPropNameInTable="CaVanna_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVolga" msprop:Generator_UserColumnName="CaVolga" msprop:Generator_ColumnPropNameInRow="CaVolga" msprop:Generator_ColumnVarNameInTable="columnCaVolga" msprop:Generator_ColumnPropNameInTable="CaVolgaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVolga_num" msprop:Generator_UserColumnName="CaVolga_num" msprop:Generator_ColumnPropNameInRow="CaVolga_num" msprop:Generator_ColumnVarNameInTable="columnCaVolga_num" msprop:Generator_ColumnPropNameInTable="CaVolga_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaTheta" msprop:Generator_UserColumnName="CaTheta" msprop:Generator_ColumnPropNameInRow="CaTheta" msprop:Generator_ColumnVarNameInTable="columnCaTheta" msprop:Generator_ColumnPropNameInTable="CaThetaColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaTheta_num" msprop:Generator_UserColumnName="CaTheta_num" msprop:Generator_ColumnPropNameInRow="CaTheta_num" msprop:Generator_ColumnVarNameInTable="columnCaTheta_num" msprop:Generator_ColumnPropNameInTable="CaTheta_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaRho" msprop:Generator_UserColumnName="CaRho" msprop:Generator_ColumnPropNameInRow="CaRho" msprop:Generator_ColumnVarNameInTable="columnCaRho" msprop:Generator_ColumnPropNameInTable="CaRhoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaRho_num" msprop:Generator_UserColumnName="CaRho_num" msprop:Generator_ColumnPropNameInRow="CaRho_num" msprop:Generator_ColumnVarNameInTable="columnCaRho_num" msprop:Generator_ColumnPropNameInTable="CaRho_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaRhof" msprop:Generator_UserColumnName="CaRhof" msprop:Generator_ColumnPropNameInRow="CaRhof" msprop:Generator_ColumnVarNameInTable="columnCaRhof" msprop:Generator_ColumnPropNameInTable="CaRhofColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaRhof_num" msprop:Generator_UserColumnName="CaRhof_num" msprop:Generator_ColumnPropNameInRow="CaRhof_num" msprop:Generator_ColumnVarNameInTable="columnCaRhof_num" msprop:Generator_ColumnPropNameInTable="CaRhof_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaCharm_spot" msprop:Generator_UserColumnName="CaCharm_spot" msprop:Generator_ColumnPropNameInRow="CaCharm_spot" msprop:Generator_ColumnVarNameInTable="columnCaCharm_spot" msprop:Generator_ColumnPropNameInTable="CaCharm_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaCharm_spot_num" msprop:Generator_UserColumnName="CaCharm_spot_num" msprop:Generator_ColumnPropNameInRow="CaCharm_spot_num" msprop:Generator_ColumnVarNameInTable="columnCaCharm_spot_num" msprop:Generator_ColumnPropNameInTable="CaCharm_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaCharm_fwd" msprop:Generator_UserColumnName="CaCharm_fwd" msprop:Generator_ColumnPropNameInRow="CaCharm_fwd" msprop:Generator_ColumnVarNameInTable="columnCaCharm_fwd" msprop:Generator_ColumnPropNameInTable="CaCharm_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaCharm_fwd_num" msprop:Generator_UserColumnName="CaCharm_fwd_num" msprop:Generator_ColumnPropNameInRow="CaCharm_fwd_num" msprop:Generator_ColumnVarNameInTable="columnCaCharm_fwd_num" msprop:Generator_ColumnPropNameInTable="CaCharm_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaZomma_spot" msprop:Generator_UserColumnName="CaZomma_spot" msprop:Generator_ColumnPropNameInRow="CaZomma_spot" msprop:Generator_ColumnVarNameInTable="columnCaZomma_spot" msprop:Generator_ColumnPropNameInTable="CaZomma_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaZomma_spot_num" msprop:Generator_UserColumnName="CaZomma_spot_num" msprop:Generator_ColumnPropNameInRow="CaZomma_spot_num" msprop:Generator_ColumnVarNameInTable="columnCaZomma_spot_num" msprop:Generator_ColumnPropNameInTable="CaZomma_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaZomma_fwd" msprop:Generator_UserColumnName="CaZomma_fwd" msprop:Generator_ColumnPropNameInRow="CaZomma_fwd" msprop:Generator_ColumnVarNameInTable="columnCaZomma_fwd" msprop:Generator_ColumnPropNameInTable="CaZomma_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaZomma_fwd_num" msprop:Generator_UserColumnName="CaZomma_fwd_num" msprop:Generator_ColumnPropNameInRow="CaZomma_fwd_num" msprop:Generator_ColumnVarNameInTable="columnCaZomma_fwd_num" msprop:Generator_ColumnPropNameInTable="CaZomma_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaSpeed_spot" msprop:Generator_UserColumnName="CaSpeed_spot" msprop:Generator_ColumnPropNameInRow="CaSpeed_spot" msprop:Generator_ColumnVarNameInTable="columnCaSpeed_spot" msprop:Generator_ColumnPropNameInTable="CaSpeed_spotColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaSpeed_spot_num" msprop:Generator_UserColumnName="CaSpeed_spot_num" msprop:Generator_ColumnPropNameInRow="CaSpeed_spot_num" msprop:Generator_ColumnVarNameInTable="columnCaSpeed_spot_num" msprop:Generator_ColumnPropNameInTable="CaSpeed_spot_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaSpeed_fwd" msprop:Generator_UserColumnName="CaSpeed_fwd" msprop:Generator_ColumnPropNameInRow="CaSpeed_fwd" msprop:Generator_ColumnVarNameInTable="columnCaSpeed_fwd" msprop:Generator_ColumnPropNameInTable="CaSpeed_fwdColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaSpeed_fwd_num" msprop:Generator_UserColumnName="CaSpeed_fwd_num" msprop:Generator_ColumnPropNameInRow="CaSpeed_fwd_num" msprop:Generator_ColumnVarNameInTable="columnCaSpeed_fwd_num" msprop:Generator_ColumnPropNameInTable="CaSpeed_fwd_numColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVrDet" msprop:Generator_UserColumnName="CaVrDet" msprop:Generator_ColumnPropNameInRow="CaVrDet" msprop:Generator_ColumnVarNameInTable="columnCaVrDet" msprop:Generator_ColumnPropNameInTable="CaVrDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaSpotDet" msprop:Generator_UserColumnName="CaSpotDet" msprop:Generator_ColumnPropNameInRow="CaSpotDet" msprop:Generator_ColumnVarNameInTable="columnCaSpotDet" msprop:Generator_ColumnPropNameInTable="CaSpotDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaSpotDetCosto" msprop:Generator_UserColumnName="CaSpotDetCosto" msprop:Generator_ColumnPropNameInRow="CaSpotDetCosto" msprop:Generator_ColumnVarNameInTable="columnCaSpotDetCosto" msprop:Generator_ColumnPropNameInTable="CaSpotDetCostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaWf_Mon1_Costo" msprop:Generator_UserColumnName="CaWf_Mon1_Costo" msprop:Generator_ColumnPropNameInRow="CaWf_Mon1_Costo" msprop:Generator_ColumnVarNameInTable="columnCaWf_Mon1_Costo" msprop:Generator_ColumnPropNameInTable="CaWf_Mon1_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaWf_Mon2_Costo" msprop:Generator_UserColumnName="CaWf_Mon2_Costo" msprop:Generator_ColumnPropNameInRow="CaWf_Mon2_Costo" msprop:Generator_ColumnVarNameInTable="columnCaWf_Mon2_Costo" msprop:Generator_ColumnPropNameInTable="CaWf_Mon2_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVol_Costo" msprop:Generator_UserColumnName="CaVol_Costo" msprop:Generator_ColumnPropNameInRow="CaVol_Costo" msprop:Generator_ColumnVarNameInTable="columnCaVol_Costo" msprop:Generator_ColumnPropNameInTable="CaVol_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaFwd_Teo_Costo" msprop:Generator_UserColumnName="CaFwd_Teo_Costo" msprop:Generator_ColumnPropNameInRow="CaFwd_Teo_Costo" msprop:Generator_ColumnVarNameInTable="columnCaFwd_Teo_Costo" msprop:Generator_ColumnPropNameInTable="CaFwd_Teo_CostoColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVr_CostoDet" msprop:Generator_UserColumnName="CaVr_CostoDet" msprop:Generator_ColumnPropNameInRow="CaVr_CostoDet" msprop:Generator_ColumnVarNameInTable="columnCaVr_CostoDet" msprop:Generator_ColumnPropNameInTable="CaVr_CostoDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaPrimaBSSpotDet" msprop:Generator_UserColumnName="CaPrimaBSSpotDet" msprop:Generator_ColumnPropNameInRow="CaPrimaBSSpotDet" msprop:Generator_ColumnVarNameInTable="columnCaPrimaBSSpotDet" msprop:Generator_ColumnPropNameInTable="CaPrimaBSSpotDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaIteAsoSis" msprop:Generator_UserColumnName="CaIteAsoSis" msprop:Generator_ColumnPropNameInRow="CaIteAsoSis" msprop:Generator_ColumnVarNameInTable="columnCaIteAsoSis" msprop:Generator_ColumnPropNameInTable="CaIteAsoSisColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaIteAsoCon" msprop:Generator_UserColumnName="CaIteAsoCon" msprop:Generator_ColumnPropNameInRow="CaIteAsoCon" msprop:Generator_ColumnVarNameInTable="columnCaIteAsoCon" msprop:Generator_ColumnPropNameInTable="CaIteAsoConColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaFormaPagoComp" msprop:Generator_UserColumnName="CaFormaPagoComp" msprop:Generator_ColumnPropNameInRow="CaFormaPagoComp" msprop:Generator_ColumnVarNameInTable="columnCaFormaPagoComp" msprop:Generator_ColumnPropNameInTable="CaFormaPagoCompColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaVrDetML" msprop:Generator_UserColumnName="CaVrDetML" msprop:Generator_ColumnPropNameInRow="CaVrDetML" msprop:Generator_ColumnVarNameInTable="columnCaVrDetML" msprop:Generator_ColumnPropNameInTable="CaVrDetMLColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaPrimaInicialDet" msprop:Generator_UserColumnName="CaPrimaInicialDet" msprop:Generator_ColumnPropNameInRow="CaPrimaInicialDet" msprop:Generator_ColumnVarNameInTable="columnCaPrimaInicialDet" msprop:Generator_ColumnPropNameInTable="CaPrimaInicialDetColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaWf_ML" msprop:Generator_UserColumnName="CaWf_ML" msprop:Generator_ColumnPropNameInRow="CaWf_ML" msprop:Generator_ColumnVarNameInTable="columnCaWf_ML" msprop:Generator_ColumnPropNameInTable="CaWf_MLColumn" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CaFixing" msprop:Generator_UserTableName="CaFixing" msprop:Generator_RowDeletedName="CaFixingRowDeleted" msprop:Generator_RowChangedName="CaFixingRowChanged" msprop:Generator_RowClassName="CaFixingRow" msprop:Generator_RowChangingName="CaFixingRowChanging" msprop:Generator_RowEvArgName="CaFixingRowChangeEvent" msprop:Generator_RowEvHandlerName="CaFixingRowChangeEventHandler" msprop:Generator_TableClassName="CaFixingDataTable" msprop:Generator_TableVarName="tableCaFixing" msprop:Generator_RowDeletingName="CaFixingRowDeleting" msprop:Generator_TablePropName="CaFixing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaNumContrato" msprop:Generator_UserColumnName="CaNumContrato" msprop:Generator_ColumnPropNameInRow="CaNumContrato" msprop:Generator_ColumnVarNameInTable="columnCaNumContrato" msprop:Generator_ColumnPropNameInTable="CaNumContratoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaNumEstructura" msprop:Generator_UserColumnName="CaNumEstructura" msprop:Generator_ColumnPropNameInRow="CaNumEstructura" msprop:Generator_ColumnVarNameInTable="columnCaNumEstructura" msprop:Generator_ColumnPropNameInTable="CaNumEstructuraColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaFixFecha" msprop:Generator_UserColumnName="CaFixFecha" msprop:Generator_ColumnPropNameInRow="CaFixFecha" msprop:Generator_ColumnVarNameInTable="columnCaFixFecha" msprop:Generator_ColumnPropNameInTable="CaFixFechaColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" minOccurs="0" />
+              <xs:element name="CaFixNumero" msprop:Generator_UserColumnName="CaFixNumero" msprop:Generator_ColumnPropNameInRow="CaFixNumero" msprop:Generator_ColumnVarNameInTable="columnCaFixNumero" msprop:Generator_ColumnPropNameInTable="CaFixNumeroColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaPesoFij" msprop:Generator_UserColumnName="CaPesoFij" msprop:Generator_ColumnPropNameInRow="CaPesoFij" msprop:Generator_ColumnVarNameInTable="columnCaPesoFij" msprop:Generator_ColumnPropNameInTable="CaPesoFijColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaVolFij" msprop:Generator_UserColumnName="CaVolFij" msprop:Generator_ColumnPropNameInRow="CaVolFij" msprop:Generator_ColumnVarNameInTable="columnCaVolFij" msprop:Generator_ColumnPropNameInTable="CaVolFijColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaFijacion" msprop:Generator_UserColumnName="CaFijacion" msprop:Generator_ColumnPropNameInRow="CaFijacion" msprop:Generator_ColumnVarNameInTable="columnCaFijacion" msprop:Generator_ColumnPropNameInTable="CaFijacionColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CaFixBenchComp" msprop:Generator_UserColumnName="CaFixBenchComp" msprop:Generator_ColumnPropNameInRow="CaFixBenchComp" msprop:Generator_ColumnVarNameInTable="columnCaFixBenchComp" msprop:Generator_ColumnPropNameInTable="CaFixBenchCompColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CaFixParBench" msprop:Generator_UserColumnName="CaFixParBench" msprop:Generator_ColumnPropNameInRow="CaFixParBench" msprop:Generator_ColumnVarNameInTable="columnCaFixParBench" msprop:Generator_ColumnPropNameInTable="CaFixParBenchColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaFixEstado" msprop:Generator_UserColumnName="CaFixEstado" msprop:Generator_ColumnPropNameInRow="CaFixEstado" msprop:Generator_ColumnVarNameInTable="columnCaFixEstado" msprop:Generator_ColumnPropNameInTable="CaFixEstadoColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CaCaja" msprop:Generator_UserTableName="CaCaja" msprop:Generator_RowDeletedName="CaCajaRowDeleted" msprop:Generator_RowChangedName="CaCajaRowChanged" msprop:Generator_RowClassName="CaCajaRow" msprop:Generator_RowChangingName="CaCajaRowChanging" msprop:Generator_RowEvArgName="CaCajaRowChangeEvent" msprop:Generator_RowEvHandlerName="CaCajaRowChangeEventHandler" msprop:Generator_TableClassName="CaCajaDataTable" msprop:Generator_TableVarName="tableCaCaja" msprop:Generator_RowDeletingName="CaCajaRowDeleting" msprop:Generator_TablePropName="CaCaja">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaNumContrato" msprop:Generator_UserColumnName="CaNumContrato" msprop:Generator_ColumnPropNameInRow="CaNumContrato" msprop:Generator_ColumnVarNameInTable="columnCaNumContrato" msprop:Generator_ColumnPropNameInTable="CaNumContratoColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaNumEstructura" msprop:Generator_UserColumnName="CaNumEstructura" msprop:Generator_ColumnPropNameInRow="CaNumEstructura" msprop:Generator_ColumnVarNameInTable="columnCaNumEstructura" msprop:Generator_ColumnPropNameInTable="CaNumEstructuraColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaCajFolio" msprop:Generator_UserColumnName="CaCajFolio" msprop:Generator_ColumnPropNameInRow="CaCajFolio" msprop:Generator_ColumnVarNameInTable="columnCaCajFolio" msprop:Generator_ColumnPropNameInTable="CaCajFolioColumn" type="xs:decimal" default="0" />
+              <xs:element name="CaCajFechaGen" msprop:Generator_UserColumnName="CaCajFechaGen" msprop:Generator_ColumnPropNameInRow="CaCajFechaGen" msprop:Generator_ColumnVarNameInTable="columnCaCajFechaGen" msprop:Generator_ColumnPropNameInTable="CaCajFechaGenColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" />
+              <xs:element name="CaCajFecPago" msprop:Generator_UserColumnName="CaCajFecPago" msprop:Generator_ColumnPropNameInRow="CaCajFecPago" msprop:Generator_ColumnVarNameInTable="columnCaCajFecPago" msprop:Generator_ColumnPropNameInTable="CaCajFecPagoColumn" type="xs:dateTime" default="1900-01-01T00:00:00-03:00" />
+              <xs:element name="CaCajFDeMon1" msprop:Generator_UserColumnName="CaCajFDeMon1" msprop:Generator_ColumnPropNameInRow="CaCajFDeMon1" msprop:Generator_ColumnVarNameInTable="columnCaCajFDeMon1" msprop:Generator_ColumnPropNameInTable="CaCajFDeMon1Column" type="xs:double" default="0" />
+              <xs:element name="CaCajMtoMon1" msprop:Generator_UserColumnName="CaCajMtoMon1" msprop:Generator_ColumnPropNameInRow="CaCajMtoMon1" msprop:Generator_ColumnVarNameInTable="columnCaCajMtoMon1" msprop:Generator_ColumnPropNameInTable="CaCajMtoMon1Column" type="xs:double" default="0" />
+              <xs:element name="CaCajFDeMon2" msprop:Generator_UserColumnName="CaCajFDeMon2" msprop:Generator_ColumnPropNameInRow="CaCajFDeMon2" msprop:Generator_ColumnVarNameInTable="columnCaCajFDeMon2" msprop:Generator_ColumnPropNameInTable="CaCajFDeMon2Column" type="xs:double" default="0" />
+              <xs:element name="CaCajMtoMon2" msprop:Generator_UserColumnName="CaCajMtoMon2" msprop:Generator_ColumnPropNameInRow="CaCajMtoMon2" msprop:Generator_ColumnVarNameInTable="columnCaCajMtoMon2" msprop:Generator_ColumnPropNameInTable="CaCajMtoMon2Column" type="xs:double" default="0" />
+              <xs:element name="CaCajEstado" msprop:Generator_UserColumnName="CaCajEstado" msprop:Generator_ColumnPropNameInRow="CaCajEstado" msprop:Generator_ColumnVarNameInTable="columnCaCajEstado" msprop:Generator_ColumnPropNameInTable="CaCajEstadoColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaMTMImplicito" msprop:Generator_UserColumnName="CaMTMImplicito" msprop:Generator_ColumnPropNameInRow="CaMTMImplicito" msprop:Generator_ColumnVarNameInTable="columnCaMTMImplicito" msprop:Generator_ColumnPropNameInTable="CaMTMImplicitoColumn" type="xs:double" default="0" />
+              <xs:element name="CaCajFormaPagoMon1" msprop:Generator_UserColumnName="CaCajFormaPagoMon1" msprop:Generator_ColumnPropNameInRow="CaCajFormaPagoMon1" msprop:Generator_ColumnVarNameInTable="columnCaCajFormaPagoMon1" msprop:Generator_ColumnPropNameInTable="CaCajFormaPagoMon1Column" type="xs:decimal" default="0" />
+              <xs:element name="CaCajFormaPagoMon2" msprop:Generator_UserColumnName="CaCajFormaPagoMon2" msprop:Generator_ColumnPropNameInRow="CaCajFormaPagoMon2" msprop:Generator_ColumnVarNameInTable="columnCaCajFormaPagoMon2" msprop:Generator_ColumnPropNameInTable="CaCajFormaPagoMon2Column" type="xs:decimal" default="0" />
+              <xs:element name="CaCajMdaM1" msprop:Generator_UserColumnName="CaCajMdaM1" msprop:Generator_ColumnPropNameInRow="CaCajMdaM1" msprop:Generator_ColumnVarNameInTable="columnCaCajMdaM1" msprop:Generator_ColumnPropNameInTable="CaCajMdaM1Column" type="xs:decimal" default="0" />
+              <xs:element name="CaCajMdaM2" msprop:Generator_UserColumnName="CaCajMdaM2" msprop:Generator_ColumnPropNameInRow="CaCajMdaM2" msprop:Generator_ColumnVarNameInTable="columnCaCajMdaM2" msprop:Generator_ColumnPropNameInTable="CaCajMdaM2Column" type="xs:decimal" default="0" />
+              <xs:element name="CaCajOrigen" msprop:Generator_UserColumnName="CaCajOrigen" msprop:Generator_ColumnPropNameInRow="CaCajOrigen" msprop:Generator_ColumnVarNameInTable="columnCaCajOrigen" msprop:Generator_ColumnPropNameInTable="CaCajOrigenColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCajMotorPago" msprop:Generator_UserColumnName="CaCajMotorPago" msprop:Generator_ColumnPropNameInRow="CaCajMotorPago" msprop:Generator_ColumnVarNameInTable="columnCaCajMotorPago" msprop:Generator_ColumnPropNameInTable="CaCajMotorPagoColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CaCajModalidad" msprop:Generator_UserColumnName="CaCajModalidad" msprop:Generator_ColumnPropNameInRow="CaCajModalidad" msprop:Generator_ColumnVarNameInTable="columnCaCajModalidad" msprop:Generator_ColumnPropNameInTable="CaCajModalidadColumn" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CaEncContrato" />
+      <xs:field xpath="mstns:CaNumContrato" />
+    </xs:unique>
+    <xs:unique name="CaDetContrato_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CaDetContrato" />
+      <xs:field xpath="mstns:CaNumContrato" />
+      <xs:field xpath="mstns:CaNumEstructura" />
+    </xs:unique>
+    <xs:unique name="CaFixing_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CaFixing" />
+      <xs:field xpath="mstns:CaNumContrato" />
+      <xs:field xpath="mstns:CaNumEstructura" />
+      <xs:field xpath="mstns:CaFixNumero" />
+    </xs:unique>
+    <xs:unique name="CaCaja_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CaCaja" />
+      <xs:field xpath="mstns:CaNumContrato" />
+      <xs:field xpath="mstns:CaNumEstructura" />
+      <xs:field xpath="mstns:CaCajFolio" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

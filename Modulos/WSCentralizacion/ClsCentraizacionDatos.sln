@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSCentralizacion", "WSCentralizacion\WSCentralizacion.csproj", "{102B4387-E955-4969-B7EA-4AC771891DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clsCentralizacionProcesos", "clsCentralizacionProcesos\clsCentralizacionProcesos.csproj", "{EC6653B4-CABB-4E08-A695-D79101033A15}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupInicioAutomatico", "SetupInicioAutomatico\SetupInicioAutomatico.vdproj", "{D21EB8B3-356B-4798-AE3A-ABF5C5DD3BD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{102B4387-E955-4969-B7EA-4AC771891DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102B4387-E955-4969-B7EA-4AC771891DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102B4387-E955-4969-B7EA-4AC771891DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102B4387-E955-4969-B7EA-4AC771891DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6653B4-CABB-4E08-A695-D79101033A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6653B4-CABB-4E08-A695-D79101033A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6653B4-CABB-4E08-A695-D79101033A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6653B4-CABB-4E08-A695-D79101033A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21EB8B3-356B-4798-AE3A-ABF5C5DD3BD6}.Debug|Any CPU.ActiveCfg = Debug
+		{D21EB8B3-356B-4798-AE3A-ABF5C5DD3BD6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2555FF20-EBA1-4968-B659-9B06FE61CB3E}
+	EndGlobalSection
+EndGlobal

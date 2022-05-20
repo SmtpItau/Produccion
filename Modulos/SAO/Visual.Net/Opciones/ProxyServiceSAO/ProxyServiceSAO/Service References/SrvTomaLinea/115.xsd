@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd14" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd41" />
+  <xsd:complexType name="RecurPmtInfo_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="OvrdAmt" type="tns:OvrdAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurUFAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurAmt" type="tns:CurAmt_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

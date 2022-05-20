@@ -1,0 +1,41 @@
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.dll.config
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreBusinessObjects.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreLib.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\EPPlus.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\WindowsServiceFMD.exe
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreBusinessObjects.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreLib.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\WindowsServiceFMD.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\obj\Release\ResolveAssemblyReference.cache
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\obj\Release\RCM_ODS_Testing.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\obj\Release\RCM_ODS_Testing.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.dll.config
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreBusinessObjects.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreLib.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\EPPlus.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\WindowsServiceFMD.exe
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreBusinessObjects.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\CoreLib.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\WindowsServiceFMD.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\bin\Release\EPPlus.xml
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\obj\Release\ResolveAssemblyReference.cache
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\obj\Release\RCM_ODS_Testing.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\RCM_ODS_Testing\obj\Release\RCM_ODS_Testing.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.dll.config
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\RCM_ODS_Testing.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\CoreBusinessObjects.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\CoreLib.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\EPPlus.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\WindowsServiceFMD.exe
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\CoreBusinessObjects.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\CoreLib.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\WindowsServiceFMD.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\bin\Release\EPPlus.xml
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\obj\Release\RCM_ODS_Testing.csprojResolveAssemblyReference.cache
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\obj\Release\RCM_ODS_Testing.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\RCM_ODS_Testing\obj\Release\RCM_ODS_Testing.pdb

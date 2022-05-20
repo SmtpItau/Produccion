@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getPortfolioAndBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPortfolioAndBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPortfolioAndBookResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPortfolioAndBookAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="getPortfolioAndBookAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPortfolioAndBookAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getPortfolioAndBookSoapIn">
+    <wsdl:part name="parameters" element="tns:getPortfolioAndBook" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookSoapOut">
+    <wsdl:part name="parameters" element="tns:getPortfolioAndBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookAllSoapIn">
+    <wsdl:part name="parameters" element="tns:getPortfolioAndBookAll" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookAllSoapOut">
+    <wsdl:part name="parameters" element="tns:getPortfolioAndBookAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookAllHttpGetIn" />
+  <wsdl:message name="getPortfolioAndBookAllHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getPortfolioAndBookAllHttpPostIn" />
+  <wsdl:message name="getPortfolioAndBookAllHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="LoadPortfolioSoap">
+    <wsdl:operation name="getPortfolioAndBook">
+      <wsdl:input message="tns:getPortfolioAndBookSoapIn" />
+      <wsdl:output message="tns:getPortfolioAndBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPortfolioAndBookAll">
+      <wsdl:input message="tns:getPortfolioAndBookAllSoapIn" />
+      <wsdl:output message="tns:getPortfolioAndBookAllSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="LoadPortfolioHttpGet">
+    <wsdl:operation name="getPortfolioAndBook">
+      <wsdl:input message="tns:getPortfolioAndBookHttpGetIn" />
+      <wsdl:output message="tns:getPortfolioAndBookHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPortfolioAndBookAll">
+      <wsdl:input message="tns:getPortfolioAndBookAllHttpGetIn" />
+      <wsdl:output message="tns:getPortfolioAndBookAllHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="LoadPortfolioHttpPost">
+    <wsdl:operation name="getPortfolioAndBook">
+      <wsdl:input message="tns:getPortfolioAndBookHttpPostIn" />
+      <wsdl:output message="tns:getPortfolioAndBookHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPortfolioAndBookAll">
+      <wsdl:input message="tns:getPortfolioAndBookAllHttpPostIn" />
+      <wsdl:output message="tns:getPortfolioAndBookAllHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoadPortfolioSoap" type="tns:LoadPortfolioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPortfolioAndBook">
+      <soap:operation soapAction="http://tempuri.org/getPortfolioAndBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortfolioAndBookAll">
+      <soap:operation soapAction="http://tempuri.org/getPortfolioAndBookAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadPortfolioSoap12" type="tns:LoadPortfolioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPortfolioAndBook">
+      <soap12:operation soapAction="http://tempuri.org/getPortfolioAndBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortfolioAndBookAll">
+      <soap12:operation soapAction="http://tempuri.org/getPortfolioAndBookAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadPortfolioHttpGet" type="tns:LoadPortfolioHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="getPortfolioAndBook">
+      <http:operation location="/getPortfolioAndBook" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortfolioAndBookAll">
+      <http:operation location="/getPortfolioAndBookAll" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoadPortfolioHttpPost" type="tns:LoadPortfolioHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getPortfolioAndBook">
+      <http:operation location="/getPortfolioAndBook" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortfolioAndBookAll">
+      <http:operation location="/getPortfolioAndBookAll" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoadPortfolio">
+    <wsdl:port name="LoadPortfolioSoap" binding="tns:LoadPortfolioSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/Portfolio/LoadPortfolio.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoadPortfolioSoap12" binding="tns:LoadPortfolioSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/Portfolio/LoadPortfolio.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoadPortfolioHttpGet" binding="tns:LoadPortfolioHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Portfolio/LoadPortfolio.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LoadPortfolioHttpPost" binding="tns:LoadPortfolioHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/Portfolio/LoadPortfolio.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

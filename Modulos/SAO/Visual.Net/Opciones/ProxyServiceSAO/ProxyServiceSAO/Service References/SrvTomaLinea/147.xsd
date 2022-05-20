@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd68" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd13" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd92" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd67" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd93" />
+  <complexType name="AcctStmtInfo_Type">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="StmtTimeFrame" type="tns:StmtTimeFrame_Type" />
+      <element minOccurs="0" maxOccurs="1" name="EffDt" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="AcctKeys" type="tns:AcctKeys_Type" />
+      <element minOccurs="0" maxOccurs="1" name="AcctTrnRef" type="tns:AcctTrnRef_Type" />
+      <element minOccurs="0" maxOccurs="1" name="AcctBal" type="tns:AcctBal_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CreditStmtData" type="tns:CreditStmtDat_Type" />
+    </sequence>
+  </complexType>
+</schema>

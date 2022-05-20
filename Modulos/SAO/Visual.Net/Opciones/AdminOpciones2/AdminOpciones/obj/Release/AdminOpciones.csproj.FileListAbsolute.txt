@@ -1,0 +1,886 @@
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.Menu.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.Popup.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.TreeView.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Microsoft.Windows.Controls.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Data.Services.Client.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Input.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Xml.Linq.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Xml.Serialization.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Data.Input.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.ComponentModel.DataAnnotations.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Data.Services.Client.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Xml.Linq.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Xml.Serialization.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Data.resources.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\App.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ActualizaParametros.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CambioClave.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CierreAbreMesa.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CondicionesGenerales.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ControlCliente.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ControlReportes.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleCartera.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleLiquidacionDef.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleMovimiento.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\FinDia.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\InicioDia.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\Loading.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\PagosCompensados.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\PagosEntregaFisica.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ProcesoDecisionEjer.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ProcesoFijacion.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\Process.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\SolicitudSDA.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Login\LoginControl.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\MenuPrincipal\Menu.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Asiatica\TablaFixing.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Componentes\Componentes.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\DataGrids\DetCartera.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\DataGrids\EncCartera.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Front\FontOpciones.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Griegas\Griegas.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Guardar\GuardarOpcion.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\OpcionesDeCartera\OpcionesCartera.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\RotateIcon\Icon.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileControl\SmileControl.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\InterVol.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\Inversionstrikes.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\SmileFxAtmRrFly.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\SmileFxCallPut.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\TopologiaVegaPricing\TopoLogiaVegaPricingControl.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\ValorizadorCartera\ValorizadorCartera.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Page.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\PageSwitcher.g.i.cs
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.g.resources
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.Menu.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.Popup.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.TreeView.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Microsoft.Windows.Controls.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Data.Services.Client.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Input.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Xml.Linq.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Xml.Serialization.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Data.Input.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.ComponentModel.DataAnnotations.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Data.Services.Client.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Xml.Linq.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Xml.Serialization.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Data.resources.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\App.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ActualizaParametros.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CambioClave.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CierreAbreMesa.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CondicionesGenerales.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ControlCliente.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ControlReportes.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleCartera.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleLiquidacionDef.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleMovimiento.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\FinDia.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\InicioDia.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\Loading.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\PagosCompensados.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\PagosEntregaFisica.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ProcesoDecisionEjer.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ProcesoFijacion.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\Process.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\SolicitudSDA.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Login\LoginControl.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\MenuPrincipal\Menu.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Asiatica\TablaFixing.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Componentes\Componentes.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\DataGrids\DetCartera.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\DataGrids\EncCartera.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Front\FontOpciones.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Griegas\Griegas.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Guardar\GuardarOpcion.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\OpcionesDeCartera\OpcionesCartera.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\RotateIcon\Icon.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileControl\SmileControl.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\InterVol.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\Inversionstrikes.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\SmileFxAtmRrFly.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\SmileFxCallPut.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\TopologiaVegaPricing\TopoLogiaVegaPricingControl.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\ValorizadorCartera\ValorizadorCartera.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Page.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\PageSwitcher.g.i.cs
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.g.resources
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AppManifest.xaml
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\AdminOpciones.xap
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\TestPage.html
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.Menu.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.Popup.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Liquid.TreeView.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\Microsoft.Windows.Controls.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Data.Services.Client.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Input.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Xml.Linq.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Xml.Serialization.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Controls.Data.Input.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.ComponentModel.DataAnnotations.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\System.Windows.Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Data.Services.Client.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Xml.Linq.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Xml.Serialization.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ar\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\bg\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ca\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\cs\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\da\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\el\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\et\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\eu\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fi\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\he\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hr\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\hu\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\id\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lt\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\lv\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ms\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\nl\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\no\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pl\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ro\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sk\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sl\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\sv\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\th\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\tr\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\uk\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\vi\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\de\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\es\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\fr\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\it\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ja\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ko\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\ru\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hans\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\Bin\Release\zh-Hant\System.Windows.Data.resources.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\App.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ActualizaParametros.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CambioClave.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CierreAbreMesa.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\CondicionesGenerales.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ControlCliente.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ControlReportes.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleCartera.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleLiquidacionDef.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\DetalleMovimiento.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\FinDia.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\InicioDia.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\Loading.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\PagosCompensados.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\PagosEntregaFisica.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ProcesoDecisionEjer.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\ProcesoFijacion.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\Process.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Controls\SolicitudSDA.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Login\LoginControl.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\MenuPrincipal\Menu.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Asiatica\TablaFixing.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Componentes\Componentes.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\DataGrids\DetCartera.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\DataGrids\EncCartera.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Front\FontOpciones.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Griegas\Griegas.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\Guardar\GuardarOpcion.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\OpcionesDeCartera\OpcionesCartera.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\RotateIcon\Icon.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileControl\SmileControl.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\InterVol.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\Inversionstrikes.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\SmileFxAtmRrFly.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\SmileFx\SmileFxCallPut.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\TopologiaVegaPricing\TopoLogiaVegaPricingControl.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\OpcionesFX\ValorizadorCartera\ValorizadorCartera.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\Page.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\PageSwitcher.g.i.cs
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.g.resources
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\AdminOpciones.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpciones\obj\Release\XapCacheFile.xml

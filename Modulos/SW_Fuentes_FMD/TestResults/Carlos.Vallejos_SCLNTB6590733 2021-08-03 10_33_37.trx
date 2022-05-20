@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="eb63975b-a55d-4d83-a18e-a2ce28a890ed" name="Carlos.Vallejos@SCLNTB6590733 2021-08-03 10:33:37" runUser="SONDA_USUARIOS\Carlos.Vallejos" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="ca993cf7-e8d4-4906-8918-3bd1831396b3">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Carlos.Vallejos_SCLNTB6590733 2021-08-03 10_33_37">
+      <DeploymentItem filename="D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\Referencias\EPPlus.dll" />
+      <DeploymentItem filename="D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\FMD_ReportWS\bin\Release\WindowsServiceFMD.exe" />
+      <DeploymentItem filename="D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreHelpers\bin\Release\CoreLib.dll" />
+      <DeploymentItem filename="D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreBusinessObjects\bin\Release\CoreBusinessObjects.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2021-08-03T10:33:37.2138173-04:00" queuing="2021-08-03T10:33:43.0498473-04:00" start="2021-08-03T10:33:43.2164930-04:00" finish="2021-08-03T10:33:45.7102339-04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="51" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="50" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SCLNTB6590733" outcome="Error" timestamp="2021-08-03T10:33:44.6117482-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Interfaz_Resultados_Operacionales" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="1a91dc18-e050-d513-659a-7f8af7dc72d7">
+      <Execution id="25aa70b6-bdfc-4367-b18d-20bfa1b27853" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_Resultados_Operacionales" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_BASILEA_SWAP" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="06f2aee2-091a-13d9-d938-b1ad81a1245f">
+      <Execution id="e6ede35a-24a8-4fd3-85b0-f2f30141e9a3" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_BASILEA_SWAP" />
+    </UnitTest>
+    <UnitTest name="Interfaz_Traders" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="ea571523-1cc4-92e3-f3e2-e936a85a6612">
+      <Execution id="9894dc27-3b80-468f-b009-43dca9eef4aa" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_Traders" />
+    </UnitTest>
+    <UnitTest name="Test_Template_OPTIONS" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="6a9b546d-b6d3-5f85-11ba-05d90f63913b">
+      <Execution id="0600652e-d815-4178-8e6a-80099cd47fb6" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Template_OPTIONS" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_ITAU_OTROS_DER_DIGITAL" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="a784d083-5062-5551-68cd-846d5d547a51">
+      <Execution id="af93a601-b20f-486d-b430-3574d86e7991" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_ITAU_OTROS_DER_DIGITAL" />
+    </UnitTest>
+    <UnitTest name="Test_FT" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="aa6ffabf-f47a-0b50-a42b-a7f1816e1dca">
+      <Execution id="5f7fcf36-86bc-464a-ab69-1853db06df70" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_FT" />
+    </UnitTest>
+    <UnitTest name="Test_EncriptacionMail" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="cfe044c4-6528-ae34-fbcb-925404521878">
+      <Execution id="b5240f65-5cf5-4e93-9dd1-6a7be579ead1" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_EncriptacionMail" />
+    </UnitTest>
+    <UnitTest name="Test_Template_ODS_BCC" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="09409b46-2a53-1a2d-f968-7bdc09ecec32">
+      <Execution id="adcf58b5-f63c-4d1c-8100-acec72c52951" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Template_ODS_BCC" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_PASIVOS_34A_2" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="ae3340e4-1525-f253-e2f8-3b2ddddb2728">
+      <Execution id="79268c8c-6ee5-476d-b50c-7bcb34274ac2" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_PASIVOS_34A_2" />
+    </UnitTest>
+    <UnitTest name="Test_DCE_Template_ALL" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="ace7c24f-3f90-b406-925c-4bdc7a69ca66">
+      <Execution id="c1997c8a-83e0-4fc8-a1a7-1ae2a2471619" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_DCE_Template_ALL" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_ITAU_SWAP_DIGITAL" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="fea2b9aa-3e46-e238-c398-6b092a0ef107">
+      <Execution id="9f8d1594-1b4d-4218-b430-01fcbccf45c6" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_ITAU_SWAP_DIGITAL" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_PASIVOS_CAPTACION_MENSUAL" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="26386bb9-7786-bf0f-5a58-9b94cccc27c2">
+      <Execution id="9f13fbb1-6a40-47a2-94d6-4317e11c1003" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_PASIVOS_CAPTACION_MENSUAL" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CVF_OPC" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="e3777d48-ee12-3ddf-fbbd-a914f600cee9">
+      <Execution id="a73dcddc-1b45-4aad-b074-f8e5f7de1029" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CVF_OPC" />
+    </UnitTest>
+    <UnitTest name="Test_Template_IRS" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="68c78d79-40ed-d844-3368-3a2b641f491c">
+      <Execution id="93b934aa-c22f-4c39-b24a-6c15bb44412a" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Template_IRS" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CVF_FORWARD" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="7abd2333-b068-d856-db98-77b04a0cb7bc">
+      <Execution id="97b089bf-f266-4591-b5e4-880431971315" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CVF_FORWARD" />
+    </UnitTest>
+    <UnitTest name="Test_Template_CCS" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="3006b308-4aec-11a2-fbd2-f2e830d07cda">
+      <Execution id="b6fa0806-3431-415a-b747-167e127b7e7d" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Template_CCS" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_RF_PACTOS_MENSUAL" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="83ca8c75-dbdb-12ce-3049-358a3c020c7d">
+      <Execution id="f9fecc14-0b4b-43f2-a2c0-bde9347da2e4" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_RF_PACTOS_MENSUAL" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_BASILEA_DERIVADOS" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="117e53bf-75f3-116b-41d4-0c4556777dcb">
+      <Execution id="0f8deb96-80a0-4f54-8e74-29199d23a08c" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_BASILEA_DERIVADOS" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CARTERA_VIGENTE_FWD_COMDER" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="9e637e2a-0317-d941-d4c4-85eac54103ce">
+      <Execution id="38fcfbdc-d059-4e2c-87cb-3adac44e5207" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CARTERA_VIGENTE_FWD_COMDER" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_ITAU_OTROS_DER_DIGITAL_OPC" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="11c9f7b6-c660-6a14-ab0c-79b08aa31dcd">
+      <Execution id="f5906d8a-6592-4091-b1b0-05a78df9e7e4" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_ITAU_OTROS_DER_DIGITAL_OPC" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_PASIVOS_34A_1" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="9929fde1-d2de-aca8-0281-19e8b7353f89">
+      <Execution id="8a6ae71e-7bdb-49f4-81b4-c5fe677b1ac5" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_PASIVOS_34A_1" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_RF_769TVM" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="1969e897-21c4-aa6b-9c5a-54bc1b50b5bc">
+      <Execution id="2bf61edd-23a8-4d8c-9998-0c113540aff7" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_RF_769TVM" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CARTERA_VIGENTE_NY" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="84a2683b-1856-453f-6366-d688c9fd77cf">
+      <Execution id="ee008735-7ff4-4c42-993b-8a5158e781bd" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CARTERA_VIGENTE_NY" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CASA_MATRIZ_OTROS_DER_OPC" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="651d1837-a5dc-ab5c-8b0b-9691a4062b96">
+      <Execution id="348c27fd-d3da-4e41-8498-e7d2032e65ca" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CASA_MATRIZ_OTROS_DER_OPC" />
+    </UnitTest>
+    <UnitTest name="Test_Template_FRA" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="f1fefdb6-56f7-7ea2-7d1d-b29ea3a97a16">
+      <Execution id="125c4ae3-6172-431c-b62a-2d89ea5f8464" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Template_FRA" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_RF_PACTOS_VENCIMIENTOS" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="9db4c8b2-ef38-3b18-456e-3e09cd59ba0a">
+      <Execution id="08572574-4530-4f87-af5f-9a0b025c52b1" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_RF_PACTOS_VENCIMIENTOS" />
+    </UnitTest>
+    <UnitTest name="TestDecompress" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="7c7480a0-98fb-c622-5e22-10b0cc89ca06">
+      <Execution id="52e73a23-a4ff-4ecc-ad43-2bbc3a547c84" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDecompress" />
+    </UnitTest>
+    <UnitTest name="Interfaz_Relacion_Cliente_Contrato" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="271a2d65-d7d2-d863-2307-439f89da1be6">
+      <Execution id="85746a30-d288-4648-9cd3-f7cc3d59ff64" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_Relacion_Cliente_Contrato" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_PASIVOS_CAPTACION_DIARIA" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="dda10a83-5ebb-3fe5-9d33-276a3c9b083e">
+      <Execution id="3e6c7dac-b162-469d-8ef0-f997db62ea04" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_PASIVOS_CAPTACION_DIARIA" />
+    </UnitTest>
+    <UnitTest name="TestCompression2" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="e97277fc-c107-44e4-ca1b-8f808da779d1">
+      <Execution id="f87ff257-dd21-429f-b53d-f534102bcde6" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCompression2" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CASA_MATRIZ_OTROS_DER_FWD" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="2f02e8f9-91a2-d470-45b3-7d9c3e34124e">
+      <Execution id="3a394055-7ecf-441c-8307-68d2d2851218" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CASA_MATRIZ_OTROS_DER_FWD" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_RF_PACTOS_INGRESOS" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="8f45ffc6-5d69-4cca-90b2-99c5f830397e">
+      <Execution id="8890866c-1617-4f47-b2ef-442780157fa6" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_RF_PACTOS_INGRESOS" />
+    </UnitTest>
+    <UnitTest name="Test_Encriptacion" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="6517dac1-3c56-3b30-d913-ce8155e15f05">
+      <Execution id="f690c8c9-1c25-44d9-b4d1-90a97fa8b523" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Encriptacion" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_BASILEA_DERIVADOS_NY" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="461479ad-ad09-4e50-f574-1d42620e78dc">
+      <Execution id="d753a6e8-0d15-45c0-a82e-d771f21df145" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_BASILEA_DERIVADOS_NY" />
+    </UnitTest>
+    <UnitTest name="Interfaz_Cuadro_Pago" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="4275f05c-ee17-1549-88eb-9ce081e17105">
+      <Execution id="85e96533-bb22-447d-a33a-d9701fa43ae4" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_Cuadro_Pago" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CARTERA_FWD_ARB" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="5803db8d-09d6-fb31-7494-62b86fb6f573">
+      <Execution id="450addb3-39fa-4605-900d-59e216ba97d0" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CARTERA_FWD_ARB" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CARTERA_VIGENTE_FWD" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="730ec10c-d2e8-f48d-fb4b-7eff22ce8978">
+      <Execution id="d6638458-5cbc-401d-befc-67b4bcf93e01" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CARTERA_VIGENTE_FWD" />
+    </UnitTest>
+    <UnitTest name="Interfaz_PruebaMotorTextoPlano" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="03c2ec6c-5119-2f74-5ed8-5c56c219db4a">
+      <Execution id="0952415d-002d-4569-9229-a382cb59f9a3" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_PruebaMotorTextoPlano" />
+    </UnitTest>
+    <UnitTest name="Interfaz_Productos" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="a4bc094c-1fd4-d3c0-a8d9-152d2adca0b7">
+      <Execution id="d2470e58-ab02-49f0-9895-0438da0c111f" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_Productos" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CARTERA_VIGENTE" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="5f65f42e-30a2-f7b5-d786-4e236aa5a21d">
+      <Execution id="2dd14a13-a09e-41f1-a7e1-32f678f1244b" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CARTERA_VIGENTE" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_RF_769BSL" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="c1f6e66a-4fe3-2789-3f34-f5d868872240">
+      <Execution id="9a294f43-9389-4e12-b6d7-965232a3a786" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_RF_769BSL" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_BASILEA_SWAP_NY" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="6eda6975-ea0c-44df-f638-8a84ed94aea1">
+      <Execution id="2aef0ed3-724b-45a1-86fc-f3714ba456ca" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_BASILEA_SWAP_NY" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_CARTERA_VIGENTE_OPC" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="349b80a5-6421-2af7-7ef6-4ba639476d0f">
+      <Execution id="5f4f91c0-c721-40e4-9e6e-595b527711cf" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_CARTERA_VIGENTE_OPC" />
+    </UnitTest>
+    <UnitTest name="Interfaz_Saldos_Operacionales" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="731518ee-8ee9-b093-d80a-001ae684e991">
+      <Execution id="e4f953cd-00e9-4ce5-abe0-b8a95c79462b" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_Saldos_Operacionales" />
+    </UnitTest>
+    <UnitTest name="Test_Compresion" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="cdd693d7-80c0-4634-1328-f1aabc680419">
+      <Execution id="7419d077-0487-44bc-ab6d-62739c7b5b40" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Compresion" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_PASIVOS_PAGOS" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="a8f66a08-8f85-a6f2-e380-bd80736cdf74">
+      <Execution id="6d476ba3-bf95-4514-aeed-d873f8e7fe40" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_PASIVOS_PAGOS" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_ITAU_SWAP_DIGITAL_NY" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="bd002bdf-235d-5120-aade-e903550947e0">
+      <Execution id="6646aab8-d16a-41aa-925a-1680e34cf1d8" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_ITAU_SWAP_DIGITAL_NY" />
+    </UnitTest>
+    <UnitTest name="SP_ADM_REPORTE_PASIVOS_OBLIGACIONES" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="c64f968f-7156-5e24-d3f8-34818a27c03a">
+      <Execution id="f4a447ed-4f60-4244-a5b5-890528ca551c" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_ADM_REPORTE_PASIVOS_OBLIGACIONES" />
+    </UnitTest>
+    <UnitTest name="Test_Template_NDF_V3" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="c1824f0c-9112-ec24-c1e4-9d7a65bd952b">
+      <Execution id="8f1a4693-70c9-41f3-af40-4689c2f8e41c" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_Template_NDF_V3" />
+    </UnitTest>
+    <UnitTest name="Interfaz_Detalle_Operaciones" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="22764cd0-485e-cc76-fd4a-97e84aa36ef5">
+      <Execution id="2f4ca8a4-a015-4644-99d3-897e5ba5fc3c" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Interfaz_Detalle_Operaciones" />
+    </UnitTest>
+    <UnitTest name="SP_FUSION_CONTABILIDAD_SPOT" storage="d:\bancos\itau\3_victor\sw_fuentes_fmd\rcm_ods_testing\bin\release\rcm_ods_testing.dll" id="59dffc7b-3a50-ffec-2733-064bcc757806">
+      <Execution id="9a50890d-ea56-4977-be8b-80e43bd2474a" />
+      <TestMethod codeBase="D:/Bancos/ITAU/3_Victor/SW_Fuentes_FMD/RCM_ODS_Testing/bin/Release/RCM_ODS_Testing.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CoreTest.TemplateCreatorTest, RCM_ODS_Testing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SP_FUSION_CONTABILIDAD_SPOT" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="03c2ec6c-5119-2f74-5ed8-5c56c219db4a" executionId="0952415d-002d-4569-9229-a382cb59f9a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06f2aee2-091a-13d9-d938-b1ad81a1245f" executionId="e6ede35a-24a8-4fd3-85b0-f2f30141e9a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09409b46-2a53-1a2d-f968-7bdc09ecec32" executionId="adcf58b5-f63c-4d1c-8100-acec72c52951" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="117e53bf-75f3-116b-41d4-0c4556777dcb" executionId="0f8deb96-80a0-4f54-8e74-29199d23a08c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11c9f7b6-c660-6a14-ab0c-79b08aa31dcd" executionId="f5906d8a-6592-4091-b1b0-05a78df9e7e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1969e897-21c4-aa6b-9c5a-54bc1b50b5bc" executionId="2bf61edd-23a8-4d8c-9998-0c113540aff7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a91dc18-e050-d513-659a-7f8af7dc72d7" executionId="25aa70b6-bdfc-4367-b18d-20bfa1b27853" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22764cd0-485e-cc76-fd4a-97e84aa36ef5" executionId="2f4ca8a4-a015-4644-99d3-897e5ba5fc3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26386bb9-7786-bf0f-5a58-9b94cccc27c2" executionId="9f13fbb1-6a40-47a2-94d6-4317e11c1003" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="271a2d65-d7d2-d863-2307-439f89da1be6" executionId="85746a30-d288-4648-9cd3-f7cc3d59ff64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f02e8f9-91a2-d470-45b3-7d9c3e34124e" executionId="3a394055-7ecf-441c-8307-68d2d2851218" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3006b308-4aec-11a2-fbd2-f2e830d07cda" executionId="b6fa0806-3431-415a-b747-167e127b7e7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="349b80a5-6421-2af7-7ef6-4ba639476d0f" executionId="5f4f91c0-c721-40e4-9e6e-595b527711cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4275f05c-ee17-1549-88eb-9ce081e17105" executionId="85e96533-bb22-447d-a33a-d9701fa43ae4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="461479ad-ad09-4e50-f574-1d42620e78dc" executionId="d753a6e8-0d15-45c0-a82e-d771f21df145" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5803db8d-09d6-fb31-7494-62b86fb6f573" executionId="450addb3-39fa-4605-900d-59e216ba97d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59dffc7b-3a50-ffec-2733-064bcc757806" executionId="9a50890d-ea56-4977-be8b-80e43bd2474a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f65f42e-30a2-f7b5-d786-4e236aa5a21d" executionId="2dd14a13-a09e-41f1-a7e1-32f678f1244b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6517dac1-3c56-3b30-d913-ce8155e15f05" executionId="f690c8c9-1c25-44d9-b4d1-90a97fa8b523" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="651d1837-a5dc-ab5c-8b0b-9691a4062b96" executionId="348c27fd-d3da-4e41-8498-e7d2032e65ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68c78d79-40ed-d844-3368-3a2b641f491c" executionId="93b934aa-c22f-4c39-b24a-6c15bb44412a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a9b546d-b6d3-5f85-11ba-05d90f63913b" executionId="0600652e-d815-4178-8e6a-80099cd47fb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6eda6975-ea0c-44df-f638-8a84ed94aea1" executionId="2aef0ed3-724b-45a1-86fc-f3714ba456ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="730ec10c-d2e8-f48d-fb4b-7eff22ce8978" executionId="d6638458-5cbc-401d-befc-67b4bcf93e01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="731518ee-8ee9-b093-d80a-001ae684e991" executionId="e4f953cd-00e9-4ce5-abe0-b8a95c79462b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7abd2333-b068-d856-db98-77b04a0cb7bc" executionId="97b089bf-f266-4591-b5e4-880431971315" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c7480a0-98fb-c622-5e22-10b0cc89ca06" executionId="52e73a23-a4ff-4ecc-ad43-2bbc3a547c84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="83ca8c75-dbdb-12ce-3049-358a3c020c7d" executionId="f9fecc14-0b4b-43f2-a2c0-bde9347da2e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84a2683b-1856-453f-6366-d688c9fd77cf" executionId="ee008735-7ff4-4c42-993b-8a5158e781bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f45ffc6-5d69-4cca-90b2-99c5f830397e" executionId="8890866c-1617-4f47-b2ef-442780157fa6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9929fde1-d2de-aca8-0281-19e8b7353f89" executionId="8a6ae71e-7bdb-49f4-81b4-c5fe677b1ac5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9db4c8b2-ef38-3b18-456e-3e09cd59ba0a" executionId="08572574-4530-4f87-af5f-9a0b025c52b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e637e2a-0317-d941-d4c4-85eac54103ce" executionId="38fcfbdc-d059-4e2c-87cb-3adac44e5207" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4bc094c-1fd4-d3c0-a8d9-152d2adca0b7" executionId="d2470e58-ab02-49f0-9895-0438da0c111f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a784d083-5062-5551-68cd-846d5d547a51" executionId="af93a601-b20f-486d-b430-3574d86e7991" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8f66a08-8f85-a6f2-e380-bd80736cdf74" executionId="6d476ba3-bf95-4514-aeed-d873f8e7fe40" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa6ffabf-f47a-0b50-a42b-a7f1816e1dca" executionId="5f7fcf36-86bc-464a-ab69-1853db06df70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ace7c24f-3f90-b406-925c-4bdc7a69ca66" executionId="c1997c8a-83e0-4fc8-a1a7-1ae2a2471619" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae3340e4-1525-f253-e2f8-3b2ddddb2728" executionId="79268c8c-6ee5-476d-b50c-7bcb34274ac2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd002bdf-235d-5120-aade-e903550947e0" executionId="6646aab8-d16a-41aa-925a-1680e34cf1d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1824f0c-9112-ec24-c1e4-9d7a65bd952b" executionId="8f1a4693-70c9-41f3-af40-4689c2f8e41c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1f6e66a-4fe3-2789-3f34-f5d868872240" executionId="9a294f43-9389-4e12-b6d7-965232a3a786" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c64f968f-7156-5e24-d3f8-34818a27c03a" executionId="f4a447ed-4f60-4244-a5b5-890528ca551c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdd693d7-80c0-4634-1328-f1aabc680419" executionId="7419d077-0487-44bc-ab6d-62739c7b5b40" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfe044c4-6528-ae34-fbcb-925404521878" executionId="b5240f65-5cf5-4e93-9dd1-6a7be579ead1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dda10a83-5ebb-3fe5-9d33-276a3c9b083e" executionId="3e6c7dac-b162-469d-8ef0-f997db62ea04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e3777d48-ee12-3ddf-fbbd-a914f600cee9" executionId="a73dcddc-1b45-4aad-b074-f8e5f7de1029" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e97277fc-c107-44e4-ca1b-8f808da779d1" executionId="f87ff257-dd21-429f-b53d-f534102bcde6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea571523-1cc4-92e3-f3e2-e936a85a6612" executionId="9894dc27-3b80-468f-b009-43dca9eef4aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1fefdb6-56f7-7ea2-7d1d-b29ea3a97a16" executionId="125c4ae3-6172-431c-b62a-2d89ea5f8464" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fea2b9aa-3e46-e238-c398-6b092a0ef107" executionId="9f8d1594-1b4d-4218-b430-01fcbccf45c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0952415d-002d-4569-9229-a382cb59f9a3" testId="03c2ec6c-5119-2f74-5ed8-5c56c219db4a" testName="Interfaz_PruebaMotorTextoPlano" computerName="SCLNTB6590733" duration="00:00:01.1476840" startTime="2021-08-03T10:33:43.4651092-04:00" endTime="2021-08-03T10:33:44.6127932-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0952415d-002d-4569-9229-a382cb59f9a3">
+    </UnitTestResult>
+    <UnitTestResult executionId="e6ede35a-24a8-4fd3-85b0-f2f30141e9a3" testId="06f2aee2-091a-13d9-d938-b1ad81a1245f" testName="SP_ADM_REPORTE_BASILEA_SWAP" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6ede35a-24a8-4fd3-85b0-f2f30141e9a3">
+    </UnitTestResult>
+    <UnitTestResult executionId="adcf58b5-f63c-4d1c-8100-acec72c52951" testId="09409b46-2a53-1a2d-f968-7bdc09ecec32" testName="Test_Template_ODS_BCC" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adcf58b5-f63c-4d1c-8100-acec72c52951">
+    </UnitTestResult>
+    <UnitTestResult executionId="0f8deb96-80a0-4f54-8e74-29199d23a08c" testId="117e53bf-75f3-116b-41d4-0c4556777dcb" testName="SP_ADM_REPORTE_BASILEA_DERIVADOS" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f8deb96-80a0-4f54-8e74-29199d23a08c">
+    </UnitTestResult>
+    <UnitTestResult executionId="f5906d8a-6592-4091-b1b0-05a78df9e7e4" testId="11c9f7b6-c660-6a14-ab0c-79b08aa31dcd" testName="SP_ADM_REPORTE_ITAU_OTROS_DER_DIGITAL_OPC" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5906d8a-6592-4091-b1b0-05a78df9e7e4">
+    </UnitTestResult>
+    <UnitTestResult executionId="2bf61edd-23a8-4d8c-9998-0c113540aff7" testId="1969e897-21c4-aa6b-9c5a-54bc1b50b5bc" testName="SP_ADM_REPORTE_RF_769TVM" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2bf61edd-23a8-4d8c-9998-0c113540aff7">
+    </UnitTestResult>
+    <UnitTestResult executionId="25aa70b6-bdfc-4367-b18d-20bfa1b27853" testId="1a91dc18-e050-d513-659a-7f8af7dc72d7" testName="Interfaz_Resultados_Operacionales" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25aa70b6-bdfc-4367-b18d-20bfa1b27853">
+    </UnitTestResult>
+    <UnitTestResult executionId="2f4ca8a4-a015-4644-99d3-897e5ba5fc3c" testId="22764cd0-485e-cc76-fd4a-97e84aa36ef5" testName="Interfaz_Detalle_Operaciones" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f4ca8a4-a015-4644-99d3-897e5ba5fc3c">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f13fbb1-6a40-47a2-94d6-4317e11c1003" testId="26386bb9-7786-bf0f-5a58-9b94cccc27c2" testName="SP_ADM_REPORTE_PASIVOS_CAPTACION_MENSUAL" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f13fbb1-6a40-47a2-94d6-4317e11c1003">
+    </UnitTestResult>
+    <UnitTestResult executionId="85746a30-d288-4648-9cd3-f7cc3d59ff64" testId="271a2d65-d7d2-d863-2307-439f89da1be6" testName="Interfaz_Relacion_Cliente_Contrato" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85746a30-d288-4648-9cd3-f7cc3d59ff64">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a394055-7ecf-441c-8307-68d2d2851218" testId="2f02e8f9-91a2-d470-45b3-7d9c3e34124e" testName="SP_ADM_REPORTE_CASA_MATRIZ_OTROS_DER_FWD" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a394055-7ecf-441c-8307-68d2d2851218">
+    </UnitTestResult>
+    <UnitTestResult executionId="b6fa0806-3431-415a-b747-167e127b7e7d" testId="3006b308-4aec-11a2-fbd2-f2e830d07cda" testName="Test_Template_CCS" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6fa0806-3431-415a-b747-167e127b7e7d">
+    </UnitTestResult>
+    <UnitTestResult executionId="5f4f91c0-c721-40e4-9e6e-595b527711cf" testId="349b80a5-6421-2af7-7ef6-4ba639476d0f" testName="SP_ADM_REPORTE_CARTERA_VIGENTE_OPC" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f4f91c0-c721-40e4-9e6e-595b527711cf">
+    </UnitTestResult>
+    <UnitTestResult executionId="85e96533-bb22-447d-a33a-d9701fa43ae4" testId="4275f05c-ee17-1549-88eb-9ce081e17105" testName="Interfaz_Cuadro_Pago" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85e96533-bb22-447d-a33a-d9701fa43ae4">
+    </UnitTestResult>
+    <UnitTestResult executionId="d753a6e8-0d15-45c0-a82e-d771f21df145" testId="461479ad-ad09-4e50-f574-1d42620e78dc" testName="SP_ADM_REPORTE_BASILEA_DERIVADOS_NY" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d753a6e8-0d15-45c0-a82e-d771f21df145">
+    </UnitTestResult>
+    <UnitTestResult executionId="450addb3-39fa-4605-900d-59e216ba97d0" testId="5803db8d-09d6-fb31-7494-62b86fb6f573" testName="SP_ADM_REPORTE_CARTERA_FWD_ARB" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="450addb3-39fa-4605-900d-59e216ba97d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a50890d-ea56-4977-be8b-80e43bd2474a" testId="59dffc7b-3a50-ffec-2733-064bcc757806" testName="SP_FUSION_CONTABILIDAD_SPOT" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a50890d-ea56-4977-be8b-80e43bd2474a">
+    </UnitTestResult>
+    <UnitTestResult executionId="2dd14a13-a09e-41f1-a7e1-32f678f1244b" testId="5f65f42e-30a2-f7b5-d786-4e236aa5a21d" testName="SP_ADM_REPORTE_CARTERA_VIGENTE" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2dd14a13-a09e-41f1-a7e1-32f678f1244b">
+    </UnitTestResult>
+    <UnitTestResult executionId="f690c8c9-1c25-44d9-b4d1-90a97fa8b523" testId="6517dac1-3c56-3b30-d913-ce8155e15f05" testName="Test_Encriptacion" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f690c8c9-1c25-44d9-b4d1-90a97fa8b523">
+    </UnitTestResult>
+    <UnitTestResult executionId="348c27fd-d3da-4e41-8498-e7d2032e65ca" testId="651d1837-a5dc-ab5c-8b0b-9691a4062b96" testName="SP_ADM_REPORTE_CASA_MATRIZ_OTROS_DER_OPC" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="348c27fd-d3da-4e41-8498-e7d2032e65ca">
+    </UnitTestResult>
+    <UnitTestResult executionId="93b934aa-c22f-4c39-b24a-6c15bb44412a" testId="68c78d79-40ed-d844-3368-3a2b641f491c" testName="Test_Template_IRS" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93b934aa-c22f-4c39-b24a-6c15bb44412a">
+    </UnitTestResult>
+    <UnitTestResult executionId="0600652e-d815-4178-8e6a-80099cd47fb6" testId="6a9b546d-b6d3-5f85-11ba-05d90f63913b" testName="Test_Template_OPTIONS" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0600652e-d815-4178-8e6a-80099cd47fb6">
+    </UnitTestResult>
+    <UnitTestResult executionId="2aef0ed3-724b-45a1-86fc-f3714ba456ca" testId="6eda6975-ea0c-44df-f638-8a84ed94aea1" testName="SP_ADM_REPORTE_BASILEA_SWAP_NY" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2aef0ed3-724b-45a1-86fc-f3714ba456ca">
+    </UnitTestResult>
+    <UnitTestResult executionId="d6638458-5cbc-401d-befc-67b4bcf93e01" testId="730ec10c-d2e8-f48d-fb4b-7eff22ce8978" testName="SP_ADM_REPORTE_CARTERA_VIGENTE_FWD" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6638458-5cbc-401d-befc-67b4bcf93e01">
+    </UnitTestResult>
+    <UnitTestResult executionId="e4f953cd-00e9-4ce5-abe0-b8a95c79462b" testId="731518ee-8ee9-b093-d80a-001ae684e991" testName="Interfaz_Saldos_Operacionales" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4f953cd-00e9-4ce5-abe0-b8a95c79462b">
+    </UnitTestResult>
+    <UnitTestResult executionId="97b089bf-f266-4591-b5e4-880431971315" testId="7abd2333-b068-d856-db98-77b04a0cb7bc" testName="SP_ADM_REPORTE_CVF_FORWARD" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97b089bf-f266-4591-b5e4-880431971315">
+    </UnitTestResult>
+    <UnitTestResult executionId="52e73a23-a4ff-4ecc-ad43-2bbc3a547c84" testId="7c7480a0-98fb-c622-5e22-10b0cc89ca06" testName="TestDecompress" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52e73a23-a4ff-4ecc-ad43-2bbc3a547c84">
+    </UnitTestResult>
+    <UnitTestResult executionId="f9fecc14-0b4b-43f2-a2c0-bde9347da2e4" testId="83ca8c75-dbdb-12ce-3049-358a3c020c7d" testName="SP_ADM_REPORTE_RF_PACTOS_MENSUAL" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9fecc14-0b4b-43f2-a2c0-bde9347da2e4">
+    </UnitTestResult>
+    <UnitTestResult executionId="ee008735-7ff4-4c42-993b-8a5158e781bd" testId="84a2683b-1856-453f-6366-d688c9fd77cf" testName="SP_ADM_REPORTE_CARTERA_VIGENTE_NY" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee008735-7ff4-4c42-993b-8a5158e781bd">
+    </UnitTestResult>
+    <UnitTestResult executionId="8890866c-1617-4f47-b2ef-442780157fa6" testId="8f45ffc6-5d69-4cca-90b2-99c5f830397e" testName="SP_ADM_REPORTE_RF_PACTOS_INGRESOS" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8890866c-1617-4f47-b2ef-442780157fa6">
+    </UnitTestResult>
+    <UnitTestResult executionId="8a6ae71e-7bdb-49f4-81b4-c5fe677b1ac5" testId="9929fde1-d2de-aca8-0281-19e8b7353f89" testName="SP_ADM_REPORTE_PASIVOS_34A_1" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a6ae71e-7bdb-49f4-81b4-c5fe677b1ac5">
+    </UnitTestResult>
+    <UnitTestResult executionId="08572574-4530-4f87-af5f-9a0b025c52b1" testId="9db4c8b2-ef38-3b18-456e-3e09cd59ba0a" testName="SP_ADM_REPORTE_RF_PACTOS_VENCIMIENTOS" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08572574-4530-4f87-af5f-9a0b025c52b1">
+    </UnitTestResult>
+    <UnitTestResult executionId="38fcfbdc-d059-4e2c-87cb-3adac44e5207" testId="9e637e2a-0317-d941-d4c4-85eac54103ce" testName="SP_ADM_REPORTE_CARTERA_VIGENTE_FWD_COMDER" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38fcfbdc-d059-4e2c-87cb-3adac44e5207">
+    </UnitTestResult>
+    <UnitTestResult executionId="d2470e58-ab02-49f0-9895-0438da0c111f" testId="a4bc094c-1fd4-d3c0-a8d9-152d2adca0b7" testName="Interfaz_Productos" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2470e58-ab02-49f0-9895-0438da0c111f">
+    </UnitTestResult>
+    <UnitTestResult executionId="af93a601-b20f-486d-b430-3574d86e7991" testId="a784d083-5062-5551-68cd-846d5d547a51" testName="SP_ADM_REPORTE_ITAU_OTROS_DER_DIGITAL" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af93a601-b20f-486d-b430-3574d86e7991">
+    </UnitTestResult>
+    <UnitTestResult executionId="6d476ba3-bf95-4514-aeed-d873f8e7fe40" testId="a8f66a08-8f85-a6f2-e380-bd80736cdf74" testName="SP_ADM_REPORTE_PASIVOS_PAGOS" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d476ba3-bf95-4514-aeed-d873f8e7fe40">
+    </UnitTestResult>
+    <UnitTestResult executionId="5f7fcf36-86bc-464a-ab69-1853db06df70" testId="aa6ffabf-f47a-0b50-a42b-a7f1816e1dca" testName="Test_FT" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f7fcf36-86bc-464a-ab69-1853db06df70">
+    </UnitTestResult>
+    <UnitTestResult executionId="c1997c8a-83e0-4fc8-a1a7-1ae2a2471619" testId="ace7c24f-3f90-b406-925c-4bdc7a69ca66" testName="Test_DCE_Template_ALL" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1997c8a-83e0-4fc8-a1a7-1ae2a2471619">
+    </UnitTestResult>
+    <UnitTestResult executionId="79268c8c-6ee5-476d-b50c-7bcb34274ac2" testId="ae3340e4-1525-f253-e2f8-3b2ddddb2728" testName="SP_ADM_REPORTE_PASIVOS_34A_2" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79268c8c-6ee5-476d-b50c-7bcb34274ac2">
+    </UnitTestResult>
+    <UnitTestResult executionId="6646aab8-d16a-41aa-925a-1680e34cf1d8" testId="bd002bdf-235d-5120-aade-e903550947e0" testName="SP_ADM_REPORTE_ITAU_SWAP_DIGITAL_NY" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6646aab8-d16a-41aa-925a-1680e34cf1d8">
+    </UnitTestResult>
+    <UnitTestResult executionId="8f1a4693-70c9-41f3-af40-4689c2f8e41c" testId="c1824f0c-9112-ec24-c1e4-9d7a65bd952b" testName="Test_Template_NDF_V3" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f1a4693-70c9-41f3-af40-4689c2f8e41c">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a294f43-9389-4e12-b6d7-965232a3a786" testId="c1f6e66a-4fe3-2789-3f34-f5d868872240" testName="SP_ADM_REPORTE_RF_769BSL" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a294f43-9389-4e12-b6d7-965232a3a786">
+    </UnitTestResult>
+    <UnitTestResult executionId="f4a447ed-4f60-4244-a5b5-890528ca551c" testId="c64f968f-7156-5e24-d3f8-34818a27c03a" testName="SP_ADM_REPORTE_PASIVOS_OBLIGACIONES" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4a447ed-4f60-4244-a5b5-890528ca551c">
+    </UnitTestResult>
+    <UnitTestResult executionId="7419d077-0487-44bc-ab6d-62739c7b5b40" testId="cdd693d7-80c0-4634-1328-f1aabc680419" testName="Test_Compresion" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7419d077-0487-44bc-ab6d-62739c7b5b40">
+    </UnitTestResult>
+    <UnitTestResult executionId="b5240f65-5cf5-4e93-9dd1-6a7be579ead1" testId="cfe044c4-6528-ae34-fbcb-925404521878" testName="Test_EncriptacionMail" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5240f65-5cf5-4e93-9dd1-6a7be579ead1">
+    </UnitTestResult>
+    <UnitTestResult executionId="3e6c7dac-b162-469d-8ef0-f997db62ea04" testId="dda10a83-5ebb-3fe5-9d33-276a3c9b083e" testName="SP_ADM_REPORTE_PASIVOS_CAPTACION_DIARIA" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e6c7dac-b162-469d-8ef0-f997db62ea04">
+    </UnitTestResult>
+    <UnitTestResult executionId="a73dcddc-1b45-4aad-b074-f8e5f7de1029" testId="e3777d48-ee12-3ddf-fbbd-a914f600cee9" testName="SP_ADM_REPORTE_CVF_OPC" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a73dcddc-1b45-4aad-b074-f8e5f7de1029">
+    </UnitTestResult>
+    <UnitTestResult executionId="f87ff257-dd21-429f-b53d-f534102bcde6" testId="e97277fc-c107-44e4-ca1b-8f808da779d1" testName="TestCompression2" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f87ff257-dd21-429f-b53d-f534102bcde6">
+    </UnitTestResult>
+    <UnitTestResult executionId="9894dc27-3b80-468f-b009-43dca9eef4aa" testId="ea571523-1cc4-92e3-f3e2-e936a85a6612" testName="Interfaz_Traders" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9894dc27-3b80-468f-b009-43dca9eef4aa">
+    </UnitTestResult>
+    <UnitTestResult executionId="125c4ae3-6172-431c-b62a-2d89ea5f8464" testId="f1fefdb6-56f7-7ea2-7d1d-b29ea3a97a16" testName="Test_Template_FRA" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="125c4ae3-6172-431c-b62a-2d89ea5f8464">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f8d1594-1b4d-4218-b430-01fcbccf45c6" testId="fea2b9aa-3e46-e238-c398-6b092a0ef107" testName="SP_ADM_REPORTE_ITAU_SWAP_DIGITAL" computerName="SCLNTB6590733" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f8d1594-1b4d-4218-b430-01fcbccf45c6">
+    </UnitTestResult>
+  </Results>
+</TestRun>

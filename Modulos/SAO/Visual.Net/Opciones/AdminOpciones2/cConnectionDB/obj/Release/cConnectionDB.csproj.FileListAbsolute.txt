@@ -1,0 +1,21 @@
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\cConnectionDB.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\cConnectionDB.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\Release\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\Release\cConnectionDB.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\Release\cConnectionDB.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\cConnectionDB.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\cConnectionDB.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\bin\Release\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\Release\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\Release\cConnectionDB.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cConnectionDB\obj\Release\cConnectionDB.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cConnectionDB\bin\Release\cConnectionDB.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cConnectionDB\bin\Release\cConnectionDB.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cConnectionDB\bin\Release\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cConnectionDB\bin\Release\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cConnectionDB\obj\Release\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cConnectionDB\obj\Release\cConnectionDB.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cConnectionDB\obj\Release\cConnectionDB.pdb

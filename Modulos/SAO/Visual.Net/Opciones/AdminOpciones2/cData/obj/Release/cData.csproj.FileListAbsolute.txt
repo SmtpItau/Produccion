@@ -1,0 +1,42 @@
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cData.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cData.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cConnectionDB.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cConnectionDB.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\Interop.DLLBacCalculoREC.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.csproj.ResolveComReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.Properties.Resources.resources
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\GenerateResource.read.1.tlog
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\GenerateResource.write.1.tlog
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cData.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cData.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cConnectionDB.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\bin\Release\cConnectionDB.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\Interop.DLLBacCalculoREC.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.csproj.ResolveComReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.Properties.Resources.resources
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\GenerateResource.read.1.tlog
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\GenerateResource.write.1.tlog
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\cData\obj\Release\cData.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\bin\Release\cData.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\bin\Release\cData.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\bin\Release\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\bin\Release\cConnectionDB.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\bin\Release\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\bin\Release\cConnectionDB.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\Interop.DLLBacCalculoREC.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\cData.csproj.ResolveComReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\cData.Properties.Resources.resources
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\GenerateResource.read.1.tlog
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\GenerateResource.write.1.tlog
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\cData.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\cData\obj\Release\cData.pdb

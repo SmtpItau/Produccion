@@ -1,0 +1,2502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="MoEncContrato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rut" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipocontrato" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoEncContratoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MoEncContratoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaEncContrato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cliRut" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cliCodigo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Estado" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fContratoIni" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fContratoFin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fEjercicioIni" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fEjercicioFin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Relacionado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaEncContratoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CaEncContratoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaFix">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="F1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="F2" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumContrato" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaFixResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaFixResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecisionEjercicio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="F1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="F2" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="clirut" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="clicod" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecisionEjercicioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DecisionEjercicioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaLiquidacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="clirut" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="clicod" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="F1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="F2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaLiquidacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CaLiquidacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaFixingPendientes">
+        <s:complexType />
+      </s:element>
+      <s:element name="VerificaFixingPendientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerificaFixingPendientesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaPagosComp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="clirut" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="clicod" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="F1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="F2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaPagosCompResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CaPagosCompResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaPagosEntrega">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="clirut" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="clicod" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="F1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="F2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CaPagosEntregaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CaPagosEntregaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InicioDia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaProc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaAnt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaProx" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iniciodia" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InicioDiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InicioDiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FechaProxH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaProx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaRet" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FechaProxHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FechaProxHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaCierreMesa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaProc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaCierreMesaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaCierreMesaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FechaAntH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaProx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaRet" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FechaAntHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FechaAntHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InterContableOpc">
+        <s:complexType />
+      </s:element>
+      <s:element name="InterContableOpcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InterContableOpcResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InterfazDerivadosOpciones">
+        <s:complexType />
+      </s:element>
+      <s:element name="InterfazDerivadosOpcionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InterfazDerivadosOpcionesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InterfazOperacionesOpciones">
+        <s:complexType />
+      </s:element>
+      <s:element name="InterfazOperacionesOpcionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InterfazOperacionesOpcionesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InterfazBalanceOpciones">
+        <s:complexType />
+      </s:element>
+      <s:element name="InterfazBalanceOpcionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InterfazBalanceOpcionesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecalculoLineasOpciones">
+        <s:complexType />
+      </s:element>
+      <s:element name="RecalculoLineasOpcionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecalculoLineasOpcionesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenCntVoucher">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_fecha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenCntVoucherResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenCntVoucherResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CondicionesGenerales">
+        <s:complexType />
+      </s:element>
+      <s:element name="CondicionesGeneralesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CondicionesGeneralesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadFormaPago">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mnemonics" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaproceso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadFormaPagoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadFormaPagoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoEncCotizacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="clirut" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="clicod" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoEncCotizacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MoEncCotizacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Trae_SDA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumFolio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Trae_SDAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Trae_SDAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnticipaSolicitud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumContrato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaProceso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnticipaSolicitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnticipaSolicitudResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpcionValFeriados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FechaVenc" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpcionValFeriadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpcionValFeriadosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpcionValFeriadosAnt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FechaVenc" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpcionValFeriadosAntResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpcionValFeriadosAntResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOperacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumContrato" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaOperacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaOperacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Trae_EstructurasRelacionadas">
+        <s:complexType />
+      </s:element>
+      <s:element name="Trae_EstructurasRelacionadasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Trae_EstructurasRelacionadasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Trae_ForwardRelacionado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="_NumContrato" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Trae_ForwardRelacionadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Trae_ForwardRelacionadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Activar84">
+        <s:complexType />
+      </s:element>
+      <s:element name="Activar84Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Activar84Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUrl_WS_ART84">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUrl_WS_ART84Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUrl_WS_ART84Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MoEncContratoSoapIn">
+    <wsdl:part name="parameters" element="tns:MoEncContrato" />
+  </wsdl:message>
+  <wsdl:message name="MoEncContratoSoapOut">
+    <wsdl:part name="parameters" element="tns:MoEncContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CaEncContratoSoapIn">
+    <wsdl:part name="parameters" element="tns:CaEncContrato" />
+  </wsdl:message>
+  <wsdl:message name="CaEncContratoSoapOut">
+    <wsdl:part name="parameters" element="tns:CaEncContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFixSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaFix" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFixSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaFixResponse" />
+  </wsdl:message>
+  <wsdl:message name="DecisionEjercicioSoapIn">
+    <wsdl:part name="parameters" element="tns:DecisionEjercicio" />
+  </wsdl:message>
+  <wsdl:message name="DecisionEjercicioSoapOut">
+    <wsdl:part name="parameters" element="tns:DecisionEjercicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CaLiquidacionSoapIn">
+    <wsdl:part name="parameters" element="tns:CaLiquidacion" />
+  </wsdl:message>
+  <wsdl:message name="CaLiquidacionSoapOut">
+    <wsdl:part name="parameters" element="tns:CaLiquidacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificaFixingPendientesSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificaFixingPendientes" />
+  </wsdl:message>
+  <wsdl:message name="VerificaFixingPendientesSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificaFixingPendientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosCompSoapIn">
+    <wsdl:part name="parameters" element="tns:CaPagosComp" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosCompSoapOut">
+    <wsdl:part name="parameters" element="tns:CaPagosCompResponse" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosEntregaSoapIn">
+    <wsdl:part name="parameters" element="tns:CaPagosEntrega" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosEntregaSoapOut">
+    <wsdl:part name="parameters" element="tns:CaPagosEntregaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InicioDiaSoapIn">
+    <wsdl:part name="parameters" element="tns:InicioDia" />
+  </wsdl:message>
+  <wsdl:message name="InicioDiaSoapOut">
+    <wsdl:part name="parameters" element="tns:InicioDiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="FechaProxHSoapIn">
+    <wsdl:part name="parameters" element="tns:FechaProxH" />
+  </wsdl:message>
+  <wsdl:message name="FechaProxHSoapOut">
+    <wsdl:part name="parameters" element="tns:FechaProxHResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaCierreMesaSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaCierreMesa" />
+  </wsdl:message>
+  <wsdl:message name="RetornaCierreMesaSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaCierreMesaResponse" />
+  </wsdl:message>
+  <wsdl:message name="FechaAntHSoapIn">
+    <wsdl:part name="parameters" element="tns:FechaAntH" />
+  </wsdl:message>
+  <wsdl:message name="FechaAntHSoapOut">
+    <wsdl:part name="parameters" element="tns:FechaAntHResponse" />
+  </wsdl:message>
+  <wsdl:message name="InterContableOpcSoapIn">
+    <wsdl:part name="parameters" element="tns:InterContableOpc" />
+  </wsdl:message>
+  <wsdl:message name="InterContableOpcSoapOut">
+    <wsdl:part name="parameters" element="tns:InterContableOpcResponse" />
+  </wsdl:message>
+  <wsdl:message name="InterfazDerivadosOpcionesSoapIn">
+    <wsdl:part name="parameters" element="tns:InterfazDerivadosOpciones" />
+  </wsdl:message>
+  <wsdl:message name="InterfazDerivadosOpcionesSoapOut">
+    <wsdl:part name="parameters" element="tns:InterfazDerivadosOpcionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InterfazOperacionesOpcionesSoapIn">
+    <wsdl:part name="parameters" element="tns:InterfazOperacionesOpciones" />
+  </wsdl:message>
+  <wsdl:message name="InterfazOperacionesOpcionesSoapOut">
+    <wsdl:part name="parameters" element="tns:InterfazOperacionesOpcionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="InterfazBalanceOpcionesSoapIn">
+    <wsdl:part name="parameters" element="tns:InterfazBalanceOpciones" />
+  </wsdl:message>
+  <wsdl:message name="InterfazBalanceOpcionesSoapOut">
+    <wsdl:part name="parameters" element="tns:InterfazBalanceOpcionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecalculoLineasOpcionesSoapIn">
+    <wsdl:part name="parameters" element="tns:RecalculoLineasOpciones" />
+  </wsdl:message>
+  <wsdl:message name="RecalculoLineasOpcionesSoapOut">
+    <wsdl:part name="parameters" element="tns:RecalculoLineasOpcionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenCntVoucherSoapIn">
+    <wsdl:part name="parameters" element="tns:GenCntVoucher" />
+  </wsdl:message>
+  <wsdl:message name="GenCntVoucherSoapOut">
+    <wsdl:part name="parameters" element="tns:GenCntVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="CondicionesGeneralesSoapIn">
+    <wsdl:part name="parameters" element="tns:CondicionesGenerales" />
+  </wsdl:message>
+  <wsdl:message name="CondicionesGeneralesSoapOut">
+    <wsdl:part name="parameters" element="tns:CondicionesGeneralesResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadFormaPagoSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadFormaPago" />
+  </wsdl:message>
+  <wsdl:message name="LoadFormaPagoSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadFormaPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MoEncCotizacionSoapIn">
+    <wsdl:part name="parameters" element="tns:MoEncCotizacion" />
+  </wsdl:message>
+  <wsdl:message name="MoEncCotizacionSoapOut">
+    <wsdl:part name="parameters" element="tns:MoEncCotizacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Trae_SDASoapIn">
+    <wsdl:part name="parameters" element="tns:Trae_SDA" />
+  </wsdl:message>
+  <wsdl:message name="Trae_SDASoapOut">
+    <wsdl:part name="parameters" element="tns:Trae_SDAResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaSolicitudSoapIn">
+    <wsdl:part name="parameters" element="tns:AnticipaSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaSolicitudSoapOut">
+    <wsdl:part name="parameters" element="tns:AnticipaSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosSoapIn">
+    <wsdl:part name="parameters" element="tns:OpcionValFeriados" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosSoapOut">
+    <wsdl:part name="parameters" element="tns:OpcionValFeriadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosAntSoapIn">
+    <wsdl:part name="parameters" element="tns:OpcionValFeriadosAnt" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosAntSoapOut">
+    <wsdl:part name="parameters" element="tns:OpcionValFeriadosAntResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOperacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaOperacion" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOperacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaOperacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Trae_EstructurasRelacionadasSoapIn">
+    <wsdl:part name="parameters" element="tns:Trae_EstructurasRelacionadas" />
+  </wsdl:message>
+  <wsdl:message name="Trae_EstructurasRelacionadasSoapOut">
+    <wsdl:part name="parameters" element="tns:Trae_EstructurasRelacionadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="Trae_ForwardRelacionadoSoapIn">
+    <wsdl:part name="parameters" element="tns:Trae_ForwardRelacionado" />
+  </wsdl:message>
+  <wsdl:message name="Trae_ForwardRelacionadoSoapOut">
+    <wsdl:part name="parameters" element="tns:Trae_ForwardRelacionadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Activar84SoapIn">
+    <wsdl:part name="parameters" element="tns:Activar84" />
+  </wsdl:message>
+  <wsdl:message name="Activar84SoapOut">
+    <wsdl:part name="parameters" element="tns:Activar84Response" />
+  </wsdl:message>
+  <wsdl:message name="GetUrl_WS_ART84SoapIn">
+    <wsdl:part name="parameters" element="tns:GetUrl_WS_ART84" />
+  </wsdl:message>
+  <wsdl:message name="GetUrl_WS_ART84SoapOut">
+    <wsdl:part name="parameters" element="tns:GetUrl_WS_ART84Response" />
+  </wsdl:message>
+  <wsdl:message name="MoEncContratoHttpGetIn">
+    <wsdl:part name="rut" type="s:string" />
+    <wsdl:part name="codigo" type="s:string" />
+    <wsdl:part name="tipocontrato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MoEncContratoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaEncContratoHttpGetIn">
+    <wsdl:part name="cliRut" type="s:string" />
+    <wsdl:part name="cliCodigo" type="s:string" />
+    <wsdl:part name="Estado" type="s:string" />
+    <wsdl:part name="fContratoIni" type="s:string" />
+    <wsdl:part name="fContratoFin" type="s:string" />
+    <wsdl:part name="fEjercicioIni" type="s:string" />
+    <wsdl:part name="fEjercicioFin" type="s:string" />
+    <wsdl:part name="Relacionado" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaEncContratoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFixHttpGetIn">
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="Usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFixHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DecisionEjercicioHttpGetIn">
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DecisionEjercicioHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaLiquidacionHttpGetIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+    <wsdl:part name="estado" type="s:string" />
+    <wsdl:part name="usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaLiquidacionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VerificaFixingPendientesHttpGetIn" />
+  <wsdl:message name="VerificaFixingPendientesHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosCompHttpGetIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosCompHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosEntregaHttpGetIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosEntregaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InicioDiaHttpGetIn">
+    <wsdl:part name="fechaProc" type="s:string" />
+    <wsdl:part name="fechaAnt" type="s:string" />
+    <wsdl:part name="fechaProx" type="s:string" />
+    <wsdl:part name="iniciodia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InicioDiaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaProxHHttpGetIn">
+    <wsdl:part name="fechaProx" type="s:string" />
+    <wsdl:part name="fechaRet" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaProxHHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaCierreMesaHttpGetIn">
+    <wsdl:part name="fechaProc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaCierreMesaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaAntHHttpGetIn">
+    <wsdl:part name="fechaProx" type="s:string" />
+    <wsdl:part name="fechaRet" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaAntHHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InterContableOpcHttpGetIn" />
+  <wsdl:message name="InterContableOpcHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="InterfazDerivadosOpcionesHttpGetIn" />
+  <wsdl:message name="InterfazDerivadosOpcionesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="InterfazOperacionesOpcionesHttpGetIn" />
+  <wsdl:message name="InterfazOperacionesOpcionesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="InterfazBalanceOpcionesHttpGetIn" />
+  <wsdl:message name="InterfazBalanceOpcionesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="RecalculoLineasOpcionesHttpGetIn" />
+  <wsdl:message name="RecalculoLineasOpcionesHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GenCntVoucherHttpGetIn">
+    <wsdl:part name="_fecha" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GenCntVoucherHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CondicionesGeneralesHttpGetIn" />
+  <wsdl:message name="CondicionesGeneralesHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadFormaPagoHttpGetIn">
+    <wsdl:part name="mnemonics" type="s:string" />
+    <wsdl:part name="fechaproceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadFormaPagoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MoEncCotizacionHttpGetIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MoEncCotizacionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_SDAHttpGetIn">
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_SDAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaSolicitudHttpGetIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaProceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaSolicitudHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosHttpGetIn">
+    <wsdl:part name="FechaVenc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosAntHttpGetIn">
+    <wsdl:part name="FechaVenc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosAntHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOperacionHttpGetIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOperacionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_EstructurasRelacionadasHttpGetIn" />
+  <wsdl:message name="Trae_EstructurasRelacionadasHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_ForwardRelacionadoHttpGetIn">
+    <wsdl:part name="_NumContrato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_ForwardRelacionadoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Activar84HttpGetIn" />
+  <wsdl:message name="Activar84HttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetUrl_WS_ART84HttpGetIn" />
+  <wsdl:message name="GetUrl_WS_ART84HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MoEncContratoHttpPostIn">
+    <wsdl:part name="rut" type="s:string" />
+    <wsdl:part name="codigo" type="s:string" />
+    <wsdl:part name="tipocontrato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MoEncContratoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaEncContratoHttpPostIn">
+    <wsdl:part name="cliRut" type="s:string" />
+    <wsdl:part name="cliCodigo" type="s:string" />
+    <wsdl:part name="Estado" type="s:string" />
+    <wsdl:part name="fContratoIni" type="s:string" />
+    <wsdl:part name="fContratoFin" type="s:string" />
+    <wsdl:part name="fEjercicioIni" type="s:string" />
+    <wsdl:part name="fEjercicioFin" type="s:string" />
+    <wsdl:part name="Relacionado" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaEncContratoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFixHttpPostIn">
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="Usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFixHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DecisionEjercicioHttpPostIn">
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DecisionEjercicioHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaLiquidacionHttpPostIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+    <wsdl:part name="estado" type="s:string" />
+    <wsdl:part name="usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaLiquidacionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VerificaFixingPendientesHttpPostIn" />
+  <wsdl:message name="VerificaFixingPendientesHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosCompHttpPostIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosCompHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosEntregaHttpPostIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+    <wsdl:part name="F1" type="s:string" />
+    <wsdl:part name="F2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CaPagosEntregaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InicioDiaHttpPostIn">
+    <wsdl:part name="fechaProc" type="s:string" />
+    <wsdl:part name="fechaAnt" type="s:string" />
+    <wsdl:part name="fechaProx" type="s:string" />
+    <wsdl:part name="iniciodia" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InicioDiaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaProxHHttpPostIn">
+    <wsdl:part name="fechaProx" type="s:string" />
+    <wsdl:part name="fechaRet" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaProxHHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaCierreMesaHttpPostIn">
+    <wsdl:part name="fechaProc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetornaCierreMesaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaAntHHttpPostIn">
+    <wsdl:part name="fechaProx" type="s:string" />
+    <wsdl:part name="fechaRet" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FechaAntHHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InterContableOpcHttpPostIn" />
+  <wsdl:message name="InterContableOpcHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="InterfazDerivadosOpcionesHttpPostIn" />
+  <wsdl:message name="InterfazDerivadosOpcionesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="InterfazOperacionesOpcionesHttpPostIn" />
+  <wsdl:message name="InterfazOperacionesOpcionesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="InterfazBalanceOpcionesHttpPostIn" />
+  <wsdl:message name="InterfazBalanceOpcionesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="RecalculoLineasOpcionesHttpPostIn" />
+  <wsdl:message name="RecalculoLineasOpcionesHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GenCntVoucherHttpPostIn">
+    <wsdl:part name="_fecha" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GenCntVoucherHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CondicionesGeneralesHttpPostIn" />
+  <wsdl:message name="CondicionesGeneralesHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadFormaPagoHttpPostIn">
+    <wsdl:part name="mnemonics" type="s:string" />
+    <wsdl:part name="fechaproceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoadFormaPagoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MoEncCotizacionHttpPostIn">
+    <wsdl:part name="clirut" type="s:string" />
+    <wsdl:part name="clicod" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MoEncCotizacionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_SDAHttpPostIn">
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_SDAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaSolicitudHttpPostIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaProceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaSolicitudHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosHttpPostIn">
+    <wsdl:part name="FechaVenc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosAntHttpPostIn">
+    <wsdl:part name="FechaVenc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpcionValFeriadosAntHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOperacionHttpPostIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaOperacionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_EstructurasRelacionadasHttpPostIn" />
+  <wsdl:message name="Trae_EstructurasRelacionadasHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_ForwardRelacionadoHttpPostIn">
+    <wsdl:part name="_NumContrato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Trae_ForwardRelacionadoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Activar84HttpPostIn" />
+  <wsdl:message name="Activar84HttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetUrl_WS_ART84HttpPostIn" />
+  <wsdl:message name="GetUrl_WS_ART84HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebDetallesSoap">
+    <wsdl:operation name="MoEncContrato">
+      <wsdl:input message="tns:MoEncContratoSoapIn" />
+      <wsdl:output message="tns:MoEncContratoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaEncContrato">
+      <wsdl:input message="tns:CaEncContratoSoapIn" />
+      <wsdl:output message="tns:CaEncContratoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFix">
+      <wsdl:input message="tns:RetornaFixSoapIn" />
+      <wsdl:output message="tns:RetornaFixSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecisionEjercicio">
+      <wsdl:input message="tns:DecisionEjercicioSoapIn" />
+      <wsdl:output message="tns:DecisionEjercicioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaLiquidacion">
+      <wsdl:input message="tns:CaLiquidacionSoapIn" />
+      <wsdl:output message="tns:CaLiquidacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaFixingPendientes">
+      <wsdl:input message="tns:VerificaFixingPendientesSoapIn" />
+      <wsdl:output message="tns:VerificaFixingPendientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosComp">
+      <wsdl:input message="tns:CaPagosCompSoapIn" />
+      <wsdl:output message="tns:CaPagosCompSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosEntrega">
+      <wsdl:input message="tns:CaPagosEntregaSoapIn" />
+      <wsdl:output message="tns:CaPagosEntregaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioDia">
+      <wsdl:input message="tns:InicioDiaSoapIn" />
+      <wsdl:output message="tns:InicioDiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FechaProxH">
+      <wsdl:input message="tns:FechaProxHSoapIn" />
+      <wsdl:output message="tns:FechaProxHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaCierreMesa">
+      <wsdl:input message="tns:RetornaCierreMesaSoapIn" />
+      <wsdl:output message="tns:RetornaCierreMesaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FechaAntH">
+      <wsdl:input message="tns:FechaAntHSoapIn" />
+      <wsdl:output message="tns:FechaAntHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterContableOpc">
+      <wsdl:input message="tns:InterContableOpcSoapIn" />
+      <wsdl:output message="tns:InterContableOpcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazDerivadosOpciones">
+      <wsdl:input message="tns:InterfazDerivadosOpcionesSoapIn" />
+      <wsdl:output message="tns:InterfazDerivadosOpcionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazOperacionesOpciones">
+      <wsdl:input message="tns:InterfazOperacionesOpcionesSoapIn" />
+      <wsdl:output message="tns:InterfazOperacionesOpcionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazBalanceOpciones">
+      <wsdl:input message="tns:InterfazBalanceOpcionesSoapIn" />
+      <wsdl:output message="tns:InterfazBalanceOpcionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecalculoLineasOpciones">
+      <wsdl:input message="tns:RecalculoLineasOpcionesSoapIn" />
+      <wsdl:output message="tns:RecalculoLineasOpcionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenCntVoucher">
+      <wsdl:input message="tns:GenCntVoucherSoapIn" />
+      <wsdl:output message="tns:GenCntVoucherSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CondicionesGenerales">
+      <wsdl:input message="tns:CondicionesGeneralesSoapIn" />
+      <wsdl:output message="tns:CondicionesGeneralesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFormaPago">
+      <wsdl:input message="tns:LoadFormaPagoSoapIn" />
+      <wsdl:output message="tns:LoadFormaPagoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoEncCotizacion">
+      <wsdl:input message="tns:MoEncCotizacionSoapIn" />
+      <wsdl:output message="tns:MoEncCotizacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_SDA">
+      <wsdl:input message="tns:Trae_SDASoapIn" />
+      <wsdl:output message="tns:Trae_SDASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaSolicitud">
+      <wsdl:input message="tns:AnticipaSolicitudSoapIn" />
+      <wsdl:output message="tns:AnticipaSolicitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriados">
+      <wsdl:input message="tns:OpcionValFeriadosSoapIn" />
+      <wsdl:output message="tns:OpcionValFeriadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriadosAnt">
+      <wsdl:input message="tns:OpcionValFeriadosAntSoapIn" />
+      <wsdl:output message="tns:OpcionValFeriadosAntSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOperacion">
+      <wsdl:input message="tns:ConsultaOperacionSoapIn" />
+      <wsdl:output message="tns:ConsultaOperacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_EstructurasRelacionadas">
+      <wsdl:input message="tns:Trae_EstructurasRelacionadasSoapIn" />
+      <wsdl:output message="tns:Trae_EstructurasRelacionadasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_ForwardRelacionado">
+      <wsdl:input message="tns:Trae_ForwardRelacionadoSoapIn" />
+      <wsdl:output message="tns:Trae_ForwardRelacionadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Activar84">
+      <wsdl:input message="tns:Activar84SoapIn" />
+      <wsdl:output message="tns:Activar84SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl_WS_ART84">
+      <wsdl:input message="tns:GetUrl_WS_ART84SoapIn" />
+      <wsdl:output message="tns:GetUrl_WS_ART84SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebDetallesHttpGet">
+    <wsdl:operation name="MoEncContrato">
+      <wsdl:input message="tns:MoEncContratoHttpGetIn" />
+      <wsdl:output message="tns:MoEncContratoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaEncContrato">
+      <wsdl:input message="tns:CaEncContratoHttpGetIn" />
+      <wsdl:output message="tns:CaEncContratoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFix">
+      <wsdl:input message="tns:RetornaFixHttpGetIn" />
+      <wsdl:output message="tns:RetornaFixHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecisionEjercicio">
+      <wsdl:input message="tns:DecisionEjercicioHttpGetIn" />
+      <wsdl:output message="tns:DecisionEjercicioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaLiquidacion">
+      <wsdl:input message="tns:CaLiquidacionHttpGetIn" />
+      <wsdl:output message="tns:CaLiquidacionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaFixingPendientes">
+      <wsdl:input message="tns:VerificaFixingPendientesHttpGetIn" />
+      <wsdl:output message="tns:VerificaFixingPendientesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosComp">
+      <wsdl:input message="tns:CaPagosCompHttpGetIn" />
+      <wsdl:output message="tns:CaPagosCompHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosEntrega">
+      <wsdl:input message="tns:CaPagosEntregaHttpGetIn" />
+      <wsdl:output message="tns:CaPagosEntregaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioDia">
+      <wsdl:input message="tns:InicioDiaHttpGetIn" />
+      <wsdl:output message="tns:InicioDiaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FechaProxH">
+      <wsdl:input message="tns:FechaProxHHttpGetIn" />
+      <wsdl:output message="tns:FechaProxHHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaCierreMesa">
+      <wsdl:input message="tns:RetornaCierreMesaHttpGetIn" />
+      <wsdl:output message="tns:RetornaCierreMesaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FechaAntH">
+      <wsdl:input message="tns:FechaAntHHttpGetIn" />
+      <wsdl:output message="tns:FechaAntHHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterContableOpc">
+      <wsdl:input message="tns:InterContableOpcHttpGetIn" />
+      <wsdl:output message="tns:InterContableOpcHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazDerivadosOpciones">
+      <wsdl:input message="tns:InterfazDerivadosOpcionesHttpGetIn" />
+      <wsdl:output message="tns:InterfazDerivadosOpcionesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazOperacionesOpciones">
+      <wsdl:input message="tns:InterfazOperacionesOpcionesHttpGetIn" />
+      <wsdl:output message="tns:InterfazOperacionesOpcionesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazBalanceOpciones">
+      <wsdl:input message="tns:InterfazBalanceOpcionesHttpGetIn" />
+      <wsdl:output message="tns:InterfazBalanceOpcionesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecalculoLineasOpciones">
+      <wsdl:input message="tns:RecalculoLineasOpcionesHttpGetIn" />
+      <wsdl:output message="tns:RecalculoLineasOpcionesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenCntVoucher">
+      <wsdl:input message="tns:GenCntVoucherHttpGetIn" />
+      <wsdl:output message="tns:GenCntVoucherHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CondicionesGenerales">
+      <wsdl:input message="tns:CondicionesGeneralesHttpGetIn" />
+      <wsdl:output message="tns:CondicionesGeneralesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFormaPago">
+      <wsdl:input message="tns:LoadFormaPagoHttpGetIn" />
+      <wsdl:output message="tns:LoadFormaPagoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoEncCotizacion">
+      <wsdl:input message="tns:MoEncCotizacionHttpGetIn" />
+      <wsdl:output message="tns:MoEncCotizacionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_SDA">
+      <wsdl:input message="tns:Trae_SDAHttpGetIn" />
+      <wsdl:output message="tns:Trae_SDAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaSolicitud">
+      <wsdl:input message="tns:AnticipaSolicitudHttpGetIn" />
+      <wsdl:output message="tns:AnticipaSolicitudHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriados">
+      <wsdl:input message="tns:OpcionValFeriadosHttpGetIn" />
+      <wsdl:output message="tns:OpcionValFeriadosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriadosAnt">
+      <wsdl:input message="tns:OpcionValFeriadosAntHttpGetIn" />
+      <wsdl:output message="tns:OpcionValFeriadosAntHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOperacion">
+      <wsdl:input message="tns:ConsultaOperacionHttpGetIn" />
+      <wsdl:output message="tns:ConsultaOperacionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_EstructurasRelacionadas">
+      <wsdl:input message="tns:Trae_EstructurasRelacionadasHttpGetIn" />
+      <wsdl:output message="tns:Trae_EstructurasRelacionadasHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_ForwardRelacionado">
+      <wsdl:input message="tns:Trae_ForwardRelacionadoHttpGetIn" />
+      <wsdl:output message="tns:Trae_ForwardRelacionadoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Activar84">
+      <wsdl:input message="tns:Activar84HttpGetIn" />
+      <wsdl:output message="tns:Activar84HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl_WS_ART84">
+      <wsdl:input message="tns:GetUrl_WS_ART84HttpGetIn" />
+      <wsdl:output message="tns:GetUrl_WS_ART84HttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebDetallesHttpPost">
+    <wsdl:operation name="MoEncContrato">
+      <wsdl:input message="tns:MoEncContratoHttpPostIn" />
+      <wsdl:output message="tns:MoEncContratoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaEncContrato">
+      <wsdl:input message="tns:CaEncContratoHttpPostIn" />
+      <wsdl:output message="tns:CaEncContratoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFix">
+      <wsdl:input message="tns:RetornaFixHttpPostIn" />
+      <wsdl:output message="tns:RetornaFixHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecisionEjercicio">
+      <wsdl:input message="tns:DecisionEjercicioHttpPostIn" />
+      <wsdl:output message="tns:DecisionEjercicioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaLiquidacion">
+      <wsdl:input message="tns:CaLiquidacionHttpPostIn" />
+      <wsdl:output message="tns:CaLiquidacionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaFixingPendientes">
+      <wsdl:input message="tns:VerificaFixingPendientesHttpPostIn" />
+      <wsdl:output message="tns:VerificaFixingPendientesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosComp">
+      <wsdl:input message="tns:CaPagosCompHttpPostIn" />
+      <wsdl:output message="tns:CaPagosCompHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosEntrega">
+      <wsdl:input message="tns:CaPagosEntregaHttpPostIn" />
+      <wsdl:output message="tns:CaPagosEntregaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicioDia">
+      <wsdl:input message="tns:InicioDiaHttpPostIn" />
+      <wsdl:output message="tns:InicioDiaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FechaProxH">
+      <wsdl:input message="tns:FechaProxHHttpPostIn" />
+      <wsdl:output message="tns:FechaProxHHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaCierreMesa">
+      <wsdl:input message="tns:RetornaCierreMesaHttpPostIn" />
+      <wsdl:output message="tns:RetornaCierreMesaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FechaAntH">
+      <wsdl:input message="tns:FechaAntHHttpPostIn" />
+      <wsdl:output message="tns:FechaAntHHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterContableOpc">
+      <wsdl:input message="tns:InterContableOpcHttpPostIn" />
+      <wsdl:output message="tns:InterContableOpcHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazDerivadosOpciones">
+      <wsdl:input message="tns:InterfazDerivadosOpcionesHttpPostIn" />
+      <wsdl:output message="tns:InterfazDerivadosOpcionesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazOperacionesOpciones">
+      <wsdl:input message="tns:InterfazOperacionesOpcionesHttpPostIn" />
+      <wsdl:output message="tns:InterfazOperacionesOpcionesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfazBalanceOpciones">
+      <wsdl:input message="tns:InterfazBalanceOpcionesHttpPostIn" />
+      <wsdl:output message="tns:InterfazBalanceOpcionesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecalculoLineasOpciones">
+      <wsdl:input message="tns:RecalculoLineasOpcionesHttpPostIn" />
+      <wsdl:output message="tns:RecalculoLineasOpcionesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenCntVoucher">
+      <wsdl:input message="tns:GenCntVoucherHttpPostIn" />
+      <wsdl:output message="tns:GenCntVoucherHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CondicionesGenerales">
+      <wsdl:input message="tns:CondicionesGeneralesHttpPostIn" />
+      <wsdl:output message="tns:CondicionesGeneralesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadFormaPago">
+      <wsdl:input message="tns:LoadFormaPagoHttpPostIn" />
+      <wsdl:output message="tns:LoadFormaPagoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoEncCotizacion">
+      <wsdl:input message="tns:MoEncCotizacionHttpPostIn" />
+      <wsdl:output message="tns:MoEncCotizacionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_SDA">
+      <wsdl:input message="tns:Trae_SDAHttpPostIn" />
+      <wsdl:output message="tns:Trae_SDAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaSolicitud">
+      <wsdl:input message="tns:AnticipaSolicitudHttpPostIn" />
+      <wsdl:output message="tns:AnticipaSolicitudHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriados">
+      <wsdl:input message="tns:OpcionValFeriadosHttpPostIn" />
+      <wsdl:output message="tns:OpcionValFeriadosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriadosAnt">
+      <wsdl:input message="tns:OpcionValFeriadosAntHttpPostIn" />
+      <wsdl:output message="tns:OpcionValFeriadosAntHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOperacion">
+      <wsdl:input message="tns:ConsultaOperacionHttpPostIn" />
+      <wsdl:output message="tns:ConsultaOperacionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_EstructurasRelacionadas">
+      <wsdl:input message="tns:Trae_EstructurasRelacionadasHttpPostIn" />
+      <wsdl:output message="tns:Trae_EstructurasRelacionadasHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Trae_ForwardRelacionado">
+      <wsdl:input message="tns:Trae_ForwardRelacionadoHttpPostIn" />
+      <wsdl:output message="tns:Trae_ForwardRelacionadoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Activar84">
+      <wsdl:input message="tns:Activar84HttpPostIn" />
+      <wsdl:output message="tns:Activar84HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl_WS_ART84">
+      <wsdl:input message="tns:GetUrl_WS_ART84HttpPostIn" />
+      <wsdl:output message="tns:GetUrl_WS_ART84HttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebDetallesSoap" type="tns:WebDetallesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MoEncContrato">
+      <soap:operation soapAction="http://tempuri.org/MoEncContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaEncContrato">
+      <soap:operation soapAction="http://tempuri.org/CaEncContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFix">
+      <soap:operation soapAction="http://tempuri.org/RetornaFix" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecisionEjercicio">
+      <soap:operation soapAction="http://tempuri.org/DecisionEjercicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaLiquidacion">
+      <soap:operation soapAction="http://tempuri.org/CaLiquidacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaFixingPendientes">
+      <soap:operation soapAction="http://tempuri.org/VerificaFixingPendientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosComp">
+      <soap:operation soapAction="http://tempuri.org/CaPagosComp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosEntrega">
+      <soap:operation soapAction="http://tempuri.org/CaPagosEntrega" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioDia">
+      <soap:operation soapAction="http://tempuri.org/InicioDia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaProxH">
+      <soap:operation soapAction="http://tempuri.org/FechaProxH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaCierreMesa">
+      <soap:operation soapAction="http://tempuri.org/RetornaCierreMesa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaAntH">
+      <soap:operation soapAction="http://tempuri.org/FechaAntH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterContableOpc">
+      <soap:operation soapAction="http://tempuri.org/InterContableOpc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazDerivadosOpciones">
+      <soap:operation soapAction="http://tempuri.org/InterfazDerivadosOpciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazOperacionesOpciones">
+      <soap:operation soapAction="http://tempuri.org/InterfazOperacionesOpciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazBalanceOpciones">
+      <soap:operation soapAction="http://tempuri.org/InterfazBalanceOpciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecalculoLineasOpciones">
+      <soap:operation soapAction="http://tempuri.org/RecalculoLineasOpciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenCntVoucher">
+      <soap:operation soapAction="http://tempuri.org/GenCntVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CondicionesGenerales">
+      <soap:operation soapAction="http://tempuri.org/CondicionesGenerales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFormaPago">
+      <soap:operation soapAction="http://tempuri.org/LoadFormaPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoEncCotizacion">
+      <soap:operation soapAction="http://tempuri.org/MoEncCotizacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_SDA">
+      <soap:operation soapAction="http://tempuri.org/Trae_SDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaSolicitud">
+      <soap:operation soapAction="http://tempuri.org/AnticipaSolicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriados">
+      <soap:operation soapAction="http://tempuri.org/OpcionValFeriados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriadosAnt">
+      <soap:operation soapAction="http://tempuri.org/OpcionValFeriadosAnt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOperacion">
+      <soap:operation soapAction="http://tempuri.org/ConsultaOperacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_EstructurasRelacionadas">
+      <soap:operation soapAction="http://tempuri.org/Trae_EstructurasRelacionadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_ForwardRelacionado">
+      <soap:operation soapAction="http://tempuri.org/Trae_ForwardRelacionado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Activar84">
+      <soap:operation soapAction="http://tempuri.org/Activar84" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl_WS_ART84">
+      <soap:operation soapAction="http://tempuri.org/GetUrl_WS_ART84" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebDetallesSoap12" type="tns:WebDetallesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MoEncContrato">
+      <soap12:operation soapAction="http://tempuri.org/MoEncContrato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaEncContrato">
+      <soap12:operation soapAction="http://tempuri.org/CaEncContrato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFix">
+      <soap12:operation soapAction="http://tempuri.org/RetornaFix" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecisionEjercicio">
+      <soap12:operation soapAction="http://tempuri.org/DecisionEjercicio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaLiquidacion">
+      <soap12:operation soapAction="http://tempuri.org/CaLiquidacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaFixingPendientes">
+      <soap12:operation soapAction="http://tempuri.org/VerificaFixingPendientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosComp">
+      <soap12:operation soapAction="http://tempuri.org/CaPagosComp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosEntrega">
+      <soap12:operation soapAction="http://tempuri.org/CaPagosEntrega" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioDia">
+      <soap12:operation soapAction="http://tempuri.org/InicioDia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaProxH">
+      <soap12:operation soapAction="http://tempuri.org/FechaProxH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaCierreMesa">
+      <soap12:operation soapAction="http://tempuri.org/RetornaCierreMesa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaAntH">
+      <soap12:operation soapAction="http://tempuri.org/FechaAntH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterContableOpc">
+      <soap12:operation soapAction="http://tempuri.org/InterContableOpc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazDerivadosOpciones">
+      <soap12:operation soapAction="http://tempuri.org/InterfazDerivadosOpciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazOperacionesOpciones">
+      <soap12:operation soapAction="http://tempuri.org/InterfazOperacionesOpciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazBalanceOpciones">
+      <soap12:operation soapAction="http://tempuri.org/InterfazBalanceOpciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecalculoLineasOpciones">
+      <soap12:operation soapAction="http://tempuri.org/RecalculoLineasOpciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenCntVoucher">
+      <soap12:operation soapAction="http://tempuri.org/GenCntVoucher" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CondicionesGenerales">
+      <soap12:operation soapAction="http://tempuri.org/CondicionesGenerales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFormaPago">
+      <soap12:operation soapAction="http://tempuri.org/LoadFormaPago" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoEncCotizacion">
+      <soap12:operation soapAction="http://tempuri.org/MoEncCotizacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_SDA">
+      <soap12:operation soapAction="http://tempuri.org/Trae_SDA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaSolicitud">
+      <soap12:operation soapAction="http://tempuri.org/AnticipaSolicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriados">
+      <soap12:operation soapAction="http://tempuri.org/OpcionValFeriados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriadosAnt">
+      <soap12:operation soapAction="http://tempuri.org/OpcionValFeriadosAnt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOperacion">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaOperacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_EstructurasRelacionadas">
+      <soap12:operation soapAction="http://tempuri.org/Trae_EstructurasRelacionadas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_ForwardRelacionado">
+      <soap12:operation soapAction="http://tempuri.org/Trae_ForwardRelacionado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Activar84">
+      <soap12:operation soapAction="http://tempuri.org/Activar84" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl_WS_ART84">
+      <soap12:operation soapAction="http://tempuri.org/GetUrl_WS_ART84" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebDetallesHttpGet" type="tns:WebDetallesHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="MoEncContrato">
+      <http:operation location="/MoEncContrato" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaEncContrato">
+      <http:operation location="/CaEncContrato" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFix">
+      <http:operation location="/RetornaFix" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecisionEjercicio">
+      <http:operation location="/DecisionEjercicio" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaLiquidacion">
+      <http:operation location="/CaLiquidacion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaFixingPendientes">
+      <http:operation location="/VerificaFixingPendientes" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosComp">
+      <http:operation location="/CaPagosComp" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosEntrega">
+      <http:operation location="/CaPagosEntrega" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioDia">
+      <http:operation location="/InicioDia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaProxH">
+      <http:operation location="/FechaProxH" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaCierreMesa">
+      <http:operation location="/RetornaCierreMesa" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaAntH">
+      <http:operation location="/FechaAntH" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterContableOpc">
+      <http:operation location="/InterContableOpc" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazDerivadosOpciones">
+      <http:operation location="/InterfazDerivadosOpciones" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazOperacionesOpciones">
+      <http:operation location="/InterfazOperacionesOpciones" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazBalanceOpciones">
+      <http:operation location="/InterfazBalanceOpciones" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecalculoLineasOpciones">
+      <http:operation location="/RecalculoLineasOpciones" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenCntVoucher">
+      <http:operation location="/GenCntVoucher" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CondicionesGenerales">
+      <http:operation location="/CondicionesGenerales" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFormaPago">
+      <http:operation location="/LoadFormaPago" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoEncCotizacion">
+      <http:operation location="/MoEncCotizacion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_SDA">
+      <http:operation location="/Trae_SDA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaSolicitud">
+      <http:operation location="/AnticipaSolicitud" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriados">
+      <http:operation location="/OpcionValFeriados" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriadosAnt">
+      <http:operation location="/OpcionValFeriadosAnt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOperacion">
+      <http:operation location="/ConsultaOperacion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_EstructurasRelacionadas">
+      <http:operation location="/Trae_EstructurasRelacionadas" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_ForwardRelacionado">
+      <http:operation location="/Trae_ForwardRelacionado" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Activar84">
+      <http:operation location="/Activar84" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl_WS_ART84">
+      <http:operation location="/GetUrl_WS_ART84" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebDetallesHttpPost" type="tns:WebDetallesHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="MoEncContrato">
+      <http:operation location="/MoEncContrato" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaEncContrato">
+      <http:operation location="/CaEncContrato" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFix">
+      <http:operation location="/RetornaFix" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecisionEjercicio">
+      <http:operation location="/DecisionEjercicio" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaLiquidacion">
+      <http:operation location="/CaLiquidacion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaFixingPendientes">
+      <http:operation location="/VerificaFixingPendientes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosComp">
+      <http:operation location="/CaPagosComp" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CaPagosEntrega">
+      <http:operation location="/CaPagosEntrega" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicioDia">
+      <http:operation location="/InicioDia" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaProxH">
+      <http:operation location="/FechaProxH" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaCierreMesa">
+      <http:operation location="/RetornaCierreMesa" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FechaAntH">
+      <http:operation location="/FechaAntH" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterContableOpc">
+      <http:operation location="/InterContableOpc" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazDerivadosOpciones">
+      <http:operation location="/InterfazDerivadosOpciones" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazOperacionesOpciones">
+      <http:operation location="/InterfazOperacionesOpciones" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfazBalanceOpciones">
+      <http:operation location="/InterfazBalanceOpciones" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecalculoLineasOpciones">
+      <http:operation location="/RecalculoLineasOpciones" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenCntVoucher">
+      <http:operation location="/GenCntVoucher" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CondicionesGenerales">
+      <http:operation location="/CondicionesGenerales" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadFormaPago">
+      <http:operation location="/LoadFormaPago" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoEncCotizacion">
+      <http:operation location="/MoEncCotizacion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_SDA">
+      <http:operation location="/Trae_SDA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaSolicitud">
+      <http:operation location="/AnticipaSolicitud" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriados">
+      <http:operation location="/OpcionValFeriados" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpcionValFeriadosAnt">
+      <http:operation location="/OpcionValFeriadosAnt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaOperacion">
+      <http:operation location="/ConsultaOperacion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_EstructurasRelacionadas">
+      <http:operation location="/Trae_EstructurasRelacionadas" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trae_ForwardRelacionado">
+      <http:operation location="/Trae_ForwardRelacionado" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Activar84">
+      <http:operation location="/Activar84" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUrl_WS_ART84">
+      <http:operation location="/GetUrl_WS_ART84" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebDetalles">
+    <wsdl:port name="WebDetallesSoap" binding="tns:WebDetallesSoap">
+      <soap:address location="http://localhost:24084/WebService/WebDetalles.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebDetallesSoap12" binding="tns:WebDetallesSoap12">
+      <soap12:address location="http://localhost:24084/WebService/WebDetalles.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebDetallesHttpGet" binding="tns:WebDetallesHttpGet">
+      <http:address location="http://localhost:24084/WebService/WebDetalles.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebDetallesHttpPost" binding="tns:WebDetallesHttpPost">
+      <http:address location="http://localhost:24084/WebService/WebDetalles.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

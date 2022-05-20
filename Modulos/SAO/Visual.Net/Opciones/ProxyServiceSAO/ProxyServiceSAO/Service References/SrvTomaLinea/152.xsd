@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:this="http://itau.cl/xmlns/common/xsd/1" xmlns:Q1="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/common/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd109" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd22" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd110" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd111" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd98" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:complexType name="ContextRqHdr_Type">
+    <xsd:all>
+      <xsd:element minOccurs="0" maxOccurs="1" name="ChnlId" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ChnlDesc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AppId" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Browser" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ClientIp" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="LangCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TimeStamp" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Token" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MobileKey" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DevInfo" type="Q1:DevInfo_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MsgAuthCode" type="Q1:MsgAuthCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="NetworkTrnData" type="Q1:NetworkTrnData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PartyRef" type="Q1:PartyRef_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FieldSelect" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ClientApp" type="Q1:ClientApp_Type" />
+    </xsd:all>
+  </xsd:complexType>
+</xsd:schema>

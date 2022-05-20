@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="AdminOpciones.Login.LoginControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="330" Height="237">
+    
+    <UserControl.OpacityMask>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF4C4B48"/>
+            <GradientStop Color="#FFFFFFFF" Offset="1"/>
+        </LinearGradientBrush>
+    </UserControl.OpacityMask>
+    <Canvas x:Name="LayoutRoot" Width="316" Height="215">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF558092" Offset="0.326"/>
+                <GradientStop Color="#FFCFD3D5" Offset="0.951"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Canvas Height="43" Width="300" Canvas.Left="8" Canvas.Top="8" Background="#FF0A82C5">
+            <TextBlock Height="43" Width="299" Text="Acceso Administrador de Opciones" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Portable User Interface" FontSize="14" Foreground="#FFFFFFFF" />
+        </Canvas>
+        <Canvas Height="152" Width="300" Canvas.Left="8" Canvas.Top="55" Background="#FFFFFFFF" x:Name="canvasLogin">
+            <TextBlock Height="Auto" Width="Auto" Canvas.Left="12" Canvas.Top="10" Foreground="#FF0A82C5" TextWrapping="Wrap" Text="Usuario:" />
+            <TextBlock Height="Auto" Width="Auto" Foreground="#FF0A82C5" TextWrapping="Wrap" Text="Password:" Canvas.Left="12" Canvas.Top="40" />
+            <TextBox     Height="Auto" Width="135" Canvas.Left="95" Canvas.Top="10"     x:Name="txtUserName"  Text="" Foreground="#FF183541" KeyDown="txtCliID_KeyDown"/>
+            <PasswordBox Height="Auto" Width="135" Canvas.Left="95" Canvas.Top="40" x:Name="txtPassword"  Password="" Foreground="#FF183541" MaxLength="15" KeyDown="txtPassword_KeyDown"/>
+            <Button Height="30" Width="135" Canvas.Left="95" Canvas.Top="76" Content="Aceptar" x:Name="btnLogin"/>
+            <!--<TextBlock Height="Auto" Width="Auto" Canvas.Left="12" Canvas.Top="130" x:Name="txtServidor" Text="txtServidor"/>-->
+        </Canvas>
+    </Canvas>
+
+</UserControl>
+

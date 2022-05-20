@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="AdminOpciones.OpcionesFX.SmileControl.SmileControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"             
+   Width="450" Height="200">
+    <Border  BorderThickness="1,1,1,1" BorderBrush="#FF3A7ECB" Width="450" Height="200">
+        <Grid x:Name="LayoutSmileCallPut" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="24"/>
+                <RowDefinition Height="7"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="7"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="9"/>
+            </Grid.ColumnDefinitions>
+            <Grid Background="#FF3A7ECB" Grid.ColumnSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Text="Smile (Call/Put)" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="#FFFFFDFD"/>
+            </Grid>
+
+            <data:DataGrid Name="grdSmileCallPut" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="2" GridLinesVisibility="All" >
+                <data:DataGrid.Columns>
+                    <data:DataGridTextColumn Header="(t)" Binding="{Binding Tenor}" />
+                    <data:DataGridTextColumn Header="10D Put" Binding="{Binding sPut10}" MinWidth="70" />
+                    <data:DataGridTextColumn Header="25D Put" Binding="{Binding sPut25}" MinWidth="70"/>
+                    <data:DataGridTextColumn Header="ATM" Binding="{Binding sAtm}" MinWidth="70"/>
+                    <data:DataGridTextColumn Header="25D Call" Binding="{Binding sCall25}" MinWidth="70" />
+                    <data:DataGridTextColumn Header="10D Call" Binding="{Binding sCall10}" MinWidth="70" />
+                </data:DataGrid.Columns>
+            </data:DataGrid>
+
+        </Grid>
+    </Border>
+</UserControl>

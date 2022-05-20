@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="LOCOverdraftData_Type">
+    <xsd:all>
+      <xsd:element minOccurs="0" maxOccurs="1" name="LOCOverdraftId" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Desc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Avail" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Ledger" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OverdraftLimit" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OverdraftHeld24" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OverdraftHeld48" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OverdraftHeldOther" type="xsd:double" />
+    </xsd:all>
+  </xsd:complexType>
+</xsd:schema>

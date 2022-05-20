@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd68" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd69" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd70" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd71" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd72" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd73" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd74" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd75" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd28" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd29" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd76" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd77" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd67" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd78" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd33" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd15" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd16" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd60" />
+  <xsd:complexType name="AcctInfo_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="Desc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OpenDt" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FIData" type="tns:FIData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="AcctBal" type="tns:AcctBal_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CreditAcctData" type="tns:CreditAcctData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Memo" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CurCode" type="tns:CurCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctIdent" type="tns:AcctIdent_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RegPmt" type="tns:RegPmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DepAcctData" type="tns:DepAcctData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="GraceEndDt" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InitialAmount" type="tns:InitialAmount_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctPeriodData" type="tns:AcctPeriodData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Ownership" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Term" type="tns:Term_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IntRateData" type="tns:IntRateData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ClosedDt" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TaxWithholding" type="xsd:boolean" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RegUFPmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ProductIdent" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctType" type="tns:AcctType_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctPricing" type="tns:AcctPricing_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CollateralData" type="tns:CollateralData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MaturityDt" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Segmentation" type="tns:Segmentation_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrigInitialAmount" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InsInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InsAval" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FfDt" type="xsd:date" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BoletaCurCode" type="tns:BoletaCurCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InsuranceData" type="tns:InsuranceData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="StmtTimeFrame" type="tns:StmtTimeFrame_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PaymentAmont" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MXPaymentAmont" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PaidAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CanceledAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MXCanceledAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CommissionAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MXCommissionAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MonthlyFeeAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MXMonthlyFeeAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RequiredAmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="MXRequiredAmt" type="tns:CurAmt_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

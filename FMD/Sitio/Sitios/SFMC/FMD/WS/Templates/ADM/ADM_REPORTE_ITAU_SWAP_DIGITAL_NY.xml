@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TemplateID="1" TemplateDirection="InputOutput" UseStoreProc="true" AdditionalInfo="true">
+  <DBCatalog>Reportes</DBCatalog>
+  <Name>Rpt. ITAU SWAP DIGITAL NY</Name>
+  <DataBindingName>ADM9</DataBindingName>
+  <Description />
+  <TemplateFileName>C:\BaseDirectory\ADM_REPORTE_ITAU_SWAP_DIGITAL_NY.xml</TemplateFileName>
+  <ListStoreProcsInfo>
+    <StoreProcsInfo>
+      <Direction>Output</Direction>
+      <ConnectionTimeout>0</ConnectionTimeout>
+      <SheetName>ITAU_SWAP_DIG_NY</SheetName>
+      <StoreProcName>SP_ADM_REPORTE_ITAU_SWAP_DIGITAL_NY</StoreProcName>
+      <ListStoreProcParams>
+        <StoreProcParams>
+          <StoreProcName>SP_ADM_REPORTE_ITAU_SWAP_DIGITAL_NY</StoreProcName>
+          <ParameterName>fecha</ParameterName>
+          <Direction>Input</Direction>
+          <Precision>0</Precision>
+          <Scale>0</Scale>
+          <Size>0</Size>
+          <DBType>Date</DBType>
+          <Nullable>false</Nullable>
+          <ParameterValue xsi:type="xsd:string">2015-09-30</ParameterValue>
+          <UseParameterValue>true</UseParameterValue>
+        </StoreProcParams>
+      </ListStoreProcParams>
+    </StoreProcsInfo>
+  </ListStoreProcsInfo>
+  <ListQueryInfo />
+  <ListXmlInfo />
+  <IOFileDirection>InputOutput</IOFileDirection>
+  <IOFileNamePattern>
+    <Prefix>RPT_Itau_SwapDigital_</Prefix>
+    <Pattern>yyyyMMdd</Pattern>
+    <Suffix> - Turing NY</Suffix>
+    <Extension>.xlsx</Extension>
+    <useDatePattern>true</useDatePattern>
+    <useNumericPattern>false</useNumericPattern>
+  </IOFileNamePattern>
+  <IOFileBaseDirectory>\ADM</IOFileBaseDirectory>
+  <IOFileCopyDirectories>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\HIST</FolderName>
+      <MainFolder>false</MainFolder>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Output</FolderDirection>
+      <FolderName>\OUT\DAILY</FolderName>
+      <MainFolder>true</MainFolder>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Ignore</FolderDirection>
+      <FolderName>\IN\HIST</FolderName>
+      <MainFolder>false</MainFolder>
+    </IOFileCopyFolders>
+    <IOFileCopyFolders>
+      <FolderDirection>Input</FolderDirection>
+      <FolderName>\IN\DAILY</FolderName>
+      <MainFolder>true</MainFolder>
+    </IOFileCopyFolders>
+  </IOFileCopyDirectories>
+  <useAppFolders>false</useAppFolders>
+  <ListExcelInfo />
+</Template>

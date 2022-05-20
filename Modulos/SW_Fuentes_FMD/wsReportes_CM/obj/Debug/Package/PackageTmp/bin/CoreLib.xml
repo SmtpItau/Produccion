@@ -1,0 +1,1835 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreLib</name>
+    </assembly>
+    <members>
+        <member name="T:CoreLib.Common.MailFormat">
+            <summary>
+            Enumerador Formato de Correo
+            </summary>
+        </member>
+        <member name="F:CoreLib.Common.MailFormat.HTML">
+            <summary>
+            Formato HTML para envio de correo
+            </summary>
+        </member>
+        <member name="F:CoreLib.Common.MailFormat.Text">
+            <summary>
+            Formato Texto plano para envio de correo
+            </summary>
+        </member>
+        <member name="T:CoreLib.Common.CryptographyAlgorithm">
+            <summary>
+            Enumerador para Algoritmo Crytografico.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+            </summary>
+        </member>
+        <member name="F:CoreLib.Common.CryptographyAlgorithm.DES">
+            <summary>
+            Algoritmo de encriptacion y desencriptacion DES
+            </summary>
+        </member>
+        <member name="F:CoreLib.Common.CryptographyAlgorithm.TripleDES">
+            <summary>
+            Algoritmo de encriptacion y desencriptacion Triple DES
+            </summary>
+        </member>
+        <member name="F:CoreLib.Common.CryptographyAlgorithm.Rijndael">
+            <summary>
+            Algoritmo de encriptacion y desencriptacion Rijndael
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.JSONHelper.Serialize``1(``0)">
+            <summary>
+            Serializa un objeto de tipo T en JSON string
+            </summary>
+            <typeparam name="T">Tipo de objeto a convertir</typeparam>
+            <param name="source">objeto a convertir</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.JSONHelper.Deserialize``1(System.String)">
+            <summary>
+            Deserializa un JSON string en tipo T
+            </summary>
+            <typeparam name="T">Tipo de objeto a convertir</typeparam>
+            <param name="obj">representacion tipo string de objeto a deserializar</param>
+            <returns>Objeto de tipo &gt;T&lt;</returns>   
+        </member>
+        <member name="M:CoreLib.Helpers.JSONHelper.JavaScript_Serialize``1(``0)">
+            <summary>
+            Serializa un objeto de tipo T en JSON string
+            </summary>
+            <typeparam name="T">Tipo de objeto a convertir</typeparam>
+            <param name="source">objeto a convertir</param>
+            <returns>string</returns>
+        </member>
+        <member name="T:CoreLib.Helpers.SqlHelper">
+            <summary>
+            The SqlHelper class is intended to encapsulate high performance, scalable best practices for 
+            common uses of SqlClient
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.AttachParameters(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            This method is used to attach array of SqlParameters to a SqlCommand.
+            
+            This method will assign a value of DbNull to any parameter with a direction of
+            InputOutput and a value of null.  
+            
+            This behavior will prevent default values from being used, but
+            this will be the less common case than an intended pure output parameter (derived as InputOutput)
+            where the user provided no input value.
+            </summary>
+            <param name="command">The command to which the parameters will be added</param>
+            <param name="commandParameters">An array of SqlParameters to be added to command</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.AssignParameterValues(System.Data.SqlClient.SqlParameter[],System.Data.DataRow)">
+            <summary>
+            This method assigns dataRow column values to an array of SqlParameters
+            </summary>
+            <param name="commandParameters">Array of SqlParameters to be assigned values</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.AssignParameterValues(System.Data.SqlClient.SqlParameter[],System.Object[])">
+            <summary>
+            This method assigns an array of values to an array of SqlParameters
+            </summary>
+            <param name="commandParameters">Array of SqlParameters to be assigned values</param>
+            <param name="parameterValues">Array of objects holding the values to be assigned</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[],System.Boolean@)">
+            <summary>
+            This method opens (if necessary) and assigns a connection, transaction, command type and parameters 
+            to the provided command
+            </summary>
+            <param name="command">The SqlCommand to be prepared</param>
+            <param name="connection">A valid SqlConnection, on which to execute this command</param>
+            <param name="transaction">A valid SqlTransaction, or 'null'</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParameters to be associated with the command or 'null' if no parameters are required</param>
+            <param name="mustCloseConnection"><c>true</c> if the connection was opened by the method, otherwose is false.</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns no resultset and takes no parameters) against the database specified in 
+            the connection string
+            </summary>
+            <remarks>
+            e.g.:  
+             int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders");
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns no resultset) against the database specified in the connection string 
+            using the provided parameters
+            </summary>
+            <remarks>
+            e.g.:  
+             int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.String,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns no resultset) against the database specified in 
+            the connection string using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             int result = ExecuteNonQuery(connString, "PublishOrders", 24, 36);
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored prcedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns no resultset and takes no parameters) against the provided SqlConnection. 
+            </summary>
+            <remarks>
+            e.g.:  
+             int result = ExecuteNonQuery(conn, CommandType.StoredProcedure, "PublishOrders");
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns no resultset) against the specified SqlConnection 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             int result = ExecuteNonQuery(conn, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns no resultset) against the specified SqlConnection 
+            using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             int result = ExecuteNonQuery(conn, "PublishOrders", 24, 36);
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns no resultset and takes no parameters) against the provided SqlTransaction. 
+            </summary>
+            <remarks>
+            e.g.:  
+             int result = ExecuteNonQuery(trans, CommandType.StoredProcedure, "PublishOrders");
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns no resultset) against the specified SqlTransaction
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             int result = ExecuteNonQuery(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns no resultset) against the specified 
+            SqlTransaction using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             int result = ExecuteNonQuery(conn, trans, "PublishOrders", 24, 36);
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.String,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the database specified in 
+            the connection string. 
+            </summary>
+            <remarks>
+            e.g.:  
+             DataSet ds = ExecuteDataset(connString, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the database specified in the connection string 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             DataSet ds = ExecuteDataset(connString, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.String,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the database specified in 
+            the connection string using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             DataSet ds = ExecuteDataset(connString, "GetOrders", 24, 36);
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlConnection. 
+            </summary>
+            <remarks>
+            e.g.:  
+             DataSet ds = ExecuteDataset(conn, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             DataSet ds = ExecuteDataset(conn, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             DataSet ds = ExecuteDataset(conn, "GetOrders", 24, 36);
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlTransaction. 
+            </summary>
+            <remarks>
+            e.g.:  
+             DataSet ds = ExecuteDataset(trans, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlTransaction
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             DataSet ds = ExecuteDataset(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified 
+            SqlTransaction using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             DataSet ds = ExecuteDataset(trans, "GetOrders", 24, 36);
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[],CoreLib.Helpers.SqlHelper.SqlConnectionOwnership)">
+            <summary>
+            Create and prepare a SqlCommand, and call ExecuteReader with the appropriate CommandBehavior.
+            </summary>
+            <remarks>
+            If we created and opened the connection, we want the connection to be closed when the DataReader is closed.
+            
+            If the caller provided the connection, we want to leave it to them to manage.
+            </remarks>
+            <param name="connection">A valid SqlConnection, on which to execute this command</param>
+            <param name="transaction">A valid SqlTransaction, or 'null'</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParameters to be associated with the command or 'null' if no parameters are required</param>
+            <param name="connectionOwnership">Indicates whether the connection parameter was provided by the caller, or created by SqlHelper</param>
+            <returns>SqlDataReader containing the results of the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.String,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the database specified in 
+            the connection string. 
+            </summary>
+            <remarks>
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(connString, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the database specified in the connection string 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(connString, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.String,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the database specified in 
+            the connection string using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(connString, "GetOrders", 24, 36);
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlConnection. 
+            </summary>
+            <remarks>
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(conn, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(conn, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(conn, "GetOrders", 24, 36);
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlTransaction. 
+            </summary>
+            <remarks>
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(trans, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlTransaction
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+              SqlDataReader dr = ExecuteReader(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified
+            SqlTransaction using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             SqlDataReader dr = ExecuteReader(trans, "GetOrders", 24, 36);
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a 1x1 resultset and takes no parameters) against the database specified in 
+            the connection string. 
+            </summary>
+            <remarks>
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(connString, CommandType.StoredProcedure, "GetOrderCount");
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a 1x1 resultset) against the database specified in the connection string 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(connString, CommandType.StoredProcedure, "GetOrderCount", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.String,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a 1x1 resultset) against the database specified in 
+            the connection string using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(connString, "GetOrderCount", 24, 36);
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a 1x1 resultset and takes no parameters) against the provided SqlConnection. 
+            </summary>
+            <remarks>
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(conn, CommandType.StoredProcedure, "GetOrderCount");
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a 1x1 resultset) against the specified SqlConnection 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(conn, CommandType.StoredProcedure, "GetOrderCount", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a 1x1 resultset) against the specified SqlConnection 
+            using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(conn, "GetOrderCount", 24, 36);
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a 1x1 resultset and takes no parameters) against the provided SqlTransaction. 
+            </summary>
+            <remarks>
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(trans, CommandType.StoredProcedure, "GetOrderCount");
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a 1x1 resultset) against the specified SqlTransaction
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(trans, CommandType.StoredProcedure, "GetOrderCount", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a 1x1 resultset) against the specified
+            SqlTransaction using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(trans, "GetOrderCount", 24, 36);
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlConnection. 
+            </summary>
+            <remarks>
+            e.g.:  
+             XmlReader r = ExecuteXmlReader(conn, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command using "FOR XML AUTO"</param>
+            <returns>An XmlReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             XmlReader r = ExecuteXmlReader(conn, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command using "FOR XML AUTO"</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An XmlReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             XmlReader r = ExecuteXmlReader(conn, "GetOrders", 24, 36);
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="spName">The name of the stored procedure using "FOR XML AUTO"</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>An XmlReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlTransaction. 
+            </summary>
+            <remarks>
+            e.g.:  
+             XmlReader r = ExecuteXmlReader(trans, CommandType.StoredProcedure, "GetOrders");
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command using "FOR XML AUTO"</param>
+            <returns>An XmlReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlTransaction
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             XmlReader r = ExecuteXmlReader(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command using "FOR XML AUTO"</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <returns>An XmlReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified 
+            SqlTransaction using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             XmlReader r = ExecuteXmlReader(trans, "GetOrders", 24, 36);
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.String,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the database specified in 
+            the connection string. 
+            </summary>
+            <remarks>
+            e.g.:  
+             FillDataset(connString, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"});
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.String,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the database specified in the connection string 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             FillDataset(connString, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.String,System.String,System.Data.DataSet,System.String[],System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the database specified in 
+            the connection string using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             FillDataset(connString, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, 24);
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>    
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlConnection. 
+            </summary>
+            <remarks>
+            e.g.:  
+             FillDataset(conn, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"});
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>    
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             FillDataset(conn, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataSet,System.String[],System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             FillDataset(conn, "GetOrders", ds, new string[] {"orders"}, 24, 36);
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset and takes no parameters) against the provided SqlTransaction. 
+            </summary>
+            <remarks>
+            e.g.:  
+             FillDataset(trans, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"});
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Execute a SqlCommand (that returns a resultset) against the specified SqlTransaction
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             FillDataset(trans, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataSet,System.String[],System.Object[])">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified 
+            SqlTransaction using the provided parameter values.  This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <remarks>
+            This method provides no access to output parameters or the stored procedure's return value parameter.
+            
+            e.g.:  
+             FillDataset(trans, "GetOrders", ds, new string[]{"orders"}, 24, 36);
+            </remarks>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>
+            <param name="parameterValues">An array of objects to be assigned as the input values of the stored procedure</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Private helper method that execute a SqlCommand (that returns a resultset) against the specified SqlTransaction and SqlConnection
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             FillDataset(conn, trans, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">A valid SqlConnection</param>
+            <param name="transaction">A valid SqlTransaction</param>
+            <param name="commandType">The CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="dataSet">A dataset wich will contain the resultset generated by the command</param>
+            <param name="tableNames">This array will be used to create table mappings allowing the DataTables to be referenced
+            by a user defined name (probably the actual table name)
+            </param>
+            <param name="commandParameters">An array of SqlParamters used to execute the command</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.UpdateDataset(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlCommand,System.Data.DataSet,System.String)">
+            <summary>
+            Executes the respective command for each inserted, updated, or deleted row in the DataSet.
+            </summary>
+            <remarks>
+            e.g.:  
+             UpdateDataset(conn, insertCommand, deleteCommand, updateCommand, dataSet, "Order");
+            </remarks>
+            <param name="insertCommand">A valid transact-SQL statement or stored procedure to insert new records into the data source</param>
+            <param name="deleteCommand">A valid transact-SQL statement or stored procedure to delete records from the data source</param>
+            <param name="updateCommand">A valid transact-SQL statement or stored procedure used to update records in the data source</param>
+            <param name="dataSet">The DataSet used to update the data source</param>
+            <param name="tableName">The DataTable used to update the data source.</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.CreateCommand(System.Data.SqlClient.SqlConnection,System.String,System.String[])">
+            <summary>
+            Simplify the creation of a Sql command object by allowing
+            a stored procedure and optional parameters to be provided
+            </summary>
+            <remarks>
+            e.g.:  
+             SqlCommand command = CreateCommand(conn, "AddCustomer", "CustomerID", "CustomerName");
+            </remarks>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="sourceColumns">An array of string to be assigned as the source columns of the stored procedure parameters</param>
+            <returns>A valid SqlCommand object</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQueryTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns no resultset) against the database specified in 
+            the connection string using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on row values.
+            </summary>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQueryTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns no resultset) against the specified SqlConnection 
+            using the dataRow column values as the stored procedure's parameters values.  
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on row values.
+            </summary>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteNonQueryTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns no resultset) against the specified
+            SqlTransaction using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on row values.
+            </summary>
+            <param name="transaction">A valid SqlTransaction object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An int representing the number of rows affected by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDatasetTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the database specified in 
+            the connection string using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on row values.
+            </summary>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDatasetTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the dataRow column values as the store procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on row values.
+            </summary>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteDatasetTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlTransaction 
+            using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on row values.
+            </summary>
+            <param name="transaction">A valid SqlTransaction object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>A dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReaderTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the database specified in 
+            the connection string using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReaderTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteReaderTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlTransaction 
+            using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="transaction">A valid SqlTransaction object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>A SqlDataReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalarTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a 1x1 resultset) against the database specified in 
+            the connection string using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalarTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a 1x1 resultset) against the specified SqlConnection 
+            using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteScalarTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a 1x1 resultset) against the specified SqlTransaction
+            using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="transaction">A valid SqlTransaction object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReaderTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlConnection 
+            using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An XmlReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelper.ExecuteXmlReaderTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary>
+            Execute a stored procedure via a SqlCommand (that returns a resultset) against the specified SqlTransaction 
+            using the dataRow column values as the stored procedure's parameters values.
+            This method will query the database to discover the parameters for the 
+            stored procedure (the first time each stored procedure is called), and assign the values based on parameter order.
+            </summary>
+            <param name="transaction">A valid SqlTransaction object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="dataRow">The dataRow used to hold the stored procedure's parameter values.</param>
+            <returns>An XmlReader containing the resultset generated by the command</returns>
+        </member>
+        <member name="T:CoreLib.Helpers.SqlHelper.SqlConnectionOwnership">
+            <summary>
+            This enum is used to indicate whether the connection was provided by the caller, or created by SqlHelper, so that
+            we can set the appropriate CommandBehavior when calling ExecuteReader()
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.SqlHelper.SqlConnectionOwnership.Internal">
+            <summary>Connection is owned and managed by SqlHelper</summary>
+        </member>
+        <member name="F:CoreLib.Helpers.SqlHelper.SqlConnectionOwnership.External">
+            <summary>Connection is owned and managed by the caller</summary>
+        </member>
+        <member name="T:CoreLib.Helpers.ExportOptions">
+            <summary>
+            Enumera las opciones de exportacion
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.ExportOptions.IncludeTime">
+            <summary>
+            Indica si se incluye la hora en formato HH:mm:ss.
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.ExportOptions.YMD_DateFormat">
+            <summary>
+            Indica si se debe utilizar el formato AÑO-MES-DIA para la exportacion de fechas.
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.ExportOptions.IncludeComments">
+            <summary>
+            Indica si se incluyen comentarios en la primera fila o cabecera del archivo generado.
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.ExportOptions.AllowMultipleSheets">
+            <summary>
+            Indica si se va a exportar un DataSet completo con todas sus tablas.
+            </summary>
+        </member>
+        <member name="T:CoreLib.Helpers.ExcelExport">
+            <summary>
+            Clase de Exportacion a Excel
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.Export(System.Object,System.IO.FileInfo,CoreLib.Helpers.ExportOptions,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Wrapper de exportacion a excel (Boxing / Unboxing de funciones de exportacion)
+            </summary>
+            <param name="data">Objeto a exportar</param>
+            <param name="file">FileInfo con los datos del archivo a exportar</param>
+            <param name="options">Opciones de Exportacion</param>
+            <param name="comments">Diccionario (columna,comentario) de comentarios para agregar a la primera fila del excel</param>
+            <returns>True/False si se concreto la operacion de exportacion o no.</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.Export_DataSet(System.Data.DataSet,System.IO.FileInfo,CoreLib.Helpers.ExportOptions,System.Collections.Generic.Dictionary{System.String,System.String})">
+             <summary>
+             Exporta un DataSet a archivo excel
+             </summary>
+            <param name="data">Objeto DataSet para exportar a excel</param>
+             <param name="file">FileInfo de archivo a generar</param>
+             <param name="options">Opciones de exportacion</param>
+             <param name="comments">Diccionario (columna,comentario) de comentarios para agregar a la primera fila del excel</param>
+             <returns>True/False si se exportaron los datos o no</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.ValidateBeforeToExport(System.Object,System.IO.FileInfo,CoreLib.Helpers.ExportOptions)">
+            <summary>
+            Valida que exista lo necesario respecto de los datos, para la exportacion
+            </summary>
+            <param name="data">Objeto con los datos a exportar (DataSet o DataTable)</param>
+            <param name="file">FileInfo de archivo a generar</param>
+            <param name="options">Opciones de exportacion</param>
+            <returns>True/False si se exporto o no </returns>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.Export_DataTable(System.Data.DataTable,System.IO.FileInfo,CoreLib.Helpers.ExportOptions,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Exporta un DataTable a excel
+            </summary>
+            <param name="table">Objeto DataTable con los datos a exportar</param>
+            <param name="file">FileInfo de archivo a generar</param>
+            <param name="options">Opciones de exportacion</param>
+            <param name="comments">Diccionario (columna,comentario) de comentarios para agregar a la primera fila del excel</param>
+            <returns>True/False si se exportaron los datos o no</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.Format(System.Type,System.Boolean,System.Boolean)">
+            <summary>
+            Retorna Formato en base al tipo de dato.
+            </summary>
+            <param name="type">System.Type, tipo de dato</param>
+            <param name="IncludeTime">Incluir la hora para los formatos de fecha</param>
+            <param name="YMD_DateFormat">Devolver el formato de fecha en YMD</param>
+            <returns>String con el formato según tipo</returns>
+        </member>
+        <member name="T:CoreLib.Helpers.ExcelExport.DataSetInfo">
+            <summary>
+            Clase con Informacion para generar excel de un dataset con multiples tablas
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.ExcelExport.DataSetInfo._infoCollection">
+            <summary>
+            Coleccion interna de objetos con informacion del dataset    
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.ExcelExport.DataSetInfo._UniqueID">
+            <summary>
+            Id unico de cada dataset
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.DataSetInfo.#ctor">
+            <summary>
+            Instancia un objeto DataSetInfo Vacio
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.DataSetInfo.#ctor(System.Data.DataSet)">
+            <summary>
+            Instancia un objeto DataSetInfo, con la informacion de un DataSet
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.DataSetInfo.Add(CoreLib.Helpers.ExcelExport.DataSetInfo)">
+            <summary>
+            Agrega un elemento a la collection
+            </summary>
+            <param name="obj">Objeto DataSetInfo</param>
+        </member>
+        <member name="M:CoreLib.Helpers.ExcelExport.DataSetInfo.InfoCollection">
+            <summary>
+            Coleccion de objetos DataSetInfo
+            </summary>
+            <returns>Collection</returns>
+        </member>
+        <member name="P:CoreLib.Helpers.ExcelExport.DataSetInfo.UniqueID">
+            <summary>
+            Id unico de cada dataset
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.ExcelExport.DataSetInfo.TableName">
+            <summary>
+            Nombre de la tabla del dataset
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.ExcelExport.DataSetInfo.NameSpace">
+            <summary>
+            NameSpace XML del dataset   
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.ExcelExport.DataSetInfo.TotalRecordsInTable">
+            <summary>
+            Total de Registros de la tabla
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.ExcelExport.DataSetInfo.TotalSheets">
+            <summary>
+            Total de Hojas generadas por el total de datos del tablename
+            </summary>
+        </member>
+        <member name="T:CoreLib.Helpers.ExcelExport.DataSetInfoEnumerator`1">
+            <summary>
+            Enumerador de Coleccion DataSetInfoCollection
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:CoreLib.Helpers.ExcelExport.DataSetInfoCollection`1">
+            <summary>
+            Coleccion de objetos DataSetInfo
+            </summary>
+            <typeparam name="T">Objeto DataSetInfo</typeparam>
+        </member>
+        <member name="T:CoreLib.Common.AppContext">
+            <summary>
+            Clase Application Context
+            </summary>
+        </member>
+        <member name="M:CoreLib.Common.AppContext.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Lee de un diccionario la configuracion de aplicacion.
+            </summary>
+            <param name="configSettings"></param>
+        </member>
+        <member name="M:CoreLib.Common.AppContext.ReadConfig``1(``0,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Lee un diccionario &lt;string,object&gt; con la configuracion de aplicacion
+            </summary>
+            <typeparam name="T">Tipo a convertir</typeparam>
+            <param name="source">Objeto a convertir (llenar con el diccionario)</param>
+            <param name="configSettings">Diccionario con los parametros de aplicacion.</param>
+            <remarks>el objeto configSettings debe tener claves equivalentes en el objeto source.</remarks>
+        </member>
+        <member name="P:CoreLib.Common.AppContext.AppName">
+            <summary>
+            Nombre de Aplicacion
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.AppContext.DBContext">
+            <summary>
+            Contexto de Base de datos
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.AppContext.MailContext">
+            <summary>
+            Contexto para mailer
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.AppContext.LogContext">
+            <summary>
+            Contexto de log
+            </summary>
+        </member>
+        <member name="T:CoreLib.Common.LogContext">
+            <summary>
+            Clase contexto de log.
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.LogContext.isEnable">
+            <summary>
+            Indica si esta abilitado el log de errores
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.LogContext.LogFileName">
+            <summary>
+            Indica el nombre del archivo de error
+            </summary>        
+            <remarks> Por defecto App_YYYYMMDD.log</remarks>
+        </member>
+        <member name="P:CoreLib.Common.LogContext.FriendlyLog">
+            <summary>
+            Indica si se mostrara una version mas amigable del log (sin el stacktrace completo), default:true
+            </summary>
+            <remarks>Indica si mostrara el stacktrace completo de las excepciones o solo el archivo y numeros de lineas</remarks>
+            <value>Por default True</value>
+        </member>
+        <member name="T:CoreLib.Helpers.EncryptMSG">
+            <summary>
+            Struct de Constantes de mensajes para usuario
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.EncryptMSG.CRYPTO_NULL_OR_EMPTY_STRING">
+            <summary>
+            Mensaje de cadena vacia o nula.
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.EncryptMSG.CRYPTO_NULL_OR_EMPTY_IV">
+            <summary>
+            Mensaje de vector de inicializacion nulo o vacio.
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.EncryptMSG.CRYPTO_NULL_OR_EMPTY_KEY">
+            <summary>
+            Mensaje de llave nula o vacia.
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.EncryptMSG.CRYPTO_NOTIMPLEMENTED">
+            <summary>
+            Mensaje que indica que el algoritmo solicitado no esta implementado todavia.
+            </summary>
+        </member>
+        <member name="T:CoreLib.Helpers.CryptoHelper">
+            <summary>
+            Helper de Encriptado
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.CryptoHelper._IV">
+            <summary>
+            Vector de inicializacion
+            </summary>
+        </member>
+        <member name="F:CoreLib.Helpers.CryptoHelper._Key">
+            <summary>
+            Key autogenerada
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.#ctor(CoreLib.Common.CryptographyAlgorithm)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="algorithm">Algoritmo de encryptacion/desencriptacion a usar.</param>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.#ctor">
+            <summary>
+            Default Constructor.
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.GetBytes(System.String)">
+            <summary>
+            Retorna un array de bytes de una cadena dada
+            </summary>
+            <param name="str">Cadena</param>
+            <returns>un array de bytes</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.GetString(System.Byte[])">
+            <summary>
+            Retorna un literal de un arreglo de bytes.
+            </summary>
+            <param name="bytes">Arreglo de bytes.</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.Encrypt(System.String)">
+            <summary>
+            Convierte una cadena de texto a conjunto de bytes encriptados segun configuracion de clase.
+            </summary>
+            <param name="toEncrypt">Texto a encriptar.</param>
+            <returns>Byte Array.</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.Decrypt(System.Byte[])">
+            <summary>
+            Desencripta un conjunto de bytes.
+            </summary>
+            <param name="encrypted">Array de bytes encryptados.</param>
+            <returns>string desencriptado.</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.Decrypt(System.String)">
+            <summary>
+            Desencritacion de 2 pasos, descifra una cadena en base de 64 bits (previamente encryptada) y luego desencripta según configuracion del Helper.
+            </summary>
+            <param name="encryptedBase64">cadena con informacion encriptada en base 64 bits.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.DES_Encryption(System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Encriptacion DES
+            </summary>
+            <param name="toEncrypt">Texto a encriptar</param>
+            <param name="Key">LLave</param>
+            <param name="IV">Vector de inicializacion</param>
+            <returns>arreglo de bytes encriptado.</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.CryptoHelper.DES_Decryption(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Desencriptacion DES.
+            </summary>
+            <param name="encrypted">arreglo de bytes con informacion encriptada</param>
+            <param name="Key">Llave</param>
+            <param name="IV">Vector de Inicializacion</param>
+            <returns>Cadena desencriptada.</returns>
+        </member>
+        <member name="P:CoreLib.Helpers.CryptoHelper.Algorithm">
+            <summary>
+            Algoritmo Crytpografico a utilizar.
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.CryptoHelper.IV">
+            <summary>
+            Vector de Inicializacion.
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.CryptoHelper.Key">
+            <summary>
+            Key for process
+            </summary>
+        </member>
+        <member name="T:CoreLib.Common.MailContext">
+            <summary>
+            Clase contexto para envio de correo
+            </summary>
+        </member>
+        <member name="F:CoreLib.Common.MailContext._UniqueID">
+            <summary>
+            Guid Unico de Instancia
+            </summary>
+        </member>
+        <member name="M:CoreLib.Common.MailContext.ValidContext">
+             <summary>
+             Valida que esten los datos basicos de conexion para realizar un envio
+             </summary>
+            <returns>true: estan los datos minimos para el envio</returns>        
+        </member>
+        <member name="P:CoreLib.Common.MailContext.UniqueID">
+            <summary>
+            Guid de Instancia
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.MailServer">
+            <summary>
+            Direccion IP o direccion del servidor de correo ej: smtp.googlemail.com
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.MailAccount">
+            <summary>
+            Cuenta de correo desde el cual se envia el mensaje
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.MailAccountPass">
+            <summary>
+            Contraseña de correo desde el cual se envia el mensaje
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.MailSSL">
+            <summary>
+            Habilita conexion SSL
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.UseNetworkForDelivery">
+            <summary>
+            Especifica si usa la red para enviar el correo
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.TimeOut">
+            <summary>
+            Especifica el timeout del servicio para cliente SMTP.
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.MailEnable">
+            <summary>
+            Habilita el envio de correo 
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.MailContext.MailPort">
+            <summary>
+            Puerto de correo, default:25
+            </summary>
+        </member>
+        <member name="T:CoreLib.Helpers.SqlHelperParameterCache">
+            <summary>
+            SqlHelperParameterCache provides functions to leverage a static cache of procedure parameters, and the
+            ability to discover parameters for stored procedures at run-time.
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.DiscoverSpParameterSet(System.Data.SqlClient.SqlConnection,System.String,System.Boolean)">
+            <summary>
+            Resolve at run time the appropriate set of SqlParameters for a stored procedure
+            </summary>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="includeReturnValueParameter">Whether or not to include their return value parameter</param>
+            <returns>The parameter array discovered.</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.CloneParameters(System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Deep copy of cached SqlParameter array
+            </summary>
+            <param name="originalParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.CacheParameterSet(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Add parameter array to the cache
+            </summary>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <param name="commandParameters">An array of SqlParamters to be cached</param>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.GetCachedParameterSet(System.String,System.String)">
+            <summary>
+            Retrieve a parameter array from the cache
+            </summary>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="commandText">The stored procedure name or T-SQL command</param>
+            <returns>An array of SqlParamters</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.GetSpParameterSet(System.String,System.String)">
+            <summary>
+            Retrieves the set of SqlParameters appropriate for the stored procedure
+            </summary>
+            <remarks>
+            This method will query the database for this information, and then store it in a cache for future requests.
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <returns>An array of SqlParameters</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.GetSpParameterSet(System.String,System.String,System.Boolean)">
+            <summary>
+            Retrieves the set of SqlParameters appropriate for the stored procedure
+            </summary>
+            <remarks>
+            This method will query the database for this information, and then store it in a cache for future requests.
+            </remarks>
+            <param name="connectionString">A valid connection string for a SqlConnection</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="includeReturnValueParameter">A bool value indicating whether the return value parameter should be included in the results</param>
+            <returns>An array of SqlParameters</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.GetSpParameterSet(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+            Retrieves the set of SqlParameters appropriate for the stored procedure
+            </summary>
+            <remarks>
+            This method will query the database for this information, and then store it in a cache for future requests.
+            </remarks>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <returns>An array of SqlParameters</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.GetSpParameterSet(System.Data.SqlClient.SqlConnection,System.String,System.Boolean)">
+            <summary>
+            Retrieves the set of SqlParameters appropriate for the stored procedure
+            </summary>
+            <remarks>
+            This method will query the database for this information, and then store it in a cache for future requests.
+            </remarks>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="includeReturnValueParameter">A bool value indicating whether the return value parameter should be included in the results</param>
+            <returns>An array of SqlParameters</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.SqlHelperParameterCache.GetSpParameterSetInternal(System.Data.SqlClient.SqlConnection,System.String,System.Boolean)">
+            <summary>
+            Retrieves the set of SqlParameters appropriate for the stored procedure
+            </summary>
+            <param name="connection">A valid SqlConnection object</param>
+            <param name="spName">The name of the stored procedure</param>
+            <param name="includeReturnValueParameter">A bool value indicating whether the return value parameter should be included in the results</param>
+            <returns>An array of SqlParameters</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.MailHelper.IsValidEmail(System.String)">
+            <summary>
+            Verifica si la direccion de correo tenga el formato correcto.
+            </summary>
+            <param name="email">Direccion de correo a verificar</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.MailHelper.SendMail(CoreLib.Common.MailContext,System.String,System.String,System.Object,CoreLib.Common.MailFormat,System.Boolean)">
+            <summary>
+            Envia mensaje de correo sin adjunto.
+            </summary>
+            <param name="ctx">Contexto de Mailer</param>
+            <param name="mail">Direccion a la cual se envia el mensaje</param>
+            <param name="asunto">Asunto del mensaje</param>
+            <param name="mensaje">Objeto mensaje</param>
+            <param name="format" value="Text">Formato del mensaje</param>
+            <param name="SendAsync" value="False">Indica si se envia de modo Asyncrono</param>
+        </member>
+        <member name="M:CoreLib.Helpers.MailHelper.SendMail(CoreLib.Common.MailContext,System.String,System.String,System.Object,System.IO.FileInfo,CoreLib.Common.MailFormat,System.Boolean)">
+            <summary>
+            Envia mensaje de correo con adjunto.
+            </summary>
+            <param name="ctx">Contexto de Mailer</param>
+            <param name="mail">Direccion a la cual se envia el mensaje</param>
+            <param name="asunto">Asunto del mensaje</param>
+            <param name="mensaje">Objeto mensaje</param>
+            <param name="format" value="Text">Formato del mensaje</param>
+            <param name="SendAsync" value="False">Indica si se envia de modo Asyncrono</param>
+        </member>
+        <member name="M:CoreLib.Helpers.MailHelper.SendMail(CoreLib.Common.MailContext,System.String[],System.String,System.Object,System.IO.FileInfo[],CoreLib.Common.MailFormat,System.Boolean)">
+            <summary>
+            Envia mensaje de correo a multiples destinatarios, con multiples archivos adjuntos
+            </summary>
+            <param name="ctx">Contexto de Mailer</param>
+            <param name="mail">Lista de direcciones de correo</param>
+            <param name="asunto">Asunto para el mensaje</param>
+            <param name="mensaje">Mensaje a enviar</param>
+            <param name="attachment">Lista de archivos adjuntos</param>
+            <param name="format" value="Text">Formato del mensaje</param>
+            <param name="SendAsync" value="False">Indica si se envia de modo Asyncrono</param>
+        </member>
+        <member name="M:CoreLib.Helpers.MailHelper.SendCompletedCallBack(System.Object,System.ComponentModel.AsyncCompletedEventArgs)">
+            <summary>
+            CallBack para envio asyncrono
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.MailHelper.MailSended">
+            <summary>
+            Indica si el email fue enviado o no
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.MailHelper.Results">
+            <summary>
+            Devuelve mensaje del proceso
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.MailHelper.BadEmailAddres">
+            <summary>
+            Devuelve una lista de direcciones de correos erroneos
+            </summary>
+        </member>
+        <member name="P:CoreLib.Helpers.MailHelper.FilesNotFound">
+            <summary>
+            Devuelve una lista de archivos no encontrados
+            </summary>
+        </member>
+        <member name="T:CoreLib.Common.Collections.DBContextCollectionEnumerator`1">
+            <summary>
+            Enumerador de DBContextCollection
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:CoreLib.Helpers.LogHelper">
+            <summary>
+            Clase para implementacion de log de errores
+            </summary>
+        </member>
+        <member name="M:CoreLib.Helpers.LogHelper.FormatException(System.Exception,System.Boolean)">
+            <summary>
+            Formatea la excepcion
+            </summary>
+            <returns>String con formato para log</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.LogHelper.WriteLog(System.String,System.String)">
+            <summary>
+            Escribe un registro en el arhcivo indicado
+            </summary>
+            <param name="fileName">Nombre de Archivo de log</param>
+            <param name="record">Registro a  escribir el log</param>
+            <returns>True/false</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.LogHelper.WriteLog(CoreLib.Common.AppContext,System.Object)">
+            <summary>
+            Escribe una entrada del registro
+            </summary>
+            <param name="context">Contexto de aplicacion</param>
+            <param name="exception">objeto Exception </param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:CoreLib.Helpers.LogHelper.WriteLog(CoreLib.Common.AppContext,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="context">Clase de contexto de aplicacion</param>
+            <param name="record">Registro a escribir en el log de archivo</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="T:CoreLib.Common.DBContext">
+            <summary>
+            Clase de contexto
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.UniqueID">
+            <summary>
+            Instance Unique Identifier
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DBServerName">
+            <summary>
+            Servidor
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DB_IP_Address">
+            <summary>
+            Direccion IP del servidor
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.Use_IP_Address">
+            <summary>
+            Indica si usa la direcion IP del servidor en vez del nombre
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DBUserName">
+            <summary>
+            User Name
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DBUserPass">
+            <summary>
+            User Password
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DBCatalog">
+            <summary>
+            Base de datos o catalogo
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.IntegratedSecurity">
+            <summary>
+            Usa seguridad integrada
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.TrustedConnection">
+            <summary>
+            Usa conexion de confianza
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.ConnectionTimeout">
+            <summary>
+            Timeout de la conexion
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DBPooling">
+            <summary>
+            Indica si utiliza pooling de connexiones (default: TRUE)
+            </summary>        
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DBMinConnection">
+            <summary>
+            Cantidad minima de conexiones en el pool de conexiones (default: 2)
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.DBMaxConnection">
+            <summary>
+            Cantidad maxima de conexiones en el pool de conexiones (default:6)
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.StringConnection">
+            <summary>
+            Retorna Connection String
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.Connection">
+            <summary>
+            Retorna objeto IDbConnection
+            </summary>
+        </member>
+        <member name="P:CoreLib.Common.DBContext.isValid">
+            <summary>
+            Indica si la cadena de conexion es valida.
+            </summary>
+        </member>
+    </members>
+</doc>

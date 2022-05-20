@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd17" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd37" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd38" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd39" />
+  <xsd:complexType name="TimeFrame_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="StartDt" nillable="true" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EndDt" type="xsd:dateTime" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RecurRule" type="tns:RecurRule_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Duration" type="tns:Duration_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DueDt" type="xsd:dateTime" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

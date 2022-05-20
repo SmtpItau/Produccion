@@ -1,0 +1,1 @@
+Ruta relativa para almacenamiento de archivos generados por el web service.

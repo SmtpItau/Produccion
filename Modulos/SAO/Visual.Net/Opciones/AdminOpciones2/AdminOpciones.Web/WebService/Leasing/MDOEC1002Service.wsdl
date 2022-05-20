@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://cl.corpbanca.soa/MDOEC1002" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://cl.corpbanca.soa/MDOEC1002" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://cl.corpbanca.soa/MDOEC1002">
+      <s:element name="MDOEC1002">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Header" type="tns:Header" />
+            <s:element minOccurs="1" maxOccurs="1" name="rutCliente" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroLeasing" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroGrupoBien" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Header">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="COD_USUARIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID_TERMINAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="COD_CANAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID_APLICACION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="COD_ENTIDAD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IP_ORIGEN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID_SERVIDOR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="COD_LENGUAJE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TIMESTAMP" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MDOEC1002Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="return" type="tns:ReturnMDOEC1002" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnMDOEC1002">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="footer" type="tns:Footer" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListarForwardRelacionados" type="tns:ArrayOfForwardRelacionado" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Footer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="serviceName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="errors" type="tns:ArrayOfError" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="error" nillable="true" type="tns:error" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="error">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="source" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stackTrace" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfForwardRelacionado">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ForwardRelacionado" nillable="true" type="tns:ForwardRelacionado" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ForwardRelacionado">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CaRutCliente" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_leasing" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_grupo_bien" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_fwd_relacion" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaFechaVcto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaMontoMon1" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MDOEC1002SoapIn">
+    <wsdl:part name="parameters" element="tns:MDOEC1002" />
+  </wsdl:message>
+  <wsdl:message name="MDOEC1002SoapOut">
+    <wsdl:part name="parameters" element="tns:MDOEC1002Response" />
+  </wsdl:message>
+  <wsdl:portType name="MDOEC1002ServiceSoap">
+    <wsdl:operation name="MDOEC1002">
+      <wsdl:input message="tns:MDOEC1002SoapIn" />
+      <wsdl:output message="tns:MDOEC1002SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MDOEC1002ServiceHttpPost" />
+  <wsdl:binding name="MDOEC1002ServiceSoap" type="tns:MDOEC1002ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MDOEC1002">
+      <soap:operation soapAction="http://cl.corpbanca.soa/MDOEC1002/MDOEC1002" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MDOEC1002ServiceHttpPost" type="tns:MDOEC1002ServiceHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="MDOEC1002Service">
+    <wsdl:port name="MDOEC1002ServiceSoap" binding="tns:MDOEC1002ServiceSoap">
+      <soap:address location="http://saodesa.corpbanca.cl:8900/2010/webservice/Leasing/MDOEC1002.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MDOEC1002ServiceHttpPost" binding="tns:MDOEC1002ServiceHttpPost">
+      <http:address location="http://saodesa.corpbanca.cl:8900/2010/webservice/Leasing/MDOEC1002.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

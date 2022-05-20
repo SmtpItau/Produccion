@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="OPERACIONES" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="OPERACIONES" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="OPERACIONES">
+      <s:element name="Actualizar_Operaciones_A_Ticket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Ticket" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumeroOperacion" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sistema" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="correlativoIngresoIBS" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Actualizar_Operaciones_A_TicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="STREAM" type="tns:Return_XML_Status" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Return_XML_Status">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Header" type="tns:Header" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Return_SP" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOG" type="tns:LOG_APLICACION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Header">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FLAG" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Return_SP">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Retorno" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_APLICACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_APLICACION" type="tns:ArrayOfLOG_ERRORES_APLICACION" />
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_CONEXION" type="tns:ArrayOfLOG_CONEXION" />
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_DATA" type="tns:ArrayOfLOG_EVENTOS_DATA" />
+          <s:element minOccurs="0" maxOccurs="1" name="EVENTO_SQL_EXCEPTION" type="tns:ArrayOfLOG_SQL_EXCEPTION" />
+          <s:element minOccurs="0" maxOccurs="1" name="RETURN_VALUE" type="tns:ArrayOfLOG_RETURN_VALUE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_ERRORES_APLICACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_ERRORES_APLICACION" nillable="true" type="tns:LOG_ERRORES_APLICACION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_ERRORES_APLICACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="HORA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LINEA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="METODO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CLASE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_CONEXION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_CONEXION" nillable="true" type="tns:LOG_CONEXION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_CONEXION">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERVIDOR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BASE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HORA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_EVENTOS_DATA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_EVENTOS_DATA" nillable="true" type="tns:LOG_EVENTOS_DATA" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_EVENTOS_DATA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MENSAJE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_SQL_EXCEPTION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_SQL_EXCEPTION" nillable="true" type="tns:LOG_SQL_EXCEPTION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_SQL_EXCEPTION">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ERROR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLOG_RETURN_VALUE">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LOG_RETURN_VALUE" nillable="true" type="tns:LOG_RETURN_VALUE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LOG_RETURN_VALUE">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RETORNO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RESULTADOS" nillable="true" type="tns:Return_XML_Status" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Actualizar_Operaciones_A_TicketSoapIn">
+    <wsdl:part name="parameters" element="tns:Actualizar_Operaciones_A_Ticket" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_Operaciones_A_TicketSoapOut">
+    <wsdl:part name="parameters" element="tns:Actualizar_Operaciones_A_TicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_Operaciones_A_TicketHttpGetIn">
+    <wsdl:part name="Ticket" type="s:string" />
+    <wsdl:part name="NumeroOperacion" type="s:string" />
+    <wsdl:part name="Sistema" type="s:string" />
+    <wsdl:part name="correlativoIngresoIBS" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_Operaciones_A_TicketHttpGetOut">
+    <wsdl:part name="Body" element="tns:RESULTADOS" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_Operaciones_A_TicketHttpPostIn">
+    <wsdl:part name="Ticket" type="s:string" />
+    <wsdl:part name="NumeroOperacion" type="s:string" />
+    <wsdl:part name="Sistema" type="s:string" />
+    <wsdl:part name="correlativoIngresoIBS" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Actualizar_Operaciones_A_TicketHttpPostOut">
+    <wsdl:part name="Body" element="tns:RESULTADOS" />
+  </wsdl:message>
+  <wsdl:portType name="WSOperacionesSoap">
+    <wsdl:operation name="Actualizar_Operaciones_A_Ticket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualizar de Operaciones con Ticket</wsdl:documentation>
+      <wsdl:input message="tns:Actualizar_Operaciones_A_TicketSoapIn" />
+      <wsdl:output message="tns:Actualizar_Operaciones_A_TicketSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSOperacionesHttpGet">
+    <wsdl:operation name="Actualizar_Operaciones_A_Ticket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualizar de Operaciones con Ticket</wsdl:documentation>
+      <wsdl:input message="tns:Actualizar_Operaciones_A_TicketHttpGetIn" />
+      <wsdl:output message="tns:Actualizar_Operaciones_A_TicketHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSOperacionesHttpPost">
+    <wsdl:operation name="Actualizar_Operaciones_A_Ticket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualizar de Operaciones con Ticket</wsdl:documentation>
+      <wsdl:input message="tns:Actualizar_Operaciones_A_TicketHttpPostIn" />
+      <wsdl:output message="tns:Actualizar_Operaciones_A_TicketHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSOperacionesSoap" type="tns:WSOperacionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Actualizar_Operaciones_A_Ticket">
+      <soap:operation soapAction="OPERACIONES/Actualizar_Operaciones_A_Ticket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSOperacionesSoap12" type="tns:WSOperacionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Actualizar_Operaciones_A_Ticket">
+      <soap12:operation soapAction="OPERACIONES/Actualizar_Operaciones_A_Ticket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSOperacionesHttpGet" type="tns:WSOperacionesHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Actualizar_Operaciones_A_Ticket">
+      <http:operation location="/Actualizar_Operaciones_A_Ticket" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSOperacionesHttpPost" type="tns:WSOperacionesHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Actualizar_Operaciones_A_Ticket">
+      <http:operation location="/Actualizar_Operaciones_A_Ticket" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSOperaciones">
+    <wsdl:port name="WSOperacionesSoap" binding="tns:WSOperacionesSoap">
+      <soap:address location="http://172.18.55.24:9998/WSOperaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSOperacionesSoap12" binding="tns:WSOperacionesSoap12">
+      <soap12:address location="http://172.18.55.24:9998/WSOperaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSOperacionesHttpGet" binding="tns:WSOperacionesHttpGet">
+      <http:address location="http://172.18.55.24:9998/WSOperaciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSOperacionesHttpPost" binding="tns:WSOperacionesHttpPost">
+      <http:address location="http://172.18.55.24:9998/WSOperaciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

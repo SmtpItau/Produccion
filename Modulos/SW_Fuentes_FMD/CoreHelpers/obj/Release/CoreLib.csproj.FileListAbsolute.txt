@@ -1,0 +1,19 @@
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\bin\Release\CoreLib.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\bin\Release\CoreLib.pdb
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\bin\Release\EPPlus.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\obj\Release\ResolveAssemblyReference.cache
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\obj\Release\CoreLib.dll
+\\certapps048\Homologación\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\obj\Release\CoreLib.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\bin\Release\CoreLib.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\bin\Release\CoreLib.pdb
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\bin\Release\EPPlus.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\bin\Release\EPPlus.xml
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\obj\Release\ResolveAssemblyReference.cache
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\obj\Release\CoreLib.dll
+Z:\INSTALACIONES PROYECTO FUSION\1. INSTALACIONES BANCO\24782\3.- Certificacion\V.Net\FMD\CoreHelpers\obj\Release\CoreLib.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreHelpers\bin\Release\CoreLib.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreHelpers\bin\Release\CoreLib.pdb
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreHelpers\bin\Release\EPPlus.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreHelpers\bin\Release\EPPlus.xml
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreHelpers\obj\Release\CoreLib.dll
+D:\Bancos\ITAU\3_Victor\SW_Fuentes_FMD\CoreHelpers\obj\Release\CoreLib.pdb

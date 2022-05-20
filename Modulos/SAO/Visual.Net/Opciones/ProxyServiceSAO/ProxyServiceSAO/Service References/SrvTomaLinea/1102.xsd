@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:Q1="http://itau.cl/xmlns/xsd/1" xmlns:Q2="http://www.example.org/BaseCurAmt_Type-1.0.0" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd99" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd100" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd101" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd14" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd15" />
+  <xsd:complexType name="ForExQuoteInfo_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="BaseCurAmt" type="Q1:BaseCurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ContraCurAmt" type="Q1:ContraCurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BaseActMDMAmt" type="Q1:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BasePasMDMAmt" type="Q1:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BaseNetMDMAmt" type="Q1:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FundingMethod" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BaseCurCode" type="Q1:CurCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BidOffer" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BuyCurAmt" type="Q1:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BuySellIndicator" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ChangeCodeValue" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ForExQuoteType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="HomeCurAmt" type="Q1:HomeCurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SalCurAmt" type="Q1:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TranDt" type="xsd:date" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

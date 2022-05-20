@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetSetPreciosConSpot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fechaProceso" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="Spot" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="parMon" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nemoMonSpot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idCurvasMonedasXML" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enuSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSetPreciosConSpotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSetPreciosConSpotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSetPrecios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fechaProceso" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="parMon" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nemoMonSpot" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idCurvasMonedasXML" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enuSetPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSetPreciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSetPreciosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDetContratoFixing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fechaContrato" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaDeProcesoSistema" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDetContratoFixingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDetContratoFixingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValorizarCartera">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DetContraToAndFixingData" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetdePrecios" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValorizarCarteraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValorizarCarteraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sensibilidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DetContratoAndFixingData" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetdePrecios" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="MTM_Totalizador" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SensibilidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SensibilidadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopologiaVega">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BsSpotBsFwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DetContraToAndFixingData" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaSetdePrecios" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="MTM_Totalizador" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrfly_callput" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setPricing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopologiaVegaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopologiaVegaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InterpVol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FechaVal" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="plazo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="paridad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Spot" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="Strike" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="CurvaDom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CurvaFor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SetPrecios" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InterpVolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InterpVolResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcularLCR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="_NumeroContrato" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="_Operacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcularLCRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalcularLCRResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="double" type="s:double" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSetPreciosConSpotSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSetPreciosConSpot" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosConSpotSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSetPreciosConSpotResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSetPrecios" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSetPreciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDetContratoFixingSoapIn">
+    <wsdl:part name="parameters" element="tns:getDetContratoFixing" />
+  </wsdl:message>
+  <wsdl:message name="getDetContratoFixingSoapOut">
+    <wsdl:part name="parameters" element="tns:getDetContratoFixingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValorizarCarteraSoapIn">
+    <wsdl:part name="parameters" element="tns:ValorizarCartera" />
+  </wsdl:message>
+  <wsdl:message name="ValorizarCarteraSoapOut">
+    <wsdl:part name="parameters" element="tns:ValorizarCarteraResponse" />
+  </wsdl:message>
+  <wsdl:message name="SensibilidadSoapIn">
+    <wsdl:part name="parameters" element="tns:Sensibilidad" />
+  </wsdl:message>
+  <wsdl:message name="SensibilidadSoapOut">
+    <wsdl:part name="parameters" element="tns:SensibilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TopologiaVegaSoapIn">
+    <wsdl:part name="parameters" element="tns:TopologiaVega" />
+  </wsdl:message>
+  <wsdl:message name="TopologiaVegaSoapOut">
+    <wsdl:part name="parameters" element="tns:TopologiaVegaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InterpVolSoapIn">
+    <wsdl:part name="parameters" element="tns:InterpVol" />
+  </wsdl:message>
+  <wsdl:message name="InterpVolSoapOut">
+    <wsdl:part name="parameters" element="tns:InterpVolResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalcularLCRSoapIn">
+    <wsdl:part name="parameters" element="tns:CalcularLCR" />
+  </wsdl:message>
+  <wsdl:message name="CalcularLCRSoapOut">
+    <wsdl:part name="parameters" element="tns:CalcularLCRResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosConSpotHttpGetIn">
+    <wsdl:part name="fechaProceso" type="s:string" />
+    <wsdl:part name="Spot" type="s:string" />
+    <wsdl:part name="parMon" type="s:string" />
+    <wsdl:part name="nemoMonSpot" type="s:string" />
+    <wsdl:part name="idCurvasMonedasXML" type="s:string" />
+    <wsdl:part name="enuSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosConSpotHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosHttpGetIn">
+    <wsdl:part name="fechaProceso" type="s:string" />
+    <wsdl:part name="parMon" type="s:string" />
+    <wsdl:part name="nemoMonSpot" type="s:string" />
+    <wsdl:part name="idCurvasMonedasXML" type="s:string" />
+    <wsdl:part name="enuSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDetContratoFixingHttpGetIn">
+    <wsdl:part name="fechaContrato" type="s:string" />
+    <wsdl:part name="Estado" type="s:string" />
+    <wsdl:part name="fechaDeProcesoSistema" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDetContratoFixingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValorizarCarteraHttpGetIn">
+    <wsdl:part name="DetContraToAndFixingData" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValorizarCarteraHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SensibilidadHttpGetIn">
+    <wsdl:part name="DetContratoAndFixingData" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+    <wsdl:part name="MTM_Totalizador" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SensibilidadHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TopologiaVegaHttpGetIn">
+    <wsdl:part name="BsSpotBsFwd" type="s:string" />
+    <wsdl:part name="DetContraToAndFixingData" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+    <wsdl:part name="MTM_Totalizador" type="s:string" />
+    <wsdl:part name="rrfly_callput" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TopologiaVegaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InterpVolHttpGetIn">
+    <wsdl:part name="FechaVal" type="s:string" />
+    <wsdl:part name="plazo" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="Spot" type="s:string" />
+    <wsdl:part name="Strike" type="s:string" />
+    <wsdl:part name="CurvaDom" type="s:string" />
+    <wsdl:part name="CurvaFor" type="s:string" />
+    <wsdl:part name="SetPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InterpVolHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="CalcularLCRHttpGetIn">
+    <wsdl:part name="_NumeroContrato" type="s:string" />
+    <wsdl:part name="_Operacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CalcularLCRHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosConSpotHttpPostIn">
+    <wsdl:part name="fechaProceso" type="s:string" />
+    <wsdl:part name="Spot" type="s:string" />
+    <wsdl:part name="parMon" type="s:string" />
+    <wsdl:part name="nemoMonSpot" type="s:string" />
+    <wsdl:part name="idCurvasMonedasXML" type="s:string" />
+    <wsdl:part name="enuSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosConSpotHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosHttpPostIn">
+    <wsdl:part name="fechaProceso" type="s:string" />
+    <wsdl:part name="parMon" type="s:string" />
+    <wsdl:part name="nemoMonSpot" type="s:string" />
+    <wsdl:part name="idCurvasMonedasXML" type="s:string" />
+    <wsdl:part name="enuSetPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSetPreciosHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDetContratoFixingHttpPostIn">
+    <wsdl:part name="fechaContrato" type="s:string" />
+    <wsdl:part name="Estado" type="s:string" />
+    <wsdl:part name="fechaDeProcesoSistema" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDetContratoFixingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValorizarCarteraHttpPostIn">
+    <wsdl:part name="DetContraToAndFixingData" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValorizarCarteraHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SensibilidadHttpPostIn">
+    <wsdl:part name="DetContratoAndFixingData" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+    <wsdl:part name="MTM_Totalizador" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SensibilidadHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TopologiaVegaHttpPostIn">
+    <wsdl:part name="BsSpotBsFwd" type="s:string" />
+    <wsdl:part name="DetContraToAndFixingData" type="s:string" />
+    <wsdl:part name="FechaSetdePrecios" type="s:string" />
+    <wsdl:part name="MTM_Totalizador" type="s:string" />
+    <wsdl:part name="rrfly_callput" type="s:string" />
+    <wsdl:part name="setPricing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TopologiaVegaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InterpVolHttpPostIn">
+    <wsdl:part name="FechaVal" type="s:string" />
+    <wsdl:part name="plazo" type="s:string" />
+    <wsdl:part name="paridad" type="s:string" />
+    <wsdl:part name="Spot" type="s:string" />
+    <wsdl:part name="Strike" type="s:string" />
+    <wsdl:part name="CurvaDom" type="s:string" />
+    <wsdl:part name="CurvaFor" type="s:string" />
+    <wsdl:part name="SetPrecios" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InterpVolHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="CalcularLCRHttpPostIn">
+    <wsdl:part name="_NumeroContrato" type="s:string" />
+    <wsdl:part name="_Operacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CalcularLCRHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="SrvValorizadorCarteraSoap">
+    <wsdl:operation name="GetSetPreciosConSpot">
+      <wsdl:input message="tns:GetSetPreciosConSpotSoapIn" />
+      <wsdl:output message="tns:GetSetPreciosConSpotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSetPrecios">
+      <wsdl:input message="tns:GetSetPreciosSoapIn" />
+      <wsdl:output message="tns:GetSetPreciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDetContratoFixing">
+      <wsdl:input message="tns:getDetContratoFixingSoapIn" />
+      <wsdl:output message="tns:getDetContratoFixingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValorizarCartera">
+      <wsdl:input message="tns:ValorizarCarteraSoapIn" />
+      <wsdl:output message="tns:ValorizarCarteraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sensibilidad">
+      <wsdl:input message="tns:SensibilidadSoapIn" />
+      <wsdl:output message="tns:SensibilidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopologiaVega">
+      <wsdl:input message="tns:TopologiaVegaSoapIn" />
+      <wsdl:output message="tns:TopologiaVegaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterpVol">
+      <wsdl:input message="tns:InterpVolSoapIn" />
+      <wsdl:output message="tns:InterpVolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalcularLCR">
+      <wsdl:input message="tns:CalcularLCRSoapIn" />
+      <wsdl:output message="tns:CalcularLCRSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvValorizadorCarteraHttpGet">
+    <wsdl:operation name="GetSetPreciosConSpot">
+      <wsdl:input message="tns:GetSetPreciosConSpotHttpGetIn" />
+      <wsdl:output message="tns:GetSetPreciosConSpotHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSetPrecios">
+      <wsdl:input message="tns:GetSetPreciosHttpGetIn" />
+      <wsdl:output message="tns:GetSetPreciosHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDetContratoFixing">
+      <wsdl:input message="tns:getDetContratoFixingHttpGetIn" />
+      <wsdl:output message="tns:getDetContratoFixingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValorizarCartera">
+      <wsdl:input message="tns:ValorizarCarteraHttpGetIn" />
+      <wsdl:output message="tns:ValorizarCarteraHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sensibilidad">
+      <wsdl:input message="tns:SensibilidadHttpGetIn" />
+      <wsdl:output message="tns:SensibilidadHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopologiaVega">
+      <wsdl:input message="tns:TopologiaVegaHttpGetIn" />
+      <wsdl:output message="tns:TopologiaVegaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterpVol">
+      <wsdl:input message="tns:InterpVolHttpGetIn" />
+      <wsdl:output message="tns:InterpVolHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalcularLCR">
+      <wsdl:input message="tns:CalcularLCRHttpGetIn" />
+      <wsdl:output message="tns:CalcularLCRHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SrvValorizadorCarteraHttpPost">
+    <wsdl:operation name="GetSetPreciosConSpot">
+      <wsdl:input message="tns:GetSetPreciosConSpotHttpPostIn" />
+      <wsdl:output message="tns:GetSetPreciosConSpotHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSetPrecios">
+      <wsdl:input message="tns:GetSetPreciosHttpPostIn" />
+      <wsdl:output message="tns:GetSetPreciosHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDetContratoFixing">
+      <wsdl:input message="tns:getDetContratoFixingHttpPostIn" />
+      <wsdl:output message="tns:getDetContratoFixingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValorizarCartera">
+      <wsdl:input message="tns:ValorizarCarteraHttpPostIn" />
+      <wsdl:output message="tns:ValorizarCarteraHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sensibilidad">
+      <wsdl:input message="tns:SensibilidadHttpPostIn" />
+      <wsdl:output message="tns:SensibilidadHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopologiaVega">
+      <wsdl:input message="tns:TopologiaVegaHttpPostIn" />
+      <wsdl:output message="tns:TopologiaVegaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterpVol">
+      <wsdl:input message="tns:InterpVolHttpPostIn" />
+      <wsdl:output message="tns:InterpVolHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalcularLCR">
+      <wsdl:input message="tns:CalcularLCRHttpPostIn" />
+      <wsdl:output message="tns:CalcularLCRHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SrvValorizadorCarteraSoap" type="tns:SrvValorizadorCarteraSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSetPreciosConSpot">
+      <soap:operation soapAction="http://tempuri.org/GetSetPreciosConSpot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSetPrecios">
+      <soap:operation soapAction="http://tempuri.org/GetSetPrecios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetContratoFixing">
+      <soap:operation soapAction="http://tempuri.org/getDetContratoFixing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValorizarCartera">
+      <soap:operation soapAction="http://tempuri.org/ValorizarCartera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sensibilidad">
+      <soap:operation soapAction="http://tempuri.org/Sensibilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopologiaVega">
+      <soap:operation soapAction="http://tempuri.org/TopologiaVega" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterpVol">
+      <soap:operation soapAction="http://tempuri.org/InterpVol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcularLCR">
+      <soap:operation soapAction="http://tempuri.org/CalcularLCR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvValorizadorCarteraSoap12" type="tns:SrvValorizadorCarteraSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSetPreciosConSpot">
+      <soap12:operation soapAction="http://tempuri.org/GetSetPreciosConSpot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSetPrecios">
+      <soap12:operation soapAction="http://tempuri.org/GetSetPrecios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetContratoFixing">
+      <soap12:operation soapAction="http://tempuri.org/getDetContratoFixing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValorizarCartera">
+      <soap12:operation soapAction="http://tempuri.org/ValorizarCartera" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sensibilidad">
+      <soap12:operation soapAction="http://tempuri.org/Sensibilidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopologiaVega">
+      <soap12:operation soapAction="http://tempuri.org/TopologiaVega" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterpVol">
+      <soap12:operation soapAction="http://tempuri.org/InterpVol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcularLCR">
+      <soap12:operation soapAction="http://tempuri.org/CalcularLCR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvValorizadorCarteraHttpGet" type="tns:SrvValorizadorCarteraHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetSetPreciosConSpot">
+      <http:operation location="/GetSetPreciosConSpot" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSetPrecios">
+      <http:operation location="/GetSetPrecios" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetContratoFixing">
+      <http:operation location="/getDetContratoFixing" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValorizarCartera">
+      <http:operation location="/ValorizarCartera" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sensibilidad">
+      <http:operation location="/Sensibilidad" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopologiaVega">
+      <http:operation location="/TopologiaVega" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterpVol">
+      <http:operation location="/InterpVol" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcularLCR">
+      <http:operation location="/CalcularLCR" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SrvValorizadorCarteraHttpPost" type="tns:SrvValorizadorCarteraHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetSetPreciosConSpot">
+      <http:operation location="/GetSetPreciosConSpot" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSetPrecios">
+      <http:operation location="/GetSetPrecios" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetContratoFixing">
+      <http:operation location="/getDetContratoFixing" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValorizarCartera">
+      <http:operation location="/ValorizarCartera" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sensibilidad">
+      <http:operation location="/Sensibilidad" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopologiaVega">
+      <http:operation location="/TopologiaVega" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterpVol">
+      <http:operation location="/InterpVol" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcularLCR">
+      <http:operation location="/CalcularLCR" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SrvValorizadorCartera">
+    <wsdl:port name="SrvValorizadorCarteraSoap" binding="tns:SrvValorizadorCarteraSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/ValoriadorCartera/SrvValorizadorCartera.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvValorizadorCarteraSoap12" binding="tns:SrvValorizadorCarteraSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/ValoriadorCartera/SrvValorizadorCartera.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvValorizadorCarteraHttpGet" binding="tns:SrvValorizadorCarteraHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/ValoriadorCartera/SrvValorizadorCartera.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SrvValorizadorCarteraHttpPost" binding="tns:SrvValorizadorCarteraHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/ValoriadorCartera/SrvValorizadorCartera.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

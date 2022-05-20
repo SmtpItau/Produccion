@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TemplateID="1" TemplateDirection="Output" UseStoreProc="true" AdditionalInfo="false">
+	<DBCatalog>BacParamSuda</DBCatalog>
+	<Name>VMX_BAC_INTEREST</Name>
+	<DataBindingName>VMX06</DataBindingName>
+	<Description>Contiene la interfafaz VMX_BAC_INTEREST.</Description>
+	<TemplateFileName>C:\BaseDirectory\VMX_BAC_INTEREST.xml</TemplateFileName>
+	<ListStoreProcsInfo>
+		<StoreProcsInfo>
+			<DBCatalog>Reportes</DBCatalog>
+			<Direction>Output</Direction>
+			<ConnectionTimeout>120</ConnectionTimeout>
+			<SheetName />
+			<StoreProcName>SP_VM_BAC_INTEREST</StoreProcName>
+		</StoreProcsInfo>
+	</ListStoreProcsInfo>
+	<ListQueryInfo />
+	<ListPlainTextInfo>
+		<PlainTextInfo>
+			<PlainTextDirecction>Output</PlainTextDirecction>
+			<AddressCollection>
+				<PlainTextFieldInfo IsReadOnly="false" RenderAsAttribute="false" CauseValidation="true" DataAddressDirection="Output" MaxWritableRows="-1">
+					<RowPosition>0</RowPosition>
+					<ColumnPosition>0</ColumnPosition>
+					<ColumnTitle>REG_SALIDA</ColumnTitle>
+					<ValueMember>REG_SALIDA</ValueMember>
+					<SheetName>Table1</SheetName>
+					<DataAlign>Right</DataAlign>
+				</PlainTextFieldInfo>
+			</AddressCollection>
+			<MaxRowSize>148</MaxRowSize>
+			<DataOnly>true</DataOnly>
+			<ValueSource>Table1</ValueSource>
+			<ValidateMaxSize>false</ValidateMaxSize>
+		</PlainTextInfo>
+	</ListPlainTextInfo>
+	<IOFileDirection>Output</IOFileDirection>
+	<IOFileNamePattern>
+		<Prefix>VMX_BAC_INTEREST_</Prefix>
+		<Pattern>yyyyMMdd</Pattern>
+		<Suffix />
+		<Extension>.CSV</Extension>
+		<useDatePattern>true</useDatePattern>
+		<useNumericPattern>false</useNumericPattern>
+	</IOFileNamePattern>
+	<IOFileBaseDirectory>\SAT</IOFileBaseDirectory>
+	<IOFileCopyDirectories>
+		<IOFileCopyFolders>
+			<FolderDirection>Output</FolderDirection>
+			<FolderName>\OUT\HIST</FolderName>
+			<MainFolder>false</MainFolder>
+			<CompressedFiles>true</CompressedFiles>
+		</IOFileCopyFolders>
+		<IOFileCopyFolders>
+			<FolderDirection>Output</FolderDirection>
+			<FolderName>\OUT\DAILY</FolderName>
+			<MainFolder>true</MainFolder>
+			<CompressedFiles>false</CompressedFiles>
+		</IOFileCopyFolders>
+	</IOFileCopyDirectories>
+	<useAppFolders>false</useAppFolders>
+	<ListExcelInfo />
+</Template>

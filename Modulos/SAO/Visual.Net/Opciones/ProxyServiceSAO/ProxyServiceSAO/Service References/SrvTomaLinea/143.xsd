@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/common/xsd/1" targetNamespace="http://itau.cl/xmlns/common/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd53" />
+  <xsd:complexType name="Status_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="StatusCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="StatusDesc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ServerStatusCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Severity" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>
+    					Severity: Info Error Warning
+    				</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="AdditionalStatus" type="tns:AdditionalStatus_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

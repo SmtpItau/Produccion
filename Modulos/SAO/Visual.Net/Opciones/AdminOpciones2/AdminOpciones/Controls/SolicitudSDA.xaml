@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="AdminOpciones.Ejercer.SolicitudSDA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Width="326" Height="386"
+             >
+	<UserControl.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FF000000"/>
+			<GradientStop Color="#FFDEECF1" Offset="1"/>
+		</LinearGradientBrush>
+	</UserControl.Background>
+    <Grid x:Name="LayoutRoot" Background="White">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto" MinHeight="374"/>
+    	</Grid.RowDefinitions>
+        <!-- No hace nada...
+        <TextBlock Height="2" HorizontalAlignment="Left" Margin="133,153,0,0" VerticalAlignment="Top" Width="0" Text="TextBlock" TextWrapping="Wrap"/>
+    	<TextBlock Height="0" HorizontalAlignment="Left" Margin="59,97,0,0" VerticalAlignment="Top" Width="0" Text="TextBlock" TextWrapping="Wrap"/>
+    	<TextBox Height="22" HorizontalAlignment="Left" Margin="68,50,0,0" VerticalAlignment="Top" Width="0" Text="" TextWrapping="Wrap"/>
+        <TextBox Height="2" HorizontalAlignment="Left" Margin="32,0,0,135" VerticalAlignment="Bottom" Width="3" Text="TextBox" TextWrapping="Wrap"/>
+        <TextBlock Height="3" HorizontalAlignment="Right" Margin="0,140,50,0" VerticalAlignment="Top" Width="7" RenderTransformOrigin="0.5,0.5" Text="TextBlock" TextWrapping="Wrap">
+    		<TextBlock.RenderTransform>
+    			<TransformGroup>
+    				<ScaleTransform ScaleX="-1"/>
+    				<SkewTransform/>
+    				<RotateTransform/>
+    				<TranslateTransform/>
+    			</TransformGroup>
+    		</TextBlock.RenderTransform>
+    	</TextBlock>
+        -->
+    	<Canvas Margin="7,42,0,0" VerticalAlignment="Top" Height="307" Width="311" HorizontalAlignment="Left" Background="#FFEDF8F8" x:Name="ContCanvas">
+            <!-- Folio -->
+            <TextBlock Height="19" Width="114" Text="Numero Folio" Canvas.Left="15" Canvas.Top="14" TextWrapping="Wrap" x:Name="TblockNumFolio"/>
+            <TextBox Height="22" Width="137" Canvas.Left="134" Canvas.Top="12" Text="" TextWrapping="Wrap" x:Name="TxtNumFolio" KeyDown="TxtNumFolio_KeyDown"/>
+
+            <!-- Contrato -->
+    		<TextBlock Height="19" Width="114" Text="Numero Contrato" TextWrapping="Wrap" Canvas.Left="15" Canvas.Top="42"/>
+            <TextBox Height="22" Width="137" Canvas.Left="134" Canvas.Top="40" Text="" TextWrapping="Wrap" x:Name="TxtNumContrato" KeyDown="TxtNumContrato_KeyDown"/>
+            
+            <!-- Fec. Ingreso -->
+    		<TextBlock Height="19" Width="114" Text="Fecha Ingreso" TextWrapping="Wrap" Canvas.Left="15" Canvas.Top="73"/>
+    		<basics:DatePicker Height="22" Width="137" Canvas.Left="134" Canvas.Top="73" x:Name="DtFechaIngreso" d:IsStaticText="True" FontFamily="Portable User Interface"/>
+    		
+            <!-- Fec. Activación-->
+            <TextBlock Height="19" Width="114" Text="Fecha Activacion" TextWrapping="Wrap" Canvas.Left="15" Canvas.Top="105"/>
+    		<basics:DatePicker Height="22" Width="137" Canvas.Left="134" Canvas.Top="105" x:Name="DtFechaActivacion" LostFocus="DtFechaActivacion_LostFocus" CalendarClosed="DtFechaActivacion_CalendarClosed" KeyDown="DtFechaActivacion_KeyDown"/>
+    		
+            <!-- Monto Anticipo-->
+            <TextBlock Height="19" Width="114" Text="Monto Anticipo" TextWrapping="Wrap" Canvas.Left="15" Canvas.Top="135"/>
+            <TextBox Height="22" Width="137" Canvas.Left="134" Canvas.Top="134" Text="" TextWrapping="Wrap" x:Name="TxtMontoAnticipo" KeyDown="TxtMontoAnticipo_KeyDown"/>
+    		
+            <!-- F. Pago -->
+            <TextBlock Height="19" Width="114" Text="Forma de pago" TextWrapping="Wrap" Canvas.Left="15" Canvas.Top="164"/>
+            <ComboBox Height="22" Width="169" Canvas.Left="134" Canvas.Top="164" x:Name="CmbFormpago"/>
+    		
+            <!-- Tipo Anticipo-->
+            <TextBlock Height="19" Width="114" Text="Tipo anticipo" TextWrapping="Wrap" Canvas.Left="15" Canvas.Top="193"/>
+            <ComboBox Height="22" Width="169" Canvas.Left="134" Canvas.Top="193" x:Name="CmbTipoAnticipo"/>
+
+            <!-- Nominal -->
+            <TextBlock Height="19" Width="114" Text="Nominal" Canvas.Left="15" Canvas.Top="224" TextWrapping="Wrap"/>
+            <TextBox Height="22" Width="137" Canvas.Left="134" Canvas.Top="222" VerticalAlignment="Bottom" Text="" TextWrapping="Wrap" x:Name="TxtNominal" />
+            
+            <!-- Total Solicitud-->
+            <TextBlock Height="19" Width="114" Canvas.Left="15" Canvas.Top="250" Text="Total Solicitud" TextWrapping="Wrap"/>
+            <TextBox Height="22" Width="137" Canvas.Left="134" Canvas.Top="250" Text="" TextWrapping="Wrap" x:Name="TxtSumaSolicitud"/>
+            
+            <!-- Vencimiento -->
+            <TextBlock Height="19" Width="114" Text="Venc. Contrato" Canvas.Left="15" Canvas.Top="280" TextWrapping="Wrap"/>
+            <basics:DatePicker Height="22" Width="137" Canvas.Left="134" Canvas.Top="279" x:Name="DtFechaVencimiento"/>
+    	</Canvas>
+        
+    	<Canvas Height="38" VerticalAlignment="Top" Background="#FF0A82C5" HorizontalAlignment="Right" Width="327" Margin="0,0,-1,0"/>
+    	<TextBlock Height="38" VerticalAlignment="Top" Text="Ingreso SDA" TextWrapping="Wrap" Width="336" HorizontalAlignment="Left" FontSize="16" FontWeight="Bold" FontFamily="Portable User Interface" TextAlignment="Center" Foreground="#FFFFFFFF" Margin="0,12,0,0"/>
+    	<Button Height="25" HorizontalAlignment="Left" Margin="7,0,0,-4" VerticalAlignment="Bottom" Width="100" Content="Aceptar" x:Name="btnAceptarGuardar" Click="Event_btnAceptarGuardar_Click"/>
+    	<Button Height="25" Margin="112,0,114,-4" VerticalAlignment="Bottom" Content="Cancerlar" x:Name="btnCancelarGuardar" Click="event_btnCancelar_Click"/>
+        <Button Height="25" HorizontalAlignment="Right" Margin="0,0,8,-4" VerticalAlignment="Bottom" Width="102" Content="Modificar" x:Name="BtnModificar" Click="Event_BtnModificar_Click"/>
+        
+        <!-- Movido al canvas
+        <TextBlock Height="16" Width="95.643" Text="Numero Folio" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="22,56,0,0" VerticalAlignment="Top" x:Name="TblockNumFolio" d:LayoutOverrides="Width"/>
+        <TextBlock Height="19" HorizontalAlignment="Left" Margin="22,0,0,89" VerticalAlignment="Bottom" Width="77" Text="Nominal" TextWrapping="Wrap"/>
+        <TextBlock Height="16" HorizontalAlignment="Left" Margin="22,0,0,36" VerticalAlignment="Bottom" Width="86" Text="Venc. Contrato" TextWrapping="Wrap"/>
+    	<TextBox Height="22" Margin="141,0,50,86" VerticalAlignment="Bottom" Text="" TextWrapping="Wrap" x:Name="TxtNominal" Width="130"/>
+        -->
+    </Grid>
+</UserControl>

@@ -1,0 +1,69 @@
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Tool.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Tool.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cData.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cFinancialTools.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\FFTWDLL.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\GSLDLL.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Jacques.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cConnectionDB.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\AdminOpcionesEncript.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Data.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Definitions.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Connect.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cData.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cFinancialTools.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Jacques.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cConnectionDB.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\AdminOpcionesEncript.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Data.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Definitions.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Connect.pdb
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\ResolveAssemblyReference.cache
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\Turing2009Tool.dll
+V:\1 - Banco\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\Turing2009Tool.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Tool.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Tool.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cData.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cFinancialTools.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\FFTWDLL.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\GSLDLL.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Jacques.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cConnectionDB.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\AdminOpcionesEncript.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Data.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Definitions.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Connect.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cData.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cFinancialTools.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Jacques.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cConnectionDB.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\AdminOpcionesEncript.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Data.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Definitions.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Connect.pdb
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\ResolveAssemblyReference.cache
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\Turing2009Tool.dll
+V:\1. INSTALACIONES BANCO\20975\3.- Certificacion\Fuentes\Visual.Net\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\Turing2009Tool.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Tool.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Tool.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cData.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cFinancialTools.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\FFTWDLL.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\GSLDLL.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Jacques.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cConnectionDB.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\AdminOpcionesEncript.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Data.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Definitions.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Connect.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cData.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cFinancialTools.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Jacques.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\cConnectionDB.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\AdminOpcionesEncript.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Data.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Definitions.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\bin\Release\Turing2009Connect.pdb
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\ResolveAssemblyReference.cache
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\Turing2009Tool.dll
+C:\DEPLOY_LOCAL\20975\Opciones\AdminOpciones2\AdminOpcionesTool\obj\Release\Turing2009Tool.pdb

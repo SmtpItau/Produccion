@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="InsuranceFinancialAmt_Type">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="Amt" type="double" />
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidaLeasingACLSC1001">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RutCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroLeasing" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroGrupoBien" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MontoBien" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaLeasingACLSC1001Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidaLeasingACLSC1001Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultaLeasingACLSC1002">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultaLeasingACLSC1002Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultaLeasingACLSC1002Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidaLeasingACLSC1001SoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaLeasingACLSC1001" />
+  </wsdl:message>
+  <wsdl:message name="ValidaLeasingACLSC1001SoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaLeasingACLSC1001Response" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeasingACLSC1002SoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultaLeasingACLSC1002" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeasingACLSC1002SoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultaLeasingACLSC1002Response" />
+  </wsdl:message>
+  <wsdl:message name="ValidaLeasingACLSC1001HttpGetIn">
+    <wsdl:part name="RutCliente" type="s:string" />
+    <wsdl:part name="NumeroLeasing" type="s:string" />
+    <wsdl:part name="NumeroGrupoBien" type="s:string" />
+    <wsdl:part name="MontoBien" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaLeasingACLSC1001HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeasingACLSC1002HttpGetIn" />
+  <wsdl:message name="ConsultaLeasingACLSC1002HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaLeasingACLSC1001HttpPostIn">
+    <wsdl:part name="RutCliente" type="s:string" />
+    <wsdl:part name="NumeroLeasing" type="s:string" />
+    <wsdl:part name="NumeroGrupoBien" type="s:string" />
+    <wsdl:part name="MontoBien" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaLeasingACLSC1001HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultaLeasingACLSC1002HttpPostIn" />
+  <wsdl:message name="ConsultaLeasingACLSC1002HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="LeasingSoap">
+    <wsdl:operation name="ValidaLeasingACLSC1001">
+      <wsdl:input message="tns:ValidaLeasingACLSC1001SoapIn" />
+      <wsdl:output message="tns:ValidaLeasingACLSC1001SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeasingACLSC1002">
+      <wsdl:input message="tns:ConsultaLeasingACLSC1002SoapIn" />
+      <wsdl:output message="tns:ConsultaLeasingACLSC1002SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="LeasingHttpGet">
+    <wsdl:operation name="ValidaLeasingACLSC1001">
+      <wsdl:input message="tns:ValidaLeasingACLSC1001HttpGetIn" />
+      <wsdl:output message="tns:ValidaLeasingACLSC1001HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeasingACLSC1002">
+      <wsdl:input message="tns:ConsultaLeasingACLSC1002HttpGetIn" />
+      <wsdl:output message="tns:ConsultaLeasingACLSC1002HttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="LeasingHttpPost">
+    <wsdl:operation name="ValidaLeasingACLSC1001">
+      <wsdl:input message="tns:ValidaLeasingACLSC1001HttpPostIn" />
+      <wsdl:output message="tns:ValidaLeasingACLSC1001HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeasingACLSC1002">
+      <wsdl:input message="tns:ConsultaLeasingACLSC1002HttpPostIn" />
+      <wsdl:output message="tns:ConsultaLeasingACLSC1002HttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LeasingSoap" type="tns:LeasingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidaLeasingACLSC1001">
+      <soap:operation soapAction="http://tempuri.org/ValidaLeasingACLSC1001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeasingACLSC1002">
+      <soap:operation soapAction="http://tempuri.org/ConsultaLeasingACLSC1002" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LeasingSoap12" type="tns:LeasingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidaLeasingACLSC1001">
+      <soap12:operation soapAction="http://tempuri.org/ValidaLeasingACLSC1001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeasingACLSC1002">
+      <soap12:operation soapAction="http://tempuri.org/ConsultaLeasingACLSC1002" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LeasingHttpGet" type="tns:LeasingHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ValidaLeasingACLSC1001">
+      <http:operation location="/ValidaLeasingACLSC1001" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeasingACLSC1002">
+      <http:operation location="/ConsultaLeasingACLSC1002" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LeasingHttpPost" type="tns:LeasingHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ValidaLeasingACLSC1001">
+      <http:operation location="/ValidaLeasingACLSC1001" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLeasingACLSC1002">
+      <http:operation location="/ConsultaLeasingACLSC1002" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Leasing">
+    <wsdl:port name="LeasingSoap" binding="tns:LeasingSoap">
+      <soap:address location="http://localhost:4084/WebService/OpcionesFX/LeasingFwdAmericano/Leasing.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LeasingSoap12" binding="tns:LeasingSoap12">
+      <soap12:address location="http://localhost:4084/WebService/OpcionesFX/LeasingFwdAmericano/Leasing.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LeasingHttpGet" binding="tns:LeasingHttpGet">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/LeasingFwdAmericano/Leasing.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LeasingHttpPost" binding="tns:LeasingHttpPost">
+      <http:address location="http://localhost:4084/WebService/OpcionesFX/LeasingFwdAmericano/Leasing.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ActualizaMoEnc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ListNumFolio" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ActualizaMoEncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaMoEncResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaCaEnc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ListNumContrato" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaCaEncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaCaEncResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaInicioDia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaproxap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaInicioDiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaInicioDiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificaCotiza">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numcontrato" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numcotizacion" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificaCotizaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModificaCotizaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeshaceAnticipo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numcontrato" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numfolio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeshaceAnticipoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeshaceAnticipoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaFinDia">
+        <s:complexType />
+      </s:element>
+      <s:element name="ActualizaFinDiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaFinDiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaParam">
+        <s:complexType />
+      </s:element>
+      <s:element name="ActualizaParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaParamResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaSumaVertical">
+        <s:complexType />
+      </s:element>
+      <s:element name="ActualizaSumaVerticalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaSumaVerticalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaCierreMesa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaCierreMesaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaCierreMesaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ListNumContrato" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaEstadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFix">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ListaFix" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFixResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertFixResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCondiciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_ListaCond" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCondicionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertCondicionesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaEstadoDecisionEj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_Lista" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaEstadoDecisionEjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaEstadoDecisionEjResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertImpresion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertImpresionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertImpresionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLogAuditoria">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLogAuditoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertLogAuditoriaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaFormaPagoCompensacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numeroContrato" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroEstructura" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="origen" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="formaPago" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaFormaPagoCompensacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaFormaPagoCompensacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaFormaPagoEntregaFisica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numeroContrato" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroEstructura" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="formaPagoPagar" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="formaPagoRecibir" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizaFormaPagoEntregaFisicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ActualizaFormaPagoEntregaFisicaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValuator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dateProcess" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValuatorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckValuatorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveLogAuditoria">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FechaProceso" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="terminal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigomenu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoevento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="detalletransaccion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveLogAuditoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveLogAuditoriaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveSolicitudSDA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumContrato" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaIngreso" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FecActivacion" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="MontoAnticipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FormaPago" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoAnticipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveSolicitudSDAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveSolicitudSDAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnticipaOpConSDA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaproxap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnticipaOpConSDAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnticipaOpConSDAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaSDA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumContrato" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaActivacion" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumFolio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaSDAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidaSDAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnulaSDA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumContrato" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumFolio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnulaSDAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnulaSDAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificaSolicitudSDA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NumFolio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumContrato" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaIngreso" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="FecActivacion" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="MontoAnticipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FormaPago" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoAnticipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificaSolicitudSDAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModificaSolicitudSDAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GrabaListaLeasing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArrayLeasing" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaProceso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GrabaListaLeasingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GrabaListaLeasingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaFechaListaLeasing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FechaProceso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaFechaListaLeasingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidaFechaListaLeasingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ActualizaMoEncSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaMoEnc" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaMoEncSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaMoEncResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCaEncSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaCaEnc" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCaEncSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaCaEncResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaInicioDiaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaInicioDia" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaInicioDiaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaInicioDiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModificaCotizaSoapIn">
+    <wsdl:part name="parameters" element="tns:ModificaCotiza" />
+  </wsdl:message>
+  <wsdl:message name="ModificaCotizaSoapOut">
+    <wsdl:part name="parameters" element="tns:ModificaCotizaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeshaceAnticipoSoapIn">
+    <wsdl:part name="parameters" element="tns:DeshaceAnticipo" />
+  </wsdl:message>
+  <wsdl:message name="DeshaceAnticipoSoapOut">
+    <wsdl:part name="parameters" element="tns:DeshaceAnticipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFinDiaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaFinDia" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFinDiaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaFinDiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaParamSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaParam" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaParamSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaSumaVerticalSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaSumaVertical" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaSumaVerticalSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaSumaVerticalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCierreMesaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaCierreMesa" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCierreMesaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaCierreMesaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaEstado" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertFixSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertFix" />
+  </wsdl:message>
+  <wsdl:message name="InsertFixSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertFixResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCondicionesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCondiciones" />
+  </wsdl:message>
+  <wsdl:message name="InsertCondicionesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCondicionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaEstadoDecisionEjSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaEstadoDecisionEj" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaEstadoDecisionEjSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaEstadoDecisionEjResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertImpresionSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertImpresion" />
+  </wsdl:message>
+  <wsdl:message name="InsertImpresionSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertImpresionResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogAuditoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertLogAuditoria" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogAuditoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertLogAuditoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoCompensacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaFormaPagoCompensacion" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoCompensacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaFormaPagoCompensacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoEntregaFisicaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizaFormaPagoEntregaFisica" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoEntregaFisicaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizaFormaPagoEntregaFisicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckValuatorSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckValuator" />
+  </wsdl:message>
+  <wsdl:message name="CheckValuatorSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckValuatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveLogAuditoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveLogAuditoria" />
+  </wsdl:message>
+  <wsdl:message name="SaveLogAuditoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveLogAuditoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveSolicitudSDASoapIn">
+    <wsdl:part name="parameters" element="tns:SaveSolicitudSDA" />
+  </wsdl:message>
+  <wsdl:message name="SaveSolicitudSDASoapOut">
+    <wsdl:part name="parameters" element="tns:SaveSolicitudSDAResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaOpConSDASoapIn">
+    <wsdl:part name="parameters" element="tns:AnticipaOpConSDA" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaOpConSDASoapOut">
+    <wsdl:part name="parameters" element="tns:AnticipaOpConSDAResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidaSDASoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaSDA" />
+  </wsdl:message>
+  <wsdl:message name="ValidaSDASoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaSDAResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnulaSDASoapIn">
+    <wsdl:part name="parameters" element="tns:AnulaSDA" />
+  </wsdl:message>
+  <wsdl:message name="AnulaSDASoapOut">
+    <wsdl:part name="parameters" element="tns:AnulaSDAResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModificaSolicitudSDASoapIn">
+    <wsdl:part name="parameters" element="tns:ModificaSolicitudSDA" />
+  </wsdl:message>
+  <wsdl:message name="ModificaSolicitudSDASoapOut">
+    <wsdl:part name="parameters" element="tns:ModificaSolicitudSDAResponse" />
+  </wsdl:message>
+  <wsdl:message name="GrabaListaLeasingSoapIn">
+    <wsdl:part name="parameters" element="tns:GrabaListaLeasing" />
+  </wsdl:message>
+  <wsdl:message name="GrabaListaLeasingSoapOut">
+    <wsdl:part name="parameters" element="tns:GrabaListaLeasingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidaFechaListaLeasingSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaFechaListaLeasing" />
+  </wsdl:message>
+  <wsdl:message name="ValidaFechaListaLeasingSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaFechaListaLeasingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaInicioDiaHttpGetIn">
+    <wsdl:part name="fechaap" type="s:string" />
+    <wsdl:part name="fechaproxap" type="s:string" />
+    <wsdl:part name="user" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaInicioDiaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaCotizaHttpGetIn">
+    <wsdl:part name="numcontrato" type="s:string" />
+    <wsdl:part name="numcotizacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaCotizaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeshaceAnticipoHttpGetIn">
+    <wsdl:part name="numcontrato" type="s:string" />
+    <wsdl:part name="numfolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeshaceAnticipoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFinDiaHttpGetIn" />
+  <wsdl:message name="ActualizaFinDiaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaParamHttpGetIn" />
+  <wsdl:message name="ActualizaParamHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaSumaVerticalHttpGetIn" />
+  <wsdl:message name="ActualizaSumaVerticalHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCierreMesaHttpGetIn">
+    <wsdl:part name="usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCierreMesaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertImpresionHttpGetIn">
+    <wsdl:part name="xmlValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertImpresionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogAuditoriaHttpGetIn">
+    <wsdl:part name="xmlValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogAuditoriaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoCompensacionHttpGetIn">
+    <wsdl:part name="numeroContrato" type="s:string" />
+    <wsdl:part name="numeroEstructura" type="s:string" />
+    <wsdl:part name="origen" type="s:string" />
+    <wsdl:part name="formaPago" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoCompensacionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoEntregaFisicaHttpGetIn">
+    <wsdl:part name="numeroContrato" type="s:string" />
+    <wsdl:part name="numeroEstructura" type="s:string" />
+    <wsdl:part name="formaPagoPagar" type="s:string" />
+    <wsdl:part name="formaPagoRecibir" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoEntregaFisicaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckValuatorHttpGetIn">
+    <wsdl:part name="dateProcess" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckValuatorHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLogAuditoriaHttpGetIn">
+    <wsdl:part name="FechaProceso" type="s:string" />
+    <wsdl:part name="terminal" type="s:string" />
+    <wsdl:part name="usuario" type="s:string" />
+    <wsdl:part name="codigomenu" type="s:string" />
+    <wsdl:part name="codigoevento" type="s:string" />
+    <wsdl:part name="detalletransaccion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLogAuditoriaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveSolicitudSDAHttpGetIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaIngreso" type="s:string" />
+    <wsdl:part name="FecActivacion" type="s:string" />
+    <wsdl:part name="MontoAnticipo" type="s:string" />
+    <wsdl:part name="FormaPago" type="s:string" />
+    <wsdl:part name="TipoAnticipo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveSolicitudSDAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaOpConSDAHttpGetIn">
+    <wsdl:part name="fechaproxap" type="s:string" />
+    <wsdl:part name="user" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaOpConSDAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaSDAHttpGetIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaActivacion" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaSDAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnulaSDAHttpGetIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnulaSDAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaSolicitudSDAHttpGetIn">
+    <wsdl:part name="NumFolio" type="s:string" />
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaIngreso" type="s:string" />
+    <wsdl:part name="FecActivacion" type="s:string" />
+    <wsdl:part name="MontoAnticipo" type="s:string" />
+    <wsdl:part name="FormaPago" type="s:string" />
+    <wsdl:part name="TipoAnticipo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaSolicitudSDAHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GrabaListaLeasingHttpGetIn">
+    <wsdl:part name="ArrayLeasing" type="s:string" />
+    <wsdl:part name="FechaProceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GrabaListaLeasingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaFechaListaLeasingHttpGetIn">
+    <wsdl:part name="FechaProceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaFechaListaLeasingHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaInicioDiaHttpPostIn">
+    <wsdl:part name="fechaap" type="s:string" />
+    <wsdl:part name="fechaproxap" type="s:string" />
+    <wsdl:part name="user" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaInicioDiaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaCotizaHttpPostIn">
+    <wsdl:part name="numcontrato" type="s:string" />
+    <wsdl:part name="numcotizacion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaCotizaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeshaceAnticipoHttpPostIn">
+    <wsdl:part name="numcontrato" type="s:string" />
+    <wsdl:part name="numfolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeshaceAnticipoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFinDiaHttpPostIn" />
+  <wsdl:message name="ActualizaFinDiaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaParamHttpPostIn" />
+  <wsdl:message name="ActualizaParamHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaSumaVerticalHttpPostIn" />
+  <wsdl:message name="ActualizaSumaVerticalHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCierreMesaHttpPostIn">
+    <wsdl:part name="usuario" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaCierreMesaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertImpresionHttpPostIn">
+    <wsdl:part name="xmlValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertImpresionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogAuditoriaHttpPostIn">
+    <wsdl:part name="xmlValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertLogAuditoriaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoCompensacionHttpPostIn">
+    <wsdl:part name="numeroContrato" type="s:string" />
+    <wsdl:part name="numeroEstructura" type="s:string" />
+    <wsdl:part name="origen" type="s:string" />
+    <wsdl:part name="formaPago" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoCompensacionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoEntregaFisicaHttpPostIn">
+    <wsdl:part name="numeroContrato" type="s:string" />
+    <wsdl:part name="numeroEstructura" type="s:string" />
+    <wsdl:part name="formaPagoPagar" type="s:string" />
+    <wsdl:part name="formaPagoRecibir" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ActualizaFormaPagoEntregaFisicaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckValuatorHttpPostIn">
+    <wsdl:part name="dateProcess" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckValuatorHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLogAuditoriaHttpPostIn">
+    <wsdl:part name="FechaProceso" type="s:string" />
+    <wsdl:part name="terminal" type="s:string" />
+    <wsdl:part name="usuario" type="s:string" />
+    <wsdl:part name="codigomenu" type="s:string" />
+    <wsdl:part name="codigoevento" type="s:string" />
+    <wsdl:part name="detalletransaccion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLogAuditoriaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveSolicitudSDAHttpPostIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaIngreso" type="s:string" />
+    <wsdl:part name="FecActivacion" type="s:string" />
+    <wsdl:part name="MontoAnticipo" type="s:string" />
+    <wsdl:part name="FormaPago" type="s:string" />
+    <wsdl:part name="TipoAnticipo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveSolicitudSDAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaOpConSDAHttpPostIn">
+    <wsdl:part name="fechaproxap" type="s:string" />
+    <wsdl:part name="user" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnticipaOpConSDAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaSDAHttpPostIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaActivacion" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaSDAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AnulaSDAHttpPostIn">
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="NumFolio" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnulaSDAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaSolicitudSDAHttpPostIn">
+    <wsdl:part name="NumFolio" type="s:string" />
+    <wsdl:part name="NumContrato" type="s:string" />
+    <wsdl:part name="FechaIngreso" type="s:string" />
+    <wsdl:part name="FecActivacion" type="s:string" />
+    <wsdl:part name="MontoAnticipo" type="s:string" />
+    <wsdl:part name="FormaPago" type="s:string" />
+    <wsdl:part name="TipoAnticipo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModificaSolicitudSDAHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GrabaListaLeasingHttpPostIn">
+    <wsdl:part name="ArrayLeasing" type="s:string" />
+    <wsdl:part name="FechaProceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GrabaListaLeasingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaFechaListaLeasingHttpPostIn">
+    <wsdl:part name="FechaProceso" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidaFechaListaLeasingHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebAccionesSoap">
+    <wsdl:operation name="ActualizaMoEnc">
+      <wsdl:input message="tns:ActualizaMoEncSoapIn" />
+      <wsdl:output message="tns:ActualizaMoEncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCaEnc">
+      <wsdl:input message="tns:ActualizaCaEncSoapIn" />
+      <wsdl:output message="tns:ActualizaCaEncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaInicioDia">
+      <wsdl:input message="tns:ActualizaInicioDiaSoapIn" />
+      <wsdl:output message="tns:ActualizaInicioDiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaCotiza">
+      <wsdl:input message="tns:ModificaCotizaSoapIn" />
+      <wsdl:output message="tns:ModificaCotizaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeshaceAnticipo">
+      <wsdl:input message="tns:DeshaceAnticipoSoapIn" />
+      <wsdl:output message="tns:DeshaceAnticipoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFinDia">
+      <wsdl:input message="tns:ActualizaFinDiaSoapIn" />
+      <wsdl:output message="tns:ActualizaFinDiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaParam">
+      <wsdl:input message="tns:ActualizaParamSoapIn" />
+      <wsdl:output message="tns:ActualizaParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaSumaVertical">
+      <wsdl:input message="tns:ActualizaSumaVerticalSoapIn" />
+      <wsdl:output message="tns:ActualizaSumaVerticalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCierreMesa">
+      <wsdl:input message="tns:ActualizaCierreMesaSoapIn" />
+      <wsdl:output message="tns:ActualizaCierreMesaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaEstado">
+      <wsdl:input message="tns:ActualizaEstadoSoapIn" />
+      <wsdl:output message="tns:ActualizaEstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFix">
+      <wsdl:input message="tns:InsertFixSoapIn" />
+      <wsdl:output message="tns:InsertFixSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCondiciones">
+      <wsdl:input message="tns:InsertCondicionesSoapIn" />
+      <wsdl:output message="tns:InsertCondicionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaEstadoDecisionEj">
+      <wsdl:input message="tns:ActualizaEstadoDecisionEjSoapIn" />
+      <wsdl:output message="tns:ActualizaEstadoDecisionEjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertImpresion">
+      <wsdl:input message="tns:InsertImpresionSoapIn" />
+      <wsdl:output message="tns:InsertImpresionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogAuditoria">
+      <wsdl:input message="tns:InsertLogAuditoriaSoapIn" />
+      <wsdl:output message="tns:InsertLogAuditoriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoCompensacion">
+      <wsdl:input message="tns:ActualizaFormaPagoCompensacionSoapIn" />
+      <wsdl:output message="tns:ActualizaFormaPagoCompensacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoEntregaFisica">
+      <wsdl:input message="tns:ActualizaFormaPagoEntregaFisicaSoapIn" />
+      <wsdl:output message="tns:ActualizaFormaPagoEntregaFisicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckValuator">
+      <wsdl:input message="tns:CheckValuatorSoapIn" />
+      <wsdl:output message="tns:CheckValuatorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLogAuditoria">
+      <wsdl:input message="tns:SaveLogAuditoriaSoapIn" />
+      <wsdl:output message="tns:SaveLogAuditoriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSolicitudSDA">
+      <wsdl:input message="tns:SaveSolicitudSDASoapIn" />
+      <wsdl:output message="tns:SaveSolicitudSDASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaOpConSDA">
+      <wsdl:input message="tns:AnticipaOpConSDASoapIn" />
+      <wsdl:output message="tns:AnticipaOpConSDASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaSDA">
+      <wsdl:input message="tns:ValidaSDASoapIn" />
+      <wsdl:output message="tns:ValidaSDASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnulaSDA">
+      <wsdl:input message="tns:AnulaSDASoapIn" />
+      <wsdl:output message="tns:AnulaSDASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSolicitudSDA">
+      <wsdl:input message="tns:ModificaSolicitudSDASoapIn" />
+      <wsdl:output message="tns:ModificaSolicitudSDASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GrabaListaLeasing">
+      <wsdl:input message="tns:GrabaListaLeasingSoapIn" />
+      <wsdl:output message="tns:GrabaListaLeasingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaFechaListaLeasing">
+      <wsdl:input message="tns:ValidaFechaListaLeasingSoapIn" />
+      <wsdl:output message="tns:ValidaFechaListaLeasingSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebAccionesHttpGet">
+    <wsdl:operation name="ActualizaInicioDia">
+      <wsdl:input message="tns:ActualizaInicioDiaHttpGetIn" />
+      <wsdl:output message="tns:ActualizaInicioDiaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaCotiza">
+      <wsdl:input message="tns:ModificaCotizaHttpGetIn" />
+      <wsdl:output message="tns:ModificaCotizaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeshaceAnticipo">
+      <wsdl:input message="tns:DeshaceAnticipoHttpGetIn" />
+      <wsdl:output message="tns:DeshaceAnticipoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFinDia">
+      <wsdl:input message="tns:ActualizaFinDiaHttpGetIn" />
+      <wsdl:output message="tns:ActualizaFinDiaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaParam">
+      <wsdl:input message="tns:ActualizaParamHttpGetIn" />
+      <wsdl:output message="tns:ActualizaParamHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaSumaVertical">
+      <wsdl:input message="tns:ActualizaSumaVerticalHttpGetIn" />
+      <wsdl:output message="tns:ActualizaSumaVerticalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCierreMesa">
+      <wsdl:input message="tns:ActualizaCierreMesaHttpGetIn" />
+      <wsdl:output message="tns:ActualizaCierreMesaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertImpresion">
+      <wsdl:input message="tns:InsertImpresionHttpGetIn" />
+      <wsdl:output message="tns:InsertImpresionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogAuditoria">
+      <wsdl:input message="tns:InsertLogAuditoriaHttpGetIn" />
+      <wsdl:output message="tns:InsertLogAuditoriaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoCompensacion">
+      <wsdl:input message="tns:ActualizaFormaPagoCompensacionHttpGetIn" />
+      <wsdl:output message="tns:ActualizaFormaPagoCompensacionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoEntregaFisica">
+      <wsdl:input message="tns:ActualizaFormaPagoEntregaFisicaHttpGetIn" />
+      <wsdl:output message="tns:ActualizaFormaPagoEntregaFisicaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckValuator">
+      <wsdl:input message="tns:CheckValuatorHttpGetIn" />
+      <wsdl:output message="tns:CheckValuatorHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLogAuditoria">
+      <wsdl:input message="tns:SaveLogAuditoriaHttpGetIn" />
+      <wsdl:output message="tns:SaveLogAuditoriaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSolicitudSDA">
+      <wsdl:input message="tns:SaveSolicitudSDAHttpGetIn" />
+      <wsdl:output message="tns:SaveSolicitudSDAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaOpConSDA">
+      <wsdl:input message="tns:AnticipaOpConSDAHttpGetIn" />
+      <wsdl:output message="tns:AnticipaOpConSDAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaSDA">
+      <wsdl:input message="tns:ValidaSDAHttpGetIn" />
+      <wsdl:output message="tns:ValidaSDAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnulaSDA">
+      <wsdl:input message="tns:AnulaSDAHttpGetIn" />
+      <wsdl:output message="tns:AnulaSDAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSolicitudSDA">
+      <wsdl:input message="tns:ModificaSolicitudSDAHttpGetIn" />
+      <wsdl:output message="tns:ModificaSolicitudSDAHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GrabaListaLeasing">
+      <wsdl:input message="tns:GrabaListaLeasingHttpGetIn" />
+      <wsdl:output message="tns:GrabaListaLeasingHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaFechaListaLeasing">
+      <wsdl:input message="tns:ValidaFechaListaLeasingHttpGetIn" />
+      <wsdl:output message="tns:ValidaFechaListaLeasingHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebAccionesHttpPost">
+    <wsdl:operation name="ActualizaInicioDia">
+      <wsdl:input message="tns:ActualizaInicioDiaHttpPostIn" />
+      <wsdl:output message="tns:ActualizaInicioDiaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaCotiza">
+      <wsdl:input message="tns:ModificaCotizaHttpPostIn" />
+      <wsdl:output message="tns:ModificaCotizaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeshaceAnticipo">
+      <wsdl:input message="tns:DeshaceAnticipoHttpPostIn" />
+      <wsdl:output message="tns:DeshaceAnticipoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFinDia">
+      <wsdl:input message="tns:ActualizaFinDiaHttpPostIn" />
+      <wsdl:output message="tns:ActualizaFinDiaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaParam">
+      <wsdl:input message="tns:ActualizaParamHttpPostIn" />
+      <wsdl:output message="tns:ActualizaParamHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaSumaVertical">
+      <wsdl:input message="tns:ActualizaSumaVerticalHttpPostIn" />
+      <wsdl:output message="tns:ActualizaSumaVerticalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCierreMesa">
+      <wsdl:input message="tns:ActualizaCierreMesaHttpPostIn" />
+      <wsdl:output message="tns:ActualizaCierreMesaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertImpresion">
+      <wsdl:input message="tns:InsertImpresionHttpPostIn" />
+      <wsdl:output message="tns:InsertImpresionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogAuditoria">
+      <wsdl:input message="tns:InsertLogAuditoriaHttpPostIn" />
+      <wsdl:output message="tns:InsertLogAuditoriaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoCompensacion">
+      <wsdl:input message="tns:ActualizaFormaPagoCompensacionHttpPostIn" />
+      <wsdl:output message="tns:ActualizaFormaPagoCompensacionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoEntregaFisica">
+      <wsdl:input message="tns:ActualizaFormaPagoEntregaFisicaHttpPostIn" />
+      <wsdl:output message="tns:ActualizaFormaPagoEntregaFisicaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckValuator">
+      <wsdl:input message="tns:CheckValuatorHttpPostIn" />
+      <wsdl:output message="tns:CheckValuatorHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLogAuditoria">
+      <wsdl:input message="tns:SaveLogAuditoriaHttpPostIn" />
+      <wsdl:output message="tns:SaveLogAuditoriaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSolicitudSDA">
+      <wsdl:input message="tns:SaveSolicitudSDAHttpPostIn" />
+      <wsdl:output message="tns:SaveSolicitudSDAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaOpConSDA">
+      <wsdl:input message="tns:AnticipaOpConSDAHttpPostIn" />
+      <wsdl:output message="tns:AnticipaOpConSDAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaSDA">
+      <wsdl:input message="tns:ValidaSDAHttpPostIn" />
+      <wsdl:output message="tns:ValidaSDAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnulaSDA">
+      <wsdl:input message="tns:AnulaSDAHttpPostIn" />
+      <wsdl:output message="tns:AnulaSDAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSolicitudSDA">
+      <wsdl:input message="tns:ModificaSolicitudSDAHttpPostIn" />
+      <wsdl:output message="tns:ModificaSolicitudSDAHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GrabaListaLeasing">
+      <wsdl:input message="tns:GrabaListaLeasingHttpPostIn" />
+      <wsdl:output message="tns:GrabaListaLeasingHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidaFechaListaLeasing">
+      <wsdl:input message="tns:ValidaFechaListaLeasingHttpPostIn" />
+      <wsdl:output message="tns:ValidaFechaListaLeasingHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebAccionesSoap" type="tns:WebAccionesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ActualizaMoEnc">
+      <soap:operation soapAction="http://tempuri.org/ActualizaMoEnc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCaEnc">
+      <soap:operation soapAction="http://tempuri.org/ActualizaCaEnc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaInicioDia">
+      <soap:operation soapAction="http://tempuri.org/ActualizaInicioDia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaCotiza">
+      <soap:operation soapAction="http://tempuri.org/ModificaCotiza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeshaceAnticipo">
+      <soap:operation soapAction="http://tempuri.org/DeshaceAnticipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFinDia">
+      <soap:operation soapAction="http://tempuri.org/ActualizaFinDia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaParam">
+      <soap:operation soapAction="http://tempuri.org/ActualizaParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaSumaVertical">
+      <soap:operation soapAction="http://tempuri.org/ActualizaSumaVertical" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCierreMesa">
+      <soap:operation soapAction="http://tempuri.org/ActualizaCierreMesa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaEstado">
+      <soap:operation soapAction="http://tempuri.org/ActualizaEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFix">
+      <soap:operation soapAction="http://tempuri.org/InsertFix" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCondiciones">
+      <soap:operation soapAction="http://tempuri.org/InsertCondiciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaEstadoDecisionEj">
+      <soap:operation soapAction="http://tempuri.org/ActualizaEstadoDecisionEj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertImpresion">
+      <soap:operation soapAction="http://tempuri.org/InsertImpresion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogAuditoria">
+      <soap:operation soapAction="http://tempuri.org/InsertLogAuditoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoCompensacion">
+      <soap:operation soapAction="http://tempuri.org/ActualizaFormaPagoCompensacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoEntregaFisica">
+      <soap:operation soapAction="http://tempuri.org/ActualizaFormaPagoEntregaFisica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValuator">
+      <soap:operation soapAction="http://tempuri.org/CheckValuator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLogAuditoria">
+      <soap:operation soapAction="http://tempuri.org/SaveLogAuditoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSolicitudSDA">
+      <soap:operation soapAction="http://tempuri.org/SaveSolicitudSDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaOpConSDA">
+      <soap:operation soapAction="http://tempuri.org/AnticipaOpConSDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaSDA">
+      <soap:operation soapAction="http://tempuri.org/ValidaSDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnulaSDA">
+      <soap:operation soapAction="http://tempuri.org/AnulaSDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSolicitudSDA">
+      <soap:operation soapAction="http://tempuri.org/ModificaSolicitudSDA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrabaListaLeasing">
+      <soap:operation soapAction="http://tempuri.org/GrabaListaLeasing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaFechaListaLeasing">
+      <soap:operation soapAction="http://tempuri.org/ValidaFechaListaLeasing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebAccionesSoap12" type="tns:WebAccionesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ActualizaMoEnc">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaMoEnc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCaEnc">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaCaEnc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaInicioDia">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaInicioDia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaCotiza">
+      <soap12:operation soapAction="http://tempuri.org/ModificaCotiza" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeshaceAnticipo">
+      <soap12:operation soapAction="http://tempuri.org/DeshaceAnticipo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFinDia">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaFinDia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaParam">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaSumaVertical">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaSumaVertical" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCierreMesa">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaCierreMesa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaEstado">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFix">
+      <soap12:operation soapAction="http://tempuri.org/InsertFix" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCondiciones">
+      <soap12:operation soapAction="http://tempuri.org/InsertCondiciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaEstadoDecisionEj">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaEstadoDecisionEj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertImpresion">
+      <soap12:operation soapAction="http://tempuri.org/InsertImpresion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogAuditoria">
+      <soap12:operation soapAction="http://tempuri.org/InsertLogAuditoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoCompensacion">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaFormaPagoCompensacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoEntregaFisica">
+      <soap12:operation soapAction="http://tempuri.org/ActualizaFormaPagoEntregaFisica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValuator">
+      <soap12:operation soapAction="http://tempuri.org/CheckValuator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLogAuditoria">
+      <soap12:operation soapAction="http://tempuri.org/SaveLogAuditoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSolicitudSDA">
+      <soap12:operation soapAction="http://tempuri.org/SaveSolicitudSDA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaOpConSDA">
+      <soap12:operation soapAction="http://tempuri.org/AnticipaOpConSDA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaSDA">
+      <soap12:operation soapAction="http://tempuri.org/ValidaSDA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnulaSDA">
+      <soap12:operation soapAction="http://tempuri.org/AnulaSDA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSolicitudSDA">
+      <soap12:operation soapAction="http://tempuri.org/ModificaSolicitudSDA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrabaListaLeasing">
+      <soap12:operation soapAction="http://tempuri.org/GrabaListaLeasing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaFechaListaLeasing">
+      <soap12:operation soapAction="http://tempuri.org/ValidaFechaListaLeasing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebAccionesHttpGet" type="tns:WebAccionesHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ActualizaInicioDia">
+      <http:operation location="/ActualizaInicioDia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaCotiza">
+      <http:operation location="/ModificaCotiza" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeshaceAnticipo">
+      <http:operation location="/DeshaceAnticipo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFinDia">
+      <http:operation location="/ActualizaFinDia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaParam">
+      <http:operation location="/ActualizaParam" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaSumaVertical">
+      <http:operation location="/ActualizaSumaVertical" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCierreMesa">
+      <http:operation location="/ActualizaCierreMesa" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertImpresion">
+      <http:operation location="/InsertImpresion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogAuditoria">
+      <http:operation location="/InsertLogAuditoria" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoCompensacion">
+      <http:operation location="/ActualizaFormaPagoCompensacion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoEntregaFisica">
+      <http:operation location="/ActualizaFormaPagoEntregaFisica" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValuator">
+      <http:operation location="/CheckValuator" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLogAuditoria">
+      <http:operation location="/SaveLogAuditoria" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSolicitudSDA">
+      <http:operation location="/SaveSolicitudSDA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaOpConSDA">
+      <http:operation location="/AnticipaOpConSDA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaSDA">
+      <http:operation location="/ValidaSDA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnulaSDA">
+      <http:operation location="/AnulaSDA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSolicitudSDA">
+      <http:operation location="/ModificaSolicitudSDA" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrabaListaLeasing">
+      <http:operation location="/GrabaListaLeasing" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaFechaListaLeasing">
+      <http:operation location="/ValidaFechaListaLeasing" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebAccionesHttpPost" type="tns:WebAccionesHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ActualizaInicioDia">
+      <http:operation location="/ActualizaInicioDia" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaCotiza">
+      <http:operation location="/ModificaCotiza" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeshaceAnticipo">
+      <http:operation location="/DeshaceAnticipo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFinDia">
+      <http:operation location="/ActualizaFinDia" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaParam">
+      <http:operation location="/ActualizaParam" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaSumaVertical">
+      <http:operation location="/ActualizaSumaVertical" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaCierreMesa">
+      <http:operation location="/ActualizaCierreMesa" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertImpresion">
+      <http:operation location="/InsertImpresion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLogAuditoria">
+      <http:operation location="/InsertLogAuditoria" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoCompensacion">
+      <http:operation location="/ActualizaFormaPagoCompensacion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizaFormaPagoEntregaFisica">
+      <http:operation location="/ActualizaFormaPagoEntregaFisica" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValuator">
+      <http:operation location="/CheckValuator" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLogAuditoria">
+      <http:operation location="/SaveLogAuditoria" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSolicitudSDA">
+      <http:operation location="/SaveSolicitudSDA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnticipaOpConSDA">
+      <http:operation location="/AnticipaOpConSDA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaSDA">
+      <http:operation location="/ValidaSDA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnulaSDA">
+      <http:operation location="/AnulaSDA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificaSolicitudSDA">
+      <http:operation location="/ModificaSolicitudSDA" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrabaListaLeasing">
+      <http:operation location="/GrabaListaLeasing" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidaFechaListaLeasing">
+      <http:operation location="/ValidaFechaListaLeasing" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebAcciones">
+    <wsdl:port name="WebAccionesSoap" binding="tns:WebAccionesSoap">
+      <soap:address location="http://localhost:4084/WebService/WebAcciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebAccionesSoap12" binding="tns:WebAccionesSoap12">
+      <soap12:address location="http://localhost:4084/WebService/WebAcciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebAccionesHttpGet" binding="tns:WebAccionesHttpGet">
+      <http:address location="http://localhost:4084/WebService/WebAcciones.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebAccionesHttpPost" binding="tns:WebAccionesHttpPost">
+      <http:address location="http://localhost:4084/WebService/WebAcciones.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

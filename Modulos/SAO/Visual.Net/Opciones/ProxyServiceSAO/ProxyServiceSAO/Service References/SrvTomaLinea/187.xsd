@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd14" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd88" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd60" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd89" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd90" />
+  <xsd:complexType name="CreditAcctData_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="TotalPmtCount" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RegPmt" type="tns:RegPmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="DueDt" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="LOCLoanData" type="tns:LOCLoanData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="LOCOverdraftData" type="tns:LOCOverdraftData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="NextPmt" type="tns:NextPmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RegUFPmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OriginationDt" type="xsd:date" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrigRegPmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RefinantialInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PurposeCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PurposeDesc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InsCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ConditionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FundPurposeDesc" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FundPurposeCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FinancialInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EndorsmentReq" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="WarrantyReq" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AssuranceEndInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AssuranceInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InterestRate" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PayType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TermType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrigInsPmt" type="tns:CurAmt_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="InsPmt" type="tns:CurAmt_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,461 @@
+﻿<UserControl x:Class="AdminOpciones.OpcionesFX.ValorizadorCartera.ValorizadorCartera"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:SisWinControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+             xmlns:SisWinControlsData="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"             
+             xmlns:LiquidMenu="clr-namespace:Liquid;assembly=Liquid.Menu"
+             xmlns:MSControls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls"             
+             xmlns:LiquidTreeView="clr-namespace:Liquid;assembly=Liquid.TreeView"         
+             xmlns:InputToolKit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"    
+             xmlns:converter="clr-namespace:AdminOpciones.OpcionesFX.Converter"
+             Width="870"
+             Height="400"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    
+    <UserControl.Resources>
+        <converter:DateTimeConverter x:Key="DateTimeConverterTostring" />
+    </UserControl.Resources>
+
+    <Border x:Name="PrincipalBorder"
+            BorderThickness="1"
+            BorderBrush="#FF3A7ECB"
+            Width="870"
+            Height="400"
+            VerticalAlignment="Top">
+        
+        <Grid x:Name="LayoutFrom"
+              Background="AliceBlue"
+              ShowGridLines="False">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="0" />
+            </Grid.ColumnDefinitions>
+
+    		<Canvas x:Name="CanvasPrincipalValorizadorCartera"
+                    Background="AliceBlue"
+                    Height="400"
+                    Width="870"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                
+    			<Grid Background="#FF3A7ECB"
+                      Height="24"
+                      Width="870">
+    				<TextBlock VerticalAlignment="Center"
+                               Grid.Column="1"
+                               Canvas.Left="20"
+                               Canvas.Top="2"
+                               Foreground="#FFFFFFFF"
+                               Text="Valorización de Cartera" />
+    			</Grid>
+
+                <TextBlock Height="15"
+                           Width="96"
+                           Canvas.Left="20"
+                           Canvas.Top="32"
+                           Text="Fecha Cartera"
+                           TextWrapping="Wrap"/>
+
+    			<Border Height="24"
+                        Width="100"
+                        BorderBrush="#FF97A1AB"
+                        Background="White"
+                        BorderThickness="1,1,1,1"
+                        RenderTransformOrigin="7.5,0.37"
+                        Canvas.Left="20"
+                        Canvas.Top="50">
+                    
+    				<TextBlock x:Name="txtFechaValCartera"
+                               Height="24"
+                               Width="100"
+                               Margin="0,3,0,0"
+                               TextAlignment="Center"
+                               TextWrapping="Wrap"
+                               RenderTransformOrigin="7.792,0.661" />
+    			</Border>
+
+    			<Button x:Name="btnValorizadorCartera"
+                        Height="24"
+                        Width="100"
+                        Canvas.Left="130"
+                        Canvas.Top="50"
+                        Content="Valorizar Adm"
+                        Click="event_btnValorizadorCartera_Clicked"/>
+
+    			<SisWinControls:TabControl x:Name="tabGridsValCartera"
+                                           Grid.Row="1"
+                                           Width="830"
+                                           Height="300"
+                                           Canvas.Left="10"
+                                           Canvas.Top="80"
+                                           SelectedIndex="0" >
+                    
+    				<SisWinControls:TabItem x:Name="itemTabEncContrato"
+                                            Header="Encabezado">
+
+    					<SisWinControlsData:DataGrid x:Name="grdValCarteraEstructuras"
+                                                     HorizontalContentAlignment="Right"
+                                                     Height="260"
+                                                     Width="800"
+                                                     AutoGenerateColumns="False"
+                                                     FrozenColumnCount="1"
+                                                     Visibility="Visible"
+                                                     GridLinesVisibility="All">
+                            
+    						<SisWinControlsData:DataGrid.Columns>
+                                
+                                <!-- ID -->
+                                <SisWinControlsData:DataGridTextColumn Header="ID"
+                                                                       Binding="{Binding Path=ID}"
+                                                                       IsReadOnly="True"/>
+
+                                <!-- Contrato -->
+                                <SisWinControlsData:DataGridTextColumn Header="Contrato"
+                                                                       Binding="{Binding Path=NumContrato}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Estructura -->
+                                <SisWinControlsData:DataGridTextColumn Header="Estructura"
+                                                                       Binding="{Binding Path=Estructura}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Compa/Venta -->
+                                <SisWinControlsData:DataGridTextColumn Header="Compa/Venta"
+                                                                       Binding="{Binding Path=sCVEstructura}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Fecha Contrato -->
+                                <SisWinControlsData:DataGridTextColumn Header="Fecha Contrato"
+                                                                       Binding="{Binding Converter={StaticResource DateTimeConverterTostring}, ConverterParameter=dd-MM-yyyy, Path=FechaContrato}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Fecha Valorizacion -->
+                                <SisWinControlsData:DataGridTextColumn Header="Fecha Valorizacion"
+                                                                       Binding="{Binding Converter={StaticResource DateTimeConverterTostring}, ConverterParameter=dd-MM-yyyy, Path=FecValorizacion}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Cartera Financiera -->
+                                <SisWinControlsData:DataGridTextColumn Header="Cartera Financiera"
+                                                                       Binding="{Binding Path=CarteraFinanciera}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Libro -->
+                                <SisWinControlsData:DataGridTextColumn Header="Libro"
+                                                                       Binding="{Binding Path=Libro}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Car. Normativa -->
+                                <SisWinControlsData:DataGridTextColumn Header="Car. Normativa"
+                                                                       Binding="{Binding Path=CarNormativa}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Sub. CarNormativa -->
+                                <SisWinControlsData:DataGridTextColumn Header="Sub. CarNormativa"
+                                                                       Binding="{Binding Path=SubCarNormativa}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Rut Cliente -->
+                                <SisWinControlsData:DataGridTextColumn Header="Rut Cliente"
+                                                                       Binding="{Binding Path=RutCliente}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Codigo -->
+                                <SisWinControlsData:DataGridTextColumn Header="Codigo"
+                                                                       Binding="{Binding Path=Codigo}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- TipoContrapartida -->
+                                <SisWinControlsData:DataGridTextColumn Header="Tipo Contrapartida"
+                                                                       Binding="{Binding Path=TipoContrapartida}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Prima Inicial -->
+                                <SisWinControlsData:DataGridTextColumn Header="Prima Inicial"
+                                                                       Binding="{Binding Path=PrimaInicial}"
+                                                                       IsReadOnly="True"/>
+                                
+                                <!-- Forma Pago Prima -->
+                               <!-- <SisWinControlsData:DataGridTextColumn Header="Forma Pago Prima"
+                                                                       Binding="{Binding Path=FormaPagoPrima}"
+                                                                       IsReadOnly="True"/>-->
+                                
+                                <!-- MtM -->
+                                <SisWinControlsData:DataGridTextColumn Header="MtM"
+                                                                       Binding="{Binding Path=sMtM}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Delta Spot -->
+                                <SisWinControlsData:DataGridTextColumn Header="Delta Spot"
+                                                                       Binding="{Binding Path=sDeltaSpot}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Delta Forward -->
+                                <SisWinControlsData:DataGridTextColumn Header="Delta Forward"
+                                                                       Binding="{Binding Path=sDeltaForward}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Gamma -->
+                                <SisWinControlsData:DataGridTextColumn Header="Gamma"
+                                                                       Binding="{Binding Path=sGamma}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Vega -->
+                                <SisWinControlsData:DataGridTextColumn Header="Vega"
+                                                                       Binding="{Binding Path=sVega}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- RhoDom -->
+                                <SisWinControlsData:DataGridTextColumn Header="RhoDom"
+                                                                       Binding="{Binding Path=sRhoDom}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- RhoFor -->
+                                <SisWinControlsData:DataGridTextColumn Header="RhoFor"
+                                                                       Binding="{Binding Path=sRhoFor}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Theta -->
+                                <SisWinControlsData:DataGridTextColumn Header="Theta"
+                                                                       Binding="{Binding Path=sTheta}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Charm -->
+                                <SisWinControlsData:DataGridTextColumn Header="Charm"
+                                                                       Binding="{Binding Path=sCharm}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Vanna -->
+                                <SisWinControlsData:DataGridTextColumn Header="Vanna"
+                                                                       Binding="{Binding Path=sVanna}"
+                                                                       IsReadOnly="True"  />
+                                
+                                <!-- Volga -->
+                                <SisWinControlsData:DataGridTextColumn Header="Volga"
+                                                                       Binding="{Binding Path=sVolga}"
+                                                                       IsReadOnly="True"  />
+                                
+                                
+    						</SisWinControlsData:DataGrid.Columns>
+                            
+    					</SisWinControlsData:DataGrid>
+
+    				</SisWinControls:TabItem>
+
+    				<SisWinControls:TabItem x:Name="itemTabDetContrato"
+                                            Header="Detalle">
+
+    					<SisWinControlsData:DataGrid x:Name="grdValCartera"
+                                                     HorizontalContentAlignment="Right"
+                                                     Height="260"
+                                                     Width="800"
+                                                     AutoGenerateColumns="False"
+                                                     FrozenColumnCount="1"
+                                                     Visibility="Visible"
+                                                     GridLinesVisibility="All">
+                            
+    						<SisWinControlsData:DataGrid.Columns>
+                                
+                                <!-- ID -->
+                                <SisWinControlsData:DataGridTextColumn Header="ID"
+                                                                       Binding="{Binding Path=ID}"
+                                                                       IsReadOnly="True"/>
+
+                                <!-- Contrato -->
+                                <SisWinControlsData:DataGridTextColumn Header="Contrato"
+                                                                       Binding="{Binding Path=NumContrato}"
+                                                                       IsReadOnly="True"/>
+
+                                <!-- Num. Estructura -->
+                                <SisWinControlsData:DataGridTextColumn Header="Num. Estructura"
+                                                                       Binding="{Binding Path=NumEstructura}"
+                                                                       IsReadOnly="True" />
+
+                                <!-- Estructura -->
+                                <SisWinControlsData:DataGridTextColumn Header="Estructura"
+                                                                       Binding="{Binding Path=Estructura}"
+                                                                       IsReadOnly="True"/>
+
+                                <!-- Call/Put -->
+                                <SisWinControlsData:DataGridTextColumn Header="Call/Put"
+                                                                       Binding="{Binding Path=CallPut}"
+                                                                       IsReadOnly="True" />
+
+                                <!-- Vinculacion -->
+                                <SisWinControlsData:DataGridTextColumn Header="Vinculacion"
+                                                                       Binding="{Binding Path=Vinculacion}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- PayOff -->
+                                <SisWinControlsData:DataGridTextColumn Header="PayOff"
+                                                                       Binding="{Binding Path=sTipoPayOff}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Compra/Venta -->
+                                <SisWinControlsData:DataGridTextColumn Header="Compra/Venta"
+                                                                       Binding="{Binding Path=sCVOpc}" />
+
+                                <!-- Fecha Inicio Opc. -->
+                                <SisWinControlsData:DataGridTextColumn Header="Fecha Inicio Opc."
+                                                                       Binding="{Binding Converter={StaticResource DateTimeConverterTostring}, ConverterParameter=dd-MM-yyyy, Path=FechaInicioOpc}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Fecha Vencimiento -->
+                                <SisWinControlsData:DataGridTextColumn Header="Fecha Vencimiento"
+                                                                       Binding="{Binding Converter={StaticResource DateTimeConverterTostring}, ConverterParameter=dd-MM-yyyy, Path=FechaVcto}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Nocional -->
+                                <SisWinControlsData:DataGridTextColumn Header="Nocional"
+                                                                       Binding="{Binding Path=sMontoMon1}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Strike -->
+                                <SisWinControlsData:DataGridTextColumn Header="Strike"
+                                                                       Binding="{Binding Path=Strike}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Spot -->
+                                <SisWinControlsData:DataGridTextColumn Header="Spot"
+                                                                       Binding="{Binding Path=SpotDet}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Paridad -->
+                                <SisWinControlsData:DataGridTextColumn Header="Paridad"
+                                                                       Binding="{Binding Path=ParStrike}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- MtM -->
+                                <SisWinControlsData:DataGridTextColumn Header="MtM"
+                                                                       Binding="{Binding Path=sMtM}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Delta Spot -->
+                                <SisWinControlsData:DataGridTextColumn Header="Delta Spot"
+                                                                       Binding="{Binding Path=sDeltaSpot}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Delta Forward -->
+                                <SisWinControlsData:DataGridTextColumn Header="Delta Forward"
+                                                                       Binding="{Binding Path=sDeltaForward}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Gamma -->
+                                <SisWinControlsData:DataGridTextColumn Header="Gamma"
+                                                                       Binding="{Binding Path=sGamma}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Vega -->
+                                <SisWinControlsData:DataGridTextColumn Header="Vega"
+                                                                       Binding="{Binding Path=sVega}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- RhoDom -->
+                                <SisWinControlsData:DataGridTextColumn Header="RhoDom"
+                                                                       Binding="{Binding Path=sRhoDom}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- RhoFor -->
+                                <SisWinControlsData:DataGridTextColumn Header="RhoFor"
+                                                                       Binding="{Binding Path=sRhoFor}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Theta -->
+                                <SisWinControlsData:DataGridTextColumn Header="Theta"
+                                                                       Binding="{Binding Path=sTheta}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Charm -->
+                                <SisWinControlsData:DataGridTextColumn Header="Charm"
+                                                                       Binding="{Binding Path=sCharm}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Vanna -->
+                                <SisWinControlsData:DataGridTextColumn Header="Vanna"
+                                                                       Binding="{Binding Path=sVanna}"
+                                                                       IsReadOnly="True"  />
+
+                                <!-- Volga -->
+                                <SisWinControlsData:DataGridTextColumn Header="Volga"
+                                                                       Binding="{Binding Path=sVolga}"
+                                                                       IsReadOnly="True"  />
+                                
+    						</SisWinControlsData:DataGrid.Columns>
+    					</SisWinControlsData:DataGrid>
+
+    				</SisWinControls:TabItem>
+
+    			</SisWinControls:TabControl>
+
+    		</Canvas>
+
+            <Canvas x:Name="Mask"
+                    Margin="0,0,0,0"
+                    Width="870"
+                    Height="400"
+                    Background="Gray"
+                    Opacity="0.7"
+                    Visibility="Collapsed"
+                    d:LayoutOverrides="VerticalAlignment, GridBox"
+                    Grid.Row="1">
+                
+                <Grid x:Name="IconLayout"
+                      Background="Transparent"
+                      Canvas.Left="375"
+                      Canvas.Top="140">
+
+                    <Grid.RenderTransform>
+                        <ScaleTransform x:Name="SpinnerScale" ScaleX="0.5" ScaleY="0.5" />
+                    </Grid.RenderTransform>
+                    
+                    <Canvas RenderTransformOrigin="0.5,0.5"
+                            Width="120"
+                            Height="120">
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="20.1696" Canvas.Top="9.76358"   Stretch="Fill" Fill="#E6000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="2.86816" Canvas.Top="29.9581"  Stretch="Fill" Fill="#CD000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="5.03758e-006" Canvas.Top="57.9341"  Stretch="Fill" Fill="#B3000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="12.1203" Canvas.Top="83.3163"   Stretch="Fill" Fill="#9A000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="36.5459" Canvas.Top="98.138"  Stretch="Fill" Fill="#80000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="64.6723" Canvas.Top="96.8411" Stretch="Fill" Fill="#67000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="87.6176" Canvas.Top="81.2783" Stretch="Fill" Fill="#4D000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="98.165" Canvas.Top="54.414"  Stretch="Fill" Fill="#34000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="92.9838" Canvas.Top="26.9938"    Stretch="Fill" Fill="#1A000000"/>
+                        <Ellipse Width="21.835" Height="21.862" Canvas.Left="47.2783" Canvas.Top="0.5"    Stretch="Fill" Fill="#FF000000"/>
+
+                        <Canvas.RenderTransform>
+                            <RotateTransform x:Name="SpinnerRotate" Angle="0" />
+                        </Canvas.RenderTransform>
+
+                        <Canvas.Triggers>
+                            <EventTrigger RoutedEvent="ContentControl.Loaded">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="SpinnerRotate"
+                                                         Storyboard.TargetProperty="(RotateTransform.Angle)"
+                                                         From="0" To="360" Duration="0:0:01"
+                                                         RepeatBehavior="Forever" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Canvas.Triggers>
+
+                    </Canvas>
+                    
+                </Grid>
+                
+            </Canvas>
+            
+        </Grid>
+        
+    </Border>
+    
+</UserControl>

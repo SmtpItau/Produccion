@@ -1,0 +1,260 @@
+﻿<UserControl x:Class="AdminOpciones.Controls.DetalleMovimiento"
+             xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"         
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"    
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:liquidPopup="clr-namespace:Liquid;assembly=Liquid.Popup"
+             xmlns:controlSolicitudSDA="clr-namespace:AdminOpciones.Ejercer"
+             mc:Ignorable="d"    
+             Height="423"
+             Width="923">        
+
+    <Border Width="923"
+            Height="420"
+            BorderThickness="2,2,2,2"
+            CornerRadius="0"
+            BorderBrush="#FF0A82C5" >
+        <Grid x:Name="LayoutRoot"
+              Background="White"
+              Height="420"
+              Width="923">
+        	<Grid.ColumnDefinitions>
+        		<ColumnDefinition Width="0.172*"/>
+        		<ColumnDefinition Width="0.828*"/>
+        	</Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="Auto"
+                               MinHeight="424"/>
+            </Grid.RowDefinitions>                        
+            
+            <Grid Background="#FF0A82C5"
+                  VerticalAlignment="Top"
+                  Grid.Row="1"
+                  Height="52"
+                  Grid.ColumnSpan="2"
+                  RenderTransformOrigin="0.496,0.465">
+            	<TextBlock Margin="8,8,0,0"
+                           Foreground="#FFFFFFFF"
+                           Text="Controles"
+                           TextWrapping="Wrap"
+                           VerticalAlignment="Top"
+                           Height="20"
+                           Width="132"
+                           HorizontalAlignment="Left"/>
+            	<Image x:Name="ExpExcel"
+                       HorizontalAlignment="Left"
+                       Margin="8,0,0,4.663"
+                       Width="26"
+                       Source="../Images/spreadsheet.png"
+                       VerticalAlignment="Bottom"
+                       Height="21.125"
+                       ToolTipService.ToolTip="Exportar a Excel"
+                       MouseLeftButtonUp="ExpExcel_MouseLeftButtonUp"/>
+            	<Image x:Name="SelTodo"
+                       HorizontalAlignment="Left"
+                       Width="26"
+                       Source="../Images/checkedbox.png"
+                       VerticalAlignment="Bottom"
+                       Height="21.125"
+                       ToolTipService.ToolTip="Seleccionar Todo"
+                       Margin="60,0,0,4.663"
+                       MouseLeftButtonUp="selTodo_Click"/>
+            	<Image x:Name="Imprimir"
+                       Source="../Images/fileprint.png"
+                       VerticalAlignment="Bottom"
+                       Height="21.125"
+                       ToolTipService.ToolTip="Imprimir"
+                       HorizontalAlignment="Left"
+                       Width="26"
+                       d:LayoutOverrides="Width"
+                       Margin="34,0,0,4.663"
+                       MouseLeftButtonUp="Imprimir_Click"/>
+            	<TextBlock HorizontalAlignment="Left"
+                           Margin="185,8,0,24"
+                           Width="88"
+                           Text="Cliente"
+                           TextWrapping="Wrap"
+                           Foreground="#FFFFFFFF"
+                           Height="20" 
+                           TextAlignment="Right"/>
+            	<TextBlock Height="20"
+                           HorizontalAlignment="Left"
+                           Width="113"
+                           Foreground="#FFFFFFFF"
+                           Text="Tipo Contrapartida"
+                           TextWrapping="Wrap"
+                           VerticalAlignment="Bottom"
+                           d:LayoutOverrides="Height"
+                           Margin="160,0,0,5.663"
+                           TextAlignment="Right"/>
+                <TextBox x:Name="txtCliID"
+                         Height="20"
+                         Text=""
+                         HorizontalAlignment="Left"
+                         Margin="287,5,0,0"
+                         VerticalAlignment="Top"
+                         Width="111"
+                         TextWrapping="Wrap"
+                         d:LayoutOverrides="VerticalAlignment"
+                         MaxLength="8"
+                         KeyDown="txtCliID_KeyDown"/>                    
+                <ComboBox x:Name="cmbTContra"
+                          Height="20"
+                          HorizontalAlignment="Left"
+                          Margin="287,0,0,3.663"
+                          VerticalAlignment="Bottom"
+                          Width="111" GotFocus="cmbTContraGotFocus"/>
+            	<Image x:Name="Filtro"
+                       HorizontalAlignment="Left"
+                       Width="26"
+                       Source="../Images/player_play.png"
+                       Height="21.125"
+                       ToolTipService.ToolTip="Filtrar"
+                       MouseLeftButtonUp="Filtro_MouseLeftButtonUp"
+                       Margin="402,4.663,0,0"
+                       VerticalAlignment="Top"/>
+                <Button x:Name="Bnt_Refresh"
+                        Margin="431,0,400,5"
+                        Content="Refrescar"
+                        Click="Bnt_Refresh_Click" Height="19" VerticalAlignment="Bottom" Width="92"/>
+                <Button x:Name="Bnt_Anular_Anticipo"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,295,5"
+                        Width="92"
+                        Content="Anular Anticipo"
+                        Click="Bnt_Anular_Anticipo_Click" VerticalAlignment="Bottom" Height="19"/>                
+            </Grid>
+            <Canvas Margin="31,80,0,142"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Width="420"
+                    HorizontalAlignment="Left">                                              
+                <data:DataGrid x:Name="dgPersona"
+            		           AutoGenerateColumns="False"
+            		           CanUserResizeColumns="True"  
+                               CanUserSortColumns="False"
+                               KeyDown="dgPersona_KeyDown"
+            		           Width="915"
+                               Height="360"
+                               Canvas.Top="-26"
+                               Canvas.Left="-188" 
+                               LoadingRow="dgPersona_LoadingRow"
+                               Background="White"
+                               RowBackground="White"
+                               AlternatingRowBackground="White"
+                               FrozenColumnCount="1">                                         
+            		<data:DataGrid.Columns>
+            			<data:DataGridCheckBoxColumn Header=""
+                                                     Binding="{Binding Path=VF, Mode=TwoWay}"
+                                                     IsThreeState="False"
+                                                     MaxWidth="1.7976931348623157E+308"
+                                                     IsReadOnly="False" />
+                        <data:DataGridTextColumn Header="Número Contrato"
+                                                 Binding="{Binding Path=NumContrato, Mode=TwoWay}" 
+                                                 IsReadOnly="True" />
+            			<data:DataGridTextColumn Header="Número Folio"
+                                                 Binding="{Binding Path=NumFolio, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Tipo Transaccion"
+                                                 Binding="{Binding Path=TipoTransaccion, Mode=TwoWay}"
+                                                 IsReadOnly="True"/>
+                        <data:DataGridTextColumn Header="Fecha de Contrato"
+                                                 Binding="{Binding Path=FechaContrato, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Estado"
+                                                 Binding="{Binding Path=ConOpcEstDsc, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Rut Cliente"
+                                                 Binding="{Binding Path=CliRut, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Dv"
+                                                 Binding="{Binding Path=CliDv, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Codigo Cliente"
+                                                 Binding="{Binding Path=CliCod, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Nombre Cliente"
+                                                 Binding="{Binding Path=CliNom, Mode=TwoWay}"
+                                                 IsReadOnly="True" />                                    			
+            			<data:DataGridTextColumn Header="Tipo de Contrapartida"
+                                                 Binding="{Binding Path=Contrapartida, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+            			<data:DataGridTextColumn Header="Operador"
+                                                 Binding="{Binding Path=Operador, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+            			<data:DataGridTextColumn Header="Nombre de la Estructura"
+                                                 Binding="{Binding Path=OpcEstDsc, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Fecha Creacion Registro"
+                                                 Binding="{Binding Path=FechaCreacionRegistro, Mode=TwoWay}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Impreso"
+                                                 Binding="{Binding Path=Impreso, Mode=TwoWay}"
+                                                 IsReadOnly="True"
+                                                 Visibility="Collapsed"/>
+            		</data:DataGrid.Columns>
+            	</data:DataGrid>                
+            </Canvas>
+            
+            <TextBox x:Name="TextBox1"
+                     Height="26"
+                     Margin="139,8,0,0"
+                     VerticalAlignment="Top"
+                     Width="50"
+                     HorizontalAlignment="Left" />            
+            <TextBlock x:Name="Block1"
+                       Margin="17,86,48,141" />
+            
+            <liquidPopup:Dialog x:Name="_pop"
+                                Width="262"
+                                Height="194"
+                                ExpandedWidth="250"
+                                Buttons="None"
+                                Title="Resultado"
+                                IsMinimizeEnabled="False"
+                                IsMaximizeEnabled="False"
+                                Grid.Row="1"
+                                d:LayoutOverrides="HorizontalAlignment"
+                                CloseCompleted="CloseCompleted"
+                                Margin="120,190,0,0"
+                                Grid.Column="1">
+                <data:DataGrid x:Name="_gridresu"
+                               AutoGenerateColumns="False"
+                               CanUserResizeColumns="True"
+                               Width="290"
+                               Height="290">
+                    <data:DataGrid.Columns>
+                        <data:DataGridTextColumn Header="Folio"
+                                                 Binding="{Binding Mode=TwoWay, Path=Folio}"
+                                                 IsReadOnly="True" />
+                        <data:DataGridTextColumn Header="Resultado"
+                                                 Binding="{Binding Mode=TwoWay, Path=Result}"
+                                                 IsReadOnly="True"/>
+                    </data:DataGrid.Columns>
+                </data:DataGrid>
+            </liquidPopup:Dialog>
+            <liquidPopup:Dialog x:Name="popUpIngSolicitudSDA"
+                                            Width="330"
+                                            Height="410"
+                                            Buttons="None"
+                                            IsMinimizeEnabled="False"
+                                            IsMaximizeEnabled="False"
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="0,0,0,0"
+                                            CloseCompleted="CloseCompletedSDA"
+                                            Title="Modificación Solicitud SDA"
+                                            Grid.Column="2">
+                <controlSolicitudSDA:SolicitudSDA x:Name="_IngSolicitudSDA" />
+            </liquidPopup:Dialog>
+            
+            <Canvas Margin="0,0,60,0" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" Height="69" Width="132" HorizontalAlignment="Right"/>
+            <Button Height="19" HorizontalAlignment="Right" Margin="0,28,192,0" VerticalAlignment="Top" Width="92" Grid.Column="1" Grid.Row="1" Content="Anula SDA" x:Name="Bnt_Anular_SDA" Click="Bnt_Anular_Sda_Click" d:LayoutOverrides="GridBox"/>
+            <Button Height="19" HorizontalAlignment="Right" Margin="0,28,87,0" VerticalAlignment="Top" Width="92" Content="Modifica SDA" Grid.Column="1" Grid.Row="1" x:Name="Btn_ModificaSDA" Click="Btn_ModificaSDA_Click" d:LayoutOverrides="GridBox"/>
+        </Grid>
+    </Border>
+</UserControl>

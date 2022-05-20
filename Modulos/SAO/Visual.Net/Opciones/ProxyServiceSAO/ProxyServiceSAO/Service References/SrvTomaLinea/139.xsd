@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:Q6="http://www.example.org/IndirectDebtFinancialAmt_Type-1.0.0" xmlns:Q7="http://www.example.org/RentsFinancialCount_Type-1.0.0" xmlns:Q8="http://www.example.org/CreditCardPeerGroupLimitAmountFinancialAmt_Type" xmlns:Q9="http://www.example.org/CreditLineLimitAmountFinancialAmt_Type-1.0.0" xmlns:tns="http://itau.cl/xmlns/xsd/1" xmlns:Q10="http://www.example.org/LPTCAmountFinancialAmt_Type-1.0.0" xmlns:Q1="http://www.example.org/CarsFinancialAmt_Type-1.0.0" xmlns:Q2="http://www.example.org/OwnershipFinancialAmt_Type-1.0.0" xmlns:Q3="http://www.example.org/OthersUtilFinancialAmt_Type-1.0.0" xmlns:Q4="http://www.example.org/LongTermFinancialCount_Type-1.0.0" xmlns:Q5="http://www.example.org/CreditaCardDebtFinancialAmt_Type-1.0.0" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd27" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd28" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd29" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd30" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd31" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd32" />
+  <include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd33" />
+  <complexType name="FinancialData_Type">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="FinancialId" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="FinancialType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="AssetInstitution" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="AssetType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="Desc" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="DurationAutomovilOResidencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="FinancialStatusCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="FinancialSubType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="InsuranceInd" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="MarcaOArriendoDescripcion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ModeloAvalDescripcion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="PurchaseDt" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="Surface" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="UpCommentDt" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="UpCommentTime" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="UpDt" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="FIData" type="tns:FIData_Type" />
+      <element minOccurs="0" maxOccurs="1" name="FinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="NotaryData" type="tns:NotaryData_Type" />
+      <element minOccurs="0" maxOccurs="1" name="FinancialTypeAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="FinancialLimitAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="IncomeConsilidatedInd" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="HonorsTicketsFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="RentsFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="OthersUtilFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="AssetFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="LiabilityFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="PatrimonyFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="TermDepositsFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CarsFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ProductsFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="PartysFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="OthersUtilsFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="TermDepositsFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CarsFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="OwnershipFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="PartysFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="OthersUtilFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ShortTermFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="LongTermFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CreditCardDebtFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ShortTermFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="LongTermFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CreditaCardDebtFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="IndirectDebtFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="RentsFinancialCount" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="InsuranceFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CreditCardPeerGroupLimitAmountFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="CreditLineLimitAmountFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="LPTCAmountFinancialAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DebtorCurAmt" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="FinancialIncomeType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="PatrimonyValue" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="FundsCountry" type="tns:CountryCode_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ResidenceCountry1" type="tns:CountryCode_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ResidenceCountry2" type="tns:CountryCode_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ResidenceCountry3" type="tns:CountryCode_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DirectCurrent" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DirectDelayed" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DirectOverdue" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DirectPunished" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="DirectTrading" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="IndirectCurrent" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="IndirectOverdue" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="IndirectPunished" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="UnpaidDocuments" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ActiveProtest" type="tns:Term_Type" />
+      <element minOccurs="0" maxOccurs="1" name="Commercial" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="Investments" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="Mortgage" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ForeignOverdue" type="tns:CurAmt_Type" />
+      <element minOccurs="0" maxOccurs="1" name="ForeignCurrent" type="tns:CurAmt_Type" />
+    </sequence>
+  </complexType>
+</schema>

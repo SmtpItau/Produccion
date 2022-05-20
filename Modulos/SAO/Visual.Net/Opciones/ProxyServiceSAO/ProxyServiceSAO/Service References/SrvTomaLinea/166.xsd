@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd61" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd62" />
+  <xsd:complexType name="ExchangeRate_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExchRate" type="xsd:double" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BaseCurCode" type="tns:CurCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ContraCurCode" type="tns:ContraCurCode_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ExchRateMemo" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

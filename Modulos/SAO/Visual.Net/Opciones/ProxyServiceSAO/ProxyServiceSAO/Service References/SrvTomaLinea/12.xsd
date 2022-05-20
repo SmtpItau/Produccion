@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:Q1="http://itau.cl/xmlns/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/1" xmlns:Q2="http://itau.cl/xmlns/common/xsd/1" xmlns:Q3="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd2" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd102" namespace="http://itau.cl/xmlns/common/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd103" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd15" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd33" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd62" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd7" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd104" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd105" namespace="http://itau.cl/xmlns/xsd/1" />
+  <xsd:element name="ControlLineaCreditoTesoreriaRq" type="Q1:ControlLineaCreditoTesoreriaRq" />
+  <xsd:complexType name="ControlLineaCreditoTesoreriaRq">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="MsgRqHdr" type="Q2:MsgRqHdr_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PartyRec" type="Q3:PartyRec_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FIData" type="Q3:FIData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AcctTrnInfo" type="Q3:AcctTrnInfo_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EffTimeFrame" type="Q3:EffTimeFrame_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RecSelect" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ForExDealRec" type="Q3:ForExDealRec_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OfferInfo" type="Q3:OfferInfo_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

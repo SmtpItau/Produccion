@@ -1,0 +1,47 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsServiceFMD.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UseFileLog" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AppName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WindowsServiceFMD</Value>
+    </Setting>
+    <Setting Name="UseFriendlyLog" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LogFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FMD_Report_{0}.log.txt</Value>
+    </Setting>
+    <Setting Name="TimeInterval" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1200000</Value>
+    </Setting>
+    <Setting Name="DBConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">
+        {
+        "DBCatalog":"Reportes"
+        ,"DBMaxConnection":6
+        ,"DBMinConnection":2
+        ,"DBPooling":true
+        ,"DBServerName":"CORPSQL05 "
+        ,"DBUserName":"app_reportes"
+        ,"DBUserPass":"0rbt/Ehi9yeuWpdIcfEZtw=="
+        ,"DB_IP_Address":null
+        ,"IntegratedSecurity":false
+        ,"TrustedConnection":false
+        ,"Use_IP_Address":false
+        }
+      </Value>
+    </Setting>
+    <Setting Name="LogFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Sitios\SFMC\FMD\LOG</Value>
+    </Setting>
+    <Setting Name="AsyncWriteLog" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AsyncMode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

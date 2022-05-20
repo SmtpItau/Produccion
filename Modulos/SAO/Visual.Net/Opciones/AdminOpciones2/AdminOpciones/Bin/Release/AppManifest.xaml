@@ -1,0 +1,27 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="AdminOpciones" EntryPointType="AdminOpciones.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="AdminOpciones" Source="AdminOpciones.dll" />
+    <AssemblyPart x:Name="Liquid.Menu" Source="Liquid.Menu.dll" />
+    <AssemblyPart x:Name="Liquid.Popup" Source="Liquid.Popup.dll" />
+    <AssemblyPart x:Name="Liquid.TreeView" Source="Liquid.TreeView.dll" />
+    <AssemblyPart x:Name="Microsoft.Windows.Controls" Source="Microsoft.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Data.Services.Client" Source="System.Data.Services.Client.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input" Source="System.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart Source="es/System.Data.Services.Client.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Controls.Input.resources.dll" />
+    <AssemblyPart Source="es/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="es/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Controls.Data.Input.resources.dll" />
+    <AssemblyPart Source="es/System.ComponentModel.DataAnnotations.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Data.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

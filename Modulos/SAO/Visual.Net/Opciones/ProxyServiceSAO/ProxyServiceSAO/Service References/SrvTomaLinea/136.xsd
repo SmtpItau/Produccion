@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd34" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd35" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd36" />
+  <xsd:complexType name="Employment_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="Occupation" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OrgData" type="tns:OrgData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="StartDt" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="AnnualIncome" type="tns:AnnualIncome_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="JobTitle" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="TimeFrame" type="tns:TimeFrame_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

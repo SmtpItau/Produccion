@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://itau.cl/ws/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1" xmlns:bons1="http://itau.cl/xmlns/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreria" targetNamespace="http://itau.cl/ws/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreriaHttpBinding" originalBindingStyle="document" />
+        <generatedXSD location="IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreria_InlineSchema1.xsd" />
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" targetNamespace="http://IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreria">
+      <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd0" namespace="http://itau.cl/xmlns/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/1" />
+      <xsd:import schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd1" namespace="http://itau.cl/xmlns/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ControlLineaCreditoTesoreriaRequestMsg">
+    <wsdl:part name="ControlLineaCreditoTesoreriaRq" element="bons1:ControlLineaCreditoTesoreriaRq" />
+  </wsdl:message>
+  <wsdl:message name="ControlLineaCreditoTesoreriaResponseMsg">
+    <wsdl:part name="ControlLineaCreditoTesoreriaRs" element="bons1:ControlLineaCreditoTesoreriaRs" />
+  </wsdl:message>
+  <wsdl:portType name="IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreria">
+    <wsdl:operation name="ControlLineaCreditoTesoreria">
+      <wsdl:input name="ControlLineaCreditoTesoreriaRequest" message="tns:ControlLineaCreditoTesoreriaRequestMsg" />
+      <wsdl:output name="ControlLineaCreditoTesoreriaResponse" message="tns:ControlLineaCreditoTesoreriaResponseMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreriaHttpBinding" type="tns:IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreria">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ControlLineaCreditoTesoreria">
+      <soap:operation soapAction="http://IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreria/ControlLineaCreditoTesoreria" />
+      <wsdl:input name="ControlLineaCreditoTesoreriaRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ControlLineaCreditoTesoreriaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreriaHttpService">
+    <wsdl:port name="IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreriaHttpPort" binding="tns:IS_BankPortfolioAndTreasury_Tesoreria_ControlLineaCreditoTesoreriaHttpBinding">
+      <soap:address location="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://itau.cl/xmlns/xsd/1" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd26" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd48" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd115" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd3" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd33" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd25" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd71" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd116" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd117" />
+  <xsd:include schemaLocation="http://busqa.itauchile2.cl:7823/BankPortfolioAndTreasury/CorporateTreasury/Tesoreria/ControlLineaCreditoTesoreria/1?xsd=xsd118" />
+  <xsd:complexType name="PartyInfo_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationshipMgr" type="tns:RelationshipMgr_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ServiceLevel" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="ConditionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="EstablishedDt" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="KYCStatus" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="KYCValidity" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationshipMgrBackup" type="tns:RelationshipMgrBackup_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelationshipMgrRoot" type="tns:RelationshipMgrRoot_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Segmentation" type="tns:Segmentation_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SIIID" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SbifID" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FinancialDataInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FinancialData" type="tns:FinancialData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="FIData" type="tns:FIData_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CreditReviewTimeFrame" type="tns:CreditReviewTimeFrame_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PolicyInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PreEvaluatedInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="SpecialistInd" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OccupationalCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="CreditRisk" type="tns:CreditRisk_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PartyIndicator" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PartySector" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PartyType" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="IssuedIdent" type="tns:IssuedIdent_Type" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="BankPeerGroupCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="PartyConditionCode" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="Employment" type="tns:Employment_Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

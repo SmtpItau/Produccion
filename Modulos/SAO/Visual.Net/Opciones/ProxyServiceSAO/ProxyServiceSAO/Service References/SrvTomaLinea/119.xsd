@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://itau.cl/xmlns/xsd/1" elementFormDefault="qualified" targetNamespace="http://itau.cl/xmlns/xsd/1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="InsuranceData_Type">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="InsCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="InsuranceCurType" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="InsuranceAmt" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="MXInsuranceAmt" type="string" />
+    </sequence>
+  </complexType>
+  <element name="InsuranceData" type="tns:InsuranceData_Type" />
+</schema>
