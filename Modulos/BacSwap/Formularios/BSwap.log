@@ -1,0 +1,87 @@
+Línea 22: la clase MSWinsockLib.Winsock del control NomObjWinIP no era una clase de control cargada.
+Línea 29: la clase Threed.SSPanel del control SSPanel1 no era una clase de control cargada.
+Línea 52: la clase Threed.SSPanel del control PnlEstado no era una clase de control cargada.
+Línea 76: la clase Threed.SSPanel del control PnlUsuario no era una clase de control cargada.
+Línea 101: la clase Threed.SSPanel del control Pnl_UF no era una clase de control cargada.
+Línea 127: la clase Threed.SSPanel del control Pnl_DO no era una clase de control cargada.
+Línea 153: la clase Threed.SSPanel del control PnlFecha no era una clase de control cargada.
+Línea 181: la clase Threed.SSPanel del control PnlTools no era una clase de control cargada.
+Línea 206: la clase Threed.SSCommand del control CmdOpc_20400 no era una clase de control cargada.
+Línea 229: la clase Threed.SSCommand del control CmdOpc_20300 no era una clase de control cargada.
+Línea 253: la clase MSComDlg.CommonDialog del control CommonDialog1 no era una clase de control cargada.
+Línea 260: la clase Crystal.CrystalReport del control Crystal no era una clase de control cargada.
+Línea 25: el nombre de la propiedad _ExtentX de NomObjWinIP no es válido.
+Línea 26: el nombre de la propiedad _ExtentY de NomObjWinIP no es válido.
+Línea 27: el nombre de la propiedad _Version de NomObjWinIP no es válido.
+Línea 36: el nombre de la propiedad _Version de SSPanel1 no es válido.
+Línea 37: el nombre de la propiedad _ExtentX de SSPanel1 no es válido.
+Línea 38: el nombre de la propiedad _ExtentY de SSPanel1 no es válido.
+Línea 39: el nombre de la propiedad _StockProps de SSPanel1 no es válido.
+Línea 50: el nombre de la propiedad RoundedCorners de SSPanel1 no es válido.
+Línea 51: el nombre de la propiedad Outline de SSPanel1 no es válido.
+Línea 58: el nombre de la propiedad _Version de PnlEstado no es válido.
+Línea 59: el nombre de la propiedad _ExtentX de PnlEstado no es válido.
+Línea 60: el nombre de la propiedad _ExtentY de PnlEstado no es válido.
+Línea 61: el nombre de la propiedad _StockProps de PnlEstado no es válido.
+Línea 73: el nombre de la propiedad BevelOuter de PnlEstado no es válido.
+Línea 74: el nombre de la propiedad Alignment de PnlEstado no es válido.
+Línea 82: el nombre de la propiedad _Version de PnlUsuario no es válido.
+Línea 83: el nombre de la propiedad _ExtentX de PnlUsuario no es válido.
+Línea 84: el nombre de la propiedad _ExtentY de PnlUsuario no es válido.
+Línea 85: el nombre de la propiedad _StockProps de PnlUsuario no es válido.
+Línea 97: el nombre de la propiedad BorderWidth de PnlUsuario no es válido.
+Línea 98: el nombre de la propiedad BevelOuter de PnlUsuario no es válido.
+Línea 99: el nombre de la propiedad RoundedCorners de PnlUsuario no es válido.
+Línea 107: el nombre de la propiedad _Version de Pnl_UF no es válido.
+Línea 108: el nombre de la propiedad _ExtentX de Pnl_UF no es válido.
+Línea 109: el nombre de la propiedad _ExtentY de Pnl_UF no es válido.
+Línea 110: el nombre de la propiedad _StockProps de Pnl_UF no es válido.
+Línea 122: el nombre de la propiedad BorderWidth de Pnl_UF no es válido.
+Línea 123: el nombre de la propiedad BevelOuter de Pnl_UF no es válido.
+Línea 124: el nombre de la propiedad BevelInner de Pnl_UF no es válido.
+Línea 125: el nombre de la propiedad RoundedCorners de Pnl_UF no es válido.
+Línea 133: el nombre de la propiedad _Version de Pnl_DO no es válido.
+Línea 134: el nombre de la propiedad _ExtentX de Pnl_DO no es válido.
+Línea 135: el nombre de la propiedad _ExtentY de Pnl_DO no es válido.
+Línea 136: el nombre de la propiedad _StockProps de Pnl_DO no es válido.
+Línea 148: el nombre de la propiedad BorderWidth de Pnl_DO no es válido.
+Línea 149: el nombre de la propiedad BevelOuter de Pnl_DO no es válido.
+Línea 150: el nombre de la propiedad BevelInner de Pnl_DO no es válido.
+Línea 151: el nombre de la propiedad RoundedCorners de Pnl_DO no es válido.
+Línea 159: el nombre de la propiedad _Version de PnlFecha no es válido.
+Línea 160: el nombre de la propiedad _ExtentX de PnlFecha no es válido.
+Línea 161: el nombre de la propiedad _ExtentY de PnlFecha no es válido.
+Línea 162: el nombre de la propiedad _StockProps de PnlFecha no es válido.
+Línea 174: el nombre de la propiedad BorderWidth de PnlFecha no es válido.
+Línea 175: el nombre de la propiedad BevelOuter de PnlFecha no es válido.
+Línea 176: el nombre de la propiedad BevelInner de PnlFecha no es válido.
+Línea 177: el nombre de la propiedad RoundedCorners de PnlFecha no es válido.
+Línea 188: el nombre de la propiedad _Version de PnlTools no es válido.
+Línea 189: el nombre de la propiedad _ExtentX de PnlTools no es válido.
+Línea 190: el nombre de la propiedad _ExtentY de PnlTools no es válido.
+Línea 191: el nombre de la propiedad _StockProps de PnlTools no es válido.
+Línea 203: el nombre de la propiedad BorderWidth de PnlTools no es válido.
+Línea 204: el nombre de la propiedad BevelInner de PnlTools no es válido.
+Línea 205: el nombre de la propiedad Outline de PnlTools no es válido.
+Línea 213: el nombre de la propiedad _Version de CmdOpc_20400 no es válido.
+Línea 214: el nombre de la propiedad _ExtentX de CmdOpc_20400 no es válido.
+Línea 215: el nombre de la propiedad _ExtentY de CmdOpc_20400 no es válido.
+Línea 216: el nombre de la propiedad _StockProps de CmdOpc_20400 no es válido.
+Línea 217: el nombre de la propiedad Caption de CmdOpc_20400 no es válido.
+Línea 227: el nombre de la propiedad Font3D de CmdOpc_20400 no es válido.
+Línea 236: el nombre de la propiedad _Version de CmdOpc_20300 no es válido.
+Línea 237: el nombre de la propiedad _ExtentX de CmdOpc_20300 no es válido.
+Línea 238: el nombre de la propiedad _ExtentY de CmdOpc_20300 no es válido.
+Línea 239: el nombre de la propiedad _StockProps de CmdOpc_20300 no es válido.
+Línea 240: el nombre de la propiedad Caption de CmdOpc_20300 no es válido.
+Línea 250: el nombre de la propiedad Font3D de CmdOpc_20300 no es válido.
+Línea 256: el nombre de la propiedad _ExtentX de CommonDialog1 no es válido.
+Línea 257: el nombre de la propiedad _ExtentY de CommonDialog1 no es válido.
+Línea 258: el nombre de la propiedad _Version de CommonDialog1 no es válido.
+Línea 263: el nombre de la propiedad _ExtentX de Crystal no es válido.
+Línea 264: el nombre de la propiedad _ExtentY de Crystal no es válido.
+Línea 265: el nombre de la propiedad _Version de Crystal no es válido.
+Línea 266: el nombre de la propiedad WindowControlBox de Crystal no es válido.
+Línea 267: el nombre de la propiedad WindowMaxButton de Crystal no es válido.
+Línea 268: el nombre de la propiedad WindowMinButton de Crystal no es válido.
+Línea 269: el nombre de la propiedad PrintFileLinesPerPage de Crystal no es válido.
